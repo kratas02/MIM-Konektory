@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>OracleECMA2MA</AssemblyName>
+    <RootNamespace>OracleECMA2MA</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>7.3</LangVersion>
+    <Platforms>AnyCPU</Platforms>
+    <!-- Výstup přímo do Extensions složky na MIM serveru (volitelné) -->
+    <!--
+    <OutputPath>\\MIM\C$\Program Files\Microsoft Forefront Identity Manager\2010\Synchronization Service\Extensions\</OutputPath>
+    -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Oracle Managed Driver - nevyžaduje Oracle Client -->
+    <PackageReference Include="Oracle.ManagedDataAccess" Version="21.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- MIM assemblies ze serveru MIM (lib\ slozka) -->
+    <Reference Include="Microsoft.MetadirectoryServices">
+      <HintPath>lib\Microsoft.MetadirectoryServices.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.MetadirectoryServicesEx">
+      <HintPath>lib\Microsoft.MetadirectoryServicesEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
