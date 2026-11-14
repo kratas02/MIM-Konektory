@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Životní cyklus objektů</title>
+<style>
+
+body { font-family: Segoe UI, Calibri, sans-serif; max-width: 1280px; margin: 2rem auto; padding: 0 1.5rem 3rem; line-height: 1.45; color: #1b1b1b; }
+h1, h2, h3 { line-height: 1.25; }
+h1 { font-size: 1.7rem; }
+h2 { margin-top: 2rem; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+a { color: #0b57d0; }
+code { font-family: Consolas, monospace; background: #f3f3f3; padding: 0.05em 0.3em; border-radius: 3px; }
+pre { background: #f6f8fa; padding: 0.8rem 1rem; overflow: auto; }
+pre code { background: none; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 0.9rem; }
+th, td { border: 1px solid #d0d0d0; padding: 0.35rem 0.5rem; vertical-align: top; text-align: left; }
+th { background: #f0f0f0; }
+tr:nth-child(even) td { background: #fafafa; }
+
+</style>
+</head>
+<body>
+<h1 id="zivotni-cyklus-objektu">Životní cyklus objektů</h1>
+<p>Zdroj je export synchronizace ze serveru <code>SMD1MGIDM01P</code> (4. 11. 2026) a synchronizační pravidla v <code>Policy.xml</code>. Portálové workflow, které objektu doplní účet, schránku a stav, jsou v <a href="Procesy-portalu.html">Procesy-portalu.html</a>.</p>
+<p>Žádné synchronizační pravidlo nemá zapnuté odpojení objektu v konektoru (<code>DisconnectConnectedSystemObject</code> je všude nepravda). Když objekt přestane splňovat filtr pravidla, řádek v cílovém systému zůstane a pravidlo ho přestane aktualizovat. Smazání v cíli nastává jen tehdy, když zmizí objekt v metaverse a konektor má akci <code>delete-object</code>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Konektor</th>
+<th>Co je</th>
+<th>Když zmizí objekt v metaverse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HUMANETv2</code></td>
+<td>SQL, zdroj zaměstnanců. <code>usrID</code> <code>eon-slovakia.sk</code> nebo <code>ad.vse.sk</code></td>
+<td><code>delete-object</code>, export smaže řádek v HR</td>
+</tr>
+<tr>
+<td><code>Externisti</code></td>
+<td>zdroj externistů</td>
+<td>objekt v konektoru se jen odpojí, řádek ve zdroji se nemaže</td>
+</tr>
+<tr>
+<td><code>eon-sk</code></td>
+<td>Active Directory <code>eon-slovakia.sk</code></td>
+<td>účet i skupina v AD zůstanou, jen se odpojí</td>
+</tr>
+<tr>
+<td><code>ad.vse.sk</code></td>
+<td>Active Directory <code>ad.vse.sk</code></td>
+<td>účet zůstane a znovu se sám nenaváže (<code>make-explicit-disconnector</code>)</td>
+</tr>
+<tr>
+<td><code>SAPCUA</code></td>
+<td>SAP CUA</td>
+<td>uživatel v SAP zůstane</td>
+</tr>
+<tr>
+<td><code>VSE_LDAP_prod</code></td>
+<td>LDAP <code>DC=ad,DC=vse,DC=sk</code></td>
+<td>objekt v LDAP se smaže</td>
+</tr>
+<tr>
+<td><code>HUMANET_OUT</code></td>
+<td>zpětný zápis do Humanetu</td>
+<td>řádek se smaže</td>
+</tr>
+<tr>
+<td><code>Externisti_SAP_OUT</code></td>
+<td>zpětný zápis externisty do SAP</td>
+<td>řádek se smaže</td>
+</tr>
+<tr>
+<td><code>ZSEEUser</code></td>
+<td>tabulka <code>ZSEE_Identita</code></td>
+<td>řádek se smaže</td>
+</tr>
+<tr>
+<td><code>KOC</code></td>
+<td>tabulka <code>KOC_PERSON</code></td>
+<td>řádek se smaže</td>
+</tr>
+<tr>
+<td><code>MIMMA</code></td>
+<td>portál</td>
+<td>objekt portálu se jen odpojí</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="zamestnanec-zse">Zaměstnanec ZSE</h2>
+<p>Zakládá ho <code>HUMANETv2</code>. Pravidlo <code>User HUMANET v2 Provisioning</code> vezme osobu s <code>usrID = eon-slovakia.sk</code>, páruje ji podle <code>employeeID</code> a založí osobu v portálu. Samo o sobě do portálu nese jen osobní číslo. Jméno, stav <code>stat2</code>, společnost a další HR atributy doplňují navazující inbound pravidla téhož konektoru (<code>User HUMANETv2 join EmployeeID</code>, <code>User HUMANETv2 sync only</code>).</p>
+<p>Portál pak, při <code>stat2 = 3</code> a vyplněném osobním čísle, vygeneruje KID (<code>AccountName</code>, <code>distinguishedName</code>, <code>userPrincipalName</code>, <code>scriptPath</code>). Dohodář (<code>persk</code> na <code>D</code>) dostane KID až když má <code>CreateADAccount = True</code>. Primární účet se společností 4212–4218 nebo 4255 dostane schránku (<code>eonMailEnabled</code>, licence E5, přípona podle <code>bukrs</code>).</p>
+<p>Kam účet pokračuje:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Podmínka na osobě v portálu</th>
+<th>Konektor</th>
+<th>Co se založí</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>distinguishedName</code> je v <code>DC=eon-slovakia,DC=sk</code></td>
+<td><code>eon-sk</code>, pravidlo <code>Users eon-sk in-out</code></td>
+<td>uživatel v AD. Při vzniku je účet zakázaný (<code>userAccountControl</code> 514), jazyk <code>sk-SK</code> a jednorázové počáteční heslo. DN se bere z portálu, párování je <code>AccountName</code> = <code>sAMAccountName</code></td>
+</tr>
+<tr>
+<td><code>humanet</code> začíná <code>hum</code> a <code>stat2 = 3</code></td>
+<td><code>HUMANET_OUT</code></td>
+<td>řádek Person: KID, jméno, platnost, e-mail, telefony. Klíč je osobní číslo</td>
+</tr>
+<tr>
+<td><code>eonStatus = A</code>, účel <code>regular</code>, typ <code>primary</code>, <code>humanet</code> začíná <code>hum</code></td>
+<td><code>ZSEEUser</code>, pravidlo <code>User ZSEE</code></td>
+<td>řádek identity pro běžného zaměstnance</td>
+</tr>
+<tr>
+<td><code>IsSAPCUA = true</code> a <code>domain = EON-SK</code></td>
+<td><code>SAPCUA</code></td>
+<td>uživatel SAP. Jméno, telefony, platnost, stav, KID</td>
+</tr>
+<tr>
+<td><code>EmployeeType = I</code> a <code>KOC = 1</code></td>
+<td><code>KOC</code></td>
+<td>řádek <code>KOC_PERSON</code></td>
+</tr>
+<tr>
+<td>DN v <code>OU=services,OU=org</code>, <code>OU=ITServices</code> nebo <code>OU=Users,OU=BU0390,OU=MU22</code> domény <code>eon-slovakia.sk</code>, případně <code>VSENoSync = ZSEOnly</code></td>
+<td><code>VSE_LDAP_prod</code></td>
+<td>uživatel v LDAP VSE</td>
+</tr>
+</tbody>
+</table></div>
+<p>Konec zaměstnance není smazání. Humanet přinese <code>stat2 = 0</code>. Portálové MPR, které z toho mělo zapsat <code>userAccountControl = 514</code>, je vypnuté, a MPR, které mělo přepsat stav na neaktivní při ztrátě společnosti, je také vypnuté a navíc zapisuje neexistující atribut <code>eonStatis</code>. Jediné, co synchronizace při <code>stat2 = 0</code> udělá, je export aktuální hodnoty <code>userAccountControl</code> z portálu do <code>eon-sk</code> (pravidlo <code>Users eon-sk out - disable when stat2-0</code>). Dokud portál tu hodnotu nezmění na 514, účet v AD zůstane v tom stavu, v jakém je. Uživatel v SAP CUA se při odpojení nemaže. Odpojení ze SAP řeší portálové workflow: nastaví <code>EmployeeEndDate</code> a osobu odebere ze skupiny <code>PassSyncCUA</code>. Osoba v portálu zůstává.</p>
+<p>Smazání osoby v portálu (smí ho administrátor) by kvůli akci <code>delete-object</code> smazalo i řádek v <code>HUMANETv2</code>, <code>HUMANET_OUT</code>, <code>ZSEEUser</code>, <code>KOC</code> a odpovídající objekt v <code>VSE_LDAP_prod</code>. Účet v <code>eon-sk</code> a uživatel v SAP CUA by zůstali.</p>
+<h2 id="zamestnanec-vse">Zaměstnanec VSE</h2>
+<p>Zakládají ho dva zdroje, oba založí osobu v portálu:</p>
+<ul>
+<li><code>HUMANETv2</code>, pravidlo <code>User HUMANET v2 Provisioning VSE</code>, filtr <code>usrID = ad.vse.sk</code>, párování <code>employeeID</code>.</li>
+<li><code>ad.vse.sk</code>, pravidlo <code>user_AD.VSE.SK</code>. Bere uživatele, jejichž <code>userAccountControl</code> není 514, a nese do portálu účet, DN, SID, e-mail, UPN a zobrazované jméno do atributů s příponou <code>VSE</code>. Skupiny z <code>OU=Autorizacia,OU=GPOGroups,DC=ad,DC=vse,DC=sk</code> zakládá pravidlo <code>Groups_AD.VSE.SK</code>.</li>
+</ul>
+<p>KID pro tyto účty skládá workflow <code>_VSE_Generate_KID</code>. Účty, jejichž DN VSE končí v <code>OU=Spolocnosti,DC=ad,DC=vse,DC=sk</code> a zároveň mají protějšek v <code>OU=org</code> domény <code>eon-slovakia.sk</code>, dostanou v portálu kopii s prefixem <code>copy-</code>.</p>
+<p>Kam pokračují:</p>
+<ul>
+<li><code>VSE_LDAP_prod</code>, pravidlo <code>User_VSE_ADLDS_prod</code>: osoba má DN v <code>DC=ad,DC=vse,DC=sk</code>, <code>VSENoSync</code> není <code>No</code> ani <code>ZSEOnly</code> a zobrazované jméno nezačíná <code>copy-</code>. V LDAP se zakládá uživatel.</li>
+<li>Kopie a účty <code>VSENoSync = ZSEOnly</code> jdou do LDAP jinými pravidly (<code>User_VSE_ADLDS_copy_prod</code>, <code>User_VSE_ADLDS(ZSE only ucty) prod</code>). <code>ZSEOnly</code> se do LDAP nedostane, když má <code>extensionAttribute8 = 1</code>.</li>
+<li><code>SAPCUA</code>, pravidlo <code>User SAPCUA-outbound VSE</code>: <code>IsSAPCUA = true</code> a společnost obsahuje <code>Vychodoslovenska</code>. Klíč je <code>msDS-SourceAnchor</code>, ne KID ZSE.</li>
+<li>Do <code>eon-sk</code> se dostanou stejně jako ostatní osoby, jakmile mají <code>distinguishedName</code> v <code>DC=eon-slovakia,DC=sk</code>.</li>
+</ul>
+<p>Když zmizí objekt v metaverse, účet v <code>ad.vse.sk</code> zůstane a znovu se nenaváže. Objekt v <code>VSE_LDAP_prod</code> se smaže. Portálové mazání kopie po smazání originálu (<code>_VSE_User_Only_delete_when_deleted</code> a mazání skupinových kopií) je ve filtru sady omezené na <code>DisplayName</code> začínající <code>xxx</code>, takže v provozu prakticky neběží.</p>
+<h2 id="externista">Externista</h2>
+<p>Zakládá ho konektor <code>Externisti</code>. Pravidlo <code>User Externisti Provisioning</code> páruje <code>employeeID</code> na <code>personal_number</code> a založí osobu v portálu. Další pravidla téhož konektoru (<code>User Externisti Join Id</code>, <code>Join KID</code>, <code>Sync Only</code>, <code>predlzenie platnosti</code>) už osobu nezakládají, jen připojují existující účet podle KID nebo prodlužují platnost, když je <code>ext_applicant_platnost = true</code>.</p>
+<p>Portál doplní žadatele, e-mail, telefon, KID a stav. V okně smlouvy nastaví <code>stat2 = 3</code> a <code>eonStatus = A</code>. Po konci smlouvy běží dvě stejně pojmenovaná MPR <code>_ZSE_Externisti_expirovany</code>: jedno nastaví <code>stat2 = 0</code> a <code>eonStatus = I</code>, druhé naopak <code>stat2 = 3</code> a <code>eonStatus = A</code>.</p>
+<p>Kam pokračuje zpracovaný externista (<code>externisti</code> začíná <code>id</code>, <code>externisti_processed = 1</code>):</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Podmínka</th>
+<th>Konektor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DN v <code>DC=eon-slovakia,DC=sk</code></td>
+<td><code>eon-sk</code>, stejné pravidlo jako zaměstnanec. Účet vzniká zakázaný (514)</td>
+</tr>
+<tr>
+<td>a navíc <code>extensionAttribute8</code> není <code>1</code></td>
+<td><code>Externisti_SAP_OUT</code> (osobní číslo, platnost, společnost, žadatel) a <code>ZSEEUser</code> pravidlo <code>User ZSEE Externisti</code>, to jen při <code>eonStatus = A</code></td>
+</tr>
+<tr>
+<td><code>EmployeeType = E</code>, <code>eonStatus = A</code>, <code>KOC = 1</code></td>
+<td><code>KOC</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><code>extensionAttribute8 = 1</code> se u žadatele s KID od <code>K27788</code> nastavuje schválně, aby se externista do SAP a do ZSEE nepropsal. Zmizení řádku ve zdroji <code>Externisti</code> osobu v portálu nesmaže, konektor ji jen odpojí. Smazání osoby v portálu smaže její řádky v <code>Externisti_SAP_OUT</code>, <code>ZSEEUser</code> a <code>KOC</code>. Účet v <code>eon-sk</code> zůstane.</p>
+<h2 id="sekundarni-ucet">Sekundární účet</h2>
+<p>Nezakládá ho žádný zdrojový konektor. Portálové workflow z osoby založí novou osobu (<code>eonUserType = secondary</code>) a vygeneruje jí vlastní KID s UPN <code>AccountName@e-ssi05.net</code>. Service Desk takovou osobu smí založit ručně. Dál platí stejné pravidlo <code>Users eon-sk in-out</code>: jakmile má DN v <code>DC=eon-slovakia,DC=sk</code>, vznikne uživatel v AD, opět nejdřív zakázaný. Do Humanetu, ZSEE, SAP CUA ani KOC nepatří, protože nesplní jejich filtry (<code>eonUserType = primary</code>, <code>humanet</code> začíná <code>hum</code>, <code>IsSAPCUA</code>).</p>
+<h2 id="skupina">Skupina</h2>
+<p>Distribuční skupina nemá vlastní konektor. <code>eon-sk</code> při importu rozliší typ podle <code>groupType</code>: bez security bitu je <code>Distribution</code>, se security bitem a vyplněným <code>mailNickname</code> je <code>MailEnabledSecurity</code>, jinak <code>Security</code>. Oprávnění zakládat a spravovat distribuční listy v portálu jsou vypnutá. Správci zakládají statické bezpečnostní skupiny.</p>
+<h3 id="skupina-v-eon-sk">Skupina v eon-sk</h3>
+<p>Do portálu přichází dvěma pravidly:</p>
+<ul>
+<li><code>Group eon-sk in</code> založí skupinu v portálu, když <code>adminDescription</code> nezačíná na <code>TYP</code>. Skupiny označené portálem (<code>TYPMIMManualne</code>, <code>TYPMIMDynamicke</code>, <code>TYPMIMVSE</code>) se tímto pravidlem z AD znovu nezaloží.</li>
+<li><code>Group eon-sk in-out</code> skupinu propojí podle <code>sAMAccountName</code>, načte členy, e-mail a typ a zpět exportuje <code>adminDescription</code>. Vynechává jen <code>cn = _ZSE_SAPCUA_Users</code>.</li>
+</ul>
+<p>Z portálu do AD skupinu zakládá <code>Groups_eon-sk_Create_in_eon</code>, když DN končí v <code>OU=Groups,DC=eon-slovakia,DC=sk</code>, zobrazované jméno neobsahuje <code>copy-</code> a <code>accountName</code> obsahuje <code>.sk</code>. Exportuje jméno, popis, členy, <code>groupType</code> a <code>sAMAccountName</code>. Skupiny <code>copy-</code>, Azure ESK a <code>sf-dfsroot</code> tímto pravidlem nevznikají, mají vlastní cestu níže.</p>
+<p>Když portál skupinu smaže (temporal workflow <code>Expiration Workflow</code> maže objekt po <code>ExpirationTime</code>, 14 dní předem jde vlastníkovi upozornění), skupina v <code>eon-sk</code> zůstane. Konektor ji jen odpojí.</p>
+<h3 id="skupina-vse-a-kopie">Skupina VSE a kopie</h3>
+<p><code>Groups_AD.VSE.SK</code> založí v portálu skupinu z <code>OU=Autorizacia,OU=GPOGroups,DC=ad,DC=vse,DC=sk</code>. <code>Groups_VSE_LDAP_prod</code> ji pak založí v <code>VSE_LDAP_prod</code>, když má DN v <code>DC=ad,DC=vse,DC=sk</code> a <code>VSENoSync</code> není <code>No</code>. <code>Groups_VSE_LDAP_(ZSE v2 Only)_prod</code> zakládá skupiny s <code>LDAPsync = ZSEOnlyYes</code>. Když se skupina smaže v metaverse, její objekt v <code>VSE_LDAP_prod</code> se smaže, objekt v <code>ad.vse.sk</code> zůstane.</p>
+<h2 id="azure-esk">Azure ESK</h2>
+<p>Skupinu nezakládá import z AD. Vznikne v portálu a do <code>eon-sk</code> ji založí odchozí pravidlo <code>_ZSE_Groups_OU=AzureESK,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</code>. Filtr je <code>distinguishedName</code> obsahuje <code>OU=AzureESK</code>. Při vzniku se zapíše jen DN. Trvale se exportuje <code>accountName</code> na <code>sAMAccountName</code>, <code>adminDescription</code>, <code>description</code>, <code>displayName</code>, <code>groupType</code> a <code>member</code>.</p>
+<p>DN a typ skupině před zápisem do AD složí portál:</p>
+<ul>
+<li><code>_ZSE_Groups_OU=AzureESK,…</code> když DN končí v <code>OU=AzureESK,OU=authz,…</code>, nebo <code>Description</code> začíná na <code>AzureESK</code> a není <code>AzureESKCS</code>. DN je <code>CN=</code> + <code>AccountName</code> + <code>,OU=AzureESK,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</code>.</li>
+<li><code>_ZSE_Groups_OU=AzureESKCS,…</code> když DN leží v <code>OU=AzureESKCS</code>, nebo <code>Description</code> začíná na <code>AzureESKCS</code>. DN končí v <code>OU=AzureESKCS,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</code>.</li>
+</ul>
+<p>Obě workflow nastaví <code>groupType = -2147483646</code>, tedy globální bezpečnostní skupinu. Nejsou to distribuční skupiny. Právo zakládat je a měnit jejich členy mají správci těchto OU.</p>
+<p>Když skupina přijde zpět z AD, <code>Group eon-sk in</code> ji znovu nezaloží, pokud má <code>adminDescription</code> na <code>TYP</code>. Smazání v portálu skupinu v <code>eon-sk</code> nemaže, konektor ji jen odpojí. Do <code>VSE_LDAP_prod</code> ani do <code>ad.vse.sk</code> Azure ESK skupina nepatří.</p>
+<h2 id="dfs-skupiny">DFS skupiny</h2>
+<p>Jsou dvě různé skupiny a každá má jiný život.</p>
+<p><strong>Kořen <code>sf-dfsroot</code>.</strong> Skupina už je v AD <code>eon-sk</code>. Do metaverse se dostane běžným importem skupiny (<code>Group eon-sk in</code> a <code>Group eon-sk in-out</code>), pokud <code>adminDescription</code> nezačíná na <code>TYP</code>. Samostatné pravidlo <code>Group eon-sk in-out dfs</code> ji nezakládá ani v metaverse, ani v AD. Bere jen skupinu, jejíž <code>displayName</code> začíná na <code>sf-dfsroot</code>, napáruje ji podle <code>accountName</code> = <code>sAMAccountName</code> a trvale exportuje <code>member</code>. Jméno, popis ani <code>groupType</code> tímto pravidlem do AD nejdou. Smazání objektu v portálu skupinu v AD nemaže.</p>
+<p><strong>Oprávnění ve <code>OU=DFS rights</code>.</strong> Skupiny <code>mg</code>, <code>r</code> a <code>rw</code> v <code>OU=DFS rights</code> nejsou <code>sf-dfsroot</code>. Do portálu přijdou stejným importem z <code>eon-sk</code> jako ostatní skupiny. Portál jim neskládá DN a do AD je znovu nezakládá. Po změně členství skupiny končící na <code>mg</code> workflow <code>_ZSE_DFS_Update_Owners</code> nastaví <code>Owner</code> a <code>DisplayedOwner</code> podle členů <code>mg</code> a totéž zapíše na skupiny <code>r</code> a <code>rw</code> se stejným kmenem názvu. Když vlastník <code>mg</code> skupiny chybí nebo je to Service Desk, <code>_ZSE_DFS_Update_Service_Desk_Owner_when_Empty_or_Service_Desk_Change</code> doplní členy ze sady <code>_ZSE_Service_Desk</code>. Service Desk smí měnit sady <code>_ZSE_DFS_r</code> a <code>_ZSE_DFS_rw</code>.</p>
+<p>Sdílené složky, jejichž <code>Description</code> začíná na <code>\\eon-slovakia.sk\</code>, jsou třetí větev. Workflow <code>_ZSE_Group_Set_adminDescription</code> jim nastaví <code>adminDescription</code> = <code>TYPMIMManualne</code>, <code>MembershipLocked</code> = false a <code>MembershipAddWorkflow</code> = <code>None</code>. Tím se z běžného importu vyřadí, protože <code>Group eon-sk in</code> skupiny s <code>adminDescription</code> na <code>TYP</code> znovu nezakládá.</p>
+<h2 id="skupiny-copy-">Skupiny copy-</h2>
+<p>Skupinu <code>copy-</code> nezakládá import. V portálu ji jako druhý objekt založí workflow <code>CreateResource</code>. Do názvu se vloží prefix <code>copy-</code>.</p>
+<p>Dvě zapnutá pravidla:</p>
+<ul>
+<li><code>_VSE_Copy_groups_create(VSE only)</code> se spustí, když skupina má <code>accountNameVSE</code>, DN ve VSE končí v <code>OU=Autorizacia\GPOGroups</code>, ještě nemá DN v ZSE a sama není kopie. <code>DisplayName</code> je <code>copy-</code> + jméno originálu, <code>AccountName</code> je <code>copy-</code> + účet zkrácený na 62 znaků. Z originálu se vezme <code>accountNameVSE</code>, <code>distinguishedNameVSE</code>, <code>Domain</code>, <code>Scope</code>, <code>Type</code>, <code>ExplicitMember</code> a <code>cnVSE</code>. <code>LDAPSource</code> ukazuje na originál.</li>
+<li><code>_VSE_Copy_groups_create(ZSE v2)</code> se spustí pro skupinu v <code>OU=hrgroups</code> nebo <code>OU=authz\Groups</code> v <code>eon-slovakia.sk</code>, mimo <code>AzureESK</code> a <code>AzureESKCS</code>. Kopie dostane <code>DisplayName</code> = <code>copy-</code> + jméno, <code>VSENoSync</code> = <code>Yes</code>, <code>LDAPPrepared</code> = <code>stageZSE0</code> a vlastníka <code>miminstall</code>. Na originál se zapíše <code>LDAPTargetZSE</code>. Ve fázi <code>stageZSE0</code> navazující pravidlo doplní zpětné odkazy <code>LDAPReplace</code> a <code>LDAPTargetZSE</code>.</li>
+</ul>
+<p>Starší zakládání <code>_VSE_Copy_groups_create(ZSE v OU=authz…)</code> a <code>_VSE_Copy_groups_create(ZSE_vytvorene manualne)</code> je vypnuté.</p>
+<p>Členové se na kopii nepřenesou při založení. Nejdřív se nastaví <code>LDAPUpdate</code> = <code>stage1</code>, potom se členové přemapují přes <code>LDAPTargetZSE</code> a fáze se posune na <code>stage2</code>.</p>
+<p>Do AD <code>eon-sk</code> se kopie nezapíše. <code>Groups_eon-sk_Create_in_eon</code> má filtr, že <code>displayName</code> neobsahuje <code>copy-</code>. Do <code>VSE_LDAP_prod</code> se dostane, jen když má <code>distinguishedNameVSE</code> v <code>DC=ad,DC=vse,DC=sk</code> a <code>VSENoSync</code> není <code>No</code>. Kopie ze ZSE má <code>VSENoSync</code> = <code>Yes</code>, takže do LDAP jde až ve chvíli, kdy jí workflow doplní VSE DN a sync pravidlo <code>Groups_VSE_LDAP_prod</code> filtr splní.</p>
+<p>Mazání kopie po smazání originálu (<code>_VSE_Groups_Original_advse_VSE-Out-delete</code>) prakticky neběží. Sada originálů je zúžená na <code>DisplayName</code> začínající <code>xxx</code>. Když se objekt kopie smaže v metaverse, řádek v <code>VSE_LDAP_prod</code> se smaže. Skupina v <code>ad.vse.sk</code> zůstane a skupina v <code>eon-sk</code> se jen odpojí, pokud v něm vůbec byla.</p>
+<h2 id="co-z-toho-plyne-pro-konec-zivota">Co z toho plyne pro konec života</h2>
+<p>Účet v <code>eon-slovakia.sk</code> ani uživatel v SAP CUA se odebráním ze zdroje ani smazáním osoby v portálu nemažou. Zaměstnanec končí změnou <code>stat2</code> a případně ručním nebo workflow zápisem <code>userAccountControl</code>. Externista končí překlopením <code>stat2</code> a <code>eonStatus</code>, přičemž dvě expirace si protiřečí. Distribuční i bezpečnostní skupina v AD po smazání v portálu zůstane. Totéž platí pro Azure ESK, <code>sf-dfsroot</code> a skupiny v <code>OU=DFS rights</code>. Kopie <code>copy-</code> v <code>eon-sk</code> nevzniká. Její řádek v <code>VSE_LDAP_prod</code> se smaže až se smazáním objektu v metaverse, a mazání kopie spolu s originálem portálové workflow prakticky nespouští. Mažou se řádky v SQL výstupech (<code>HUMANET_OUT</code>, <code>Externisti_SAP_OUT</code>, <code>ZSEEUser</code>, <code>KOC</code>) a objekty v <code>VSE_LDAP_prod</code>, a to až se smazáním objektu v metaverse. Smazání osoby v portálu by navíc smazalo i zdrojový řádek v <code>HUMANETv2</code>.</p>
+</body>
+</html>

@@ -1,0 +1,1100 @@
+﻿Spárované skupiny
+PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)
+TEST: Test (., 2026-10-09T21:33:07Z)
+Uživatelé se párují postupně podle EmployeeID, AccountName a DisplayName. Napojený objekt se znovu nenapojuje. Skupiny se párují podle AccountName.
+Skupina se páruje podle AccountName.
+Počet: 1092
+
+Podle	Typ	PROD AccountName	PROD DisplayName	PROD EmployeeID	PROD EmployeeType	PROD csoblFinalPropetyStatus	PROD csoblvalidStatus	PROD csoblGroupType	TEST AccountName	TEST DisplayName	TEST EmployeeID	TEST EmployeeType	TEST csoblFinalPropetyStatus	TEST csoblvalidStatus	TEST csoblGroupType
+AccountName	Group	administrátor_MDK_3	administrátor_MDK_3				1	bus	administrátor_MDK_3	administrátor_MDK_3				1	bus
+AccountName	Group	aplikačný administrátor_IT_prevádzka	aplikačný administrátor_IT_prevádzka				1	bus	aplikačný administrátor_IT_prevádzka	aplikačný administrátor_IT_prevádzka				1	bus
+AccountName	Group	BR_101_60200	dohoda o pracovnej činnosti_vačkovky				1	bus	BR_101_60200	dohoda o pracovnej činnosti_vačkovky				1	bus
+AccountName	Group	BR_101_60400	dohody - sprostredkovanie_vačkovky				1	bus	BR_101_60400	dohody - sprostredkovanie_vačkovky				1	bus
+AccountName	Group	BR_110_11100	Generálny riaditeľ_Generálny riaditeľ				1	bus	BR_110_11100	Generálny riaditeľ_Generálny riaditeľ				1	bus
+AccountName	Group	BR_111_25102	asist. predstav. a výkonného veden_Asistentky GR a VR				1	bus	BR_111_25102	asist. predstav. a výkonného veden_Asistentky GR a VR				1	bus
+AccountName	Group	BR_111_29107	konzultant pre firemnú stratégiu a_Asistentky GR a VR				0	bus	BR_111_29107	konzultant pre firemnú stratégiu a_Asistentky GR a VR				1	bus
+AccountName	Group	BR_111_50100	špecialista pre digitálny predaj_Asistentky GR a VR				1	bus	BR_111_50100	špecialista pre digitálny predaj_Asistentky GR a VR				1	bus
+AccountName	Group	BR_111_50101	dizajnér produktov, procesov a pou_Asistentky GR a VR				1	bus	BR_111_50101	dizajnér produktov, procesov a pou_Asistentky GR a VR				1	bus
+AccountName	Group	BR_111_60100	dohoda o vykonaní práce_Asistentky GR a VR				1	bus	BR_111_60100	dohoda o vykonaní práce_Asistentky GR a VR				1	bus
+AccountName	Group	BR_111_No EB	Rights_Asistentky GR a VR				1	bus	BR_111_No EB	Rights_Asistentky GR a VR				1	bus
+AccountName	Group	BR_120_105	konný riaditeľ pre obchod a podpor_Obchod a podpora				1	bus	BR_120_105	konný riaditeľ pre obchod a podpor_Obchod a podpora				1	bus
+AccountName	Group	BR_120_11107	Výkonný riaditeľ pre obchod a podp_Obchod a podpora				1	bus	BR_120_11107	Výkonný riaditeľ pre obchod a podp_Obchod a podpora				1	bus
+AccountName	Group	BR_129_13115	riaditeľ pobočkovej siete_Pobočková sieť				1	bus	BR_129_13115	riaditeľ pobočkovej siete_Pobočková sieť				1	bus
+AccountName	Group	BR_140_11109	Výkonný riaditeľ pre finančné riad_Finančné riadenie a podpora				1	bus	BR_140_11109	Výkonný riaditeľ pre finančné riad_Finančné riadenie a podpora				1	bus
+AccountName	Group	BR_140_60200	dohoda o pracovnej činnosti_Finančné riadenie a podpora				1	bus	BR_140_60200	dohoda o pracovnej činnosti_Finančné riadenie a podpora				1	bus
+AccountName	Group	BR_150_11110	Výkonný riaditeľ pre riadenie vzťa_Riadenie vzťahov so zákazníkom a podpora				1	bus	BR_150_11110	Výkonný riaditeľ pre riadenie vzťa_Riadenie vzťahov so zákazníkom a podpora				1	bus
+AccountName	Group	BR_150_48101	senior špecialista back office pro_Senior špecialista back-office procesov				1	bus	BR_150_48101	senior špecialista back office pro_Senior špecialista back-office procesov				1	bus
+AccountName	Group	BR_150_50200	Firemný expert pre back office pro_Firemná expertíza a podpora pre back office procesy				1	bus	BR_150_50200	Firemný expert pre back office pro_Firemná expertíza a podpora pre back office procesy				1	bus
+AccountName	Group	BR_160_11111	Výkonný riaditeľ pre Informančné t_Informačné technológie a podpora				1	bus	BR_160_11111	Výkonný riaditeľ pre Informančné t_Informačné technológie a podpora				1	bus
+AccountName	Group	BR_160_231	konný riaditeľ pre Informačné tech_Informačné technológie a podpora				1	bus	BR_160_231	konný riaditeľ pre Informačné tech_Informačné technológie a podpora				1	bus
+AccountName	Group	BR_160_60200	dohoda o pracovnej činnosti_Informačné technológie a podpora				1	bus	BR_160_60200	dohoda o pracovnej činnosti_Informačné technológie a podpora				1	bus
+AccountName	Group	BR_200_21111	senior akvizítor_Región Juh (Bratislava)				1	bus	BR_200_21111	senior akvizítor_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21112	junior akvizítor_Región Juh (Bratislava)				1	bus	BR_200_21112	junior akvizítor_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21113	Key Account Manager_Región Juh (Bratislava)				1	bus	BR_200_21113	Key Account Manager_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21121	junior akvizítor II_Región Juh (Bratislava)				1	bus	BR_200_21121	junior akvizítor II_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21131	junior akvizítor I_Región Juh (Bratislava)				1	bus	BR_200_21131	junior akvizítor I_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21132	junior akvizítor II_Región Juh (Bratislava)				1	bus	BR_200_21132	junior akvizítor II_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21133	junior akvizítor III_Región Juh (Bratislava)				1	bus	BR_200_21133	junior akvizítor III_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21134	senior akvizítor I_Región Juh (Bratislava)				1	bus	BR_200_21134	senior akvizítor I_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21135	senior akvizítor II_Región Juh (Bratislava)				1	bus	BR_200_21135	senior akvizítor II_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21136	senior akvizítor III_Región Juh (Bratislava)				1	bus	BR_200_21136	senior akvizítor III_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21137	Key Account Manager I_Región Juh (Bratislava)				1	bus	BR_200_21137	Key Account Manager I_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_21138	Key Account Manager II_Región Juh (Bratislava)				1	bus	BR_200_21138	Key Account Manager II_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_28113	personálny a mzdový špecialista I_Región Juh (Bratislava)				1	bus	BR_200_28113	personálny a mzdový špecialista I_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_60000	dohoda o brigádnickej práci študen_Región Juh (Bratislava)				1	bus	BR_200_60000	dohoda o brigádnickej práci študen_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_200_60500	dohoda - trainee_Región Juh (Bratislava)				1	bus	BR_200_60500	dohoda - trainee_Región Juh (Bratislava)				1	bus
+AccountName	Group	BR_202_12122	riaditeľ tímu Operatívny leasing f_OLFS				1	bus	BR_202_12122	riaditeľ tímu Operatívny leasing f_OLFS				1	bus
+AccountName	Group	BR_202_13117	riaditeľ tímu Operatívny leasing f_OLFS				1	bus	BR_202_13117	riaditeľ tímu Operatívny leasing f_OLFS				1	bus
+AccountName	Group	BR_202_21103	obchodník akvizítor Full service_OLFS				1	bus	BR_202_21103	obchodník akvizítor Full service_OLFS				1	bus
+AccountName	Group	BR_202_21110	Relationship Manager Full service_OLFS				1	bus	BR_202_21110	Relationship Manager Full service_OLFS				1	bus
+AccountName	Group	BR_202_21118	Business developer pre operatívny_OLFS				1	bus	BR_202_21118	Business developer pre operatívny_OLFS				1	bus
+AccountName	Group	BR_202_21119	junior akvizítor pre operatívny le_OLFS				1	bus	BR_202_21119	junior akvizítor pre operatívny le_OLFS				1	bus
+AccountName	Group	BR_202_21127	junior akvizítor pre operatívny le_OLFS				1	bus	BR_202_21127	junior akvizítor pre operatívny le_OLFS				1	bus
+AccountName	Group	BR_202_21128	junior akvizítor pre operatívny le_OLFS				1	bus	BR_202_21128	junior akvizítor pre operatívny le_OLFS				1	bus
+AccountName	Group	BR_202_21130	Relationship Manager Full service_OLFS				1	bus	BR_202_21130	Relationship Manager Full service_OLFS				1	bus
+AccountName	Group	BR_202_21200	Business Developer_OLFS				1	bus	BR_202_21200	Business Developer_OLFS				1	bus
+AccountName	Group	BR_202_24100	technický špecialista Full service_OLFS				1	bus	BR_202_24100	technický špecialista Full service_OLFS				1	bus
+AccountName	Group	BR_202_24102	špecialista OLFS - spolupráca s do_OLFS				1	bus	BR_202_24102	špecialista OLFS - spolupráca s do_OLFS				1	bus
+AccountName	Group	BR_202_24106	špecialista Full service_OLFS				1	bus	BR_202_24106	špecialista Full service_OLFS				1	bus
+AccountName	Group	BR_202_24107	špecialista fakturácie_OLFS				1	bus	BR_202_24107	špecialista fakturácie_OLFS				1	bus
+AccountName	Group	BR_202_24111	Account Manager pre dodávateľské v_OLFS				1	bus	BR_202_24111	Account Manager pre dodávateľské v_OLFS				1	bus
+AccountName	Group	BR_202_24122	Obchodný špecialista_OLFS				1	bus	BR_202_24122	Obchodný špecialista_OLFS				1	bus
+AccountName	Group	BR_202_24123	Senior obchodný špecialista_OLFS				1	bus	BR_202_24123	Senior obchodný špecialista_OLFS				1	bus
+AccountName	Group	BR_202_323	Raditeľ tímu Operatívny leasing ful_OLFS				1	bus	BR_202_323	Riaditeľ tímu Operatívny leasing ful_OLFS				1	bus
+AccountName	Group	BR_202_60000	dohoda o brigádnickej práci študen_OLFS				1	bus	BR_202_60000	dohoda o brigádnickej práci študen_OLFS				1	bus
+AccountName	Group	BR_202_60100	dohoda o vykonaní práce_OLFS				1	bus	BR_202_60100	dohoda o vykonaní práce_OLFS				1	bus
+AccountName	Group	BR_202_60200	dohoda o pracovnej činnosti_OLFS				1	bus	BR_202_60200	dohoda o pracovnej činnosti_OLFS				1	bus
+AccountName	Group	BR_202_60600	Externista – prístupár_OLFS				1	bus	BR_202_60600	Externista – prístupár_OLFS				1	bus
+AccountName	Group	BR_203_13112	riaditeľ tímu Korporátne financova_Korporátne financovanie				1	bus	BR_203_13112	riaditeľ tímu Korporátne financova_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_21109	relationship Manager pre korporátn_Korporátne financovanie				1	bus	BR_203_21109	relationship Manager pre korporátn_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_21125	relationship Manager pre korporátn_Korporátne financovanie				1	bus	BR_203_21125	relationship Manager pre korporátn_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_21126	relationship Manager pre korporátn_Korporátne financovanie				1	bus	BR_203_21126	relationship Manager pre korporátn_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_21139	Key Account Manager pre korporátnu_Korporátne financovanie				1	bus	BR_203_21139	Key Account Manager pre korporátnu_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_23101	spracovateľ pre korporátne obchody_Korporátne financovanie				1	bus	BR_203_23101	spracovateľ pre korporátne obchody_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_23103	spracovateľ pre korporátne obchody_Korporátne financovanie				1	bus	BR_203_23103	spracovateľ pre korporátne obchody_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_23106	spracovateľ pre korporátne obchody_Korporátne financovanie				1	bus	BR_203_23106	spracovateľ pre korporátne obchody_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_39107	credit analytik pre korporátne fin_Korporátne financovanie				1	bus	BR_203_39107	credit analytik pre korporátne fin_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_47100	špecialista - akvizítor pre leasin_Korporátne financovanie				1	bus	BR_203_47100	špecialista - akvizítor pre leasin_Korporátne financovanie				1	bus
+AccountName	Group	BR_203_60000	dohoda o brigádnickej práci študen_Korporátne financovanie				1	bus	BR_203_60000	dohoda o brigádnickej práci študen_Korporátne financovanie				1	bus
+AccountName	Group	BR_208_21111	senior akvizítor_Región Juh (Dunajská Streda)				1	bus	BR_208_21111	senior akvizítor_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_208_21112	junior akvizítor_Región Juh (Dunajská Streda)				1	bus	BR_208_21112	junior akvizítor_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_208_21132	junior akvizítor II_Región Juh (Dunajská Streda)				1	bus	BR_208_21132	junior akvizítor II_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_208_21135	senior akvizítor II_Región Juh (Dunajská Streda)				1	bus	BR_208_21135	senior akvizítor II_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_208_21136	senior akvizítor III_Región Juh (Dunajská Streda)				1	bus	BR_208_21136	senior akvizítor III_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_208_60000	dohoda o brigádnickej práci študen_Región Juh (Dunajská Streda)				1	bus	BR_208_60000	dohoda o brigádnickej práci študen_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_208_60100	dohoda o vykonaní práce_Región Juh (Dunajská Streda)				1	bus	BR_208_60100	dohoda o vykonaní práce_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_208_60500	dohoda - trainee_Región Juh (Dunajská Streda)				1	bus	BR_208_60500	dohoda - trainee_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BR_209_21111	senior akvizítor_Región Západ (Nové Zámky)				1	bus	BR_209_21111	senior akvizítor_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_209_21112	junior akvizítor_Región Západ (Nové Zámky)				1	bus	BR_209_21112	junior akvizítor_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_209_21121	junior akvizítor II_Región Západ (Nové Zámky)				1	bus	BR_209_21121	junior akvizítor II_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_209_21131	junior akvizítor I_Región Západ (Nové Zámky)				1	bus	BR_209_21131	junior akvizítor I_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_209_21132	junior akvizítor II_Región Západ (Nové Zámky)				1	bus	BR_209_21132	junior akvizítor II_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_209_21134	senior akvizítor I_Región Západ (Nové Zámky)				1	bus	BR_209_21134	senior akvizítor I_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_209_21138	Key Account Manager II_Región Západ (Nové Zámky)				1	bus	BR_209_21138	Key Account Manager II_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_209_60000	dohoda o brigádnickej práci študen_Región Západ (Nové Zámky)				1	bus	BR_209_60000	dohoda o brigádnickej práci študen_Región Západ (Nové Zámky)				1	bus
+AccountName	Group	BR_210_21111	senior akvizítor_Región Severozápad (Trenčín)				1	bus	BR_210_21111	senior akvizítor_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_21112	junior akvizítor_Región Severozápad (Trenčín)				1	bus	BR_210_21112	junior akvizítor_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_21113	Key Account Manager_Región Severozápad (Trenčín)				1	bus	BR_210_21113	Key Account Manager_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_21132	junior akvizítor II_Región Severozápad (Trenčín)				1	bus	BR_210_21132	junior akvizítor II_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_21135	senior akvizítor II_Región Severozápad (Trenčín)				1	bus	BR_210_21135	senior akvizítor II_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_21136	senior akvizítor III_Región Severozápad (Trenčín)				1	bus	BR_210_21136	senior akvizítor III_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_60000	dohoda o brigádnickej práci študen_Región Sever (Trenčín)				1	bus	BR_210_60000	dohoda o brigádnickej práci študen_Región Sever (Trenčín)				1	bus
+AccountName	Group	BR_210_60200	dohoda o pracovnej činnosti_Región Severozápad (Trenčín)				1	bus	BR_210_60200	dohoda o pracovnej činnosti_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_60500	dohoda - trainee_Región Severozápad (Trenčín)				1	bus	BR_210_60500	dohoda - trainee_Región Severozápad (Trenčín)				1	bus
+AccountName	Group	BR_210_No EB	Rights_Región Sever (Trenčín)				1	bus	BR_210_No EB	Rights_Región Sever (Trenčín)				1	bus
+AccountName	Group	BR_220_21111	senior akvizítor_Región Sever (Žilina)				1	bus	BR_220_21111	senior akvizítor_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21112	junior akvizítor_Región Sever (Žilina)				1	bus	BR_220_21112	junior akvizítor_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21113	Key Account Manager_Región Sever (Žilina)				1	bus	BR_220_21113	Key Account Manager_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21121	junior akvizítor II_Región Sever (Žilina)				1	bus	BR_220_21121	junior akvizítor II_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21131	junior akvizítor I_Región Sever (Žilina)				1	bus	BR_220_21131	junior akvizítor I_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21132	junior akvizítor II_Región Sever (Žilina)				1	bus	BR_220_21132	junior akvizítor II_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21134	senior akvizítor I_Región Sever (Žilina)				1	bus	BR_220_21134	senior akvizítor I_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21135	senior akvizítor II_Región Sever (Žilina)				1	bus	BR_220_21135	senior akvizítor II_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21137	Key Account Manager I_Región Sever (Žilina)				1	bus	BR_220_21137	Key Account Manager I_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_21138	Key Account Manager II_Región Sever (Žilina)				1	bus	BR_220_21138	Key Account Manager II_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_60000	dohoda o brigádnickej práci študen_Región Sever (Žilina)				1	bus	BR_220_60000	dohoda o brigádnickej práci štude_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_600000	dohoda o brigádnickej práci študen_Región Sever (Žilina)				1	bus	BR_220_600000	dohoda o brigádnickej práci štude_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_220_60500	dohoda - trainee_Región Sever (Žilina)				1	bus	BR_220_60500	dohoda - trainee_Región Sever (Žilina)				1	bus
+AccountName	Group	BR_230_21111	senior akvizítor_Región Stred (Banská Bystr.)				1	bus	BR_230_21111	senior akvizítor_Región Stred (Banská Bystr.)				1	bus
+AccountName	Group	BR_230_21112	junior akvizítor_Región Stred (Banská Bystr.)				1	bus	BR_230_21112	junior akvizítor_Región Stred (Banská Bystr.)				1	bus
+AccountName	Group	BR_230_21112_RPO	junior akvizítor_Región Stred (Banská Bystr.)_RPO				1	bus	BR_230_21112_RPO	junior akvizítor_Región Stred (Banská Bystr.)_RPO				1	bus
+AccountName	Group	BR_230_21121	junior akvizítor II_Región Stred (Banská Bystr.)				1	bus	BR_230_21121	junior akvizítor II_Región Stred (Banská Bystr.)				1	bus
+AccountName	Group	BR_230_21131	junior akvizítor I_Región Stred (Banská Bystrica)				1	bus	BR_230_21131	junior akvizítor I_Región Stred (Banská Bystrica)				1	bus
+AccountName	Group	BR_230_21132	junior akvizítor II_Región Stred (Banská Bystrica)				1	bus	BR_230_21132	junior akvizítor II_Región Stred (Banská Bystrica)				1	bus
+AccountName	Group	BR_230_21134	senior akvizítor I_Región Stred (Banská Bystrica)				1	bus	BR_230_21134	senior akvizítor I_Región Stred (Banská Bystrica)				1	bus
+AccountName	Group	BR_230_21135	senior akvizítor II_Región Stred (Banská Bystrica)				1	bus	BR_230_21135	senior akvizítor II_Región Stred (Banská Bystrica)				1	bus
+AccountName	Group	BR_230_21136	senior akvizítor III_Región Stred (Banská Bystrica)				1	bus	BR_230_21136	senior akvizítor III_Región Stred (Banská Bystrica)				1	bus
+AccountName	Group	BR_230_21137	Key Account Manager I_Región Stred (Banská Bystrica)				1	bus	BR_230_21137	Key Account Manager I_Región Stred (Banská Bystrica)				1	bus
+AccountName	Group	BR_230_60000	dohoda o brigádnickej práci študen_Región Stred (Banská Bystr.)				1	bus	BR_230_60000	dohoda o brigádnickej práci študen_Región Stred (Banská Bystr.)				1	bus
+AccountName	Group	BR_230_60000_JAQ	dohoda o brigádnickej práci študen_Región Stred (Banská Bystr.)_JAQ				1	bus	BR_230_60000_JAQ	dohoda o brigádnickej práci študen_Región Stred (Banská Bystr.)_JAQ				1	bus
+AccountName	Group	BR_230_60200	dohoda o pracovnej činnosti_Región Stred (Banská Bystr.)				1	bus	BR_230_60200	dohoda o pracovnej činnosti_Región Stred (Banská Bystr.)				1	bus
+AccountName	Group	BR_230_60500	dohoda - trainee_Región Stred (Banská Bystrica)				1	bus	BR_230_60500	dohoda - trainee_Región Stred (Banská Bystrica)				1	bus
+AccountName	Group	BR_240_21111	senior akvizítor_Región Východ (Košice)				1	bus	BR_240_21111	senior akvizítor_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_21112	junior akvizítor_Región Východ (Košice)				1	bus	BR_240_21112	junior akvizítor_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_21131	junior akvizítor I_Región Východ (Košice)				1	bus	BR_240_21131	junior akvizítor I_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_21132	junior akvizítor II_Región Východ (Košice)				1	bus	BR_240_21132	junior akvizítor II_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_21135	senior akvizítor II_Región Východ (Košice)				1	bus	BR_240_21135	senior akvizítor II_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_21136	senior akvizítor III_Región Východ (Košice)				1	bus	BR_240_21136	senior akvizítor III_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_21137	Key Account Manager I_Región Východ (Košice)				1	bus	BR_240_21137	Key Account Manager I_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_60000	dohoda o brigádnickej práci študen_Región Východ (Košice)				1	bus	BR_240_60000	dohoda o brigádnickej práci študen_Región Východ (Košice)				1	bus
+AccountName	Group	BR_240_60500	dohoda - trainee_Región Východ (Košice)				1	bus	BR_240_60500	dohoda - trainee_Región Východ (Košice)				1	bus
+AccountName	Group	BR_245_21111	senior akvizítor_Región Východ (Michalovce)				1	bus	BR_245_21111	senior akvizítor_Región Východ (Michalovce)				1	bus
+AccountName	Group	BR_245_21134	senior akvizítor I_Región Východ (Michalovce)				1	bus	BR_245_21134	senior akvizítor I_Región Východ (Michalovce)				1	bus
+AccountName	Group	BR_250_21111	senior akvizítor_Región Východ (Prešov)				1	bus	BR_250_21111	senior akvizítor_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_21112	junior akvizítor_Región Východ (Prešov)				1	bus	BR_250_21112	junior akvizítor_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_21131	junior akvizítor I_Región Východ (Prešov)				1	bus	BR_250_21131	junior akvizítor I_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_21132	junior akvizítor II_Región Východ (Prešov)				1	bus	BR_250_21132	junior akvizítor II_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_21135	senior akvizítor II_Región Východ (Prešov)				1	bus	BR_250_21135	senior akvizítor II_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_21136	senior akvizítor III_Región Východ (Prešov)				1	bus	BR_250_21136	senior akvizítor III_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_21137	Key Account Manager I_Región Východ (Prešov)				1	bus	BR_250_21137	Key Account Manager I_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_60000	dohoda o brigádnickej práci študen_Región Východ (Prešov)				1	bus	BR_250_60000	dohoda o brigádnickej práci študen_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_250_60500	dohoda - trainee_Región Východ (Prešov)				1	bus	BR_250_60500	dohoda - trainee_Región Východ (Prešov)				1	bus
+AccountName	Group	BR_260_21111	senior akvizítor_Región Západ (Nitra)				1	bus	BR_260_21111	senior akvizítor_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21111_RPO	senior akvizítor_Región Západ (Nitra)_RPO				1	bus	BR_260_21111_RPO	senior akvizítor_Región Západ (Nitra)_RPO				1	bus
+AccountName	Group	BR_260_21112	junior akvizítor_Región Západ (Nitra)				1	bus	BR_260_21112	junior akvizítor_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21121	junior akvizítor II_Región Západ (Nitra)				1	bus	BR_260_21121	junior akvizítor II_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21131	junior akvizítor I_Región Západ (Nitra)				1	bus	BR_260_21131	junior akvizítor I_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21132	junior akvizítor II_Región Západ (Nitra)				1	bus	BR_260_21132	junior akvizítor II_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21134	senior akvizítor I_Región Západ (Nitra)				1	bus	BR_260_21134	senior akvizítor I_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21135	senior akvizítor II_Región Západ (Nitra)				1	bus	BR_260_21135	senior akvizítor II_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21136	senior akvizítor III_Región Západ (Nitra)				1	bus	BR_260_21136	senior akvizítor III_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_21137	Key Account Manager I_Región Západ (Nitra)				1	bus	BR_260_21137	Key Account Manager I_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_60000	dohoda o brigádnickej práci študen_Región Západ (Nitra)				1	bus	BR_260_60000	dohoda o brigádnickej práci študen_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_60100	dohoda o vykonaní práce_Región Západ (Nitra)				1	bus	BR_260_60100	dohoda o vykonaní práce_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_260_60500	dohoda - trainee_Región Západ (Nitra)				1	bus	BR_260_60500	dohoda - trainee_Región Západ (Nitra)				1	bus
+AccountName	Group	BR_270_21111	senior akvizítor_Región Stred (Poprad)				1	bus	BR_270_21111	senior akvizítor_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_270_21112	junior akvizítor_Región Stred (Poprad)				1	bus	BR_270_21112	junior akvizítor_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_270_21121	junior akvizítor II_Región Stred (Poprad)				1	bus	BR_270_21121	junior akvizítor II_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_270_21131	junior akvizítor I_Región Stred (Poprad)				1	bus	BR_270_21131	junior akvizítor I_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_270_21134	senior akvizítor I_Región Stred (Poprad)				1	bus	BR_270_21134	senior akvizítor I_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_270_21135	senior akvizítor II_Región Stred (Poprad)				1	bus	BR_270_21135	senior akvizítor II_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_270_60000	dohoda o brigádnickej práci študen_Región Stred (Poprad)				1	bus	BR_270_60000	dohoda o brigádnickej práci študen_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_270_No EB	Rights_Región Stred (Poprad)				1	bus	BR_270_No EB	Rights_Región Stred (Poprad)				1	bus
+AccountName	Group	BR_280_21111	senior akvizítor_Región Severozápad (Trnava)				1	bus	BR_280_21111	senior akvizítor_Región Severozápad (Trnava)				1	bus
+AccountName	Group	BR_280_21112	junior akvizítor_Región Severozápad (Trnava)				1	bus	BR_280_21112	junior akvizítor_Región Severozápad (Trnava)				1	bus
+AccountName	Group	BR_280_21132	junior akvizítor II_Región Severozápad (Trnava)				1	bus	BR_280_21132	junior akvizítor II_Región Severozápad (Trnava)				1	bus
+AccountName	Group	BR_280_21135	senior akvizítor II_Región Severozápad (Trnava)				1	bus	BR_280_21135	senior akvizítor II_Región Severozápad (Trnava)				1	bus
+AccountName	Group	BR_280_21136	senior akvizítor III_Región Severozápad (Trnava)				1	bus	BR_280_21136	senior akvizítor III_Región Severozápad (Trnava)				1	bus
+AccountName	Group	BR_280_21137	Key Account Manager I_Región Severozápad (Trnava)				1	bus	BR_280_21137	Key Account Manager I_Región Severozápad (Trnava)				1	bus
+AccountName	Group	BR_280_60000	dohoda o brigádnickej práci študen_Región Západ (Trnava)				1	bus	BR_280_60000	dohoda o brigádnickej práci študen_Región Západ (Trnava)				1	bus
+AccountName	Group	BR_280_60200	dohoda o pracovnej činnosti_Región Západ (Trnava)				1	bus	BR_280_60200	dohoda o pracovnej činnosti_Región Západ (Trnava)				1	bus
+AccountName	Group	BR_295_13114	riaditeľ tímu Vendor support_Vendor support				1	bus	BR_295_13114	riaditeľ tímu Vendor support_Vendor support				1	bus
+AccountName	Group	BR_296_21116	Key Account Manager pre Vendor Sup_Externé distribučné siete				1	bus	BR_296_21116	Key Account Manager pre Vendor Sup_Externé distribučné siete				1	bus
+AccountName	Group	BR_296_21202	junior akvizítor pre vendor suppor_Externé distribučné siete				1	bus	BR_296_21202	junior akvizítor pre vendor suppor_Externé distribučné siete				1	bus
+AccountName	Group	BR_296_21203	Akvizítor pobočky EDS				1	bus	BR_296_21203	Akvizítor pobočky EDS				1	bus
+AccountName	Group	BR_296_21204	akvizítor pobočky EDS I_Externé distribučné siete				1	bus	BR_296_21204	akvizítor pobočky EDS I_Externé distribučné siete				1	bus
+AccountName	Group	BR_296_21205	akvizítor pobočky EDS II_Externé distribučné siete				1	bus	BR_296_21205	akvizítor pobočky EDS II_Externé distribučné siete				1	bus
+AccountName	Group	BR_296_24108	špecialista pre repredaj_Externé distribučné siete				1	bus	BR_296_24108	špecialista pre repredaj_Externé distribučné siete				1	bus
+AccountName	Group	BR_296_327	nažér tímu Vendor Support a Extern_Externé distribučné siete				1	bus	BR_296_327	nažér tímu Vendor Support a Extern_Vendor Support a Externé distribučné siete				1	bus
+AccountName	Group	BR_296_60000	dohoda o brigádnickej práci študen_Externé distribučné siete				1	bus	BR_296_60000	dohoda o brigádnickej práci študen_Externé distribučné siete				1	bus
+AccountName	Group	BR_301_12128	manažér tímu Marketing a podpora o_Marketing a podpora obchodu				1	bus	BR_301_12128	manažér tímu Marketing a podpora o_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_12129	manažér tímu Produktový vývoj a tr_Produktový vývoj a trhové riešenia				1	bus	BR_301_12129	manažér tímu Produktový vývoj a tr_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_29106	analytik pre stratégiu_Marketing a podpora obchodu				1	bus	BR_301_29106	analytik pre stratégiu_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_29107	konzultant pre firemnú stratégiu a_Produktový vývoj a trhové riešenia				1	bus	BR_301_29107	konzultant pre firemnú stratégiu a_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_29108	strategic initiatives lead_Produktový vývoj a trhové riešenia				1	bus	BR_301_29108	strategic initiatives lead_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_30101	marketingový špecialista_Marketing a podpora obchodu				1	bus	BR_301_30101	marketingový špecialista_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_30102	marketingový špecialista pre podpo_Marketing a podpora obchodu				1	bus	BR_301_30102	marketingový špecialista pre podpo_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_30103	marketingový špecialista pre komun_Marketing a podpora obchodu				1	bus	BR_301_30103	marketingový špecialista pre komun_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_30104	špecialista marketingových kampaní_Marketing a podpora obchodu				1	bus	BR_301_30104	špecialista marketingových kampaní_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_30105	marketingový špecialista I_Produktový vývoj a trhové riešenia				1	bus	BR_301_30105	marketingový špecialista I_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_30106	marketingový špecialista II_Produktový vývoj a trhové riešenia				1	bus	BR_301_30106	marketingový špecialista II_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_30107	špecialista pre podporu predaja_Produktový vývoj a trhové riešenia				1	bus	BR_301_30107	špecialista pre podporu predaja_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_32106	produktový manažér_Marketing a podpora obchodu				1	bus	BR_301_32106	produktový manažér_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_48101	senior špecialista back office pro_Marketing a podpora obchodu				1	bus	BR_301_48101	senior špecialista back office pro_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_50100	špecialista pre digitálny predaj_Produktový vývoj a trhové riešenia				1	bus	BR_301_50100	špecialista pre digitálny predaj_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_50101	dizajnér produktov, procesov a pou_Produktový vývoj a trhové riešenia				1	bus	BR_301_50101	dizajnér produktov, procesov a pou_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_60000	dohoda o brigádnickej práci študen_Marketing a podpora obchodu				1	bus	BR_301_60000	dohoda o brigádnickej práci študen_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_60100	dohoda o vykonaní práce_Marketing a podpora obchodu				1	bus	BR_301_60100	dohoda o vykonaní práce_Marketing a podpora obchodu				1	bus
+AccountName	Group	BR_301_60200	dohoda o pracovnej činnosti_Produktový vývoj a trhové riešenia				1	bus	BR_301_60200	dohoda o pracovnej činnosti_Produktový vývoj a trhové riešenia				1	bus
+AccountName	Group	BR_301_No EB	Rights_				1	bus	BR_301_No EB	Rights_				1	bus
+AccountName	Group	BR_302_12139	manažér tímu Poistenie_Poistenie				1	bus	BR_302_12139	manažér tímu Poistenie_Poistenie				1	bus
+AccountName	Group	BR_302_31101	špecialista pre poistenie_Poistenie				1	bus	BR_302_31101	špecialista pre poistenie_Poistenie				1	bus
+AccountName	Group	BR_302_31102	špecialista pre poistenie  - podpo_Poistenie				1	bus	BR_302_31102	špecialista pre poistenie  - podpo_Poistenie				1	bus
+AccountName	Group	BR_302_31103	špecialista pre poistné procesy_Poistenie				1	bus	BR_302_31103	špecialista pre poistné procesy_Poistenie				1	bus
+AccountName	Group	BR_302_31105	špecialista pre poistenie II_Poistenie				1	bus	BR_302_31105	špecialista pre poistenie II_Poistenie				1	bus
+AccountName	Group	BR_302_31106	poistný špecialista - podpora obch_Poistenie				1	bus	BR_302_31106	poistný špecialista - podpora obch_Poistenie				1	bus
+AccountName	Group	BR_302_31108	špecialista pre poistenie III_Poistenie				1	bus	BR_302_31108	špecialista pre poistenie III_Poistenie				1	bus
+AccountName	Group	BR_302_31109	garant pre poistenie_Poistenie				1	bus	BR_302_31109	garant pre poistenie_Poistenie				1	bus
+AccountName	Group	BR_302_31110	garant pre poistenie I_Poistenie				1	bus	BR_302_31110	garant pre poistenie I_Poistenie				1	bus
+AccountName	Group	BR_302_31111	garant pre poistenie II_Poistenie				1	bus	BR_302_31111	garant pre poistenie II_Poistenie				1	bus
+AccountName	Group	BR_302_31112	senior špec. pre obchod, výkazy a_Poistenie				1	bus	BR_302_31112	senior špec. pre obchod, výkazy a_Poistenie				1	bus
+AccountName	Group	BR_302_45100	špecialista pre totálne poistné ud_Poistenie				1	bus	BR_302_45100	špecialista pre totálne poistné ud_Poistenie				1	bus
+AccountName	Group	BR_302_45101	špecialista pre poistné udalosti_Poistenie				1	bus	BR_302_45101	špecialista pre poistné udalosti_Poistenie				1	bus
+AccountName	Group	BR_302_45102	špecialista pre správu poistných v_Poistenie				1	bus	BR_302_45102	špecialista pre správu poistných v_Poistenie				1	bus
+AccountName	Group	BR_302_45104	špecialista pre správu provízií z_Poistenie				1	bus	BR_302_45104	špecialista pre správu provízií z_Poistenie				1	bus
+AccountName	Group	BR_302_45105	senior špecialista pre poistné uda_Poistenie				1	bus	BR_302_45105	senior špecialista pre poistné uda_Poistenie				1	bus
+AccountName	Group	BR_302_60000	dohoda o brigádnickej práci študen_Poistenie				1	bus	BR_302_60000	dohoda o brigádnickej práci študen_Poistenie				1	bus
+AccountName	Group	BR_303_12110	manažér tímu Zákaznícky servis_Zákaznícky servis				1	bus	BR_303_12110	manažér tímu Zákaznícky servis_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_23108	špecialista back office_Zákaznícky servis				1	bus	BR_303_23108	špecialista back office_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_42100	špecialista pre zmeny zmlúv II_Zákaznícky servis				1	bus	BR_303_42100	špecialista pre zmeny zmlúv II_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_42101	špecialista pre zmeny zmlúv I_Zákaznícky servis				1	bus	BR_303_42101	špecialista pre zmeny zmlúv I_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_42102	špecialista pre zmeny zmlúv III_Zákaznícky servis				1	bus	BR_303_42102	špecialista pre zmeny zmlúv III_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_42103	Teamleader zákazníckeho servisu_Zákaznícky servis				0	bus	BR_303_42103	Teamleader zákazníckeho servisu_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_42104	senior špecialista zákazníckeho se_Zákaznícky servis				1	bus	BR_303_42104	senior špecialista zákazníckeho se_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_42105	expert pre zmeny zmlúv_Zákaznícky servis				1	bus	BR_303_42105	expert pre zmeny zmlúv_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_43100	operátor zákazníckej linky_Zákaznícky servis				1	bus	BR_303_43100	operátor zákazníckej linky_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_43101	recepčná_Zákaznícky servis				1	bus	BR_303_43101	recepčná_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_43102	front office špecialista_Zákaznícky servis				1	bus	BR_303_43102	front office špecialista_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_60000	dohoda o brigádnickej práci študen_Zákaznícky servis				1	bus	BR_303_60000	dohoda o brigádnickej práci študen_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_60200	dohoda o pracovnej činnosti_Zákaznícky servis				1	bus	BR_303_60200	dohoda o pracovnej činnosti_Zákaznícky servis				1	bus
+AccountName	Group	BR_303_No EB	Rights_				1	bus	BR_303_No EB	Rights_				1	bus
+AccountName	Group	BR_304_12133	manažér tímu Centrálne spracovanie_Centrálne spracovanie zmlúv				1	bus	BR_304_12133	manažér tímu Centrálne spracovanie_Centrálne spracovanie zmlúv				1	bus
+AccountName	Group	BR_305_13103	riaditeľ tímu Centrálne značky OUA_Centrálne značky OUA				1	bus	BR_305_13103	riaditeľ tímu Centrálne značky OUA_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_21105	akvizítor značkového leasingu I_Centrálne značky OUA				1	bus	BR_305_21105	akvizítor značkového leasingu I_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_21106	akvizítor značkového leasingu II_Centrálne značky OUA				1	bus	BR_305_21106	akvizítor značkového leasingu II_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_21107	akvizítor značkového leasingu_Centrálne značky OUA				1	bus	BR_305_21107	akvizítor značkového leasingu_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_21117	Key Account Manager značkového lea_Centrálne značky OUA				1	bus	BR_305_21117	Key Account Manager značkového lea_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_21123	Key Account Manager značkového lea_Centrálne značky OUA				1	bus	BR_305_21123	Key Account Manager značkového lea_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_21124	Key Account Manager značkového lea_Centrálne značky OUA				1	bus	BR_305_21124	Key Account Manager značkového lea_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_23104	špecialista centrálnych značiek OU_Centrálne značky OUA				1	bus	BR_305_23104	špecialista centrálnych značiek OU_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_23111	Senior špecialista pre riadenie pr_Centrálne značky OUA				1	bus	BR_305_23111	Senior špecialista pre riadenie pr_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_23112	Junior akvizítor pre Centrálne zna_Centrálne značky OUA				1	bus	BR_305_23112	Junior akvizítor pre Centrálne zna_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_60000	dohoda o brigádnickej práci študen_Centrálne značky OUA				1	bus	BR_305_60000	dohoda o brigádnickej práci študen_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_600000	dohoda o brigádnickej práci štude_Centrálne značky OUA				1	bus	BR_305_600000	dohoda o brigádnickej práci štude_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_60100	dohoda o vykonaní práce_Centrálne značky OUA				1	bus	BR_305_60100	dohoda o vykonaní práce_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_60200	dohoda o pracovnej činnosti_Centrálne značky OUA				1	bus	BR_305_60200	dohoda o pracovnej činnosti_Centrálne značky OUA				1	bus
+AccountName	Group	BR_305_60500	dohoda - trainee_Centrálne značky OUA				1	bus	BR_305_60500	dohoda - trainee_Centrálne značky OUA				1	bus
+AccountName	Group	BR_307_11112	Generálny riaditeľ ČSOB Leasing po_Poisťovací maklér				1	bus	BR_307_11112	Generálny riaditeľ ČSOB Leasing po_Poisťovací maklér				1	bus
+AccountName	Group	BR_308_24108	špecialista pre repredaj_Správa aktív a repredaj				1	bus	BR_308_24108	špecialista pre repredaj_Správa aktív a repredaj				1	bus
+AccountName	Group	BR_308_24112	špecialista pre repredaj I_Správa aktív a repredaj				1	bus	BR_308_24112	špecialista pre repredaj I_Správa aktív a repredaj				1	bus
+AccountName	Group	BR_308_24113	špecialista pre repredaj II_Správa aktív a repredaj				1	bus	BR_308_24113	špecialista pre repredaj II_Správa aktív a repredaj				1	bus
+AccountName	Group	BR_308_24137	Špecialista pre repredaj a retailo_Správa aktív a repredaj				1	bus	BR_308_24137	Špecialista pre repredaj a retailo_Správa aktív a repredaj				1	bus
+AccountName	Group	BR_308_60000	dohoda o brigádnickej práci študen_Správa aktív a repredaj				1	bus	BR_308_60000	dohoda o brigádnickej práci študen_Správa aktív a repredaj				1	bus
+AccountName	Group	BR_308_60100	dohoda o vykonaní práce_Správa aktív a repredaj				1	bus	BR_308_60100	dohoda o vykonaní práce_Správa aktív a repredaj				1	bus
+AccountName	Group	BR_308_60200	dohoda o pracovnej činnosti_Správa aktív a repredaj				1	bus	BR_308_60200	dohoda o pracovnej činnosti_Správa aktív a repredaj				1	bus
+AccountName	Group	BR_309_21116	Key Account Manager pre Vendor Support				1	bus	BR_309_21116	Key Account Manager pre Vendor Support				1	bus
+AccountName	Group	BR_311_12141	manažér tímu Riadenie rozvoja obch_Riadenie rozvoja obchodu				1	bus	BR_311_12141	manažér tímu Riadenie rozvoja obch_Riadenie rozvoja obchodu				1	bus
+AccountName	Group	BR_311_21200	Business Developer_Riadenie rozvoja obchodu				1	bus	BR_311_21200	Business Developer_Riadenie rozvoja obchodu				1	bus
+AccountName	Group	BR_311_35104	analytik pre obchodné reporty_Riadenie rozvoja obchodu				1	bus	BR_311_35104	analytik pre obchodné reporty_Riadenie rozvoja obchodu				1	bus
+AccountName	Group	BR_311_60200	dohoda o pracovnej činnosti_Riadenie rozvoja obchodu				1	bus	BR_311_60200	dohoda o pracovnej činnosti_Riadenie rozvoja obchodu				1	bus
+AccountName	Group	BR_313_12148	manažér tímu Technická podpora a s_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_12148	manažér tímu Technická podpora a s_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24100	technický špecialista Full service_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24100	technický špecialista Full service_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24101	špecialista správy vozového parku_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24101	špecialista správy vozového parku_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24102	špecialista OLFS - spolupráca s do_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24102	špecialista OLFS - spolupráca s do_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24106	špecialista Full service_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24106	špecialista Full service_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24107	špecialista fakturácie_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24107	špecialista fakturácie_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24109	špecialista určovania zostatkových_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24109	špecialista určovania zostatkových_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24110	špecialista pre naceňovanie vozidi_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24110	špecialista pre naceňovanie vozidi_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24111	Account Manager pre dodávateľské v_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24111	Account Manager pre dodávateľské v_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24114	technický špecialista OLFS I_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24114	technický špecialista OLFS I_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24115	technický špecialista OLFS II_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24115	technický špecialista OLFS II_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24126	Firemný expert tímu služby Operatí_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24126	Firemný expert tímu služby Operatí_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24127	Špecialista nákupu vozidiel I_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24127	Špecialista nákupu vozidiel I_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24129	Špecialista správy zmlúv a rekalku_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24129	Špecialista správy zmlúv a rekalku_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24130	Technický špecialista II_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24130	Technický špecialista II_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_24133	Account manažér pre dodávateľské v_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_24133	Account manažér pre dodávateľské v_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_319	Manažér tímu Technická podpora a slu_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_319	Manažér tímu Technická podpora a slu_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_60000	dohoda o brigádnickej práci štude_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_60000	dohoda o brigádnickej práci štude_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_60100	dohoda o vykonaní práce_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_60100	dohoda o vykonaní práce_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_60200	dohoda o pracovnej činnosti_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_60200	dohoda o pracovnej činnosti_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_313_60600	Externista – prístupár_Technická podpora a služby operatívneho leasingu				1	bus	BR_313_60600	Externista – prístupár_Technická podpora a služby operatívneho leasingu				1	bus
+AccountName	Group	BR_315_12147	manažér tímu Centrálne spracovanie_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_12147	manažér tímu Centrálne spracovanie_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23105	senior špecialista tímu Centrálne_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23105	senior špecialista tímu Centrálne_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23107	špecialista spracovania zmlúv_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23107	špecialista spracovania zmlúv_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23108	špecialista back office_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23108	špecialista back office_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23110	senior špecialista tímu Centrálna_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23110	senior špecialista tímu Centrálna_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23113	senior špecialista spracovania zml_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23113	senior špecialista spracovania zml_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23120	Senior špecialista pre riadenie pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23120	Senior špecialista pre riadenie pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23121	senior špecialista spracovania zml_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23121	senior špecialista spracovania zml_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23122	špecialista spracovania zmlúv OP C_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23122	špecialista spracovania zmlúv OP C_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23123	špecialista spracovania zmlúv OP C_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23123	špecialista spracovania zmlúv OP C_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23124	špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23124	špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23125	špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23125	špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23126	špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23126	špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_23127	senior špecialista tímu kontroly o_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_23127	senior špecialista tímu kontroly o_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_27104	špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_27104	špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_27108	špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_27108	špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_27109	špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_27109	špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_60000	dohoda o brigádnickej práci študen_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_60000	dohoda o brigádnickej práci študen_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_315_60200	dohoda o pracovnej činnosti_Centrálne_Centrálne spracovanie a kontrola obchodných prípadov				1	bus	BR_315_60200	dohoda o pracovnej činnosti_Centrálne_Centrálne spracovanie a kontrola obchodných prípadov				1	bus
+AccountName	Group	BR_316_29107	konzultant pre firemnú stratégiu a rozvoj				1	bus	BR_316_29107	konzultant pre firemnú stratégiu a rozvoj				1	bus
+AccountName	Group	BR_316_50100	špecialista pre digitálny predaj_Digitálny predaj				1	bus	BR_316_50100	špecialista pre digitálny predaj_Digitálny predaj				1	bus
+AccountName	Group	BR_316_50101	dizajnér produktov, procesov a pou_				1	bus	BR_316_50101	dizajnér produktov, procesov a pou_				1	bus
+AccountName	Group	BR_316_60100	dohoda o vykonaní práce_Digitálny predaj				1	bus	BR_316_60100	dohoda o vykonaní práce_Digitálny predaj				1	bus
+AccountName	Group	BR_317_21116	Key Account Manager pre Vendor Sup_				1	bus	BR_317_21116	Key Account Manager pre Vendor Sup_				1	bus
+AccountName	Group	BR_401_12124	manažér tímu Ľudské zdroje_Ľudské zdroje				1	bus	BR_401_12124	manažér tímu Ľudské zdroje_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28107	personálny a mzdový špecialista_Ľudské zdroje				1	bus	BR_401_28107	personálny a mzdový špecialista_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28109	špecialista odmeňovania, benefitov_Ľudské zdroje				1	bus	BR_401_28109	špecialista odmeňovania, benefitov_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28111	HR Business Partner_Ľudské zdroje				1	bus	BR_401_28111	HR Business Partner_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28112	špecialista pre vzdelávanie a rozv_Ľudské zdroje				1	bus	BR_401_28112	špecialista pre vzdelávanie a rozv_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28113	personálny a mzdový špecialista I_Ľudské zdroje				1	bus	BR_401_28113	personálny a mzdový špecialista I_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28114	špecialista pre vyhľadávanie a výb_Ľudské zdroje				1	bus	BR_401_28114	špecialista pre vyhľadávanie a výb_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28115	personálny konzultant_Ľudské zdroje				1	bus	BR_401_28115	personálny konzultant_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28116	Špecialista vzdelávania a rozvoja_Ľudské zdroje				1	bus	BR_401_28116	Špecialista vzdelávania a rozvoja_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28117	Špecialista odmeňovania a benefito_Ľudské zdroje				1	bus	BR_401_28117	Špecialista odmeňovania a benefito_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28118	Špecialista miezd a personalistiky_Ľudské zdroje				1	bus	BR_401_28118	Špecialista miezd a personalistiky_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_28119	Špecialista náboru - II_Ľudské zdroje				1	bus	BR_401_28119	Špecialista náboru - II_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_60000	dohoda o brigádnickej práci študen_Ľudské zdroje				1	bus	BR_401_60000	dohoda o brigádnickej práci študen_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_60100	dohoda o vykonaní práce_Ľudské zdroje				1	bus	BR_401_60100	dohoda o vykonaní práce_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_60200	dohoda o pracovnej činnosti_Ľudské zdroje				1	bus	BR_401_60200	dohoda o pracovnej činnosti_Ľudské zdroje				1	bus
+AccountName	Group	BR_401_No EB	Rights_Ľudské zdroje				1	bus	BR_401_No EB	Rights_Ľudské zdroje				1	bus
+AccountName	Group	BR_402_12116	manažér tímu Právne služby_Právne služby				1	bus	BR_402_12116	manažér tímu Právne služby_Právne služby				1	bus
+AccountName	Group	BR_402_26100	právnik_Právne služby				1	bus	BR_402_26100	právnik_Právne služby				1	bus
+AccountName	Group	BR_402_26101	špecialista podpory právnych služi_Právne služby				1	bus	BR_402_26101	špecialista podpory právnych služi_Právne služby				1	bus
+AccountName	Group	BR_402_26102	právnik - junior_Právne služby				1	bus	BR_402_26102	právnik - junior_Právne služby				1	bus
+AccountName	Group	BR_402_26104	právnik II_Právne služby				1	bus	BR_402_26104	právnik II_Právne služby				1	bus
+AccountName	Group	BR_402_26105	špecialista podpory právnych služi_Právne služby				1	bus	BR_402_26105	špecialista podpory právnych služi_Právne služby				1	bus
+AccountName	Group	BR_402_26106	špecialista podpory právnych služi_Právne služby				1	bus	BR_402_26106	špecialista podpory právnych služi_Právne služby				1	bus
+AccountName	Group	BR_402_60000	dohoda o brigádnickej práci študen_Právne služby				1	bus	BR_402_60000	dohoda o brigádnickej práci študen_Právne služby				1	bus
+AccountName	Group	BR_402_60020	dohoda o pracovnej činnosti_Právne služby				1	bus	BR_402_60020	dohoda o pracovnej činnosti_Právne služby				1	bus
+AccountName	Group	BR_402_600200	dohoda o pracovnej činnosti_Právne služby				1	bus	BR_402_600200	dohoda o pracovnej činnosti_Právne služby				1	bus
+AccountName	Group	BR_402_60100	dohoda o vykonaní práce_Právne služby				1	bus	BR_402_60100	dohoda o vykonaní práce_Právne služby				1	bus
+AccountName	Group	BR_403_32103	Business analytik procesov_Organizačné, projektové a procesné riadenie				1	bus	BR_403_32103	Business analytik procesov_Organizačné, projektové a procesné riadenie				1	bus
+AccountName	Group	BR_403_32104	Business analytik pre finančné ria_Organizačné, projektové a procesné riadenie				1	bus	BR_403_32104	Business analytik pre finančné ria_Organizačné, projektové a procesné riadenie				1	bus
+AccountName	Group	BR_403_38105	projektový manažér junior_Organizačné, projektové a procesné riadenie				1	bus	BR_403_38105	projektový manažér junior_Organizačné, projektové a procesné riadenie				1	bus
+AccountName	Group	BR_403_60020	dohoda o pracovnej činnosti_Organizačné, projektové a procesné riadenie				1	bus	BR_403_60020	dohoda o pracovnej činnosti_Organizačné, projektové a procesné riadenie				1	bus
+AccountName	Group	BR_403_60200	dohoda o pracovnej činnosti_Organizačné, projektové a procesné riadenie				1	bus	BR_403_60200	dohoda o pracovnej činnosti_Organizačné, projektové a procesné riadenie				1	bus
+AccountName	Group	BR_404_12130	manažér tímu Riad. operačného rizi_Riadenie operačného rizika a Compliance				1	bus	BR_404_12130	manažér tímu Riad. operačného rizi_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_12131	manažér tímu Riadenie rizík_Riadenie rizík				1	bus	BR_404_12131	manažér tímu Riadenie rizík_Riadenie rizík				1	bus
+AccountName	Group	BR_404_27103	špecialista kontroly_Riadenie operačného rizika a Compliance				1	bus	BR_404_27103	špecialista kontroly_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_27105	Špecialista Compliance_Riadenie operačného rizika a Compliance				1	bus	BR_404_27105	Špecialista Compliance_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_27106	Audítor_Riadenie operačného rizika a Compliance				1	bus	BR_404_27106	Audítor_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_27107	Poradca pre compliance III_Riadenie operačného rizika a Compliance				1	bus	BR_404_27107	Poradca pre compliance III_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_37122	Information Risk Officer_Riadenie operačného rizika a Compliance				1	bus	BR_404_37122	Information Risk Officer_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_39109	špecialista operačného rizika_Riadenie operačného rizika a Compliance				1	bus	BR_404_39109	špecialista operačného rizika_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_60000	dohoda o brigádnickej práci študen_Riadenie operačného rizika a Compliance				1	bus	BR_404_60000	dohoda o brigádnickej práci študen_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_404_60100	dohoda o vykonaní práce_Riadenie operačného rizika a Compliance				1	bus	BR_404_60100	dohoda o vykonaní práce_Riadenie operačného rizika a Compliance				1	bus
+AccountName	Group	BR_405_12143	manažér tímu IT rozvoj systémov_IT rozvoj systémov				1	bus	BR_405_12143	manažér tímu IT rozvoj systémov_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37114	architekt IS_IT rozvoj systémov				1	bus	BR_405_37114	architekt IS_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37121	Enterprise Architect_IT rozvoj systémov				1	bus	BR_405_37121	Enterprise Architect_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37121_IDex	Enterprise Architect_IT rozvoj systémov_IDex				1	bus	BR_405_37121_IDex	Enterprise Architect_IT rozvoj systémov_IDex				1	bus
+AccountName	Group	BR_405_37125	architekt pre dátovú platformu_IT rozvoj systémov				1	bus	BR_405_37125	architekt pre dátovú platformu_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37126	koordinátor procesov softvérového_IT rozvoj systémov				1	bus	BR_405_37126	koordinátor procesov softvérového_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37128	špecialista testovania informačnýc_IT rozvoj systémov				1	bus	BR_405_37128	špecialista testovania informačnýc_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37129	Dátový Architekt I_IT rozvoj systémov				1	bus	BR_405_37129	Dátový Architekt I_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37130	Dátový Architekt II_IT rozvoj systémov				1	bus	BR_405_37130	Dátový Architekt II_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37131	Dátový Architekt III_IT rozvoj systémov				1	bus	BR_405_37131	Dátový Architekt III_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37132	IT Architekt I_IT rozvoj systémov				1	bus	BR_405_37132	IT Architekt I_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37133	IT Architekt II_IT rozvoj systémov				1	bus	BR_405_37133	IT Architekt II_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_37134	Release MA-koordinátor procesov SW_IT rozvoj systémov				1	bus	BR_405_37134	Release MA-koordinátor procesov SW_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_60000	dohoda o brigádnickej práci študen_IT rozvoj systémov				1	bus	BR_405_60000	dohoda o brigádnickej práci študen_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_60100	dohoda o vykonaní práce_IT rozvoj systémov				1	bus	BR_405_60100	dohoda o vykonaní práce_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_60600	Externista – prístupár_IT rozvoj systémov				1	bus	BR_405_60600	Externista – prístupár_IT rozvoj systémov				1	bus
+AccountName	Group	BR_405_No EB	Rights_IT rozvoj systémov				1	bus	BR_405_No EB	Rights_IT rozvoj systémov				1	bus
+AccountName	Group	BR_406_12120	manažér tímu Credit risk_Credit risk				1	bus	BR_406_12120	manažér tímu Credit risk_Credit risk				1	bus
+AccountName	Group	BR_406_39100	špecialista riadenia rizík II_Credit risk				1	bus	BR_406_39100	špecialista riadenia rizík II_Credit risk				1	bus
+AccountName	Group	BR_406_39101	špecialista riadenia rizík I_Credit risk				1	bus	BR_406_39101	špecialista riadenia rizík I_Credit risk				1	bus
+AccountName	Group	BR_406_39102	špecialista riadenia rizík I_Credit risk				1	bus	BR_406_39102	špecialista riadenia rizík I_Credit risk				1	bus
+AccountName	Group	BR_406_39108	špecialista riadenia rizík III_Credit risk				1	bus	BR_406_39108	špecialista riadenia rizík III_Credit risk				1	bus
+AccountName	Group	BR_406_39110	Expert schvaľovacích procesov_Credit risk				1	bus	BR_406_39110	Expert schvaľovacích procesov_Credit risk				1	bus
+AccountName	Group	BR_406_39111	špecialista riadenia rizík III_Credit risk				1	bus	BR_406_39111	špecialista riadenia rizík III_Credit risk				1	bus
+AccountName	Group	BR_406_60000	dohoda o brigádnickej práci študen_Credit risk				1	bus	BR_406_60000	dohoda o brigádnickej práci študen_Credit risk				1	bus
+AccountName	Group	BR_406_No	Rights_Credit risk				1	bus	BR_406_No	Rights_Credit risk				1	bus
+AccountName	Group	BR_407_12108	manažér tímu Riadenie portfólia_Riadenie portfólia				1	bus	BR_407_12108	manažér tímu Riadenie portfólia_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_23108	špecialista back office_Riadenie portfólia				1	bus	BR_407_23108	špecialista back office_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_24103	špecialista určovania zostatkových_Riadenie portfólia				1	bus	BR_407_24103	špecialista určovania zostatkových_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_24109	špecialista určovania zostatkových_Riadenie portfólia				1	bus	BR_407_24109	špecialista určovania zostatkových_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_24110	špecialista pre naceňovanie vozidi_Riadenie portfólia				1	bus	BR_407_24110	špecialista pre naceňovanie vozidi_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_24116	špecialista určovania zostatkových_Riadenie portfólia				1	bus	BR_407_24116	špecialista určovania zostatkových_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_40100	špecialista správy pohľadávok II_Riadenie portfólia				1	bus	BR_407_40100	špecialista správy pohľadávok II_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_40101	špecialista správy pohľadávok I_Riadenie portfólia				1	bus	BR_407_40101	špecialista správy pohľadávok I_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_40102	špecialista správy pohľadávok III_Riadenie portfólia				1	bus	BR_407_40102	špecialista správy pohľadávok III_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_40103	špecialista správy pohľadávok I_Riadenie portfólia				1	bus	BR_407_40103	špecialista správy pohľadávok I_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_40104	špecialista správy pohľadávok II_Riadenie portfólia				1	bus	BR_407_40104	špecialista správy pohľadávok II_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_41101	špecialista ohrozených aktív_Riadenie portfólia				1	bus	BR_407_41101	špecialista ohrozených aktív_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_41103	špecialista pre konečné finančné v_Riadenie portfólia				1	bus	BR_407_41103	špecialista pre konečné finančné v_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_41104	Senior špecialista ohrozených aktí_Riadenie portfólia				1	bus	BR_407_41104	Senior špecialista ohrozených aktí_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_41105	špecialista ohrozených aktív I_Riadenie portfólia				1	bus	BR_407_41105	špecialista ohrozených aktív I_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_41106	špecialista ohrozených aktív II_Riadenie portfólia				1	bus	BR_407_41106	špecialista ohrozených aktív II_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_48101	senior špecialista back-office pro_Riadenie portfólia				1	bus	BR_407_48101	senior špecialista back-office pro_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_60000	dohoda o brigádnickej práci študen_Riadenie portfólia				1	bus	BR_407_60000	dohoda o brigádnickej práci študen_Riadenie portfólia				1	bus
+AccountName	Group	BR_407_60200	dohoda o pracovnej činnosti_Riadenie portfólia				1	bus	BR_407_60200	dohoda o pracovnej činnosti_Riadenie portfólia				1	bus
+AccountName	Group	BR_408_12126	manažér tímu Účtovníctvo a dane_Účtovníctvo a dane				1	bus	BR_408_12126	manažér tímu Účtovníctvo a dane_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_33101	účtovník II_Účtovníctvo a dane				1	bus	BR_408_33101	účtovník II_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_33102	účtovník I_Účtovníctvo a dane				1	bus	BR_408_33102	účtovník I_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_33103	účtovno-daňový metodik_Účtovníctvo a dane				1	bus	BR_408_33103	účtovno-daňový metodik_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_33105	účtovník III_Účtovníctvo a dane				1	bus	BR_408_33105	účtovník III_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_33106	účtovník I_Účtovníctvo a dane				1	bus	BR_408_33106	účtovník I_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_33108	účtovník II_Účtovníctvo a dane				1	bus	BR_408_33108	účtovník II_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_60000	dohoda o brigádnickej práci študen_Účtovníctvo a dane				1	bus	BR_408_60000	dohoda o brigádnickej práci študen_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_60100	dohoda o vykonaní práce_Účtovníctvo a dane				1	bus	BR_408_60100	dohoda o vykonaní práce_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_408_60600	Externista – prístupár_Účtovníctvo a dane				1	bus	BR_408_60600	Externista – prístupár_Účtovníctvo a dane				1	bus
+AccountName	Group	BR_409_12115	manažér tímu Controlling a reporti_Controlling a reporting				1	bus	BR_409_12115	manažér tímu Controlling a reporti_Controlling a reporting				1	bus
+AccountName	Group	BR_409_12115_M	manažér tímu Controlling a reporti_Controlling a reporting_M				1	bus	BR_409_12115_M	manažér tímu Controlling a reporti_Controlling a reporting_M				1	bus
+AccountName	Group	BR_409_27103	špecialista kontroly_Controlling a reporting				1	bus	BR_409_27103	špecialista kontroly_Controlling a reporting				1	bus
+AccountName	Group	BR_409_33104	špecialista pre refinancovanie_Controlling a reporting				1	bus	BR_409_33104	špecialista pre refinancovanie_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35101	finančný analytik II_Controlling a reporting				1	bus	BR_409_35101	finančný analytik II_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35102	finančný analytik III_Controlling a reporting				1	bus	BR_409_35102	finančný analytik III_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35103	finančný špecialista_Controlling a reporting				1	bus	BR_409_35103	finančný špecialista_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35105	poradca pre projekty Controlling&amp;R_Controlling a reporting				1	bus	BR_409_35105	poradca pre projekty Controlling&amp;R_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35106	dátový špecialista_Controlling a reporting				1	bus	BR_409_35106	dátový špecialista_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35107	špecialista pre dátové sklady_Controlling a reporting				1	bus	BR_409_35107	špecialista pre dátové sklady_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35108	špecialista pre manažment dát_Controlling a reporting				1	bus	BR_409_35108	špecialista pre manažment dát_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35109	Architekt riešení biznis inteligen_Controlling a reporting				1	bus	BR_409_35109	Architekt riešení biznis inteligen_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35110	dátový analytik I_Controlling a reporting				1	bus	BR_409_35110	dátový analytik I_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35111	dátový analytik II_Controlling a reporting				1	bus	BR_409_35111	dátový analytik II_Controlling a reporting				1	bus
+AccountName	Group	BR_409_35113	dátový analytik I_Controlling a reporting				1	bus	BR_409_35113	dátový analytik I_Controlling a reporting				1	bus
+AccountName	Group	BR_409_60000	dohoda o brigádnickej práci študen_Controlling a reporting				1	bus	BR_409_60000	dohoda o brigádnickej práci študen_Controlling a reporting				1	bus
+AccountName	Group	BR_409_60100	dohoda o vykonaní práce_Controlling a reporting				1	bus	BR_409_60100	dohoda o vykonaní práce_Controlling a reporting				1	bus
+AccountName	Group	BR_409_60200	dohoda o pracovnej činnosti_Controlling a reporting				1	bus	BR_409_60200	dohoda o pracovnej činnosti_Controlling a reporting				1	bus
+AccountName	Group	BR_409_60400	dohody - sprostredkovanie_Controlling a reporting				1	bus	BR_409_60400	dohody - sprostredkovanie_Controlling a reporting				1	bus
+AccountName	Group	BR_409_60600	Externista – prístupár_Controlling a reporting				1	bus	BR_409_60600	Externista – prístupár_Controlling a reporting				1	bus
+AccountName	Group	BR_409_No EB	Rights_Controlling a reporting				1	bus	BR_409_No EB	Rights_Controlling a reporting				1	bus
+AccountName	Group	BR_410_12138	manažér tímu Centrálny nákup a slu_Centrálny nákup a služby				1	bus	BR_410_12138	manažér tímu Centrálny nákup a slu_Centrálny nákup a služby				1	bus
+AccountName	Group	BR_410_36100	špecialista pre riadenie nákupu_Centrálny nákup a služby				1	bus	BR_410_36100	špecialista pre riadenie nákupu_Centrálny nákup a služby				1	bus
+AccountName	Group	BR_410_36106	špecialista centrálneho nákupu a s_Centrálny nákup a služby				1	bus	BR_410_36106	špecialista centrálneho nákupu a s_Centrálny nákup a služby				1	bus
+AccountName	Group	BR_410_44100	archivár_Centrálny nákup a služby				1	bus	BR_410_44100	archivár_Centrálny nákup a služby				1	bus
+AccountName	Group	BR_410_44101	špecialista správy registratúry a_Centrálny nákup a služby				1	bus	BR_410_44101	špecialista správy registratúry a_Centrálny nákup a služby				1	bus
+AccountName	Group	BR_410_60020	dohoda o pracovnej činnosti_Centrálny nákup a služby				1	bus	BR_410_60020	dohoda o pracovnej činnosti_Centrálny nákup a služby				1	bus
+AccountName	Group	BR_410_60200	dohoda o pracovnej činnosti_Centrálny nákup a služby				1	bus	BR_410_60200	dohoda o pracovnej činnosti_Centrálny nákup a služby				1	bus
+AccountName	Group	BR_411_27105	Špecialista Compliance_Compliance				1	bus	BR_411_27105	Špecialista Compliance_Compliance				1	bus
+AccountName	Group	BR_412_12127	manažér tímu Finančné služby_Finančné služby				1	bus	BR_412_12127	manažér tímu Finančné služby_Finančné služby				1	bus
+AccountName	Group	BR_412_23108	špecialista back office_Finančné služby				1	bus	BR_412_23108	špecialista back office_Finančné služby				1	bus
+AccountName	Group	BR_412_34101	špecialista správy produktov pre d_Finančné služby				1	bus	BR_412_34101	špecialista správy produktov pre d_Finančné služby				1	bus
+AccountName	Group	BR_412_34102	špecialista platobného styku II_Finančné služby				1	bus	BR_412_34102	špecialista platobného styku II_Finančné služby				1	bus
+AccountName	Group	BR_412_34102_BANKA	špecialista platobného styku II_Finančné služby_BANKA				1	bus	BR_412_34102_BANKA	špecialista platobného styku II_Finančné služby_BANKA				1	bus
+AccountName	Group	BR_412_34103	špecialista platobného styku I_Finančné služby				1	bus	BR_412_34103	špecialista platobného styku I_Finančné služby				1	bus
+AccountName	Group	BR_412_34104	špecialista platobného styku III_Finančné služby				1	bus	BR_412_34104	špecialista platobného styku III_Finančné služby				1	bus
+AccountName	Group	BR_412_34105	špecialista platobných operácií_Finančné služby				1	bus	BR_412_34105	špecialista platobných operácií_Finančné služby				1	bus
+AccountName	Group	BR_412_34106	špecialista platobného styku a pla_Finančné služby				1	bus	BR_412_34106	špecialista platobného styku a pla_Finančné služby				1	bus
+AccountName	Group	BR_412_34107	špecialista účtovania bankových op_Finančné služby				1	bus	BR_412_34107	špecialista účtovania bankových op_Finančné služby				1	bus
+AccountName	Group	BR_412_34108	špecialista správy produktov pre d_Finančné služby				1	bus	BR_412_34108	špecialista správy produktov pre d_Finančné služby				1	bus
+AccountName	Group	BR_412_34109	špecialista správy produktov pre d_Finančné služby				1	bus	BR_412_34109	špecialista správy produktov pre d_Finančné služby				1	bus
+AccountName	Group	BR_412_34110	špecialista správy produktov pre d_Finančné služby				1	bus	BR_412_34110	špecialista správy produktov pre d_Finančné služby				1	bus
+AccountName	Group	BR_412_34111	špecialista platobného styku I_Finančné služby				1	bus	BR_412_34111	špecialista platobného styku I_Finančné služby				1	bus
+AccountName	Group	BR_412_60000	dohoda o brigádnickej práci študen_Finančné služby				1	bus	BR_412_60000	dohoda o brigádnickej práci študen_Finančné služby				1	bus
+AccountName	Group	BR_412_60200	dohoda o pracovnej činnosti_Finančné služby				1	bus	BR_412_60200	dohoda o pracovnej činnosti_Finančné služby				1	bus
+AccountName	Group	BR_412_No EB	Rights_Finančné služby				1	bus	BR_412_No EB	Rights_Finančné služby				1	bus
+AccountName	Group	BR_414_12144	manažér tímu IT prevádzka_IT prevádzka				1	bus	BR_414_12144	manažér tímu IT prevádzka_IT prevádzka				1	bus
+AccountName	Group	BR_414_35106	dátový analytik_IT prevádzka				1	bus	BR_414_35106	dátový analytik_IT prevádzka				1	bus
+AccountName	Group	BR_414_37100	systémový administrátor_IT prevádzka				1	bus	BR_414_37100	systémový administrátor_IT prevádzka				1	bus
+AccountName	Group	BR_414_37101	systémový administrátor I_IT prevádzka				1	bus	BR_414_37101	systémový administrátor I_IT prevádzka				1	bus
+AccountName	Group	BR_414_37102	systémový administrátor II_IT prevádzka				1	bus	BR_414_37102	systémový administrátor II_IT prevádzka				1	bus
+AccountName	Group	BR_414_37103	systémový administrátor III_IT prevádzka				1	bus	BR_414_37103	systémový administrátor III_IT prevádzka				1	bus
+AccountName	Group	BR_414_37114	architekt IS_IT prevádzka				1	bus	BR_414_37114	architekt IS_IT prevádzka				1	bus
+AccountName	Group	BR_414_37116	databázový administrátor_IT prevádzka				1	bus	BR_414_37116	databázový administrátor_IT prevádzka				1	bus
+AccountName	Group	BR_414_37118	špecialista informačnej bezpečnost_IT prevádzka				1	bus	BR_414_37118	špecialista informačnej bezpečnost_IT prevádzka				1	bus
+AccountName	Group	BR_414_37120	ITSM špecialista_IT prevádzka				1	bus	BR_414_37120	ITSM špecialista_IT prevádzka				1	bus
+AccountName	Group	BR_414_37123	aplikačný administrátor_IT prevádzka				1	bus	BR_414_37123	aplikačný administrátor_IT prevádzka				1	bus
+AccountName	Group	BR_414_37124	správca počítačovej siete a HW_IT prevádzka				1	bus	BR_414_37124	správca počítačovej siete a HW_IT prevádzka				1	bus
+AccountName	Group	BR_414_37127	architekt infraštruktúry_IT prevádzka				1	bus	BR_414_37127	architekt infraštruktúry_IT prevádzka				1	bus
+AccountName	Group	BR_414_37128	špecialista testovania informačnýc_IT prevádzka				1	bus	BR_414_37128	špecialista testovania informačnýc_IT prevádzka				1	bus
+AccountName	Group	BR_414_37135	aplikačný administrátor I_IT prevádzka				1	bus	BR_414_37135	aplikačný administrátor I_IT prevádzka				1	bus
+AccountName	Group	BR_414_37136	aplikačný administrátor II_IT prevádzka				1	bus	BR_414_37136	aplikačný administrátor II_IT prevádzka				1	bus
+AccountName	Group	BR_414_37137	aplikačný administrátor III_IT prevádzka				1	bus	BR_414_37137	aplikačný administrátor III_IT prevádzka				1	bus
+AccountName	Group	BR_414_37138	správca počítačovej siete a HW I_IT prevádzka				1	bus	BR_414_37138	správca počítačovej siete a HW I_IT prevádzka				1	bus
+AccountName	Group	BR_414_37139	správca počítačovej siete a HW II_IT prevádzka				1	bus	BR_414_37139	správca počítačovej siete a HW II_IT prevádzka				1	bus
+AccountName	Group	BR_414_38105	projektový manažér junior_IT prevádzka				1	bus	BR_414_38105	projektový manažér junior_IT prevádzka				1	bus
+AccountName	Group	BR_414_60000	dohoda o brigádnickej práci študen_IT prevádzka				1	bus	BR_414_60000	dohoda o brigádnickej práci študen_IT prevádzka				1	bus
+AccountName	Group	BR_414_60200	dohoda o pracovnej činnosti_IT prevádzka				1	bus	BR_414_60200	dohoda o pracovnej činnosti_IT prevádzka				1	bus
+AccountName	Group	BR_414_60600	Externista – prístupár_IT prevádzka				1	bus	BR_414_60600	Externista – prístupár_IT prevádzka				1	bus
+AccountName	Group	BR_415_12145	manažér tímu Procesné riadenie a b_Procesné riadenie a business architektúra				1	bus	BR_415_12145	manažér tímu Procesné riadenie a b_Procesné riadenie a business architektúra				1	bus
+AccountName	Group	BR_415_32102	Business analytik produktov a proc_Procesné riadenie a business architektúra				1	bus	BR_415_32102	Business analytik produktov a proc_Procesné riadenie a business architektúra				1	bus
+AccountName	Group	BR_415_32105	Business architect_Procesné riadenie a business architektúra				1	bus	BR_415_32105	Business architect_Procesné riadenie a business architektúra				1	bus
+AccountName	Group	BR_415_48100	manažér systému kvality_Procesné riadenie a business architektúra				1	bus	BR_415_48100	manažér systému kvality_Procesné riadenie a business architektúra				1	bus
+AccountName	Group	BR_415_60200	dohoda o pracovnej činnosti_Procesné riadenie a business architektúra				1	bus	BR_415_60200	dohoda o pracovnej činnosti_Procesné riadenie a business architektúra				1	bus
+AccountName	Group	BR_415_No EB	Rights_Procesné riadenie a business architektúra				1	bus	BR_415_No EB	Rights_Procesné riadenie a business architektúra				1	bus
+AccountName	Group	BR_416_12146	manažér tímu Projektový manažment_Projektový manažment				1	bus	BR_416_12146	manažér tímu Projektový manažment_Projektový manažment				1	bus
+AccountName	Group	BR_416_38104	projektový manažér_Projektový manažment				1	bus	BR_416_38104	projektový manažér_Projektový manažment				1	bus
+AccountName	Group	BR_416_38105	projektový manažér junior_Projektový manažment				1	bus	BR_416_38105	projektový manažér junior_Projektový manažment				1	bus
+AccountName	Group	BR_416_38106	projektový manažér I_Projektový manažment				1	bus	BR_416_38106	projektový manažér I_Projektový manažment				1	bus
+AccountName	Group	BR_416_38107	projektový manažér II_Projektový manažment				1	bus	BR_416_38107	projektový manažér II_Projektový manažment				1	bus
+AccountName	Group	BR_416_38108	projektový manažér III_Projektový manažment				1	bus	BR_416_38108	projektový manažér III_Projektový manažment				1	bus
+AccountName	Group	BR_416_38109	projektový manažér IV_Projektový manažment				1	bus	BR_416_38109	projektový manažér IV_Projektový manažment				1	bus
+AccountName	Group	BR_520_13113	regionálny riaditeľ_Región Západ				1	bus	BR_520_13113	regionálny riaditeľ_Región Západ				1	bus
+AccountName	Group	BR_520_13118	regionálny riaditeľ I_Región Západ				1	bus	BR_520_13118	regionálny riaditeľ I_Región Západ				1	bus
+AccountName	Group	BR_530_13113	regionálny riaditeľ_Región Východ				1	bus	BR_530_13113	regionálny riaditeľ_Región Východ				1	bus
+AccountName	Group	BR_530_13119	regionálny riaditeľ II_Región Východ				1	bus	BR_530_13119	regionálny riaditeľ II_Región Východ				1	bus
+AccountName	Group	BR_540_13113	regionálny riaditeľ_Región Stred				1	bus	BR_540_13113	regionálny riaditeľ_Región Stred				1	bus
+AccountName	Group	BR_540_13118	regionálny riaditeľ I_Región Stred				1	bus	BR_540_13118	regionálny riaditeľ I_Región Stred				1	bus
+AccountName	Group	BR_540_13119	regionálny riaditeľ II_Región Stred				1	bus	BR_540_13119	regionálny riaditeľ II_Región Stred				1	bus
+AccountName	Group	BR_550_13113	regionálny riaditeľ_Región Sever				1	bus	BR_550_13113	regionálny riaditeľ_Región Sever				1	bus
+AccountName	Group	BR_550_13118	regionálny riaditeľ I_Región Sever				1	bus	BR_550_13118	regionálny riaditeľ I_Región Sever				1	bus
+AccountName	Group	BR_560_13113	regionálny riaditeľ_Región Juh				1	bus	BR_560_13113	regionálny riaditeľ_Región Juh				1	bus
+AccountName	Group	BR_560_13119	regionálny riaditeľ II_Región Juh				1	bus	BR_560_13119	regionálny riaditeľ II_Región Juh				1	bus
+AccountName	Group	BR_560_21112	junior akvizítor_Región Juh				1	bus	BR_560_21112	junior akvizítor_Región Juh				1	bus
+AccountName	Group	BR_570_13116	Riaditeľ tímu Systémoví dodávateli_Systémoví dodávatelia a externé distribučné siete				1	bus	BR_570_13116	Riaditeľ tímu Systémoví dodávateli_Systémoví dodávatelia a externé distribučné siete				1	bus
+AccountName	Group	BR_570_13120	Riaditeľ tímu Systémoví dodávateli_Systémoví dodávatelia a správa aktív a repredaj				1	bus	BR_570_13120	Riaditeľ tímu Systémoví dodávateli_Systémoví dodávatelia a správa aktív a repredaj				1	bus
+AccountName	Group	BR_570_21113	Key Account Manager_Systémoví dodávatelia a externé distribučné siete				1	bus	BR_570_21113	Key Account Manager_Systémoví dodávatelia a externé distribučné siete				1	bus
+AccountName	Group	BR_570_21116	Key Account Manager pre Vendor Sup_Systémoví dodávatelia a externé distribučné siete				1	bus	BR_570_21116	Key Account Manager pre Vendor Sup_Systémoví dodávatelia a externé distribučné siete				1	bus
+AccountName	Group	BR_570_24108	špecialista pre repredaj_Systémoví dodávatelia a externé distribučné siete				1	bus	BR_570_24108	špecialista pre repredaj_Systémoví dodávatelia a externé distribučné siete				1	bus
+AccountName	Group	BR_570_326	Raditeľ tímu Systémoví dodávatelia_Systémoví dodávatelia a správa aktív a repredaj				1	bus	BR_570_326	Riaditeľ tímu Systémoví dodávatelia_Systémoví dodávatelia a správa aktív a repredaj				1	bus
+AccountName	Group	BR_570_60000	dohoda o brigádnickej práci študen_Systémoví dodávatelia a externé distribučné siete				1	bus	BR_570_60000	dohoda o brigádnickej práci študen_Systémoví dodávatelia a externé distribučné siete				1	bus
+AccountName	Group	BR_580_13111	riaditeľ pre korporátne financovan_Korporátne obchody				1	bus	BR_580_13111	riaditeľ pre korporátne financovan_Korporátne obchody				1	bus
+AccountName	Group	BR_580_13112	riaditeľ tímu Korporátne financova_Korporátne obchody				1	bus	BR_580_13112	riaditeľ tímu Korporátne financova_Korporátne obchody				1	bus
+AccountName	Group	BR_580_21118	Business Dev. pre operatívny leasi_Firemná expertíza pre obchod a podporu				1	bus	BR_580_21118	Business Dev. pre operatívny leasi_Firemná expertíza pre obchod a podporu				1	bus
+AccountName	Group	BR_590_13113	regionálny riaditeľ_Región Severozápad				1	bus	BR_590_13113	regionálny riaditeľ_Región Severozápad				1	bus
+AccountName	Group	BR_590_13118	regionálny riaditeľ I_Región Severozápad				1	bus	BR_590_13118	regionálny riaditeľ I_Región Severozápad				1	bus
+AccountName	Group	BR_admin_CDBP	administrátor_CDBP				1	bus	BR_admin_CDBP	administrátor_CDBP				1	bus
+AccountName	Group	BR_admin_CDBP	administrátor_CDBP				1	bus	BR_admin_CDBP	administrátor_CDBP				1	bus
+AccountName	Group	BR_admin_DUX	administrátor_DUX				1	bus	BR_admin_DUX	administrátor_DUX				1	bus
+AccountName	Group	BR_admin_LEASIT	administrátor_LEASIT				1	bus	BR_admin_LEASIT	administrátor_LEASIT				1	bus
+AccountName	Group	BR_admin_MDK	administrátor_MDK				1	bus	BR_admin_MDK	administrátor_MDK				1	bus
+AccountName	Group	BR_admin_MDK_1	administrátor_MDK_1				1	bus	BR_admin_MDK_1	administrátor_MDK_1				1	bus
+AccountName	Group	BR_admin_MDK_2	administrátor_MDK_2				1	bus	BR_admin_MDK_2	administrátor_MDK_2				1	bus
+AccountName	Group	BR_admin_MDK_4	administrátor_MDK_4				1	bus	BR_admin_MDK_4	administrátor_MDK_4				1	bus
+AccountName	Group	BR_admin_MDK_5	administrátor_MDK_5				1	bus	BR_admin_MDK_5	administrátor_MDK_5				1	bus
+AccountName	Group	BR_admin_MDK_6	administrátor_MDK_6				1	bus	BR_admin_MDK_6	administrátor_MDK_6				1	bus
+AccountName	Group	BR_admin_MDK_7	administrátor_MDK_7				1	bus	BR_admin_MDK_7	administrátor_MDK_7				1	bus
+AccountName	Group	BR_Administrators	Administrators				1	bus	BR_Administrators	Administrators				1	bus
+AccountName	Group	BR_man_ISO_IRO_manual	manažer ISO/IRO_Manuál				1	bus	BR_man_ISO_IRO_manual	manažer ISO/IRO_Manuál				0	bus
+AccountName	Group	BR_man_ISO_IRO_manual	manažer ISO/IRO_Manuál				1	bus	BR_man_ISO_IRO_manual	manažer ISO/IRO_Manuál				1	bus
+AccountName	Group	BR_man_ITprovoz_manual	manažer IT provozu_Manuál				1	bus	BR_man_ITprovoz_manual	manažer IT provozu_Manuál				0	bus
+AccountName	Group	BR_senior spec tim Centralne spracovanie zmluv_2	senior špecialista tímu Centrálne spracovanie zmlúv 2				1	bus	BR_senior spec tim Centralne spracovanie zmluv_2	senior špecialista tímu Centrálne spracovanie zmlúv 2				1	bus
+AccountName	Group	BR_spec riadenia rizik III_Credit risk_2	špecialista riadenia rizík III_Credit risk_2				1	bus	BR_spec riadenia rizik III_Credit risk_2	špecialista riadenia rizík III_Credit risk_2				1	bus
+AccountName	Group	BR_špecialista riadenia rizík III_2	špecialista riadenia rizík III 2				1	bus	BR_špecialista riadenia rizík III_2	špecialista riadenia rizík III 2				1	bus
+AccountName	Group	BR_vsichnizam_CSOBL	všichni zaměstnanci_CSOBL				1	bus	BR_vsichnizam_CSOBL	všichni zaměstnanci_CSOBL				1	bus
+AccountName	Group	BR_vsichnizam_CSOBL	všichni zaměstnanci_CSOBL				1	bus	BR_vsichnizam_CSOBL	všichni zaměstnanci_CSOBL				1	bus
+AccountName	Group	BRC_160_11111	VR_Informačné technológie a podpora				1	bus	BRC_160_11111	VR_Informačné technológie a podpora				1	bus
+AccountName	Group	BRC_200_21111_RPO	senior akvizítor_Región Juh (Bratislava)_RPO				1	bus	BRC_200_21111_RPO	senior akvizítor_Región Juh (Bratislava)_RPO				1	bus
+AccountName	Group	BRC_203_60000	dohoda o vykonaní práce_Korporátne financovanie				1	bus	BRC_203_60000	dohoda o vykonaní práce_Korporátne financovanie				1	bus
+AccountName	Group	BRC_208_21111	BRC_senior akvizítor_Región Juh (Dunajská Streda)				1	bus	BRC_208_21111	BRC_senior akvizítor_Región Juh (Dunajská Streda)				1	bus
+AccountName	Group	BRC_220_21111_RPO	senior akvizítor_Región Sever (Žilina)_RPO				1	bus	BRC_220_21111_RPO	senior akvizítor_Región Sever (Žilina)_RPO				1	bus
+AccountName	Group	BRC_220_21111_RPO	senior akvizítor_Región Sever (Žilina)_RPO				1	bus	BRC_220_21111_RPO	senior akvizítor_Región Sever (Žilina)_RPO				1	bus
+AccountName	Group	BRC_220_21111_schvalovatel_LEA	senior akvizítor_Región Sever (Žilina)_schvaľovateľ LEA				1	bus	BRC_220_21111_schvalovatel_LEA	senior akvizítor_Región Sever (Žilina)_schvaľovateľ LEA				1	bus
+AccountName	Group	BRC_240_21111_RPO	senior akvizítor_Región Východ (Košice)_RPO				1	bus	BRC_240_21111_RPO	senior akvizítor_Región Východ (Košice)_RPO				1	bus
+AccountName	Group	BRC_250_21111_RPO	senior akvizítor_Región Východ (Prešov)_RPO				1	bus	BRC_250_21111_RPO	senior akvizítor_Región Východ (Prešov)_RPO				1	bus
+AccountName	Group	BRC_260_60000_JAQ	dohoda o brigádnickej práci študen_Región Západ (Nitra)_JAQ				1	bus	BRC_260_60000_JAQ	dohoda o brigádnickej práci študen_Región Západ (Nitra)_JAQ				1	bus
+AccountName	Group	BRC_270_21111_RPO	senior akvizítor_Región Stred (Poprad)_RPO				1	bus	BRC_270_21111_RPO	senior akvizítor_Región Stred (Poprad)_RPO				1	bus
+AccountName	Group	BRC_280_21111_RPO	senior akvizítor_Región Severozápad (Trnava)_RPO				1	bus	BRC_280_21111_RPO	senior akvizítor_Región Severozápad (Trnava)_RPO				1	bus
+AccountName	Group	BRC_301_30107_BLG	špecialista pre podporu predaja_Produktový vývoj a trhové riešenia_BLG				1	bus	BRC_301_30107_BLG	špecialista pre podporu predaja_Produktový vývoj a trhové riešenia_BLG				1	bus
+AccountName	Group	BRC_302_45104_1	špecialista pre správu provízií z_Poistenie_dohoda				0	bus	BRC_302_45104_1	špecialista pre správu provízií z_Poistenie_dohoda				1	bus
+AccountName	Group	BRC_308_24108	špecialista pre repredaj_Správa aktív a repredaj_RPO				1	bus	BRC_308_24108	špecialista pre repredaj_Správa aktív a repredaj_RPO				1	bus
+AccountName	Group	BRC_308_24112_zastup	špecialista pre repredaj I_Správa aktív a repredaj_zastupovanie				1	bus	BRC_308_24112_zastup	špecialista pre repredaj I_Správa aktív a repredaj_zastupovanie				1	bus
+AccountName	Group	BRC_32083	Právo na schvaľovanie výnimiek v eLCT				1	bus	BRC_32083	Právo na schvaľovanie výnimiek v eLCT				1	bus
+AccountName	Group	BRC_404_27103_SAPextra	špecialista kontroly_RORAC_SAPextra				1	bus	BRC_404_27103_SAPextra	špecialista kontroly_RORAC_SAPextra				1	bus
+AccountName	Group	BRC_405_37125	architekt pre dátovú platformu_IT rozvoj systémov_SAP				1	bus	BRC_405_37125	architekt pre dátovú platformu_IT rozvoj systémov_SAP				1	bus
+AccountName	Group	BRC_407_40100_CR	špecialista správy pohľadávok II_Riadenie portfólia_čierna listina				1	bus	BRC_407_40100_CR	špecialista správy pohľadávok II_Riadenie portfólia_čierna listina				1	bus
+AccountName	Group	BRC_415_32102_ex	Business analytik produktov a proc_Procesné riadenie a business architektúra_externista				1	bus	BRC_415_32102_ex	Business analytik produktov a proc_Procesné riadenie a business architektúra_externista				1	bus
+AccountName	Group	BRC_416_38104_1	projektový manažér_Projektový manažment_IDex				1	bus	BRC_416_38104_1	projektový manažér_Projektový manažment_IDex				1	bus
+AccountName	Group	BRC_Audit_PwC	Audit_PwC				1	bus	BRC_Audit_PwC	Audit_PwC				1	bus
+AccountName	Group	BRC_BL_OLFS_1	BL_OLFS_1				1	bus	BRC_BL_OLFS_1	BL_OLFS_1				1	bus
+AccountName	Group	BRC_BL_TPSOL_1	BL_TPSOL_1				1	bus	BRC_BL_TPSOL_1	BL_TPSOL_1				1	bus
+AccountName	Group	BRC_BL_TPSOL_2	BL_TPSOL_2				1	bus	BRC_BL_TPSOL_2	BL_TPSOL_2				1	bus
+AccountName	Group	BRC_BR_313_24100_SAP_gestor	technický špecialista Full service_Technická podpora a služby operatívneho leasingu_SAP_gestor				1	bus	BRC_BR_313_24100_SAP_gestor	technický špecialista Full service_Technická podpora a služby operatívneho leasingu_SAP_gestor				1	bus
+AccountName	Group	BRC_Brigádnik_OPPR	Brigádnik_OPPR				0	bus	BRC_Brigádnik_OPPR	Brigádnik_OPPR				1	bus
+AccountName	Group	BRC_Brigádnik_PBA	Brigádnik_PBA				1	bus	BRC_Brigádnik_PBA	Brigádnik_PBA				1	bus
+AccountName	Group	BRC_brigádnik_výpomoc_PO	Brigádnik_výpomoc_PO				0	bus	BRC_brigádnik_výpomoc_PO	Brigádnik_výpomoc_PO				1	bus
+AccountName	Group	BRC_Centrálna akceptačná jednotka	Centrálna akceptačná jednotka				1	bus	BRC_Centrálna akceptačná jednotka	Centrálna akceptačná jednotka				1	bus
+AccountName	Group	BRC_Centrálna akceptačná jednotka_RORaC	Centrálna akceptačná jednotka_RORaC				1	bus	BRC_Centrálna akceptačná jednotka_RORaC	Centrálna akceptačná jednotka_RORaC				1	bus
+AccountName	Group	BRC_eCARD_správa_HR	eCARD-správa-HR				1	bus	BRC_eCARD_správa_HR	eCARD-správa-HR				1	bus
+AccountName	Group	BRC_EDS_RPS	EDS-RPS				1	bus	BRC_EDS_RPS	EDS-RPS				1	bus
+AccountName	Group	BRC_EDS_SAP	Key Account Manager pre Vendor Sup_Externé distribučné siete_SAP				1	bus	BRC_EDS_SAP	Key Account Manager pre Vendor Sup_Externé distribučné siete_SAP				1	bus
+AccountName	Group	BRC_Externista_ITR	Externista_ITR				1	bus	BRC_Externista_ITR	Externista_ITR				1	bus
+AccountName	Group	BRC_keyaccountman_ostpobocky	Key Account Manager značkového lea_ostatne pobocky				1	bus	BRC_keyaccountman_ostpobocky	Key Account Manager značkového lea_ostatne pobocky				1	bus
+AccountName	Group	BRC_LEA_ziadosti_o_zmenu_ostatne	Prístup_LEA: žiadosti o zmenu - ostatné				1	bus	BRC_LEA_ziadosti_o_zmenu_ostatne	Prístup_LEA: žiadosti o zmenu - ostatné				1	bus
+AccountName	Group	BRC_MDKreporty_MRK	MDK reporty - prístup - MRK				1	bus	BRC_MDKreporty_MRK	MDK reporty - prístup - MRK				1	bus
+AccountName	Group	BRC_RiadPob_regjuhbratislava	Riaditeľ pobočky MDK_Región Juh (Bratislava)				1	bus	BRC_RiadPob_regjuhbratislava	riaditeľ pobočky MDK_Región Juh (Bratislava)				1	bus
+AccountName	Group	BRC_RiadPob_regsevzilina	riaditeľ pobočky MDK_Región Sever (Žilina)				1	bus	BRC_RiadPob_regsevzilina	riaditeľ pobočky MDK_Región Sever (Žilina)				1	bus
+AccountName	Group	BRC_RiadPob_regstrbanbystrica	riaditeľ pobočky MDK_Región Stred (Banská Bystr.)				1	bus	BRC_RiadPob_regstrbanbystrica	riaditeľ pobočky MDK_Región Stred (Banská Bystr.)				1	bus
+AccountName	Group	BRC_RiadPob_regstrpoprad	riaditeľ pobočky MDK_Región Stred (Poprad)				1	bus	BRC_RiadPob_regstrpoprad	riaditeľ pobočky MDK_Región Stred (Poprad)				1	bus
+AccountName	Group	BRC_RiadPob_regvyckosice	riaditeľ pobočky MDK_Región Východ (Košice)				1	bus	BRC_RiadPob_regvyckosice	riaditeľ pobočky MDK_Región Východ (Košice)				1	bus
+AccountName	Group	BRC_RiadPob_regvycpresov	riaditeľ pobočky MDK_Región Východ (Prešov)				1	bus	BRC_RiadPob_regvycpresov	riaditeľ pobočky MDK_Región Východ (Prešov)				1	bus
+AccountName	Group	BRC_Schvalovanie_1plus_Pobo_BA	Prístup ku schvaľovaniu 1plus_Pobočka BA				1	bus	BRC_Schvalovanie_1plus_Pobo_BA	Prístup ku schvaľovaniu 1plus_Pobočka BA				1	bus
+AccountName	Group	BRC_špecialista pre poistenie III_admin_eCARD	špecialista pre poistenie III_admin_eCARD				0	bus	BRC_špecialista pre poistenie III_admin_eCARD	špecialista pre poistenie III_admin_eCARD				1	bus
+AccountName	Group	BRC_Špecialista_BO_FS	Špecialista_BO_FS				0	bus	BRC_Špecialista_BO_FS	Špecialista_BO_FS				1	bus
+AccountName	Group	BRC_Team_leader_Poistenie	BRC_Team_leader_Poistenie				1	bus	BRC_Team_leader_Poistenie	BRC_Team_leader_Poistenie				1	bus
+AccountName	Group	BRC_Výnimky_Akceptacna_jednotka_SR_csob	Výnimky Akceptacna jednotka SR csob - akceptacna_jednotka_SR				1	bus	BRC_Výnimky_Akceptacna_jednotka_SR_csob	Výnimky Akceptacna jednotka SR csob - akceptacna_jednotka_SR				1	bus
+AccountName	Group	BRC_vypomoc_marketing	vypomoc_Marketing a podpora obchodu				0	bus	BRC_vypomoc_marketing	vypomoc_Marketing a podpora obchodu				0	bus
+AccountName	Group	BRC_zas_SAP	zástup SAP schvalovanie				1	bus	BRC_zas_SAP	zástup SAP schvalovanie				1	bus
+AccountName	Group	BRC_zdielanie_brigadnika_FSaUaD	Zdieľanie brigádnika_FSaUaD				0	bus	BRC_zdielanie_brigadnika_FSaUaD	Zdieľanie brigádnika_FSaUaD				1	bus
+AccountName	Group	BRC_ZRR_PO	ZRR_PO				0	bus	BRC_ZRR_PO	ZRR_PO				1	bus
+AccountName	Group	GG-ADA-Administrator	Administrator ADA				1	apl	GG-ADA-Administrator	Administrator ADA				1	apl
+AccountName	Group	GG-ANASOFT-Admin	Administrator				1	apl	GG-ANASOFT-Admin	Administrator				1	apl
+AccountName	Group	GG-CDBP-CDBPs#1	CDBPs-Operator.-.bankove.ucty				1	apl	GG-CDBP-CDBPs#1	CDBPs-Operator - bankove ucty				1	apl
+AccountName	Group	GG-CDBP-CDBPs#10	CDBPs-Standardny.operator				1	apl	GG-CDBP-CDBPs#10	CDBPs-Standardny operator				1	apl
+AccountName	Group	GG-CDBP-CDBPs#11	CDBPs-Administrator				1	apl	GG-CDBP-CDBPs#11	CDBPs-Administrator				1	apl
+AccountName	Group	GG-CDBP-CDBPs#12	CDBPs-Operator.-.read.only				1	apl	GG-CDBP-CDBPs#12	CDBPs-Operator - read only				1	apl
+AccountName	Group	GG-CDBP-CDBPs#14	CDBPs-Operator.-.PD.Rating.(Risk)				1	apl	GG-CDBP-CDBPs#14	CDBPs-Operator - PD Rating (Risk)				1	apl
+AccountName	Group	GG-CDBP-CDBPs#15	CDBPs-Operator.-.Agentura				1	apl	GG-CDBP-CDBPs#15	CDBPs-Operator - Agentura				1	apl
+AccountName	Group	GG-CDBP-CDBPs#16	CDBPs-Operator – Suhlasy				1	apl	GG-CDBP-CDBPs#16	CDBPs-Operator – Suhlasy				1	apl
+AccountName	Group	GG-CDBP-CDBPs#2	CDBPs-Operator.-.CS,.Operator.-.ZS				1	apl	GG-CDBP-CDBPs#2	CDBPs-Operator - CS, Operator - ZS				1	apl
+AccountName	Group	GG-CDBP-CDBPs#4	CDBPs-Operator.-.HR				1	apl	GG-CDBP-CDBPs#4	CDBPs-Operator - HR				1	apl
+AccountName	Group	GG-CDBP-CDBPs#5	CDBPs-Operator.-.prenajimatel				1	apl	GG-CDBP-CDBPs#5	CDBPs-Operator - prenajimatel				1	apl
+AccountName	Group	GG-CDBP-CDBPs#6	CDBPs-Operator.-.Risk				1	apl	GG-CDBP-CDBPs#6	CDBPs-Operator - Risk				1	apl
+AccountName	Group	GG-CDBP-CDBPs#7	CDBPs-Operator.financne.sluzby				1	apl	GG-CDBP-CDBPs#7	CDBPs-Operator financne sluzby				1	apl
+AccountName	Group	GG-CDBP-CDBPs#8	CDBPs-Operator.kontrolor				1	apl	GG-CDBP-CDBPs#8	CDBPs-Operator kontrolor				1	apl
+AccountName	Group	GG-CDBP-CDBPs#9	CDBPs-Operator.poistne				1	apl	GG-CDBP-CDBPs#9	CDBPs-Operator poistne				1	apl
+AccountName	Group	GG-CDBP-ESSs#1	ESSs-Standardny.operator				1	apl	GG-CDBP-ESSs#1	ESSs-Standardny operator				1	apl
+AccountName	Group	GG-CDBP-ESSs#11	ESSs-Administrator				1	apl	GG-CDBP-ESSs#11	ESSs-Administrator				1	apl
+AccountName	Group	GG-CDBP-ESSs#2	ESSs-Operator.-.Expert				1	apl	GG-CDBP-ESSs#2	ESSs-Operator - Expert				1	apl
+AccountName	Group	GG-CDBP-JPP#Adm	JPP-Administrator				1	apl	GG-CDBP-JPP#Adm	JPP-Administrator				1	apl
+AccountName	Group	GG-CDBP-JPP#EsAdm	JPP-ESS.Administrator				1	apl	GG-CDBP-JPP#EsAdm	JPP-ESS Administrator				1	apl
+AccountName	Group	GG-CDBP-JPP#EsOe	JPP-ESS.Operator.Expert				1	apl	GG-CDBP-JPP#EsOe	JPP-ESS Operator - Expert				1	apl
+AccountName	Group	GG-CDBP-JPP#EsSo	JPP-ESS.Standardny.operator				1	apl	GG-CDBP-JPP#EsSo	JPP-ESS Standardny operator				1	apl
+AccountName	Group	GG-CDBP-JPP#OpAg	JPP-Operator.-.Agentura				1	apl	GG-CDBP-JPP#OpAg	JPP-Operator - Agentura				1	apl
+AccountName	Group	GG-CDBP-JPP#OpBa	JPP-Operator.-.Banka				1	apl	GG-CDBP-JPP#OpBa	JPP-Operator - Banka				1	apl
+AccountName	Group	GG-CDBP-JPP#OpBu	JPP-Operator.-.Bankove.ucty				1	apl	GG-CDBP-JPP#OpBu	JPP-Operator - Bankove ucty				1	apl
+AccountName	Group	GG-CDBP-JPP#OpEx	JPP-Operator.-.Expert				1	apl	GG-CDBP-JPP#OpEx	JPP-Operator - Expert				1	apl
+AccountName	Group	GG-CDBP-JPP#OpHr	JPP-Operator.-.HR				1	apl	GG-CDBP-JPP#OpHr	JPP-Operator - HR				1	apl
+AccountName	Group	GG-CDBP-JPP#OpKo	JPP-Operator.kontrolor				1	apl	GG-CDBP-JPP#OpKo	JPP-Operator kontrolor				1	apl
+AccountName	Group	GG-CDBP-JPP#OpPo	JPP-Operator.-.Poistovna				1	apl	GG-CDBP-JPP#OpPo	JPP-Operator - Poistovna				1	apl
+AccountName	Group	GG-CDBP-JPP#OpPr	JPP-Operator.-.Prenajimatel				1	apl	GG-CDBP-JPP#OpPr	JPP-Operator - Prenajimatel				1	apl
+AccountName	Group	GG-CDBP-JPP#OpRa	JPP-Operator.-.Rating				1	apl	GG-CDBP-JPP#OpRa	JPP-Operator - Rating				1	apl
+AccountName	Group	GG-CDBP-JPP#OpRo	JPP-Operator.-.Read.only				1	apl	GG-CDBP-JPP#OpRo	JPP-Operator - Read only				1	apl
+AccountName	Group	GG-CDBP-JPP#OpSu	JPP-Operator - Suhlasy				1	apl	GG-CDBP-JPP#OpSu	JPP-Operator - Suhlasy				1	apl
+AccountName	Group	GG-CDBP-JPP#StOp	JPP-Standardny.operator				1	apl	GG-CDBP-JPP#StOp	JPP-Standardny operator				1	apl
+AccountName	Group	GG-DGT-DLM-admin	admin				1	apl	GG-DGT-DLM-admin	admin				1	apl
+AccountName	Group	GG-DGT-DLM-audit	audit				1	apl	GG-DGT-DLM-audit	audit				1	apl
+AccountName	Group	GG-DGT-DLM-backoffice	backoffice				1	apl	GG-DGT-DLM-backoffice	backoffice				1	apl
+AccountName	Group	GG-DGT-DLM-jaq	jaq				1	apl	GG-DGT-DLM-jaq	jaq				1	apl
+AccountName	Group	GG-DGT-DLM-saq	saq				1	apl	GG-DGT-DLM-saq	saq				1	apl
+AccountName	Group	GG-ITAPS-Administrator	Administrator				1	apl	GG-ITAPS-Administrator	Administrator				1	apl
+AccountName	Group	GG-JIRA-administrator	administrátor				1	apl	GG-JIRA-administrator	administrátor				1	apl
+AccountName	Group	GG-LEA-Administrator	LEA: Administrator				1	apl	GG-LEA-Administrator	LEA: Administrator				1	apl
+AccountName	Group	GG-LEA-Agentury	LEA: Agentury				1	apl	GG-LEA-Agentury	LEA: Agentury				1	apl
+AccountName	Group	GG-LEA-Archivar	LEA: Archivar				1	apl	GG-LEA-Archivar	LEA: Archivar				1	apl
+AccountName	Group	GG-LEA-Automat.KFV.PUK-operator	LEA: Automat KFV PUK-operator				1	apl	GG-LEA-Automat.KFV.PUK-operator	LEA: Automat KFV PUK-operator				1	apl
+AccountName	Group	GG-LEA-Automat.KFV.PUK-spracovanie	LEA: Automat KFV PUK-spracovanie				1	apl	GG-LEA-Automat.KFV.PUK-spracovanie	LEA: Automat KFV PUK-spracovanie				1	apl
+AccountName	Group	GG-LEA-Blokovanie.upominania.nalezitosti	Blokovanie upominania nalezitosti				1	apl	GG-LEA-Blokovanie.upominania.nalezitosti	Blokovanie upominania nalezitosti				1	apl
+AccountName	Group	GG-LEA-Brigadnik	LEA: Brigadnik				1	apl	GG-LEA-Brigadnik	LEA: Brigadnik				1	apl
+AccountName	Group	GG-LEA-Brigadnik.CS	LEA: Brigadnik CS				1	apl	GG-LEA-Brigadnik.CS	LEA: Brigadnik CS				1	apl
+AccountName	Group	GG-LEA-Brigadnik.obmedzene.prava	LEA: Brigadnik- obmedzene prava				1	apl	GG-LEA-Brigadnik.obmedzene.prava	LEA: Brigadnik- obmedzene prava				1	apl
+AccountName	Group	GG-LEA-Brigadnik.pobocka	LEA: Brigadnik_pobocka				1	apl	GG-LEA-Brigadnik.pobocka	LEA: Brigadnik_pobocka				1	apl
+AccountName	Group	GG-LEA-Cent.sprac.akcia	Cent_sprac_akcia				1	apl	GG-LEA-Cent.sprac.akcia	Cent_sprac_akcia				1	apl
+AccountName	Group	GG-LEA-Centralne.spracovanie	LEA: Centralne spracovanie				1	apl	GG-LEA-Centralne.spracovanie	LEA: Centralne spracovanie				1	apl
+AccountName	Group	GG-LEA-CentralneSpracovanie.docasne.ZS	CentralneSpracovanie_docasne_ZS				1	apl	GG-LEA-CentralneSpracovanie.docasne.ZS	CentralneSpracovanie_docasne_ZS				1	apl
+AccountName	Group	GG-LEA-Cezie.znizenie.poplatku	LEA: Cezie - znizenie poplatku				1	apl	GG-LEA-Cezie.znizenie.poplatku	LEA: Cezie - znizenie poplatku				1	apl
+AccountName	Group	GG-LEA-Ciselnik	LEA: Ciselnik				1	apl	GG-LEA-Ciselnik	LEA: Ciselnik				1	apl
+AccountName	Group	GG-LEA-Ciselnik.aktualneho.zisku	LEA: Ciselnik aktualneho zisku				1	apl	GG-LEA-Ciselnik.aktualneho.zisku	LEA: Ciselnik aktualneho zisku				1	apl
+AccountName	Group	GG-LEA-Ciselnik.Archivacia.tim	Ciselnik  Archivacia - tim				1	apl	GG-LEA-Ciselnik.Archivacia.tim	Ciselnik  Archivacia - tim				1	apl
+AccountName	Group	GG-LEA-Ciselnik.doklady	Ciselnik_doklady				1	apl	GG-LEA-Ciselnik.doklady	Ciselnik_doklady				1	apl
+AccountName	Group	GG-LEA-Ciselnik.Leasing	LEA: Ciselnik Leasing				1	apl	GG-LEA-Ciselnik.Leasing	LEA: Ciselnik Leasing				1	apl
+AccountName	Group	GG-LEA-Ciselnik.limitov.marze	Ciselnik limitov marze				1	apl	GG-LEA-Ciselnik.limitov.marze	Ciselnik limitov marze				1	apl
+AccountName	Group	GG-LEA-Ciselnik.poistne	LEA: Ciselnik poistne				1	apl	GG-LEA-Ciselnik.poistne	LEA: Ciselnik poistne				1	apl
+AccountName	Group	GG-LEA-Ciselnik.poistne.2	Ciselnik poistne 2				1	apl	GG-LEA-Ciselnik.poistne.2	Ciselnik poistne 2				1	apl
+AccountName	Group	GG-LEA-Ciselnik.Predmety.Znacka	Ciselnik_Predmety_Znacka				1	apl	GG-LEA-Ciselnik.Predmety.Znacka	Ciselnik_Predmety_Znacka				1	apl
+AccountName	Group	GG-LEA-Ciselnik.texty.a.predmety	LEA: Ciselnik texty a predmety				1	apl	GG-LEA-Ciselnik.texty.a.predmety	LEA: Ciselnik texty a predmety				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseob.CS	Ciselnik_vseob_CS				1	apl	GG-LEA-Ciselnik.vseob.CS	Ciselnik_vseob_CS				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseob.Marketing	LEA: Ciselnik_vseob_Marketing				1	apl	GG-LEA-Ciselnik.vseob.Marketing	LEA: Ciselnik_vseob_Marketing				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseobecne	LEA: CIselnik vseobecne				1	apl	GG-LEA-Ciselnik.vseobecne	LEA: CIselnik vseobecne				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseobecne.ciselnik.leasing.RW	Ciselnik vseobecne - ciselnik leasing R/W				1	apl	GG-LEA-Ciselnik.vseobecne.ciselnik.leasing.RW	Ciselnik vseobecne - ciselnik leasing R/W				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseobecne.ciselnik.pneu.phm.RW	Číselník všeobecné - číselník PNEU a PHM R/W				1	apl	GG-LEA-Ciselnik.vseobecne.ciselnik.pneu.phm.RW	Číselník všeobecné - číselník PNEU a PHM R/W				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseobecne.nehnutelnosti.RW	Ciselnik vseobecne - nehnutelnosti R/W				1	apl	GG-LEA-Ciselnik.vseobecne.nehnutelnosti.RW	Ciselnik vseobecne - nehnutelnosti R/W				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseobecne.nepe.naroky	Ciselnik vseobecne - nepenazne naroky R/W				1	apl	GG-LEA-Ciselnik.vseobecne.nepe.naroky	Ciselnik vseobecne - nepenazne naroky R/W				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseobecne.provizie.RW	Ciselnik vseobecne - provizie R/W				1	apl	GG-LEA-Ciselnik.vseobecne.provizie.RW	Ciselnik vseobecne - provizie R/W				1	apl
+AccountName	Group	GG-LEA-Ciselnik.vseobecne.typy.chyb.eklient.RW	Ciselnik vseobecne - typy chyb eklient R/W				1	apl	GG-LEA-Ciselnik.vseobecne.typy.chyb.eklient.RW	Ciselnik vseobecne - typy chyb eklient R/W				1	apl
+AccountName	Group	GG-LEA-Compliance.brigadnik	Compliance_brigadnik				1	apl	GG-LEA-Compliance.brigadnik	Compliance_brigadnik				1	apl
+AccountName	Group	GG-LEA-ContRep.Agentury	LEA: ContRep_Agentury				1	apl	GG-LEA-ContRep.Agentury	LEA: ContRep_Agentury				1	apl
+AccountName	Group	GG-LEA-Controlling	LEA: Controlling				1	apl	GG-LEA-Controlling	LEA: Controlling				1	apl
+AccountName	Group	GG-LEA-CS-StornoLZ	Storno LZ - rozšírenie CSKOP				1	apl	GG-LEA-CS-StornoLZ	Storno LZ - rozšírenie CSKOP				1	apl
+AccountName	Group	GG-LEA-Editacia.bank.opravneni.docasna.rola.pre.HB	Editacia bank. opravneni - docasna rola pre HB				1	apl	GG-LEA-Editacia.bank.opravneni.docasna.rola.pre.HB	Editacia bank. opravneni - docasna rola pre HB				1	apl
+AccountName	Group	GG-LEA-Editor.spl.kalendara.aktivne	LEA: Editor spl. kalendara - aktivne				1	apl	GG-LEA-Editor.spl.kalendara.aktivne	LEA: Editor spl. kalendara - aktivne				1	apl
+AccountName	Group	GG-LEA-Export.Inkaso	Export_Inkaso				1	apl	GG-LEA-Export.Inkaso	Export_Inkaso				1	apl
+AccountName	Group	GG-LEA-Exporty.INIS	LEA: Exporty INIS				1	apl	GG-LEA-Exporty.INIS	LEA: Exporty INIS				1	apl
+AccountName	Group	GG-LEA-Faktoring.nove.modely.Faktoring	Faktoring - nove modely Faktoring				1	apl	GG-LEA-Faktoring.nove.modely.Faktoring	Faktoring - nove modely Faktoring				1	apl
+AccountName	Group	GG-LEA-Fakturacia.poplatku.za.LNH	LEA: Fakturacia poplatku za LNH				1	apl	GG-LEA-Fakturacia.poplatku.za.LNH	LEA: Fakturacia poplatku za LNH				1	apl
+AccountName	Group	GG-LEA-Faktury	LEA: Faktury				1	apl	GG-LEA-Faktury	LEA: Faktury				1	apl
+AccountName	Group	GG-LEA-Faktury.LZC	LEA: Faktury LZC				1	apl	GG-LEA-Faktury.LZC	LEA: Faktury LZC				1	apl
+AccountName	Group	GG-LEA-Faktury.LZC.prehlad	LEA: Faktury LZC - prehľad				1	apl	GG-LEA-Faktury.LZC.prehlad	LEA: Faktury LZC - prehľad				1	apl
+AccountName	Group	GG-LEA-FDS.Faktoring	FDS_Faktoring				1	apl	GG-LEA-FDS.Faktoring	FDS_Faktoring				1	apl
+AccountName	Group	GG-LEA-FDS.sprava	LEA: FDS admin práva				1	apl	GG-LEA-FDS.sprava	LEA: FDS sprava				1	apl
+AccountName	Group	GG-LEA-Financne.sluzby	LEA: Financne sluzby				1	apl	GG-LEA-Financne.sluzby	LEA: Financne sluzby				1	apl
+AccountName	Group	GG-LEA-Fleet.dane.z.MV	LEA: Fleet - dane z MV				1	apl	GG-LEA-Fleet.dane.z.MV	LEA: Fleet - dane z MV				1	apl
+AccountName	Group	GG-LEA-Fleet.dod.doklady	LEA: Fleet - dod. doklady				1	apl	GG-LEA-Fleet.dod.doklady	LEA: Fleet - dod. doklady				1	apl
+AccountName	Group	GG-LEA-Fleet.dod.doklady.odomykanie	LEA: Fleet - dod. doklady - odomykanie				1	apl	GG-LEA-Fleet.dod.doklady.odomykanie	LEA: Fleet - dod. doklady - odomykanie				1	apl
+AccountName	Group	GG-LEA-Fleet.fakturacia	LEA: Fleet - fakturacia				1	apl	GG-LEA-Fleet.fakturacia	LEA: Fleet - fakturacia				1	apl
+AccountName	Group	GG-LEA-Fleet.majetok	LEA: Fleet - majetok				1	apl	GG-LEA-Fleet.majetok	LEA: Fleet - majetok				1	apl
+AccountName	Group	GG-LEA-Fleet.management.aktivny	LEA: Fleet - management - aktivny				1	apl	GG-LEA-Fleet.management.aktivny	LEA: Fleet - management - aktivny				1	apl
+AccountName	Group	GG-LEA-Fleet.management.pasivny	LEA: Fleet - management - pasivny				1	apl	GG-LEA-Fleet.management.pasivny	LEA: Fleet - management - pasivny				1	apl
+AccountName	Group	GG-LEA-Fleet.nadzmluvy	LEA: Fleet - nadzmluvy				1	apl	GG-LEA-Fleet.nadzmluvy	LEA: Fleet - nadzmluvy				1	apl
+AccountName	Group	GG-LEA-Fleet.poistne.udalosti	LEA: Fleet - poistne udalosti				1	apl	GG-LEA-Fleet.poistne.udalosti	LEA: Fleet - poistne udalosti				1	apl
+AccountName	Group	GG-LEA-Fleet.prehlad.V.N	LEA: Fleet - prehlad V-N				1	apl	GG-LEA-Fleet.prehlad.V.N	LEA: Fleet - prehlad V-N				1	apl
+AccountName	Group	GG-LEA-Fleet.rocne.zuctovanie	LEA: Fleet - rocne zuctovanie				1	apl	GG-LEA-Fleet.rocne.zuctovanie	LEA: Fleet - rocne zuctovanie				1	apl
+AccountName	Group	GG-LEA-Fleet.superuser	LEA: Fleet - superuser				1	apl	GG-LEA-Fleet.superuser	LEA: Fleet - superuser				1	apl
+AccountName	Group	GG-LEA-Fleet.vykazy.sluzieb	LEA: Fleet - vykazy sluzieb				1	apl	GG-LEA-Fleet.vykazy.sluzieb	LEA: Fleet - vykazy sluzieb				1	apl
+AccountName	Group	GG-LEA-GDPRm	GDPRm				1	apl	GG-LEA-GDPRm	GDPRm				1	apl
+AccountName	Group	GG-LEA-GDPRm.nahlad	GDPRm nahlad				1	apl	GG-LEA-GDPRm.nahlad	GDPRm nahlad				1	apl
+AccountName	Group	GG-LEA-Individualny.COM	LEA: Individualny COM				1	apl	GG-LEA-Individualny.COM	LEA: Individualny COM				1	apl
+AccountName	Group	GG-LEA-ISPEL	ISPEL				1	apl	GG-LEA-ISPEL	ISPEL				1	apl
+AccountName	Group	GG-LEA-KFV	LEA: KFV				1	apl	GG-LEA-KFV	LEA: KFV				1	apl
+AccountName	Group	GG-LEA-Konkurzy	LEA: Konkurzy				1	apl	GG-LEA-Konkurzy	LEA: Konkurzy				1	apl
+AccountName	Group	GG-LEA-Korp.tlac	Korp-tlac				1	apl	GG-LEA-Korp.tlac	Korp-tlac				1	apl
+AccountName	Group	GG-LEA-LEA_.Blokovanie.rucitelskych.upom	LEA: Blokovanie rucitelskych upom				1	apl	GG-LEA-LEA_.Blokovanie.rucitelskych.upom	LEA: Blokovanie rucitelskych upom				1	apl
+AccountName	Group	GG-LEA-LEA_.Export.dokumentov.sk	LEA: Export dokumentov sk				1	apl	GG-LEA-LEA_.Export.dokumentov.sk	LEA: Export dokumentov sk				1	apl
+AccountName	Group	GG-LEA-LEA_.Management.spol	LEA: Management spol				1	apl	GG-LEA-LEA_.Management.spol	LEA: Management spol				1	apl
+AccountName	Group	GG-LEA-Modifikacia.prenajimatela	LEA: Modifikacia prenajimatela				1	apl	GG-LEA-Modifikacia.prenajimatela	LEA: Modifikacia prenajimatela				1	apl
+AccountName	Group	GG-LEA-Modifikacia.uctov.partnera	LEA: Modifikacia uctov partnera				1	apl	GG-LEA-Modifikacia.uctov.partnera	LEA: Modifikacia uctov partnera				1	apl
+AccountName	Group	GG-LEA-Nadzmluvy.Odukoncenie	Nadzmluvy - Odukoncenie				1	apl	GG-LEA-Nadzmluvy.Odukoncenie	Nadzmluvy - Odukoncenie				1	apl
+AccountName	Group	GG-LEA-Nalezitosti	LEA: Nalezitosti				1	apl	GG-LEA-Nalezitosti	LEA: Nalezitosti				1	apl
+AccountName	Group	GG-LEA-Nalezitosti.SLZ	LEA: Nalezitosti SLZ				1	apl	GG-LEA-Nalezitosti.SLZ	LEA: Nalezitosti SLZ				1	apl
+AccountName	Group	GG-LEA-NCC.admin	LeasitDB administrátor				1	apl	GG-LEA-NCC.admin	LeasitDB administrátor				1	apl
+AccountName	Group	GG-LEA-Obchodnik	LEA: Obchodnik				1	apl	GG-LEA-Obchodnik	LEA: Obchodnik				1	apl
+AccountName	Group	GG-LEA-Obchodnik.Aktivny.pristup	LEA: Obchodnik - Aktivny pristup				1	apl	GG-LEA-Obchodnik.Aktivny.pristup	LEA: Obchodnik - Aktivny pristup				1	apl
+AccountName	Group	GG-LEA-Obchodnik.LNH	LEA: Obchodnik - LNH				1	apl	GG-LEA-Obchodnik.LNH	LEA: Obchodnik - LNH				1	apl
+AccountName	Group	GG-LEA-Odobrate.predmety	LEA: Odobrate predmety				1	apl	GG-LEA-Odobrate.predmety	LEA: Odobrate predmety				1	apl
+AccountName	Group	GG-LEA-Odobrate.predmety.audit.banky	Odobrate predmety - audit banky				1	apl	GG-LEA-Odobrate.predmety.audit.banky	Odobrate predmety - audit banky				1	apl
+AccountName	Group	GG-LEA-OLFS	LEA: OLFS				1	apl	GG-LEA-OLFS	LEA: OLFS				1	apl
+AccountName	Group	GG-LEA-OLFS.brigadnik.archivacia	LEA: OLFS - brigadnik - archivacia				1	apl	GG-LEA-OLFS.brigadnik.archivacia	LEA: OLFS - brigadnik - archivacia				1	apl
+AccountName	Group	GG-LEA-OLFS.Pneu.Import	OLFS_Pneu_Import				1	apl	GG-LEA-OLFS.Pneu.Import	OLFS_Pneu_Import				1	apl
+AccountName	Group	GG-LEA-OLFS.Reporting	OLFS - Reporting				1	apl	GG-LEA-OLFS.Reporting	OLFS - Reporting				1	apl
+AccountName	Group	GG-LEA-OM.Test.rychlosti	LEA: OM - Test rychlosti				1	apl	GG-LEA-OM.Test.rychlosti	LEA: OM - Test rychlosti				1	apl
+AccountName	Group	GG-LEA-OP.modif.ponuky.navrh.predaja	Modifikácia ponuky a návrhu predaja				1	apl	GG-LEA-OP.modif.ponuky.navrh.predaja	Modifikácia ponuky a návrhu predaja				1	apl
+AccountName	Group	GG-LEA-OPPR	LEA: OPPR				1	apl	GG-LEA-OPPR	LEA: OPPR				1	apl
+AccountName	Group	GG-LEA-Otvorene.polozky	LEA: Otvorene polozky				1	apl	GG-LEA-Otvorene.polozky	LEA: Otvorene polozky				1	apl
+AccountName	Group	GG-LEA-Partneri	LEA: Partneri				1	apl	GG-LEA-Partneri	LEA: Partneri				1	apl
+AccountName	Group	GG-LEA-Partneri.pobocka	LEA: Partneri_pobocka				1	apl	GG-LEA-Partneri.pobocka	LEA: Partneri_pobocka				1	apl
+AccountName	Group	GG-LEA-Poistenie.import.kmena.IPZ1	Poistenie - import kmena IPZ1				1	apl	GG-LEA-Poistenie.import.kmena.IPZ1	Poistenie - import kmena IPZ1				1	apl
+AccountName	Group	GG-LEA-Poistenie.provizie.z.POI	LEA: Poistenie_provizie_z_POI				1	apl	GG-LEA-Poistenie.provizie.z.POI	LEA: Poistenie_provizie_z_POI				1	apl
+AccountName	Group	GG-LEA-Poistne	LEA: Poistne				1	apl	GG-LEA-Poistne	LEA: Poistne				1	apl
+AccountName	Group	GG-LEA-Poistne.SFA.IPZ	LEA: Poistne SFA - IPZ				1	apl	GG-LEA-Poistne.SFA.IPZ	LEA: Poistne SFA - IPZ				1	apl
+AccountName	Group	GG-LEA-Poistne.vykazy	LEA: Poistne vykazy				1	apl	GG-LEA-Poistne.vykazy	LEA: Poistne vykazy				1	apl
+AccountName	Group	GG-LEA-Poznamky.a.blokovania	LEA: Poznamky a blokovania				1	apl	GG-LEA-Poznamky.a.blokovania	LEA: Poznamky a blokovania				1	apl
+AccountName	Group	GG-LEA-Pravne.sluzby	LEA: Pravne sluzby				1	apl	GG-LEA-Pravne.sluzby	LEA: Pravne sluzby				1	apl
+AccountName	Group	GG-LEA-Predfinancovanie	LEA: Predfinancovanie				1	apl	GG-LEA-Predfinancovanie	LEA: Predfinancovanie				1	apl
+AccountName	Group	GG-LEA-Predfinancovanie.akvizitor	LEA: Predfinancovanie-akvizitor				1	apl	GG-LEA-Predfinancovanie.akvizitor	LEA: Predfinancovanie-akvizitor				1	apl
+AccountName	Group	GG-LEA-PRK	LEA: PRK				1	apl	GG-LEA-PRK	LEA: PRK				1	apl
+AccountName	Group	GG-LEA-Produkty	LEA: Produkty				1	apl	GG-LEA-Produkty	LEA: Produkty				1	apl
+AccountName	Group	GG-LEA-Provizie	LEA: Provizie				1	apl	GG-LEA-Provizie	LEA: Provizie				1	apl
+AccountName	Group	GG-LEA-Provizie.automat	LEA: Provízie - automat				1	apl	GG-LEA-Provizie.automat	LEA: Provízie - automat				1	apl
+AccountName	Group	GG-LEA-Provizie.hromadny.import	Provízie - hromadný import				1	apl	GG-LEA-Provizie.hromadny.import	Provízie - hromadný import				1	apl
+AccountName	Group	GG-LEA-Recepcia.ZL	LEA: Recepcia + ZL				1	apl	GG-LEA-Recepcia.ZL	LEA: Recepcia + ZL				1	apl
+AccountName	Group	GG-LEA-Reporting.Fleet.reportTesco	Reporting_Fleet_reportTesco				1	apl	GG-LEA-Reporting.Fleet.reportTesco	Reporting_Fleet_reportTesco				1	apl
+AccountName	Group	GG-LEA-Reporting.services.Archiv.digitalizacie	Reporting_services - Archiv digitalizacie				1	apl	GG-LEA-Reporting.services.Archiv.digitalizacie	Reporting_services - Archiv digitalizacie				1	apl
+AccountName	Group	GG-LEA-Reporting.services.Aut.upominanie.chybajuceSMS	Reporting_services_Aut.upominanie_chybajuceSMS				1	apl	GG-LEA-Reporting.services.Aut.upominanie.chybajuceSMS	Reporting_services_Aut.upominanie_chybajuceSMS				1	apl
+AccountName	Group	GG-LEA-Reporting.services.poistne	Reporting_services_poistne				1	apl	GG-LEA-Reporting.services.poistne	Reporting_services_poistne				1	apl
+AccountName	Group	GG-LEA-Reporting.zostavy.blokovani	Reporting zostavy blokovani				1	apl	GG-LEA-Reporting.zostavy.blokovani	Reporting zostavy blokovani				1	apl
+AccountName	Group	GG-LEA-Reporting.zostavy.poist.tried	LEA: Reporting_zostavy_poist_tried				1	apl	GG-LEA-Reporting.zostavy.poist.tried	LEA: Reporting_zostavy_poist_tried				1	apl
+AccountName	Group	GG-LEA-Riadenie.portfolia	LEA: Riadenie portfolia				1	apl	GG-LEA-Riadenie.portfolia	LEA: Riadenie portfolia				1	apl
+AccountName	Group	GG-LEA-Riadenie.portfolia.MA	LEA: Riadenie portfolia MA				1	apl	GG-LEA-Riadenie.portfolia.MA	LEA: Riadenie portfolia MA				1	apl
+AccountName	Group	GG-LEA-Riadne.ukoncenie	LEA: Riadne ukoncenie				1	apl	GG-LEA-Riadne.ukoncenie	LEA: Riadne ukoncenie				1	apl
+AccountName	Group	GG-LEA-RM	LEA: RM				1	apl	GG-LEA-RM	LEA: RM				1	apl
+AccountName	Group	GG-LEA-RM.limity	LEA: RM_limity				1	apl	GG-LEA-RM.limity	LEA: RM_limity				1	apl
+AccountName	Group	GG-LEA-Saldo.vyrovnanie	Saldo - vyrovnanie				1	apl	GG-LEA-Saldo.vyrovnanie	Saldo - vyrovnanie				1	apl
+AccountName	Group	GG-LEA-Schvalenie.uctu.v.Partneroch.sk	LEA: Schvalenie uctu v Partneroch sk				1	apl	GG-LEA-Schvalenie.uctu.v.Partneroch.sk	LEA: Schvalenie uctu v Partneroch sk				1	apl
+AccountName	Group	GG-LEA-Skupina.PNS	Skupina PNS				1	apl	GG-LEA-Skupina.PNS	Skupina PNS				1	apl
+AccountName	Group	GG-LEA-Specialna.tlac	LEA: Specialna tlac				1	apl	GG-LEA-Specialna.tlac	LEA: Specialna tlac				1	apl
+AccountName	Group	GG-LEA-Sprava.LZ	LEA: Sprava LZ				1	apl	GG-LEA-Sprava.LZ	LEA: Sprava LZ				1	apl
+AccountName	Group	GG-LEA-Sprava.LZ.Cesie	LEA: Sprava LZ - Cesie				1	apl	GG-LEA-Sprava.LZ.Cesie	LEA: Sprava LZ - Cesie				1	apl
+AccountName	Group	GG-LEA-Sprava.LZ.po.KFV	LEA: Sprava LZ po KFV				1	apl	GG-LEA-Sprava.LZ.po.KFV	LEA: Sprava LZ po KFV				1	apl
+AccountName	Group	GG-LEA-Sprava.LZ.Spravca	LEA: Sprava LZ - Spravca				1	apl	GG-LEA-Sprava.LZ.Spravca	LEA: Sprava LZ - Spravca				1	apl
+AccountName	Group	GG-LEA-Tlac.editacia.sablon	LEA: Tlac - editacia sablon				1	apl	GG-LEA-Tlac.editacia.sablon	LEA: Tlac - editacia sablon				1	apl
+AccountName	Group	GG-LEA-Uctovnictvo	LEA: Uctovnictvo				1	apl	GG-LEA-Uctovnictvo	LEA: Uctovnictvo				1	apl
+AccountName	Group	GG-LEA-Upomienky	LEA: Upomienky				1	apl	GG-LEA-Upomienky	LEA: Upomienky				1	apl
+AccountName	Group	GG-LEA-Upomienky.pasivny.pristup	Upomienky - pasivny pristup				1	apl	GG-LEA-Upomienky.pasivny.pristup	Upomienky - pasivny pristup				1	apl
+AccountName	Group	GG-LEA-Zakaznicky.servis	LEA: Zakaznicky servis				1	apl	GG-LEA-Zakaznicky.servis	LEA: Zakaznicky servis				1	apl
+AccountName	Group	GG-LEA-ZI.aktivny.pristup.platny	LEA: ZI - aktivny pristup platny				1	apl	GG-LEA-ZI.aktivny.pristup.platny	LEA: ZI - aktivny pristup platny				1	apl
+AccountName	Group	GG-LEA-ZI.aktivny.pristup.pripraveny	LEA: ZI - aktivny pristup pripraveny				1	apl	GG-LEA-ZI.aktivny.pristup.pripraveny	LEA: ZI - aktivny pristup pripraveny				1	apl
+AccountName	Group	GG-LEA-ZI.editacia.ciselnikov	LEA: ZI - editacia ciselnikov				1	apl	GG-LEA-ZI.editacia.ciselnikov	LEA: ZI - editacia ciselnikov				1	apl
+AccountName	Group	GG-LEA-ZI.prijatie.zmeniek	LEA: ZI - prijatie zmeniek				1	apl	GG-LEA-ZI.prijatie.zmeniek	LEA: ZI - prijatie zmeniek				1	apl
+AccountName	Group	GG-LEA-ZI.spatna.zmena.stavu	LEA: ZI - spatna zmena stavu				1	apl	GG-LEA-ZI.spatna.zmena.stavu	LEA: ZI - spatna zmena stavu				1	apl
+AccountName	Group	GG-LEA-ZI.zmena.vysky.predpisu.kaucie	LEA: ZI - zmena vysky predpisu kaucie				1	apl	GG-LEA-ZI.zmena.vysky.predpisu.kaucie	LEA: ZI - zmena vysky predpisu kaucie				1	apl
+AccountName	Group	GG-LEA-ZI.zmena.zabezpecenej.sumy	LEA: ZI - zmena zabezpecenej sumy				1	apl	GG-LEA-ZI.zmena.zabezpecenej.sumy	LEA: ZI - zmena zabezpecenej sumy				1	apl
+AccountName	Group	GG-LEA-Ziadosti.o.zmenu	LEA: Ziadosti o zmenu				1	apl	GG-LEA-Ziadosti.o.zmenu	LEA: Ziadosti o zmenu				1	apl
+AccountName	Group	GG-LEA-Ziadosti.o.zmenu.ostatne	LEA: Ziadosti  o zmenu - ostatne				1	apl	GG-LEA-Ziadosti.o.zmenu.ostatne	LEA: Ziadosti  o zmenu - ostatne				1	apl
+AccountName	Group	GG-LEA-Ziadosti.o.zmenu.poistne.ostatne	LEA: Ziadosti o zmenu - poistne - ostatne				1	apl	GG-LEA-Ziadosti.o.zmenu.poistne.ostatne	LEA: Ziadosti o zmenu - poistne - ostatne				1	apl
+AccountName	Group	GG-LEA-Ziadosti.o.zmenu.technicke.zhodnotenie	LEA: Ziadosti o zmenu - technicke zhodnotenie				1	apl	GG-LEA-Ziadosti.o.zmenu.technicke.zhodnotenie	LEA: Ziadosti o zmenu - technicke zhodnotenie				1	apl
+AccountName	Group	GG-LEA-Ziadosti.o.zmenu.zmena.splatok	Ziadosti o zmenu - zmena splatok				1	apl	GG-LEA-Ziadosti.o.zmenu.zmena.splatok	Ziadosti o zmenu - zmena splatok				1	apl
+AccountName	Group	GG-LEA-Ziadosti.o.zmeny.schvalenie.zmeny.poplatku	LEA: Ziadosti o zmeny - schvalenie zmeny poplatku				1	apl	GG-LEA-Ziadosti.o.zmeny.schvalenie.zmeny.poplatku	LEA: Ziadosti o zmeny - schvalenie zmeny poplatku				1	apl
+AccountName	Group	GG-LEA-Zlucovanie.duplicit.Partneri	LEA: Zlucovanie duplicit - Partneri				1	apl	GG-LEA-Zlucovanie.duplicit.Partneri	LEA: Zlucovanie duplicit - Partneri				1	apl
+AccountName	Group	GG-LEA-Zmena.DK.DM.AQ	Zmena DK.DM.AQ				1	apl	GG-LEA-Zmena.DK.DM.AQ	Zmena DK.DM.AQ				1	apl
+AccountName	Group	GG-LEA-Zmena.inkasa	LEA: Zmena inkasa				1	apl	GG-LEA-Zmena.inkasa	LEA: Zmena inkasa				1	apl
+AccountName	Group	GG-LEA-Zmluvna.dokumentacia	Zmluvna_dokumentacia				1	apl	GG-LEA-Zmluvna.dokumentacia	Zmluvna_dokumentacia				1	apl
+AccountName	Group	GG-MDK-admin	administrátor				1	apl	GG-MDK-admin	administrátor				1	apl
+AccountName	Group	GG-MDK-administrator	Administrátor				1	apl	GG-MDK-Administrator	Administrátor				1	apl
+AccountName	Group	GG-MDK-DGT-DLM-pilot-access	DGT-DLM-pilot-access				1	apl	GG-MDK-DGT-DLM-pilot-access	DGT-DLM-pilot-access				1	apl
+AccountName	Group	GG-MDK-DMCOM-admin	Admins				1	apl	GG-MDK-DMCOM-admin	Admins				1	apl
+AccountName	Group	GG-MDK-DMCOM-car	Controlling a reporting				1	apl	GG-MDK-DMCOM-car	Controlling a reporting				1	apl
+AccountName	Group	GG-MDK-DMCOM-comaktiv	DMCOMAktivator				1	apl	GG-MDK-DMCOM-comaktiv	DMCOMAktivator				1	apl
+AccountName	Group	GG-MDK-DMCOM-ict	ICT				1	apl	GG-MDK-DMCOM-ict	ICT				1	apl
+AccountName	Group	GG-MDK-DMCOM-olfs	OLFS				1	apl	GG-MDK-DMCOM-olfs	OLFS				1	apl
+AccountName	Group	GG-MDK-DMCOM-oppr	OPPR				1	apl	GG-MDK-DMCOM-oppr	OPPR				1	apl
+AccountName	Group	GG-MDK-DUX-administra	Administrátor				1	apl	GG-MDK-DUX-administra	Administrátor				1	apl
+AccountName	Group	GG-MDK-DUX-akvizitor	Akvizítor				1	apl	GG-MDK-DUX-akvizitor	Akvizítor				1	apl
+AccountName	Group	GG-MDK-DUX-centralnes	Centrálne spracovanie				1	apl	GG-MDK-DUX-centralnes	Centrálne spracovanie				1	apl
+AccountName	Group	GG-MDK-DUX-cssenior	Centrálne spracovanie-Senior				1	apl	GG-MDK-DUX-cssenior	Centrálne spracovanie-Senior				1	apl
+AccountName	Group	GG-MDK-DUX-komisiazh	Komisia zostatkových hodnôt				1	apl	GG-MDK-DUX-komisiazh	Komisia zostatkových hodnôt				1	apl
+AccountName	Group	GG-MDK-DUX-marketing	Marketing				1	apl	GG-MDK-DUX-marketing	Marketing				1	apl
+AccountName	Group	GG-MDK-DUX-objednavat	Objednávateľ / Odovzdávateľ vozidla				1	apl	GG-MDK-DUX-objednavat	Objednávateľ / Odovzdávateľ vozidla				1	apl
+AccountName	Group	GG-MDK-DUX-poistenie	Poistenie				1	apl	GG-MDK-DUX-poistenie	Poistenie				1	apl
+AccountName	Group	GG-MDK-DUX-seniorakvi	Senior akvizítor				1	apl	GG-MDK-DUX-seniorakvi	Senior akvizítor				1	apl
+AccountName	Group	GG-MDK-ERISK-bf	Booking File				1	apl	GG-MDK-ERISK-bf	Booking File				1	apl
+AccountName	Group	GG-MDK-ERISK-ip	Individuálne položky				1	apl	GG-MDK-ERISK-ip	Individuálne položky				1	apl
+AccountName	Group	GG-MDK-ERISK-td	Technický default				1	apl	GG-MDK-ERISK-td	Technický default				1	apl
+AccountName	Group	GG-MDK-LCT-administra	Administrátori				1	apl	GG-MDK-LCT-administra	Administrátori				1	apl
+AccountName	Group	GG-MDK-LCT-akvizitori	Akvizítori				1	apl	GG-MDK-LCT-akvizitori	Akvizítori				1	apl
+AccountName	Group	GG-MDK-LCT-backoffice	Backoffice				1	apl	GG-MDK-LCT-backoffice	Backoffice				1	apl
+AccountName	Group	GG-MDK-LCT-bbystrica	Banská Bystrica				1	apl	GG-MDK-LCT-bbystrica	Banská Bystrica				1	apl
+AccountName	Group	GG-MDK-LCT-BDS	BDS				1	apl	GG-MDK-LCT-BDS	BDS				1	apl
+AccountName	Group	GG-MDK-LCT-bratislava	Bratislava				1	apl	GG-MDK-LCT-bratislava	Bratislava				1	apl
+AccountName	Group	GG-MDK-LCT-brigvykaz	Brigádnik - Výkazy				1	apl	GG-MDK-LCT-brigvykaz	Brigádnik - Výkazy				1	apl
+AccountName	Group	GG-MDK-LCT-centroua	Centrálne zn. OUA				1	apl	GG-MDK-LCT-centroua	Centrálne zn. OUA				1	apl
+AccountName	Group	GG-MDK-LCT-cis-dealer	cis-dealer				1	apl	GG-MDK-LCT-cis-dealer	cis-dealer				1	apl
+AccountName	Group	GG-MDK-LCT-cis-dealer-read	cis-dealer-read				1	apl	GG-MDK-LCT-cis-dealer-read	cis-dealer-read				1	apl
+AccountName	Group	GG-MDK-LCT-cis-eds	cis-eds				1	apl	GG-MDK-LCT-cis-eds	cis-eds				1	apl
+AccountName	Group	GG-MDK-LCT-dunstreda	Dunajská Streda				1	apl	GG-MDK-LCT-dunstreda	Dunajská Streda				1	apl
+AccountName	Group	GG-MDK-LCT-eds	EDS				1	apl	GG-MDK-LCT-EDS	EDS				1	apl
+AccountName	Group	GG-MDK-LCT-fdscom	FDS COM				1	apl	GG-MDK-LCT-fdscom	FDS COM				1	apl
+AccountName	Group	GG-MDK-LCT-individpoi	Individuálne poistenie				1	apl	GG-MDK-LCT-individpoi	Individuálne poistenie				1	apl
+AccountName	Group	GG-MDK-LCT-internecc	Interné CC				1	apl	GG-MDK-LCT-internecc	Interné CC				1	apl
+AccountName	Group	GG-MDK-LCT-it	IT				1	apl	GG-MDK-LCT-it	IT				1	apl
+AccountName	Group	GG-MDK-LCT-ja	JA				1	apl	GG-MDK-LCT-ja	JA				1	apl
+AccountName	Group	GG-MDK-LCT-Kampane	Kampane				1	apl	GG-MDK-LCT-Kampane	Kampane				1	apl
+AccountName	Group	GG-MDK-LCT-kontrola	Kontrola				1	apl	GG-MDK-LCT-kontrola	Kontrola				1	apl
+AccountName	Group	GG-MDK-LCT-korporat	Korporátne obchody				1	apl	GG-MDK-LCT-korporat	Korporátne obchody				1	apl
+AccountName	Group	GG-MDK-LCT-kosice	Košice				1	apl	GG-MDK-LCT-kosice	Košice				1	apl
+AccountName	Group	GG-MDK-LCT-marketing	Marketing				1	apl	GG-MDK-LCT-marketing	Marketing				1	apl
+AccountName	Group	GG-MDK-LCT-nehnutelno	Leasing nehnuteľností				1	apl	GG-MDK-LCT-nehnutelno	Leasing nehnuteľností				1	apl
+AccountName	Group	GG-MDK-LCT-nitra	Nitra				1	apl	GG-MDK-LCT-nitra	Nitra				1	apl
+AccountName	Group	GG-MDK-LCT-novezamky	Nové Zámky				1	apl	GG-MDK-LCT-novezamky	Nové Zámky				1	apl
+AccountName	Group	GG-MDK-LCT-obchodnici	Obchodníci				1	apl	GG-MDK-LCT-obchodnici	Obchodníci				1	apl
+AccountName	Group	GG-MDK-LCT-odomykanie	Odomykanie ponúk				1	apl	GG-MDK-LCT-odomykanie	Odomykanie ponúk				1	apl
+AccountName	Group	GG-MDK-LCT-olfs	OLFS				1	apl	GG-MDK-LCT-olfs	OLFS				1	apl
+AccountName	Group	GG-MDK-LCT-partner	Partner				1	apl	GG-MDK-LCT-partner	Partner				1	apl
+AccountName	Group	GG-MDK-LCT-pm	PM				1	apl	GG-MDK-LCT-pm	PM				1	apl
+AccountName	Group	GG-MDK-LCT-poistne	Poistné				1	apl	GG-MDK-LCT-poistne	Poistné				1	apl
+AccountName	Group	GG-MDK-LCT-poprad	Poprad				1	apl	GG-MDK-LCT-poprad	Poprad				1	apl
+AccountName	Group	GG-MDK-LCT-presov	Prešov				1	apl	GG-MDK-LCT-presov	Prešov				1	apl
+AccountName	Group	GG-MDK-LCT-repredaj	Repredaj				1	apl	GG-MDK-LCT-repredaj	Repredaj				1	apl
+AccountName	Group	GG-MDK-LCT-riadeniepo	Riadenie portfólia				1	apl	GG-MDK-LCT-riadeniepo	Riadenie portfólia				1	apl
+AccountName	Group	GG-MDK-LCT-rorac	RORaC				1	apl	GG-MDK-LCT-rorac	RORaC				1	apl
+AccountName	Group	GG-MDK-LCT-rozvoj	Rozvoj				1	apl	GG-MDK-LCT-rozvoj	Rozvoj				1	apl
+AccountName	Group	GG-MDK-LCT-rpo	RPO				1	apl	GG-MDK-LCT-rpo	RPO				1	apl
+AccountName	Group	GG-MDK-LCT-rps	RPS				1	apl	GG-MDK-LCT-rps	RPS				1	apl
+AccountName	Group	GG-MDK-LCT-sa	SA				1	apl	GG-MDK-LCT-sa	SA				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Akceptacna_jednotka_SR_csob	Výnimky - Akceptacna jednotka SR csob				1	apl	GG-MDK-LCT-SCHVAL-Akceptacna_jednotka_SR_csob	Výnimky - Akceptacna jednotka SR csob				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Akcie	Výnimky - akcie				1	apl	GG-MDK-LCT-SCHVAL-akcie	Výnimky - akcie				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Bds	Výnimky - BDS				1	apl	GG-MDK-LCT-SCHVAL-Bds	Výnimky - BDS				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Compliance	Výnimky - Compliance				1	apl	GG-MDK-LCT-SCHVAL-Compliance	Výnimky - Compliance				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-FDS	Výnimky - FDS				1	apl	GG-MDK-LCT-SCHVAL-FDS	Výnimky - FDS				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Iag	Výnimky - iag				1	apl	GG-MDK-LCT-SCHVAL-Iag	Výnimky - iag				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Msv	Výnimky - Msv				1	apl	GG-MDK-LCT-SCHVAL-Msv	Výnimky - Msv				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Olfs.Hodnoty	Výnimky - OLFS hodnoty				1	apl	GG-MDK-LCT-SCHVAL-Olfs.Hodnoty	Výnimky - OLFS hodnoty				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Rezerva.Zh	Výnimky - Rezerva.Zh				1	apl	GG-MDK-LCT-SCHVAL-Rezerva.Zh	Výnimky - Rezerva.Zh				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Roc	Výnimky - ROC				1	apl	GG-MDK-LCT-SCHVAL-Roc	Výnimky - ROC				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Rorac	Výnimky - rorac				1	apl	GG-MDK-LCT-SCHVAL-Rorac	Výnimky - rorac				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-vynimky.poistenie	Výnimky - Poistenie				1	apl	GG-MDK-LCT-SCHVAL-vynimky.poistenie	Výnimky - Poistenie				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Vynimky.Risk	Výnimky - RISK				1	apl	GG-MDK-LCT-SCHVAL-Vynimky.Risk	Výnimky - RISK				1	apl
+AccountName	Group	GG-MDK-LCT-SCHVAL-Zmluvne.pokuty	Výnimky - Zmluvné pokuty				1	apl	GG-MDK-LCT-SCHVAL-Zmluvne.pokuty	Výnimky - Zmluvné pokuty				1	apl
+AccountName	Group	GG-MDK-LCT-trencin	Trenčín				1	apl	GG-MDK-LCT-trencin	Trenčín				1	apl
+AccountName	Group	GG-MDK-LCT-trnava	Trnava				1	apl	GG-MDK-LCT-trnava	Trnava				1	apl
+AccountName	Group	GG-MDK-LCT-vlastnycom	Vlastný COM				1	apl	GG-MDK-LCT-vlastnycom	Vlastný COM				1	apl
+AccountName	Group	GG-MDK-LCT-vynimky	Číselník výnimiek				1	apl	GG-MDK-LCT-vynimky	Číselník výnimiek				1	apl
+AccountName	Group	GG-MDK-LCT-zilina	Žilina				1	apl	GG-MDK-LCT-zilina	Žilina				1	apl
+AccountName	Group	GG-MDK-PLAN-administr	Administrátor				1	apl	GG-MDK-PLAN-administr	Administrátor				1	apl
+AccountName	Group	GG-MDK-REP-administra	Administrátor				1	apl	GG-MDK-REP-administra	Administrátor				1	apl
+AccountName	Group	GG-MDK-REP-akvizitor	Akvizítor				1	apl	GG-MDK-REP-akvizitor	Akvizítor				1	apl
+AccountName	Group	GG-MDK-REP-autoprev	Autoprevádzka				1	apl	GG-MDK-REP-autoprev	Autoprevádzka				1	apl
+AccountName	Group	GG-MDK-REP-bastr	Bratislava				1	apl	GG-MDK-REP-bastr	Bratislava				1	apl
+AccountName	Group	GG-MDK-REP-bbstr	Banská Bystrica				1	apl	GG-MDK-REP-bbstr	Banská Bystrica				1	apl
+AccountName	Group	GG-MDK-REP-bbystrica	B. Bystrica				1	apl	GG-MDK-REP-bbystrica	B. Bystrica				1	apl
+AccountName	Group	GG-MDK-REP-bratislava	Bratislava				1	apl	GG-MDK-REP-bratislava	Bratislava				1	apl
+AccountName	Group	GG-MDK-REP-centkontr	Centrálna kontrola obchodných prípadov				1	apl	GG-MDK-REP-centkontr	Centrálna kontrola obchodných prípadov				1	apl
+AccountName	Group	GG-MDK-REP-centoua	Centrálne značky OUA				1	apl	GG-MDK-REP-centoua	Centrálne značky OUA				1	apl
+AccountName	Group	GG-MDK-REP-centroua	Centrálne zn. OUA				1	apl	GG-MDK-REP-centroua	Centrálne zn. OUA				1	apl
+AccountName	Group	GG-MDK-REP-centzml	Centrálne spracovanie zmlúv				1	apl	GG-MDK-REP-centzml	Centrálne spracovanie zmlúv				1	apl
+AccountName	Group	GG-MDK-REP-compliance	Riadenie operačného rizika a compliance				1	apl	GG-MDK-REP-compliance	Riadenie operačného rizika a compliance				1	apl
+AccountName	Group	GG-MDK-REP-contrrep	Controlling and reporting				1	apl	GG-MDK-REP-contrrep	Controlling and reporting				1	apl
+AccountName	Group	GG-MDK-REP-creditrisk	Credit risk				1	apl	GG-MDK-REP-creditrisk	Credit risk				1	apl
+AccountName	Group	GG-MDK-REP-distrxsell	Distribúcia X-sell				1	apl	GG-MDK-REP-distrxsell	Distribúcia X-sell				1	apl
+AccountName	Group	GG-MDK-REP-dsstr	Dunajská Streda				1	apl	GG-MDK-REP-dsstr	Dunajská Streda				1	apl
+AccountName	Group	GG-MDK-REP-dunstreda	Dunajská Streda				1	apl	GG-MDK-REP-dunstreda	Dunajská Streda				1	apl
+AccountName	Group	GG-MDK-REP-EDS	EDS				1	apl	GG-MDK-REP-EDS	EDS				1	apl
+AccountName	Group	GG-MDK-REP-eucentrum	EU Centrum				1	apl	GG-MDK-REP-eucentrum	EU Centrum				1	apl
+AccountName	Group	GG-MDK-REP-eucentstr	EU centrum				1	apl	GG-MDK-REP-eucentstr	EU centrum				1	apl
+AccountName	Group	GG-MDK-REP-extds	Externé distribučné siete				1	apl	GG-MDK-REP-extds	Externé distribučné siete				1	apl
+AccountName	Group	GG-MDK-REP-extds2	Externá distribučná sieť				1	apl	GG-MDK-REP-extds2	Externá distribučná sieť				1	apl
+AccountName	Group	GG-MDK-REP-financnysp	Finančný špecialista				1	apl	GG-MDK-REP-financnysp	Finančný špecialista				1	apl
+AccountName	Group	GG-MDK-REP-finriad	Finančné riadenie a podpora				1	apl	GG-MDK-REP-finriad	Finančné riadenie a podpora				1	apl
+AccountName	Group	GG-MDK-REP-finsluz	Finančné služby				1	apl	GG-MDK-REP-finsluz	Finančné služby				1	apl
+AccountName	Group	GG-MDK-REP-genriad	Generálny riaditeľ				1	apl	GG-MDK-REP-genriad	Generálny riaditeľ				1	apl
+AccountName	Group	GG-MDK-REP-itprev	IT prevádzka				1	apl	GG-MDK-REP-itprev	IT prevádzka				1	apl
+AccountName	Group	GG-MDK-REP-itrozvoj	IT rozvoj systémov				1	apl	GG-MDK-REP-itrozvoj	IT rozvoj systémov				1	apl
+AccountName	Group	GG-MDK-REP-jazdenky	Jazdenky				1	apl	GG-MDK-REP-jazdenky	Jazdenky				1	apl
+AccountName	Group	GG-MDK-REP-kestr	Košice				1	apl	GG-MDK-REP-kestr	Košice				1	apl
+AccountName	Group	GG-MDK-REP-korpobch	Korporátne a centralizované obchody				1	apl	GG-MDK-REP-korpobch	Korporátne a centralizované obchody				1	apl
+AccountName	Group	GG-MDK-REP-korporat	Korporátne obchody				1	apl	GG-MDK-REP-korporat	Korporátne obchody				1	apl
+AccountName	Group	GG-MDK-REP-korpxsell	Korporátne financovanie a cross-sell				1	apl	GG-MDK-REP-korpxsell	Korporátne financovanie a cross-sell				1	apl
+AccountName	Group	GG-MDK-REP-kosice	Košice				1	apl	GG-MDK-REP-kosice	Košice				1	apl
+AccountName	Group	GG-MDK-REP-lokalvend	Lokálni vendori				1	apl	GG-MDK-REP-lokalvend	Lokálni vendori				1	apl
+AccountName	Group	GG-MDK-REP-ludszdr	Ľudské zdroje				1	apl	GG-MDK-REP-ludszdr	Ľudské zdroje				1	apl
+AccountName	Group	GG-MDK-REP-manazupr	Manažérske úpravy				1	apl	GG-MDK-REP-manazupr	Manažérske úpravy				1	apl
+AccountName	Group	GG-MDK-REP-marketing	Marketing a podpora obchodu				1	apl	GG-MDK-REP-marketing	Marketing a podpora obchodu				1	apl
+AccountName	Group	GG-MDK-REP-michalovce	Michalovce				1	apl	GG-MDK-REP-michalovce	Michalovce				1	apl
+AccountName	Group	GG-MDK-REP-mistr	Michalovce				1	apl	GG-MDK-REP-mistr	Michalovce				1	apl
+AccountName	Group	GG-MDK-REP-naksluz	Centrálny nákup a služby				1	apl	GG-MDK-REP-naksluz	Centrálny nákup a služby				1	apl
+AccountName	Group	GG-MDK-REP-nehnut	Leasing nehnuteľností				1	apl	GG-MDK-REP-nehnut	Leasing nehnuteľností				1	apl
+AccountName	Group	GG-MDK-REP-neurcpob	Neurčená pobočka				1	apl	GG-MDK-REP-neurcpob	Neurčená pobočka				1	apl
+AccountName	Group	GG-MDK-REP-neurcstr	Neurčené stredisko				1	apl	GG-MDK-REP-neurcstr	Neurčené stredisko				1	apl
+AccountName	Group	GG-MDK-REP-nitra	Nitra				1	apl	GG-MDK-REP-nitra	Nitra				1	apl
+AccountName	Group	GG-MDK-REP-novezamky	Nové Zámky				1	apl	GG-MDK-REP-novezamky	Nové Zámky				1	apl
+AccountName	Group	GG-MDK-REP-nrstr	Nitra				1	apl	GG-MDK-REP-nrstr	Nitra				1	apl
+AccountName	Group	GG-MDK-REP-nzstr	Nové Zámky				1	apl	GG-MDK-REP-nzstr	Nové Zámky				1	apl
+AccountName	Group	GG-MDK-REP-obchodpod	Obchod a podpora				1	apl	GG-MDK-REP-obchodpod	Obchod a podpora				1	apl
+AccountName	Group	GG-MDK-REP-ojazoua	Ojazdené OUA				1	apl	GG-MDK-REP-ojazoua	Ojazdené OUA				1	apl
+AccountName	Group	GG-MDK-REP-olfs	OLFS				1	apl	GG-MDK-REP-olfs	OLFS				1	apl
+AccountName	Group	GG-MDK-REP-olfsstr	OLFS				1	apl	GG-MDK-REP-olfsstr	OLFS				1	apl
+AccountName	Group	GG-MDK-REP-opleasing	Služby operatívneho leasingu				1	apl	GG-MDK-REP-opleasing	Služby operatívneho leasingu				1	apl
+AccountName	Group	GG-MDK-REP-orgprojpro	Organizač., projekt. a procesné riadenie				1	apl	GG-MDK-REP-orgprojpro	Organizač., projekt. a procesné riadenie				1	apl
+AccountName	Group	GG-MDK-REP-pdfnaklur	PDF nákladový úrok				1	apl	GG-MDK-REP-pdfnaklur	PDF nákladový úrok				1	apl
+AccountName	Group	GG-MDK-REP-pm	PM				1	apl	GG-MDK-REP-pm	PM				1	apl
+AccountName	Group	GG-MDK-REP-pobocsiet	Pobočková sieť				1	apl	GG-MDK-REP-pobocsiet	Pobočková sieť				1	apl
+AccountName	Group	GG-MDK-REP-poimakler	Poisťovací maklér				1	apl	GG-MDK-REP-poimakler	Poisťovací maklér				1	apl
+AccountName	Group	GG-MDK-REP-poistenie	Poistenie				1	apl	GG-MDK-REP-poistenie	Poistenie				1	apl
+AccountName	Group	GG-MDK-REP-poiststr	Poistenie				1	apl	GG-MDK-REP-poiststr	Poistenie				1	apl
+AccountName	Group	GG-MDK-REP-poprad	Poprad				1	apl	GG-MDK-REP-poprad	Poprad				1	apl
+AccountName	Group	GG-MDK-REP-postr	Prešov				1	apl	GG-MDK-REP-postr	Prešov				1	apl
+AccountName	Group	GG-MDK-REP-ppstr	Poprad				1	apl	GG-MDK-REP-ppstr	Poprad				1	apl
+AccountName	Group	GG-MDK-REP-pravnici	Právnici				1	apl	GG-MDK-REP-pravnici	Právnici				1	apl
+AccountName	Group	GG-MDK-REP-pravsluz	Právne služby				1	apl	GG-MDK-REP-pravsluz	Právne služby				1	apl
+AccountName	Group	GG-MDK-REP-predstaven	Predstavenstvo				1	apl	GG-MDK-REP-predstaven	Predstavenstvo				1	apl
+AccountName	Group	GG-MDK-REP-presov	Prešov				1	apl	GG-MDK-REP-presov	Prešov				1	apl
+AccountName	Group	GG-MDK-REP-psa	PSA				1	apl	GG-MDK-REP-psa	PSA				1	apl
+AccountName	Group	GG-MDK-REP-repredaj	Repredaj				1	apl	GG-MDK-REP-repredaj	Repredaj				1	apl
+AccountName	Group	GG-MDK-REP-riaditelpo	Riaditeľ pobočky				1	apl	GG-MDK-REP-riaditelpo	Riaditeľ pobočky				1	apl
+AccountName	Group	GG-MDK-REP-riadportf	Riadenie portfólia				1	apl	GG-MDK-REP-riadportf	Riadenie portfólia				1	apl
+AccountName	Group	GG-MDK-REP-riadrozv	Riadenie rozvoja obchodu				1	apl	GG-MDK-REP-riadrozv	Riadenie rozvoja obchodu				1	apl
+AccountName	Group	GG-MDK-REP-riadvztah	Riadenie vzťahov so zákazníkom a podpora				1	apl	GG-MDK-REP-riadvztah	Riadenie vzťahov so zákazníkom a podpora				1	apl
+AccountName	Group	GG-MDK-REP-risk	Risk				1	apl	GG-MDK-REP-risk	Risk				1	apl
+AccountName	Group	GG-MDK-REP-spraktiv	Správa aktív				1	apl	GG-MDK-REP-spraktiv	Správa aktív				1	apl
+AccountName	Group	GG-MDK-REP-sprpois	Správa poistenia				1	apl	GG-MDK-REP-sprpois	Správa poistenia				1	apl
+AccountName	Group	GG-MDK-REP-tnstr	Trenčín				1	apl	GG-MDK-REP-tnstr	Trenčín				1	apl
+AccountName	Group	GG-MDK-REP-trencin	Trenčín				1	apl	GG-MDK-REP-trencin	Trenčín				1	apl
+AccountName	Group	GG-MDK-REP-trnava	Trnava				1	apl	GG-MDK-REP-trnava	Trnava				1	apl
+AccountName	Group	GG-MDK-REP-ttstr	Trnava				1	apl	GG-MDK-REP-ttstr	Trnava				1	apl
+AccountName	Group	GG-MDK-REP-uctdane	Účtovníctvo a dane				1	apl	GG-MDK-REP-uctdane	Účtovníctvo a dane				1	apl
+AccountName	Group	GG-MDK-REP-uvery	Úvery				1	apl	GG-MDK-REP-uvery	Úvery				1	apl
+AccountName	Group	GG-MDK-REP-vendsupp	Vendor support				1	apl	GG-MDK-REP-vendsupp	Vendor support				1	apl
+AccountName	Group	GG-MDK-REP-vendsupstr	Vendor support				1	apl	GG-MDK-REP-vendsupstr	Vendor support				1	apl
+AccountName	Group	GG-MDK-REP-vrit	VR IT a podpora				1	apl	GG-MDK-REP-vrit	VR IT a podpora				1	apl
+AccountName	Group	GG-MDK-REP-zakaznicky	Zákaznický servis				1	apl	GG-MDK-REP-zakaznicky	Zákaznický servis				1	apl
+AccountName	Group	GG-MDK-REP-zakservis	Zákaznícky servis				1	apl	GG-MDK-REP-zakservis	Zákaznícky servis				1	apl
+AccountName	Group	GG-MDK-REP-zastr	Žilina				1	apl	GG-MDK-REP-zastr	Žilina				1	apl
+AccountName	Group	GG-MDK-REP-zbernykos	Zberný kôš				1	apl	GG-MDK-REP-zbernykos	Zberný kôš				1	apl
+AccountName	Group	GG-MDK-REP-zilina	Žilina				1	apl	GG-MDK-REP-zilina	Žilina				1	apl
+AccountName	Group	GG-MDK-RISK-1	1				1	apl	GG-MDK-RISK-1	1				1	apl
+AccountName	Group	GG-MDK-RISK-1plus	1+				1	apl	GG-MDK-RISK-1plus	1+				1	apl
+AccountName	Group	GG-MDK-RISK-2	2				1	apl	GG-MDK-RISK-2	2				1	apl
+AccountName	Group	GG-MDK-RISK-3	3				1	apl	GG-MDK-RISK-3	3				1	apl
+AccountName	Group	GG-MDK-RISK-a	A				1	apl	GG-MDK-RISK-a	A				1	apl
+AccountName	Group	GG-MDK-RISK-Administrator	Administrátor				1	apl	GG-MDK-RISK-Administrator	Administrátor				1	apl
+AccountName	Group	GG-MDK-RISK-cc	CC				1	apl	GG-MDK-RISK-cc	CC				1	apl
+AccountName	Group	GG-MDK-RISK-cervenali	Červená listina				1	apl	GG-MDK-RISK-cervenali	Červená listina				1	apl
+AccountName	Group	GG-MDK-RISK-ciernalis	Čierna listina				1	apl	GG-MDK-RISK-ciernalis	Čierna listina				1	apl
+AccountName	Group	GG-MDK-RISK-creditris	Credit Risk				1	apl	GG-MDK-RISK-creditris	Credit Risk				1	apl
+AccountName	Group	GG-MDK-RISK-kbc	KBC				1	apl	GG-MDK-RISK-kbc	KBC				1	apl
+AccountName	Group	GG-MDK-RISK-lgdroac	Správa parametrov LGD/ROAC				1	apl	GG-MDK-RISK-lgdroac	Správa parametrov LGD/ROAC				1	apl
+AccountName	Group	GG-MDK-RISK-lsccsc	LSC/CSC				1	apl	GG-MDK-RISK-lsccsc	LSC/CSC				1	apl
+AccountName	Group	GG-MDK-RISK-preverova	Preverovanie				1	apl	GG-MDK-RISK-preverova	Preverovanie				1	apl
+AccountName	Group	GG-MDK-RISK-psaf	PSAF				1	apl	GG-MDK-RISK-psaf	PSAF				1	apl
+AccountName	Group	GG-MDK-RISK-psapariz	PSA – Paríž				1	apl	GG-MDK-RISK-psapariz	PSA – Paríž				1	apl
+AccountName	Group	GG-MDK-RISK-psask	PSA - Slovensko				1	apl	GG-MDK-RISK-psask	PSA - Slovensko				1	apl
+AccountName	Group	GG-MDK-RISK-ramecsv	Rámec SV				1	apl	GG-MDK-RISK-ramecsv	Rámec SV				1	apl
+AccountName	Group	GG-MDK-RISK-ramecx	Rámec X				1	apl	GG-MDK-RISK-ramecx	Rámec X				1	apl
+AccountName	Group	GG-MDK-RISK-rp	RP				1	apl	GG-MDK-RISK-rp	RP				1	apl
+AccountName	Group	GG-MDK-RISK-sencredri	RISK - Senior Credit Risk				1	apl	GG-MDK-RISK-sencredri	RISK - Senior Credit Risk				1	apl
+AccountName	Group	GG-MDK-RISK-spravacis	RISK - Správa číselníkov				1	apl	GG-MDK-RISK-spravacis	Správa číselníkov RISK				1	apl
+AccountName	Group	GG-MDK-RISK-sv	SV				1	apl	GG-MDK-RISK-sv	SV				1	apl
+AccountName	Group	GG-MDK-RISK-verifikuj	Verifikuje schvaľovanie				1	apl	GG-MDK-RISK-verifikuj	Verifikuje schvaľovanie				1	apl
+AccountName	Group	GG-MDK-RISK-vlastneop	Schvaľuje vlastné OP				1	apl	GG-MDK-RISK-vlastneop	Schvaľuje vlastné OP				1	apl
+AccountName	Group	GG-MDK-RISK-x	X				1	apl	GG-MDK-RISK-x	X				1	apl
+AccountName	Group	GG-MDK-UVER-administr	Administrátor				1	apl	GG-MDK-UVER-administr	Administrátor				1	apl
+AccountName	Group	GG-MDK-ZRR-Zapad	Zástup RR				1	bus	GG-MDK-ZRR-Zapad	Zástup RR				1	bus
+AccountName	Group	GG-PBI_RRiaditelia	PBI_RRiaditelia				1	apl	GG-PBI_RRiaditelia	PBI_RRiaditelia				1	apl
+AccountName	Group	GG-PBI_Vsetci	PBI_Vsetci				1	apl	GG-PBI_Vsetci	PBI_Vsetci				1	apl
+AccountName	Group	GG-PBI-CR	PBI_CR				1	apl	GG-PBI-CR	PBI_CR				1	apl
+AccountName	Group	GG-SAP-ABAP-Snapshot-Daten.lesen	ABAP-Snapshot-Daten lesen				1	apl	GG-SAP-ABAP-Snapshot-Daten.lesen	ABAP-Snapshot-Daten lesen				1	apl
+AccountName	Group	GG-SAP-Administrator	Administrátor				1	apl	GG-SAP-Administrator	Administrátor				1	apl
+AccountName	Group	GG-SAP-Aktivacia.majetku	Aktivacia majetku				1	apl	GG-SAP-Aktivacia.majetku	Aktivacia majetku				1	apl
+AccountName	Group	GG-SAP-All.for.INVCK	All for INVCK				1	apl	GG-SAP-All.for.INVCK	All for INVCK				1	apl
+AccountName	Group	GG-SAP-Analyza.workload.-.kontrola.inboxu	Analýza workload - kontrola inboxu				1	apl	GG-SAP-Analyza.workload.-.kontrola.inboxu	Analýza workload - kontrola inboxu				1	apl
+AccountName	Group	GG-SAP-Chybajuce.opravnenia.k.inventure.k.modulu.AM	Chýbajúce opravnenia k inventúre k modulu AM				1	apl	GG-SAP-Chybajuce.opravnenia.k.inventure.k.modulu.AM	Chýbajúce opravnenia k inventúre k modulu AM				1	apl
+AccountName	Group	GG-SAP-CO_.C_R	CO: C&R				1	apl	GG-SAP-CO_.C_R	CO: C&R				1	apl
+AccountName	Group	GG-SAP-CO_.Manazment	CO: Manazment				1	apl	GG-SAP-CO_.Manazment	CO: Manazment				1	apl
+AccountName	Group	GG-SAP-CO_.Predstavenstvo	CO: Predstavenstvo				1	apl	GG-SAP-CO_.Predstavenstvo	CO: Predstavenstvo				1	apl
+AccountName	Group	GG-SAP-CO_.Uzivatel.reportov	CO: Uzivatel reportov				1	apl	GG-SAP-CO_.Uzivatel.reportov	CO: Uzivatel reportov				1	apl
+AccountName	Group	GG-SAP-Datenbankadministrator.MaxDB	Datenbankadministrator MaxDB				1	apl	GG-SAP-Datenbankadministrator.MaxDB	Datenbankadministrator MaxDB				1	apl
+AccountName	Group	GG-SAP-FI.-.Poloatomaticke.uctovanie.KFV	FI - Poloatomatické účtovanie KFV				1	apl	GG-SAP-FI.-.Poloatomaticke.uctovanie.KFV	FI - Poloatomatické účtovanie KFV				1	apl
+AccountName	Group	GG-SAP-FI.-.pridelenie.co.roli	FI - pridelenie co roli				1	apl	GG-SAP-FI.-.pridelenie.co.roli	FI - pridelenie co roli				1	apl
+AccountName	Group	GG-SAP-FI_.BP	FI: BP				1	apl	GG-SAP-FI_.BP	FI: BP				1	apl
+AccountName	Group	GG-SAP-FI_.BP.RO	FI: BP RO				1	apl	GG-SAP-FI_.BP.RO	FI: BP RO				1	apl
+AccountName	Group	GG-SAP-FI_.Hlavny.uctovnik	FI: Hlavny uctovnik				1	apl	GG-SAP-FI_.Hlavny.uctovnik	FI: Hlavny uctovnik				1	apl
+AccountName	Group	GG-SAP-FI_.Report.nad.FI	FI: Report nad FI				1	apl	GG-SAP-FI_.Report.nad.FI	FI: Report nad FI				1	apl
+AccountName	Group	GG-SAP-FI_.Specialny.uctovnik	FI: Specialny uctovnik				1	apl	GG-SAP-FI_.Specialny.uctovnik	FI: Specialny uctovnik				1	apl
+AccountName	Group	GG-SAP-FI_.Spravca.BP	FI: Spravca BP				1	apl	GG-SAP-FI_.Spravca.BP	FI: Spravca BP				1	apl
+AccountName	Group	GG-SAP-FI_.Spravca.dani	FI: Spravca dani				1	apl	GG-SAP-FI_.Spravca.dani	FI: Spravca dani				1	apl
+AccountName	Group	GG-SAP-FI_.Spravca.OP	FI: Spravca OP				1	apl	GG-SAP-FI_.Spravca.OP	FI: Spravca OP				1	apl
+AccountName	Group	GG-SAP-FI_.Spravca.pohladavok	FI: Spravca pohladavok				1	apl	GG-SAP-FI_.Spravca.pohladavok	FI: Spravca pohladavok				1	apl
+AccountName	Group	GG-SAP-FI_.Validacie.-.vypnutie_.zapnutie	FI: Validacie - vypnutie, zapnutie				1	apl	GG-SAP-FI_.Validacie.-.vypnutie_.zapnutie	FI: Validacie - vypnutie, zapnutie				1	apl
+AccountName	Group	GG-SAP-FI_.Zakladny.uctovnik	FI: Zakladny uctovnik				1	apl	GG-SAP-FI_.Zakladny.uctovnik	FI: Zakladny uctovnik				1	apl
+AccountName	Group	GG-SAP-FI_AA_.Klucovy.uzivatel	FI_AA: Klucovy uzivatel				1	apl	GG-SAP-FI_AA_.Klucovy.uzivatel	FI_AA: Klucovy uzivatel				1	apl
+AccountName	Group	GG-SAP-FI_AA_.Reporting	FI_AA: Reporting				1	apl	GG-SAP-FI_AA_.Reporting	FI_AA: Reporting				1	apl
+AccountName	Group	GG-SAP-FI_AA_.Uctovnik	FI_AA: Uctovnik				1	apl	GG-SAP-FI_AA_.Uctovnik	FI_AA: Uctovnik				1	apl
+AccountName	Group	GG-SAP-FS_.Customizacia.platobneho.styku	FS: Customizacia platobneho styku				1	apl	GG-SAP-FS_.Customizacia.platobneho.styku	FS: Customizacia platobneho styku				1	apl
+AccountName	Group	GG-SAP-FS_.Evidencia.KDF	FS: Evidencia KDF				1	apl	GG-SAP-FS_.Evidencia.KDF	FS: Evidencia KDF				1	apl
+AccountName	Group	GG-SAP-FS_.Evidencia.KOF	FS: Evidencia KOF				1	apl	GG-SAP-FS_.Evidencia.KOF	FS: Evidencia KOF				1	apl
+AccountName	Group	GG-SAP-FS_.Generovanie.media.do.HB	FS: Generovanie media do HB				1	apl	GG-SAP-FS_.Generovanie.media.do.HB	FS: Generovanie media do HB				1	apl
+AccountName	Group	GG-SAP-FS_.Pokladna_.evidencia	FS: Pokladna: evidencia				1	apl	GG-SAP-FS_.Pokladna_.evidencia	FS: Pokladna: evidencia				1	apl
+AccountName	Group	GG-SAP-FS_.Specialista.platobneho.styku_.platby	FS: Specialista platobneho styku: platby				1	apl	GG-SAP-FS_.Specialista.platobneho.styku_.platby	FS: Specialista platobneho styku: platby				1	apl
+AccountName	Group	GG-SAP-FS_.Specialista.platobneho.styku_.vypisy	FS: Specialista platobneho styku: vypisy				1	apl	GG-SAP-FS_.Specialista.platobneho.styku_.vypisy	FS: Specialista platobneho styku: vypisy				1	apl
+AccountName	Group	GG-SAP-FS_.Travel	FS: Travel				1	apl	GG-SAP-FS_.Travel	FS: Travel				1	apl
+AccountName	Group	GG-SAP-FS_.Travel_.evidencia	FS: Travel: evidencia				1	apl	GG-SAP-FS_.Travel_.evidencia	FS: Travel: evidencia				1	apl
+AccountName	Group	GG-SAP-GDPR.aktivity	GDPR aktivity				1	apl	GG-SAP-GDPR.aktivity	GDPR aktivity				1	apl
+AccountName	Group	GG-SAP-Generovanie.objednavok.mailom	Generovanie objednavok mailom				1	apl	GG-SAP-Generovanie.objednavok.mailom	Generovanie objednavok mailom				1	apl
+AccountName	Group	GG-SAP-Koncovy.uzivatel.-.vseobecne.opravnenia	Koncovy uzivatel - vseobecne opravnenia				1	apl	GG-SAP-Koncovy.uzivatel.-.vseobecne.opravnenia	Koncovy uzivatel - vseobecne opravnenia				1	apl
+AccountName	Group	GG-SAP-MM_.Drzitel.rozpoctu	MM: Drzitel rozpoctu				1	apl	GG-SAP-MM_.Drzitel.rozpoctu	MM: Drzitel rozpoctu				1	apl
+AccountName	Group	GG-SAP-MM_.Gestor	MM: Gestor				1	apl	GG-SAP-MM_.Gestor	MM: Gestor				1	apl
+AccountName	Group	GG-SAP-MM_.Klucovy.uzivatel	MM: Klucovy uzivatel				1	apl	GG-SAP-MM_.Klucovy.uzivatel	MM: Klucovy uzivatel				1	apl
+AccountName	Group	GG-SAP-MM_.Nakup	MM: Nakup				1	apl	GG-SAP-MM_.Nakup	MM: Nakup				1	apl
+AccountName	Group	GG-SAP-MM_.Schvalovatel	MM: Schvalovatel				1	apl	GG-SAP-MM_.Schvalovatel	MM: Schvalovatel				1	apl
+AccountName	Group	GG-SAP-MM_.Schvalovatel.CP	MM: Schvalovatel CP				1	apl	GG-SAP-MM_.Schvalovatel.CP	MM: Schvalovatel CP				1	apl
+AccountName	Group	GG-SAP-MM_.Schvalovatel.GR	MM: Schvalovatel GR				1	apl	GG-SAP-MM_.Schvalovatel.GR	MM: Schvalovatel GR				1	apl
+AccountName	Group	GG-SAP-MM_.Schvalovatel.ND	MM: Schvalovatel ND				1	apl	GG-SAP-MM_.Schvalovatel.ND	MM: Schvalovatel ND				1	apl
+AccountName	Group	GG-SAP-MM_.Schvalovatel.NZ	MM: Schvalovatel NZ				1	apl	GG-SAP-MM_.Schvalovatel.NZ	MM: Schvalovatel NZ				1	apl
+AccountName	Group	GG-SAP-Nahlady.na.DR_.ZS_.NS	Náhľady na DR, ZS, NS				1	apl	GG-SAP-Nahlady.na.DR_.ZS_.NS	Náhľady na DR, ZS, NS				1	apl
+AccountName	Group	GG-SAP-Opravnenie.pre.pracu.v.SAPe.s.SII	Opravnenie pre prácu v SAPe s SII				1	apl	GG-SAP-Opravnenie.pre.pracu.v.SAPe.s.SII	Opravnenie pre prácu v SAPe s SII				1	apl
+AccountName	Group	GG-SAP-Otvaranie.resp..zatvaranie.uctovnych.obdobi	Otvaranie resp. zatvaranie účtovných období				1	apl	GG-SAP-Otvaranie.resp..zatvaranie.uctovnych.obdobi	Otvaranie resp. zatvaranie účtovných období				1	apl
+AccountName	Group	GG-SAP-Penalizacia.-.sprava.DMS.rozhrania	Penalizácia - správa DMS rozhrania				1	apl	GG-SAP-Penalizacia.-.sprava.DMS.rozhrania	Penalizácia - správa DMS rozhrania				1	apl
+AccountName	Group	GG-SAP-Penalizacia.-.vsetky.opravnenia	Penalizacia - všetky oprávnenia				1	apl	GG-SAP-Penalizacia.-.vsetky.opravnenia	Penalizacia - všetky oprávnenia				1	apl
+AccountName	Group	GG-SAP-Penalizacia.-.zakaznicky.servis	Penalizacia - zákaznícky servis				1	apl	GG-SAP-Penalizacia.-.zakaznicky.servis	Penalizacia - zákaznícky servis				1	apl
+AccountName	Group	GG-SAP-Pohyby.na.inv.majetku	Pohyby na inv.majetku				1	apl	GG-SAP-Pohyby.na.inv.majetku	Pohyby na inv.majetku				1	apl
+AccountName	Group	GG-SAP-Pre.audit	Pre audit				1	apl	GG-SAP-Pre.audit	Pre audit				1	apl
+AccountName	Group	GG-SAP-prezeranie.faktur.pre.CS	prezeranie faktur pre CS				1	apl	GG-SAP-prezeranie.faktur.pre.CS	prezeranie faktur pre CS				1	apl
+AccountName	Group	GG-SAP-prezeranie.faktur.pre.IT	prezeranie faktur pre IT				1	apl	GG-SAP-prezeranie.faktur.pre.IT	prezeranie faktur pre IT				1	apl
+AccountName	Group	GG-SAP-prezeranie.faktur.pre.OLFS	prezeranie faktur pre OLFS				1	apl	GG-SAP-prezeranie.faktur.pre.OLFS	prezeranie faktur pre OLFS				1	apl
+AccountName	Group	GG-SAP-Profil.pre.all	Profil pre all				1	apl	GG-SAP-Profil.pre.all	Profil pre all				1	apl
+AccountName	Group	GG-SAP-Rola.k.DPH	Rola k DPH				1	apl	GG-SAP-Rola.k.DPH	Rola k DPH				1	apl
+AccountName	Group	GG-SAP-Rola.na.zobrazenie.Z_.tabuliek	Rola na zobrazenie Z* tabuliek				1	apl	GG-SAP-Rola.na.zobrazenie.Z_.tabuliek	Rola na zobrazenie Z* tabuliek				1	apl
+AccountName	Group	GG-SAP-RVND.-platba.online.-doplnenie.opravneni..pre.uc..okruh.1	RVND -platba online -doplnenie opravneni  pre uc. okruh 1000 - special pre S.Kl.				1	apl	GG-SAP-RVND.-platba.online.-doplnenie.opravneni..pre.uc..okruh.1	RVND -platba online -doplnenie opravneni  pre uc. okruh 1000 - special pre S.Kl.				1	apl
+AccountName	Group	GG-SAP-SAP.Solution.Manager.READ-User	SAP Solution Manager READ-User				1	apl	GG-SAP-SAP.Solution.Manager.READ-User	SAP Solution Manager READ-User				1	apl
+AccountName	Group	GG-SAP-SAP.Solution.Manager.TMW-User	SAP Solution Manager TMW-User				1	apl	GG-SAP-SAP.Solution.Manager.TMW-User	SAP Solution Manager TMW-User				1	apl
+AccountName	Group	GG-SAP-Solution.Manager.Service.Data.Control.Center.-.Administra	Solution Manager Service Data Control Center - Administration				1	apl	GG-SAP-Solution.Manager.Service.Data.Control.Center.-.Administra	Solution Manager Service Data Control Center - Administration				1	apl
+AccountName	Group	GG-SAP-Spravca.systemu	Správca systému				1	apl	GG-SAP-Spravca.systemu	Správca systému				1	apl
+AccountName	Group	GG-SAP-Technicka.rola.pre.extrakciu.dat	Technická rola pre extrakciu dát				1	apl	GG-SAP-Technicka.rola.pre.extrakciu.dat	Technická rola pre extrakciu dát				1	apl
+AccountName	Group	GG-SAP-TESTER_SAP	TESTER_SAP				1	apl	GG-SAP-TESTER_SAP	TESTER_SAP				1	apl
+AccountName	Group	GG-SAP-TESTER_SAP_1	TESTER_SAP_1				1	apl	GG-SAP-TESTER_SAP_1	TESTER_SAP_1				1	apl
+AccountName	Group	GG-SAP-transakacia.SE16.na.citanie	transakacia SE16 na citanie				1	apl	GG-SAP-transakacia.SE16.na.citanie	transakacia SE16 na citanie				1	apl
+AccountName	Group	GG-SAP-Transakcia.SA38	Transakcia SA38				1	apl	GG-SAP-Transakcia.SA38	Transakcia SA38				1	apl
+AccountName	Group	GG-SAP-Transakcia.SE16n	Transakcia SE16n				1	apl	GG-SAP-Transakcia.SE16n	Transakcia SE16n				1	apl
+AccountName	Group	GG-SAP-Transakcie.ME2L_.ME2M_.ME2N_.ME2C_ME2K.zobrazit	Transakcie ME2L, ME2M, ME2N, ME2C,ME2K zobrazit				1	apl	GG-SAP-Transakcie.ME2L_.ME2M_.ME2N_.ME2C_ME2K.zobrazit	Transakcie ME2L, ME2M, ME2N, ME2C,ME2K zobrazit				1	apl
+AccountName	Group	GG-SAP-Transakcie_FB03	Transakcie FB03, FAGLL03, FAGLB03...				1	apl	GG-SAP-Transakcie_FB03	Transakcie FB03, FAGLL03, FAGLB03...				1	apl
+AccountName	Group	GG-SAP-Uctovnictvo.-.hlavna.kniha._nova_.-.zavierka	Účtovníctvo - hlavná kniha (nová) - závierka				1	apl	GG-SAP-Uctovnictvo.-.hlavna.kniha._nova_.-.zavierka	Účtovníctvo - hlavná kniha (nová) - závierka				1	apl
+AccountName	Group	GG-SAP-Udrzba.investicneho.majetku	Udrzba investicneho majetku				1	apl	GG-SAP-Udrzba.investicneho.majetku	Udrzba investicneho majetku				1	apl
+AccountName	Group	GG-SAP-Udrzba.kmenoveho.suboru.materialu	Údržba kmeňového súboru materiálu				1	apl	GG-SAP-Udrzba.kmenoveho.suboru.materialu	Údržba kmeňového súboru materiálu				1	apl
+AccountName	Group	GG-SAP-Udrzba.komplexu.inv.majetku	Údržba komplexu inv.majetku				1	apl	GG-SAP-Udrzba.komplexu.inv.majetku	Údržba komplexu inv.majetku				1	apl
+AccountName	Group	GG-SAP-Vsetky.opravnenia	Všetky opravnenia				1	apl	GG-SAP-Vsetky.opravnenia	Všetky opravnenia				1	apl
+AccountName	Group	GG-SAP-Z_SOLMAN_READ	Z_SOLMAN_READ				1	apl	GG-SAP-Z_SOLMAN_READ	Z_SOLMAN_READ				1	apl
+AccountName	Group	GG-SAP-Z_SOLMAN_READ_70	Z_SOLMAN_READ_70				1	apl	GG-SAP-Z_SOLMAN_READ_70	Z_SOLMAN_READ_70				1	apl
+AccountName	Group	GG-SAP-Z_SOLMAN_TMW	Z_SOLMAN_TMW				1	apl	GG-SAP-Z_SOLMAN_TMW	Z_SOLMAN_TMW				1	apl
+AccountName	Group	GG-SAP-ZFI_DD_CUST	ZFI_DD_CUST				1	apl	GG-SAP-ZFI_DD_CUST	ZFI_DD_CUST				1	apl
+AccountName	Group	GG-SAP-ZFI_F.08	ZFI_F.08				1	apl	GG-SAP-ZFI_F.08	ZFI_F.08				1	apl
+AccountName	Group	GG-SAP-ZFI_FAGLL03_ONLY	ZFI_FAGLL03_ONLY				1	apl	GG-SAP-ZFI_FAGLL03_ONLY	ZFI_FAGLL03_ONLY				1	apl
+AccountName	Group	GG-SAP-ZFI_IFRS9_FILES	ZFI_IFRS9_FILES				1	apl	GG-SAP-ZFI_IFRS9_FILES	ZFI_IFRS9_FILES				1	apl
+AccountName	Group	GG-SAP-ZFI_INTG	ZFI_INTG				1	apl	GG-SAP-ZFI_INTG	ZFI_INTG				1	apl
+AccountName	Group	GG-SAP-ZFI_PUKRUK	ZFI_PUKRUK				1	apl	GG-SAP-ZFI_PUKRUK	ZFI_PUKRUK				1	apl
+AccountName	Group	GG-SAP-ZFI_ZINV_BARCODE_1	ZFI_ZINV_BARCODE_1				1	apl	GG-SAP-ZFI_ZINV_BARCODE_1	ZFI_ZINV_BARCODE_1				1	apl
+AccountName	Group	GG-SAP-ZMM_ME23N_SPECIFIC	ZMM_ME23N_SPECIFIC				1	apl	GG-SAP-ZMM_ME23N_SPECIFIC	ZMM_ME23N_SPECIFIC				1	apl
+AccountName	Group	GG-SAP-ZMM_MMPV_SPECIFIC	ZMM_MMPV_SPECIFIC				1	apl	GG-SAP-ZMM_MMPV_SPECIFIC	ZMM_MMPV_SPECIFIC				1	apl
+AccountName	Group	GG-SAP-ZMM_ZMM30_SPECIFIC	ZMM_ZMM30_SPECIFIC				1	apl	GG-SAP-ZMM_ZMM30_SPECIFIC	ZMM_ZMM30_SPECIFIC				1	apl
+AccountName	Group	GG-SAP-Zobrazenie.poloziek.dokladu	Zobrazenie položiek dokladu				1	apl	GG-SAP-Zobrazenie.poloziek.dokladu	Zobrazenie položiek dokladu				1	apl
+AccountName	Group	GG-SAP-ZPENTLAC	ZPENTLAC				1	apl	GG-SAP-ZPENTLAC	ZPENTLAC				1	apl
+AccountName	Group	GG-SHP-SHP.Financne.sluzby	SHP Finančné služby				1	apl	GG-SHP-SHP.Financne.sluzby	SHP Finančné služby				1	apl
+AccountName	Group	GG-TER-Terminalovy.pristup	Terminálový přístup				1	apl	GG-TER-Terminalovy.pristup	Terminálový přístup				1	apl
+AccountName	Group	GG-VEMA-Dochazkovy.vedouci	Docházkový vedoucí				1	apl	GG-VEMA-Dochazkovy.vedouci	Docházkový vedoucí				1	apl
+AccountName	Group	GG-VEMA-Hlavni.dochazkovy.vedouci	Hlavní docházkový vedoucí				1	apl	GG-VEMA-Hlavni.dochazkovy.vedouci	Hlavní docházkový vedoucí				1	apl
+AccountName	Group	GG-VEMA-Hlavni.mzdovy.ucetni	Hlavní mzdový účetní				1	apl	GG-VEMA-Hlavni.mzdovy.ucetni	Hlavní mzdový účetní				1	apl
+AccountName	Group	GG-VEMA-Hlavni.personalista	Hlavní personalista				1	apl	GG-VEMA-Hlavni.personalista	Hlavní personalista				1	apl
+AccountName	Group	GG-VEMA-Hlavni.systemizator	Hlavní systemizátor				1	apl	GG-VEMA-Hlavni.systemizator	Hlavní systemizátor				1	apl
+AccountName	Group	GG-VEMA-Hlavni.vzdelavac	Hlavní vzdělávač				1	apl	GG-VEMA-Hlavni.vzdelavac	Hlavní vzdělávač				1	apl
+AccountName	Group	GG-VEMA-Hlavny.dochadzkovy.veduci	Hlavný dochádzkový vedúci				1	apl	GG-VEMA-Hlavny.dochadzkovy.veduci	Hlavný dochádzkový vedúci				1	apl
+AccountName	Group	GG-VEMA-Spravce.stravenek	Správce stravenek				1	apl	GG-VEMA-Spravce.stravenek	Správce stravenek				1	apl
+AccountName	Group	GG-VEMA-Spravce.systemu	Správce systému				1	apl	GG-VEMA-Spravce.systemu	Správce systému				1	apl
+AccountName	Group	GG-VEMA-Ucet.pre.prihlasenie.do.systemu._domena_	Účet pre prihlásenie do systému (doména)				1	apl	GG-VEMA-Ucet.pre.prihlasenie.do.systemu._domena_	Účet pre prihlásenie do systému (doména)				1	apl
+AccountName	Group	GG-VEMA-ucet.pre.prihlasenie.do.systemu.AD	účet pre prihlásenie do systému AD				1	apl	GG-VEMA-ucet.pre.prihlasenie.do.systemu.AD	účet pre prihlásenie do systému AD				1	apl
+AccountName	Group	GG-VEMA-Vzdelavani	Vzdělávání				1	apl	GG-VEMA-Vzdelavani	Vzdělávání				1	apl
+AccountName	Group	GG-WP-Administrator.GS	Administrátor GS				1	apl	GG-WP-Administrator.GS	Administrátor GS				1	apl
+AccountName	Group	Riaditeľ pobočky MDK_Centrálne značky OUA	Riaditeľ pobočky MDK_Centrálne značky OUA				1	bus	Riaditeľ pobočky MDK_Centrálne značky OUA	Riaditeľ pobočky MDK_Centrálne značky OUA				1	bus
+AccountName	Group	RP_docasna_1	RP_docasna_1				1	bus	RP_docasna_1	RP_docasna_1				1	bus
+AccountName	Group	špecialista pre repredaj II_Správa aktív a repredaj_doplnujuca	špecialista pre repredaj II_Správa aktív a repredaj_doplnujuca				1	bus	špecialista pre repredaj II_Správa aktív a repredaj_doplnujuca	špecialista pre repredaj II_Správa aktív a repredaj_doplnujuca				1	bus
+AccountName	Group	UG-C4-Administrator	Administrator				1	apl	UG-C4-Administrator	Administrator				1	apl
+AccountName	Group	UG-SAP-MM_.Ziadatel	MM: Ziadatel				1	apl	UG-SAP-MM_.Ziadatel	MM: Ziadatel				1	apl

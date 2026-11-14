@@ -1,0 +1,429 @@
+﻿# Pending exporty: AD
+# Vygenerovano: 2026-10-04 07:32:09
+# Objektu: 417
+# Vynechane atributy: company, extensionAttribute8, extensionAttribute9, extensionAttribute12, extensionAttribute13, extensionAttribute14
+# Identifikator<TAB>Typ objektu<TAB>Operace<TAB>Atribut<TAB>Stara hodnota<TAB>Nova hodnota
+Identifikator	Typ objektu	Operace	Atribut	Stara hodnota	Nova hodnota
+CN=Adamec Ján 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Adamec Ján 2	Adamec Ján
+CN=Adamec Pavol 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Adamec Pavol 2	Adamec Pavol
+CN=Anderlitscheková Viktória 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Anderlitscheková Viktória 2	Anderlitscheková Viktória
+CN=Andraško Peter,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910673341	
+CN=Antala Jakub 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Antala Jakub 2	Antala Jakub
+CN=Bačová Janka 11,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Bačová Janka 11	Bačová Janka
+CN=Bajan Jozef 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Bajan Jozef 2	Bajan Jozef
+CN=Bajanová Denisa,OU=Disabled Accounts,OU=EMO,DC=seas,DC=sk	user	Update	department	Profesijná príprava zamestnancov	Profes. príprava a praktický výcvik JE
+CN=Bajnok Patrik 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Bajnok Patrik 4	Bajnok Patrik
+CN=Balko Juraj 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Balko Juraj 2	Balko Juraj
+CN=Balog Marek 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Balog Marek 2	Balog Marek
+CN=Barátová Natália 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Barátová Natália 2	Barátová Natália
+CN=Bartko Ján 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Bartko Ján 2	Bartko Ján
+CN=Baťalík Martin 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Baťalík Martin 2	Baťalík Martin
+CN=Bednárová Zuzana,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910804030	
+CN=Beer Gabriel 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Beer Gabriel 3	Beer Gabriel
+CN=Beer Gabriel 7,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Beer Gabriel 7	Beer Gabriel
+CN=Beláň Anton 3,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Beláň Anton 3	Beláň Anton
+CN=Belfiová Michaela,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421914331216	
+CN=Beňák Juraj 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Beňák Juraj 2	Beňák Juraj
+CN=Benčaťová Silvia 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Benčaťová Silvia 2	Benčaťová Silvia
+CN=Benčík Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Benčík Peter 2	Benčík Peter
+CN=Beňo Michal 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Beňo Michal 2	Beňo Michal
+CN=Beňo Michal 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Beňo Michal 3	Beňo Michal
+CN=Beňo Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Beňo Peter 2	Beňo Peter
+CN=Beňo Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Beňo Peter 3	Beňo Peter
+CN=Bezák Jozef 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Bezák Jozef 2	Bezák Jozef
+CN=Bezák Martin 4,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Bezák Martin 4	Bezák Martin
+CN=Blaško Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Blaško Peter 2	Blaško Peter
+CN=Blažko Miroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Blažko Miroslav 2	Blažko Miroslav
+CN=Bližňák Matúš,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	manager	CN=Gažo Peter,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	CN=Krizsan Radoslav,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk
+CN=Bobák Štefan 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Bobák Štefan 3	Bobák Štefan
+CN=Boccalini Antonio 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Boccalini Antonio 2	Boccalini Antonio
+CN=Bokor Daniel 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Bokor Daniel 2	Bokor Daniel
+CN=Bokor Daniel 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Bokor Daniel 3	Bokor Daniel
+CN=Braciník Peter 3,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Braciník Peter 3	Braciník Peter
+CN=Brezáni Vladimír 2,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Brezáni Vladimír 2	Brezáni Vladimír
+CN=Brezovan Martin 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Brezovan Martin 2	Brezovan Martin
+CN=Bučko Patrik 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Bučko Patrik 2	Bučko Patrik
+CN=Bulák Jozef 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Bulák Jozef 2	Bulák Jozef
+CN=Bunček Daniel 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Bunček Daniel 2	Bunček Daniel
+CN=Bystrický Filip,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	mobile	+421910801232	
+CN=Čapkovič Šimon 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Čapkovič Šimon 2	Čapkovič Šimon
+CN=Čellár Matej 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Čellár Matej 2	Čellár Matej
+CN=Černák Marián,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Černák Marián	Černák Marian
+CN=Černák Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Černák Peter 2	Černák Peter
+CN=Černák Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Černák Peter 3	Černák Peter
+CN=Černo Juraj 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Černo Juraj 4	Černo Juraj
+CN=Cesnek Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Cesnek Peter 2	Cesnek Peter
+CN=Chaloupka Andrej,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910804456	
+CN=Chudý Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Chudý Peter 2	Chudý Peter
+CN=Chudý Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Chudý Peter 3	Chudý Peter
+CN=Cimbala Roman 2,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Cimbala Roman 2	Cimbala Roman
+CN=Číž Mario 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Číž Mario 4	Číž Mario
+CN=Čulák Adam 4,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Čulák Adam 4	Čulák Adam
+CN=Danko Vladimír 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Danko Vladimír 2	Danko Vladimír
+CN=Ďatko Martin 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Ďatko Martin 3	Ďatko Martin
+CN=Dekan Dušan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Dekan Dušan 2	Dekan Dušan
+CN=Dobrodenka Samuel 8,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Dobrodenka Samuel 8	Dobrodenka Samuel
+CN=Dobrotka Ivan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Dobrotka Ivan 2	Dobrotka Ivan
+CN=Dobrovodský Daniel 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Dobrovodský Daniel 2	Dobrovodský Daniel
+CN=Dobrovodský Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Dobrovodský Peter 2	Dobrovodský Peter
+CN=Drábová Barbora,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910673808	
+CN=Duračka Peter 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Duračka Peter 2	Duračka Peter
+CN=Ďuricová Zuzana,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910674105	
+CN=Ďuržo Pavol 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Ďuržo Pavol 2	Ďuržo Pavol
+CN=Dzáková Viktória 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Dzáková Viktória 3	Dzáková Viktória
+CN=Enekeš Lukáš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Enekeš Lukáš 2	Enekeš Lukáš
+CN=Fabian Marián,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910805178	
+CN=Farkas Gabriel 5,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Farkas Gabriel 5	Farkas Gabriel
+CN=Farkaš Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Farkaš Peter 2	Farkaš Peter
+CN=Farkaš Peter 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Farkaš Peter 3	Farkaš Peter
+CN=Ferencz Jakub 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Ferencz Jakub 2	Ferencz Jakub
+CN=Fleško Rastislav 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Fleško Rastislav 2	Fleško Rastislav
+CN=Frajka Andrej 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Frajka Andrej 2	Frajka Andrej
+CN=Frtús Erik 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Frtús Erik 2	Frtús Erik
+CN=Fukas Andrej 2,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	department	Kvantitatívna optimalizácia zdrojov	Úsek obchodu, trh. regul. a dispečingu
+CN=Fukas Andrej 2,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Fukas Andrej 2	Fukas Andrej
+CN=Gálik Jozef 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Gálik Jozef 3	Gálik Jozef
+CN=Galo Michal 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Galo Michal 2	Galo Michal
+CN=Garai Miroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Garai Miroslav 2	Garai Miroslav
+CN=Gardian Milan 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Gardian Milan 2	Gardian Milan
+CN=Gergel Jozef 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Gergel Jozef 2	Gergel Jozef
+CN=Gerich Jaroslav 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Gerich Jaroslav 3	Gerich Jaroslav
+CN=Gondová Andrea,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910809004	
+CN=Guga Peter,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	mobile	+421910674081	
+CN=Hájek Juraj 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hájek Juraj 3	Hájek Juraj
+CN=Hajko Dominik 4,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Hajko Dominik 4	Hajko Dominik
+CN=Hajko Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hajko Peter 2	Hajko Peter
+CN=Halačová Eva 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Halačová Eva 3	Halačová Eva
+CN=Haľková Anna 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Haľková Anna 2	Haľková Anna
+CN=Haluš Ľubomír 7,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Haluš Ľubomír 7	Haluš Ľubomír
+CN=Hancko Stanislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hancko Stanislav 2	Hancko Stanislav
+CN=Hancko Stanislav 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Hancko Stanislav 3	Hancko Stanislav
+CN=Hanková Petra,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	mobile	+421910804117	
+CN=Hapena Jozef 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hapena Jozef 2	Hapena Jozef
+CN=Hapena Tomáš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hapena Tomáš 2	Hapena Tomáš
+CN=Havetta Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Havetta Peter 2	Havetta Peter
+CN=Havettová Kristína,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910674880	
+CN=Havettová Veronika,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910802606	
+CN=Hitka Milan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hitka Milan 2	Hitka Milan
+CN=Hlbočan Jakub Christofer 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hlbočan Jakub Christofer 2	Hlbočan Jakub Christofer
+CN=Holubčík Michal 2,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Holubčík Michal 2	Holubčík Michal
+CN=Holubcová Elena 3,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Holubcová Elena 3	Holubcová Elena
+CN=Holubec Jaroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Holubec Jaroslav 2	Holubec Jaroslav
+CN=Homola Ľuboš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Homola Ľuboš 2	Homola Ľuboš
+CN=Homola Mário 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Homola Mário 2	Homola Mário
+CN=Horecká Diana 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Horecká Diana 3	Horecká Diana
+CN=Hornáček Jakub 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Hornáček Jakub 2	Hornáček Jakub
+CN=Hornák Marek 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Hornák Marek 2	Hornák Marek
+CN=Horniak František 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horniak František 2	Horniak František
+CN=Horniak Ján 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horniak Ján 2	Horniak Ján
+CN=Horniaková Andrea 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horniaková Andrea 3	Horniaková Andrea
+CN=Horváth Ladislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horváth Ladislav 2	Horváth Ladislav
+CN=Horváth Lukáš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horváth Lukáš 2	Horváth Lukáš
+CN=Horváth Milan 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Horváth Milan 3	Horváth Milan
+CN=Horváth Miroslav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Horváth Miroslav 2	Horváth Miroslav
+CN=Horváth Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horváth Peter 2	Horváth Peter
+CN=Horváth Peter 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horváth Peter 3	Horváth Peter
+CN=Horváth Peter 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horváth Peter 4	Horváth Peter
+CN=Horváth Peter,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910673053	
+CN=Horváth Tomáš 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Horváth Tomáš 3	Horváth Tomáš
+CN=Hozáková Burdová Andrea,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910803007	
+CN=Hraško Matej 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hraško Matej 2	Hraško Matej
+CN=Hrnčiar Miroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hrnčiar Miroslav 2	Hrnčiar Miroslav
+CN=Hrnčiariková Soňa 5,OU=Disabled Accounts,OU=VET,DC=seas,DC=sk	user	Update	department	Metodika administratívy ĽZ	Plánovanie, odmeň. a administratíva ĽZ
+CN=Hrnčiariková Soňa 5,OU=Disabled Accounts,OU=VET,DC=seas,DC=sk	user	Update	displayName	Hrnčiariková Soňa 5	Hrnčiariková Soňa
+CN=Hrnčiariková Soňa 6,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Hrnčiariková Soňa 6	Hrnčiariková Soňa
+CN=Hruška Tomáš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hruška Tomáš 2	Hruška Tomáš
+CN=Hruška Tomáš 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Hruška Tomáš 3	Hruška Tomáš
+CN=Hudec Jozef 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hudec Jozef 2	Hudec Jozef
+CN=Hudec Jozef 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hudec Jozef 3	Hudec Jozef
+CN=Hudec Jozef 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hudec Jozef 4	Hudec Jozef
+CN=Hudecová Janka 5,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Hudecová Janka 5	Hudecová Janka
+CN=Hujavý Adrián 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Hujavý Adrián 2	Hujavý Adrián
+CN=Hutta Ján 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Hutta Ján 2	Hutta Ján
+CN=Ivanička Nemčovičová Michaela,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910803186	
+CN=Izák Timon 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Izák Timon 4	Izák Timon
+CN=Jablonský Stanislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Jablonský Stanislav 2	Jablonský Stanislav
+CN=Jakubík Jakub 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Jakubík Jakub 2	Jakubík Jakub
+CN=Jakubík Jakub,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	manager	CN=Gažo Peter,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	CN=Krizsan Radoslav,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk
+CN=Jamrich Jozef 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Jamrich Jozef 2	Jamrich Jozef
+CN=Jančo Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Jančo Peter 2	Jančo Peter
+CN=Janíček Filip 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Janíček Filip 2	Janíček Filip
+CN=Janík Pavel 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Janík Pavel 2	Janík Pavel
+CN=Jankola Juraj 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Jankola Juraj 2	Jankola Juraj
+CN=Jasovský Ľuboslav 8,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Jasovský Ľuboslav 8	Jasovský Ľuboslav
+CN=Ježík Marián 4,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Ježík Marián 4	Ježík Marián
+CN=Ježík Marian,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	manager	CN=Gažo Peter,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	CN=Krizsan Radoslav,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk
+CN=Jirka Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Jirka Peter 3	Jirka Peter
+CN=Jókai Adam 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Jókai Adam 2	Jókai Adam
+CN=Judák Samuel 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Judák Samuel 2	Judák Samuel
+CN=Jurica Martin 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Jurica Martin 2	Jurica Martin
+CN=Kabátová Tatiana,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910673004	
+CN=Kalán Ján 2,OU=Users,OU=SE,OU=EVO,DC=seas,DC=sk	user	Update	displayName	Kalán Ján 2	Kalán Ján
+CN=Kardoš Ján 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Kardoš Ján 2	Kardoš Ján
+CN=Klamo Michaela 3,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Klamo Michaela 3	Klamo Michaela
+CN=Klinčok Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Klinčok Peter 2	Klinčok Peter
+CN=Knobloch Alex 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Knobloch Alex 2	Knobloch Alex
+CN=Kocian Miroslav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Kocian Miroslav 2	Kocian Miroslav
+CN=Kočiš Ľubomír 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kočiš Ľubomír 2	Kočiš Ľubomír
+CN=Kohutovič Daniel,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910805459	
+CN=Kollár Ján 4,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Kollár Ján 4	Kollár Ján
+CN=Kollár Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Kollár Peter 3	Kollár Peter
+CN=Kollár Stanislav 2,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Kollár Stanislav 2	Kollár Stanislav
+CN=Komorová Romana,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910804076	
+CN=Koncz Daniel 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Koncz Daniel 2	Koncz Daniel
+CN=Konečný Šimon 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Konečný Šimon 2	Konečný Šimon
+CN=Kopernický Jozef,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	department	Riadenie starnutia	Riadenie programov výroby
+CN=Korpa Róbert 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Korpa Róbert 2	Korpa Róbert
+CN=Košík Jozef 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Košík Jozef 2	Košík Jozef
+CN=Košťál Martin 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Košťál Martin 2	Košťál Martin
+CN=Kotora Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kotora Peter 2	Kotora Peter
+CN=Kováč Karol 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kováč Karol 2	Kováč Karol
+CN=Kováč Michal 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kováč Michal 2	Kováč Michal
+CN=Kováč Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kováč Peter 2	Kováč Peter
+CN=Kováč Štefan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kováč Štefan 2	Kováč Štefan
+CN=Kováčik Martin 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kováčik Martin 2	Kováčik Martin
+CN=Kováčik Matej 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kováčik Matej 2	Kováčik Matej
+CN=Kovár Michael 4,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Kovár Michael 4	Kovár Michael
+CN=Krajčovič Jaroslav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Krajčovič Jaroslav 2	Krajčovič Jaroslav
+CN=Krajčovič Martin 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Krajčovič Martin 2	Krajčovič Martin
+CN=Krajčovič Matej 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Krajčovič Matej 2	Krajčovič Matej
+CN=Krajčovič Miroslav 2,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Krajčovič Miroslav 2	Krajčovič Miroslav
+CN=Krajčovič Patrik 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Krajčovič Patrik 2	Krajčovič Patrik
+CN=Krajčovič Patrik 4,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Krajčovič Patrik 4	Krajčovič Patrik
+CN=Kráľ Jozef 4,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Kráľ Jozef 4	Kráľ Jozef
+CN=Králik Andrej 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Králik Andrej 2	Králik Andrej
+CN=Králik Juraj 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Králik Juraj 3	Králik Juraj
+CN=Krošlák Ľubomír,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910673865	
+CN=Krúpa Ľubomír 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Krúpa Ľubomír 2	Krúpa Ľubomír
+CN=Kubiš Andrej 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kubiš Andrej 2	Kubiš Andrej
+CN=Kučera Aleš 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kučera Aleš 3	Kučera Aleš
+CN=Kučerová Veronika,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	mobile	+421910674330	
+CN=Kúdela Martin 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Kúdela Martin 3	Kúdela Martin
+CN=Kunkel Milan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kunkel Milan 2	Kunkel Milan
+CN=Kupča Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kupča Peter 2	Kupča Peter
+CN=Kvitek Gergely,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910674607	
+CN=Kvocerová Lucia,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	mobile	+421910801054	
+CN=Kvočková Alena 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Kvočková Alena 3	Kvočková Alena
+CN=Labát Dušan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Labát Dušan 2	Labát Dušan
+CN=Ľachký Oleg Miloš 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Ľachký Oleg Miloš 2	Ľachký Oleg Miloš
+CN=Lackovič Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Lackovič Peter 2	Lackovič Peter
+CN=Ladányiová Aneta 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Ladányiová Aneta 4	Ladányiová Aneta
+CN=Latta Marián 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Latta Marián 2	Latta Marián
+CN=Ledvinka Jaroslav 5,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Ledvinka Jaroslav 5	Ledvinka Jaroslav
+CN=Lipovský Marek 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Lipovský Marek 2	Lipovský Marek
+CN=Líška Dušan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Líška Dušan 2	Líška Dušan
+CN=Líška Ľuboš 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Líška Ľuboš 2	Líška Ľuboš
+CN=Lopušný Patrik 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Lopušný Patrik 2	Lopušný Patrik
+CN=Lőrincz Ondrej,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	userAccountControl	0x200	0x202
+CN=Machalová Linda,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910803829	
+CN=Machovec Jakub 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Machovec Jakub 2	Machovec Jakub
+CN=Machovičová Mária,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910809051	
+CN=Macko Vladimír 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Macko Vladimír 3	Macko Vladimír
+CN=Maďarová Iveta 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Maďarová Iveta 2	Maďarová Iveta
+CN=Magula Patrik 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Magula Patrik 2	Magula Patrik
+CN=Magula Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Magula Peter 2	Magula Peter
+CN=Magulová Lucia 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Magulová Lucia 2	Magulová Lucia
+CN=Majerčík Tomáš 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Majerčík Tomáš 2	Majerčík Tomáš
+CN=Makáň Ján 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Makáň Ján 2	Makáň Ján
+CN=Mančíková Lenka,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	userAccountControl	0x202	0x200
+CN=Máša Erik 9,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Máša Erik 9	Máša Erik
+CN=Masarovič Krištof 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Masarovič Krištof 3	Masarovič Krištof
+CN=Mäsiar Jozef 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mäsiar Jozef 2	Mäsiar Jozef
+CN=Mäsiar Miroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mäsiar Miroslav 2	Mäsiar Miroslav
+CN=Mäsiar Miroslav 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mäsiar Miroslav 4	Mäsiar Miroslav
+CN=Mazúr Drahomír 5,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Mazúr Drahomír 5	Mazúr Drahomír
+CN=Mesároš Martin 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mesároš Martin 2	Mesároš Martin
+CN=Mihalička Adam 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mihalička Adam 2	Mihalička Adam
+CN=Mihalík Ján 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mihalík Ján 2	Mihalík Ján
+CN=Mihálik Radovan 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Mihálik Radovan 2	Mihálik Radovan
+CN=Mihaľov Martin 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Mihaľov Martin 2	Mihaľov Martin
+CN=Mikinič Miloš 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Mikinič Miloš 2	Mikinič Miloš
+CN=Mikloš Ľudovít,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mikloš Ľudovít	Mikloš Ľudovit
+CN=Mikuš Michal 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Mikuš Michal 2	Mikuš Michal
+CN=Mikuška Michal,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910801821	
+CN=Minár Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Minár Peter 2	Minár Peter
+CN=Mináriková Lenka 6,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Mináriková Lenka 6	Mináriková Lenka
+CN=Mišenko Martin 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mišenko Martin 3	Mišenko Martin
+CN=Mišovič Erik 4,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Mišovič Erik 4	Mišovič Erik
+CN=Mišovič Michal,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	mobile	+421910803166	
+CN=Mladý Dávid 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mladý Dávid 2	Mladý Dávid
+CN=Mladý Jozef 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mladý Jozef 2	Mladý Jozef
+CN=Mladý Karol 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mladý Karol 2	Mladý Karol
+CN=Mojžiš Ivan 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Mojžiš Ivan 2	Mojžiš Ivan
+CN=Mokrán Erik 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Mokrán Erik 4	Mokrán Erik
+CN=Molnár Lukáš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Molnár Lukáš 2	Molnár Lukáš
+CN=Molnár Peter 2,OU=Users,OU=SE,OU=EVO,DC=seas,DC=sk	user	Update	displayName	Molnár Peter 2	Molnár Peter
+CN=Moncman Lukáš 3,OU=Disabled Accounts,OU=EBO,DC=seas,DC=sk	user	Update	department	Skupina podpory prevádzky SKR	Podpora prevádzky závodu
+CN=Moncman Lukáš 3,OU=Disabled Accounts,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Moncman Lukáš 3	Moncman Lukáš
+CN=Moncman Lukáš 4,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Moncman Lukáš 4	Moncman Lukáš
+CN=Moško Michal 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Moško Michal 2	Moško Michal
+CN=Moško Michal 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910804310	
+CN=Motešický Andrej 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Motešický Andrej 2	Motešický Andrej
+CN=Müller Erik,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910801337	
+CN=Müller Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Müller Peter 2	Müller Peter
+CN=Münnich Erich 6,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Münnich Erich 6	Münnich Erich
+CN=Murgašová Marta 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Murgašová Marta 2	Murgašová Marta
+CN=Nágel Štefan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Nágel Štefan 2	Nágel Štefan
+CN=Nágl Roman 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Nágl Roman 3	Nágl Roman
+CN=Nagy František 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Nagy František 2	Nagy František
+CN=Nagy Ján 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Nagy Ján 2	Nagy Ján
+CN=Nagy Ján 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Nagy Ján 3	Nagy Ján
+CN=Nagy Peter 2,OU=Users,OU=SE,OU=EVO,DC=seas,DC=sk	user	Update	displayName	Nagy Peter 2	Nagy Peter
+CN=Nagy Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Nagy Peter 3	Nagy Peter
+CN=Nagy Tomáš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Nagy Tomáš 2	Nagy Tomáš
+CN=Nandraský Viliam Artúr 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Nandraský Viliam Artúr 3	Nandraský Viliam Artúr
+CN=Naništa Igor 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Naništa Igor 2	Naništa Igor
+CN=Naňo Ján 5,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Naňo Ján 5	Naňo Ján
+CN=Naštický Vladimír 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Naštický Vladimír 2	Naštický Vladimír
+CN=Nedbal Filip 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Nedbal Filip 3	Nedbal Filip
+CN=Nikolic Marko 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Nikolic Marko 2	Nikolic Marko
+CN=Novák Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Novák Peter 2	Novák Peter
+CN=Novák Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Novák Peter 3	Novák Peter
+CN=Obert Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Obert Peter 2	Obert Peter
+CN=Ondrejka Ján 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Ondrejka Ján 2	Ondrejka Ján
+CN=Pacalaj Erik 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Pacalaj Erik 2	Pacalaj Erik
+CN=Pajdučák Vladimír 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Pajdučák Vladimír 2	Pajdučák Vladimír
+CN=Pakanec Miloš 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Pakanec Miloš 2	Pakanec Miloš
+CN=Papp Ladislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Papp Ladislav 2	Papp Ladislav
+CN=Patai Ladislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Patai Ladislav 2	Patai Ladislav
+CN=Pekár Ivan,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910801050	
+CN=Pekár Jozef 2,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Pekár Jozef 2	Pekár Jozef
+CN=Petrek Miroslav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Petrek Miroslav 2	Petrek Miroslav
+CN=Petrík Marián 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Petrík Marián 2	Petrík Marián
+CN=Piják Samuel 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Piják Samuel 3	Piják Samuel
+CN=Pirschel Matej 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Pirschel Matej 2	Pirschel Matej
+CN=Podoba Adam 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Podoba Adam 3	Podoba Adam
+CN=Podoláková Vanda 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Podoláková Vanda 2	Podoláková Vanda
+CN=Poláček Vladimír 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Poláček Vladimír 3	Poláček Vladimír
+CN=Polák Máté Áron 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Polák Máté Áron 2	Polák Máté Áron
+CN=Popa Peter,OU=Disabled Accounts,OU=EMO,DC=seas,DC=sk	user	Update	department	Riadenie plánovania a hodnotenia	Závod SE-EMO
+CN=Potočková Alžbeta 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Potočková Alžbeta 3	Potočková Alžbeta
+CN=Priekalová Andrea 2,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Priekalová Andrea 2	Priekalová Andrea
+CN=Rajčan Ivan,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910674683	
+CN=Rajčan Michal 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Rajčan Michal 2	Rajčan Michal
+CN=Rehák Miroslav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Rehák Miroslav 2	Rehák Miroslav
+CN=Rusnák Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Rusnák Peter 2	Rusnák Peter
+CN=Rypáková Martina,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	mobile	+421910673661	
+CN=Rýzková Sabina 4,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Rýzková Sabina 4	Rýzková Sabina
+CN=Šabík Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Šabík Peter 2	Šabík Peter
+CN=Šabík Róbert 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Šabík Róbert 2	Šabík Róbert
+CN=Sabó Alex 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sabó Alex 3	Sabó Alex
+CN=Sabolová Kamila,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910804348	
+CN=Sádovský Tomáš 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sádovský Tomáš 2	Sádovský Tomáš
+CN=Šály Patrik 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Šály Patrik 4	Šály Patrik
+CN=Šály Radoslav 4,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Šály Radoslav 4	Šály Radoslav
+CN=Samsely Ľuboš 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Samsely Ľuboš 2	Samsely Ľuboš
+CN=Sasák Jaroslav 7,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sasák Jaroslav 7	Sasák Jaroslav
+CN=Sásik Alexandra,OU=Disabled Accounts,OU=EMO,DC=seas,DC=sk	user	Update	department	Sk. obstarávania elektro a SKR technol.	Obstarávanie prác a hlavných služieb
+CN=Sasko Marcel 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sasko Marcel 2	Sasko Marcel
+CN=Schönhauserová Denisa,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	mobile	+421910674330	
+CN=Schwarcz Artúr 5,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Schwarcz Artúr 5	Schwarcz Artúr
+CN=Šebo Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Šebo Peter 2	Šebo Peter
+CN=Sékeľ Rudolf 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Sékeľ Rudolf 3	Sékeľ Rudolf
+CN=Sekerková Jana,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	mobile	+421910801890	
+CN=Síkeľa Lukáš 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Síkeľa Lukáš 4	Síkeľa Lukáš
+CN=Šild Jozef 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Šild Jozef 2	Šild Jozef
+CN=Šimko Martin,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	manager	CN=Gažo Peter,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	CN=Krizsan Radoslav,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk
+CN=Šimno Peter 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Šimno Peter 3	Šimno Peter
+CN=Šimončič Peter 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Šimončič Peter 3	Šimončič Peter
+CN=Šípoš Martin 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Šípoš Martin 2	Šípoš Martin
+CN=Šipoš Miroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Šipoš Miroslav 2	Šipoš Miroslav
+CN=Sivák Martin 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sivák Martin 3	Sivák Martin
+CN=Slabý Dian 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Slabý Dian 2	Slabý Dian
+CN=Sládek Igor 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sládek Igor 2	Sládek Igor
+CN=Šlesar Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Šlesar Peter 2	Šlesar Peter
+CN=Slušný Róbert 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Slušný Róbert 2	Slušný Róbert
+CN=Solčiansky Peter 6,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Solčiansky Peter 6	Solčiansky Peter
+CN=Špánik Peter 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Špánik Peter 2	Špánik Peter
+CN=Šrámek Patrik 4,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Šrámek Patrik 4	Šrámek Patrik
+CN=Stacho Tomáš,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910803057	
+CN=Štálnik Peter 5,OU=Users,OU=SE,OU=ENO,DC=seas,DC=sk	user	Update	displayName	Štálnik Peter 5	Štálnik Peter
+CN=Šťastný Martin 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Šťastný Martin 3	Šťastný Martin
+CN=Štefanec Jaroslav,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	manager	CN=Gažo Peter,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	CN=Krizsan Radoslav,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk
+CN=Štefánik Ondrej 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Štefánik Ondrej 3	Štefánik Ondrej
+CN=Štefunko Jaroslav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Štefunko Jaroslav 2	Štefunko Jaroslav
+CN=Stračiak Matej 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Stračiak Matej 2	Stračiak Matej
+CN=Štucika Miroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Štucika Miroslav 2	Štucika Miroslav
+CN=Štucika Miroslav,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	manager	CN=Beňo Vladimír,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	CN=Hancko Stanislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk
+CN=Studený Igor 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Studený Igor 3	Studený Igor
+CN=Šumeraj František 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Šumeraj František 3	Šumeraj František
+CN=Súpek Adam 3,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Súpek Adam 3	Súpek Adam
+CN=Sušková Michaela,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	mobile	+421910801869	
+CN=Švantnerová Zdeňka 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Švantnerová Zdeňka 2	Švantnerová Zdeňka
+CN=Švaral Marek 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Švaral Marek 2	Švaral Marek
+CN=Švec Jozef 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Švec Jozef 2	Švec Jozef
+CN=Švec Juraj 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Švec Juraj 3	Švec Juraj
+CN=Švec Miroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Švec Miroslav 2	Švec Miroslav
+CN=Švec Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Švec Peter 2	Švec Peter
+CN=Švecová Lucia 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Švecová Lucia 2	Švecová Lucia
+CN=Sýkora Ján 6,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sýkora Ján 6	Sýkora Ján
+CN=Sýkora Peter 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Sýkora Peter 2	Sýkora Peter
+CN=Sýkorová Vladimíra 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Sýkorová Vladimíra 2	Sýkorová Vladimíra
+CN=Szalai Daniel 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Szalai Daniel 3	Szalai Daniel
+CN=Szöcs Lukáš 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Szöcs Lukáš 2	Szöcs Lukáš
+CN=Szöke Robert,OU=Disabled Accounts,OU=R-SE,DC=seas,DC=sk	user	Update	department	Obstarávanie rozvojových projektov	Úsek obstarávania
+CN=Takács Richard,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910673040	
+CN=Tischler Jozef 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Tischler Jozef 2	Tischler Jozef
+CN=Tománek Ivo,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	mobile	+421910809768	
+CN=Tóth Alexander 3,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Tóth Alexander 3	Tóth Alexander
+CN=Toth Gabriel 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Toth Gabriel 2	Toth Gabriel
+CN=Tóth Jozef 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Tóth Jozef 2	Tóth Jozef
+CN=Tóth Juraj 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Tóth Juraj 2	Tóth Juraj
+CN=Tóth Miloš 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Tóth Miloš 2	Tóth Miloš
+CN=Tóth Robert 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Tóth Robert 2	Tóth Robert
+CN=Tóth Róbert 4,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Tóth Róbert 4	Tóth Róbert
+CN=Tóth Róbert 5,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Tóth Róbert 5	Tóth Róbert
+CN=Tóth Róbert 8,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Tóth Róbert 8	Tóth Róbert
+CN=Tóth Tomáš 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Tóth Tomáš 3	Tóth Tomáš
+CN=Trepáň Juraj 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Trepáň Juraj 2	Trepáň Juraj
+CN=Trizňa Jaroslav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Trizňa Jaroslav 2	Trizňa Jaroslav
+CN=Troshyna Daria,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	manager	CN=Gažo Peter,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	CN=Krizsan Radoslav,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk
+CN=Turanský Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Turanský Peter 2	Turanský Peter
+CN=Turzová Erika 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Turzová Erika 2	Turzová Erika
+CN=Uhlík Martin 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Uhlík Martin 2	Uhlík Martin
+CN=Uhlík Martin 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Uhlík Martin 3	Uhlík Martin
+CN=Uhnák Jozef 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Uhnák Jozef 2	Uhnák Jozef
+CN=Ujhelyi Samuel 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Ujhelyi Samuel 2	Ujhelyi Samuel
+CN=Ukropec Štefan 2,OU=Disabled Accounts,OU=EBO,DC=seas,DC=sk	user	Update	department	Skupina Údržba - reaktor pohony HRK	Strojná údržba
+CN=Ukropec Štefan 2,OU=Disabled Accounts,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Ukropec Štefan 2	Ukropec Štefan
+CN=Ukropec Štefan 2,OU=Disabled Accounts,OU=EBO,DC=seas,DC=sk	user	Update	title	Zámočník údržby JE - reaktor	Zámočník
+CN=Uličný Peter 2,OU=Users,OU=SE,OU=VET,DC=seas,DC=sk	user	Update	displayName	Uličný Peter 2	Uličný Peter
+CN=Urban Erik 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Urban Erik 2	Urban Erik
+CN=Urban Peter 7,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Urban Peter 7	Urban Peter
+CN=Vago Milan 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Vago Milan 2	Vago Milan
+CN=Váhovský Juraj 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Váhovský Juraj 2	Váhovský Juraj
+CN=Valachová Andrea 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Valachová Andrea 2	Valachová Andrea
+CN=Valent Marcel 3,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Valent Marcel 3	Valent Marcel
+CN=Valent Viliam,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910801672	
+CN=Valkovič Juraj 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Valkovič Juraj 2	Valkovič Juraj
+CN=Valkovič Juraj 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Valkovič Juraj 3	Valkovič Juraj
+CN=Valkovič Juraj 6,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Valkovič Juraj 6	Valkovič Juraj
+CN=Vaňo Martin 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vaňo Martin 2	Vaňo Martin
+CN=Varga Ladislav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Varga Ladislav 2	Varga Ladislav
+CN=Varga Tomáš 4,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Varga Tomáš 4	Varga Tomáš
+CN=Veselovský Eduard 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Veselovský Eduard 2	Veselovský Eduard
+CN=Vidakovic Aleksandar,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vidakovic Aleksandar	Vidaković Aleksandar
+CN=Viskup Peter 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Viskup Peter 2	Viskup Peter
+CN=Vitula Viktor 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vitula Viktor 2	Vitula Viktor
+CN=Vizi Dávid 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vizi Dávid 2	Vizi Dávid
+CN=Viznerová Rebeka 2,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Viznerová Rebeka 2	Viznerová Rebeka
+CN=Vogel Milan 7,OU=Users,OU=SE,OU=R-SE,DC=seas,DC=sk	user	Update	displayName	Vogel Milan 7	Vogel Milan
+CN=Vojtek Marián 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vojtek Marián 2	Vojtek Marián
+CN=Vojtek Marián 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vojtek Marián 3	Vojtek Marián
+CN=Vojtek Mário 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vojtek Mário 2	Vojtek Mário
+CN=Vozár Martin 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Vozár Martin 2	Vozár Martin
+CN=Vranikovič Stanislav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Vranikovič Stanislav 2	Vranikovič Stanislav
+CN=Vrecník Dominik 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vrecník Dominik 2	Vrecník Dominik
+CN=Vyskoč Jaroslav 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Vyskoč Jaroslav 2	Vyskoč Jaroslav
+CN=Vyskoč Michal 2,OU=Users,OU=SE,OU=EBO,DC=seas,DC=sk	user	Update	displayName	Vyskoč Michal 2	Vyskoč Michal
+CN=Vyskoč Michal 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Vyskoč Michal 3	Vyskoč Michal
+CN=Wagner Peter,OU=Disabled Accounts,OU=EMO,DC=seas,DC=sk	user	Update	department	Zmena 5 - sekundárny okruh	Zmena 5 - 3. a 4. blok
+CN=Weisová Jana 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Weisová Jana 2	Weisová Jana
+CN=Zábrenszki Tomáš 2,OU=Disabled Accounts,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Zábrenszki Tomáš 2	Zábrenszki Tomáš
+CN=Záhorský Juraj 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Záhorský Juraj 2	Záhorský Juraj
+CN=Záhorský Ladislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Záhorský Ladislav 2	Záhorský Ladislav
+CN=Žigmond Martin 3,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Žigmond Martin 3	Žigmond Martin
+CN=Žilinská Zuzana 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Žilinská Zuzana 2	Žilinská Zuzana
+CN=Žindeľ Ladislav 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Žindeľ Ladislav 2	Žindeľ Ladislav
+CN=Zrubec Milan 2,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	displayName	Zrubec Milan 2	Zrubec Milan
+CN=Žubrietovský Radoslav,OU=Users,OU=SE,OU=EMO,DC=seas,DC=sk	user	Update	mobile	+421910674047	

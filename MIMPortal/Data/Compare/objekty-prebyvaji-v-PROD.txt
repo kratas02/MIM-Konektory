@@ -1,0 +1,392 @@
+﻿Objekty, které přebývají v PROD (v TEST chybí)
+PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)
+TEST: Test (., 2026-10-09T21:33:07Z)
+Uživatelé se párují postupně podle EmployeeID, AccountName a DisplayName. Napojený objekt se znovu nenapojuje. Skupiny se párují podle AccountName.
+Počet: 385
+
+Typ	AccountName	DisplayName	EmployeeID	EmployeeType	csoblFinalPropetyStatus	csoblvalidStatus	csoblGroupType
+Group	agentury_administrator	Agentúry - Administrátor				1	bus
+Group	agentury_zamestnanecLS	Agentúry - Zamestnanec LS				1	bus
+Group	aplikačný administrátor_IT prevádzka2	aplikačný administrátor_IT prevádzka2				1	grp
+Group	BR_301_29108_SAP	strategic initiatives lead_Produktový vývoj a trhové riešenia_SAP				1	bus
+Group	BRC_303_42100_DUX	špecialista pre zmeny zmlúv II_Zákaznícky servis_DUX				1	bus
+Group	BRC_409_35106_LEA	dátový špecialista_Controlling a reporting_LEA				0	bus
+Group	BRC_EDS_RPO	EDS-RPO				1	bus
+Group	BRC_LEA_Provizie	Dočasný prístup do LEA_Provízie				0	bus
+Group	BRC_LEA_RM_limity_FS	Prístupy_LEA: RM_limity_FS				1	bus
+Group	BRC_Prístup_LEA_FDS_Faktoring	Prístup_LEA: FDS Faktoring				1	bus
+Group	BRC_Relationship Manager Full service_BL	Relationship Manager Full service_BL				1	bus
+Group	BRC_Relationship Manager Full service_OLFS_docasne	Relationship Manager Full service_OLFS_dočasné				1	bus
+Group	BRC_SAP_drzitel_rozpoctu_UaD	Prístup_SAP: držiteľ rozpočtu_ÚaD				1	bus
+Group	BRC_SAP_PVaTR	Prístup SAP: PVaTR				1	bus
+Group	BRC_SAP_Schvalovateľ_HANA	SAP_Schvalovateľ_HANA				1	bus
+Group	BRC_SAQ_prístup do SAP_Poprad	SAQ_prístup do SAP_Poprad				1	bus
+Group	BRC_Výnimky_Compliance	Výnimky Compliance - compliance				1	bus
+Group	BRC_X_docasne	X_dočasné				0	bus
+Group	CNAV - odd. Credit Risk	CNAV - odd. Credit Risk				1	bus
+Group	DGT	DGT - Plný R/W prístup do PROD				1	bus
+Group	DLM LEAS	DLM LEAS				1	bus
+Group	dm_admins	DM/UM - Admins				1	grp
+Group	dm_centralnespracovanie	DM/UM - Centrálne spracovanie				1	bus
+Group	dm_centralneznackyOUA	DM/UM - Centrálne značky OUA				1	bus
+Group	dm_controllingareporting	DM/UM - Controlling a reporting				1	grp
+Group	dm_creditrisk	DM/UM - Credit Risk				1	bus
+Group	dm_DMCOMAktivator	DM/UM - DMCOMAktivator				1	bus
+Group	dm_EDS	DM/UM - EDS				1	bus
+Group	dm_financnesluzby	DM/UM - Finančné služby				1	bus
+Group	dm_ict	DM/UM - ICT				1	bus
+Group	dm_impeurotax	DM/UM - ImpEurotax				1	bus
+Group	dm_marketing	DM/UM - Marketing				1	bus
+Group	dm_olfs	DM/UM - OLFS				1	bus
+Group	dm_oppr	DM/UM -OPPR				1	bus
+Group	dm_poistne	DM/UM - Poistné				1	bus
+Group	dm_riadenieportfolia	DM/UM - Riadenie portfólia				1	bus
+Group	dm_RVModulAdmin	DM/UM - RVModulAdmin				1	bus
+Group	dm_RVModulRun	DM/UM - RVModulRun				1	bus
+Group	dm_uctovnictvoadane	DM/UM - Účtovníctvo a dane				1	bus
+Group	dm_UMModulRun	DM/UM - UMModulRun				1	bus
+Group	dms_akvizitor	DMS - Akvizítor				1	bus
+Group	dms_archivarauditor	DMS - Archivár, auditor				1	bus
+Group	dms_centralnakontrolaop	DMS - Centrálna kontrola OP				1	bus
+Group	dms_centralnynakupasluzby	DMS - Centrálny nákup a služby				1	bus
+Group	dms_centralnyspracovatel	DMS - Centrálny spracovateľ				1	bus
+Group	dms_controllingareporting	DMS - Controlling a reporting				1	bus
+Group	dms_creditrisk	DMS - Credit Risk				1	bus
+Group	dms_czoua	DMS - Centrálne značky OUA				1	bus
+Group	dms_financnesluzby	DMS - Finančné služby				1	bus
+Group	dms_fullservice	DMS - Full Service				1	bus
+Group	dms_itadmin	DMS - ItAdmin				1	bus
+Group	dms_koporatnefinancovanie	DMS - Korporátne financovanie				1	bus
+Group	dms_marketing.a.podpora.obchodu	DMS - Marketing a podpora obchodu				1	bus
+Group	dms_operacnerizikoacompliance	DMS - Operačné riziko a Compliance				1	bus
+Group	dms_poistenie	DMS - Poistenie				1	bus
+Group	dms_pravnesluzby	DMS - Právne služby				1	bus
+Group	dms_procesadmin	DMS - Proces admin				1	bus
+Group	dms_riadenieportfolia	DMS - Riadenie portfólia				1	bus
+Group	dms_vedenie	DMS - Vedenie				1	bus
+Group	dms_zakaznickyservis	DMS - Zákaznícky servis				1	bus
+Group	docasna_saq_NZ	SAQ_zapad_docasna_BR				1	bus
+Group	eClient - Administrátor	eClient - Administrátor				1	bus
+Group	eClient - Dealer OL	eClient - Dealer OL				1	bus
+Group	eClient - FDS a PSA Dealer	eClient - FDS a PSA Dealer				1	bus
+Group	eClient - Obchodník	eClient - Obchodník				1	bus
+Group	eClient - Spracovateľ pobočky	eClient - Spracovateľ pobočky				1	bus
+Group	eClient - Spracovateľ zmluvy	eClient - Spracovateľ zmluvy				1	bus
+Group	GG- MDK-NIA-Authenticated.Users	Authenticated Users				1	apl
+Group	GG- MDK-NIA-Role.Administrators	Role Administrators				1	apl
+Group	GG-AG-Administrator	Administrátor				1	apl
+Group	GG-AG-Zamestananec.LS	Zamestananec LS				1	apl
+Group	GG-CNAV-CNAV.-.preverovanie	CNAV - preverovanie				1	apl
+Group	GG-DM-Admins	Admins				1	apl
+Group	GG-DM-Centralne.spracovanie	Centrálne spracovanie				1	apl
+Group	GG-DM-Centralne.znacky.OUA	Centrálne značky OUA				1	apl
+Group	GG-DM-Controlling.a.reporting	Controlling a reporting				1	grp
+Group	GG-DM-Credit.Risk	Credit Risk				1	apl
+Group	GG-DM-DMCOMAktivator	DMCOMAktivator				1	apl
+Group	GG-DM-EDS	EDS				1	apl
+Group	GG-DM-Financne.sluzby	Finančné služby				1	apl
+Group	GG-DM-ICT	ICT				1	apl
+Group	GG-DM-ImpEurotax	ImpEurotax				1	grp
+Group	GG-DM-Marketing	Marketing				1	apl
+Group	GG-DM-OLFS	OLFS				1	apl
+Group	GG-DM-OPPR	OPPR				1	apl
+Group	GG-DM-Poistne	Poistné				1	apl
+Group	GG-DM-Riadenie.portfolia	Riadenie portfólia				1	apl
+Group	GG-DM-RVModulAdmin	RVModulAdmin				1	apl
+Group	GG-DM-RVModulRun	RVModulRun				1	apl
+Group	GG-DMS-Akvizitor	Akvizítor				1	apl
+Group	GG-DMS-Archivar_.auditor	Archivár, auditor				1	apl
+Group	GG-DMS-Centralna.kontrola.OP	Centrálna kontrola OP				1	apl
+Group	GG-DMS-Centralny.nakup.a.sluzby	Centrálny nákup a služby				1	apl
+Group	GG-DMS-Centralny.spracovatel	Centrálny spracovateľ				1	apl
+Group	GG-DMS-Controlling.a.reporting	Controlling a reporting				1	apl
+Group	GG-DMS-Credit.Risk	Credit Risk				1	apl
+Group	GG-DMS-CZoua	Centrálne značky OUA				1	apl
+Group	GG-DMS-Financne.sluzby	Finančné služby				1	apl
+Group	GG-DMS-Full.Service	Full Service				1	apl
+Group	GG-DMS-ItAdmin	ItAdmin				1	apl
+Group	GG-DMS-Korporatne.financovanie	Korporátne financovanie				1	apl
+Group	GG-DMS-Marketing.a.podpora.obchodu	Marketing a podpora obchodu				1	apl
+Group	GG-DMS-Operacne.riziko.a.Compliance	Operačné riziko a Compliance				1	apl
+Group	GG-DMS-Poistenie	Poistenie				1	grp
+Group	GG-DMS-Pravne.sluzby	Právne služby				1	apl
+Group	GG-DMS-Proces.admin	Proces admin				1	apl
+Group	GG-DMS-Riadenie.portfolia	Riadenie portfólia				1	apl
+Group	GG-DMS-Vedenie	Vedenie				1	apl
+Group	GG-DMS-Web.DMS	Web DMS				1	apl
+Group	GG-DMS-Zakaznicky.servis	Zákaznícky servis				1	apl
+Group	GG-DM-Uctovnictvo.a.dane	Účtovníctvo a dane				1	apl
+Group	GG-DM-UMModulRun	UMModulRun				1	apl
+Group	GG-EC-eClient.-.Administrator	eClient - Administrátor				1	apl
+Group	GG-EC-eClient.-.Dealer.OL	eClient - Dealer OL				1	apl
+Group	GG-EC-eClient.-.FDS.a.PSA.Dealer	eClient - FDS a PSA Dealer				1	apl
+Group	GG-EC-eClient.-.Obchodnik	eClient - Obchodník				1	apl
+Group	GG-EC-eClient.-.Spracovatel.pobocky	eClient - Spracovateľ pobočky				1	apl
+Group	GG-EC-eClient.-.Spracovatel.zmluvy	eClient - Spracovateľ zmluvy				1	apl
+Group	GG-IRIS-AdminFirma	AdminFirma				1	apl
+Group	GG-IRIS-Kontrolor	Kontrolor				1	apl
+Group	GG-IRIS-Manager	Manager				1	apl
+Group	GG-IRIS-Referent	Referent				1	apl
+Group	GG-LEA-LEA_.Modifikacia.ponuky.a.navrhu.predaja	LEA: Modifikácia ponuky a návrhu predaja				1	apl
+Group	GG-MC-Multicash.pristup	Multicash prístup				1	apl
+Group	GG-MDK-NIA-_Ramcove_zmluvy_Administrator	_Ramcove_zmluvy_Administrator				1	apl
+Group	GG-MDK-NIA-_Ramcove_zmluvy_Archivator	_Ramcove_zmluvy_Archivator				1	apl
+Group	GG-MDK-NIA-Obchodnik	_RamcoveZmluvy_Obchodnik					apl
+Group	GG-MDK-NIA-Schvalovatel	_RamcoveZmluvy_Schvalovatel					apl
+Group	GG-SAP-FI_.IDM_TESTIK	FI: IDM_TESTIK				1	apl
+Group	GG-SAP-FI_.ZSII_ADMIN	FI: ZSII_ADMIN				1	apl
+Group	GG-SAP-FI_.ZSII_KDF_ZOBRAZENIE	FI: ZSII_KDF_ZOBRAZENIE				1	apl
+Group	GG-SAP-FI_.ZSII_OPERATOR	FI: ZSII_OPERATOR				1	apl
+Group	GG-SAP-FI_.ZSII_SCHVALOVATEL	FI: ZSII_SCHVALOVATEL				1	apl
+Group	GG-SAP-FI_.ZSII_UCTOVNIK	FI: ZSII_UCTOVNIK				1	apl
+Group	GG-WP-Admin	Admin				1	apl
+Group	GG-WP-Obchodny.zastupca	Obchodný zástupca				1	apl
+Group	GG-WP-Superadmin	Superadmin				1	apl
+Group	GG-WP-Webportal-aktivny.pristup	Webportál - aktívny prístup				1	apl
+Group	GG-WP-Zmluvny.partner	Zmluvný partner				1	apl
+Group	iris_admin	IRIS - ISPEL - Admin				1	bus
+Group	iris_kontrolor	IRIS - ISPEL - Kontrolor				1	bus
+Group	iris_referent	IRIS - ISPEL - Referent				1	bus
+Group	iris-ispel_manager	IRIS - ISPEL - Manager				1	bus
+Group	LEA#DMS#Rola#10	Centrálny spracovateľ				1	grp
+Group	Multicash	Multicash prístup				1	bus
+Group	ramcove_zmluvy_administrator	Ramcové zmluvy NIA - Admnistrator				1	bus
+Group	ramcove_zmluvy_archivator	Rámcové zmluvy NIA - Archivátor				1	bus
+Group	ramcove_zmluvy_obchodnik	Rámcové zmluvy NIA - Obchodník				1	bus
+Group	ramcove_zmluvy_schvalovatel	Rámcové zmluvy NIA - Schvaľovateľ				1	bus
+Group	RP_docasna	RP-docasna				1	grp
+Group	SAP základ	SAP základ				1	grp
+Group	špecialista riadenia rizík II_Credit risk_doplnujuca	špecialista riadenia rizík II_Credit risk_PDF_aktiv_pristup				1	bus
+Group	web_dms	Web-DMS prístup				1	bus
+Group	Webportal	Webportál - zam. prístup				1	bus
+Group	wordpress_admin	Wordpress - Admin				1	bus
+Group	wordpress_obchdony_zastupca	Wordpress - Obchodný zástupca				1	bus
+Group	wordpress_superadmin	Wordpress - Superadmin				1	bus
+Group	wordpress_zmluvny_partner	Wordpress - Zmluvný partner				1	bus
+Group	ZBC_ENDUSER	ZBC_ENDUSER				1	grp
+Person	17701044	Haydenová Marcela	17701044	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17701465	Nagy Tomáš	17701465	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17701865	Luknárová Adriana	17701865	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17702204	Danterová Zuzana	17702204	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17702422	Maczeáková Ivana	17702422	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17702534xi	Plšková Milada	17702534	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	17702987	Mikluš Michal	17702987	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706023	Briešková Romana	17706023	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706273	Greifová Katarína	17706273	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706410xi	Šrámek Tomáš	17706410	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	17706413	Ráchela Jana	17706413	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706418	Miklová Victória	17706418	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706419	Žinčáková Diana	17706419	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706422	Gembická Marcela	17706422	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706429	Grenčík Miroslav	17706429	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706463	Juričková Michaela	17706463	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706464	Jenisová Barbora	17706464	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706466xi	Mihalík Miroslav	17706466	adm	Užívateľ je povolený	1	
+Person	17706476	Tkáčová Kristína	17706476	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706481xi	Usačevová Lenka	17706481	adm	Užívateľ je povolený	1	
+Person	17706483	Marcinov Martin	17706483	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706526	Frgala Peter	17706526	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706537	Široká Mária	17706537	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706542	Máťaš Matej	17706542	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706544	Chrenko Viktor	17706544	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706550	Verešová Barbora	17706550	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706551	Ufnárová Mária	17706551	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706553	Kéry Petra	17706553	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706557	Jaššová Tatiana	17706557	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706560	Brindzová Erika	17706560	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706561	Kataníková Ema	17706561	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706562	Molnárová Katarína	17706562	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706563	Andrejkovič Andrej	17706563	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706574	Dudusová Rebeka	17706574	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706586	Urbánková Gréta	17706586	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706588	Mikulášová Simona	17706588	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706603	Vašíček Viktor	17706603	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706605	Honišková Linda	17706605	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706614	Papayová Lenka	17706614	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706628	Semanová Kornélia	17706628	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706630	Piačeková Alexandra	17706630	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706650	Matejová Bianka	17706650	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706664	Škulcová Miriama	17706664	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706684	Šušoliak Lucián	17706684	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706701	Škrab Roman	17706701	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706702	Hruška Matej	17706702	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706710	Pačesová Natália	17706710	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706734	Sokolíková Andrea	17706734	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706738	Petrovics Martin	17706738	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17706745xi	Kytošová Klaudia	17706745	adm	Užívateľ je povolený	1	
+Person	17706748	Kováč Dávid	17706748	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706762	Čepčeková Alexandra	17706762	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706771	Bergl Oliver	17706771	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706819	Kocsis Marek	17706819	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706839	Navarová Marianna	17706839	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706913	Ocelková Daniela	17706913	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706943	Rusnák Sebastián	17706943	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706963	Lukáčová Katarína	17706963	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706970	Vožňáková Bianka	17706970	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706972	Petrovská Petra	17706972	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17706987	Rumanová Lenka	17706987	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17707033	Sviteková Sara	17707033	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17707046	Haviar Richard	17707046	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17707119	Buranská Nicole	17707119	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17707183	Vaňková Alena	17707183	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17709601	Slovák Patrik	17709601	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	17709605	Kytošová Klaudia	17709605	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17709605xi	Kytošová Klaudia	17709605	adm	Užívateľ je zakázaný - konec PPV	0	
+Person	17709613xi	Shmelev Pavel	17709613	adm	Užívateľ je povolený	1	
+Person	17709615xi	Biščo Michal	17709615	adm	Užívateľ je povolený	1	
+Person	17709616xi	Séleš Róbert	17709616	adm	Užívateľ je povolený	1	
+Person	17709620xi	Lenart Alexander	17709620	adm	Užívateľ je povolený	1	
+Person	17709621xi	Minh Hai	17709621	adm	Užívateľ je povolený	1	
+Person	17709626	Mlátilík Martin	17709626	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17709632	Balasičová Veronika	17709632	par	Užívateľ je zakázaný - konec PPV	0	
+Person	17709635xi	Miláček Martin	17709635	adm	Užívateľ je povolený	1	
+Person	17709653xi	Mudroň Michal	17709653	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	17709988xi	Richtarik Oliver	17709988	adm	Užívateľ je povolený	1	
+Person	1779006ex	Mikulčík Róbert	1779006	ext	Užívateľ je povolený	1	
+Person	1779006xi	Mikulčík Róbert	1779006	adm	Užívateľ je povolený	1	
+Person	1779014xi	Slížik Miloslav	1779014	adm	Užívateľ je povolený	1	
+Person	1779015ex	Pollák Roman	1779015	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779015xi	Pollák Roman	1779015	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779018ex	Puskas Szabolcs	1779018	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779018xi	Puskas Szabolcs	1779018	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779028ex	Bučkuliak Samuel	1779028	ext	Užívateľ je zakázaný - konec PPV	0	
+Person	1779028xi	Bučkuliak Samuel	1779028	adm	Užívateľ je zakázaný - konec PPV	0	
+Person	1779032xi	Šafár Patrik	1779032	adm	Užívateľ je povolený	1	
+Person	1779035ex	Mudrak Peter	1779035	ext	Užívateľ je povolený	1	
+Person	1779036xi	Hudáková Lucia	1779036	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779037xi	Oravec Andrej	1779037	adm	Užívateľ je povolený	1	
+Person	1779040ex	Minárčiná Ivana	1779040	ext	Užívateľ je povolený	1	
+Person	1779040xi	Minárčiná Ivana	1779040	adm	Užívateľ je povolený	1	
+Person	1779045xi	Kovalík Vladimír	1779045	adm	Užívateľ je povolený	1	
+Person	1779053ex	Švec Peter	1779053	ext	Užívateľ je povolený	1	
+Person	1779053xi	Švec Peter	1779053	adm	Užívateľ je povolený	1	
+Person	1779064xi	Minárik Matúš	1779064	adm	Užívateľ je povolený	1	
+Person	1779065xi	Sedláček Peter	1779065	adm	Užívateľ je povolený	1	
+Person	1779070xi	Boťanský Richard	1779070	adm	Užívateľ je povolený	1	
+Person	1779072xi	Bánik Rastislav	1779072	adm	Užívateľ je povolený	1	
+Person	1779073xi	Hečko Dušan	1779073	adm	Užívateľ je povolený	1	
+Person	1779074ex	Moždženová Kristína	1779074	ext	Užívateľ je povolený	1	
+Person	1779074xi	Moždženová Kristína	1779074	adm	Užívateľ je povolený	1	
+Person	1779080ex	Prčeková Silvia	1779080	ext	Užívateľ je povolený	1	
+Person	1779080xi	Prčeková Silvia	1779080	adm	Užívateľ je povolený	1	
+Person	1779084ex	Líšková Anna	1779084	ext	Užívateľ je povolený	1	
+Person	1779084xi	Líšková Anna	1779084	adm	Užívateľ je povolený	1	
+Person	1779085xi	Kajan Denis	1779085	adm	Užívateľ je povolený	1	
+Person	1779097xi	Bajla Boris	1779097	adm	Užívateľ je zakázaný - konec PPV	0	
+Person	1779099ex	Jediný Jakub	1779099	ext	Užívateľ je povolený	1	
+Person	1779099xi	Jediný Jakub	1779099	adm	Užívateľ je povolený	1	
+Person	1779100ex	Paššák Martin	1779100	ext	Užívateľ je povolený	1	
+Person	1779100xi	Paššák Martin	1779100	adm	Užívateľ je povolený	1	
+Person	1779102ex	Ukrop Andrej	1779102	ext	Užívateľ je povolený	1	
+Person	1779104xi	Sokol Matěj	1779104	adm	Užívateľ je povolený	1	
+Person	1779106ex	Búri Lukáš	1779106	ext	Užívateľ je povolený	1	
+Person	1779106xi	Búri Lukáš	1779106	adm	Užívateľ je povolený	1	
+Person	1779108xi	Malík Peter	1779108	adm	Užívateľ je povolený	1	
+Person	1779109ex	Valocký Frederik	1779109	ext	Užívateľ je povolený	1	
+Person	1779109xi	Valocký Frederik	1779109	adm	Užívateľ je povolený	1	
+Person	1779110xi	Cíbová Karin	1779110	adm	Užívateľ je povolený	1	
+Person	1779111xi	Pavlíková Tatiana	1779111	adm	Užívateľ je povolený	1	
+Person	1779112xi	Hubert Jakub	1779112	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779115xi	Kejř Jan	1779115	adm	Užívateľ je povolený	1	
+Person	1779119ex	Ľoch Matej	1779119	ext	Užívateľ je povolený	1	
+Person	1779119xi	Ľoch Matej	1779119	adm	Užívateľ je povolený	1	
+Person	1779120xi	Ratkovský Adam	1779120	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779121ex	Donoval Martin	1779121	ext	Užívateľ je povolený	1	
+Person	1779121xi	Donoval Martin	1779121	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779123ex	Ksinan Jaroslav	1779123	ext	Užívateľ je povolený	1	
+Person	1779123xi	Ksinan Jaroslav	1779123	adm	Užívateľ je povolený	1	
+Person	1779124xi	Sigetiová Andrea	1779124	adm	Užívateľ je povolený	1	
+Person	1779128xi	Budínská Kristína	1779128	adm	Užívateľ je povolený	1	
+Person	1779130xi	Hiadlovská Simona	1779130	adm	Užívateľ je povolený	1	
+Person	1779132xi	Špička Andrej	1779132	adm	Užívateľ je povolený	1	
+Person	1779133xi	Salaj Pavol	1779133	adm	Užívateľ je povolený	1	
+Person	1779135xi	Prajz Jiří	1779135	adm	Užívateľ je povolený	1	
+Person	1779136xi	Šoltes Miroslav	1779136	adm	Užívateľ je zakázaný - konec PPV	0	
+Person	1779141xi	Polakovič Martin	1779141	adm	Užívateľ je povolený	1	
+Person	1779145ex	Zajac Jaroslav	1779145	ext	Užívateľ je povolený	1	
+Person	1779145xi	Zajac Jaroslav	1779145	adm	Užívateľ je povolený	1	
+Person	1779148xi	Hanes Stanislav	1779148	adm	Užívateľ je povolený	1	
+Person	1779149xi	Kirchner Emma	1779149	adm	Užívateľ je povolený	1	
+Person	1779151xi	Kosecek Miroslav	1779151	adm	Užívateľ je povolený	1	
+Person	1779154xi	Chlapečka Marián	1779154	adm	Užívateľ je povolený	1	
+Person	1779155xi	Nagy Róbert	1779155	adm	Užívateľ je povolený	1	
+Person	1779156xi	Duľa Peter	1779156	adm	Užívateľ je povolený	1	
+Person	1779157xi	Bujňák Milan	1779157	adm	Užívateľ je povolený	1	
+Person	1779158xi	Kováčik Juraj	1779158	adm	Užívateľ je povolený	1	
+Person	1779159xi	Sládkovič Martin	1779159	adm	Užívateľ je povolený	1	
+Person	1779160xi	Kyseľ Peter	1779160	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	1779161xi	Rozman Filip	1779161	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	1779162xi	Pavlák Peter	1779162	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	1779163xi	Gottlieber Michal	1779163	adm	Užívateľ je povolený	1	
+Person	1779164ex	Kvačkaj Michal	1779164	ext	Užívateľ je povolený	1	
+Person	1779164xi	Kvačkaj Michal	1779164	adm	Užívateľ je povolený	1	
+Person	1779165ex	Lengyel Miroslav	1779165	ext	Užívateľ je povolený	1	
+Person	1779165xi	Lengyel Miroslav	1779165	adm	Užívateľ je povolený	1	
+Person	1779166ex	Mikuš Martin	1779166	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	1779166xi	Mikuš Martin	1779166	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	1779167ex	Linkay Branislav	1779167	ext	Užívateľ je povolený	1	
+Person	1779167xi	Linkay Branislav	1779167	adm	Užívateľ je povolený	1	
+Person	1779168ex	Bočko Dominik	1779168	ext	Užívateľ je povolený	1	
+Person	1779168xi	Bočko Dominik	1779168	adm	Užívateľ je povolený	1	
+Person	1779169ex	Kotman Boris	1779169	ext	Užívateľ je povolený	1	
+Person	1779169xi	Kotman Boris	1779169	adm	Užívateľ je povolený	1	
+Person	1779170ex	Kováč Ľudovít	1779170	ext	Užívateľ je povolený	1	
+Person	1779170xi	Kováč Ľudovít	1779170	adm	Užívateľ je povolený	1	
+Person	1779171ex	Mihál Vladimír	1779171	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779171xi	Mihál Vladimír	1779171	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	1779172ex	Knap Miroslav	1779172	ext	Užívateľ je povolený	1	
+Person	1779172xi	Knap Miroslav	1779172	adm	Užívateľ je povolený	1	
+Person	1779173ex	Janský Vladimír	1779173	ext	Užívateľ je povolený	1	
+Person	1779173xi	Janský Vladimír	1779173	adm	Užívateľ je povolený	1	
+Person	1779174ex	Čík Juraj	1779174	ext	Užívateľ je povolený	1	
+Person	1779174xi	Čík Juraj	1779174	adm	Užívateľ je povolený	1	
+Person	1779175ex	Nagy Peter	1779175	ext	Užívateľ je povolený	1	
+Person	1779175xi	Nagy Peter	1779175	adm	Užívateľ je povolený	1	
+Person	1779176ex	Kozák Radim	1779176	ext	Užívateľ je povolený	1	
+Person	1779176xi	Kozák Radim	1779176	adm	Užívateľ je povolený	1	
+Person	agregusova	Gregušová Andrea	17701794	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	bielik_admin	Bielik Ondrej	1779018	ext	Užívateľ je povolený	1	
+Person	bisak_admin	Bisak Branislav	1779020	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	buran_admin	Buran Miroslav	1779074	ext	Užívateľ je povolený	1	
+Person	cisar_admin	Cisár Marek	1779013	ext	Užívateľ je povolený	1	
+Person	fricka	Frická Anna	17701169	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	galas	Galas Andrej	17706292	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	ganobcik	Ganobčík Roman	17701040	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	gejgusova	Gejgušová Simona	17706358	par	Užívateľ je zakázaný - konec PPV	0	
+Person	gottwald_admin	Gottwald Josef	1779081	adm	Užívateľ je povolený	1	
+Person	hrisenko_admin	Hriseňko Viktor	1779137	ext	Užívateľ je povolený	1	
+Person	jkovac_admin	Kováč Jozef	1779010	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	jslobodova	Slobodová Jozefína	17706332	par	Užívateľ je zakázaný - konec PPV	0	
+Person	konakovsky	Koňakovský Martin	17702942	zam	Užívateľ je povolený	1	
+Person	kuffer	Küffer Katarína	17702396	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	kytosova	Kytošová Klaudia	1779080	ext	Užívateľ je zakázaný - konec PPV	0	
+Person	lences	Lenčéš Marián	17702998	zam	Užívateľ je povolený	1	
+Person	lences_admin	Lenčéš Marián	17702998	adm	Užívateľ je povolený	1	
+Person	lukacka_admin	Lukacka Branislav	1779115	ext	Užívateľ je povolený	1	
+Person	majtas_admin	Majtás Ľubomír	17702519	adm	Užívateľ je povolený	1	
+Person	marcek_admin	Marcek Peter	1779019	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	marencik_admin	Marenčík Milan	1779015	ext	Užívateľ je zakázaný - konec PPV	0	
+Person	masaryk_admin	Masaryk Admin Rastislav	1779027	ext	Užívateľ je povolený	1	
+Person	mbednarikova	Bednáriková Margita	17706343	par	Užívateľ je zakázaný - konec PPV	0	
+Person	miklos	Mikloš Ján	17706315	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	mikula_admin	Mikula Tibor	17702358	adm	Užívateľ je povolený	1	
+Person	mudron_admin	Mudroň Michal	17706361	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+Person	murgas_admin	Murgaš Miroslav	1779051	ext	Užívateľ je povolený	1	
+Person	NCC_JIRA	JIRA NCC	1779037	ext	Užívateľ je povolený	1	
+Person	nemec_admin	Němec Luděk	1779047	ext	Užívateľ je povolený	1	
+Person	obrocnik	Obročník Ľubomír	17701120	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	opalena	Opálená Kristína	17706262	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	osvaldova	Osvaldová Linda	17706341	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	pastucha_admin	Pastucha. Jan.	17702491	adm	Užívateľ je povolený	1	
+Person	pfeiler_admin	Pfeiler David	1779100	ext	Užívateľ je povolený	1	
+Person	polcova_admin	Kuchárová Gabriela	1779060	adm	Užívateľ je povolený	1	
+Person	popelka_admin	Popelka Radek	1779079	ext	Užívateľ je povolený	1	
+Person	raksanyova	Rakšányová Desana	17702976	zam	Užívateľ je zakázaný - konec PPV	0	
+Person	sandor_admin	Šándor Ján	17701161	adm	Užívateľ je povolený	1	
+Person	snirc_test	Šnirc Test	1779123	ext	Užívateľ je povolený	1	
+Person	tobek_admin	Tobek Ľubomír	17702624	adm	Užívateľ je povolený	1	
+Person	torvenyi_admin	Törvényi Rudolf	1779068	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+Person	ukrop_admin	Ukrop Andrej	1779102	adm	Užívateľ je povolený	1	
+Person	vanko	Vanko Jozef	17706306	par	Užívateľ je zakázaný - konec PPV	0	
+Person	x-MIM.Exchange	MIM Exchange		adm	Užívateľ je povolený	1	
+Person	zilizi	Zilizi Attila	17706293	zam	Užívateľ je zakázaný - konec PPV	0	

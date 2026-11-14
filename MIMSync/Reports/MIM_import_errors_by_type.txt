@@ -1,0 +1,169 @@
+﻿# Zdroj: C:\Projects\MIM\MIMSync\MIM_import_errors.xml
+# Vygenerovano: 2026-10-03 18:55:17
+# Objektu: 151
+# Typu chyb: 3
+# Sloupce pod typem: Anchor (cs-dn) <TAB> object-type <TAB> techName/AccountName (pokud je)
+
+================================================================================
+extension-dll-exception / FormatException DateTime.ParseExact (MVExtension.cs:668)  (149)
+================================================================================
+01ad80e1-ac8e-4541-a630-118727c7380f	Person	u815518
+02f37892-3c79-4a1e-abc2-d9e61827790a	RoleApplication
+05f1f4d3-03ac-427a-96cf-041b514850a2	SYSUsers	sdpcellmgr
+07e7b8b4-716e-499d-8879-e29e8cb833c6	Person	u000278
+08ffee83-8ec8-4933-879d-c79108fee920	SYSUsers	sys_fts_rove
+0c43c0d7-d66e-47ec-81f1-b1a80fd9e7e7	SYSUsers	reports_00301
+0ccaa4a5-dab6-441f-bd8b-047b413a37cd	SYSUsers	sqlspf
+0db08be1-408a-4878-a71c-c0b572b6569f	SYSUsers	sqdw1u
+0dee7d79-5262-4433-8411-0aa3e713a1bb	SYSUsers	sys_virtual_desktop
+0ea77e17-650d-4732-81e5-7fd04b03952c	SYSUsers	sys_esoms
+0f4f20b0-4a1e-4ebe-b8eb-c71c2b281168	Person	u309476
+106d3b96-e564-40ff-b929-a02970b2a07d	RoleApplication
+110045de-07f9-438b-8c62-07322fa710eb	Person	u816121
+11352a0b-5263-4e30-abeb-e5dbe7ad83d3	SYSUsers	veeambkp
+13194924-f931-4030-9215-2cd912f25596	SYSUsers	db_read2azure
+144ad0e2-1b30-4857-a7ac-23d1e4020faf	SYSUsers	infokiosk_user_EMO
+15dee091-a664-4825-ae7d-d465eddfbd55	SYSUsers	sys_qualys_proxy
+1615bd24-de17-4cb5-911c-2ffbb093e7c2	RoleApplication
+16e009cc-93da-49c6-b46c-db8df42ab9e2	RoleApplication
+18666c65-91ec-48b3-ac80-1701d80a5430	SYSUsers	SAPSSO_EPP
+186ec1ea-fb3c-4250-b2b9-23867fe03dc5	Person	u815500
+19e45872-3d2c-4202-a3d5-0438d4db0928	Person	u812470
+1a90ccb3-a619-447c-a72f-7e41275f57dc	SYSUsers	infokiosk_user
+1fb4498b-20ff-40a6-9f58-d82787b585a3	SYSUsers	sys_risk_azure
+1fe54998-a0cd-4f11-a26d-90937989b0d7	SYSUsers	db_ar_historia
+2062d033-a489-4628-8821-76d95915a666	SYSUsers	sys_datd_ocr
+21e93ea5-484a-448f-af4a-1d5b1c5d3ff5	SYSUsers	reports_00304
+237ed0a4-8a0b-4a07-a6cb-0f4ef06a51df	RoleApplication
+240f24cf-7c00-42d5-b520-bf983903ba06	RoleApplication
+24d288dd-9e00-4f78-a4ff-031507f98405	SYSUsers	OpsMgrServerAction
+2624fcf9-495e-4e01-bbff-470db47eedd7	SYSUsers	sys_eikon_azure
+267bb7ff-88c3-4b04-9bde-54791bcd1043	RoleApplication
+2750bbaa-e105-44cd-9d19-25faa47b6414	SYSUsers	db_ems_historia
+27a6bd21-6854-46ed-b368-f9c547f8b894	RoleApplication
+28178c4c-9e92-49f6-8164-dee6edcb8b51	RoleApplication
+2d2643cf-a2ac-4d2b-aaaa-e036a4b8afb0	SYSUsers	rove_mes
+2dbb44b7-b805-4c29-a4af-b098ed613fca	SYSUsers	reports_00297
+30003510-6d96-4540-ae8d-4f2956de1b26	SYSUsers	SAM_service
+30fe07fc-3f07-45d9-98d9-35e6372f0726	RoleApplication
+3566bda9-e61d-4c12-b5c5-c26b0d14f623	Person	u816118
+3c601b44-febc-47d8-9408-7c98f19b370c	RoleApplication
+427d5a02-4f66-4032-84e8-6b19550e17b9	SYSUsers	rove_dd
+42c35376-cec0-4250-b910-feb72b53bc2a	SYSUsers	scantofolder
+476ece19-c2fb-4b77-8937-ac70bffccb34	RoleApplication
+4838a685-bc95-4a2a-a43e-6f4de6332060	Person	u209154
+4863bbba-609d-4288-be47-80cdafd9d3e7	SYSUsers	RunAsAdmin_AZDMNG2v
+4a0b3219-5f14-484b-9456-1c1008d40983	SYSUsers	sys_qgis
+4b9eef61-5ed4-4de9-83a5-28bf0d8bbc4e	RoleApplication
+4bd0af09-538e-4bcc-8b56-4d54305c6f43	SYSUsers	eppadm
+4cb1351c-58dc-4aec-886b-5c7842f3a762	SYSUsers	sys_mo34ing
+4d4ae642-a516-42e7-8f33-780be2cd82c1	SYSUsers	sapsso_emp
+4f1dd535-3d74-49c0-a8dc-8d039f7db249	SYSUsers	SAPServiceEPT
+4f807363-1058-439c-954f-28bc627a68d3	SYSUsers	svc_wbl_weblogic
+511e2250-082d-43ae-9690-13b15f745ac9	SYSUsers	rove_id_historia
+52629d05-4bd9-432c-98e0-d09208212441	RoleApplication
+53b731a1-e118-409a-bad6-115880271db3	RoleApplication
+5522de86-f07c-4181-a20a-c8a8a0fae9f3	Person	u816122
+5b65bade-2b1a-481f-9191-6b1e9f63f621	SYSUsers	db_ar
+5c17b9b8-4059-403c-982d-eec0cd409349	SYSUsers	rove_id
+5f70e2aa-0ada-47de-8f6a-00075c8e3a43	SYSUsers	obchod.reporty
+649778a8-b32e-4f7c-bcd1-9bcbb4d66504	RoleApplication
+655663bd-3ad8-40a7-a409-617243fbba5e	SYSUsers	rove_od_historia
+67af60f7-ac15-4740-9547-39c72b6a33bb	SYSUsers	reports_00296
+68923620-28ff-4e0f-b35b-ccc5300047c2	SYSUsers	SVC_SPS_SE_SCOM
+68f2db6c-0840-4966-aab8-42fca5cdd7b8	SYSUsers	runasspc
+690fc70d-ae31-449c-bb2d-e192dc83b022	RoleApplication
+69f9c983-7fd6-4cf5-8a49-780bec4f47a7	SYSUsers	quasar_vet
+6d52db4c-c7d6-4672-ab98-ac90db055e32	RoleApplication
+6f19e7ee-3c56-4103-bc5e-577db006130d	SYSUsers	sqlspft
+6f562659-ee4d-44d8-b92e-1236a4622f7f	SYSUsers	dba
+70c72784-16e3-4d5c-a649-ef0e2177552b	SYSUsers	rove_id_eda
+7156ec6e-1c00-446e-ac41-2cae1f68b220	Person	u814104
+72334a49-37d2-4fe1-9f12-3d2ae7cb619c	RoleApplication
+72ee4cd5-21d5-416a-87ad-9b318b6792dd	SYSUsers	infokiosk_user_EBO
+73639d95-4006-4048-8ff1-d32575614469	RoleApplication
+75541ac3-1406-4e66-be75-876945076cc0	RoleApplication
+798a74fd-d455-4719-8c87-7e3c9a814284	SYSUsers	eptadm
+7d2ae50f-cb43-411b-b3b6-947ecd838972	SYSUsers	replicator
+7d4ebc1a-3887-4ca7-84ec-72f2598829dd	SYSUsers	sys_zuzana_ebo
+7e5f00c2-ccf1-4dc7-a4e6-7b688c988a54	Person	u815096
+816d8062-4c33-4074-8f3d-eb33f95cfbc7	SYSUsers	SAPServiceW1S
+81b1b88d-3fff-4601-8080-e67cddef2935	SYSUsers	sys_MIM.Servio
+850df3a4-4342-45f1-8ec9-59a634c98147	SYSUsers	sybept
+87e61049-316b-4043-9814-735296cee918	SYSUsers	sys_fts
+89b367b1-d714-43ad-863d-6a9763de3942	SYSUsers	rove_messenger
+8aa452ba-f06a-4b89-b510-2dc3df4b1335	RoleApplication
+8ab689d1-35fa-4121-a42e-a5fdd29f3da3	RoleApplication
+8ecc721a-855a-462a-adf9-0f63055cac9e	SYSUsers	postgres
+93667974-9af2-423d-bd8c-99d38cfdee90	RoleApplication
+94757282-520f-40f3-9cf0-aac80ee002f4	RoleApplication
+97185390-c591-444e-b036-93952aef0c8b	RoleApplication
+973eb7d1-79ae-40b0-a215-7c269ec9f74c	Person	u815836
+98e5da64-2614-40a1-a8ba-374e1c445fc4	SYSUsers	sys_script_fs
+9b7ca3d0-f5c4-42b0-9a8c-4766d013a72e	SYSUsers	SCCM_NAA
+9bfaffb9-c96e-4c9b-a68d-690650d3d19f	RoleApplication
+9c84f13d-6ae6-41e2-92ed-1314e0af2a61	SYSUsers	reports_00299
+9dfb556f-a134-40f4-9a0e-57121ff79141	RoleApplication
+a34d3d38-f41d-4011-bd47-bfad0b3fc274	SYSUsers	reports_00302
+a765d885-0a7d-4f30-9664-39852b2e5976	SYSUsers	db_eda
+a95dd63c-be01-4051-96e2-31e3d5ca6c06	SYSUsers	SAPServiceEPP
+ac374208-7c2c-44ba-957d-4ad25432fd20	Person	u814691
+acb78780-6c2f-4cdd-8564-65bb2c975b8b	SYSUsers	sys_hpmetering
+adc0f2ab-53c2-4aba-8986-c9327ab9eeb6	Person	u816119
+b28077fd-9707-414e-aa8f-1d0290b6c2fe	SYSUsers	aim_ext
+b48c5ada-f046-45fb-a338-723555f3fe02	SYSUsers	sybepp
+b4906879-03fb-4611-b09b-253158a67d9f	SYSUsers	rove_eda
+b671ceab-4516-41b4-9f31-50e0767c185c	SYSUsers	sys_OpsMgrSrvAction
+b6c5e3f2-3b51-412e-b5fb-1dca69a45a27	SYSUsers	SYS_AZMIG
+b6ed96b2-8258-49e7-9fca-aed4ca9de22f	SYSUsers	OpsMgrAgentAction
+b7956a0b-9cb1-4d8e-adf8-c9fa35215bac	RoleApplication
+bbe21cbd-9795-44be-ac2b-91af47ae34dc	SYSUsers	SAPSSO_EPT
+bc0d3a12-182f-48d0-8b2b-6c18579975d1	SYSUsers	rove_od
+be85c7d0-5beb-4b22-85d3-e057023d67ef	RoleApplication
+c0651ff0-28cf-41cb-a8b2-dbc6b2a59735	Person	u308802
+c0f965d1-4c2c-4200-9097-2274407f1bca	SYSUsers	sapsso_emd
+c2163554-b925-43cb-ac7f-0c93f7c6aebd	SYSUsers	reports_00300
+c247ece9-5a1e-464b-adb2-484441a434e6	RoleApplication
+c55bf005-6e38-4950-ab44-e2b398429b5c	RoleApplication
+c65f9d1f-1b12-48ec-ba1f-517bbed20b9b	SYSUsers	sys_AZD_WhatsUpGold
+c71d7816-8289-4d99-bf44-2502d03b42a6	SYSUsers	rove_doc
+c993991e-9254-4977-970e-9ee26c0c4b29	SYSUsers	sys_iuclid
+ca04b679-9b8e-4cc3-b470-5858ca0e5b60	RoleApplication
+cb54403d-b6b1-481d-86cb-269bf479fee3	SYSUsers	sys_6knet
+cbc26630-e9f1-4249-92fc-ba9a5d9f1ecb	SYSUsers	pc24875_user
+d15fd23d-e213-4c8b-a071-ac504a88ec86	SYSUsers	w1sadm
+d35a4097-bb21-4bb9-8432-88e2ffde93a5	RoleApplication
+d4fca2a2-9766-4ec1-b1b0-8dfc5a282c7c	RoleApplication
+d85ddacc-c8dc-45da-9edc-1e8539141225	Person	u000358
+dc037dae-db07-4e67-8e53-5d08437b4325	Person	u816123
+dc253064-ef4a-47dc-bbb8-065e4980a43e	RoleApplication
+dce448a3-995f-4c3c-9e9c-0ab5715c3afe	SYSUsers	infokiosk_user_EVO
+df458ea4-5943-4c52-a774-ecaf13af0174	RoleApplication
+e0d344d3-e920-47e1-8484-ba2c9c75ffa0	RoleApplication
+e15373c8-7798-4602-b8d1-23053f6f1499	SYSUsers	db_ems
+e169aa19-7c1a-4285-bba4-cd76670cb57c	SYSUsers	barco_user
+e41fac37-c3bc-4191-b046-591896ce5629	Person	u814696
+e601d72d-e8f7-4af7-a38e-ff6f5ae3dda0	Person	u815515
+ec1a013f-1da9-44f5-ba0c-01ab5d691287	SYSUsers	muletnet
+ed6189d2-b523-4d9e-958f-9977e623ff4f	SYSUsers	sys_ops_sql
+ee7d6cd9-42bc-4e40-9a16-c2c7a47d6dae	SYSUsers	reports_00303
+f10ce8bb-0128-4868-abd8-ef6c06ab4acb	SYSUsers	w1uadm
+f18f7b0c-5107-4c8c-9d15-8977776ed1d7	RoleApplication
+f5822fd9-c0b2-4c24-b552-84757cb92608	RoleApplication
+f6b446be-ac15-433b-948f-a32dea14304c	Person	u816120
+faa6c41c-8c14-4de8-93b8-c0b1600ff934	SYSUsers	sqdw1s
+fc217967-f931-42d5-ba51-f9e15186235b	RoleApplication
+fd7e9936-d0ad-41db-a9fa-0d8ec3245dd7	RoleApplication
+fe3cfd61-036f-4496-ab43-440448c426f1	RoleApplication
+ff42e0fd-ec84-42ed-9d30-08f3b8cf3aab	SYSUsers	SAPServiceW1U
+
+================================================================================
+ambiguous-import-flow-from-multiple-connectors  (1)
+================================================================================
+cedb4466-dcf0-40b9-8609-7ae56f09a752	RoleApplication
+
+================================================================================
+mv-constraint-violation / seasInfo -> info  (1)
+================================================================================
+1711a5ba-c182-4f8d-bb61-9213d6f11ec7	Person	u201273
+

@@ -1,0 +1,248 @@
+<saved-ma-configuration server='SMD1MGIDM01P' export-date='2026-11-04 09:53:23.087'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{25E26D95-3D71-4DFF-8517-E46FB1EA0F1E}</id>
+ <name>HUMANETv2</name>
+ <category>MSSQL</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2025-05-15 15:48:54.977</creation-time>
+ <last-modification-time>2026-09-02 21:30:20.480</last-modification-time>
+ <version>144</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:dsml="http://www.dsml.org/DSML" xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="person" type="structural"><dsml:name>person</dsml:name><dsml:attribute ref="#accountName" required="false" /><dsml:attribute ref="#begda" required="false" /><dsml:attribute ref="#employeeStartDate" required="true" /><dsml:attribute ref="#begda1" required="false" /><dsml:attribute ref="#employeeEndDate" required="true" /><dsml:attribute ref="#building" required="false" /><dsml:attribute ref="#bukrs" required="false" /><dsml:attribute ref="#displayName" required="false" /><dsml:attribute ref="#displayNamePlne" required="false" /><dsml:attribute ref="#personalTitle" required="false" /><dsml:attribute ref="#employeeID" required="false" /><dsml:attribute ref="#endda" required="false" /><dsml:attribute ref="#floor" required="false" /><dsml:attribute ref="#idNS" required="false" /><dsml:attribute ref="#idNakladovyOkruh" required="false" /><dsml:attribute ref="#idOJPerson" required="false" /><dsml:attribute ref="#idOJ2" required="false" /><dsml:attribute ref="#menoOJ" required="false" /><dsml:attribute ref="#idPM" required="false" /><dsml:attribute ref="#nazovPlanovanehoMiesta" required="false" /><dsml:attribute ref="#idProfesiePerson" required="false" /><dsml:attribute ref="#krstneMeno" required="false" /><dsml:attribute ref="#mobilPhone" required="false" /><dsml:attribute ref="#persg" required="false" /><dsml:attribute ref="#persk" required="false" /><dsml:attribute ref="#priezvisko" required="false" /><dsml:attribute ref="#manager" required="false" /><dsml:attribute ref="#nazovOJ" required="false" /><dsml:attribute ref="#ou" required="false" /><dsml:attribute ref="#ouldap" required="false" /><dsml:attribute ref="#upn" required="false" /><dsml:attribute ref="#stat2" required="false" /><dsml:attribute ref="#telephoneNumber" required="false" /><dsml:attribute ref="#usrID" required="false" /><dsml:attribute ref="#werks" required="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="accountName" single-value="true" ms-dsml:range-upper="100"><dsml:name>accountName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="begda" single-value="true" ms-dsml:range-upper="100"><dsml:name>begda</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="employeeStartDate" single-value="true" user-modification="false" ms-dsml:range-upper="23"><dsml:name>employeeStartDate</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="begda1" single-value="true" ms-dsml:range-upper="100"><dsml:name>begda1</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="employeeEndDate" single-value="true" user-modification="false" ms-dsml:range-upper="23"><dsml:name>employeeEndDate</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="building" single-value="true" ms-dsml:range-upper="100"><dsml:name>building</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="bukrs" single-value="true" ms-dsml:range-upper="100"><dsml:name>bukrs</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="displayName" single-value="true" ms-dsml:range-upper="100"><dsml:name>displayName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="displayNamePlne" single-value="true" ms-dsml:range-upper="100"><dsml:name>displayNamePlne</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="personalTitle" single-value="true" user-modification="false" ms-dsml:range-upper="8000"><dsml:name>personalTitle</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="employeeID" single-value="true" ms-dsml:immutable="true" ms-dsml:range-upper="100"><dsml:name>employeeID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="endda" single-value="true" ms-dsml:range-upper="100"><dsml:name>endda</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="floor" single-value="true" ms-dsml:range-upper="100"><dsml:name>floor</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="idNS" single-value="true" ms-dsml:range-upper="100"><dsml:name>idNS</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="idNakladovyOkruh" single-value="true" ms-dsml:range-upper="100"><dsml:name>idNakladovyOkruh</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="idOJPerson" single-value="true" ms-dsml:range-upper="100"><dsml:name>idOJPerson</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="idOJ2" single-value="true" user-modification="false" ms-dsml:range-upper="50"><dsml:name>idOJ2</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="menoOJ" single-value="true" user-modification="false" ms-dsml:range-upper="100"><dsml:name>menoOJ</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="idPM" single-value="true" ms-dsml:range-upper="100"><dsml:name>idPM</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="nazovPlanovanehoMiesta" single-value="true" user-modification="false" ms-dsml:range-upper="100"><dsml:name>nazovPlanovanehoMiesta</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="idProfesiePerson" single-value="true" ms-dsml:range-upper="100"><dsml:name>idProfesiePerson</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="krstneMeno" single-value="true" ms-dsml:range-upper="100"><dsml:name>krstneMeno</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="mobilPhone" single-value="true" ms-dsml:range-upper="100"><dsml:name>mobilPhone</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="persg" single-value="true" ms-dsml:range-upper="100"><dsml:name>persg</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="persk" single-value="true" ms-dsml:range-upper="100"><dsml:name>persk</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="priezvisko" single-value="true" ms-dsml:range-upper="100"><dsml:name>priezvisko</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="manager" single-value="true" user-modification="false" ms-dsml:range-upper="100"><dsml:name>manager</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="nazovOJ" single-value="true" user-modification="false" ms-dsml:range-upper="255"><dsml:name>nazovOJ</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ou" single-value="true" user-modification="false" ms-dsml:range-upper="255"><dsml:name>ou</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ouldap" single-value="true" user-modification="false" ms-dsml:range-upper="255"><dsml:name>ouldap</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="upn" single-value="true" user-modification="false" ms-dsml:range-upper="255"><dsml:name>upn</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="stat2" single-value="true" ms-dsml:range-upper="100"><dsml:name>stat2</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="telephoneNumber" single-value="true" ms-dsml:range-upper="100"><dsml:name>telephoneNumber</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="usrID" single-value="true" ms-dsml:range-upper="100"><dsml:name>usrID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="werks" single-value="true" ms-dsml:range-upper="100"><dsml:name>werks</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>accountName</attribute><attribute>begda</attribute><attribute>employeeStartDate</attribute><attribute>begda1</attribute><attribute>employeeEndDate</attribute><attribute>building</attribute><attribute>bukrs</attribute><attribute>displayName</attribute><attribute>displayNamePlne</attribute><attribute>personalTitle</attribute><attribute>employeeID</attribute><attribute>endda</attribute><attribute>floor</attribute><attribute>idNS</attribute><attribute>idNakladovyOkruh</attribute><attribute>idOJPerson</attribute><attribute>idOJ2</attribute><attribute>menoOJ</attribute><attribute>idPM</attribute><attribute>nazovPlanovanehoMiesta</attribute><attribute>idProfesiePerson</attribute><attribute>krstneMeno</attribute><attribute>mobilPhone</attribute><attribute>persg</attribute><attribute>persk</attribute><attribute>priezvisko</attribute><attribute>manager</attribute><attribute>nazovOJ</attribute><attribute>ou</attribute><attribute>ouldap</attribute><attribute>upn</attribute><attribute>stat2</attribute><attribute>telephoneNumber</attribute><attribute>usrID</attribute><attribute>werks</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector />
+ <join>
+ <join-profile cd-object-type="person">
+  <join-criterion join-cri-type="sync-rule" id="{EDC6BA41-BD06-4544-93B6-BBCE92FCEDC0}" sync-rule-id="{25859187-D531-F011-A761-0050568B6A50}">
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="employeeID">
+     <direct-mapping>
+      <src-attribute>employeeID</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+  <join-criterion join-cri-type="sync-rule" id="{6A424FE6-5602-4AED-A9D4-42CFB65CE2B2}" sync-rule-id="{6E4B94FA-C051-F011-A767-0050568B6A50}">
+   <scoping>
+    <scope>
+     <csAttribute>usrID</csAttribute>
+     <csOperator>EQUAL</csOperator>
+     <csValue>ad.vse.sk</csValue>
+    </scope>
+   </scoping>
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="employeeID">
+     <direct-mapping>
+      <src-attribute>employeeID</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+  <join-criterion join-cri-type="sync-rule" id="{637904AE-0DC5-4A93-9BCA-09D7164C7E1F}" sync-rule-id="{B2783311-CA31-F011-A761-0050568B6A50}">
+   <scoping>
+    <scope>
+     <csAttribute>usrID</csAttribute>
+     <csOperator>EQUAL</csOperator>
+     <csValue>eon-slovakia.sk</csValue>
+    </scope>
+   </scoping>
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="employeeID">
+     <direct-mapping>
+      <src-attribute>employeeID</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+  <join-criterion join-cri-type="sync-rule" id="{6895EA93-4E04-4CDD-89F9-CCBBFCD66DE6}" sync-rule-id="{5310C26A-BF51-F011-A767-0050568B6A50}">
+   <scoping>
+    <scope>
+     <csAttribute>usrID</csAttribute>
+     <csOperator>EQUAL</csOperator>
+     <csValue>ad.vse.sk</csValue>
+    </scope>
+   </scoping>
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="msDS-SourceAnchor">
+     <direct-mapping>
+      <src-attribute>accountName</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+  <join-criterion join-cri-type="sync-rule" id="{98B8861B-1BBC-4D34-84BB-952711ECF5F2}" sync-rule-id="{1FA65BFB-D831-F011-A761-0050568B6A50}">
+   <scoping>
+    <scope>
+     <csAttribute>usrID</csAttribute>
+     <csOperator>EQUAL</csOperator>
+     <csValue>eon-slovakia.sk</csValue>
+    </scope>
+   </scoping>
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="employeeID">
+     <direct-mapping>
+      <src-attribute>employeeID</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+  <join-criterion join-cri-type="sync-rule" id="{060CA366-B55D-45AD-9D9F-12E9B72D3A81}" sync-rule-id="{3574C050-BC51-F011-A767-0050568B6A50}">
+   <scoping>
+    <scope>
+     <csAttribute>usrID</csAttribute>
+     <csOperator>EQUAL</csOperator>
+     <csValue>ad.vse.sk</csValue>
+    </scope>
+   </scoping>
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="accountName">
+     <direct-mapping>
+      <src-attribute>accountName</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+ </join-profile>
+</join>
+
+ <projection>
+ <class-mapping cd-object-type="person" type="sync-rule" id="{152F6FFF-5205-424B-9DCB-9F8616041DF7}" sync-rule-id="{6E4B94FA-C051-F011-A767-0050568B6A50}">
+  <mv-object-type>person</mv-object-type>
+  <scoping>
+   <scope>
+    <csAttribute>usrID</csAttribute>
+    <csOperator>EQUAL</csOperator>
+    <csValue>ad.vse.sk</csValue>
+   </scope>
+  </scoping>
+ </class-mapping>
+ <class-mapping cd-object-type="person" type="sync-rule" id="{7B4B83C4-F536-4026-A07F-06010106CD25}" sync-rule-id="{1FA65BFB-D831-F011-A761-0050568B6A50}">
+  <mv-object-type>person</mv-object-type>
+  <scoping>
+   <scope>
+    <csAttribute>usrID</csAttribute>
+    <csOperator>EQUAL</csOperator>
+    <csValue>eon-slovakia.sk</csValue>
+   </scope>
+  </scoping>
+ </class-mapping>
+</projection>
+
+ <export-attribute-flow>
+</export-attribute-flow>
+
+ <provisioning-cleanup type="declared"><action>delete-object</action></provisioning-cleanup>
+ <extension />
+ <controller-configuration>
+ <application-protection>low</application-protection>
+ <application-architecture>process</application-architecture>
+ <impersonation>
+  <domain>eon-sk</domain>
+  <user>miminstall</user>
+ </impersonation>
+</controller-configuration>
+
+ <description></description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="employeeID" header="employeeID" size="220" /><attribute name="accountName" header="accountName" size="117" /><attribute name="begda" header="begda" size="100" /><attribute name="krstneMeno" header="krstneMeno" size="100" /><attribute name="priezvisko" header="priezvisko" size="100" /></cs><mv><attribute name="displayName" header="displayName" size="200" /><attribute name="accountName" header="accountName" size="100" /><attribute name="employeeID" header="employeeID" size="100" /></mv></attributes><filters max_mv_search_results=""><filter name="priezvisko" collation="Latin1_General_CI_AS" searchscope=""><element cdattribute="priezvisko" mvattribute="lastName" mvtextflag="false" elementoperator="Equals" /></filter><filter name="KID" collation="Latin1_General_CI_AS" searchscope="person"><element cdattribute="accountName" mvattribute="msDS-SourceAnchor" mvtextflag="false" elementoperator="Equals" /></filter></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <oledbma-configuration><connection-info><authentication>integrated</authentication><provider>SQLOLEDB</provider><server>SMD1DBIDM01P</server><databasename>HRSAP</databasename><tablename>HUMANET_PERSON_PROD_VIEW_NEW</tablename><user>miminstall</user><domain>eon-sk</domain></connection-info><mms-info><column-info><column><name>accountName</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>begda</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>employeeStartDate</name><data-type>DBTYPE_STR</data-type><length>23</length><isnullable>0</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>begda1</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>employeeEndDate</name><data-type>DBTYPE_STR</data-type><length>23</length><isnullable>0</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>building</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>bukrs</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>displayName</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>displayNamePlne</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>personalTitle</name><data-type>DBTYPE_STR</data-type><length>8000</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>employeeID</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>endda</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>floor</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>idNS</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>idNakladovyOkruh</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>idOJPerson</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>idOJ2</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>menoOJ</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>idPM</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>nazovPlanovanehoMiesta</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>idProfesiePerson</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>krstneMeno</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>mobilPhone</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>persg</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>persk</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>priezvisko</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>manager</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type dn="1">String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>nazovOJ</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ou</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ouldap</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>upn</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>1</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>stat2</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>telephoneNumber</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>usrID</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>werks</name><data-type>DBTYPE_STR</data-type><length>100</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><primary-key></primary-key></column-info><anchor><attribute>employeeID</attribute></anchor><object-type>person</object-type></mms-info><password-extension-config><password-extension-enabled>0</password-extension-enabled><dll></dll><password-set-enabled></password-set-enabled><password-change-enabled></password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout></timeout></password-extension-config><enable-unapplied-merge>0</enable-unapplied-merge></oledbma-configuration>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{F03D00FD-0E04-4FBD-A6B9-79F04FE9A01A}</id>
+  <name>default</name>
+  <creation-time>2025-05-15 15:48:54.977</creation-time>
+  <last-modification-time>2026-04-27 11:14:40.883</last-modification-time>
+  <version>8</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>person</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion></inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <allowed-operations>27</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>800</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>person</name>
+     <hierarchy>
+      <object-class>person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{BA061C76-E60F-49FF-A7FA-083F05E89E90}</id>
+  <name>FI</name>
+  <creation-time>2025-05-15 15:49:40.190</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-15 15:49:40.190</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{F03D00FD-0E04-4FBD-A6B9-79F04FE9A01A}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{B8E93E62-815D-4D44-98EF-109ED1BE5D77}</id>
+  <name>FS</name>
+  <creation-time>2025-05-15 15:49:40.190</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-15 15:49:40.190</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{F03D00FD-0E04-4FBD-A6B9-79F04FE9A01A}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>8401</capabilities-mask>
+ <export-type>2</export-type>
+ <dn-construction><attribute>employeeID</attribute></dn-construction>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+</saved-ma-configuration>

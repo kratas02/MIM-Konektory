@@ -1,0 +1,2171 @@
+ObjectID	AccountName	EmployeeID	DisplayName
+00034ca5-021e-4e1a-a911-996a486a3a8a	BR_412_34105		špecialista platobných operácií_Finančné služby
+000d21be-9ed6-4b59-b9d6-ae0bbb60c713	GG-SAP-ABAP-Snapshot-Daten.lesen		ABAP-Snapshot-Daten lesen
+002a7b13-9868-40e5-9418-be12f9ed3d02	GG-CDBP-JPP#OpBa		JPP-Operator.-.Banka
+0032c9f1-c08e-4dba-8111-84425e870f3e	17709670	17709670	Chreno Dárius
+00616165-1f7b-402e-9cdc-8f0a37b0e5fd	BR_208_21112		junior akvizítor_Región Juh (Dunajská Streda)
+00689967-866d-49ed-8670-4f83f90ef8be	dms_riadenieportfolia		DMS - Riadenie portfólia
+0090a7f2-6be9-46fa-96f4-ae1125ed3763	17707257	17707257	Marcinková Eva
+00b16f5d-e137-42a6-ab0a-34a115e11f0f	17706434	17706434	Doša David
+00bc808f-f073-4c96-b399-b7532f2b3bbd	GG-MDK-REP-korporat		Korporátne obchody
+00cb3349-74ea-45f1-8e34-2b21f67eeaf5	BR_305_21106		akvizítor značkového leasingu II_Centrálne značky OUA
+00d2ec3e-ac32-4e96-98c7-42ba49c8fd0a	otocka	17706379	Otočka Jozef
+00e1583c-cdfc-4d5a-b791-d694e88eea45	BR_308_60000		dohoda o brigádnickej práci študen_Správa aktív a repredaj
+00ef4dd8-98b2-4cc0-8711-dc8ea91cf1d0	kostalova	17702301	Košťálová Lenka
+010d63c2-43ab-4d0b-b0cd-3dd93c16653f	17709638xi	17709638	Dudáš Róbert
+013d6c6c-3d62-4867-953a-f06f5212e4f6	BR_401_28116		Špecialista vzdelávania a rozvoja_Ľudské zdroje
+01586415-884e-49df-8c0e-f499b8be2f94	GG-MDK-LCT-bratislava		Bratislava
+016ddec1-356b-454d-abc4-c75c18b24375	GG-MDK-REP-michalovce		Michalovce
+0172a624-3fe6-4773-8822-8dbb528367aa	BR_202_21200		Business Developer_OLFS
+01773d6c-780e-4196-b7ba-8b358fda7100	17706968	17706968	Žilinská Erika
+01c3ffad-3d51-4b01-8010-c79c76ba7189	GG-MDK-REP-EDS		EDS
+01d96c67-1d9d-4dc3-af95-83cf56850cc3	psenak	17701332	Pšenák Ladislav
+01fe86ad-8c3b-4e8d-a6ee-5109cb06ebd5	GG-DMS-Poistenie		Poistenie
+0219bf1b-2363-45c3-a911-efa553c96d30	BR_202_60100		dohoda o vykonaní práce_OLFS
+02757277-a1d5-4fcc-b3ec-97fb877e48bb	GG-MDK-LCT-SCHVAL-Olfs.Hodnoty		Výnimky - OLFS hodnoty
+02781ed7-03cc-4169-b7fb-925f122881b2	gajdos	17701039	Gajdoš Ladislav
+0287d64b-4418-4cd1-b2ca-c89e2c70fd7c	GG-MDK-REP-uctdane		Účtovníctvo a dane
+02a29bc5-3f03-4612-873e-bbe461da38f6	BRC_220_21111_RPO		senior akvizítor_Región Sever (Žilina)_RPO
+02aa23c5-0579-4b97-975f-fef4431f3210	BR_313_24100		technický špecialista Full service_Technická podpora a služby operatívneho leasingu
+02c34e1d-e751-4290-8f5a-982d5a9bf4f7	1779151ex	1779151	Kosecek Miroslav
+02f343b4-3c21-4f5b-b623-d78355f0b979	GG-MDK-DMCOM-admin		Admins
+034109ab-3a23-4ecb-800f-6c8894266bed	BR_220_21113		Key Account Manager_Región Sever (Žilina)
+035795bb-f6a6-4e1c-9073-c69f7b7583d8	1779171xi	1779171	Mihál Vladimír
+035d6027-be6f-467c-b2a1-91792c34db27	pakanova	17701209	Pakánová Tatiana
+03759ae2-1382-43cc-a920-40ca6e200de0	GG-SAP-FS_.Generovanie.media.do.HB		FS: Generovanie media do HB
+038922cc-bb4a-4321-9304-b0f1fabc9127	dms_procesadmin		DMS - Proces admin
+038c6e04-df88-4699-9ccc-c8ef12c34247	17707022	17707022	Gašparová Paula
+0391883a-71f1-47dc-9e3d-ea3779e3767b	GG-LEA-Faktury		LEA: Faktury
+03a2f460-c5f3-45a0-9940-1cb1ca8a3d52	1779140ex	1779140	Stromko Tomáš
+03a84dcb-e075-4816-bcb0-b6adf303fef0	GG-SAP-Aktivacia.majetku		Aktivacia majetku
+03ca8d87-7966-4ad6-bdd8-7e8bf48d3e32	BR_202_13117		riaditeľ tímu Operatívny leasing f_OLFS
+03d12cc5-1c88-404a-a1a6-50fe64d8f9dc	balek	17702454	Balek Marián
+03e4bf20-8214-43e5-9dbd-53a058932c3f	BR_202_21130		Relationship Manager Full service_OLFS
+0400fc43-839f-4859-aa70-284ce0c10ac2	1779114xi	1779114	Teplicky Peter
+04134c3b-0b1a-4b18-9b4b-a5a464b5b7af	BR_313_12148		manažér tímu Technická podpora a s_Technická podpora a služby operatívneho leasingu
+0422f554-6558-41fe-9194-777f7bd7fadb	GG-DMS-Credit.Risk		Credit Risk
+0450a1f8-cea1-40e6-bfff-680dcc5a8dac	BR_540_13119		regionálny riaditeľ II_Región Stred
+046b8f26-1617-4668-b95e-dbf9a965198e	BR_412_No EB		 Rights_Finančné služby
+04710df0-d405-4429-a830-9a96828eca29	17702725	17702725	Jánošová Nikoleta
+047733c1-a258-486b-96b5-4c9a3ea6cf9b	BR_317_21116		Key Account Manager pre Vendor Sup_
+049994dd-8133-4b98-a368-f25fc3d101f4	17706545	17706545	Mikulajová Zuzana
+04a5d849-c6e2-44b3-ab38-9d63d7973a07	1779143ex	1779143	Dekan Martin
+04aac076-184d-431c-8c81-85a69acbdff1	17701705	17701705	Stoláriková Daniela
+04b4929e-7571-4053-a595-d9c7be8bd432	GG-MDK-REP-administra		Administrátor
+04cb86fc-8047-4e67-8787-eb9c577db91c	17706955	17706955	Štrbíková Dana
+04dc9ade-9c15-4400-93b2-5c2c6c824cd0	BR_401_28115		personálny konzultant_Ľudské zdroje
+04ddae32-4697-4f2b-8e82-667c601a2d71	17706845	17706845	Bereš Marek
+05003a34-6aa0-4c30-9ed3-845ed185345a	1779104xi	1779104	Sokol Matěj
+0522325c-1787-4f37-8d2c-5305bbcb2f0f	ciesar_admin	1779111	Ciesar Marek
+05416a27-dfc8-49d2-a02d-301402b76371	BR_260_21137		Key Account Manager I_Región Západ (Nitra)
+054d9edc-b6bc-48e0-bf86-3fe64d45e793	stefankova	17701744	Štefanková Dana
+0589a365-934a-4b8f-96ec-fdfd065d18ba	17707301	17707301	Volentierová Sophie
+05b9e418-2de7-4ceb-9dae-1300975702bf	17706501	17706501	Jacko Tatiana
+05f852f5-af26-4e91-a04a-8d16e0e5503f	BR_313_24114		technický špecialista OLFS I_Technická podpora a služby operatívneho leasingu
+05fa0316-84ac-474b-928f-4da2b33690a8	GG-SAP-Transakcia.SA38		Transakcia SA38
+06167bd4-6820-4370-9f16-ee6079f790f8	rysian_admin	1779033	Ryšian Marián
+0629cd23-ed94-4636-8dc5-188294d4d568	wordpress_admin		Wordpress - Admin
+06324d3d-bdb4-4fea-bcb8-06ffe96aacde	durica_admin	1779006	Ďurica Adrián
+06840bae-b990-4304-a48b-b8b788eb42c6	BRC_BL_TPSOL_1		BL_TPSOL_1
+06b455ec-be7c-4e07-81a6-7b1d194c646a	BR_411_27105		Špecialista Compliance_Compliance
+06b6d013-e8ac-48c3-a3cf-c2bae5430fff	17706009xi	17706009	Novosedlík Matúš
+06babd87-94c3-4941-b825-702425fb0e41	GG-SAP-ZFI_ZINV_BARCODE_1		ZFI_ZINV_BARCODE_1
+06d1bdad-5733-4442-8bce-d09e5526ab77	GG-SAP-FI.-.Poloatomaticke.uctovanie.KFV		FI - Poloatomatické účtovanie KFV
+06db68e5-1e90-47be-9f09-1b8670c8c1c0	GG-LEA-GDPRm		GDPRm
+06f0dc08-f51e-430d-b68a-0e349dacd866	BR_416_12146		manažér tímu Projektový manažment_Projektový manažment
+072433a7-7e7c-412b-83be-19920f029891	GG-MDK-DUX-objednavat		Objednávateľ / Odovzdávateľ vozidla
+073255ae-d655-43d9-b71c-e06485d93eab	BR_405_37133		IT Architekt II_IT rozvoj systémov
+07350913-0eca-4f39-820e-aee6eba1aff7	1779163ex	1779163	Gottlieber Michal
+077a8450-42ea-4820-9c79-a1498324e6bb	dms_marketing.a.podpora.obchodu		DMS - Marketing a podpora obchodu
+07b25d04-22d5-431c-96c0-41de1b566bd5	17706593	17706593	Hudák Palgutová Lucia
+07c2a3d6-6268-4e29-b9e3-0a83a69b1465	1779160ex	1779160	Kyseľ Peter
+07ce0043-b76e-440c-a682-d47c32f8c226	17709609	17709609	Ostertag Dušan Jerome
+07e69762-0d3c-44ec-9ecc-d5aaed1fe8dc	17706883	17706883	Gregušová Mária
+0804731a-f2cb-4e76-bcb4-a5b1fab6ed3c	GG-MDK-REP-pravsluz		Právne služby
+0807e95d-6c6d-4a12-bb56-11f1775007c9	GG-LEA-OP.modif.ponuky.navrh.predaja		Modifikácia ponuky a návrhu predaja
+084a232f-01e2-4f52-ae06-01f8bed185c9	ramcove_zmluvy_schvalovatel		Rámcové zmluvy NIA - Schvaľovateľ
+08628097-535a-4b0b-b4c6-de091d77b14f	1779065ex	1779065	Sedláček Peter
+08c4fcc8-79d3-4c2f-a088-a8433902e28f	17706526	17706526	Frgala Peter
+08dd0b21-402f-4deb-a84f-85027613cf43	GG-MDK-REP-bratislava		Bratislava
+08fc4ce8-d927-47aa-b987-8bd21e1dd500	17702977	17702977	Maceková Tereza
+090ab417-c0be-4c8e-8cb0-ebb014bf373d	mattertajova	17702286	Mattertajová Vladimíra
+0910963c-4333-4aa5-bf04-e0bdd1642953	jankovic_admin	1779012	Jankovič Radko
+0911c771-ba37-480d-aba2-1d25159cc364	BR_313_24102		špecialista OLFS - spolupráca s do_Technická podpora a služby operatívneho leasingu
+09908eeb-9e0e-4532-84b1-73f8c1f2f7fb	BR_303_42100		špecialista pre zmeny zmlúv II_Zákaznícky servis
+09977193-5468-43be-899f-d9f58b250621	1779122ex	1779122	Virag Ladislav
+0a0b6b43-be87-43af-881b-7e3eaa6836a7	mikus	17706380	Mikuš Peter
+0a23a1d9-c18d-4aa9-8e0c-1e9265dced89	BR_407_24116		špecialista určovania zostatkových_Riadenie portfólia
+0a393ece-bee4-4fff-b98b-edc79bfe8e3c	kopaj_admin	1779066	Kopaj Štefan
+0a41d36a-f02c-4530-bba4-7ed41a72b6f0	17706868	17706868	Hricová Nikola
+0a5c1484-f00c-4eaa-8b70-fd6354848d14	17706974	17706974	Sviteková Dominika
+0a700cff-6242-4854-bc39-e08775078820	BR_406_39110		Expert schvaľovacích procesov_Credit risk
+0aa4cea9-56eb-4df4-8d60-bbfdec1720e3	GG-LEA-ZI.prijatie.zmeniek		LEA: ZI - prijatie zmeniek
+0ac15ee3-f6d8-44f2-a68f-428cdeb89cec	BR_407_40101		špecialista správy pohľadávok I_Riadenie portfólia
+0ad1a4d2-618d-408c-84e2-b474a313eb3f	BR_301_12128		manažér tímu Marketing a podpora o_Marketing a podpora obchodu
+0b224c30-e485-439b-ba1c-d09085f0998e	BR_305_23104		špecialista centrálnych značiek OU_Centrálne značky OUA
+0b23f56c-3399-4a93-a8ff-3516314bca59	BR_405_37125		architekt pre dátovú platformu_IT rozvoj systémov
+0b417e66-b31f-43db-a43d-925563bb9beb	fenclova	17701402	Fenclová Petra
+0b47434a-9c94-447f-940a-19daec5e174b	GG-MDK-DUX-seniorakvi		Senior akvizítor
+0b4f2139-ff92-4f23-a3a6-f963209c4eb8	BR_313_24111		Account Manager pre dodávateľské v_Technická podpora a služby operatívneho leasingu
+0b50d93b-380f-4524-908e-487896c0c197	BR_296_21203		Akvizítor pobočky EDS
+0b5729e6-3e40-49e9-bcea-29b10a914606	GG-SAP-Rola.k.DPH		Rola k DPH
+0b5a93b3-3c1d-4967-84b2-33fb83f69318	BR_415_12145		manažér tímu Procesné riadenie a b_Procesné riadenie a business architektúra
+0b680daa-e737-4e4f-88bb-672035320614	GG-IRIS-Manager		Manager
+0b7f2b3f-4184-42fd-962f-3337d61b7d1b	17706258	17706258	Lavrinčíková Zuzana
+0b8148e7-a341-4e3f-84f9-8815912cc28b	1779035ex	1779035	Mudrak Peter
+0b8f61cd-727b-4698-9bb2-20799600e65c	17707046	17707046	Haviar Richard
+0bf643a8-ec9d-4b1f-b77a-712557ba9d17	17709639xi	17709639	Klein Richard
+0c03515a-a53e-4122-8c7e-048e4d0e0ced	GG-MDK-LCT-centroua		Centrálne zn. OUA
+0c206bbd-5534-49b0-9b16-2a132d3262b3	BR_202_21119		junior akvizítor pre operatívny le_OLFS
+0c69f4d4-ca77-4bb0-a316-6f3a17ba597a	1779165xi	1779165	Lengyel Miroslav
+0c8b457b-0fdb-4b27-902f-078ccce24ef6	cisar_admin	1779013	Cisár Marek
+0cb5456f-aff3-48d7-926d-7750f47e3d99	dm_centralnespracovanie		DM/UM - Centrálne spracovanie
+0cc20fbe-81b0-4fb3-9256-8c30e2472ea1	GG-LEA-Cezie.znizenie.poplatku		LEA: Cezie - znizenie poplatku
+0cde3aab-5e5c-4ec0-afa3-b9f1db4f2e39	GG-DMS-Centralna.kontrola.OP		Centrálna kontrola OP
+0ce36ce4-8585-4626-b598-54b7d53f0fa6	skyba_admin	1779110	Skyba Peter
+0d452700-6ef9-4818-93d7-cb4a1be4c7cb	17702190	17702190	Sekerešová Veronika Golian
+0d4a845f-d4d7-41da-8814-7530f16df348	BR_210_21132		junior akvizítor II_Región Severozápad (Trenčín)
+0d845e2e-0a4d-4eea-b9ca-a529c4cf7a26	kajan_admin	1779099	Kajan Miroslav
+0d9782ff-1970-4910-8d11-6a974bb080b5	barc_admin	1779101	Barč Michal
+0d9e13a5-062a-4d6b-b6e4-dfc8f30254b4	GG-MDK-REP-centroua		Centrálne zn. OUA
+0dad6349-4b12-4d6a-a5c1-54b0391de065	17706608	17706608	Olejárová Zuzana
+0ddd1241-cca7-4924-97a5-9aa0ea21eca0	BRC_BR_313_24100_SAP_gestor		technický špecialista Full service_Technická podpora a služby operatívneho leasingu_SAP_gestor
+0de77026-f3d3-4c1f-9abe-af1c8f71d4ae	GG-MDK-REP-zilina		Žilina
+0df2b5f0-d2fd-448c-9f6b-48ef745d8e1d	GG-MDK-LCT-rorac		RORaC
+0df7b1e1-1180-4dfa-8e9a-eb04dd96c3a8	GG-CDBP-JPP#OpHr		JPP-Operator.-.HR
+0dfc4f1a-bc54-4c5c-be16-82a534a17bc8	17706686	17706686	Cupperová Sarah
+0e1ee5f5-69ed-4273-9b91-4420490beb01	GG-SAP-FI_.Specialny.uctovnik		FI: Specialny uctovnik
+0e343cdb-adb0-481d-b100-e6b1756aeb4a	17702612	17702612	Kupcová Zuzana
+0e41f770-46d9-4299-822e-ec634e0f3198	balaz	17702197	Baláž Benjamín
+0e6211cb-4e5b-4c9b-a30f-1083ad6be1be	GG-EC-eClient.-.Administrator		eClient - Administrátor
+0e6b2b97-961c-4896-b91f-5deb24fdb918	17709641	17709641	Trocha Martin
+0e8012e4-6188-4336-87ef-81de5f97d066	BR_401_28117		Špecialista odmeňovania a benefito_Ľudské zdroje
+0ed92c59-34f7-414b-937b-3ac5ee939c32	17706865	17706865	Lošonská Kristína Alexandra
+0f242849-6d78-488a-a7e2-7d6663305672	 BR_vsichnizam_CSOBL		všichni zaměstnanci_CSOBL
+0f34619f-6323-4953-864a-1ff06728df4b	17707271	17707271	Marková Simona
+0f3a12cf-e6cd-4a3a-8098-1cceaaeef64d	GG-LEA-Schvalenie.uctu.v.Partneroch.sk		LEA: Schvalenie uctu v Partneroch sk
+0f58ffa5-e14a-4a47-9082-73b7bfb87b2d	docasna_saq_NZ		SAQ_zapad_docasna_BR
+0f7670a7-e597-4389-959e-e8b9af0cc305	GG-SAP-FI.-.pridelenie.co.roli		FI - pridelenie co roli
+0f7bfa51-1dc5-4c2c-872d-288de0591b96	GG-MDK-DUX-marketing		Marketing
+0fa54cab-7fe4-4e9b-97ed-b1aabd8a57c0	BR_311_35104		analytik pre obchodné reporty_Riadenie rozvoja obchodu
+0fb3ac15-1885-4e6d-b105-b53b92a0e38f	GG-LEA-Zmena.inkasa		LEA: Zmena inkasa
+0fef4522-5391-4854-b04d-ecc56b68be47	1779100ex	1779100	Paššák Martin
+100a74a2-eeeb-47ce-8ef3-8d42c8299efd	trubanova	17702585	Trubanová Katarína
+10162848-6bb7-4559-8eec-9d7dbec20be7	BRC_eCARD_správa_HR		eCARD-správa-HR
+101a2441-9a69-444c-a593-c843caea2b16	BR_550_13113		regionálny riaditeľ_Región Sever
+1037e122-bf5e-462f-a1ac-036deae157e4	1779084xi	1779084	Líšková Anna
+104a63b7-8f8e-4054-a9aa-f9af33c2fd1c	1779175xi	1779175	Nagy Peter
+10cea0d1-8190-427b-ba5b-756efd29130b	turek	17701181	Turek Slavomír
+10e44435-3a17-4c93-85a3-8680dcae6045	GG-SAP-FI_.Report.nad.FI		FI: Report nad FI
+10f0de43-e9a5-4688-a655-590cf2ea5434	GG-CNAV-CNAV.-.preverovanie		CNAV - preverovanie
+110cc110-9771-4545-94e5-e302ca67dc53	GG-MDK-RISK-ciernalis		Čierna listina
+111ee80d-0b5a-4c1f-9854-d07cfea0e109	GG-SAP-SAP.Solution.Manager.TMW-User		SAP Solution Manager TMW-User
+11232732-59ae-4f28-89b4-f5e0a662f7d9	ostruziarova	17702337	Ostružiarová Darina
+11255dd2-746c-4fa5-9ec0-76cd2fda503b	dm_EDS		DM/UM - EDS
+113535ad-aa14-4468-9fe9-b2dbfe94bb76	17707272	17707272	Šticza Róbert
+113acd55-fca6-4dd1-9f6e-78af6290d188	BR_209_21111		senior akvizítor_Región Západ (Nové Zámky)
+113ca530-fdd8-4bc1-86e8-b9ac4530350b	parakova	17701129	Paráková Kristína
+114b917d-c545-488e-9585-cf374e4337ba	simkova	17702406	Šimková Júlia
+114e75b6-f9be-4185-b889-cfbc55798aa7	BR_404_39109		špecialista operačného rizika_Riadenie operačného rizika a Compliance
+11647594-3f05-416d-a570-bed7534d64ee	17709650	17709650	Košík Tomáš
+116eda63-17c9-4b22-91f6-1e96e77b810f	GG-CDBP-CDBPs#14		CDBPs-Operator.-.PD.Rating.(Risk)
+1181414e-9ec4-41a5-b609-ec221ab2f307	palugova	17702199	Palugová Marta
+11b86804-175b-45e7-9178-9f82bc8607f2	GG-DGT-DLM-audit		audit
+11ca16e9-941b-47e7-9746-14e876eeae24	BR_209_21131		junior akvizítor I_Región Západ (Nové Zámky)
+11d98f61-4652-449c-9b8f-38a4bfda5f8d	1779040xi	1779040	Minárčiná Ivana
+11e4cea6-1587-462b-a7d7-be76fe385089	17707280	17707280	Kolláriková Alessia
+12086ac4-81ef-4050-81c1-7e0a1157e5be	dm_ict		DM/UM - ICT
+12225190-9805-47bd-b483-5a457ed84044	17707006	17707006	Diabelková Žaneta
+123a50b5-9807-45ec-9111-95c09abfa04c	17709647	17709647	Gottlieber Michal
+124d8e25-3617-4155-a6c0-15d9aca10ccc	masarykova	17701112	Masaryková Jaroslava
+126a5f60-8ae9-49c8-b923-7ffaccf8372f	mbednarikova	17706343	Bednáriková Margita
+12cf6c73-5625-432c-bca3-0046217d3308	struharova	17701920	Struhárová Lenka
+12d16f88-9847-478b-bee7-69bd2bcd5b17	17707220	17707220	Lazurová Karin
+12dcd47f-473b-49ba-b5e9-649024582ea7	BR_570_21116		Key Account Manager pre Vendor Sup_Systémoví dodávatelia a externé distribučné siete
+13163417-c598-4e52-86b2-7788203e8de8	BR_402_26101		špecialista podpory právnych služi_Právne služby
+133ff30c-6f6b-40fb-ab0f-eeeb5899547e	1779124ex	1779124	Sigetiová Andrea
+135a94a4-a6ec-40ff-90d7-212ba7ea95d6	1779135xi	1779135	Prajz Jiří
+13638ff9-a536-4eec-8b88-51bc6f3f1c3e	GG-LEA-RM.limity		LEA: RM_limity
+1368a7fa-c1fe-48f4-9449-494043381513	BR_270_No EB		 Rights_Región Stred (Poprad)
+1375ca1c-c6b6-488e-8ed0-8290babfbc80	BR_401_28113		personálny a mzdový špecialista I_Ľudské zdroje
+138715e7-ab46-4293-b729-4aa8defa8814	eClient - Administrátor		eClient - Administrátor
+13c36c64-b99e-4c73-8869-4470da3966ea	GG-MDK-LCT-pm		PM
+140b8cf2-8df7-4e15-a153-184e7eccc42e	BRC_Brigádnik_PBA		Brigádnik_PBA
+1426d96b-1ca6-4deb-8d48-057bda30cc67	17707224	17707224	Guštafik Vladimír
+14749e4f-9c7f-4a68-8e91-1be576d9ccda	17706703	17706703	Vetráková Tamara
+14861b9f-21b5-4389-ad59-75ab24d30561	BR_406_39102		špecialista riadenia rizík I_Credit risk
+1487150a-d595-4e97-bce0-4f1241ba005a	17706995	17706995	Bubica Samuel
+149bb394-dcd2-463b-b46c-5d4c7ac48b2b	GG-CDBP-JPP#StOp		JPP-Standardny.operator
+14ae17b7-613a-447d-a5ca-4bb4e26b5981	BRC_240_21111_RPO		senior akvizítor_Región Východ (Košice)_RPO
+150f8744-0cb9-422e-8247-b102a07b78e3	GG-DGT-DLM-jaq		jaq
+152b8f5d-8db7-4569-8d77-ab4cd9358304	1779015ex	1779015	Pollák Roman
+1569f85a-7d39-42da-bdbe-f96404f6ef20	GG-MDK-LCT-akvizitori		Akvizítori
+157b7db2-8752-4d16-9c03-6f59236f3f5d	17707228	17707228	Sojková Nina
+158f0c84-de63-457b-852c-649b09cebb5d	1779151xi	1779151	Kosecek Miroslav
+15935d23-13e3-4f88-8f49-e8e6e45ede40	BR_303_23108		špecialista back office_Zákaznícky servis
+1595d24e-9699-4bc5-8319-4812ce460503	17707181	17707181	Barátová Andrea
+15b28526-8653-47a7-bb48-e6960acc9dbe	gajdosik_admin	1779108	Gajdosik Anton
+15b5a720-58a3-4448-9de6-346c50529e9a	17706958	17706958	Čápka Lukáš
+15cd1889-eb79-4f23-ba72-c109558aeae6	GG-DM-Marketing		Marketing
+16106d6b-1f0e-4153-a52f-63e157704b64	BR_202_323		Raditeľ tímu Operatívny leasing ful_OLFS
+16510e58-c9f1-4076-8705-26f9d9b5f7b1	palatinus	17701125	Palatinus Jaroslav
+166c45f9-88f5-46c4-8e14-5555a42f6dd8	BR_150_11110		Výkonný riaditeľ pre riadenie vzťa_Riadenie vzťahov so zákazníkom a podpora
+16879820-50ad-411d-b2dc-cf2fee1ac6de	BR_260_21111_RPO		senior akvizítor_Región Západ (Nitra)_RPO
+1690a2ce-0143-4697-b1cc-c56b6559c470	bberesova	17702196	Bérešová Beáta
+1691736b-5de5-4dbc-a55e-4abd00a55e5f	GG-MDK-LCT-brigvykaz		Brigádnik - Výkazy
+169ff3fa-4e75-4ef7-bebd-94eab7a6d5af	BR_403_32104		Business analytik pre finančné ria_Organizačné, projektové a procesné riadenie
+16c531c2-0beb-4bfe-ba45-0f533cc0a20b	1779149xi	1779149	Kirchner Emma
+16f20bd4-7525-49f4-8795-4dedac78da68	GG-DM-Credit.Risk		Credit Risk
+170e969f-f869-43c3-aab0-cac4567ea219	mrazikova	17701655	Mráziková Lucia
+17407362-da62-4840-a674-9ac565ee4c24	BR_402_26102		právnik - junior_Právne služby
+175c23cc-0e63-42fb-a728-eaa5bb8a662a	17706544	17706544	Chrenko Viktor
+17601bf5-43b8-4246-b66a-a78892e0c341	GG-SAP-Rola.na.zobrazenie.Z_.tabuliek		Rola na zobrazenie Z* tabuliek
+178cab07-642c-4161-80f8-a380302865ec	1779090ex	1779090	Osuský Boris
+17998107-4f7a-4922-ba4c-20b925c77ebf	GG-SAP-FI_.ZSII_OPERATOR		FI: ZSII_OPERATOR
+17a7ff52-e6ba-47ec-ae5f-8b584051bf11	BR_407_24103		špecialista určovania zostatkových_Riadenie portfólia
+17c8ddb6-389d-4218-bd8b-cebe1be97343	BR_140_60200		dohoda o pracovnej činnosti_Finančné riadenie a podpora
+17eda654-72fd-4ec9-b680-4efebede3206	kratochvil_admin	1779049	Kratochvíl Josef
+182d8673-d54e-4e7d-96b6-b11095006aab	GG-IRIS-AdminFirma		AdminFirma
+184accfe-64c4-44ed-b287-aff84248cb89	BR_406_39101		špecialista riadenia rizík I_Credit risk
+1852f3e5-6969-404b-b51b-b244032d6378	skladana	17706017	Skladaná Slavomíra
+1854a538-2bff-4080-a150-50d32c733631	GG-LEA-Modifikacia.uctov.partnera		LEA: Modifikacia uctov partnera
+1890f991-3d1c-4fad-b5f9-90f204565901	GG-LEA-Ziadosti.o.zmenu.ostatne		LEA: Ziadosti  o zmenu - ostatne
+1892f077-e73f-4445-bfdf-43fbc7ac496e	1779159ex	1779159	Sládkovič Martin
+18a6008d-5a85-434b-9aee-154fb9f0a4ee	1779115xi	1779115	Kejř Jan
+18a633a9-93b9-40c5-ac05-e8d61a918bd9	17709662	17709662	Mesarčíková Ivana
+18cec720-f1ac-4433-ae9c-2cbf4b29f2a7	GG-MDK-REP-centoua		Centrálne značky OUA
+18d240d3-7220-46d4-8899-81f9c4413bbf	GG-MDK-REP-psa		PSA
+18e15ef0-7349-4538-a2c3-6ddc4422a422	GG-SAP-Penalizacia.-.vsetky.opravnenia		Penalizacia - všetky oprávnenia
+18ef0aa4-f8ca-47e8-af16-ade1fa968fb0	17706458	17706458	Matejbus Peter
+19102304-f725-40eb-a8f9-6f6f7a2ee2a1	17706632	17706632	Sadloň Tomáš
+1928f1be-628a-4f46-9dbc-6731a0e022fc	17702118	17702118	Kasanová Lucia Blaško
+19a6117f-4a9c-4168-8564-d98ba6b96b84	BR_315_27108		špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov
+19ae760f-43e1-407a-856d-0dbba210cd12	ganobcik	17701040	Ganobčík Roman
+19c8627c-d353-4f01-9997-e8442debc996	snirc_test	1779123	Šnirc Test
+1a679912-7ee7-4419-befb-8d04e8d2db83	17707304	17707304	Koleničová Ivana
+1a6da725-56a6-4dab-af05-eafc64debe04	17706986	17706986	Jakalová Alžbeta
+1a8ff4ec-7564-421b-aecb-eaf5c748435b	GG-VEMA-Vzdelavani		Vzdělávání
+1acf36e5-ce47-491a-a378-8c9d9752eaad	GG-LEA-Ciselnik.texty.a.predmety		LEA: Ciselnik texty a predmety
+1b05f3cd-4cd0-460a-a9a4-1d9dc8159454	BR_200_60500		dohoda - trainee_Región Juh (Bratislava)
+1b25c377-60e9-4915-ac95-56965eff814a	vavrek_admin	1779065	Vavrek Michal
+1b3d37de-9552-4478-b8a3-30f18138d6b8	17706948	17706948	Martinkovič Marek
+1b6cbcdb-055f-4c34-afde-c8d39fc28ff9	GG-MDK-REP-poiststr		Poistenie
+1bd6689b-66e6-4e29-afc5-fa78d0b71d80	BR_240_60000		dohoda o brigádnickej práci študen_Región Východ (Košice)
+1c4aa81b-1b0c-4794-a863-4fb73c9e3138	lences_admin	17702998	Lenčéš Marián
+1c686e66-fe1a-4252-bbd5-fa555c54e358	17706737	17706737	Pirohaničová Veronika
+1c6b60da-33f9-44ae-9e02-fdacf42cb282	GG-MDK-LCT-odomykanie		Odomykanie ponúk
+1c6ef4c0-aba6-49d7-a166-005d68411b04	BR_303_42101		špecialista pre zmeny zmlúv I_Zákaznícky servis
+1cac96ac-dfcf-41d9-b65a-9fdcab1faca1	BR_260_60100		dohoda o vykonaní práce_Región Západ (Nitra)
+1cc66399-9dad-45ec-9c04-d2d4594c452b	BRC_brigádnik_výpomoc_PO		Brigádnik_výpomoc_PO
+1cf15dc1-b166-4236-ad86-bca4bc3feb8e	1779150ex	1779150	Šípoš Jozef
+1daafe2b-c2d7-446f-944e-d4e62ad9e6fd	GG-LEA-Riadne.ukoncenie		LEA: Riadne ukoncenie
+1daf4de7-1217-46e0-bfb1-e21ee0585ee4	BR_202_21128		junior akvizítor pre operatívny le_OLFS
+1dd5f802-15fb-496c-8d74-d7636ce5f951	hulikova	17702117	Hulíková Stella
+1de41502-28be-4ab4-9aaf-444f2582a95b	suchanicova	17702686	Suchaničová Lucia
+1df598e6-d0ee-44d7-b856-b889a9d05d75	BR_412_34111		špecialista platobného styku I_Finančné služby
+1e06e522-da66-4ae3-bcb9-b1f4bafbed74	BR_208_21132		junior akvizítor II_Región Juh (Dunajská Streda)
+1e0e0f51-4a9e-4897-92b3-a76fc5fb3e36	BR_414_60200		dohoda o pracovnej činnosti_IT prevádzka
+1e243fb6-9173-4764-a53e-66f7c3dc319a	17707052	17707052	Víg Martina
+1e272636-4657-459d-b62f-5b67db1454d9	BRC_EDS_RPO		EDS-RPO
+1e3215e2-8e46-490c-8d6c-5297b36406c3	BRC_280_21111_RPO		senior akvizítor_Región Severozápad (Trnava)_RPO
+1e4e5965-8c0f-4645-adb7-9953f3be0588	17706612	17706612	Lojan Štefan
+1e94a8e7-893c-4586-9e6f-8a154193bc3f	GG-MC-Multicash.pristup		Multicash prístup
+1ea7cc45-49fb-4393-86fe-2c4ebf3a576c	17709665	17709665	Pastucha Ján
+1ecf1833-3b58-4f74-8639-234c301c7ba7	GG-MDK-LCT-Kampane		Kampane
+1ee28333-b1d1-4750-a35d-668b013e8c21	GG-EC-eClient.-.Spracovatel.zmluvy		eClient - Spracovateľ zmluvy
+1ee4cfcf-c0ca-4bed-a28f-1166f3dcb2ab	kalicky	17701075	Kalický Peter
+1efd00ce-3efc-4838-a566-7deee924562e	urbanicova	17706180	Urbaničová Dominika
+1f0f668d-854a-420c-af65-bc074dd17a37	17706515	17706515	Maliňáková Sláva
+1f1015ed-e705-48bb-add2-2ecc6d76fb3c	17709618	17709618	Balohová Vladimíra
+1f1bda0c-3dd0-474b-86a2-545fbaa9c58f	BR_admin_MDK_7		administrátor_MDK_7
+1f2ca8de-2bd4-4a26-9052-1efe74fa46c8	GG-MDK-RISK-vlastneop		Schvaľuje vlastné OP
+1f33b94f-526c-43db-9115-ba1e11443c3d	1779097ex	1779097	Bajla Boris
+1f4fe8c5-8cae-4102-9474-a58ac54bdcd6	UG-C4-Administrator		Administrator 
+1f6cfc8f-7948-44b3-acbb-75dd88bd0f37	BR_560_21112		junior akvizítor_Región Juh
+1fc06dbc-bb00-4a29-8d51-b20b79b6289f	GG-MDK-RISK-Administrator		Administrátor
+1fd2df12-737f-4ce8-bb7c-eed089babdc1	17709696	17709696	Krnáč Branko
+1fe2a680-5fb9-463a-988d-78a209289964	GG-SAP-Penalizacia.-.sprava.DMS.rozhrania		Penalizácia - správa DMS rozhrania
+1ff1456c-1d46-437c-8747-58705d6bb85d	BR_570_13116		Riaditeľ tímu Systémoví dodávateli_Systémoví dodávatelia a externé distribučné siete
+201ad1c3-337d-43a9-b0df-296413b9c28e	BR_302_45100		špecialista pre totálne poistné ud_Poistenie
+201e225c-ecc0-4b8e-8804-b78057547f28	BRC_RiadPob_regstrpoprad		riaditeľ pobočky MDK_Región Stred (Poprad)
+20313c9c-14fc-417b-9263-de11b44543e3	GG-LEA-Poistne		LEA: Poistne
+209f0f93-ebb2-4e5b-89ae-808e9bc48da2	BR_401_28118		Špecialista miezd a personalistiky_Ľudské zdroje
+20ae1e55-0e64-484e-aec2-7bd0c5c68351	1779045ex	1779045	Kovalík Vladimír
+20b6fba6-bdfb-4e7c-a1a1-db8c03b9658e	marencik_admin	1779015	Marenčík Milan
+20b974fa-1b26-473d-8029-de1a92fff77b	17701465	17701465	Nagy Tomáš
+20bacca0-eb1f-4090-931e-f93230c02a28	GG-MDK-REP-bbstr		Banská Bystrica
+20be3d61-ca30-4fb6-8fc6-c2f7e2c63c90	17706971	17706971	Brímus Adam
+20d5856c-b7a2-47cf-87dc-c0bfca75c1ca	GG-VEMA-Spravce.systemu		Správce systému
+20dddbe1-7193-4bc3-99cd-81152041ab09	17706419	17706419	Žinčáková Diana
+20e2323e-0b33-49b0-bbd6-48d8fe779f7a	17706405	17706405	Iglarčíková Laura
+20e862d0-9faa-4129-a614-df7e402ac1eb	BR_202_12122		riaditeľ tímu Operatívny leasing f_OLFS
+20ec1d31-785d-469f-ad24-d9a9321db6cf	GG-LEA-Administrator		LEA: Administrator
+20fabb34-79d0-412b-a60f-c246b4e00344	BR_210_21111		senior akvizítor_Región Severozápad (Trenčín)
+210a8fbd-9a92-4b2d-bfeb-ed6f1c2c9a5e	sedlak_admin	17706285	Sedlák Mário
+210bea74-d5e7-4a70-b51f-b3c7facc7c7b	1779109ex	1779109	Valocký Frederik
+211a6265-75dd-4293-b1a3-2fa24ccaefbe	BR_203_39107		credit analytik pre korporátne fin_Korporátne financovanie
+2135fef0-d68b-49f7-9617-32111ff02d9e	17707269	17707269	Filipová Veronika
+213bca9c-6d62-44cc-827c-13526faa125b	17706562	17706562	Molnárová Katarína
+2143b60f-56d7-4096-955e-31bc2c72be3e	17706719	17706719	Hamranová Katarína
+2151f18c-e131-47f6-9fc0-8e2213ec27ff	BR_spec riadenia rizik III_Credit risk_2		špecialista riadenia rizík III_Credit risk_2
+2170d463-9cc1-4085-9e6d-9ae0222b2167	17709632	17709632	Balasičová Veronika
+2176c235-5660-47b1-b951-545b464c5f8e	17709605	17709605	Kytošová Klaudia
+21a52478-aa04-441e-a8ed-efec526415e6	GG-LEA-Brigadnik.CS		LEA: Brigadnik CS
+21e86fb8-735d-4437-a05d-b10ab3bf4145	BR_407_40104		špecialista správy pohľadávok II_Riadenie portfólia
+2203cda4-a34c-4733-8a9d-81b227360e2d	BRC_Externista_ITR		Externista_ITR
+2211e0cd-fa68-4e16-b96f-1374a38db766	17707185	17707185	Janyík Zoltán
+222996e0-5de1-4f56-bef2-9eb714eed1eb	GG-JIRA-administrator		administrátor
+2231c949-9cd9-4aac-9b5c-997e1c13abe3	17709681	17709681	Kvasnicová Júlia
+225c7758-ca5c-45ef-896e-9fdd28df3f24	BR_101_60200		dohoda o pracovnej činnosti_vačkovky
+226846e9-737d-426f-88ca-d2c3296359a6	17707027	17707027	Schwarzkopfová Simona
+228fe144-ed35-4b30-8854-7c6b8f5b7790	sandor_admin	17701161	Šándor Ján
+2292157e-bc20-4c54-b081-07c0880b16f7	BR_202_21118		Business developer pre operatívny_OLFS
+22b66cdd-70c4-4422-8a38-1e587eb08e70	BR_203_23106		spracovateľ pre korporátne obchody_Korporátne financovanie
+22c8b4e0-5ad5-47c0-af44-33d2d6482abb	GG-LEA-Korp.tlac		Korp-tlac
+231a4f8d-d02d-4778-8b3e-f14a3d229839	BR_570_60000		dohoda o brigádnickej práci študen_Systémoví dodávatelia a externé distribučné siete
+2347fbaf-6582-4d15-864c-70a34ba73c03	beresova	17701365	Bérešová Silvia
+2364e312-938e-4eb1-87d7-a6e654d22b25	GG-LEA-Ciselnik.limitov.marze		Ciselnik limitov marze
+237814d0-897c-49ed-af55-441aa8cb5f3b	valachovicova	17706002	Valachovičová Monika
+2391885d-4637-410c-83f4-31604c4df46a	BR_409_35106		dátový špecialista_Controlling a reporting
+23b2cc62-d945-4257-9380-e989bec041a1	GG-MDK-REP-finsluz		Finančné služby
+23b89aa4-7e69-49ce-91e3-e9fd335779b3	GG-LEA-Ciselnik.vseob.CS		Ciselnik_vseob_CS
+23e96520-e72e-44c1-9cf3-622cac5fa473	GG-SAP-ZFI_F.08		ZFI_F.08
+24150d4d-d7c3-459b-8dbf-9d339611e624	bisak_admin	1779020	Bisak Branislav
+2475fdda-5433-4cd8-85ab-74fd553c6d68	GG-LEA-Sprava.LZ		LEA: Sprava LZ
+247f6386-e566-4954-86e7-d67c5862aaef	GG-DM-Controlling.a.reporting		Controlling a reporting
+24a703f8-5656-4aa8-b147-4f692988664a	BR_111_60100		dohoda o vykonaní práce_Asistentky GR a VR
+24aa1874-ebba-4dc7-b3a0-6dc7cb0e3cb2	pecovsky	17702658	Pečovský Ivan
+24b6797a-5988-45c1-a286-5250c3571c3a	GG-MDK-DMCOM-olfs		OLFS
+24cf0aa7-9c94-4be1-8c42-adda98894c49	1779110xi	1779110	Cíbová Karin
+2504e5a3-62e9-4007-a442-a84b1618286f	jjurikova	17706272	Juríková Jana
+251269ca-266a-48f3-949a-160f2e2c0f56	17706769	17706769	Mészárosová Anna
+2516c4ed-1ef0-4fe4-8bfa-c77644925a5b	1779102ex	1779102	Ukrop Andrej
+2532d68f-60be-4a67-8d99-8a4a9ee22889	GG-MDK-REP-eucentrum		EU Centrum
+2541842a-40b2-4829-a333-1b9f1cd87dc6	kanosova	17701364	Kanošová Erika
+2543be35-1590-4f5e-84d4-176321cf6e22	17706537	17706537	Široká Mária
+2543fefe-9598-437c-9852-ba33d5bfd031	17709673	17709673	Uram Karol
+256519d1-e6f9-498b-8e80-ec36cec28a7b	1779048ex	1779048	Štadler Samuel
+259c1baa-39dc-44be-ab8d-422332422cfd	GG-CDBP-JPP#OpBu		JPP-Operator.-.Bankove.ucty
+25a65f9b-2866-43e0-a477-e8f74515e0c9	GG-SAP-FI_.BP		FI: BP
+25a7c0e2-6948-47fc-92fb-6e66c49ea6da	slabej_admin	1779001	Slabej Filip
+25ef8671-c682-4233-80df-db23a39a6bd4	BR_208_21111		senior akvizítor_Región Juh (Dunajská Streda)
+25fbefde-342f-4cdb-aa53-eb6b7df80915	mihalikova	17702929	Miháliková Eva
+2609213e-9044-4af0-8d88-cb4ace2c1ebe	majerova_admin	1779098	Majerova Mira
+26165cb0-c27e-400a-8a0f-d7cec8581f49	17709663	17709663	Cigániková Monika
+26310081-24c2-434c-a49a-7471ebdd1d4e	GG-MDK-LCT-SCHVAL-Compliance		Výnimky - Compliance
+2635f801-5734-452a-8b1d-c8d610be4d90	BR_415_No EB		 Rights_Procesné riadenie a business architektúra
+263e40e0-7f4e-4465-b71d-f3fdaa37ad82	17709642	17709642	Hajro Lukáš
+268beba1-8430-4809-a1a7-54e2547ea662	brestovsky	17706337	Brestovský Pavol
+269eadfc-edc3-4bc8-9663-48941f998a95	GG-MDK-DUX-centralnes		Centrálne spracovanie
+2764ea71-80a7-47c9-a7af-213267addc38	BR_302_31105		špecialista pre poistenie II_Poistenie
+27fcf972-9f46-40f7-9bc3-b1398f4385c6	GG-MDK-REP-itrozvoj		IT rozvoj systémov
+2809b2f3-dd2d-4c2b-b9b9-f3c5229eba88	hrisenko_admin	1779137	Hriseňko Viktor
+280a0ae5-0072-4d9f-89a3-573fdfd9aa6e	desak	17702533	Desák Vladimír
+280de9db-1dbe-4ea0-98bb-c0eb2fcb43ce	GG-LEA-Ziadosti.o.zmenu.zmena.splatok		Ziadosti o zmenu - zmena splatok
+283d4f4b-80d3-44c7-a574-8ce55cd315b9	17709672	17709672	Juhás Martin
+28801eb2-2777-4bd3-a2cd-5faae6831e14	GG-CDBP-JPP#OpEx		JPP-Operator.-.Expert
+288e9990-9d26-40b2-a16e-d7cc3a652606	1779067xi	1779067	Buhaj Dávid
+288f1493-831d-4362-b4e2-66d5228c0001	BR_301_30102		marketingový špecialista pre podpo_Marketing a podpora obchodu
+28936223-ee48-4059-bec4-851c1cd2aaee	GG-MDK-REP-spraktiv		Správa aktív
+28a15a1a-b4ad-4ab8-b45b-3b81c3e6c60c	kansky_admin	1779050	Kansky Jozef
+28a24ef5-5ef3-4d52-a17e-269deecd89f9	17706936	17706936	Derlich Richard
+28aea802-d095-46ab-a373-ef05fc908fdf	GG-MDK-RISK-creditris		Credit Risk
+28b52c8a-6390-4f3e-8a98-da649a88d459	horna	17706178	Horná Ivana
+28bdbf22-4cbe-4957-a93e-7ce84a737d2e	GG-VEMA-ucet.pre.prihlasenie.do.systemu.AD		účet pre prihlásenie do systému AD
+28c01ab4-3e7a-4a4a-b575-c29c90c51983	GG-MDK-REP-naksluz		Centrálny nákup a služby
+28daa6d8-2c0f-4452-9d32-b804679ab891	BR_200_21134		senior akvizítor I_Región Juh (Bratislava)
+28e9adfb-a38e-4b32-88a3-2569cdc7abf6	GG-LEA-Partneri.pobocka		LEA: Partneri_pobocka
+29039ac1-e3e2-420e-b0b9-406f68840d16	bielik_admin	1779018	Bielik Ondrej
+29040489-1d4a-4f41-9ce4-e077c3aaf3d0	1779168xi	1779168	Bočko Dominik
+2945edf0-28e9-4e25-beab-06b82b9b12ac	17706994	17706994	Fabian Jakub
+29483ba6-2463-4e7e-8370-210469471e4a	tomaskova	17702113	Tomašková Karolína
+29520ee4-9121-454b-b720-58ecd79e97c8	BR_301_29108		strategic initiatives lead_Produktový vývoj a trhové riešenia
+2954e4b3-7054-4ebb-9f6d-fd5c15354a46	BR_404_12130		manažér tímu Riad. operačného rizi_Riadenie operačného rizika a Compliance
+296808bf-531c-46c4-8145-845b9cfc9a45	GG-SAP-FS_.Travel_.evidencia		FS: Travel: evidencia
+297e7238-1e71-4100-a7ef-f599af168c03	BR_160_231		konný riaditeľ pre Informačné tech_Informačné technológie a podpora
+299f7d06-15b1-418f-96d1-959fae97213c	BR_240_60500		dohoda - trainee_Región Východ (Košice)
+29a0ab5e-2a0f-4963-991b-38f07d4e3bd6	GG-VEMA-Hlavni.systemizator		Hlavní systemizátor
+29c0e617-ed45-4e75-8262-bff1ca0e848f	BR_280_60000		dohoda o brigádnickej práci študen_Región Západ (Trnava)
+29df83d0-0e3c-4077-beec-bfcfb6bf8cf3	BR_315_23123		špecialista spracovania zmlúv OP C_Centrálne spracovanie a kontrola obchodných prípadov
+29f7625e-239a-4e91-ab4e-7c213bf5c001	17707121	17707121	Čupanová Tamara
+2a28a732-25c4-4d11-b214-8703ea64b7a7	GG-DMS-Zakaznicky.servis		Zákaznícky servis
+2a4b8e99-07de-4878-ab84-0067dfc2b012	GG-SAP-prezeranie.faktur.pre.IT		prezeranie faktur pre IT
+2a89d356-6cf2-4270-a13e-14e753fc67a5	ivancikova	17701757	Ivančíková Zuzana
+2adf6d80-9db7-4ba7-84b9-219c0ddeb77e	jelinkova	17701201	Jelínková Jana
+2af941af-3b64-4841-9f41-a6ff90771789	17706917	17706917	Schwendtnerová Kitti
+2b11fa5d-64fd-4a38-a50b-6b827ab3bc14	17707090	17707090	Molnárová Diana
+2b254852-250e-4452-b9f7-a052cf49a1d0	17707184	17707184	Macejáková Helena
+2b347f1e-46da-4056-b6bb-ca9484a45888	BR_230_60500		dohoda - trainee_Región Stred (Banská Bystrica)
+2b587d9a-c713-41ab-bc83-935efe5a2dcc	BR_200_21138		Key Account Manager II_Región Juh (Bratislava)
+2b668621-d08f-4edb-b16b-cd5252e37acf	BR_409_60200		dohoda o pracovnej činnosti_Controlling a reporting
+2b73b4fc-81dc-4fd7-acf5-75a799bfa21a	GG-LEA-Pravne.sluzby		LEA: Pravne sluzby
+2bb4a2df-3c88-4635-a763-63292f0566b4	17707130	17707130	Hrnčiar Miroslav
+2bbddcb5-874f-4142-b1c0-289a4eb2e7b7	BR_412_34104		špecialista platobného styku III_Finančné služby
+2c0ab736-4324-456f-b920-cb95def17576	GG-MDK-LCT-BDS		BDS
+2c280201-b970-4ea1-bd91-e6d06584dcba	17702180	17702180	Opatová Silvia
+2c398c66-abe4-4fd2-89f3-0e12d1639ee8	BR_301_50101		dizajnér produktov, procesov a pou_Produktový vývoj a trhové riešenia
+2c53d83a-6553-40a9-b525-9f9f92d1afc8	GG-DMS-Korporatne.financovanie		Korporátne financovanie
+2c83a81f-242f-44ff-8af1-c538e53182aa	17709657	17709657	Kišon Lukáš
+2caba4ca-6b48-4bf7-9d64-79cc3b40f358	GG-MDK-LCT-nehnutelno		Leasing nehnuteľností
+2cba14ed-f810-4724-a747-adafb0a7562c	BR_200_21137		Key Account Manager I_Región Juh (Bratislava)
+2cea821d-6525-4713-82bc-774a6ec0f843	GG-LEA-ISPEL		ISPEL
+2cf0082e-7eb5-40e8-8c2a-25d588224f14	GG-SAP-Datenbankadministrator.MaxDB		Datenbankadministrator MaxDB
+2d4af2f9-6aff-4bbf-9a79-7c71e2e62329	BR_111_50100		špecialista pre digitálny predaj_Asistentky GR a VR
+2d70cfec-06bb-4c31-8ae6-4e94e9e8cc1b	GG-MDK-REP-eucentstr		EU centrum
+2da25c75-c9c0-4cb8-9019-eb5cf069ed45	kytosova	1779080	Kytošová Klaudia
+2db612fb-5e44-4834-ae33-080129e35b8e	GG-LEA-Blokovanie.upominania.nalezitosti		Blokovanie upominania nalezitosti
+2dc5e7d0-1ff2-49a8-a0c8-1a08d585a170	BR_412_34107		špecialista účtovania bankových op_Finančné služby
+2e025bac-732d-4973-b5eb-7d339c59efff	1779168ex	1779168	Bočko Dominik
+2e12f871-f9e6-471f-b4a4-ac8a126c76c7	pastucha_admin	17702491	Pastucha. Jan.
+2e143b1b-ba64-4921-a0ec-d3fa78f6dbae	17706456	17706456	Šuplatová Gabriela
+2e310638-1f5d-4cd6-af86-1f6c1df8bad9	lukacovicova	17702070	Lukačovičová Katarína
+2e39e1f5-3d92-4acc-b1a8-2f572fa2294e	BR_313_24130		Technický špecialista II_Technická podpora a služby operatívneho leasingu
+2e6714b2-6260-4941-90aa-e80a8af2b8ad	GG-LEA-Provizie.hromadny.import		Provízie - hromadný import
+2e71cd5c-96c0-4888-9839-d7b34492f53b	GG-CDBP-CDBPs#9		CDBPs-Operator.poistne
+2e73fe0f-e855-49fd-82f2-8de52bdffc6f	sabikova	17701212	Šabíková Ingrid
+2e84c12e-8db8-4932-868d-93e25ccd6b1d	1779081ex	1779081	Gottwald Josef
+2e8c3f7f-37a8-4057-b8f6-9d3719269358	BR_302_60000		dohoda o brigádnickej práci študen_Poistenie
+2ea2a9ab-0fdc-4efa-bdf1-bed6c5e59ad0	dm_oppr		DM/UM -OPPR
+2ea91dc4-e081-475d-8623-ff0c0e433913	17702867	17702867	Bucková Monika
+2eb812db-161a-4285-9247-c13182f07852	BR_407_41103		špecialista pre konečné finančné v_Riadenie portfólia
+2ed7a66b-8991-4405-b23f-abe07e2b40f8	17701411	17701411	Slánska Monika
+2f0a6cd8-fa9f-4685-baad-7b9e6339835b	papiernikova	17702573	Papierniková Natália
+2f0a8f13-a868-44f0-a0ef-b14f7ad2f7f8	benkeova	17702492	Benkeová Zlata
+2f458928-04db-4ff8-8fad-0f95b7492aeb	hrdlicka	17702165	Hrdlička Tomáš
+2f48eedd-8ea0-460f-90a5-607e9f3a38c9	farkas	17702656	Farkaš Branislav
+2f68d247-bd00-4c8e-80ab-d97373f3283e	BR_313_60000		 dohoda o brigádnickej práci štude_Technická podpora a služby operatívneho leasingu
+2f6993ac-4baa-454d-b0c7-9185f53ee8cd	BR_409_35113		dátový analytik I_Controlling a reporting
+2f874012-911e-4d40-9204-6a61e53246a6	17706550	17706550	Verešová Barbora
+2fa32460-c1f8-4434-bca2-6b0be83d36b9	BR_308_24112		špecialista pre repredaj I_Správa aktív a repredaj
+2fc6029c-8264-41fa-8e78-b3642698267c	BR_270_21112		junior akvizítor_Región Stred (Poprad)
+2feaf69b-62ff-4e64-80c2-5e8187f048de	nikmonova	17701119	Nikmonová Miriam
+302f4285-8c03-458d-8339-8ec1a987c5cb	GG-MDK-REP-compliance		Riadenie operačného rizika a compliance
+30551113-a46a-43bc-a907-0364129a0068	GG-LEA-ZI.aktivny.pristup.pripraveny		LEA: ZI - aktivny pristup pripraveny
+3088478e-e93c-4ae1-bd12-329b9fc473b9	DLM LEAS		DLM LEAS
+3094ca28-6f8d-4a49-92b9-5e91dd21bddf	mikula_admin	17702358	Mikula Tibor
+309ac9ec-93d8-4d56-9294-208fdf9aee6f	17707230	17707230	Čech Michal
+309e704e-b1d1-439f-b63e-50d4bb597872	GG-LEA-Automat.KFV.PUK-spracovanie		LEA: Automat KFV PUK-spracovanie
+30a0d1e3-439e-4d54-be89-15d009ebf844	dm_RVModulRun		DM/UM - RVModulRun
+30e7a7bd-dda6-4d6a-9408-f0321f7b06be	17709646	17709646	Pavlák Peter
+30ee15f3-36a8-4ce3-8c69-a8b1a845efc8	BR_405_37121_IDex		Enterprise Architect_IT rozvoj systémov_IDex
+310830f7-711a-452f-aa9e-e20c93c1b771	GG-MDK-REP-postr		Prešov
+31183f14-0dc2-4b07-9dda-2a158a53970a	GG-LEA-Ciselnik.aktualneho.zisku		LEA: Ciselnik aktualneho zisku
+311da32c-8682-45a9-9a1a-70bc1d7761d5	GG-SAP-Uctovnictvo.-.hlavna.kniha._nova_.-.zavierka		Účtovníctvo - hlavná kniha (nová) - závierka
+3121af14-439e-48fa-bc23-54f300e95bda	BR_202_60000		dohoda o brigádnickej práci študen_OLFS
+313165fc-c8f8-4953-b84f-0a26e3fa808f	1779161xi	1779161	Rozman Filip
+3152882c-e064-401d-8555-12cfadaa238c	GG-SAP-ZFI_DD_CUST		ZFI_DD_CUST
+315cb104-597f-481d-a7de-2e9fc5c69615	BR_270_21135		senior akvizítor II_Región Stred (Poprad)
+318cabbe-c951-4140-ab09-38a614a0f700	GG-SAP-Generovanie.objednavok.mailom		Generovanie objednavok mailom
+31acb3a6-f000-4cd9-be2a-bcf8357b9557	17709687	17709687	Matejov Peter
+31b287f1-0190-45d2-b1a8-7b22427050bb	17706599	17706599	Brunovská Lucia
+31b4183e-ffdc-4a06-87dd-d366300aaf17	aklacanova	17702082	Klačanová Andrea
+31b65a72-7424-4492-9878-ec04a885a868	BRC_407_40100_CR		špecialista správy pohľadávok II_Riadenie portfólia_čierna listina
+31c13852-38a0-418d-90bc-d6c9f6820903	BR_315_27104		špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov
+31e80e54-b755-498a-aaa0-af1f750f731a	GG-SAP-Transakcie_FB03		Transakcie FB03, FAGLL03, FAGLB03...
+31e91e8c-0009-4cb4-bc8d-f950dd0705e2	GG-SAP-prezeranie.faktur.pre.OLFS		prezeranie faktur pre OLFS
+322d6e96-ba82-4c7b-a9b6-a6bc7abe4ba5	17701831	17701831	Zríniová Lucia
+324399de-b9d5-447a-83b1-b92d59ed5407	GG-MDK-NIA-Schvalovatel		_RamcoveZmluvy_Schvalovatel
+32a63aac-c6d4-40e5-be3d-bbb68b8c57e1	1779139xi	1779139	Németh Zoltán
+32b047fe-5aab-4cbb-8a5e-393b20de2fec	GG-EC-eClient.-.Obchodnik		eClient - Obchodník
+32b8cc9b-e986-49d7-a5cd-d9430fd80a10	BRC_220_21111_schvalovatel_LEA		senior akvizítor_Región Sever (Žilina)_schvaľovateľ LEA
+32bd3397-20cc-4e4b-9738-199e599d8d80	17706771	17706771	Bergl Oliver
+32bf12b7-68c6-4f34-87f4-a5d9252f1ee5	17701576	17701576	Stasinková Andrea
+32e87351-d070-4b56-a6bf-d82f7d2b3fcb	bucicova	17702229	Bučičová Bianca
+32f16414-d40f-48ef-b5fe-414318f3857a	17702963	17702963	Balgová Lucia
+32f4a4ce-c2aa-4fd6-931d-f2cd4206b350	RP_docasna		RP-docasna
+33045f9b-bef0-492b-b246-6d4025e01d74	BR_416_38106		projektový manažér I_Projektový manažment
+330d7cea-9f8b-494c-8669-2c9c50a55f10	gasparovic	17702522	Gašparovič Dušan
+332808ae-151c-43ff-975d-bea7e7952a05	17706548	17706548	Maxianová Lucia
+334ec468-1e28-40c0-83c0-dc70a88058ca	BR_414_37137		aplikačný administrátor III_IT prevádzka
+33763ed3-02fa-48d5-a628-9cee17f2e7bd	duris	17701875	Ďuris Dušan
+338e1e1f-2969-4477-9c97-40397564a273	GG-DMS-Akvizitor		Akvizítor
+33a277ce-a755-47ff-b07c-dece2429769d	BR_315_23107		špecialista spracovania zmlúv_Centrálne spracovanie a kontrola obchodných prípadov
+33b29f4b-6d63-45a3-b735-f7ded596ffc0	1779173ex	1779173	Janský Vladimír
+34373977-5b31-4947-9b09-45199fd716ef	BR_240_21132		junior akvizítor II_Región Východ (Košice)
+3459306d-a9e1-4ac5-8dd2-6d1270dc6360	1779148xi	1779148	Hanes Stanislav
+34671db8-8bc9-425b-8c38-b2453622976f	BR_408_33103		účtovno-daňový metodik_Účtovníctvo a dane
+347ec521-4b49-4215-a88f-8bb405499b6b	GG-MDK-REP-financnysp		Finančný špecialista
+3485437d-e45b-48e9-9f08-882631dd16f0	1779155xi	1779155	Nagy Róbert
+34d1944b-a5c5-41c3-8fc8-748d430d6334	farkas_admin	1779081	Farkaš Štefan
+34dabb9a-4e11-4dde-8e04-f96069a5cac9	17709674xi	17709674	Hrašna Juraj
+34dde27d-a731-4aff-a071-4e7e365da376	GG-SAP-FI_.Hlavny.uctovnik		FI: Hlavny uctovnik
+3501bd40-bbf1-4cc3-becf-5ec596d19d07	iris_referent		IRIS - ISPEL - Referent
+351bd819-7b66-4cca-9c58-72c632ebc7d5	BR_403_38105		projektový manažér junior_Organizačné, projektové a procesné riadenie
+353dfb87-ba5c-43b7-a1ff-d69752e59621	 BR_admin_CDBP		administrátor_CDBP
+3542db2d-ebab-4782-bef2-765337a9cff0	GG-LEA-Tlac.editacia.sablon		LEA: Tlac - editacia sablon
+35cfbe01-b7ab-4752-b379-cd39d7730f9e	hajak_admin	1779087	Haják Karol
+35fe1ff5-d199-4cfd-8681-bb64f14e4d30	GG-MDK-REP-manazupr		Manažérske úpravy
+36773d6c-39f4-4e03-b6af-4e81e1f0cd13	GG-CDBP-CDBPs#2		CDBPs-Operator.-.CS,.Operator.-.ZS
+368125f0-5b46-487e-91f1-f507a8db8ba9	szalaiova	17701211	Szalaiová Eva
+368684cb-bbce-4afc-ad34-0ddaf884e702	17706389	17706389	Gürtlerová Zuzana
+3710c60d-36b8-45a0-823c-d1175e59a98a	BR_404_37122		Information Risk Officer_Riadenie operačného rizika a Compliance
+37300626-6052-4638-902f-eae8d57dbdf8	17709621	17709621	Minh Hai Tran
+3753eee8-9e87-46f3-b83c-aeb9b9c70257	17706704	17706704	Vageľová Terézia
+3780b24e-8981-42cf-9bbb-c9622f35f155	1779028ex	1779028	Bučkuliak Samuel
+378151d6-645b-4c25-b79c-528244132998	BR_401_60200		dohoda o pracovnej činnosti_Ľudské zdroje
+37a477ad-ed7c-4dba-bf4d-bf0285a8247b	17706880	17706880	Džuganová Lea
+37b94781-92cd-4160-a00f-73041157f94e	BR_admin_MDK_4		administrátor_MDK_4
+37ba74f7-d70e-4266-b748-0dee1e9cfd43	17706665	17706665	Vollek Martin
+37d5897b-7615-4cc8-89ad-ee726ac487ba	17709636	17709636	Kurka Lukáš
+37edae39-42e9-4263-91c5-173db873523e	BR_301_32106		produktový manažér_Marketing a podpora obchodu
+380072e9-7026-40d8-8561-625574df7fe4	BR_560_13119		regionálny riaditeľ II_Región Juh
+3806baee-2808-4d98-a54f-4781aa9ec2ec	17709606	17709606	Bujňáková Terézia
+381ac3d9-f1b7-430e-b1a4-66902b78591d	cikova	17702213	Číková Dáša
+381fde73-a753-46a1-9c7d-df535bdac05f	BR_101_60400		dohody - sprostredkovanie_vačkovky
+384164a8-41d5-4704-867e-5ee83ce4c612	GG-IRIS-Referent		Referent
+38541596-9c82-409e-b2b6-e0cb2e9e176e	BR_120_105		konný riaditeľ pre obchod a podpor_Obchod a podpora
+385b8198-f314-48f3-829a-ac3b1db532bc	17702987	17702987	Mikluš Michal
+386955f4-f56d-4002-bf0d-57f14042c53e	GG-MDK-DMCOM-oppr		OPPR
+3883aad4-8946-46e3-942c-0775cba461b4	GG-MDK-REP-trencin		Trenčín
+388f076a-4c10-45fc-8035-3011ee44a179	BR_407_23108		špecialista back office_Riadenie portfólia
+38a2a4a2-3ce3-4e26-a70a-9215130c391c	GG-WP-Superadmin		Superadmin
+38a9c73e-63da-447b-a201-d573f2f714de	BR_590_13118		regionálny riaditeľ I_Región Severozápad
+38b8c125-5028-4709-81eb-5ade6cf49f1b	GG-LEA-Otvorene.polozky		LEA: Otvorene polozky
+38be9bb3-b091-4dd4-a9bf-89df0f25b004	17707302	17707302	Sekotová Jana
+38cba241-9f92-41f6-89f3-5fa28f0ab7ec	ondrikova	17701121	Ondríková Gabriela
+38d98817-5353-4f00-b42b-ec2265ebb740	GG-SAP-MM_.Schvalovatel.NZ		MM: Schvalovatel NZ
+38e5d0e4-e779-4f07-abac-8b003e76ae48	BR_313_60600		Externista – prístupár_Technická podpora a služby operatívneho leasingu
+38f95592-6d76-491a-9a44-b45a1a8d5685	17706643	17706643	Kršková Daniela
+39591728-713a-42d0-af59-a583367a55cf	17707035xi	17707035	Dziuban Martin
+3a0d1b4b-dc65-487b-b0a8-b880f30e986f	GG-MDK-LCT-rps		RPS
+3a2dcefb-07ac-46ab-8990-9eaf36f593b1	BRC_LEA_Provizie		Dočasný prístup do LEA_Provízie
+3a4289b6-f8a6-4cbd-b45e-9e9b4e5f0893	1779036ex	1779036	Hudáková Lucia
+3a47c638-52ff-433e-94a1-8c9bfbf48a91	BR_540_13118		regionálny riaditeľ I_Región Stred
+3a690c14-eca6-4b7c-ae53-4c1eed095ca5	brichtova	17701015	Brichtová Ľudmila
+3ab62934-f5ca-4e00-a665-d03373fa8fcc	1779145ex	1779145	Zajac Jaroslav
+3b0ff4bd-5492-4b65-a943-2a792ba185b6	17706654	17706654	Majerská Patrícia
+3b129073-6b6b-463f-be87-89e96ee4be94	BR_405_12143		manažér tímu IT rozvoj systémov_IT rozvoj systémov
+3b1b7301-81bf-4b52-8ca8-75db7ae80124	ramcove_zmluvy_administrator		Ramcové zmluvy NIA - Admnistrator
+3b690d30-1b7d-4a34-9212-f4de1cf63b7f	GG-WP-Obchodny.zastupca		Obchodný zástupca
+3b7ce997-c94d-46e7-a55c-b083e27fb5a4	17709671	17709671	Proc Dominik
+3ba1ac20-8c9d-405f-bf49-13b9b6b2a512	17706534	17706534	Snopková Jana
+3bab08ca-45e5-41af-a3ee-d615cc41be76	1779119xi	1779119	Ľoch Matej
+3bf2abf9-77da-4a06-9f6c-56b565bb9c21	GG-MDK-REP-korpobch		Korporátne a centralizované obchody
+3bf90bd2-11f8-407e-8135-b47644465c2a	17707112	17707112	Prokopová Diana
+3c0d8c4b-be4d-4ed7-aeab-5140bacb4a77	GG-MDK-RISK-sencredri		RISK - Senior Credit Risk
+3c452d49-fb10-4068-84cb-f68bf2dc111c	BR_110_11100		Generálny riaditeľ_Generálny riaditeľ
+3c472cd7-c378-472e-9e3a-55e657e92a3e	michalovicova	17702484	Michalovičová Silvia
+3c8e665c-a893-4422-b8ae-b907b2c16739	BR_260_60000		dohoda o brigádnickej práci študen_Región Západ (Nitra)
+3cd6ac3d-cc3b-45f6-af9f-43edfe44a59d	GG-MDK-RISK-psask		PSA - Slovensko
+3cec0ec0-9bc8-4815-b193-9ec28fe6476f	17702204	17702204	Danterová Zuzana
+3d03b1d6-fc42-4278-bbf4-ddf0669d9b10	BR_296_21204		akvizítor pobočky EDS I_Externé distribučné siete
+3d2da31d-3f5f-4941-9153-9b0ae4dbac28	1779158ex	1779158	Kováčik Juraj
+3d4c6ebc-cbe3-4a7e-a52f-cf599dd685d9	GG-MDK-DUX-poistenie		Poistenie
+3d7b74f2-4a47-436f-a73c-f1f5b25ce5b4	17706801	17706801	Kaňová Magdaléna
+3d9b442b-c13c-4959-8167-df5255f4761c	17707060	17707060	Koršepa Filip
+3daf31c5-3dcb-467d-8da6-818a0aa8f40f	BR_220_60000		dohoda o brigádnickej práci študen_Región Sever (Žilina)
+3dc12e8c-69ca-452e-9237-bc7758c784e7	BRC_250_21111_RPO		senior akvizítor_Región Východ (Prešov)_RPO
+3dc57854-80a8-445f-a3eb-032132f40033	BR_313_24109		špecialista určovania zostatkových_Technická podpora a služby operatívneho leasingu
+3df486c2-17a6-4a58-ad32-552734ceaba1	17701765	17701765	Bakošová Martina
+3e4b42de-4a1d-4031-a9dd-39070a04d567	BR_401_60100		dohoda o vykonaní práce_Ľudské zdroje
+3e4dc330-aefb-4951-9f3c-697e474ec67a	BR_404_27107		Poradca pre compliance III_Riadenie operačného rizika a Compliance
+3e6bf431-13c7-4112-8f7b-cca6df0e2004	17706483	17706483	Marcinov Martin
+3e6c109c-f1f9-4254-812e-cb5ce4774c98	1779142ex	1779142	Kázmér Anikó
+3e7627a3-a611-414d-bd50-4406eb0580b9	iris_kontrolor		IRIS - ISPEL - Kontrolor
+3e79b712-8d0d-4816-8eb3-40f5fcef3191	BR_303_42102		špecialista pre zmeny zmlúv III_Zákaznícky servis
+3e8bb80c-3f3b-496e-bd7b-1d7efd44a3af	BR_220_21121		junior akvizítor II_Región Sever (Žilina)
+3e970481-6644-4491-afa2-1a123a0de94b	GG-SAP-Koncovy.uzivatel.-.vseobecne.opravnenia		Koncovy uzivatel - vseobecne opravnenia
+3eb9e21a-332a-4638-98c5-86763f8bcd7d	bartel	17701832	Bartel Tomáš
+3ed0e62b-6d86-413d-ae5c-bd467b0f59ee	GG-SAP-MM_.Schvalovatel		MM: Schvalovatel
+3edc330e-bf55-4674-bf46-bbc596384ca7	BR_414_37101		systémový administrátor I_IT prevádzka
+3ef004bc-691a-4298-b49e-b8626c361588	GG-LEA-ZI.zmena.zabezpecenej.sumy		LEA: ZI - zmena zabezpecenej sumy
+3f64b9da-5cc6-470b-9d9c-4ee2108a568d	BR_240_21131		junior akvizítor I_Región Východ (Košice)
+3f66ffd6-d4ca-4ca5-8fcf-71ba2657c3f1	GG-SAP-CO_.Uzivatel.reportov		CO: Uzivatel reportov
+3f95f51f-dc14-4fd3-88dc-70885367cbe3	GG-MDK-REP-sprpois		Správa poistenia
+3f9dcb21-548b-4c19-8d5c-b8f3028d301b	BR_412_34110		špecialista správy produktov pre d_Finančné služby
+3fa6cae9-511a-4705-9248-3b3af7832eb2	BR_414_35106		dátový analytik_IT prevádzka
+3fb0c18c-e86e-43fd-b47d-d283c7757125	GG-LEA-Brigadnik.obmedzene.prava		LEA: Brigadnik- obmedzene prava
+401b7fe5-f2aa-46b4-a190-877b20b3e53a	17707245	17707245	Ďurišová Michaela
+4024b1ba-064a-421f-8c7a-49553007a643	1779123xi	1779123	Ksinan Jaroslav
+40321928-a6e4-4b31-a671-12e36222330d	GG-LEA-Poznamky.a.blokovania		LEA: Poznamky a blokovania
+40348d60-893d-40fa-9348-fa69553675ce	ukrop_admin	1779102	Ukrop Andrej
+4055567b-d183-4e34-aeeb-12b7136fa243	17707138	17707138	Gašparíková Katarína
+406ec1ac-5c76-4720-bdba-287326d0b271	BR_416_38107		projektový manažér II_Projektový manažment
+40e235ba-2304-465a-9106-9aa3937e02bd	17706975	17706975	Zuštiaková Tamara
+40ec0e88-4f4c-4225-8928-1bf8cd6a4984	1779149ex	1779149	Kirchner Emma
+41031335-417a-44a2-90ba-296fa9bfdbdd	17702961	17702961	Sváteková Dominika
+41094f76-f54d-4293-a058-8cf8349b65d0	17709624	17709624	Podroužek Michal
+4113e253-7ac1-4442-8207-a5c06d3b5947	17709988xi	17709988	Richtarik Oliver
+4117e5c5-92c0-4e94-a481-647b1a3a0934	GG-MDK-RISK-psaf		PSAF
+413483b3-e453-46be-994e-22906cd0d5d1	1779119ex	1779119	Ľoch Matej
+413cc5d7-587d-491e-8329-154dc84a5dd6	17701194	17701194	Spirin Pavlo
+41635cf0-bce9-4967-96ae-9caf5c959581	BR_414_37128		špecialista testovania informačnýc_IT prevádzka
+41654764-192f-4803-9191-cc958eeae6c5	 BR_admin_LEASIT		administrátor_LEASIT
+418da55b-7eee-41a3-8614-03971e1a7ef4	BR_303_42105		expert pre zmeny zmlúv_Zákaznícky servis
+4195b80a-4148-4868-a6ac-63dd942d402e	17709653	17709653	Mudroň Michal
+41ae471c-3057-41d2-b758-9d1dd5173cb9	GG-MDK-LCT-bbystrica		Banská Bystrica
+41d15303-e8fb-47dd-bed9-5d902248230d	GG-LEA-LEA_.Export.dokumentov.sk		LEA: Export dokumentov sk
+4207832a-a46a-49ac-8b13-c74d43cf0e0d	nagy_admin	1779094	Nagy Balázs
+420d903d-6658-4c94-aa95-e2ba31fb6086	BR_303_43100		operátor zákazníckej linky_Zákaznícky servis
+424b1a10-ada9-45d8-9bf4-8f333bbaa7ed	jkovac_admin	1779010	Kováč Jozef
+424d1478-e62e-4e70-8aec-177ed527b69c	BR_203_21125		relationship Manager pre korporátn_Korporátne financovanie
+42635610-ca8f-4ba3-8bb9-91cbc9c2ed06	17706946	17706946	Medgyesi Michal
+427397a1-7d73-4b7e-9360-51f1ec0a5a6e	GG-MDK-RISK-1		1
+427f052c-456d-46ec-882d-1d8232f8cd26	BR_209_21132		junior akvizítor II_Región Západ (Nové Zámky)
+42b368bb-c1e6-49f9-a841-3c2cca4661b9	zemanovic_admin	1779102	Zemanovič Andrej
+42b6c858-9a30-4a15-8d04-3da13aab7714	BR_302_31102		špecialista pre poistenie  - podpo_Poistenie
+42cfc1ad-0121-483d-9778-7577037805fd	BR_401_28109		špecialista odmeňovania, benefitov_Ľudské zdroje
+43031a1f-c962-4f92-8e46-554946074761	GG-DMS-Controlling.a.reporting		Controlling a reporting
+4319e2b1-8b3a-4192-be6f-d71c00f5795a	17706463	17706463	Juričková Michaela
+432fe242-2cf3-47ea-b730-bcc6f5a218ab	17707044	17707044	Bencúr Miloš
+4332664c-ecf4-4f9e-abf0-db7af4d00d92	wordpress_superadmin		Wordpress - Superadmin
+43357049-5cd0-4737-af2d-88901d048066	GG-SAP-Udrzba.investicneho.majetku		Udrzba investicneho majetku
+4335f73f-7988-425b-ad61-a613c6ae7910	GG-LEA-Ciselnik.vseobecne		LEA: CIselnik vseobecne
+434d6a27-e2bd-4e9c-a599-74006da9fc59	GG-MDK-LCT-SCHVAL-Akceptacna_jednotka_SR_csob		Výnimky - Akceptacna jednotka SR csob
+435fa1a3-32c8-4d74-b996-d979f2440616	GG-SAP-SAP.Solution.Manager.READ-User		SAP Solution Manager READ-User
+43625785-cb0b-4f38-83e7-f9f92cb2f4bd	BR_407_41105		špecialista ohrozených aktív I_Riadenie portfólia
+436c5e86-5e3d-419c-b0c7-c631b6408fd9	17706594	17706594	Fendeková Natália
+437b9a29-39be-485f-bd56-f889d8e2b88f	GG-LEA-Ziadosti.o.zmenu 		LEA: Ziadosti o zmenu 
+4385e150-51b6-4447-b5a3-fa2751e3eebe	magdin	17706378	Magdin Peter
+43862171-d30a-4c09-9af7-ba9b27eeabe8	BR_111_25102		asist. predstav. a výkonného veden_Asistentky GR a VR
+441bb3c0-c7ba-45b2-a4c2-387b35eff4da	17709677	17709677	Šperňák Kristián
+44563a2a-f578-4a1a-9f81-bf1db199cfdc	1779146xi	1779146	Štellár Kamil
+44617fde-41a0-4447-81cc-c187c27e27e3	kovacikova	17702417	Kováčiková Lucia
+4499df30-e39f-4e18-9de4-60a2932414c3	BR_260_21131		junior akvizítor I_Región Západ (Nitra)
+44b070d2-3330-4178-a1ad-afb0508780f7	GG-LEA-Odobrate.predmety		LEA: Odobrate predmety
+44ca767b-ea91-42ee-83b4-3f6683cebd4d	GG-LEA-Ciselnik.vseob.Marketing		LEA: Ciselnik_vseob_Marketing
+44da17a9-d48e-412c-aecc-16b6448a5c59	BR_270_21131		junior akvizítor I_Región Stred (Poprad)
+44e32584-c3c8-4f8e-92cc-14540eb7b6fd	BR_402_600200		dohoda o pracovnej činnosti_Právne služby
+44fec614-32c8-4ec1-b827-42734d87d52e	GG-SAP-FI_.Spravca.dani		FI: Spravca dani
+4506346b-6446-4887-b35a-63144d65f422	GG-DM-RVModulRun		RVModulRun
+452a7b6a-f573-452e-b429-5f7b038af099	GG-SAP-FI_.BP.RO		FI: BP RO
+453e684f-dd89-4348-8670-9d71ea03cdb1	17701653	17701653	Štefanigová Katarína
+45615902-fa24-47ba-83f3-e9f183535871	dm_controllingareporting		DM/UM - Controlling a reporting
+4596f4a2-1b79-40e3-b4bd-c1035e5c4ea2	GG-WP-Webportal-aktivny.pristup		Webportál - aktívny prístup
+459a4b57-c561-4913-a3a4-719e293b7a84	17706508	17706508	Ivančíková Lenka
+45a42c67-b816-4bfc-91f9-4f054bf191da	GG-MDK-RISK-ramecsv		Rámec SV
+45ba193e-d47c-4b40-8016-1520ff4e0b5c	GG-LEA-Skupina.PNS		Skupina PNS
+45bfe69c-b4a3-44c8-84fe-9096c138cbb6	BR_409_60400		dohody - sprostredkovanie_Controlling a reporting
+45f7f3ae-579d-4298-a147-029eb4cb4f4d	spanik	17706307	Špánik Peter
+4605d2fd-6063-4c28-b72b-972418c3af3e	tiklova	17702880	Tiklová Zuzana
+4610a741-7e8f-4d23-84d7-fda8518d34d8	17706901	17706901	Šustrová Jana Behul
+46213085-f042-466b-b654-a2f3151b6908	1779014ex	1779014	Slížik Miloslav
+462c2986-6ad4-4d45-b98d-507dc605977c	BR_315_60200		dohoda o pracovnej činnosti_Centrálne_Centrálne spracovanie a kontrola obchodných prípadov
+4654c7fe-f767-4f19-8553-2886370ca97c	1779141xi	1779141	Polakovič Martin
+46a11a79-053b-4008-959a-1f551730fbe9	17707024	17707024	Klepancová Alexandra
+46a38318-29ee-4f71-a2f4-db2fa3f82ce9	BR_416_38105		projektový manažér junior_Projektový manažment
+46a7e1e5-974a-459a-b48a-bbf241ff9dc9	BRC_MDKreporty_MRK		MDK reporty - prístup - MRK
+46e80302-e2fd-4967-aa19-88ce86ec5233	GG-DMS-Centralny.spracovatel		Centrálny spracovateľ
+472b2f27-841f-4953-87b5-b7f949596103	dm_RVModulAdmin		DM/UM - RVModulAdmin
+4740847c-4ca1-48c0-bef0-f9313da762f6	17706600	17706600	Kováčik Juraj
+475b81da-9afe-404f-bd7e-89d7b39b16c4	GG-VEMA-Hlavni.mzdovy.ucetni		Hlavní mzdový účetní
+477500c2-0c27-43ad-a2d3-78a98b5d9a69	GG-MDK-LCT-SCHVAL-Zmluvne.pokuty		Výnimky - Zmluvné pokuty
+47aee137-d064-4271-8dd3-d0a6f529e897	BR_301_29108_SAP		strategic initiatives lead_Produktový vývoj a trhové riešenia_SAP
+47bfd428-4f0c-4c0e-8284-caa007fa281e	GG-SAP-Z_SOLMAN_READ_70		Z_SOLMAN_READ_70
+47fa8f9e-6667-4c4b-b42b-a0983cb32a60	17706023	17706023	Briešková Romana
+4864f345-5006-41bd-ad0c-8cdd087614d7	BR_230_21137		Key Account Manager I_Región Stred (Banská Bystrica)
+486f62ca-6723-4285-aec8-0f5bd0f4f0fd	17706996	17706996	Botka Adam
+48bbaa6b-f896-4440-b1f2-8d56b4bf76f4	BR_410_44100		archivár_Centrálny nákup a služby
+48bdf9b4-2900-474c-9be4-19cb66de9d76	dzubina	17702446	Dzubina Róbert
+48c11d42-eb6d-40a2-8ce7-6935622deea4	GG-LEA-Editor.spl.kalendara.aktivne		LEA: Editor spl. kalendara - aktivne
+48e2fa89-0a0e-4a75-91e3-708cdc4d3a25	1779128ex	1779128	Budínská Kristína
+49679994-3d32-4e5f-ba8d-870633cffc60	GG-SAP-prezeranie.faktur.pre.CS		prezeranie faktur pre CS
+4973601e-30e1-4808-a0b5-2d56fa9bcca0	GG-LEA-Reporting.services.poistne		Reporting_services_poistne
+498b57e2-4747-4983-b97c-17f3646db1f4	BR_410_44101		špecialista správy registratúry a_Centrálny nákup a služby
+498e4f4c-0d62-4024-84cd-6fff39907e2d	17706684	17706684	Šušoliak Lucián
+49a7182f-e1ed-4e76-bea6-f190c90dd07c	BR_302_45104		špecialista pre správu provízií z_Poistenie
+49d13ace-7f64-4816-9574-cbb2b14849ac	GG-SAP-ZFI_INTG		ZFI_INTG
+49d202c4-5496-4693-badf-5a736448b493	17707197	17707197	Glvačová Mária
+49e1801a-8fcb-43f8-adde-3463244c674e	BR_315_60000		dohoda o brigádnickej práci študen_Centrálne spracovanie a kontrola obchodných prípadov
+4a111a12-7993-4025-9c1a-f73d3ecadba5	BR_414_60600		Externista – prístupár_IT prevádzka
+4a24343b-b552-49e8-b4ab-4bf3f508a11c	BR_210_60000		dohoda o brigádnickej práci študen_Región Sever (Trenčín)
+4a314260-1d17-4dd6-ae13-3d5c06dbe340	GG-SAP-Solution.Manager.Service.Data.Control.Center.-.Administra		Solution Manager Service Data Control Center - Administration
+4a6ea07f-5fed-40f5-8c53-b5453cd87fa6	GG-MDK-REP-bbystrica		B. Bystrica
+4ac15b27-63d6-4bdf-acf3-238bbdbcff2f	BR_414_38105		projektový manažér junior_IT prevádzka
+4b9b46e4-fce9-4545-a804-3ce5872ca4a2	17706527	17706527	Hudák Martin
+4bcea87d-3220-4ff9-998d-7fe8b67a4422	BR_200_21136		senior akvizítor III_Región Juh (Bratislava)
+4c3ac599-c62c-4a52-97ff-767a123dbb63	GG-LEA-LEA_.Blokovanie.rucitelskych.upom		LEA: Blokovanie rucitelskych upom
+4c4cd2e7-592c-46b6-be6d-40108f2160bf	1779065xi	1779065	Sedláček Peter
+4c566900-59cf-4c58-bd3c-de8fe2341fe6	dm_financnesluzby		DM/UM - Finančné služby
+4c6383fd-2c2e-4802-952d-40e8b0c275a5	1779158xi	1779158	Kováčik Juraj
+4c72affd-e1b2-4da1-a868-ff67e45a18fb	GG-CDBP-CDBPs#1		CDBPs-Operator.-.bankove.ucty
+4c7f0a90-fa78-4643-a566-a25f0ab9e7d2	GG-LEA-Compliance.brigadnik		Compliance_brigadnik
+4c824d43-a6b5-47e1-9503-1fb92801163a	BRC_Centrálna akceptačná jednotka_RORaC		Centrálna akceptačná jednotka_RORaC
+4c9f554a-1510-40bb-8109-81553d8c7c3c	BR_208_21135		senior akvizítor II_Región Juh (Dunajská Streda)
+4ccefa1c-55d6-40f9-9253-b9fc56bec4d2	BR_580_13112		riaditeľ tímu Korporátne financova_Korporátne obchody
+4d1c53ac-bab1-46e2-be7b-4ea50e626744	17706709	17706709	Blašková Paulína
+4d5a6306-7b8a-435f-bef1-c191e236967c	BR_230_21112_RPO		junior akvizítor_Región Stred (Banská Bystr.)_RPO
+4d66a285-9eea-4e1c-b16d-89eb76e36dd8	dobias	17702093	Dobiaš Juraj
+4d69e3f0-eb55-4ddc-a7ef-735a4e548f3b	BR_412_34109		špecialista správy produktov pre d_Finančné služby
+4d9171ee-6f83-45ee-9262-4bb78b7ab96b	17707136	17707136	Novák Kristián
+4dc6f12c-9a4d-43aa-b351-92bcb43804d5	GG-MDK-REP-mistr		Michalovce
+4dda5d1b-2ae4-4a3d-b395-c5dfa52ccfce	bartosi_admin	1779029	Bartoši Michal
+4dfedfd0-d2db-488b-a44d-6fc15505f722	17702992	17702992	Rajnícová Sandra
+4e134141-8914-467f-b5a8-847e2e790b41	GG-LEA-Editacia.bank.opravneni.docasna.rola.pre.HB		Editacia bank. opravneni - docasna rola pre HB
+4e20e3f1-3669-4a76-9c35-3ad5c90db935	GG-LEA-Saldo.vyrovnanie		Saldo - vyrovnanie
+4e2e46b9-2277-4671-bfd1-b261a55e7d91	GG-MDK-LCT-SCHVAL-Rorac		Výnimky - rorac
+4e52d7cf-fbb7-48c4-91fa-e70ff84275f8	strbova	17701413	Štrbová Mária
+4e5869c1-1e05-4a72-9ff7-925b2b594484	BR_409_35111		dátový analytik II_Controlling a reporting
+4e66036c-5cae-4273-bf8d-a93c4b72705d	GG-PBI-CR		PBI_CR
+4e74ac18-ffd6-453a-8643-319e565fdb87	barusova	17706170	Barusová Zuzana
+4e8024af-b21e-46de-a25a-f704ab55d691	GG-CDBP-ESSs#2		ESSs-Operator.-.Expert
+4e99bed0-726f-43fa-ba05-6874d7be2e8f	17709653xi	17709653	Mudroň Michal
+4e9d009e-aad3-4254-9a96-e25c26e93b30	17709684	17709684	Medová Lenka
+4ea123eb-18bd-42c9-b9b9-0d0074376898	 BR_admin_DUX		administrátor_DUX
+4eb52d27-359e-457e-acf5-eeaf5d61049e	1779164xi	1779164	Kvačkaj Michal
+4ed74e0b-2efc-4798-b660-77c957cea538	bstrbova	17706222	Štrbová Beáta
+4ee31aaf-7a4b-4506-a5a5-c203e50dcc14	17707231	17707231	Uhlár Milan
+4ee8e0dc-500d-4f37-b5ef-79f15a24eb15	BR_špecialista riadenia rizík III_2		špecialista riadenia rizík III 2
+4f0c0354-3292-4a93-9793-e17c3c5c6aa8	BR_315_27109		špecialista kontroly obchodných pr_Centrálne spracovanie a kontrola obchodných prípadov
+4f0efce4-0f40-41c2-aa1b-519b3e42a1ee	loderer_admin	1779116	Loderer Marek
+4f5c6253-bc60-46cd-9358-2839af7ad929	17702053	17702053	Češeková Lenka
+4f7ec85b-1417-457a-afe5-e6a8372f2063	BR_305_23112		Junior akvizítor pre Centrálne zna_Centrálne značky OUA
+4fc9a21d-f5a1-4902-8e05-12278ecf6c12	17706915	17706915	Tomašovič Martin
+4fd56f87-7bd6-4208-a001-358dc041f8ae	17707021	17707021	Lacko Juraj
+4fe06844-92e9-45dc-a2d5-508d0427a544	GG-MDK-REP-ojazoua		Ojazdené OUA
+50177981-79da-4762-b307-59ca42dadf4b	1779133ex	1779133	Salaj Pavol
+505ff218-4397-4b2f-bf9e-7a2a5c7f337d	1779070ex	1779070	Boťanský Richard
+5063b9d8-dba8-48e0-81a4-b250aa0753b3	17707232	17707232	Hlaváčik Anton
+5064a48a-7d4c-4d8b-a0eb-70ccbe24c51c	BRC_keyaccountman_ostpobocky		Key Account Manager značkového lea_ostatne pobocky
+5077d8d9-eee6-4d16-a00f-bd7a89a127de	1779118ex	1779118	Zmajkovič Matej
+50a2f142-404f-45bb-a02f-3bf2a4831386	x-MIM.Exchange		MIM Exchange
+50abf806-d25a-456d-bf56-6c1cf975494b	GG-DM-RVModulAdmin		RVModulAdmin
+50f098a4-a131-46c9-8421-544763028e13	 BR_admin_MDK		administrátor_MDK
+50fb553a-2417-4ede-a006-9c1db11fae09	17706403	17706403	Gregušová Daniela
+514ee643-7509-4f35-8306-67d751620484	dms_archivarauditor		DMS - Archivár, auditor
+51719383-f75f-435b-a539-0773f2e0b1cc	agregusova	17701794	Gregušová Andrea
+51733988-88c0-45c7-acb0-b862d3f35a57	BR_230_21131		junior akvizítor I_Región Stred (Banská Bystrica)
+5191d897-b43b-4eb1-987b-e56250292473	GG-DM-OLFS		OLFS
+519aa5e5-ca71-4314-a0ea-5f0151b2c709	17706553	17706553	Kéry Petra
+51c3b271-d744-4ac3-85aa-d7182ea3011d	BR_408_60000		dohoda o brigádnickej práci študen_Účtovníctvo a dane
+51f1a09d-2fdd-4039-932a-19861d379fde	BR_401_No EB		 Rights_Ľudské zdroje
+51f8c01c-3f3f-4193-a4b2-f1151e927b5f	1779163xi	1779163	Gottlieber Michal
+51fcf2c3-4764-46c0-8be2-d5d6a9d1ea82	agentury_zamestnanecLS		Agentúry - Zamestnanec LS
+52188bff-f142-4f53-b132-1fad5bd09913	BRC_RiadPob_regjuhbratislava		Riaditeľ pobočky MDK_Región Juh (Bratislava)
+522da44f-b455-4da3-ad5b-3e996bbd0f33	GG-LEA-Zmena.DK.DM.AQ		Zmena DK.DM.AQ
+525e9a5a-4874-4180-9859-309ae0827f0b	17707267	17707267	Kitta Rastislav
+5263c72f-c9c6-4c3f-ae9d-9edfda2ef7a6	17707285	17707285	Belanová Patrícia
+528554f1-d6a8-4df3-92d5-3ac6d55e6ab8	1779150xi	1779150	Šípoš Jozef
+52adb634-1023-437d-939b-14bd7da3e443	GG-MDK-UVER-administr		Administrátor
+52b77235-90bc-4081-854d-65c9ff09847a	17709634	17709634	Adámka Roman
+52dcc509-1281-40ed-913b-33057cac765c	BR_208_21136		senior akvizítor III_Región Juh (Dunajská Streda)
+52fb4148-e68d-409f-8700-4fdfd998304b	17701922	17701922	Prokop Lucia
+5315ddde-7f0b-44b8-96d8-40d2a875a6cf	martinkovic	17702143	Martinkovič Adrian
+533c27a4-d834-41b3-b5fe-a299f33e26c1	BRC_260_60000_JAQ		dohoda o brigádnickej práci študen_Región Západ (Nitra)_JAQ
+533f6438-176f-44cf-ba01-dec8096a8ea4	jucha	17702388	Jucha Jozef
+5346001b-4e84-4259-9861-6e878e067acd	17706445	17706445	Žabková Tatiana
+535c830b-f649-4318-a97b-32c61bdf2c9f	ledecky_admin	1779136	Ledecký Boris
+536aca77-4c82-4428-99ed-96cdc54d242d	GG-LEA-Uctovnictvo		LEA: Uctovnictvo
+5390ad4c-5b24-408d-ba67-409ae8bf9cc3	1779140xi	1779140	Stromko Tomáš
+53b19dea-94b2-46d6-9993-891cf5684895	GG-SAP-transakacia.SE16.na.citanie		transakacia SE16 na citanie
+53cf30b7-99a1-4ed8-bc5c-9c87ca6bb87b	BR_316_50100		špecialista pre digitálny predaj_Digitálny predaj
+53e39c0f-59bd-4bb6-a15b-cf16fab00b0b	kostolna	17702633	Kostolná Monika
+53ea00a0-0c96-4f93-b19c-c316992ee778	GG-LEA-Ciselnik.vseobecne.nehnutelnosti.RW		Ciselnik vseobecne - nehnutelnosti R/W
+540b9ef1-d46c-42ed-af2a-6d5fd7e627a6	GG-SAP-ZFI_IFRS9_FILES		ZFI_IFRS9_FILES
+5411a669-64cb-4d5f-9396-858d31bd1f97	1779148ex	1779148	Hanes Stanislav
+5416e8bc-e97c-40b2-9480-6a9e13c00a49	BR_405_37131		Dátový Architekt III_IT rozvoj systémov
+543ce32f-950e-43b5-b67b-1fb912635d01	BR_412_34103		špecialista platobného styku I_Finančné služby
+544fa7f5-e327-423c-90e2-e24796e58dee	GG-IRIS-Kontrolor		Kontrolor
+548fc006-ce8c-423d-9349-c9eaa03d7d18	GG-CDBP-CDBPs#11		CDBPs-Administrator
+54982189-27cd-4520-b282-1c2ecedf9b73	GG-SAP-ZFI_FAGLL03_ONLY		ZFI_FAGLL03_ONLY
+549b9c42-2f65-42cf-bb7d-d11506880e9c	dms_controllingareporting		DMS - Controlling a reporting
+54a8a040-0b94-4037-b713-b7e06d5e8a04	BR_230_60000		dohoda o brigádnickej práci študen_Región Stred (Banská Bystr.)
+54d39942-c7b9-4841-b086-4ff16566ef17	BR_245_21134		senior akvizítor I_Región Východ (Michalovce)
+5508bb04-42f5-4050-91ac-8b7497b48b60	17707119	17707119	Buranská Nicole
+553d2b9a-27d5-4f90-9c52-9c24f815afaa	GG-SAP-FI_.Validacie.-.vypnutie_.zapnutie		FI: Validacie - vypnutie, zapnutie
+5565c637-f8b7-454c-b703-fdf4e44b0320	17706590	17706590	Brezovický Martin
+556b7682-02f0-4640-8a47-877f83a05526	17706917xi	17706917	Schwendtnerová Kitti
+55916e5e-eb90-4a65-ad8f-15ea30b77a1b	BR_410_36100		špecialista pre riadenie nákupu_Centrálny nákup a služby
+55a0f1f8-b3b0-4d65-a82d-1bd28b7f015a	GG-DM-Riadenie.portfolia		Riadenie portfólia
+55bce85a-0f3e-4b78-a4f7-ae5cef469c0b	GG-MDK-REP-distrxsell		Distribúcia X-sell
+55d24a83-46c2-4512-9b4f-27f63ebcfb5e	kuruczova	17702896	Kuruczová Judita
+55dbbf84-c694-4c40-a0d6-c39a363d56ec	1779143xi	1779143	Dekan Martin
+5606eea3-a814-421e-9235-4ce3cd8faa8d	1779032xi	1779032	Šafár Patrik
+56dd60f2-7f8a-4870-a140-f887d9abb152	dm_marketing		DM/UM - Marketing
+56e070be-c6cf-40ae-b22a-fc16229d559a	GG-CDBP-JPP#OpRo		JPP-Operator.-.Read.only
+56ebf479-4877-4389-9754-9f0a64c46ecc	GG-LEA-CentralneSpracovanie.docasne.ZS		CentralneSpracovanie_docasne_ZS
+56ff9ff8-2c4a-49fc-81f4-516cc26986e1	17707216	17707216	Rovderová Mária
+573e5aac-935b-494f-a684-493c3ffeabaf	GG-MDK-RISK-1plus		1+
+574f50db-ce45-40d5-b990-35e0b077dc44	rajcova	17702973	Rajcová Jana
+57684f0b-647b-4763-b432-f046073cd4b6	GG-SAP-FI_AA_.Klucovy.uzivatel		FI_AA: Klucovy uzivatel
+5781479f-1006-4d36-8589-8cc8b6327997	BR_296_21116		Key Account Manager pre Vendor Sup_Externé distribučné siete
+578ce78a-4ffc-4300-9830-c97a6d300ada	17706387	17706387	Koperdák Martin
+57952cca-dc03-4dbc-a6db-41d5ddfd8bdc	melnikova	17702423	Meľniková Oľga
+57a2bcf5-589e-4e9b-b6ff-ac6038c420ad	mankova	17702613	Manková Veronika
+57a8fe6d-4715-4e22-9572-f82620bfcb78	BR_401_28114		špecialista pre vyhľadávanie a výb_Ľudské zdroje
+57af1946-bdc7-4dee-8195-0dbb54ee027a	17706412	17706412	Harmaňošová Mária
+57de9e40-a45f-4a7d-a447-1c721a704539	BR_407_40100		špecialista správy pohľadávok II_Riadenie portfólia
+57ef7304-2d12-4e6a-ad43-d1dabad1c97b	BR_316_29107		konzultant pre firemnú stratégiu a rozvoj
+57f8963b-5c3c-4d31-a65c-0ba1c43a835d	GG-LEA-Faktoring.nove.modely.Faktoring		Faktoring - nove modely Faktoring
+58116f9a-681e-4c87-8340-5416922a901b	BR_296_21205		akvizítor pobočky EDS II_Externé distribučné siete
+5883fc11-a10b-44e8-8ffc-ac51ea08a685	17706634	17706634	Niňaj Martin
+5898f3b3-15a0-4374-bcb2-d38d4f8e7e31	GG-MDK-LCT-eds		EDS
+58a0b7f9-3667-4e6e-92c0-554f8fffeaf5	BRC_409_35106_LEA		dátový špecialista_Controlling a reporting_LEA
+58d1ad7e-8a87-452b-b4e1-e1edba2b3903	1779120xi	1779120	Ratkovský Adam
+58f0d7a5-99cf-4456-969f-52569be0799e	17707137	17707137	Nagyová Ivana
+59281e76-c769-43f4-ad7f-a10f25be2c3e	BR_301_60200		dohoda o pracovnej činnosti_Produktový vývoj a trhové riešenia
+593573b6-a80e-4a6a-9f80-f5fdbea6fe21	subakova	17701766	Šubáková Lenka
+59647a90-95eb-45e2-8275-8b45f7af92d2	BR_313_60200		dohoda o pracovnej činnosti_Technická podpora a služby operatívneho leasingu
+5986c64a-358b-44bf-a55e-b4cea90cc3d0	GG-MDK-REP-vrit		VR IT a podpora
+59905ce3-8954-4497-8b3e-9cbe9d370e76	GG-DM-Financne.sluzby		Finančné služby
+59c04881-595d-4014-bff9-6a16aadd7bcb	17706710	17706710	Pačesová Natália
+5a36f288-f836-43d9-9e03-1277023267bf	BR_412_23108		špecialista back office_Finančné služby
+5a48d086-d8c0-4103-a023-9f42060ff790	GG-MDK-REP-dunstreda		Dunajská Streda
+5a4b6b21-8844-4143-a9fb-612b6cbc7c1d	BR_301_60000		dohoda o brigádnickej práci študen_Marketing a podpora obchodu
+5a72ad03-dfd6-49db-9103-7b95d3d21523	GG-SAP-CO_.Predstavenstvo		CO: Predstavenstvo
+5a76084c-5dc5-4773-a302-433e14ff9c9e	17701010	17701010	Birošová Renáta Kurincová
+5a831599-09af-4f02-bffc-96cfa1fb8a7b	jassak	17701067	Jaššák Stanislav
+5aa98fe8-2723-4772-8d39-6c8e68a7a200	GG-SAP-MM_.Klucovy.uzivatel		MM: Klucovy uzivatel
+5ae42f73-afe3-4144-8bc6-0f7fe2921a54	GG-LEA-Fleet.dod.doklady		LEA: Fleet - dod. doklady
+5ae92148-f4b5-43df-a975-4225b33e643c	17702164	17702164	Sádecká Jana
+5aed3ca0-e242-4c20-8809-3e9fc48c1548	BR_311_21200		Business Developer_Riadenie rozvoja obchodu
+5af3f3c2-2dc1-408a-b019-ffc698936499	1779144xi	1779144	Rybánska Diana
+5afa794d-7a71-460d-883c-314913fc60b1	mika	17702392	Mika Maroš
+5b0a313a-6b1a-4dc2-8b26-b138295a0ecc	17709670xi	17709670	Chreno Dárius
+5b1f0a68-62ec-4930-b32b-8d48eede7146	GG-MDK-LCT-dunstreda		Dunajská Streda
+5b37db3a-454f-4784-91dd-04e96c546f47	GG-SAP-Otvaranie.resp..zatvaranie.uctovnych.obdobi		Otvaranie resp. zatvaranie účtovných období
+5b6b1afb-4322-4930-9595-0c501286b7dd	17706750	17706750	Ďurčeková Zuzana
+5b8becf2-5204-4158-b536-8d0acbc6adc9	GG-MDK-DUX-komisiazh		Komisia zostatkových hodnôt
+5bae5de6-20dc-41bb-ad60-07fbed4f9b1a	1779137xi	1779137	Višvarda Lukáš
+5bd6e33e-3395-4f39-97f7-456f5bae94af	BR_260_21121		junior akvizítor II_Región Západ (Nitra)
+5bf4b779-08fe-43fb-931a-da2aba4030d3	GG-SAP-TESTER_SAP_1		TESTER_SAP_1
+5c127ae3-a861-418c-a07e-c3a1bc19e427	GG-MDK-LCT-marketing		Marketing
+5c3c4366-5473-429a-bf2e-4c45f9846028	17709619xi	17709619	Vanya Adam
+5c5d809c-59f8-46ba-a8bc-e9522a630216	GG-DMS-Pravne.sluzby		Právne služby
+5c64ed0d-496f-4e3b-b2f9-94fc83dfb956	BR_409_12115		manažér tímu Controlling a reporti_Controlling a reporting
+5c6d8b8b-868e-4982-abda-f2bebb99ecf2	rosova	17701143	Rosová Lucia
+5c7b0e43-f0fc-43d5-a88d-2c885de448a2	BR_202_24123		Senior obchodný špecialista_OLFS
+5cf49cbb-9355-49ca-8724-8304ad9119b1	17707001	17707001	Drabišin Michal
+5d1dc84c-5fca-4c32-b179-7e94792fb333	GG-DMS-ItAdmin		ItAdmin
+5d3976ea-39e6-4b25-9d78-4a53d39e0260	GG-MDK-REP-creditrisk		Credit risk
+5d47b7be-8427-4d24-a6a6-14d13b3069f2	17709689	17709689	Gallík Lukáš
+5d7f0294-fd20-456b-97df-43921c5597d2	1779071xi	1779071	Matajz Eduard
+5da65a0d-18be-4f46-91dd-16878f7d568b	17709678	17709678	Ponec Peter
+5daa3531-5ff3-4327-93de-c80c9c9a5e01	vozdecka	17701193	Vozdecká Ingrid
+5daff26a-c1e6-47d5-801e-12f59e58783e	17707290	17707290	Džuppa Ján
+5debc4be-8394-448a-b7cb-1b86edc4ac52	BR_301_29106		analytik pre stratégiu_Marketing a podpora obchodu
+5df5f4b6-e3ec-4aa6-9151-6d8d8f2b88db	trebula_admin	1779021	Trebula Miro
+5e602327-7a84-4cb6-9339-2694b5bc5ee2	BR_200_21133		junior akvizítor III_Región Juh (Bratislava)
+5e7584de-63c5-4e2c-b666-6e8c3a6b75a2	GG-MDK-REP-vendsupp		Vendor support
+5e8346ad-5d5c-4ef3-a742-e974fdb0ccd7	ciprusova	17701020	Ciprušová Zuzana
+5e9628d1-7cf9-4753-b878-b5888e34a752	BRC_ZRR_PO		ZRR_PO
+5ea85a75-cbbd-4092-b0ab-59391520bd26	GG-MDK-REP-uvery		Úvery
+5eb534d3-a1f1-46d0-a9f5-7f6a47a708ac	17706884	17706884	Klepanec Vladimír
+5ef4e38e-c9f6-4b98-a079-7f8f50afe24d	1779135ex	1779135	Prajz Jiří
+5f07d3bb-5447-4f3c-be54-9b980cbb7862	BR_414_37103		systémový administrátor III_IT prevádzka
+5f22fa53-37de-4338-bf4d-dd21a51522cb	17706509	17706509	Daňová Veronika
+5f3f7da1-d000-4738-b4e6-a830cf06434e	BR_308_24113		špecialista pre repredaj II_Správa aktív a repredaj
+5f40d8eb-dea1-4a19-b898-2cdafcfe738d	1779122xi	1779122	Virag Ladislav
+5f5dd456-b9d8-46e3-a971-0a95dbc7c9b2	1779114ex	1779114	Teplicky Peter
+5f8482a9-7cf0-410d-a502-0a29f217c87d	GG-SAP-FS_.Pokladna_.evidencia		FS: Pokladna: evidencia
+5fd5b7c4-294a-44ef-a901-a501d93593f9	BR_409_33104		špecialista pre refinancovanie_Controlling a reporting
+60bb8831-ab6d-40e3-8da0-77499802e5a6	BR_414_37120		ITSM špecialista_IT prevádzka
+60c20cf2-4638-40b2-8f01-501d7eab376d	GG-MDK-ERISK-bf		Booking File
+60d2d392-9093-4257-873d-e02367adb727	GG-CDBP-CDBPs#15		CDBPs-Operator.-.Agentura
+60d31f94-adc7-48e9-947d-f4e87b53db84	17709645	17709645	Zajac Jaroslav
+60d7e082-311a-45a4-95cc-236aa9262e07	BR_416_38108		projektový manažér III_Projektový manažment
+6101d40b-fa73-43aa-bcd0-7d0eaacca8ce	miklos	17706315	Mikloš Ján
+610c3fb9-f7fa-487b-9661-73013a9837e0	RP_docasna_1		RP_docasna_1
+612d2eb5-9abf-4c9f-9a2d-ed6a04a42f2b	GG-MDK-REP-riadvztah		Riadenie vzťahov so zákazníkom a podpora
+61414396-eef3-4fbd-9094-f6cdbeedb207	GG-SAP-FI_.ZSII_KDF_ZOBRAZENIE		FI: ZSII_KDF_ZOBRAZENIE
+6172a3b8-ba12-48b1-ab1c-3f26551d9681	GG-MDK-PLAN-administr		Administrátor
+61ab95ce-55eb-4bec-b014-251509b6cc86	BRC_zas_SAP		zástup SAP schvalovanie
+61b49534-d3bf-4d87-ae06-f722ec7b32fe	kocourek	17706296	Kocourek Juraj
+61c9f3ab-d274-4068-b53d-da5e8e32675f	BR_412_60200		dohoda o pracovnej činnosti_Finančné služby
+622dc439-e702-496c-b353-29eb4c3fe955	BR_305_13103		riaditeľ tímu Centrálne značky OUA_Centrálne značky OUA
+624a1357-e023-4b7a-bba6-f20cd9851fd5	GG-SAP-RVND.-platba.online.-doplnenie.opravneni..pre.uc..okruh.1		RVND -platba online -doplnenie opravneni  pre uc. okruh 1000 - special pre S.Kl.
+62b846d8-4930-4678-8b87-9f5deee0b4f1	1779162xi	1779162	Pavlák Peter
+62be59d9-7d78-402d-9fd9-67cb6ea0bade	BR_409_60000		dohoda o brigádnickej práci študen_Controlling a reporting
+62ca42e8-2965-47ec-8d09-c2384066c1a1	17701063	17701063	Janičina Andrej
+62e513b2-ec46-4378-9e7d-7640f652e533	17706447	17706447	Ďurinová Silvia
+62e6d05f-f176-48e5-bef6-6ac325fc3fb0	GG-MDK-REP-dsstr		Dunajská Streda
+62eacc2a-46e2-4562-be9c-ef357216d378	GG-DMS-Web.DMS		Web DMS
+62fab13a-3091-4362-96d5-e0b0e0356a25	17709607	17709607	Danová Miriama
+6308227f-ae7e-4c77-a935-8e833444f308	GG-SAP-MM_.Drzitel.rozpoctu		MM: Drzitel rozpoctu
+63329d5c-793a-4b94-9887-ac934f84118f	17706923	17706923	Varečková Ľuboslava
+634cbfb2-4592-4076-8edd-80a1de411e1a	17709617xi	17709617	Skopár Lukáš
+6399e8ee-35ad-4152-9059-eace2fe4a5fe	BR_280_21135		senior akvizítor II_Región Severozápad (Trnava)
+63b0afe5-faee-42e2-958d-e9baea9192b0	1779104ex	1779104	Sokol Matěj
+63d03342-541b-4093-8afc-fed4be20d218	murinova	17706057	Murínová Ivana
+63e3c012-52c6-4a3c-90e7-8f751dc5ff20	17709682	17709682	Ondrašeková Mária
+63fadf79-dbea-4275-bfa9-29837f77ae95	1779165ex	1779165	Lengyel Miroslav
+6407a24c-788d-4c08-b0ff-81b089ae1a2a	1779074ex	1779074	Moždženová Kristína
+645284a1-b37d-4b5f-af0d-63c019ebc1fc	BR_406_No		 Rights_Credit risk
+6470c4f6-852b-4787-89f8-c444a23a173e	17707143	17707143	Žiaková Zoja
+64796391-4823-4d98-af20-6c5cfc25f296	GG-DGT-DLM-saq		saq
+64b6adba-df63-4dcc-aaba-8fa3416615b5	1779156xi	1779156	Duľa Peter
+65133ed0-4a90-4fec-bb6f-2e830f095970	kristova	17702988	Kristová Martina
+65484413-78bb-41cb-a2f6-9ea0e7ad5f3e	GG-LEA-KFV		LEA: KFV
+655fae02-a3cc-40d3-9f43-8f32fd1fb0e6	GG-MDK-LCT-vlastnycom		Vlastný COM
+658160d5-6267-4a80-8f47-f6a003148eff	1779064xi	1779064	Minárik Matúš
+658ec0d0-c984-4ebe-9a25-2e7a847864dd	BR_302_45102		špecialista pre správu poistných v_Poistenie
+65ab46d2-88d3-4718-845c-ab3c027bd89c	17709989	17709989	Priškin Jaroslav
+65c10b6f-761c-4f70-9334-dcdc97ff1e7d	GG-SAP-Nahlady.na.DR_.ZS_.NS		Náhľady na DR, ZS, NS
+65d8e74a-2731-471e-9acd-7f2d07bbd749	GG-LEA-Archivar		LEA: Archivar
+65ecbb49-1246-4e05-9ad4-ec9e0eecaaa4	17706896	17706896	Schweigert Marek
+6664f18f-d900-4343-a07f-9510ee4e5cc6	GG-VEMA-Hlavni.vzdelavac		Hlavní vzdělávač
+669a3b83-e84e-4652-a043-ae00927164e5	hrivnakova	17701417	Hrivnáková Ľubomíra
+66c57835-2700-4fb2-baa3-6efcdc68afb8	GG-MDK-REP-marketing		Marketing a podpora obchodu
+66d52ad1-6008-4649-a45d-8f347b583926	BR_405_37134		Release MA-koordinátor procesov SW_IT rozvoj systémov
+66d6f340-ea4d-4042-8714-af8eb3b6e799	gejgusova	17706358	Gejgušová Simona
+66dca5af-a23f-46df-8bc6-dc54f19c75fb	GG-LEA-Provizie.automat		LEA: Provízie - automat
+66f3ca28-13b2-4982-a136-75c071cd52a0	podlucka	17701627	Podlucká Janette
+670ee0d2-a3f9-427f-b3cb-a4ba2ac251cc	dms_pravnesluzby		DMS - Právne služby
+67391b7f-c9a3-40c2-92c9-357b84e395cc	BR_550_13118		regionálny riaditeľ I_Región Sever
+675a6bfe-7409-434d-8e20-ed3b8c97876f	BR_520_13113		regionálny riaditeľ_Región Západ
+6762c86b-6d70-41bc-b61d-24011a9a7853	BR_203_60000		dohoda o brigádnickej práci študen_Korporátne financovanie
+676a2167-4d4d-44ee-a392-52f9bf7ae040	BR_401_28111		HR Business Partner_Ľudské zdroje
+677f3031-1d32-4a1f-b73d-e54e881d3b10	arbetova	17702407	Arbetová Marianna
+67c983d6-7464-4e34-8acc-7b4d6131cd60	marioth	17702514	Marioth Martina
+67cb46b5-552e-4163-a952-92a2f005e74d	BR_308_60200		dohoda o pracovnej činnosti_Správa aktív a repredaj
+67eb2bfb-2831-4f1d-b226-4f8acaf61b29	BR_260_21132		junior akvizítor II_Región Západ (Nitra)
+684de96c-0a83-457c-8420-587f76bc3930	17709686	17709686	Szomszéd Simon
+6864e7a1-79c7-4869-b916-9efdfc0fb0d0	BR_412_34102		špecialista platobného styku II_Finančné služby
+68730951-79ca-4f4d-8b09-1f620f9ea45b	eClient - Spracovateľ zmluvy		eClient - Spracovateľ zmluvy
+6890869d-2fcc-434d-8be2-a732b3143273	BR_301_30107		špecialista pre podporu predaja_Produktový vývoj a trhové riešenia
+6899fca5-ac50-4aa3-85a3-a38b79e1f706	1779006ex	1779006	Mikulčík Róbert
+68ad3ab9-6998-4172-8a0d-0328fe9c946a	GG-SAP-CO_.Manazment		CO: Manazment
+68e6b9f8-dad7-435b-98a5-a1f361aa7bf0	DGT		DGT - Plný R/W prístup do PROD
+69169cd6-1710-4762-9a03-7be8d2c27c0b	Riaditeľ pobočky MDK_Centrálne značky OUA		Riaditeľ pobočky MDK_Centrálne značky OUA
+69408cf7-6ca2-45be-8c81-762a01ef6101	GG-LEA-Ciselnik.Archivacia.tim		Ciselnik  Archivacia - tim
+6956c50a-b37c-4c90-ae8b-27ee77906f52	1779157xi	1779157	Bujňák Milan
+69789a1e-868b-45a2-ac12-2b213f00b98e	GG-SAP-FI_.Spravca.pohladavok		FI: Spravca pohladavok
+697a44ee-273f-4779-82bd-f563edbab313	1779108xi	1779108	Malík Peter
+698049b6-63a7-4c5f-b136-5d555d3f3a3d	BR_308_60100		dohoda o vykonaní práce_Správa aktív a repredaj
+69b12465-ef32-47fd-a70e-0a1e0d57897a	BRC_RiadPob_regvycpresov		riaditeľ pobočky MDK_Región Východ (Prešov)
+69b30c92-3c9b-423c-b4a1-ab35ac7a348f	GG-LEA-Reporting.services.Aut.upominanie.chybajuceSMS		Reporting_services_Aut.upominanie_chybajuceSMS
+69ceddc7-ca96-44a0-849e-27dd5c0c6888	1779100xi	1779100	Paššák Martin
+6a08ac8a-8f67-42b3-9f14-cb70c335101c	GG-SAP-MM_.Schvalovatel.ND		MM: Schvalovatel ND
+6a1e03a2-8d4a-4c97-8e54-b3dec0207be5	GG-LEA-Automat.KFV.PUK-operator		LEA: Automat KFV PUK-operator
+6a9eb2e3-e81a-4655-92a7-b28670d3e51e	GG-SAP-Technicka.rola.pre.extrakciu.dat		Technická rola pre extrakciu dát
+6aeaf9c1-43c2-4cd7-beb7-9122acca31d1	GG-SAP-GDPR.aktivity		GDPR aktivity
+6aeb0ef2-f6ad-4be3-8dde-923d12649265	1779073ex	1779073	Hečko Dušan
+6af59870-9320-4e37-92de-f6ab490c5bfa	17706839	17706839	Navarová Marianna
+6b2f94a4-d7c2-4c56-9ad1-e9c45b5bbd73	GG-MDK-REP-tnstr		Trenčín
+6b401bc7-f3f2-4fd0-b60a-4f2714e659bb	BR_260_60500		dohoda - trainee_Región Západ (Nitra)
+6b7adec9-66a0-465f-92a0-5fa1d182cbb6	GG-MDK-RISK-a		A
+6b9de278-930e-4035-9428-2b35273b0a5e	GG-MDK-ERISK-ip		Individuálne položky
+6bbbaea3-e8a5-49f5-99d0-957c12eb3386	GG-LEA-Fleet.superuser		LEA: Fleet - superuser
+6bdccb17-d320-405f-9ae0-291e818c0baa	BR_401_28112		špecialista pre vzdelávanie a rozv_Ľudské zdroje
+6bf69544-05db-42b8-a6fd-765d759013b0	BR_305_21123		Key Account Manager značkového lea_Centrálne značky OUA
+6c41378e-9765-4295-b01c-2ac35561faaf	BR_160_11111		Výkonný riaditeľ pre Informančné t_Informačné technológie a podpora
+6c429424-d9a4-4548-9357-2d3f224a5182	BR_405_37132		IT Architekt I_IT rozvoj systémov
+6c532c2c-2659-4c47-b09f-ec11181146e8	ramcove_zmluvy_archivator		Rámcové zmluvy NIA - Archivátor
+6c6dcf01-3155-4586-b691-f56c3fa1f39c	GG-LEA-Fleet.nadzmluvy		LEA: Fleet - nadzmluvy
+6c77c4d5-d067-4243-b76e-c2e8996fa25f	17707223	17707223	Lašák Mário
+6c8fa7b1-8dfd-46dd-be7b-d8f1f7a50e13	BRC_Výnimky_Compliance		Výnimky Compliance - compliance
+6cc1de2d-d1e4-4d44-9eea-a43fdbff3350	17701297	17701297	Mikudíková Andrea
+6cd83a17-d869-49df-920d-1343edef1a6a	17706895	17706895	Coganová Gabriela
+6ce8b83a-7539-45f2-bcfa-f98742e4ab6c	BR_414_37114		architekt IS_IT prevádzka
+6cf0bc11-9707-4fb0-8a00-e9cfe1725375	1779037xi	1779037	Oravec Andrej
+6d2a5e01-e804-4781-9c31-392427c63d04	ramcove_zmluvy_obchodnik		Rámcové zmluvy NIA - Obchodník
+6d2efbf6-b08b-4755-9c2c-cdc26b24c5b2	GG-SAP-Z_SOLMAN_READ		Z_SOLMAN_READ
+6d55cd66-8331-43c8-9e16-bdf41a8796e4	GG-MDK-admin		administrátor
+6d6c4faa-43dd-4fa6-9885-9d82b2cbce78	GG-LEA-Ciselnik.Leasing		LEA: Ciselnik Leasing
+6da263c4-f0a1-40a2-9b85-064fb9391f3d	BR_309_21116		Key Account Manager pre Vendor Support
+6dabc590-e493-40e9-a2cb-9c4cd0693d05	GG-DM-DMCOMAktivator		DMCOMAktivator
+6de9242d-5ffc-4495-82c4-d12b230d5fbd	vajgel	17701795	Vajgel Vladimír
+6e03011e-9d12-47f5-a430-9067643d2cad	17706635	17706635	Keményová Monika
+6e096608-9395-4a8c-94f3-d757b869149b	17706421	17706421	Neyová Ivana
+6e33106d-8322-4258-ae74-a1fe4a748a50	17709640	17709640	Murgaš Miroslav
+6e5919e3-da1f-4883-939a-9a298c47dced	17709694	17709694	Dzubay Zuzana
+6eae00fd-f329-4983-823b-0f9b2aaa63b1	1779115ex	1779115	Kejř Jan
+6ebce45d-85b1-4a73-831b-8f86ece6770c	GG-CDBP-JPP#OpPr		JPP-Operator.-.Prenajimatel
+6ecef7e2-afcd-4fb4-93e9-ad662550bba6	GG-LEA-Recepcia.ZL		LEA: Recepcia + ZL
+6ed9b86d-af95-4dc9-9327-c09639c66a70	GG-LEA-Ciselnik.vseobecne.nepe.naroky		Ciselnik vseobecne - nepenazne naroky R/W
+6ef45281-9f57-44a4-85b3-4c699fa04151	BR_296_60000		dohoda o brigádnickej práci študen_Externé distribučné siete
+6f418ddd-b33a-4f41-bbe8-be9f0ea638ea	BR_303_42103		Teamleader zákazníckeho servisu_Zákaznícky servis
+6f5d73f0-df99-4bc5-9dea-da8a4f0f68aa	1779080ex	1779080	Prčeková Silvia
+6f7ec7de-e994-4a90-b6f9-02db6d9e75a3	GG-MDK-REP-nitra		Nitra
+6f9bc605-b5e7-4af4-a72b-c25a823faefb	GG-DGT-DLM-backoffice		backoffice
+6f9d3e48-1a69-4dfd-9550-60f03edb1a4e	17709683	17709683	Piterková Klára
+6face1cd-906c-4df1-a068-bf31e9389e5b	dms_centralnynakupasluzby		DMS - Centrálny nákup a služby
+6fb82c40-c633-48be-ab72-e79f06912cab	SAP základ 		SAP základ 
+6fc3d5cf-066d-47f0-b617-a8f8029a1a81	aplikačný administrátor_IT prevádzka2		aplikačný administrátor_IT prevádzka2
+6fcfd189-9a9a-4c04-94af-eb9dfbc666dd	iris-ispel_manager		IRIS - ISPEL - Manager
+70045078-ee8e-4e2b-b2e6-4ff84fd388eb	eClient - FDS a PSA Dealer		eClient - FDS a PSA Dealer
+70266f20-5142-49c5-90b4-b6cec300f8ad	GG-SAP-ZPENTLAC		ZPENTLAC
+70347dc4-ca17-4041-9026-4a180905ed89	BR_301_48101		senior špecialista back office pro_Marketing a podpora obchodu
+7050ee2e-9c95-44bc-80b6-4392709bae25	17706000	17706000	Fáziková Dominika
+7066129b-bbc0-4fb9-8cf7-07cf6d0af067	17706502	17706502	Ebský Ladislav
+70723936-5d65-4fe4-b90a-833f3132e779	GG-LEA-Ziadosti.o.zmeny.schvalenie.zmeny.poplatku		LEA: Ziadosti o zmeny - schvalenie zmeny poplatku
+7084f3fc-cf95-4df6-9d09-c922d2a98383	BR_412_34106		špecialista platobného styku a pla_Finančné služby
+7086efea-c9ce-4150-88ca-412487014b02	17706717	17706717	Mäsiar Miloš
+70bd74c7-db3f-46ce-b769-9d8c7bf464d1	GG-LEA-Reporting.zostavy.poist.tried		LEA: Reporting_zostavy_poist_tried
+70d01ef8-215a-4767-abf9-1374a6d2d754	GG-MDK-LCT-SCHVAL-Roc		Výnimky - ROC
+70d5d79b-3619-421f-b466-9ef1e9911099	BRC_SAP_drzitel_rozpoctu_UaD		Prístup_SAP: držiteľ rozpočtu_ÚaD
+7108ded9-03b0-41cc-bdfc-8ce27c99cc53	17706756	17706756	Falťanová Michaela
+712adc59-c6e3-4341-826c-b03c52c61d1f	17709621xi	17709621	Minh Hai
+71488959-0d1b-449b-af51-73fd9864a6bf	17707236	17707236	Michaliková Ruth
+71602714-2d72-4183-9d0a-cad4f57d7e13	BR_230_21136		senior akvizítor III_Región Stred (Banská Bystrica)
+7183fd5e-4854-4395-95c9-dc92c0ba0500	BR_203_21109		relationship Manager pre korporátn_Korporátne financovanie
+7185071f-6da2-460d-8262-e7805754408c	verebes_admin	17701328	Verebeš Patrik
+7187e971-de0f-4e19-866b-2d31ba12ae7f	17701044	17701044	Haydenová Marcela
+71ccaf51-7dc8-4f2a-bfb6-f6573e6d5a98	BR_315_23126		špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov
+71ccbebd-7cee-4ed5-90a7-80bf4c38aa08	GG-MDK-LCT-ja		JA
+72083dbb-0711-4256-8dc8-40c6a76f6d73	GG-MDK-LCT-SCHVAL-Msv		Výnimky - Msv
+7213960b-a0a6-40cd-a1f9-048ee5e26b61	GG-MDK-NIA-Obchodnik		_RamcoveZmluvy_Obchodnik
+721f1eb9-986f-4ce4-bf67-9581bc305680	17709616	17709616	Séleš Róbert
+728a9bd5-c7a8-4505-b5d7-a9dbee2b942d	szilinszky	17706344	Szilinszky Anita
+7299cfad-b5c1-4d1a-94fc-5eb33d295d91	GG-MDK-REP-presov		Prešov
+72c0e153-44d1-44c9-b55a-7b69c78c2287	GG-SAP-FS_.Specialista.platobneho.styku_.platby		FS: Specialista platobneho styku: platby
+72d197b6-661d-41fe-8098-21e9399716bf	BR_280_21137		Key Account Manager I_Región Severozápad (Trnava)
+72f193a5-996e-4a63-aaa5-0f70d92c3da1	BR_414_60000		dohoda o brigádnickej práci študen_IT prevádzka
+72fcb1b8-9703-4264-b6e9-95dcb89b4fff	GG-MDK-REP-olfs		OLFS
+735c32c4-73a4-4704-bb58-384397b2e768	GG-MDK-LCT-novezamky		Nové Zámky
+73a7ed1b-8b26-401f-9a11-a7d9d6e5f442	1779160xi	1779160	Kyseľ Peter
+73ac46a0-351d-4e0b-9db1-03fdcca128a4	17706410xi	17706410	Šrámek Tomáš
+7400dd3b-f66c-4ceb-82c2-a064cab96768	BR_302_45101		špecialista pre poistné udalosti_Poistenie
+7438e86b-a48f-40cc-8a50-91dbdc6111fc	ZBC_ENDUSER		ZBC_ENDUSER
+7479e6ff-29dd-4313-9774-79bdbf069ad8	1779109xi	1779109	Valocký Frederik
+7494ce48-99fd-4622-88a8-152f14589bf8	cizmarikova	17702550	Čižmáriková Iveta
+74988946-835d-4fc2-9bf9-1d87e8619558	GG-LEA-Brigadnik.pobocka		LEA: Brigadnik_pobocka
+74a0d8e0-252a-4c00-8779-966426b5db89	BR_250_21136		senior akvizítor III_Región Východ (Prešov)
+74c926e4-e403-4552-b25d-92bbfff2bf81	Webportal		Webportál - zam. prístup
+74cbd597-c6e8-4615-8a9d-90400b40e831	17706476	17706476	Tkáčová Kristína
+74cc4895-e623-429c-af48-f93c29b760e5	1779107ex	1779107	Hudák Martin
+74eb13ca-6eb2-4ae4-9096-9f1510d3d753	17709615xi	17709615	Biščo Michal
+7508e68d-e374-4ccd-8cd2-0e53c7b78e86	GG-MDK-LCT-trnava		Trnava
+753f610f-4efa-47ab-8143-0cb43a34dd5a	GG-MDK-LCT-cis-dealer		cis-dealer
+75672a72-6a20-47c7-b9ed-d9103141596d	BR_307_11112		Generálny riaditeľ ČSOB Leasing po_Poisťovací maklér
+75942106-8cc8-4a47-9852-d038e3c30208	BR_313_319		Manažér tímu Technická podpora a slu_Technická podpora a služby operatívneho leasingu
+75974dd1-05a6-4f46-9a22-c286a6f3788b	1779028xi	1779028	Bučkuliak Samuel 
+75976778-9877-4d72-8f11-9386d2be35ee	17702103	17702103	Kuchárová Mária
+762ed5ce-132c-492b-bdd4-3ffaf1e651fb	GG-CDBP-JPP#Adm		JPP-Administrator
+764caba0-2565-4738-9ea7-41bad4f1c9b1	GG-MDK-REP-kosice		Košice
+7695214b-0f6a-4ee8-ade5-0a07d8266847	BR_407_40102		špecialista správy pohľadávok III_Riadenie portfólia
+769c3cfe-f8b5-48dc-9c85-9b4ce700312b	1779138xi	1779138	Muller Adam
+771d0b11-6a21-4509-966d-a42dd44301fc	BR_415_32102		Business analytik produktov a proc_Procesné riadenie a business architektúra
+772b734d-666c-4b06-ade5-d4c654895fa9	17706942	17706942	Kučerová Zuzana
+773c2ab7-dac0-4daa-8b03-5c9d8986607e	1779172xi	1779172	Knap Miroslav
+77a7ccff-199e-438d-85b1-f644efe904a1	lukacka_admin	1779115	Lukacka Branislav
+77c9c5c8-8b92-4c6f-9957-fbd5263ab60b	1779164ex	1779164	Kvačkaj Michal
+77f0f76c-c6ed-49aa-9c03-b8e4748baf8d	17706563	17706563	Andrejkovič Andrej
+77f3f67b-34cd-4783-93f9-a216ec384cda	1779071ex	1779071	Matajz Eduard
+78497c5d-44fd-455c-9a5a-67aad0644be9	BR_304_12133		manažér tímu Centrálne spracovanie_Centrálne spracovanie zmlúv
+785a1af6-a1de-439a-ba8b-44ac03d2ce42	1779018xi	1779018	Puskas Szabolcs
+78972f27-c217-4663-b32f-c2b12038e2fb	BR_200_21111		senior akvizítor_Región Juh (Bratislava)
+7899bc72-b4ee-4da5-a1d6-f7aba02f4f78	17706431	17706431	Hancko Kristína
+78dbd4ba-9725-40b5-9828-cf0fc3f41cf4	17706218	17706218	Kučerová Mária
+78e7598d-ec7d-4b38-a5f1-1e9abcb038d6	1779157ex	1779157	Bujňák Milan
+792d539c-783b-415a-bbce-88f983398801	1779121xi	1779121	Donoval Martin
+793b8acf-7e10-41fb-96b6-5a9b88186948	BR_308_24108		špecialista pre repredaj_Správa aktív a repredaj
+794e1869-f852-4ab8-a035-e3378807d482	skablova	17701008	Škablová Erika
+79ada918-2c21-431d-8373-cd0aa1eba6e7	GG-LEA-LEA_.Management.spol		LEA: Management spol
+79ceace2-9603-41de-83b2-81a5441d78e6	GG-MDK-LCT-SCHVAL-Rezerva.Zh		Výnimky - Rezerva.Zh
+79e1614c-de7a-4ecc-9708-0ef86bdfc053	17709620xi	17709620	Lenart Alexander
+7a0fdf74-b912-47a4-ba14-ec630761873e	BR_203_21139		Key Account Manager pre korporátnu_Korporátne financovanie
+7a42ef15-f31f-4f80-923b-76405d82d881	obrocnik	17701120	Obročník Ľubomír
+7a44825b-ab20-4dc2-b2c7-36ddc33cca3d	GG-LEA-Sprava.LZ.Spravca		LEA: Sprava LZ - Spravca
+7a9d565e-b3ef-4127-b858-b9a49a095cb5	GG-MDK-REP-pdfnaklur		PDF nákladový úrok
+7ab5079b-4ffd-4187-a587-ab240406014d	17702595	17702595	Boguská Tatiana
+7ab5a239-12a3-42ca-9043-d91af7ac0592	GG-MDK-administrator		Administrátor
+7af40ac8-5223-4f84-a18b-54b59776ee89	BR_315_23121		senior špecialista spracovania zml_Centrálne spracovanie a kontrola obchodných prípadov
+7b0f8839-4cb3-4542-9541-3b249acc93f9	17706745xi	17706745	Kytošová Klaudia
+7b35decc-13b0-4cc9-ba65-4cf9a575f3b5	1779170xi	1779170	Kováč Ľudovít
+7b6cdcfd-792c-4c14-8aeb-b5ed0669d028	GG-MDK-REP-vendsupstr		Vendor support
+7b6f9f5f-95dc-46a3-92eb-6fd28c43461b	BR_Administrators		Administrators
+7b81a58a-c166-44cd-87a9-42e774956a2c	BR_301_No EB		 Rights_
+7b973cf7-aa46-4a03-aff8-abec26c3070e	GG-MDK-REP-opleasing		Služby operatívneho leasingu
+7ba24415-9b15-4551-b690-967c3a3ef3dc	BR_220_21111		senior akvizítor_Región Sever (Žilina)
+7ba41580-b37c-477c-bdd3-0689ed0bb468	GG-DM-ICT		ICT
+7bd6894a-f59b-45bf-beee-a5647b2f75d4	GG-MDK-RISK-kbc		KBC
+7c021b58-64cc-496d-9f6d-4cf73c4029da	1779015xi	1779015	Pollák Roman
+7c0a5c6b-ad6c-4d16-aff8-ebc97c16f3f1	BR_202_21103		obchodník akvizítor Full service_OLFS
+7c0cf459-2a46-4ba2-a3f7-d93772ed151c	BR_315_23122		špecialista spracovania zmlúv OP C_Centrálne spracovanie a kontrola obchodných prípadov
+7c2d6ac0-db71-4028-9767-1d923cb840a4	17707209	17707209	Mihályiová Daniella
+7c405b47-9ca2-45a5-baec-c28da1d7aa1c	GG-LEA-Exporty.INIS		LEA: Exporty INIS
+7c4d6911-4811-4600-8e7a-12355d3be662	klonga	17709996	Klonga Vladimir
+7c56cb44-5575-4513-98f2-ca288a164885	BR_405_37128		špecialista testovania informačnýc_IT rozvoj systémov
+7c6b629b-388e-460c-83e8-06d42ef16086	BR_405_No EB		 Rights_IT rozvoj systémov
+7c6dac02-bede-482c-889d-af0e48f9932e	17706746	17706746	Surovčíková Renáta
+7d67bdf4-212e-41ce-91e6-8663fe951788	GG-LEA-Fleet.prehlad.V.N		LEA: Fleet - prehlad V-N
+7dc86f6b-4cf6-42b1-a0de-86be90f48513	vanko	17706306	Vanko Jozef
+7dd8548e-2e07-4bbc-bd62-4834557f0daa	GG-MDK-LCT-fdscom		FDS COM
+7e23dccd-e8cf-4074-a417-94a6f0f90b19	BR_admin_MDK_2		administrátor_MDK_2
+7e56e5f9-9af6-4469-a7e6-0b50adb24400	miksik	17702027	Mikšík Ján
+7e863433-4e91-4243-af77-17b8a0f99f5b	GG-ADA-Administrator		Administrator ADA
+7e9c70cf-89ae-4c5b-a949-d4befff167b0	GG-CDBP-JPP#EsAdm		JPP-ESS.Administrator
+7ece6911-095d-438f-aca6-ce9ee88b87fd	msandor_admin	1779035	Šandor Marián
+7edd0bab-b559-4bb6-ad9a-8a083b8535ce	17702422	17702422	Maczeáková Ivana
+7f0316f9-6475-4510-b502-5d4f63e6d77e	BR_270_21121		junior akvizítor II_Región Stred (Poprad)
+7f03f6a8-5278-4175-821b-6ea8da26ad76	leczo	17701775	Leczo Viktor
+7f15563f-8d03-4a03-bf27-d04e64ac29c3	GG-LEA-Ciselnik.vseobecne.typy.chyb.eklient.RW		Ciselnik vseobecne - typy chyb eklient R/W
+7f71305c-2461-4c43-8420-e8495cca0e07	GG-MDK-REP-ppstr		Poprad
+7f73882f-f95b-4069-a740-602bc63bbf63	GG-MDK-REP-finriad		Finančné riadenie a podpora
+7f78a344-4872-4484-ad62-2ab5dfb927df	BR_230_21121		junior akvizítor II_Región Stred (Banská Bystr.)
+7f8816f2-e53e-41ea-a980-874e08205ed1	BR_414_37116		databázový administrátor_IT prevádzka
+7f9973b8-07fe-4a90-814e-7f5c7f5c1290	17709693	17709693	Jurkovič Daniel
+7fb2b853-24f0-4498-9534-4e10589723c4	x-MIM.Install		MIM Install
+7fb8e242-3b87-4008-880d-84eac3e42d7e	17707173xi	17707173	Pramuka Tomáš
+7fd5d624-a6d0-4324-b887-b9f288cb18fe	17709620	17709620	Lenart Alexander
+7fde899d-b8c0-4bdf-a29c-2b1cb650116a	17706474	17706474	Czetö Tomáš
+7fec3b18-1ded-414d-9688-f892fcff6c14	GG-MDK-LCT-cis-dealer-read		cis-dealer-read
+8049b545-7dcb-4270-886b-5cbc8737a5bb	BR_260_21111		senior akvizítor_Región Západ (Nitra)
+80bec800-2df4-4f21-92bd-1054f6512928	17706943	17706943	Rusnák Sebastián
+80bf5afd-62fe-4f1a-95d5-51ebf2ee258f	17707218	17707218	Beňová Veronika
+80c12658-dd73-4839-a224-0c7c7c7bb7e8	GG-DM-Uctovnictvo.a.dane		Účtovníctvo a dane
+80c2488c-ef30-4f05-bab1-9bd5ed45462b	GG-LEA-Fleet.fakturacia		LEA: Fleet - fakturacia
+80c72e6e-fdb0-49a6-8a77-35ef0c6bfb65	GG-LEA-Ciselnik.Predmety.Znacka		Ciselnik_Predmety_Znacka
+80e34b7f-fe8b-4b74-83b1-164c5a69ed9b	GG-MDK-REP-contrrep		Controlling and reporting
+8115c74c-6065-456e-b2a4-100fd230f0cb	GG-MDK-RISK-verifikuj		Verifikuje schvaľovanie
+8162a5bf-37a4-4df0-9265-3e9558b1eee3	1779112xi	1779112	Hubert Jakub
+818025f6-1bcb-4ce6-999d-6b07325fce8c	17707270	17707270	Gécová Diana
+81ac2d01-2f55-42ae-a852-5a46af2402b9	BR_senior spec tim Centralne spracovanie zmluv_2		senior špecialista tímu Centrálne spracovanie zmlúv 2
+81ba09a7-65bc-49a1-8af7-c6cb6f4b7789	hajro_admin	1779075	Hajro Lukáš
+81de046e-acc4-4c43-978f-b0d97d1f7bcb	GG-SAP-FI_.ZSII_ADMIN		FI: ZSII_ADMIN
+820b2677-0005-4afa-b016-f29c4f2710ee	GG-LEA-FDS.sprava		LEA: FDS admin práva
+82158fce-a361-47a5-b6e6-c609431f99ab	1779138ex	1779138	Muller Adam
+821b0176-f70f-4d9c-919c-d20a0db24652	bagiova	17701791	Bagiová Zuzana
+82a4e209-663a-4623-bd44-54f9e935b1ae	GG-LEA-GDPRm.nahlad		GDPRm nahlad
+82a61e72-2805-4862-8666-26a627bafc09	BR_302_31109		garant pre poistenie_Poistenie
+82acb912-0af6-4986-be2c-46821ff68dda	BRC_Team_leader_Poistenie		BRC_Team_leader_Poistenie
+82b7608b-f826-418b-b3eb-c92c1c065be5	GG-MDK-REP-extds		Externé distribučné siete
+82e8784c-b60b-4d4f-a597-a1b672eb1001	skripska	17702308	Skřipská Silvia
+82f5e4ee-9abe-4ae8-908f-8e2ca12ef2d1	17707069	17707069	Adamcová Natália
+831441b9-8dc9-4702-9883-c915a11d64ec	BR_280_21112		junior akvizítor_Región Severozápad (Trnava)
+83261ea5-aba9-4ccf-acb2-3a9bf5f0c08d	GG-DMS-CZoua		Centrálne značky OUA
+83590817-7808-4f79-9314-1334ff762ff2	BR_408_12126		manažér tímu Účtovníctvo a dane_Účtovníctvo a dane
+8361f711-f379-48b3-8055-bb6b63bd9597	GG-SAP-ZMM_MMPV_SPECIFIC		ZMM_MMPV_SPECIFIC
+83b33e06-539a-4559-b3c5-8a2c6af2eedf	GG-MDK-RISK-3		3
+83ef3183-7e90-4e8d-b926-6848b5b3ae6b	GG-CDBP-CDBPs#6		CDBPs-Operator.-.Risk
+842123d2-5404-4d9e-86ff-050f1222ad5a	GG-AG-Administrator		Administrátor
+8428ec01-ed45-4570-81f0-039fbed9aceb	17706997	17706997	Šamaj Marcel
+8495445d-9882-4025-945c-76a124cc5082	GG-MDK-REP-poistenie		Poistenie
+84ab8726-669a-4f98-b76c-25c0f54847db	GG-MDK-DUX-administra		Administrátor
+84ad8452-b222-4048-8ff2-8a274c55f843	GG-SAP-MM_.Nakup		MM: Nakup
+84d91c9b-3b95-4518-8d4c-f04aedff3a74	1779108ex	1779108	Malík Peter
+851b06e2-bd54-4969-8f91-5a49c30a7b87	GG-MDK-LCT-backoffice		Backoffice
+853b6d91-956b-4616-9761-5a480a6dda1e	17706900	17706900	Krššák Peter
+85452c5d-b7e3-4d69-9478-41e93004e63c	BRC_RiadPob_regstrbanbystrica		riaditeľ pobočky MDK_Región Stred (Banská Bystr.)
+858ed4bb-a968-4e54-aad5-8e5505942601	17706625	17706625	Hlucháň David
+8596cd45-7725-434a-9519-56e6ee8b442a	GG-MDK-LCT-poistne		Poistné
+85a599a3-ef02-43bc-86e8-23f11ebcb06b	simkovic	17702424	Šimkovic Peter
+85c26396-2deb-4189-aa36-c9b7f9f4d0d3	17706461xi	17706461	Kapcala Jakub
+85d72636-47b3-4c10-9ff6-6ba40d491d96	1779170ex	1779170	Kováč Ľudovít
+85df3450-1472-41d4-a334-37d2922d1c2e	BR_209_60000		dohoda o brigádnickej práci študen_Región Západ (Nové Zámky)
+85f39261-824c-430e-8663-78e086a5d78c	herceg_admin	1779093	Herceg Jozef
+866ad642-a28f-4888-a824-96f0b6665a5e	GG-MDK-DUX-cssenior		Centrálne spracovanie-Senior
+869eaf96-3fb2-493d-8ff6-595f0810132f	17707131	17707131	Begániová Lucia
+87001445-1651-4e3c-a166-b3f9ec85f124	17709619	17709619	Vanya Adam
+870bd884-50ab-4616-837c-4b0f1089af82	GG-MDK-LCT-korporat		Korporátne obchody
+870d0a1f-0e71-48c1-93c3-29f57dab3a7a	1779101xi	1779101	Novakovský Jakub
+871c9cfc-69c0-46a7-b3ed-3a782bdfd12a	GG-SAP-Transakcie.ME2L_.ME2M_.ME2N_.ME2C_ME2K.zobrazit		Transakcie ME2L, ME2M, ME2N, ME2C,ME2K zobrazit
+8721b93b-9d5b-4396-8c60-8b407b8e60ae	BR_220_21134		senior akvizítor I_Región Sever (Žilina)
+87405689-bc28-409d-81f0-3c3639bdf740	GG-CDBP-CDBPs#8		CDBPs-Operator.kontrolor
+87470586-8cff-4070-b760-8123e486154b	17706570	17706570	Šabíková Klára
+87488a98-6431-4b3b-adb4-e00fd106be47	17709654	17709654	Buhaj David
+875dc139-78c9-4e2b-a4b6-10958c206f8a	BR_302_31108		špecialista pre poistenie III_Poistenie
+87687abe-7be4-4dc6-b78d-7067344c2f16	LEA#DMS#Rola#10		Centrálny spracovateľ
+8770bdc9-97a0-4c75-b3c7-0a759395cc66	1779154xi	1779154	Chlapečka Marián
+877eb092-68a8-47da-a6ad-a3f091aa8472	BR_210_60200		dohoda o pracovnej činnosti_Región Severozápad (Trenčín)
+87810fde-8ba8-47cc-9bf6-e16f4c3fae4d	17707234	17707234	Rompfová Vivien
+87bd3ba1-fd69-4a96-8461-dd65d77a335f	1779088xi	1779088	Slíž Radovan
+87c155a4-3e70-4a03-b6d5-001621facb20	1779111xi	1779111	Pavlíková Tatiana
+87d79bf9-a8c8-422b-8c1e-47a0649979ef	BR_301_30104		špecialista marketingových kampaní_Marketing a podpora obchodu
+87e05382-0e71-4543-8f1d-9b122f8c1b79	1779161ex	1779161	Rozman Filip
+87f7c6d9-896d-46d9-aa28-fbe63eb913ff	BR_406_60000		dohoda o brigádnickej práci študen_Credit risk
+886453f7-850b-4fee-854f-b40ec8557de5	BR_301_29107		konzultant pre firemnú stratégiu a_Produktový vývoj a trhové riešenia
+88b84efa-f253-42e5-a38d-f9da0fedd601	17707173	17707173	Pramuka Tomáš
+88c5d243-d815-4a5e-9f1c-c5927902a320	17707059	17707059	Kolembus Ľubomír
+88d57bc0-028b-44d1-8c66-a3aa03371393	1779014xi	1779014	Slížik Miloslav
+892d7506-a0eb-42a9-a14f-87e68135f623	BR_404_27103		špecialista kontroly_Riadenie operačného rizika a Compliance
+893c85ac-84e0-4b3f-a033-dc0769f86be5	pavlo_admin	1779109	Pavlo Jakub
+896525fb-d8ff-4f5f-a68c-5e0303ea6140	majtanova	17702274	Majtánová Andrea
+897ab297-030c-4ff9-8ada-c988fc2a6ee4	hocman	17701053	Hocman Martin
+89ba8140-1a0c-4729-a09e-f475edc36641	aplikačný administrátor_IT_prevádzka		aplikačný administrátor_IT_prevádzka
+89cfb1e0-34e8-4c97-b174-d059355677a9	GG-MDK-REP-pm		PM
+89ee11b9-c8d2-4c08-8f6c-248571c76fe3	dms_zakaznickyservis		DMS - Zákaznícky servis
+8a048153-2c43-4813-bbd5-08ba7d5faf5d	GG-LEA-Fleet.rocne.zuctovanie		LEA: Fleet - rocne zuctovanie
+8a3a024b-2472-40a3-b68e-a99c3e10b099	BRC_BL_OLFS_1		BL_OLFS_1
+8a4b277c-c0c9-42c4-9558-86578b7aee77	GG-CDBP-JPP#OpAg		JPP-Operator.-.Agentura
+8a4de41a-b05b-41b6-9fc1-16a7f8f6f6b9	BR_209_21138		Key Account Manager II_Región Západ (Nové Zámky)
+8a68d4e6-a6ff-424c-a9b9-2da0c8f069d9	17709676	17709676	Šrámek Filip
+8a72ccf0-0e16-4bef-8fe1-88e6862c1319	adzima	17701688	Adzima Marián
+8a738332-af9f-4889-a0fc-64e537d0af19	1779040ex	1779040	Minárčiná Ivana
+8a8c9f7d-12fb-4385-879c-0559e6dd42d6	pucatova	17701139	Púčaťová Darina
+8b25fdb0-ff15-404e-8fc9-e5ae31dd56d1	BR_316_50101		dizajnér produktov, procesov a pou_
+8b289066-6e65-4a1c-b177-f5fb4a270ab8	BR_150_50200		Firemný expert pre back office pro_Firemná expertíza a podpora pre back office procesy
+8b42a6f4-7d21-4db8-a297-f0f1d96fc8c2	17709664	17709664	Mihál Vladimír
+8b5062f3-6ff4-4e28-bdca-ea603d85a76c	17707258	17707258	Brandobur Eduard Viliam
+8b5c4f9c-5c6d-4452-825c-ec0d98fc57f6	vani	17701185	Váni Jarolím
+8b7b6c8a-9623-4970-bad2-0201aa3c57b3	GG-MDK-DMCOM-car		Controlling a reporting
+8bdd0345-0254-4a4a-83ad-7981c09380f9	1779133xi	1779133	Salaj Pavol
+8c0b22bb-ff5a-4300-a953-52542a9fe146	BR_250_60000		dohoda o brigádnickej práci študen_Región Východ (Prešov)
+8c118e1e-310a-4282-9465-4af6d65ff05b	GG-WP-Administrator.GS		Administrátor GS
+8c3b4469-fd7b-4270-800a-05522036f025	17706507	17706507	Svetíková Žaneta
+8c5d6347-1c1d-4c07-ad08-eb978536d084	GG-SAP-TESTER_SAP		TESTER_SAP
+8c5e1ae3-1c8c-40b2-b535-74141a96779a	BR_313_24107		špecialista fakturácie_Technická podpora a služby operatívneho leasingu
+8c600542-dfc0-438d-8dcf-15b333c50aad	17707279	17707279	Podmanický Tomáš
+8c6d547e-0b0d-4c21-bb91-94d523dc570b	GG-MDK-LCT-nitra		Nitra
+8c7e5469-46b9-42b3-b370-fe1c1217755a	belosicova	17702591	Belošicová Silvia
+8c813021-efdd-4927-b18c-38b72da4ec4f	BRC_Výnimky_Akceptacna_jednotka_SR_csob		Výnimky Akceptacna jednotka SR csob - akceptacna_jednotka_SR
+8c917e98-ee29-4ade-90a2-63128d91a431	GG-LEA-Reporting.Fleet.reportTesco		Reporting_Fleet_reportTesco
+8ca0370d-353d-41fd-aee9-b7f5193ac9c2	BR_200_60000		dohoda o brigádnickej práci študen_Región Juh (Bratislava)
+8ccc2eec-e992-46f9-a596-59af02891609	BR_570_13120		Riaditeľ tímu Systémoví dodávateli_Systémoví dodávatelia a správa aktív a repredaj
+8cdb573a-702f-47df-be35-237a260ab24d	17709680	17709680	Gális Alexander
+8d0630a7-7f62-4aee-b2b1-a679c6f3952d	GG-SAP-FI_.ZSII_UCTOVNIK		FI: ZSII_UCTOVNIK
+8d3991a9-c7ee-472b-9a17-09f3e8ccce8a	BRC_Brigádnik_OPPR		Brigádnik_OPPR
+8d5bccf2-a008-47e1-8ad4-54d7ac5a543e	GG-LEA-Controlling		LEA: Controlling
+8d6ac92f-03c1-4b95-8fd6-f73af428ee43	BR_407_48101		senior špecialista back-office pro_Riadenie portfólia
+8d72a033-4911-4d98-8c9c-35f364b2fc08	17707217	17707217	Štutika Michal
+8d77e3a8-011b-452a-886d-b4c62e2740d9	1779067ex	1779067	Buhaj Dávid
+8df3713b-8373-469c-bc45-7d16c17e830e	1779147ex	1779147	Sochor František
+8df620e5-dd72-416c-8d2a-cd95e8fc7f60	GG-MDK-LCT-obchodnici		Obchodníci
+8e5460e3-36e8-4fee-9d50-10cad7ed249a	lbalazova	17702421	Balážová Lucia
+8e6ec832-107c-4738-b314-82d6dea575f8	1779011xi	1779011	Holubov Andrii
+8e6f9e5e-8511-46f4-9b47-fa7e76554887	17706466xi	17706466	Mihalík Miroslav
+8e9bfcef-bc06-407d-8e5a-bdb49ad44196	BRC_301_30107_BLG		špecialista pre podporu predaja_Produktový vývoj a trhové riešenia_BLG
+8eb06d4f-3ac9-4c00-bfde-e334796e187d	17707227	17707227	Hrvol Juraj
+8ed51cbb-e6ff-4d17-be9c-ca263ebf71c9	palenik	17702394	Páleník Vratislav
+8eee9759-0206-4d67-92d8-49abdc7eba53	BR_530_13119		regionálny riaditeľ II_Región Východ
+8f15bd31-1eca-4025-ae96-56ea8dfe495a	1779162ex	1779162	Pavlák Peter
+8f1f4d40-4409-4e1e-907c-09312c71adc3	17706520	17706743	Nosálová Michaela
+8f32bcda-a25d-48b3-975e-2b8f8b765252	BR_408_33101		účtovník II_Účtovníctvo a dane
+8f6b0d25-7293-435e-be23-4f59526e8ebd	1779132xi	1779132	Špička Andrej
+8f85558b-d760-44cf-930e-02996c5764ec	17706603	17706603	Vašíček Viktor
+8f88812d-e21c-41b6-a6e6-b17447487731	GG-LEA-Poistne.vykazy		LEA: Poistne vykazy
+8f8ef533-2c5a-4954-b039-c6c8f349e52d	BR_315_23120		Senior špecialista pre riadenie pr_Centrálne spracovanie a kontrola obchodných prípadov
+8face53f-7659-4b6d-a947-61ca16db4d5f	GG-MDK-LCT-individpoi		Individuálne poistenie
+8fd6a664-b30a-4a41-b0dc-cfdc95b1a3f0	BR_230_60000_JAQ		dohoda o brigádnickej práci študen_Región Stred (Banská Bystr.)_JAQ
+8fe257e6-63d9-40a8-b963-0a401e7193d1	1779169ex	1779169	Kotman Boris
+8ffb556c-4960-434e-8b3e-b6a4546b7340	17706436	17706436	Tkáčiková Daniela
+9029d7af-8cec-4db9-a4fe-0be5cceef387	17706481	17706481	Usačevová Lenka
+90696503-b5f6-4126-83fd-9f7ffdba2938	jslobodova	17706332	Slobodová Jozefína
+907f3257-5fdd-4763-a88b-f84786ca9f0f	17706885	17706885	Holečka Samuel
+90d0b967-4f53-45e3-a7d9-8dcf6709085a	17707178	17707178	Hulák Peter
+90d9af76-1ef3-4770-8578-3301fb5caf9c	BR_301_30103		marketingový špecialista pre komun_Marketing a podpora obchodu
+90f2b77e-11b6-4e67-9e63-0d498c547f50	GG-SAP-FI_.Spravca.BP		FI: Spravca BP
+90f5036c-aad5-4e1b-8524-096aef3385a5	BRC_EDS_RPS		EDS-RPS
+9125a408-d7ee-4dbb-81dc-501ecee8a090	17706481xi	17706481	Usačevová Lenka
+912a0748-357c-4ed9-8e49-7b0c5ab287d9	GG- MDK-NIA-Authenticated.Users		Authenticated Users
+91334bc3-1cab-4284-81b3-e2f36af7c7e5	17707199	17707199	Bírešová Alexandra Valéria
+91652ff5-4048-44e4-b0a6-63bae314f44c	GG-MDK-REP-olfsstr		OLFS
+91673791-339a-454e-abf8-c30a137d0040	GG-SAP-FI_.Spravca.OP		FI: Spravca OP
+917c5b86-3fec-44b6-9d85-ed73ce3b1058	BR_250_21111		senior akvizítor_Región Východ (Prešov)
+919a7070-9fb5-41c8-b9c9-d18826810233	brodniansky	17702498	Brodniansky Alexander
+91b163dc-13c8-4ff6-936b-e51b3b2c688d	BR_414_37127		architekt infraštruktúry_IT prevádzka
+91c17a3a-f95e-44d9-86f3-ca1cfdbde802	BR_303_43101		recepčná_Zákaznícky servis
+91c573a1-d291-44d1-b1f9-8d50f3bf3af9	GG-MDK-REP-autoprev		Autoprevádzka
+91cd6d0d-00a0-4b11-8ae5-0c375f265d9d	1779139ex	1779139	Németh Zoltán
+9206be8f-39cd-4e41-89c3-4b12bfa0aabe	17702497	17702497	Kurčová Ivana
+9209fa88-6003-47b1-aace-4f9ef9422bb1	konakovsky_admin	17702942	Koňakovský Martin
+9211175a-8092-489e-8e61-4e03e750847c	GG-LEA-Fleet.dane.z.MV		LEA: Fleet - dane z MV
+9213e993-b286-4c65-a337-20c8407a3069	GG-LEA-Fleet.majetok		LEA: Fleet - majetok
+92268ea7-f5f7-4239-b025-73a16cf7e1cc	BR_240_21135		senior akvizítor II_Región Východ (Košice)
+9238cd38-a8b5-4b88-96b1-97d3bdd3a8ff	GG-AG-Zamestananec.LS		Zamestananec LS
+92778e4c-b96c-4ee6-ab50-fbb0aa58995c	17707146	17707146	Lengel Daniel
+92a3979b-cac2-4daf-bff7-9334fd3b3b3f	GG-LEA-Ziadosti.o.zmenu.technicke.zhodnotenie		LEA: Ziadosti o zmenu - technicke zhodnotenie
+92a4fb74-42c7-490c-8129-6a86337d4d90	BRC_308_24112_zastup		špecialista pre repredaj I_Správa aktív a repredaj_zastupovanie
+92d95bdf-244d-46ac-875e-c4528fb3aa2a	adamiova	17701001	Adámiová Miroslava
+92f45933-ae62-410c-a4e3-0bacdb397e7a	GG-MDK-ZRR-Zapad		Zástup RR
+93049c7e-7d81-44c8-9605-368a7b52dc4e	BR_150_48101		senior špecialista back office pro_Senior špecialista back-office procesov
+930871fc-98d2-4aeb-9a51-80368fbfa4f8	17706973	17706973	Kolpák Eduard
+9310242c-aaca-47ac-8cc0-6d25ddd5b2ca	17709637	17709637	Miškovič Dávid
+9398a5b9-7b87-4ad9-9ba4-9a97b5ef2b32	hrdlicka_admin	17702165	Hrdlička Tomáš
+93a8bfe9-0106-45dc-8d91-ba9d3eac0b65	kuseva	17701710	Kuševa Marinka
+93af9bb0-b2c9-4876-981f-4cebbb380fdc	17706560	17706560	Brindzová Erika
+93b41483-46a2-4459-9a49-88a45c04fa8e	BR_313_60100		dohoda o vykonaní práce_Technická podpora a služby operatívneho leasingu
+93ccc916-a2ab-4a58-bb1d-742530a92231	17706669	17706669	Dudáš Michal
+93d031fc-677b-47b7-97ec-31db5085c7ca	BR_414_37124		správca počítačovej siete a HW_IT prevádzka
+93d5ee1d-8fd8-44e3-8539-28248cec95b2	17709690	17709690	Bednárčik Pawel
+93e48591-b65e-40c5-a832-670330173365	17709691	17709691	Dancs Dominik
+93ed9766-43f6-42ce-b344-c4f7a46c77c7	GG-LEA-Riadenie.portfolia.MA		LEA: Riadenie portfolia MA
+94213386-3cb7-4cac-980f-acfc42f8144d	BR_200_28113		personálny a mzdový špecialista I_Región Juh (Bratislava)
+943b4607-e2e5-4a01-992d-37da1304da39	17707196	17707196	Martiš Otrísalová Gabriela
+944ff187-7f3c-4b46-9637-94b30fd47705	BRC_203_60000		dohoda o vykonaní práce_Korporátne financovanie
+9453e401-be21-4f79-8ad9-5e9a6aa24731	GG-LEA-Reporting.services.Archiv.digitalizacie		Reporting_services - Archiv digitalizacie
+9495aa91-a20c-42b3-9dd0-8673428e8e57	zavodnikova	17702531	Závodníková Dana
+94a09aff-4d8b-48a3-9ac4-e6b57bb934f1	BR_311_12141		manažér tímu Riadenie rozvoja obch_Riadenie rozvoja obchodu
+94c12a8d-0064-4db3-82d0-02d5e9972322	BR_203_21126		relationship Manager pre korporátn_Korporátne financovanie
+94e2284d-a0e0-4081-bb37-5fe2b2f646e1	BR_409_No EB		 Rights_Controlling a reporting
+951c65f9-6463-465d-ab55-5cfec98ae0c7	17707017	17707017	Čakanová Martina
+953bc690-56ae-402d-ad9d-30da003ede49	1779154ex	1779154	Chlapečka Marián
+953d56a3-8f45-461d-b047-e85393cc675a	17706260	17706260	Dobiaš Martin
+95417789-81ca-48af-836b-4a8a00d4c9af	BR_301_30105		marketingový špecialista I_Produktový vývoj a trhové riešenia
+954638db-ba8e-4e89-9103-dfcb2b7a9f33	17709638	17709638	Dudáš Róbert
+95dc9e28-834c-4505-b712-d83593eec658	BR_540_13113		regionálny riaditeľ_Región Stred
+95dd962c-fa7f-475d-afd9-d7b9950370cb	GG-DM-UMModulRun		UMModulRun
+961f4524-910c-4770-bdba-970d0b7fafcb	BR_414_37102		systémový administrátor II_IT prevádzka
+9637961a-1262-44ba-aef7-3349121e15c2	1779166ex	1779166	Mikuš Martin
+967360a8-ed21-4fae-a233-756c4e4b692a	eClient - Dealer OL		eClient - Dealer OL
+9681985a-29d7-43c1-9ebc-fc5f7e169b67	GG-MDK-LCT-kontrola		Kontrola
+968852f7-8251-4dab-983e-5ae139ac5b1a	BR_202_60200		dohoda o pracovnej činnosti_OLFS
+968dd6dd-82a1-4889-a0f9-ea86c94eda2e	1779142xi	1779142	Kázmér Anikó
+96b29e8a-1bff-4df9-a865-973a9c3f3979	administrátor_MDK_3		administrátor_MDK_3
+96c829fa-c23f-4a0f-9477-e9098a0b4e5c	GG-SAP-ZFI_PUKRUK		ZFI_PUKRUK
+971f6c8c-937b-4caa-9a73-89fe474a9b9e	GG-MDK-LCT-SCHVAL-Bds		Výnimky - BDS
+97383cd4-e973-486b-9565-adb45f07b17d	dms_vedenie		DMS - Vedenie
+974e166c-ae48-4ad8-aa27-f69548f14f82	BR_303_No EB		 Rights_
+9779cad5-6ec8-474d-88f2-dbe35bb1b9d3	17709626	17709626	Mlátilík Martin
+97870764-929f-4024-96b3-1d73cff6ca28	1779013xi	1779013	Kuchárová Gabriela
+978fa6cb-290d-484b-991d-d2721d7c8fbe	BR_405_37126		koordinátor procesov softvérového_IT rozvoj systémov
+979f2bb3-681b-4bbf-be83-01181238fef3	GG-SAP-FI_AA_.Reporting		FI_AA: Reporting
+97a8d2d2-1569-4585-a9a6-c11dcbc8c917	GG-TER-Terminalovy.pristup		Terminálový přístup
+97b3badf-0a0a-4660-9129-81e6dffabdb8	1779166xi	1779166	Mikuš Martin
+9800edf2-9b52-4829-8520-ab82cfd60720	1779175ex	1779175	Nagy Peter
+980bb020-f0fa-4a1d-ae5c-9ff3b155a805	GG-LEA-Centralne.spracovanie		LEA: Centralne spracovanie
+982088b5-f055-4093-bc6c-fc1a8e4e2401	rzatrochova	17706345	Zatrochová Renáta
+9847c2ee-3b4e-4df3-9c8e-9854cfd4c484	17706702	17706702	Hruška Matej
+984c65a0-948f-4481-b6e1-b95681a95cb1	snirc_admin	17702970	Šnirc David
+986eb607-e76f-4c99-ace1-6ce8349a65c5	murgas_admin	1779051	Murgaš Miroslav
+988dfbdc-bfe4-46aa-a5a7-a6d76cbdb0a2	BRC_303_42100_DUX		špecialista pre zmeny zmlúv II_Zákaznícky servis_DUX
+98a49200-ea6a-4201-aa97-2cb64b82e888	BR_414_37100		systémový administrátor_IT prevádzka
+98ce0663-30f0-48da-8a95-461cc232d5c3	BRC_404_27103_SAPextra		špecialista kontroly_RORAC_SAPextra
+98d62d85-2766-49f1-9486-26fc641e04db	BR_250_21131		junior akvizítor I_Región Východ (Prešov)
+990e6d9d-7bbe-488f-ae36-1264162c7949	1779097xi	1779097	Bajla Boris
+994ec608-57bb-4de1-8dc8-db750372bf51	sandtner_admin	1779043	Sandtner Michal
+995bbd3f-d21e-4b21-98f0-533a1b9455ce	BR_414_37136		aplikačný administrátor II_IT prevádzka
+99762f68-b6f2-4f4b-8649-d3a3138c1760	GG-MDK-REP-centkontr		Centrálna kontrola obchodných prípadov
+9978198b-0412-4cae-bd5c-712799ad0d35	klasovity_admin	1779008	Klasovitý Martin
+998bbef6-4be6-4563-8065-415b1c9798ed	1779045xi	1779045	Kovalík Vladimír
+9994da1b-a163-4544-9f81-805dd3ff6d01	GG-SAP-Opravnenie.pre.pracu.v.SAPe.s.SII		Opravnenie pre prácu v SAPe s SII
+99a453b2-fb17-4c58-8074-dbb01d7c9944	agentury_administrator		Agentúry - Administrátor
+99c01d38-6337-4406-a031-4862527bf95d	1779167xi	1779167	Linkay Branislav
+99cb65fd-545a-4838-9d61-df39b9e4445a	GG-LEA-Ciselnik.poistne		LEA: Ciselnik poistne
+99dd8a62-1895-4f2b-a822-58e82c297695	simovicova	17701071	Šimovičová Dana
+9a2156c0-4ffe-4ab2-a509-9608c3c849a3	BR_414_37139		správca počítačovej siete a HW II_IT prevádzka
+9a2ec569-72df-4163-83e8-2105bf7d8a41	BR_220_21131		junior akvizítor I_Región Sever (Žilina)
+9a6e210a-6451-4010-95a1-58f2d2592b4e	špecialista pre repredaj II_Správa aktív a repredaj_doplnujuca		špecialista pre repredaj II_Správa aktív a repredaj_doplnujuca
+9a81dcf7-62d9-41f0-9efb-7a35cdfe941a	BRC_160_11111		VR_Informačné technológie a podpora
+9a997f52-a1db-41aa-9ab7-ba0c01e41585	BR_405_37130		Dátový Architekt II_IT rozvoj systémov
+9a9a73f6-55f6-4c55-873f-374f1aded0a6	17709630	17709630	Kulifaj Tomáš
+9abe5fb2-de5a-4aa9-b03c-e234f16ebc00	GG-MDK-REP-repredaj		Repredaj
+9acfb945-a170-4589-950b-09b90da8485c	GG-MDK-LCT-SCHVAL-FDS		Výnimky - FDS
+9adf9c5b-e044-4abe-8bfb-4a80f8db7023	1779145xi	1779145	Zajac Jaroslav
+9afc973b-9577-47a8-a863-321c841fc58e	BR_220_21132		junior akvizítor II_Región Sever (Žilina)
+9b0f2703-0c91-4120-8747-154dac7f7cb4	BR_401_28107		personálny a mzdový špecialista_Ľudské zdroje
+9b18a5c2-c876-437c-a436-6f7a3bc67d1d	BR_407_41104		Senior špecialista ohrozených aktí_Riadenie portfólia
+9b1c28ad-8e5a-4f89-995e-905f7aed9526	BR_405_37114		architekt IS_IT rozvoj systémov
+9b1ec69f-ba1b-4ed5-bd9a-68fa6c03ba26	BR_210_21135		senior akvizítor II_Región Severozápad (Trenčín)
+9b20e572-7f38-4e20-a447-1e8ba7f03430	17707274	17707274	Tóthová Tímea
+9b26b101-f0d4-4471-8f12-54ea6c77af75	GG-MDK-REP-poprad		Poprad
+9b327dd9-918b-476d-9f49-aa44b8d04d4f	17706987	17706987	Rumanová Lenka
+9b74e74d-92ee-401b-8612-0b39ab9e2b41	GG-EC-eClient.-.Dealer.OL		eClient - Dealer OL
+9b792afb-337e-4e33-a9fb-7da241d41093	GG-SAP-All.for.INVCK		All for INVCK
+9b90223e-3772-4fb0-aeaa-d5073f660abf	17707210	17707210	Jánošová Nela
+9b93ff32-19b2-427a-969a-86aadb7c4136	17706410	17706410	Šrámek Tomáš
+9bc6307e-c51e-422d-8c9a-cc6b64603def	17706413	17706413	Ráchela Jana
+9bd50f9f-2349-4978-9ca2-d92863184445	17706927xi	17706927	Muzsík Zoltán
+9c1b5ac5-bd5a-45a1-80fb-5e4c018e2bb9	17706869	17706869	Kianička Martin
+9c2e4d4b-986b-4383-9108-e29bfa675572	BR_305_21107		akvizítor značkového leasingu_Centrálne značky OUA
+9c300773-35f2-498c-a2b3-bd7ad57fecc3	GG-SAP-FS_.Customizacia.platobneho.styku		FS: Customizacia platobneho styku
+9c3e65c7-fc71-460e-81fa-f7fd87b2432a	GG-SAP-Penalizacia.-.zakaznicky.servis		Penalizacia - zákaznícky servis
+9c56f422-08f4-49c1-9dce-f19a88417335	jakubocyova	17701062	Jakubócyová Andrea
+9c68cdeb-81e6-454c-a3e7-8ce643ff95e6	GG-LEA-Zakaznicky.servis		LEA: Zakaznicky servis
+9c80b42a-b785-4c43-bc3a-8a9b13fb5aa4	17709639	17709639	Klein Richard
+9cc905b0-c51a-4745-87a0-c676b12d9968	1779013ex	1779060	Kuchárová Gabriela
+9ce9cb03-643f-43a8-ac62-513f4277309b	GG-LEA-Ciselnik.vseobecne.ciselnik.leasing.RW		Ciselnik vseobecne - ciselnik leasing R/W
+9cefb612-f407-40fc-90ee-4c4d049db088	17707033	17707033	Sviteková Sara
+9d04e4cb-0449-47ff-aaa0-dcae70082f63	GG-SAP-ZMM_ZMM30_SPECIFIC		ZMM_ZMM30_SPECIFIC
+9d31935f-f094-472b-9bcd-a763a96531a3	GG-LEA-OLFS		LEA: OLFS
+9d45a1ce-daed-4ea8-bb01-aad61f003541	BR_407_40103		špecialista správy pohľadávok I_Riadenie portfólia
+9d4e27fb-c5de-4579-9b77-2f48c80c6333	Multicash		Multicash prístup
+9d6b1fb5-6f0f-4ccb-96ee-53fb56168258	BR_111_50101		dizajnér produktov, procesov a pou_Asistentky GR a VR
+9d8ab8f9-ad82-4c29-8c66-ed1e4d030470	BR_303_60000		dohoda o brigádnickej práci študen_Zákaznícky servis
+9dbac062-673e-4c7f-a3ab-98c4f6cf0fe3	fricka	17701169	Frická Anna
+9dce062a-2b55-4488-b9a1-d1a93e4c4436	BR_408_60100		dohoda o vykonaní práce_Účtovníctvo a dane
+9dd24ae5-2497-419e-87a7-f47991697a51	17706574	17706574	Dudusová Rebeka
+9ddf7de3-5504-4a57-a658-94ee28e36cc1	BR_203_23103		spracovateľ pre korporátne obchody_Korporátne financovanie
+9de7a11d-7b38-4415-aaa7-01a6600f34a5	17707287	17707287	Schikuta Viktor
+9de9d64c-1c5c-409f-b97a-482d160f626a	BR_315_23105		senior špecialista tímu Centrálne_Centrálne spracovanie a kontrola obchodných prípadov
+9df4fccc-5420-4c84-af24-731ddbf61f78	17706819	17706819	Kocsis Marek
+9e02094a-b780-45d9-85b6-d432a9efbffb	GG-SAP-FS_.Specialista.platobneho.styku_.vypisy		FS: Specialista platobneho styku: vypisy
+9e0f9b96-faa7-4a75-ba91-fd59e148d737	wordpress_obchdony_zastupca		Wordpress - Obchodný zástupca
+9e2cddf2-2b20-44fe-acd3-ffe3cdd7c7db	GG-LEA-Agentury		LEA: Agentury
+9e6844b3-6654-4f0b-a5f8-ed168c4f391e	BR_203_23101		spracovateľ pre korporátne obchody_Korporátne financovanie
+9ea19f85-4b24-4b11-afc0-7a8519b3cd00	17706989	17706989	Kampová Jana
+9ebdb026-9582-4da8-bdf8-1d65292e8be7	BR_402_12116		manažér tímu Právne služby_Právne služby
+9f205920-44cb-45ec-ba41-e6e6e4c19cba	17706972	17706972	Petrovská Petra
+9f23b5d6-3d2e-487e-94fa-559bed62893e	GG-MDK-RISK-sv		SV
+9f4026b2-16fe-4098-994d-713f539ef297	1779111ex	1779111	Pavlíková Tatiana
+9f5b64ee-14af-475e-b293-a2801fa7de79	BRC_BL_TPSOL_2		BL_TPSOL_2
+9f6ce0b1-005f-4e3f-859d-52112bed37cd	BR_230_21132		junior akvizítor II_Región Stred (Banská Bystrica)
+9f8cb7f5-d436-445c-af9e-c1a6db764143	17706871	17706871	Kusá Laura
+9f939a5f-cf5b-47ec-9640-2314b544dc52	GG-LEA-Zlucovanie.duplicit.Partneri		LEA: Zlucovanie duplicit - Partneri
+9fa44244-4c3e-42aa-a280-7a3db0eb7cda	BR_209_21121		junior akvizítor II_Región Západ (Nové Zámky)
+9fc88bd0-ba69-45a6-ba85-e74a43dae3b0	GG-MDK-REP-nzstr		Nové Zámky
+9fcee34f-bedb-40d0-a442-e03f25f7c241	majtas_admin	17702519	Majtás Ľubomír
+9fe71535-3470-4301-b90c-2252b2d228e4	17709679	17709679	Brezinová Lucia
+a0022681-974b-4182-af21-bf5a7104d1b1	eClient - Obchodník		eClient - Obchodník
+a05ca2c0-a0f5-4e36-8f12-083b022167b8	17706952	17706952	Őszi Katarína
+a06365c1-73e7-4552-8bcf-50fbdf3417e6	GG-LEA-Sprava.LZ.po.KFV		LEA: Sprava LZ po KFV
+a0a06442-b75d-4d3f-8cc9-b29c5dcefacf	GG-LEA-OPPR		LEA: OPPR
+a0a6b704-1e1d-4859-a0e7-7bfccbccb439	17706993	17706993	Brutenič Ján
+a0c4056d-aaa9-4051-93fc-aef200c16079	1779006xi	1779006	Mikulčík Róbert
+a0c5ae64-b60b-4640-9bf7-7336e820f31a	GG-DMS-Proces.admin		Proces admin
+a11a78eb-2dd1-445d-a68d-854b06c1f08b	17706735	17706735	Mačička Slavomír
+a17145ea-fe0f-4c22-a53d-cde37955dfa9	GG-MDK-REP-zakaznicky		Zákaznický servis
+a185efa7-9542-4888-a3d3-4361e42cf738	dm_olfs		DM/UM - OLFS
+a19c562d-9f52-4db0-9c63-64bd2c447756	GG-LEA-RM		LEA: RM
+a1a9aeb9-1e3d-405f-93e5-3d4989982661	GG-MDK-RISK-2		2
+a1b111b7-a593-45e4-a012-cfaf957a6fa7	BR_210_No EB		 Rights_Región Sever (Trenčín)
+a1c4049f-a882-4b73-9afe-0141b69650f3	BR_250_21137		Key Account Manager I_Región Východ (Prešov)
+a1f56a4d-f332-4e99-ac38-3aa27b20e5c9	1779089ex	1779089	Blažo Martin
+a1f82888-efa3-4f61-af97-097a382d6884	kamiacova_admin	1779118	Kamiačová Jana
+a2264e03-b4fe-4e13-a732-b70b8a240cc0	1779159xi	1779159	Sládkovič Martin
+a23a1044-cadf-4a62-bf55-198a7c0ea2eb	GG-WP-Zmluvny.partner		Zmluvný partner
+a248931f-92fc-4c75-bbdf-f111e244207d	GG-LEA-NCC.admin		LeasitDB administrátor
+a273ac6b-be97-4133-882c-12e948bab59b	snirc	17702970	Šnirc David
+a286c995-069f-436f-99a0-f8659acf3843	GG-EC-eClient.-.FDS.a.PSA.Dealer		eClient - FDS a PSA Dealer
+a2b7e112-68c6-4263-a673-4adaf13b16ff	BR_409_60100		dohoda o vykonaní práce_Controlling a reporting
+a2eff856-4c01-4b77-b3d8-7fea57cbc756	17709611	17709611	Holanová Soňa
+a32e99eb-3c6e-4a26-9f69-3cb1dd20daa6	GG-LEA-ZI.zmena.vysky.predpisu.kaucie		LEA: ZI - zmena vysky predpisu kaucie
+a334380d-7acd-474e-a118-52526a664a19	GG-LEA-Poistne.SFA.IPZ		LEA: Poistne SFA - IPZ
+a345a13b-9166-48a6-aa78-869e917229c1	CNAV - odd. Credit Risk		CNAV - odd. Credit Risk
+a36be917-4480-40e1-b237-ab6a236db0d8	17706595	17706595	Táborský Marek
+a381cff8-ec96-4c4b-b4bb-7b804cdf9626	GG-SAP-Transakcia.SE16n		Transakcia SE16n
+a3857194-3362-4f65-a63b-191ce7a692a1	BR_280_21132		junior akvizítor II_Región Severozápad (Trnava)
+a3a0bbf2-1755-4031-a60d-b142d0c6e544	17706894	17706894	Revajová Martina
+a3b2cdeb-bc29-4d08-b476-46ef55f6a35c	dm_poistne		DM/UM - Poistné
+a3b73c0f-79b7-45a0-965b-b052cdb7cdf4	17702390	17702390	Zeleňák Jozef
+a3cc7ed7-008a-4930-822d-a7afca69b329	GG-SAP-MM_.Schvalovatel.CP		MM: Schvalovatel CP
+a3d9b49b-8b94-45f5-a4e5-9ee0696ca719	GG-MDK-NIA-_Ramcove_zmluvy_Administrator		_Ramcove_zmluvy_Administrator
+a44d6ac3-95ce-407b-aec0-630d79895609	GG-MDK-REP-centzml		Centrálne spracovanie zmlúv
+a46c3a63-3233-41a3-b590-58bded83455f	BRC_200_21111_RPO		senior akvizítor_Región Juh (Bratislava)_RPO
+a4748ebf-b449-4ef1-b9e1-86df325661ac	1779110ex	1779110	Cíbová Karin
+a481ac9a-322d-4717-933c-1fc3e85c77f9	GG-LEA-Faktury.LZC.prehlad		LEA: Faktury LZC - prehľad
+a48ce930-33ad-49fd-9189-c9d8b4ebef33	17706018	17706018	Kloss Zuzana
+a4cbdde1-3432-4fd8-80b7-5057356b53ec	GG-MDK-REP-bastr		Bratislava
+a4d7db31-2cd0-480a-a16e-eb7f3a4ee7b7	BR_407_24110		špecialista pre naceňovanie vozidi_Riadenie portfólia
+a4dc22cd-5568-42ef-bf03-a40b555e6dc4	17707198	17707198	Piecková Andrea
+a569a5c1-3c46-4b5c-9dc0-f9c195354e8d	17706877	17706877	Becková Daniela
+a57c5555-0a98-4df8-88a1-4154f46aaf98	GG-SAP-FI_AA_.Uctovnik		FI_AA: Uctovnik
+a57fa309-908b-45c3-9ecc-7890d6be1a85	GG-MDK-LCT-rpo		RPO
+a5b6d03f-7838-4ac8-8916-a2d74834bda0	GG-MDK-RISK-ramecx		Rámec X
+a5ca7c1f-1bae-4c9b-acdb-08577fc6c2b5	GG-MDK-DMCOM-comaktiv		DMCOMAktivator
+a5df8f00-98df-40a8-a25f-4392628c344a	GG-LEA-Odobrate.predmety.audit.banky		Odobrate predmety - audit banky
+a67d6949-5fd9-4580-9300-404eda2686a9	17706561	17706561	Kataníková Ema
+a6a77556-9dbd-4e84-b243-baf7e60e7699	1779171ex	1779171	Mihál Vladimír
+a7267cf4-5fa9-4724-a4fe-2ee4bc1f5f00	GG-MDK-REP-zbernykos		Zberný kôš
+a731a8e4-0093-4a6a-a1d6-6b096e46bf10	17709674	17709674	Hrašna Juraj
+a73a9116-1bb3-438c-8242-facc23ef638e	GG-MDK-REP-extds2		Externá distribučná sieť
+a761016f-e220-49c1-b99e-f497dea43405	17707099	17707099	Káčerová Andrea
+a76712d8-1bee-4353-ae72-40712110fc1d	BR_407_24109		špecialista určovania zostatkových_Riadenie portfólia
+a76f74f6-0d06-4748-beb7-def0f8ffb18b	17702534xi	17702534	Plšková Milada
+a78294b2-48fd-48a6-ad0e-d25ef78b4e6a	17706518	17706518	Čukášová Veronika
+a7922f2c-bd0a-4dfd-8fe4-aa22b5281df4	stugel_admin	1779072	Štugel Peter
+a79d72cc-0755-413a-939d-c1c6381d82a9	BR_313_24129		Špecialista správy zmlúv a rekalku_Technická podpora a služby operatívneho leasingu
+a7aee98f-28df-48cb-95a4-1bde710992ab	17701287	17701287	Frický Alexander
+a7c3372a-3487-40f3-964d-a549127fd05d	GG-MDK-LCT-sa		SA
+a7d156e9-6e28-4a5e-a031-8abde1901fad	17702031	17702031	Kopáčová Dominika
+a7d4e7c5-efd4-4b4b-87f9-9256c67cc65b	BR_313_24106		špecialista Full service_Technická podpora a služby operatívneho leasingu
+a7dab261-9fb9-4a02-8814-f77e17ad22bd	17707093	17707093	Lehutová Simona
+a7e6f980-947a-4c64-a7e1-a380a052e914	1779053xi	1779053	Švec Peter
+a7ec7043-94ee-451f-8211-21f53be9ace9	BR_202_24122		Obchodný špecialista_OLFS
+a8141789-de5b-45e6-b3d8-d41ae4003f2d	17707264	17707264	Boďa Tomáš
+a819ad10-9ef9-4c6c-ad7f-d29be4202ba8	BR_402_60100		dohoda o vykonaní práce_Právne služby
+a8848fb4-c742-4aa4-8ad8-8299fa01b749	GG-SAP-Chybajuce.opravnenia.k.inventure.k.modulu.AM		Chýbajúce opravnenia k inventúre k modulu AM
+a8921492-a597-428c-8e06-fef3eb5b1343	17706628	17706628	Semanová Kornélia
+a8a74f47-dad0-4831-a683-5016e66a6448	BR_404_60100		dohoda o vykonaní práce_Riadenie operačného rizika a Compliance
+a8b174b3-10e2-4aa0-bcf7-6c56590df243	1779132ex	1779132	Špička Andrej
+a8ec24c2-4aae-474a-99d6-b1af4b009f91	1779128xi	1779128	Budínská Kristína
+a915660f-4e1b-4cce-a3e1-d2b4fb027689	GG-MDK-REP-zakservis		Zákaznícky servis
+a96c6d95-2be7-4689-b43e-e304a29f71db	17707042	17707042	Melencová Eunika
+a99d0090-92fd-480d-8cee-b5c525dfc1ea	wordpress_zmluvny_partner		Wordpress - Zmluvný partner
+a9af7612-f87b-4a8b-a8ab-389e594eb171	barnokiova	17702418	Barnokiová Eva
+a9bdcfec-4a67-4817-953e-ed5a47ad24dd	BR_313_24115		technický špecialista OLFS II_Technická podpora a služby operatívneho leasingu
+a9d4c4f6-bba3-4a35-a6f3-5a2b10620bbb	BR_302_31112		senior špec. pre obchod, výkazy a_Poistenie
+a9fd7a86-7380-4a7a-b6cb-3bf165ca2e27	mudron_admin	17706361	Mudroň Michal
+a9fdcc66-496a-4ac0-ab4b-2482ea5fe5b7	17706519	17706699	Brnová Daniela
+aa16ab4c-97d9-4c16-bec1-ddaefe9f1617	BR_202_24102		špecialista OLFS - spolupráca s do_OLFS
+aa1f8f3b-df6e-4ff2-93b7-1b706eb0c1d8	17706429	17706429	Grenčík Miroslav
+aa5bc1e1-6a4a-4967-b9c3-3d45d4427b2c	1779172ex	1779172	Knap Miroslav
+aa7b08b0-e43a-4ef6-907b-b92322545c9d	GG-MDK-RISK-preverova		Preverovanie
+aa86d102-01bc-4690-a24b-e6633eca4be2	GG-CDBP-JPP#OpKo		JPP-Operator.kontrolor
+aa887397-c909-42ae-8608-325b5a938798	BR_409_35103		finančný špecialista_Controlling a reporting
+aa9c38e7-2b2b-46ba-800e-460362ee34ee	torvenyi	17709995	Törvenyi Rudolf
+aaaa3085-896e-4de0-b1be-dd47bf2b4d36	BR_316_60100		dohoda o vykonaní práce_Digitálny predaj
+aac9bb03-54bc-4a2c-a645-3b2b2558ca16	BR_405_60600		Externista – prístupár_IT rozvoj systémov
+ab0df7ef-1cc5-4eba-b97b-2aabc69c1447	GG-EC-eClient.-.Spracovatel.pobocky		eClient - Spracovateľ pobočky
+ab1a890f-5c9e-49c6-93ff-2e1ce5efad18	GG-LEA-PRK		LEA: PRK
+ab1cd117-bbf7-4148-8a90-04ea70e7c8e9	GG-VEMA-Hlavni.personalista		Hlavní personalista
+ab37d8f7-0a67-442f-9503-56ede0f617e9	BR_210_60500		dohoda - trainee_Región Severozápad (Trenčín)
+ab4e7183-748e-455c-96a5-3374fe98043e	buran_admin	1779074	Buran Miroslav
+ab832321-6299-43f8-a5b7-df0ffbf1b4f9	17709630xi	17709630	Kulifaj Tomáš
+ab84e7af-73bc-431c-a2eb-51f1eacb693a	dms_koporatnefinancovanie		DMS - Korporátne financovanie
+ab95f783-9ca8-4f77-8558-7a4ea17f1ad8	pastekova	17701130	Paštéková Katarína
+ac0391a4-d630-4f12-aecd-f0e872029a25	BR_203_47100		špecialista - akvizítor pre leasin_Korporátne financovanie
+ac079a8f-16e5-4a91-a214-21eb11da8bc4	17702107	17702107	Desaková Martina
+ac274a30-2b21-4759-972d-0de23ba4a6e6	BR_412_60000		dohoda o brigádnickej práci študen_Finančné služby
+ac61d621-73b7-4c8d-a07a-9ea7e3de2473	BRC_Relationship Manager Full service_BL		Relationship Manager Full service_BL
+ac9adcaf-b39b-4c67-8341-559f9706270f	BR_414_12144		manažér tímu IT prevádzka_IT prevádzka
+acb9aad8-b716-4ceb-8ff1-1f70c213a0d8	BR_409_60600		Externista – prístupár_Controlling a reporting
+acdfeccc-9f06-4780-b8c7-9bf7e81e9b99	BRC_RiadPob_regvyckosice		riaditeľ pobočky MDK_Región Východ (Košice)
+acffb97b-400c-4bd3-b356-6a2adc9160dc	GG-MDK-RISK-psapariz		PSA – Paríž
+ad15ec3d-c2bc-4fd8-99cc-511bc35f89d7	17706757	17706757	Vrábelová Katarína
+ad16aac6-b078-495b-895b-76d1faa84f24	tack	17702224	Tack Hilde Paola
+ad2fb183-19da-49a4-8836-d9d725675903	GG-SAP-MM_.Gestor		MM: Gestor
+ad33bcfb-892d-4c96-989e-768f34b8b5ed	GG-LEA-Upomienky		LEA: Upomienky
+ad42334c-9cbb-46e9-9e91-5f534acb33df	BR_200_21112		junior akvizítor_Región Juh (Bratislava)
+ad565411-90c6-4500-ac2c-f6c533b9111b	17709695	17709695	Kadlečíková Júlia
+ad6a5709-ccab-4c86-b780-7fe331912a28	17707004	17707004	Jakubíková Lucia
+adbf69b7-574c-4db0-a065-a53469edb12b	17707170	17707170	Čuříková Alexandra
+add7bb0f-4074-4844-a97b-f84ba32e4f0e	17706225	17706225	Majerčáková Mária
+adf735e2-b725-49ea-ae5a-fd776121869b	dm_admins		DM/UM - Admins
+ae2102d8-a283-4c80-bc7c-c5be326991d6	BR_404_12131		manažér tímu Riadenie rizík_Riadenie rizík
+ae2f1929-bb7d-4ea6-86d7-a4d9331579d7	1779146ex	1779146	Štellár Kamil
+ae302dc3-39e5-484a-a729-feba2ab4df98	kuffer	17702396	Küffer Katarína
+ae70a437-ca8d-4ece-95b1-7768491d7386	GG-CDBP-CDBPs#12		CDBPs-Operator.-.read.only
+ae7d18bf-6fc5-4deb-b9e8-f7fbdf163f65	GG-CDBP-ESSs#11		ESSs-Administrator
+aea23110-d38f-4b66-9495-5b5db2af4d3f	17707092	17707092	Kunšteková Anita
+aea42591-d886-47ee-8b19-0e1d37475189	17706448	17706448	Pašková Simona
+aebcf81f-89ae-4c34-9f1b-2d0d79a4f9c7	17709613xi	17709613	Shmelev Pavel
+aebf2f68-af56-4ce8-acfb-a436ed4843ea	GG-MDK-REP-neurcpob		Neurčená pobočka
+aec8afac-8000-478c-8d42-fbc057fedde7	BR_240_21137		Key Account Manager I_Región Východ (Košice)
+aee972b2-3364-4601-867c-e610ca711bde	17707110xi	17707110	Tien Phong Nguyen
+aef5bdd2-28d3-490d-9b0d-073e096742e7	dms_creditrisk		DMS - Credit Risk
+af07d48b-b4f4-4ddb-873b-1dfd0ceab91a	BR_570_326		Raditeľ tímu Systémoví dodávatelia_Systémoví dodávatelia a správa aktív a repredaj
+af111b74-d700-4631-9ccd-220bab13107e	BR_403_32103		Business analytik procesov_Organizačné, projektové a procesné riadenie
+af3835cc-4725-4bc8-bf4c-87edaf963490	17707200	17707200	Hahn Patrik
+af441826-baff-46bd-bcea-e0a9a4b95ceb	BRC_308_24108		špecialista pre repredaj_Správa aktív a repredaj_RPO
+af47b968-d76c-4fa7-bfd5-5976cc698cbb	GG-PBI_Vsetci		PBI_Vsetci
+afa12fe6-d8e4-43cc-acc7-3cf8df06db35	1779130ex	1779130	Hiadlovská Simona
+afa26b01-50e2-489b-a576-84278db07e1f	dm_impeurotax		DM/UM - ImpEurotax
+afb4c282-a32a-4d73-88ca-2fa17ad87a26	1779167ex	1779167	Linkay Branislav
+afbc86d5-d81a-45de-8b2a-5c17fe599f73	stryckova	17701689	Strýčková Petronela
+afd607b0-7e63-4ce7-8de3-2a7846eda4a9	1779048xi	1779048	Štadler Samuel
+afde9e76-28d1-4819-b2d4-6441df83b6c0	GG-MDK-REP-risk		Risk
+afedcb4a-9940-4978-991e-603ca22eaad9	1779123ex	1779123	Ksinan Jaroslav
+b000e85c-de44-4aa3-91ef-bb98ee5533e6	GG-LEA-Obchodnik.LNH		LEA: Obchodnik - LNH
+b03417cd-2c9c-42b7-9b07-4f9faac84fb6	GG-MDK-REP-pravnici		Právnici
+b0436fe6-9c10-4e7a-8539-87947ccc3ae1	BRC_32083		Právo na schvaľovanie výnimiek v eLCT
+b091abd8-8249-4de6-9559-9b11d2bab4ea	17709688	17709688	Ivan Mikuláš
+b091de52-e294-4c1e-ac90-b60d393280e6	17706596	17706596	Jusnová Viera
+b0bcd8d5-84ab-46bb-becb-1461c8a6ddff	17706273	17706273	Greifová Katarína
+b0d47c6b-2e19-409a-9631-d9cf7d00ebae	BR_315_23110		senior špecialista tímu Centrálna_Centrálne spracovanie a kontrola obchodných prípadov
+b0ef543d-b6e0-47cf-9922-952bb3609f83	 BR_man_ISO_IRO_manual		manažer ISO/IRO_Manuál
+b10f59fa-7565-4294-97f3-59bac789038c	BR_203_13112		riaditeľ tímu Korporátne financova_Korporátne financovanie
+b1469927-374f-42b6-8f8c-c53866d9185a	GG-MDK-REP-neurcstr		Neurčené stredisko
+b15b9f27-997d-476c-8502-56aadcaca628	17707266	17707266	Gallo Pavol
+b1d168a8-91c3-4224-92c5-1a0f295a2dc1	17706748	17706748	Kováč Dávid
+b1f4b0a0-38f7-41e6-b886-3a5bdd2c3a4e	GG-LEA-Zmluvna.dokumentacia		Zmluvna_dokumentacia
+b20a1e24-7650-4705-9793-8e41f63df421	GG-SAP-FS_.Evidencia.KOF		FS: Evidencia KOF
+b20f8ad1-204d-44d0-b7fe-e5bfc6ee0a2e	BR_408_33106		účtovník I_Účtovníctvo a dane
+b22fc2f9-76fb-4093-b7d1-7180ddc89455	eClient - Spracovateľ pobočky		eClient - Spracovateľ pobočky
+b2841430-519b-4309-839e-b0d222060025	GG-MDK-LCT-vynimky		Číselník výnimiek
+b2a6fb9d-5fc1-434e-837e-ed3d24087275	17706890	17706890	Fekiač Martin
+b2ad10e6-bdb8-4cfc-8c52-d90103f324d1	BR_404_27106		Audítor_Riadenie operačného rizika a Compliance
+b2c647d1-f7b5-4c4c-bf03-0a66e4572f63	dms_czoua		DMS - Centrálne značky OUA
+b2cfd7f6-f477-4df6-9bbb-00bac5707d31	 BRC_RiadPob_regsevzilina		riaditeľ pobočky MDK_Región Sever (Žilina)
+b2d16e32-8788-438d-a754-3f1fbfb33efc	matichova	17701382	Matichová Jarmila
+b30ce0ab-cd2d-4319-98cb-5bba20e22ca3	BR_313_24101		špecialista správy vozového parku_Technická podpora a služby operatívneho leasingu
+b30fbfef-8d28-4293-9cb9-1882c464a9be	hanesova	17701616	Hanesová Ivana
+b31a026c-f205-4c99-80fb-b4c88afd98fb	17706422	17706422	Gembická Marcela
+b3302875-709b-42a4-ad2d-9f58c4724a66	GG-MDK-LCT-repredaj		Repredaj
+b330cfd3-9a92-407b-9b63-d1f10cbd4ae0	17709658	17709658	Gono Andrej
+b3639c2f-0abe-4125-ac57-7ab94eae5c3e	GG-DGT-DLM-admin		admin
+b36dda6d-85fb-4dab-a61a-c720bc3b96b6	BR_415_48100		manažér systému kvality_Procesné riadenie a business architektúra
+b3709cb4-edf4-47f1-a95c-4fda1fc5150d	dm_riadenieportfolia		DM/UM - Riadenie portfólia
+b37f2751-a823-4904-aec9-94f86c07c452	BR_303_12110		manažér tímu Zákaznícky servis_Zákaznícky servis
+b3a9475c-ea7d-4a3e-be74-632be605b64e	GG-MDK-LCT-olfs		OLFS
+b3c6aa6d-290b-4e55-80cd-f0b873a698ff	17709660	17709660	Seewald Ondrej
+b3de77e8-0dfd-4f32-9b19-f2cfc479279d	BR_415_32105		Business architect_Procesné riadenie a business architektúra
+b3ff7c20-ee84-4332-bbf6-62e86fb2dd00	17706551	17706551	Ufnárová Mária
+b43110c2-7fbe-42c6-b711-538577ac35b2	GG-SAP-MM_.Schvalovatel.GR		MM: Schvalovatel GR
+b43190ec-939b-4ae8-976b-c59916151f83	BR_404_60000		dohoda o brigádnickej práci študen_Riadenie operačného rizika a Compliance
+b43e70de-a846-44b3-94cf-5b33e942b9a8	17701865	17701865	Luknárová Adriana
+b44a9b65-0f16-4acb-bb2e-fc99a1912226	BR_311_60200		dohoda o pracovnej činnosti_Riadenie rozvoja obchodu
+b464e7eb-4d5a-4597-841a-1879c9faedb3	1779032ex	1779032	Šafár Patrik
+b4bbb35a-5b5e-4a9b-a5db-5baa29fa332e	GG-DM-EDS		EDS
+b4bc9f3a-312f-4c72-bdcb-e4f10818e470	balaz_admin	17702197	Baláž Benjamín
+b538a5d8-dd32-4b52-9531-10b4831e9052	NCC_JIRA	1779037	JIRA NCC
+b53aaa1f-3b32-4af0-a10a-8b7263d4f0e7	trnavsky	17702898	Trnavský Tomáš
+b5719af2-7c5e-42b9-b4d6-7dcf098e2acb	BR_303_42104		senior špecialista zákazníckeho se_Zákaznícky servis
+b584ac57-569b-4f47-a2e0-d40bb98d80d1	GG-MDK-REP-ttstr		Trnava
+b5a5c6ee-b8c1-475a-84a4-4ab57348ff53	17706953	17706953	Danišová Juliana
+b5b9d8fc-a4a5-4cfa-8009-5df0ad912460	GG-LEA-Obchodnik.Aktivny.pristup		LEA: Obchodnik - Aktivny pristup
+b5bfd199-9ee7-466a-8bf7-b6c9a90da24a	GG-MDK-LCT-kosice		Košice
+b5c10530-507d-44ef-9a04-be6fdfc9ea83	gromannova	17701025	Grómannová Veronika
+b5f03292-c219-4e99-87e0-1b15c6cd1299	BR_302_31101		špecialista pre poistenie_Poistenie
+b5fdee5e-d2de-44a8-972b-9bcc27816ce0	BR_305_60500		dohoda - trainee_Centrálne značky OUA
+b608d883-10c5-48df-87a7-f151d8bd5687	BR_250_60500		dohoda - trainee_Región Východ (Prešov)
+b6377107-1ce5-4b29-9d92-96ce92a04432	mikula	17702358	Mikula Tibor
+b66960cf-3f40-4999-b749-f072d39b0746	BR_406_39111		špecialista riadenia rizík III_Credit risk
+b66d6fe7-332f-415e-a4b4-cd51af596839	17706970	17706970	Vožňáková Bianka
+b66efb7b-e2b5-41f0-90b0-e24c4eb4de75	gyorgy	17706254	György Juraj
+b67f233e-577f-43fd-9439-81c3281e1a58	1779130xi	1779130	Hiadlovská Simona
+b694c444-af1f-4c9d-93b2-d4ac9d4d7ddb	GG-LEA-Nalezitosti.SLZ		LEA: Nalezitosti SLZ
+b6965f27-8676-4214-849c-9b60765cb3e8	BR_409_35105		poradca pre projekty Controlling&amp;R_Controlling a reporting
+b6a55b38-0d51-4125-b545-73936673ddc8	GG-ANASOFT-Admin		Administrator
+b6e5b2c0-f1cd-47bc-a517-5e630bef27ac	17709605xi	17709605	Kytošová Klaudia
+b6e5b71c-4c14-472b-a751-4cfcff6033f1	GG-LEA-Konkurzy		LEA: Konkurzy
+b706c15d-0729-4a2a-982b-b3fe28744c01	BR_301_60100		dohoda o vykonaní práce_Marketing a podpora obchodu
+b71d25b0-e287-473c-95a0-ba5795f7897f	17707250	17707250	Šimanská Dominika
+b759e3ab-a0a0-4bd8-9ad7-dbe33bc867da	BR_230_21111		senior akvizítor_Región Stred (Banská Bystr.)
+b7a26b74-b95e-4238-a722-c090a0dc6eef	17706935	17706935	Nálepová Iveta
+b7b2d87a-bdb2-4766-ad12-33153728089b	GG-MDK-RISK-spravacis		RISK - Správa číselníkov
+b7debb15-0538-448c-88cc-2eb03601b30a	BR_210_21136		senior akvizítor III_Región Severozápad (Trenčín)
+b7fbea2e-21ca-4667-8a63-4cafd7223aeb	BRC_416_38104_1		projektový manažér_Projektový manažment_IDex
+b8662f3e-c845-4c95-b2f0-a7342e024a28	BR_209_21112		junior akvizítor_Región Západ (Nové Zámky)
+b89a5f30-248b-4482-92f5-fe358128a618	17706557	17706557	Jaššová Tatiana
+b8a5ce30-feea-4e3f-ac44-bd66b889d074	siskova	17702687	Šišková Katarína
+b8b1e859-0421-41f9-a885-1957519c8c08	spolakova	17701614	Poláková Slávka
+b8c11391-3611-4c72-8a0c-0a5020af6181	17709675	17709675	Valachovič Marek
+b8cdf4a4-2ae2-4746-a629-cd0c7b5eb33d	halimovicova	17702657	Halimovičová Vladimíra
+b8f8efda-6632-42ef-9996-b0da713f7eaf	hudacka	17702943	Hudacká Jana
+b914cfd3-8519-4e80-adb4-17368ab216ad	17707235	17707235	Bošková Natália
+b920d3b0-cd90-477a-b7ef-18d462ba340f	17709612	17709612	Szabó Tomáš
+b92380b4-e5b8-4d32-84ea-43eb01c9ce33	mholly	17702181	Hollý Michal
+b9246e14-6995-4fba-9ddb-5a9fdd8604a6	17706464	17706464	Jenisová Barbora
+b93b51c1-9eb9-41b0-ad4b-85963c92fb29	BR_202_60600		Externista – prístupár_OLFS
+b94e91b6-84d4-4eb5-9792-8632fe9b8ac9	BR_305_60000		dohoda o brigádnickej práci študen_Centrálne značky OUA
+b94f5368-be06-4b96-8bff-76f081c2749a	GG-MDK-LCT-rozvoj		Rozvoj
+b959987b-4697-4f2f-8f76-dbc6f2a0f7e0	BR_301_30101		marketingový špecialista_Marketing a podpora obchodu
+b9747fbd-1062-4625-b69f-e80304839fe9	GG-MDK-REP-lokalvend		Lokálni vendori
+b9864f90-20e1-4e30-bbcb-d264a3e9fcf0	GG-MDK-REP-predstaven		Predstavenstvo
+b9b72184-4f74-4d7e-af0e-a9da65237c75	17706605	17706605	Honišková Linda
+b9c9e054-38da-4ad7-9c45-6730fb55ad43	lvallus	17702952	Valluš Lukáš
+b9e2aba5-1b1f-471c-9b21-bbd970274f1c	ziakova	17702592	Žiaková Adriana
+b9f0c726-fa4e-4666-a4b5-b33b2512e2d2	GG-CDBP-JPP#OpPo		JPP-Operator.-.Poistovna
+ba145be3-1664-4941-b7f4-6c7d629cb11c	BR_209_21134		senior akvizítor I_Región Západ (Nové Zámky)
+ba160a84-b9ef-4a0b-9fc2-9b16bf7f343b	17707229	17707229	Bartók Juraj
+ba27063e-ae2d-407f-9a12-c4e2e0ccc323	GG-MDK-DMCOM-ict		ICT
+ba2bf151-bf61-461a-b25f-7acfb05179fc	stasakova	17706025	Stašáková Henrieta
+ba4ef846-48c9-4f63-bd43-1b8502150a00	nemec_admin	1779047	Němec Luděk
+ba7d1415-468e-4944-a9f8-770ae3ee9260	17706457	17706457	Fuksiová Nina
+ba879504-e035-4ceb-a4e5-1abc0c731c79	BR_302_31111		garant pre poistenie II_Poistenie
+bab3a08f-8c81-4b0f-bc42-74ed747a9de3	17709601	17709601	Slovák Patrik
+bab84a97-5e5d-4825-89c0-5d27d3b6996f	1779018ex	1779018	Puskas Szabolcs
+bac19bb5-ca2b-4bd7-850f-2e1d239d7619	17707260	17707260	Ťukot Jozef
+bac574e1-99cd-4b09-b983-6de849a8aee3	GG-MDK-LCT-SCHVAL-Vynimky.Risk		Výnimky - RISK
+bac78f0b-d395-4ea4-b602-8f886039dd36	BR_401_12124		manažér tímu Ľudské zdroje_Ľudské zdroje
+bb03f2a2-5fb9-4d7c-8347-455666a987e0	BR_man_ITprovoz_manual		manažer IT provozu_Manuál
+bb4ebd03-c182-42c5-97c9-f8d95e135053	GG-MDK-REP-korpxsell		Korporátne financovanie a cross-sell
+bb874a3b-a6a1-415d-8270-e54404d46097	GG-LEA-CS-StornoLZ		Storno LZ - rozšírenie CSKOP
+bb878882-e7c2-427e-85e0-929fd2edd1b1	dms_itadmin		DMS - ItAdmin
+bbeac7d3-4d23-499d-afd9-bf15dc056eec	dms_centralnyspracovatel		DMS - Centrálny spracovateľ
+bbeb9bf7-06f5-4946-b7e8-1b6dc8f07536	BR_590_13113		regionálny riaditeľ_Región Severozápad
+bc3304b5-681a-43a8-b8bf-543108bd8eba	GG-LEA-Nadzmluvy.Odukoncenie		Nadzmluvy - Odukoncenie
+bc420b2d-ec24-4c76-adc1-463502ccf009	toth	17702941	Tóth Tibor
+bc5aa805-cdf6-4887-9f9c-3f9a6f12e110	BR_409_35108		špecialista pre manažment dát_Controlling a reporting
+bc65fd93-8c21-4946-9868-411a536bb7a3	17706648	17706648	Raksányi Lucia
+bc6e1afd-6672-4fb6-9c18-b9edb02e41b8	GG-MDK-LCT-poprad		Poprad
+bcd1a8b3-bcc0-4b5f-be53-7d3dff5dfdb4	1779064ex	1779064	Minárik Matúš
+bcda181d-9cf0-4fc0-a214-64f9d1a0c09b	BR_240_21112		junior akvizítor_Región Východ (Košice)
+bd22aa2d-7a4a-4779-985d-904038e514ed	17706259	17706259	Garajová Ľubica
+bd2661ff-1ca7-43de-8e94-e55ced2bee4a	BR_280_21111		senior akvizítor_Región Severozápad (Trnava)
+bd30c0ad-ddda-42fa-9294-e4f231ec320a	kutka	17701313	Kuťka Juraj
+bd32d2b3-5d14-4740-8a35-5f1554fb57d1	riha_admin	1779073	Říha Michael
+bd6f9d5f-c1d3-4e35-8bf3-9ae9fc09f004	GG-LEA-ContRep.Agentury		LEA: ContRep_Agentury
+bd96ee92-40b4-477f-bfa5-1bc8a951c404	GG-MDK-LCT-SCHVAL-Iag		Výnimky - iag
+bdad180f-f75c-4f64-82d8-a81c7f10f1b3	BR_407_41106		špecialista ohrozených aktív II_Riadenie portfólia
+bdb33230-70f7-45de-9480-0f65887533c7	GG-CDBP-CDBPs#7		CDBPs-Operator.financne.sluzby
+bdbbd115-4f88-4518-9b2f-cb1657c29626	BR_296_24108		špecialista pre repredaj_Externé distribučné siete
+bdf3d952-f7c6-47b7-9070-9187d1586e12	GG-SAP-Profil.pre.all		Profil pre all
+be11a493-d4bc-47c7-b6d4-95e7ba22f582	17709655	17709655	Zelezník Martin
+be14179f-9bb1-432b-ba92-b9dcf4d70b2d	17706818	17706818	Tkáč Paulenová Petra
+be154378-25c3-4ce8-aa8d-f3ab4d9c9b8d	GG-MDK-RISK-cervenali		Červená listina
+be6efe84-30a1-4a70-b0f2-6cc5c8d4b5e8	17706927	17706927	Muzsík Zoltán
+be77c35c-c85d-425b-8bbc-d5d80cbad4a0	BR_560_13113		regionálny riaditeľ_Región Juh
+bebc51f4-9d84-4059-b0ad-68a2a95dad72	BR_580_21118		Business Dev. pre operatívny leasi_Firemná expertíza pre obchod a podporu
+bec947b0-1865-422f-955f-a998f71c325c	GG-SHP-SHP.Financne.sluzby		SHP Finančné služby
+bf0af001-f6de-474a-80db-be4d8356360e	17709656xi	17709656	Kruk Miloš
+bf3b9681-7606-4082-b094-f081db96e399	17706320	17706320	Sasaráková Lenka
+bf79d077-c40d-43ab-b05c-ea31582c59aa	GG-MDK-DUX-akvizitor		Akvizítor
+bf806fb3-9d12-449b-8f20-0081c20f6326	BR_405_37121		Enterprise Architect_IT rozvoj systémov
+bf836e58-4423-4246-a287-0ec016646015	17707233	17707233	Litavcová Lucia
+bf83cd5a-46c1-426e-bc09-64ce2361cc64	GG-MDK-REP-poimakler		Poisťovací maklér
+bf92b21e-9378-4a3d-bf51-745d7e53d33c	BR_402_26106		špecialista podpory právnych služi_Právne služby
+bfa0ffbd-5513-4d7a-8c87-8cd9c58a4809	17707208	17707208	Rehaneková Lucia
+bfcc7822-6080-459a-bdc2-7890a2a1f566	17709617	17709617	Skopár Lukáš
+bfcfbb24-f009-4417-a241-5f4d2744746f	GG-DMS-Riadenie.portfolia		Riadenie portfólia
+bfd3f06f-ceb6-447e-8e51-30af1a0fe609	1779084ex	1779084	Líšková Anna
+bfe10f78-3c27-4dbf-b3bd-eff243109eef	zabka	17702515	Žabka Juraj
+bff4755f-e5c7-4155-814d-8f3972b449d1	GG-MDK-LCT-cis-eds		cis-eds
+bff6d4f6-421f-4a09-82bb-7adfe040b339	17706963	17706963	Lukáčová Katarína
+c022eac6-f907-459e-b201-731ddeb50eae	GG-LEA-OLFS.Pneu.Import		OLFS_Pneu_Import
+c02b270b-6c4d-4a50-a149-c54eda4b0093	BR_407_60000		dohoda o brigádnickej práci študen_Riadenie portfólia
+c06324de-7a44-4612-9370-ef7b50674e14	BR_415_60200		dohoda o pracovnej činnosti_Procesné riadenie a business architektúra
+c0cbdedf-f409-46d0-819e-88136f15969f	BRC_Audit_PwC		Audit_PwC
+c14cb20f-8963-4a2a-b9af-7aa706033301	richter	17706253	Richter Lucius
+c15b9ca3-df8a-4da5-8274-b236d1786712	17706783	17706783	Zárecká Barbora
+c1b04e57-41c8-4a03-afaf-3ee2e9ce6e0a	BR_220_60500		dohoda - trainee_Región Sever (Žilina)
+c207a81b-0c47-4747-bff4-0dc8a69983e0	GG-MDK-RISK-lsccsc		LSC/CSC
+c28548f8-9c27-4f44-9c78-8d09e85bc91b	BR_240_21136		senior akvizítor III_Región Východ (Košice)
+c2a3060c-4965-4351-a40e-6ddf2dc3144d	toma	17701176	Toma Radovan
+c2c74103-772f-4b37-ab9f-677a5224f032	GG-SAP-Vsetky.opravnenia		Všetky opravnenia
+c2cddcad-5bc5-431c-8af7-4a2f106bb0c2	GG-CDBP-CDBPs#4		CDBPs-Operator.-.HR
+c2ec8674-e89d-4afc-ad4b-3339d5d7eb4c	1779169xi	1779169	Kotman Boris
+c3092123-9ce4-4f3a-bbed-03ae9a3c9abf	BR_409_35102		finančný analytik III_Controlling a reporting
+c34a6d72-cf51-4701-bdaa-da8475bf81a9	17706633	17706633	Kardelis Milan
+c3577ad6-cd89-47fc-988b-32b1553fa637	GG-LEA-Fleet.vykazy.sluzieb		LEA: Fleet - vykazy sluzieb
+c3709326-1ed4-4ff2-be20-4240338200f5	1779155ex	1779155	Nagy Róbert
+c3e17f39-36c3-4363-a9fd-97411d4aeac9	17707067	17707067	Kéder Anton
+c3e1e25d-461d-4820-b7f4-7e81a8d134c6	GG-LEA-Fleet.management.pasivny		LEA: Fleet - management - pasivny
+c45b5b27-2f90-4609-aa1e-e9a7d5305eed	špecialista riadenia rizík II_Credit risk_doplnujuca		špecialista riadenia rizík II_Credit risk_PDF_aktiv_pristup
+c4885c22-a9b2-47d3-8935-19adafb18dce	GG-LEA-Predfinancovanie.akvizitor		LEA: Predfinancovanie-akvizitor
+c5332318-3ad5-4da4-9eca-a7a7757388de	BR_202_24106		špecialista Full service_OLFS
+c53b41df-dcdf-4b17-bd44-b6e53a193644	17706762	17706762	Čepčeková Alexandra
+c541dc01-80a3-416f-a512-e24f9010b81e	janos_admin	1779039	Jánoš Roman
+c5569e61-8774-407d-aae1-af420911a03c	GG-MDK-REP-kestr		Košice
+c571b893-945b-43d7-897f-87927845fcc0	GG-SAP-FS_.Evidencia.KDF		FS: Evidencia KDF
+c580fd4d-d1a6-4a84-9b97-ed61e429bd7a	17706745	17706745	Kytošová Klaudia
+c593b9ac-3a97-4ed5-9edd-0411e18999ac	BR_302_31103		špecialista pre poistné procesy_Poistenie
+c59bafe6-e746-443b-a26a-c7b4d3396cb9	bilcikova	17702705	Bilčíková Mária
+c59fb5a8-a5c6-4694-8f97-e25cf039ac35	GG-MDK-REP-riaditelpo		Riaditeľ pobočky
+c5b3a160-43d6-4212-8441-6fcd999bad85	GG-LEA-Riadenie.portfolia		LEA: Riadenie portfolia
+c5f65f8e-79ac-446e-a5f3-602b8bfd3ff9	GG-MDK-REP-jazdenky		Jazdenky
+c60f2f12-85bc-4421-bcca-423862d6f88f	GG-LEA-Poistenie.provizie.z.POI		LEA: Poistenie_provizie_z_POI
+c61bf1b6-0276-4fdf-942b-f2d529ac8337	BR_408_33102		účtovník I_Účtovníctvo a dane
+c6c7360e-f79d-4093-be6b-e0be4873984a	BR_208_60000		dohoda o brigádnickej práci študen_Región Juh (Dunajská Streda)
+c6d8089e-560f-4fed-a087-bdf28b532e19	dms_poistenie		DMS - Poistenie
+c6e2b926-e679-4870-b0b7-14291f008696	GG-LEA-ZI.spatna.zmena.stavu		LEA: ZI - spatna zmena stavu
+c6eb2816-59dd-45b0-84f0-49427c6139da	cechovicova	17702582	Čechovičová Viera
+c6f7f6a9-4126-4505-87e0-25edcf2a1fd7	GG-ITAPS-Administrator		Administrator
+c76b0000-e169-4faa-a3f6-459fadd3659e	GG-DM-OPPR		OPPR
+c7774452-86c8-4355-a0bf-35ca3cdf9f71	GG-LEA-Modifikacia.prenajimatela		LEA: Modifikacia prenajimatela
+c78eddbc-de2a-414f-80f3-0ed99e2e295a	 BR_412_34102_BANKA		špecialista platobného styku II_Finančné služby_BANKA
+c7fcb964-252e-4032-afaf-9e0d6b629217	lopatkova	17702034	Lopatková Katarína
+c8183270-5fb2-409f-bc16-8c17efddab40	GG-LEA-Predfinancovanie		LEA: Predfinancovanie
+c84e5d75-7fcc-411b-aede-8a297fa7b99e	BR_210_21112		junior akvizítor_Región Severozápad (Trenčín)
+c89123e7-56b7-496c-a387-0652ebafdfdf	dm_DMCOMAktivator		DM/UM - DMCOMAktivator
+c895fc95-9162-42ff-9990-c9b7a500ab20	GG-VEMA-Spravce.stravenek		Správce stravenek
+c8a5e222-2727-41dc-9f3d-bf2e7c8ff689	BR_315_12147		manažér tímu Centrálne spracovanie_Centrálne spracovanie a kontrola obchodných prípadov
+c8c802d5-d896-446a-b9e1-bac1785cb927	BR_301_12129		manažér tímu Produktový vývoj a tr_Produktový vývoj a trhové riešenia
+c8dcdee7-eb51-4266-a11c-e3f776ca3b35	GG-MDK-REP-novezamky		Nové Zámky
+c8fd89a4-0db5-41eb-bab8-93a344a6eb13	BR_296_327		nažér tímu Vendor Support a Extern_Externé distribučné siete
+c9680b1b-dc8a-40a7-b39d-222d23942113	1779073xi	1779073	Hečko Dušan
+c9771b0e-151d-48b4-9152-819d86c8d9ef	17707134	17707134	Ebský Šimon
+c987c682-90b9-4c1c-9f5e-45e29ef5347e	GG-CDBP-JPP#EsSo		JPP-ESS.Standardny.operator
+c99e6bdb-2471-488d-914e-8061818fba60	BR_315_23113		senior špecialista spracovania zml_Centrálne spracovanie a kontrola obchodných prípadov
+c9db4f43-0e04-43c6-a295-4d0454c9f6e8	BR_250_21135		senior akvizítor II_Región Východ (Prešov)
+ca030020-0b23-4cad-9e33-d47c533fbd50	1779089xi	1779089	Blažo Martin
+ca0f716a-20e6-4a48-8509-83b3a432ed94	BRC_zdielanie_brigadnika_FSaUaD		Zdieľanie brigádnika_FSaUaD
+ca3cd4b2-9e3d-41d8-8d92-3e6ad67d06c4	GG-SAP-Pohyby.na.inv.majetku		Pohyby na inv.majetku
+ca614b41-09b2-41b0-9624-01f41b74a46f	17709994	17709994	Bielik Ondrej
+ca86cbe0-3942-496a-9f67-db09fe88c3af	BR_301_50100		špecialista pre digitálny predaj_Produktový vývoj a trhové riešenia
+ca960e5f-dd33-4e73-b15c-cf063d9b22ee	17706475	17706475	Huttová Michaela
+cabbbd6a-c7bb-426e-a7e4-023741764909	17709667	17709667	Duda Pavol
+cae42d5c-50e4-4531-853d-4bbf5653857f	BR_230_21135		senior akvizítor II_Región Stred (Banská Bystrica)
+cb0fb83a-4ef4-4bbe-80f3-e11d06a7a278	GG- MDK-NIA-Role.Administrators		Role Administrators
+cb307274-6f2b-4c2b-9e44-b395d96765e0	BR_270_60000		dohoda o brigádnickej práci študen_Región Stred (Poprad)
+cb724847-ddc8-43ee-b5a4-9234f29bf2bd	BR_280_21136		senior akvizítor III_Región Severozápad (Trnava)
+cbec25d0-a44c-43bd-a682-7289ff94acf1	BR_405_60000		dohoda o brigádnickej práci študen_IT rozvoj systémov
+cc161b3d-07ed-45f8-bec8-9fd1c48c6456	labajova	17702403	Labajová Jana
+cc1f66ce-e81c-480b-ac7c-fc25faebc4e0	17707145	17707145	Bachledová Natália
+cc4c9db4-0458-456f-90c2-12d7200be801	BR_409_35107		špecialista pre dátové sklady_Controlling a reporting
+cc5f38c6-be58-4c83-b931-7ea6c7b5e1f8	marcek_admin	1779019	Marcek Peter
+cc641093-07d5-415d-b746-d355b86db116	GG-MDK-LCT-SCHVAL-vynimky.poistenie		Výnimky - Poistenie
+ccd09d1a-2541-4b61-a0a0-fea48293bffb	GG-MDK-REP-trnava		Trnava
+ccdb64f8-7bdf-4d6c-9041-30afc8154d2e	GG-LEA-OLFS.brigadnik.archivacia		LEA: OLFS - brigadnik - archivacia
+cced6076-8b3d-488a-b842-cdc6d2097895	zilinska	17701344	Žilinská Klaudia
+cd2a6b4d-ec83-4129-8b91-0c6464c222d1	1779099ex	1779099	Jediný Jakub
+cd6cf787-8f5f-4de7-b186-0cb1f372e8fc	17709635	17709635	Miláček Martin
+cd84c0b0-b8ad-485d-925d-d76379fb91e9	BR_414_37135		aplikačný administrátor I_IT prevádzka
+cda1c919-f20c-42a8-897c-bf3b0c538e55	skovranek	17701447	Škovránek Peter
+cdaf8315-7d3d-4932-a976-a85e8919fb6a	GG-LEA-Fleet.dod.doklady.odomykanie		LEA: Fleet - dod. doklady - odomykanie
+cdb87823-fa5f-4fed-b38e-f637f2070409	GG-LEA-Faktury.LZC		LEA: Faktury LZC
+cdb8d96c-fe90-4e51-ac6a-4ceba1081e7c	GG-LEA-Ciselnik.doklady		Ciselnik_doklady
+cde8781c-1270-4616-9980-94661694652d	BR_408_33108		účtovník II_Účtovníctvo a dane
+cdfebef2-39fe-46b0-9fe2-1e42fbf5af11	kajanova	17702602	Kajanová Alena
+ce1c6048-abb2-4b04-a4cb-81c23829b7d0	GG-MDK-REP-genriad		Generálny riaditeľ
+ce1e82af-43ce-43a9-8a26-b5e2bd2b159e	BR_220_21137		Key Account Manager I_Región Sever (Žilina)
+ce684568-1e2b-4e88-9145-6f53505aebe8	BR_315_23127		senior špecialista tímu kontroly o_Centrálne spracovanie a kontrola obchodných prípadov
+ceaee8f3-ec98-42e4-b231-c590b564b80b	GG-CDBP-JPP#EsOe		JPP-ESS.Operator.Expert
+cec0a8bd-47a3-472d-b071-881227a10ac8	BR_270_21134		senior akvizítor I_Región Stred (Poprad)
+cee104ec-aaca-4580-a859-29f73f36ae5d	17707114	17707114	Kapusta Michal
+cf027b42-bf2a-446f-8036-ce2273ca434d	BR_200_21132		junior akvizítor II_Región Juh (Bratislava)
+cf0ddabe-60d6-443c-8e4b-9136460b13b9	BR_202_21127		junior akvizítor pre operatívny le_OLFS
+cf163a95-b56e-421b-ad17-2ac7252e1c48	anovcin_admin	1779113	Anovčín René
+cf35c9d6-0925-4cc8-801d-9bf5697b6fdc	BRC_Centrálna akceptačná jednotka		Centrálna akceptačná jednotka
+cf433624-bccd-4f66-b06d-e2c9d0ce3b9d	BR_160_60200		dohoda o pracovnej činnosti_Informačné technológie a podpora
+cf6a2aaf-9156-429e-aa8c-34e2a1cf72e8	GG-LEA-Export.Inkaso		Export_Inkaso
+cf77051d-9bbf-4fc9-8dc1-6d0b6be4c83f	GG-DMS-Financne.sluzby		Finančné služby
+cf78ab71-c2fa-467a-a7d1-67b9c47e22a8	GG-DMS-Operacne.riziko.a.Compliance		Operačné riziko a Compliance
+d012f1d9-969f-424f-a2ca-626e5c6d2d68	17706573	17706573	Remencová Vladimíra
+d03ed162-2232-45fe-b7bc-fb17c80e43c5	BRC_Špecialista_BO_FS		Špecialista_BO_FS
+d0a3cd9e-1342-463d-872d-7488b557c2b4	BR_405_37129		Dátový Architekt I_IT rozvoj systémov
+d0b09026-e8f1-45d1-8466-25e6176deed9	17709616xi	17709616	Séleš Róbert
+d0f863d4-78f7-4001-af8c-83933d03885e	GG-LEA-Ciselnik.vseobecne.provizie.RW		Ciselnik vseobecne - provizie R/W
+d124032a-01c0-4ec9-a47a-d602cd7022b3	17707265	17707265	Tapferová Karolína
+d145d7f5-203d-45c1-b692-662966ed6844	GG-SAP-CO_.C_R		CO: C&R
+d1911b5a-43be-4a26-a666-7c81d7227e7d	BR_admin_MDK_6		administrátor_MDK_6
+d1e108e5-e209-4931-b0b6-8792fc2056e2	GG-SAP-Udrzba.komplexu.inv.majetku		Údržba komplexu inv.majetku
+d2258969-7eee-4af8-8301-47b15e40e93a	17706932	17706932	Janečková Zuzana
+d228812b-0eca-4ed8-9c61-c2ddab8a6639	17706899	17706899	Čechová Martina
+d22ad5cb-fd62-42b3-aeae-b735750e954c	BR_202_21110		Relationship Manager Full service_OLFS
+d236b089-a20d-4b19-a4fc-acf62dfa0a2b	BRC_SAP_Schvalovateľ_HANA		SAP_Schvalovateľ_HANA
+d269aa70-a635-4064-a1bf-bd4da845e945	BR_302_31110		garant pre poistenie I_Poistenie
+d286b0c6-215f-40eb-b3bf-7ec10c772d11	17709990	17709990	Pešková Barbora
+d28fc5fe-5cd8-4c61-8c95-21e99c5bc623	GG-MDK-RISK-rp		RP
+d29cd6c5-f0ea-4a4a-ae4a-9c3d62510273	GG-SAP-Pre.audit		Pre audit
+d2c6bdca-1235-4bbd-bbc7-7cdd8dcd4634	17707276	17707276	Giertliová Samanta
+d2c9a3b4-5be5-4c5d-a0cf-af69acf72aa0	17706411	17706411	Ščevík Marian
+d2d73377-a97d-4722-b233-0f1b52b45454	BR_402_60000		dohoda o brigádnickej práci študen_Právne služby
+d2f90de3-fdd6-4202-a8cd-1a47f6a4b218	GG-SAP-FS_.Travel		FS: Travel
+d3044eb5-9b21-4d20-a10e-02a6da67bbe2	17707299	17707299	Hučko Marián
+d30d458a-3a35-4c50-98c7-7fbce870d6de	BR_120_11107		Výkonný riaditeľ pre obchod a podp_Obchod a podpora
+d3186cdd-7a59-4710-a082-c61979409400	17702235	17702235	Fekiačová Diana
+d32d4280-99bf-486b-abf9-1d98b722fba4	mokus_admin	1779031	Mókus Štefan
+d330c5f8-9078-4055-a0e7-ead79a02e7fb	BR_230_21134		senior akvizítor I_Región Stred (Banská Bystrica)
+d3408b45-7244-4d54-a981-85109cfa42a9	GG-SAP-Z_SOLMAN_TMW		Z_SOLMAN_TMW
+d346c3ec-45ae-45e8-b10f-dc348cc1309b	17707094	17707094	Benkeöová Lucia
+d34bb19f-57bb-49f8-befb-50b337d190b7	BR_305_60200		dohoda o pracovnej činnosti_Centrálne značky OUA
+d351cac2-ae87-4352-8d8b-5eb5e3b4d02e	blazejova	17706220	Blažejová Lucia
+d35b030d-89a0-47f1-920e-a16364b79469	luknar	17701100	Luknár Ján
+d377a493-1cd2-4c73-9175-06f71ae02467	17706738	17706738	Petrovics Martin
+d39b7ae5-052c-484d-bf8f-e0b9c972c493	17706849	17706849	Švecová Andrea
+d3a1c891-eeea-425b-ac72-23cd9a85f100	17706009	17706009	Novosedlík Matúš
+d3c5f49d-4363-48b0-8101-67b22bbe369d	17702597	17702597	Pethö Dominika
+d41b438c-6f1b-4cfd-8b7e-a6b2475c3e74	pavelka	17701131	Pavelka Peter
+d4216e9c-1098-4979-b486-c5721b7561cd	GG-MDK-LCT-presov		Prešov
+d433bc05-4f2a-44b4-b4b9-5ad25ecb28ba	fedorcakova	17702615	Fedorčáková Daniela
+d46641a3-a9df-466a-8ebf-7453b4fc4ba0	BR_409_12115_M		manažér tímu Controlling a reporti_Controlling a reporting_M
+d4737a6e-8cdc-4d13-ad6c-aa9ae130e92d	GG-MDK-REP-akvizitor		Akvizítor
+d50cc545-c4ae-4af5-b152-84999fc89b52	17706813	17706813	Majkovičová Andrea
+d517b313-9406-4a7c-8772-380f0b83ef00	BR_414_37123		aplikačný administrátor_IT prevádzka
+d53bad2a-b2a0-4c8b-9bcc-6c03a12b2430	BR_208_60100		dohoda o vykonaní práce_Región Juh (Dunajská Streda)
+d53d7d36-8def-4de9-93d9-329a8358a9f1	17706734	17706734	Sokolíková Andrea
+d54e14fe-4d75-4f02-97c4-1e10e43acb47	GG-VEMA-Hlavny.dochadzkovy.veduci		Hlavný dochádzkový vedúci
+d54ef23e-9432-4cd4-a532-d986ae7d55f1	GG-DMS-Marketing.a.podpora.obchodu		Marketing a podpora obchodu
+d5534232-8d31-45a2-a34d-988e1c543439	BR_302_31106		poistný špecialista - podpora obch_Poistenie
+d560766f-1ad0-45f1-9fe9-0a8157d7cffa	BR_260_21135		senior akvizítor II_Región Západ (Nitra)
+d5712e57-b077-4f94-bec5-1d4af7cd5088	1779085xi	1779085	Kajan Denis
+d57198f8-63b9-4cb7-9894-3b513aeefc85	17702635	17702635	Lorencovič Renáta
+d58aadb7-cdab-44c7-ba9c-fad65530eac9	GG-MDK-REP-zastr		Žilina
+d5b0147d-1c55-49fe-9268-212dab11e302	GG-DMS-Archivar_.auditor		Archivár, auditor
+d5b4b0b4-4ba6-4d7e-9387-44fe76371c0f	BRC_Schvalovanie_1plus_Pobo_BA		Prístup ku schvaľovaniu 1plus_Pobočka BA
+d5bbb463-fecb-4179-8374-4798e2301c07	dm_creditrisk		DM/UM - Credit Risk
+d5f20552-7f9b-454b-b110-aded0f6412d5	kahat	17702614	Kahát Jozef
+d5f406e2-0934-42e7-a6e0-b17a61b34893	madarova	17701841	Madárová Lucia
+d61abf9b-6823-4b32-a2ca-fe1cc1d17f91	GG-WP-Admin		Admin
+d6211c6a-d2da-4f2b-b0ab-da811417bc8c	BR_409_35101		finančný analytik II_Controlling a reporting
+d62f5af6-5d4c-4807-b202-82e635d1862e	BR_401_60000		dohoda o brigádnickej práci študen_Ľudské zdroje
+d6635f13-0ac1-4cf4-8269-5ab7921162d3	BR_408_60600		Externista – prístupár_Účtovníctvo a dane
+d66dad98-6509-41a0-b499-96206a615462	GG-DM-ImpEurotax		ImpEurotax
+d6ac297a-0cb3-42ee-ae88-96deb4d3a991	1779125xi	1779125	Klika Luboš
+d6fa5ddb-e5a9-4343-9db2-6ab31931e8ab	web_dms		Web-DMS prístup
+d726f55d-9e69-406e-a171-e548e82e658f	1779106ex	1779106	Búri Lukáš
+d7595dfb-6cc1-43a1-8dde-6290f6337fd1	BR_401_28119		Špecialista náboru - II_Ľudské zdroje
+d7738010-2146-41eb-a847-3abab8b56cde	obenau	17702299	Obenau Juraj
+d77a47da-453c-4d7f-8755-3c4a3d829fa3	GG-DM-Admins		Admins
+d7845f22-9d9d-43fe-86e9-f3bd5586cd99	1779053ex	1779053	Švec Peter
+d7b9a7ea-2f64-46aa-8dc8-df0b5d08bf35	GG-LEA-Produkty		LEA: Produkty
+d7c9eea2-bf83-488f-9986-8fb94b30db20	lences	17702998	Lenčéš Marián
+d7fd1fea-9a9a-4e52-a96b-780f6002468b	GG-MDK-LCT-riadeniepo		Riadenie portfólia
+d80597e4-24bf-4252-8bf0-fdee7c4c26f6	GG-LEA-Specialna.tlac		LEA: Specialna tlac
+d81d5938-3e8a-4e96-a929-63f04c9ffac7	galas	17706292	Galas Andrej
+d81f592e-6353-4b3c-b9e0-45e1855fae03	GG-LEA-Ciselnik		LEA: Ciselnik
+d855e9a0-ebae-4c04-b4ba-39b60ef9fb52	GG-DMS-Full.Service		Full Service
+d86bd6b3-c073-46a9-bc58-4417bc081633	GG-LEA-Fleet.poistne.udalosti		LEA: Fleet - poistne udalosti
+d8956e4e-501e-4e12-8d50-57b67900709b	17706888	17706888	Vargová Kristína
+d898abac-9469-4571-9d8c-699345b5096d	BR_315_23108		špecialista back office_Centrálne spracovanie a kontrola obchodných prípadov
+d8a93ba2-b493-4e50-860d-d1c562543442	GG-LEA-Upomienky.pasivny.pristup		Upomienky - pasivny pristup
+d8c6132a-02bd-45c9-a485-d37753c49a40	BR_410_60200		dohoda o pracovnej činnosti_Centrálny nákup a služby
+d91d7246-eb3f-4e52-8b98-5ea85a7cc177	BR_202_24100		technický špecialista Full service_OLFS
+d9232195-b4f7-4ee9-aaf7-404a4b9d227f	17707298	17707298	Novák Dávid
+d94cd554-6c53-48a2-a236-e11de1b47915	toth_admin	17702941	Tóth Tibor
+d965c136-1a08-460d-bb0b-126dce67f306	GG-SAP-Zobrazenie.poloziek.dokladu		Zobrazenie položiek dokladu
+d9d36ee8-3c25-483c-8cf0-0c48f378c93c	BR_303_60200		dohoda o pracovnej činnosti_Zákaznícky servis
+d9d6b1b9-356f-4464-b5d8-9edec4622ba0	BR_407_60200		dohoda o pracovnej činnosti_Riadenie portfólia
+d9d7f7f3-a3f1-4781-a032-6b468772cd5d	BRC_208_21111		BRC_senior akvizítor_Región Juh (Dunajská Streda)
+d9dee061-0fe6-4a52-a6a8-8fc033c82071	BR_305_21117		Key Account Manager značkového lea_Centrálne značky OUA
+d9ed1242-fed7-433c-b546-e715163f48f6	BR_409_35110		dátový analytik I_Controlling a reporting
+da237fa8-d534-4ad1-8de0-0d7c9e09a39c	balusikova	17701304	Balušíková Veronika
+da2a278d-b769-4286-88a1-930615a29e2f	GG-LEA-ZI.aktivny.pristup.platny		LEA: ZI - aktivny pristup platny
+da2ec2d1-2dc5-4c89-b7f6-da977aa24aac	1779144ex	1779144	Rybánska Diana
+da3997fa-51eb-467d-9e06-8c5a11206189	nikmonoval	17701216	Nikmonová Ľubomíra
+da54dfe4-5596-4596-9631-916046f911cb	dm_uctovnictvoadane		DM/UM - Účtovníctvo a dane
+da6ecf30-cfdf-41d8-8964-951bcc49977e	derlichova	17701626	Derlichová Andrea
+da8a76f6-3dc2-4edb-9a5c-cd6ff1adf7e8	17706933	17706933	Nálepová Iveta
+da90b09b-40dd-416b-9e26-96b319b0bde6	17707078	17707078	Novotná Sára
+daa8b429-477e-4583-9079-9a581a1c0866	17707070	17707070	Weiszová Katarína
+dae31987-502a-4fa0-a63a-4c92a10630c8	BR_404_27105		Špecialista Compliance_Riadenie operačného rizika a Compliance
+db75a4d6-dd73-4a4d-9eb4-9e50be0af470	1779136xi	1779136	Šoltes Miroslav
+db83d6a2-b95d-4e15-ad92-9af1e5bc7b7a	zilizi_admin	17706293	Zilizi Attila
+db89b623-98ea-4215-9298-6646890496ab	GG-MDK-LCT-it		IT
+dbafd65b-35e3-4322-9f62-28781f2bf206	BRC_LEA_RM_limity_FS		Prístupy_LEA: RM_limity_FS
+dbc3750b-a2de-47ce-92e4-4556fdaa33ee	1779036xi	1779036	Hudáková Lucia
+dbef4153-bbd7-4d9a-872a-d8f7d4a255e4	GG-PBI_RRiaditelia		PBI_RRiaditelia
+dbffc3ac-ade7-4207-bc1d-725e97181216	BRC_270_21111_RPO		senior akvizítor_Región Stred (Poprad)_RPO
+dc13bfef-b477-4e9a-bce7-17f5e81e5a0c	GG-MDK-REP-pobocsiet		Pobočková sieť
+dc1e64a2-ec87-4163-895a-548768df91d4	GG-LEA-Ciselnik.poistne.2		Ciselnik poistne 2
+dc2284a8-2fee-420a-bd33-2330930a0a37	GG-CDBP-CDBPs#10		CDBPs-Standardny.operator
+dc574822-5e7e-4c66-bd13-f6b9abb05f07	BRC_SAQ_prístup do SAP_Poprad		SAQ_prístup do SAP_Poprad
+dc5de076-1a87-42f1-88b6-aa3f27310bba	 BR_admin_MDK_1		administrátor_MDK_1
+dc64c154-330c-48ed-bb41-a9d19c126800	iris_admin		IRIS - ISPEL - Admin
+dc8d8e48-abbf-43d4-b743-41b208740c74	GG-MDK-REP-nrstr		Nitra
+dcb833d1-08c9-41e0-a9ee-233bc1ec70ea	sedlak	17706285	Sedlák Mário
+dcd98e0a-6373-4e88-a10c-383fc1b69730	GG-DM-Centralne.spracovanie		Centrálne spracovanie
+dce10367-dd86-495d-96ac-f92bc34bc420	BR_416_38104		projektový manažér_Projektový manažment
+dd0003d7-9e91-4f37-a27f-c54ad037dfab	1779120ex	1779120	Ratkovský Adam
+dd2b15c9-c5e7-4630-b46a-284f062093bf	GG-MDK-REP-nehnut		Leasing nehnuteľností
+dd4b36bb-d5dc-4cb1-b034-bddf1d0706c7	1779099xi	1779099	Jediný Jakub
+ddcc5fe1-92e2-4634-a9f6-c566df3a3a01	1779074xi	1779074	Moždženová Kristína
+ddd08809-3c82-4801-a70b-ed50ecf2f547	torvenyi_admin	1779068	Törvényi Rudolf
+de00bdde-ecf4-47a2-90d4-a0d6e18774fa	17706878	17706878	Hajdučková Martina
+de138a6b-4241-4be2-a958-c53739eb2c3a	repkova	17701632	Repková Iveta
+de2a8255-b029-49ec-8eae-1b5ecd7d7439	BR_220_21138		Key Account Manager II_Región Sever (Žilina)
+de3b8310-535a-465e-82c8-2fe5bb80f02f	BR_295_13114		riaditeľ tímu Vendor support_Vendor support
+de41880c-56b2-4134-b77c-1af871334c33	GG-CDBP-JPP#OpSu		JPP-Operator - Suhlasy
+de61ac93-2c7e-4908-ab12-3993a8c03b70	zelenak	17701196	Zeleňák Pavol
+de66b23b-19ff-4bc7-b6e1-8fec099c5eb0	BR_313_24126		Firemný expert tímu služby Operatí_Technická podpora a služby operatívneho leasingu
+de8c6c64-a7d0-4cc3-a904-c8ee6d9b148e	borutova	17702886	Bořutová Eva
+de92e2f5-acb9-48cc-b795-83207cd767f5	BR_111_No EB		 Rights_Asistentky GR a VR
+dea7b89d-771e-46d3-aae2-46e410c1b742	BR_412_34101		špecialista správy produktov pre d_Finančné služby
+dec3ff20-fb32-4226-994d-3ee0fa0251fd	mpavlikova	17706221	Pavlíková Martina
+defac8c1-6de4-4e41-bcb2-1e5c473e66ff	17709656	17709656	Kruk Miloš
+df0cb14e-1c37-44db-a44d-8509d40226ec	GG-DM-Poistne		Poistné
+df1b93e6-8037-4d96-82be-e5e779831dc1	banosova	17702398	Bánošová Eva
+df2cfe2a-80b7-4128-a445-ad766069b7b6	17702193	17702193	Kohout Dušan
+df92a062-0ca0-4083-831f-3c6a05c57309	BR_313_24133		Account manažér pre dodávateľské v_Technická podpora a služby operatívneho leasingu
+df9f7b9f-c858-4de5-ba03-18d9be9ca7a5	BRC_302_45104_1		špecialista pre správu provízií z_Poistenie_dohoda
+dfaac7bb-8418-4033-8d48-162c326ac583	BRC_SAP_PVaTR		Prístup SAP: PVaTR
+dfcf1270-77ee-4529-8947-ab7f9b03645a	GG-LEA-Reporting.zostavy.blokovani		Reporting zostavy blokovani
+e02df667-4744-4544-ab3a-85d05ef835fe	17707110	17707110	Nguyen Tien Phong
+e0378db4-2c5c-4f61-ae14-749587e68b23	BR_270_21111		senior akvizítor_Región Stred (Poprad)
+e06e5e2d-d257-4f16-a9e5-7fcebbc3a607	pfeiler_admin	1779100	Pfeiler David
+e0b474f8-6d6e-4dde-b730-0cb655d8a145	1779037ex	1779037	Oravec Andrej
+e0c607e5-35b7-4927-8d92-f40f8d6cd9e7	dm_centralneznackyOUA		DM/UM - Centrálne značky OUA
+e0c7d803-9ff3-43ca-ade6-9089cf5aa0d9	17706568	17706568	Pacák Radomír
+e113becb-cc52-47e8-9f34-b05774d3b0f6	GG-LEA-Sprava.LZ.Cesie		LEA: Sprava LZ - Cesie
+e135bab7-6ef6-4d0c-b1c8-e5136f6ae8dc	BR_208_60500		dohoda - trainee_Región Juh (Dunajská Streda)
+e1479a84-b30b-44d0-b1b0-5629b40a0cb6	BR_305_21124		Key Account Manager značkového lea_Centrálne značky OUA
+e15cd02d-ddba-4538-bd23-79ddb20fdc9c	masaryk_admin	1779027	Masaryk Admin Rastislav
+e1654dd5-f9e1-4772-bde7-2ea15700eb48	BR_405_60100		dohoda o vykonaní práce_IT rozvoj systémov
+e16ebd52-1a20-4207-84a2-6ed924732129	verebes	17701328	Verebeš Patrik
+e189ed4a-9261-4ff5-b3d4-8b8386d80976	17702672	17702672	Hrádek Simona
+e1977413-c1c9-459e-9fcc-cfa2e3e1b11d	17707005	17707005	Leskovská Veronika
+e1bd266b-6e1e-4164-81ef-836c6dcd418f	GG-DM-Centralne.znacky.OUA		Centrálne značky OUA
+e2332cd7-9c95-41d7-9ede-b47f1303dae6	solnokyova	17702391	Solnokyová Denisa
+e25d5e23-cb9e-4ff2-97bb-e4f7c10696e1	BRC_Prístup_LEA_FDS_Faktoring		Prístup_LEA: FDS Faktoring
+e292e652-225d-4589-8031-0832091b742f	1779080xi	1779080	Prčeková Silvia
+e29c86a0-db6a-41f9-a664-c839b09573dc	17706614	17706614	Papayová Lenka
+e2ea163b-e224-4d7c-992c-c3fbaf6a388b	BRC_vypomoc_marketing		vypomoc_Marketing a podpora obchodu
+e2fe8f0b-21d5-481d-a863-113dfc42dae2	kramarova	17701449	Kramárová Silvia
+e3311897-52ea-46bf-b9db-1b8a69ea6d10	1779176ex	1779176	Kozák Radim
+e36b35a6-60d5-4f85-ad29-4555e2437b08	17707300	17707300	Gubík Dominik Erik
+e3fb55db-776d-41e3-8436-305a39dc8ee2	BR_414_37118		špecialista informačnej bezpečnost_IT prevádzka
+e41b774f-74a8-4445-99b1-ebf47583cfc1	GG-MDK-REP-ludszdr		Ľudské zdroje
+e425f253-8a69-44a4-b76f-14d0f07ca50a	GG-DMS-Centralny.nakup.a.sluzby		Centrálny nákup a služby
+e457ee7f-de2b-48d2-b8de-41eb63ff8c10	17707177	17707177	Volentič Ľuboš
+e46eeb45-c8a7-4025-95d4-c0455f6292b7	aremenarova	17701453	Remenárová Andrea
+e4729916-c913-4a0c-9fa9-5491ac0a0e2d	BR_220_21112		junior akvizítor_Región Sever (Žilina)
+e4c81e6f-b189-4369-b973-93c035b1453b	17706741	17706741	Rybár Matej
+e4d6d713-10ce-4d9c-9d44-c5fc7c1a1963	17706764	17706764	Bziňáková Miriama
+e515c1d5-26b7-450f-9806-0f214ff65cd7	BR_220_21135		senior akvizítor II_Región Sever (Žilina)
+e518c846-f9a3-4c89-9d59-93e8ab5be264	BR_302_45105		senior špecialista pre poistné uda_Poistenie
+e528a6d1-4ad6-426a-bc0f-0995f7b1ff0b	BR_403_60020		 dohoda o pracovnej činnosti_Organizačné, projektové a procesné riadenie
+e52be922-f8a8-444d-bea7-0b3b3295c8e9	GG-LEA-Obchodnik		LEA: Obchodnik
+e55215ab-3c3f-43ed-a7f8-79099aff1b9a	BR_202_24111		Account Manager pre dodávateľské v_OLFS
+e55e8f9a-4c30-486a-95dc-67ae0cb97671	1779106xi	1779106	Búri Lukáš
+e589debf-34c0-4b55-9c18-141e39d03c3e	kroslak	17706362	Krošlák Milan
+e58a26f4-b773-4968-b866-49b58522735a	GG-LEA-Ziadosti.o.zmenu.poistne.ostatne		LEA: Ziadosti o zmenu - poistne - ostatne
+e5cb0be5-a43e-41ee-a330-85d548b3c25f	1779090xi	1779090	Osuský Boris
+e60465e1-fa94-4fda-bc2d-2a0503ac5a10	GG-MDK-LCT-zilina		Žilina
+e61b3a55-4c85-44a4-bb37-b05908046935	BR_280_60200		dohoda o pracovnej činnosti_Región Západ (Trnava)
+e6295a6c-a648-414f-9198-d720a454f591	BR_303_43102		front office špecialista_Zákaznícky servis
+e66e7c10-b107-4c33-be5e-e73f7135b823	malec	17701107	Malec Adam
+e6e4c418-1247-469a-ba58-f267fc6a3494	BRC_LEA_ziadosti_o_zmenu_ostatne		Prístup_LEA: žiadosti o zmenu - ostatné
+e6f11351-6e03-496a-a8b6-4ccec485d967	kalamar	17702302	Kalamár Ondrej
+e70d0573-0e41-4375-8de9-6492b289e9ef	17707182	17707182	Beták Adam
+e7144012-8061-44b7-b7e7-4bf164e5a0ef	17706669xi	17706669	Dudáš Michal ADM
+e7268944-629f-49e6-99d9-101911144856	BR_250_21132		junior akvizítor II_Región Východ (Prešov)
+e73a2992-9dc4-4551-90c6-5d89484d8c6e	GG-LEA-Individualny.COM		LEA: Individualny COM
+e749624b-f4b0-4898-9a92-0b0f9bc4e41d	tobek_admin	17702624	Tobek Ľubomír
+e7526427-5a82-4608-854e-068a47408cff	BR_407_12108		manažér tímu Riadenie portfólia_Riadenie portfólia
+e7ea6802-52f0-4121-b9b1-88076afe3d90	GG-LEA-Partneri		LEA: Partneri
+e7f67033-162a-4c91-87b7-468fec0a9447	17706630	17706630	Piačeková Alexandra
+e7f78966-5464-4926-8149-0fd148d7002d	BR_315_23125		špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov
+e817bc80-8ed7-4c15-95a3-4d8d7e8a94fc	17702223	17702223	Hrebiková Svetlana
+e81df6b4-9516-412e-ac6a-4550e8c72323	BR_220_600000		dohoda o brigádnickej práci študen_Región Sever (Žilina)
+e8206c62-027f-45eb-b4c6-cc4e859218e4	dms_financnesluzby		DMS - Finančné služby
+e84667ad-6f66-40ba-8c6b-1daee289a2af	1779101ex	1779101	Novakovský Jakub
+e8487619-7894-4f0d-91ea-b37b5bc9d82c	17709667xi	17709667	Duda Pavol
+e85ba461-bf49-478e-aa98-52c5d2ee7fc3	BR_260_21112		junior akvizítor_Región Západ (Nitra)
+e863bf90-eb96-4994-9b9e-6defb993f23f	BR_305_60100		dohoda o vykonaní práce_Centrálne značky OUA
+e87885c3-1180-4485-8366-b137ed95f4fa	17709685	17709685	Škulec Dziváková Anna
+e87faacf-2415-4e35-a403-6eb6414f3a09	BR_409_27103		špecialista kontroly_Controlling a reporting
+e8849540-a7f0-40f5-b578-4ba2f298d968	BR_240_21111		senior akvizítor_Región Východ (Košice)
+e89120d6-c077-443c-9cc0-d8b8ef8102de	GG-SAP-Analyza.workload.-.kontrola.inboxu		Analýza workload - kontrola inboxu
+e8971802-630b-48b6-9920-84f34365b91e	17709635xi	17709635	Miláček Martin
+e89aeed9-29d2-43c1-927c-c52a5498262a	GG-LEA-Brigadnik		LEA: Brigadnik
+e8a93b66-2feb-480d-acc0-1dc686e72d0b	GG-MDK-LCT-trencin		Trenčín
+e8afa1ef-8122-436d-af62-6800656e7860	GG-MDK-LCT-internecc		Interné CC
+e8c2334a-308d-48f5-9b23-13025d6b1e16	17707111	17707111	Serinová Ličková Mária
+e8ca933b-ad57-4348-b21f-f6368711548b	mtkac	17701174	Tkáč Miloš
+e8df759c-e2e4-4d41-bf12-2371ad7fc2be	GG-MDK-REP-itprev		IT prevádzka
+e94ab8a6-0a00-4dc5-ade1-120da1429ff4	17706913	17706913	Ocelková Daniela
+e954241f-696f-4d2e-938e-26f067d62bb6	BR_302_12139		manažér tímu Poistenie_Poistenie
+e9804f9f-5a0b-43a2-a7da-462e964a7259	GG-MDK-REP-riadrozv		Riadenie rozvoja obchodu
+e99e85e9-c53c-405c-ac7b-17d94e6c3cf5	slobodova	17702681	Slobodová Petra
+e9a51780-cf1a-4917-9bf3-998e842dc6ff	GG-SAP-Spravca.systemu		Správca systému
+e9fa51df-cd1d-4262-a0b4-f363843a5f0f	daubner	17701456	Daubner Richard
+ea1f794f-a7e3-4686-b466-0241af7916bf	GG-SAP-ZMM_ME23N_SPECIFIC		ZMM_ME23N_SPECIFIC
+ea2404f6-f365-433c-adcb-80409add097f	BR_305_23111		Senior špecialista pre riadenie pr_Centrálne značky OUA
+ea36bd54-b026-491b-9dc9-09f1968dcc78	BR_520_13118		regionálny riaditeľ I_Región Západ
+ea374d31-c56b-418d-8742-25b712599789	17706664	17706664	Škulcová Miriama
+ea5efb76-a8d3-4ede-83ca-df3fa6fe3c20	1779141ex	1779141	Polakovič Martin
+ea9789bd-3235-42d3-986a-5b4af94c7645	1779124xi	1779124	Sigetiová Andrea
+ea9edac6-c030-4f15-ba6f-4a79ca809e2f	BR_402_60020		 dohoda o pracovnej činnosti_Právne služby
+eab87025-697c-42a1-b45b-595500868631	17707038	17707038	Lenhartová Michaela
+eafa076a-6128-4b74-b457-4a59cf595fc0	UG-SAP-MM_.Ziadatel		MM: Ziadatel
+eb143f68-5abb-4f98-baeb-3af29643a393	17709659	17709659	Kráľ Dárius
+eb4c1277-b0ac-4af4-80b6-acd7e5c23906	BR_245_21111		senior akvizítor_Región Východ (Michalovce)
+eb768cdf-4de1-492f-a1b3-c1dc1892babb	BR_305_21105		akvizítor značkového leasingu I_Centrálne značky OUA
+eb7aae56-ea9a-4e89-9bdf-4dc48481a6e0	1779091xi	1779091	Kyseľ Dominik
+eba6fc71-1fe0-4401-8322-888e3c7e719b	GG-MDK-REP-riadportf		Riadenie portfólia
+ebd693b6-fa8d-490a-9bca-b22cb7da2894	trocha_admin	1779077	Trocha Martin
+ebdc209b-1dae-4874-9af8-b53dd3bd2df9	17706409	17706409	Mikulová Katarína
+ebeb3b4c-0c4e-41a3-b58b-ae9801ee2603	17706755	17706755	Cupper Denis
+ebfa6c76-15f3-4608-b43a-f8d9188399e4	BR_200_21135		senior akvizítor II_Región Juh (Bratislava)
+ebfbf404-f779-4b15-bfb9-520dd25b2ae9	17706903	17706903	Dubíková Erika
+ec0f1490-7a3f-4ab9-9f16-4a357661a9ef	BR_406_12120		manažér tímu Credit risk_Credit risk
+ec2ce1ed-8d48-4861-b390-c56d048682e1	dms_operacnerizikoacompliance		DMS - Operačné riziko a Compliance
+ecb91b07-3ecf-4336-9041-94281f4b5eb4	1779093ex	1779093	Reisz Marcela
+ecc6470f-6e75-495c-9aa5-fae2c16f208e	17707275	17707275	Lauková Veronika
+ecf3b8d0-c764-45a3-81f1-fc871fbb11c3	BR_129_13115		riaditeľ pobočkovej siete_Pobočková sieť
+ecf5cd8a-9b38-4f29-ad43-2132b89b7c8e	GG-MDK-REP-orgprojpro		Organizač., projekt. a procesné riadenie
+ed2217d8-aecd-4c0a-ab3f-3e951e11f084	BR_140_11109		Výkonný riaditeľ pre finančné riad_Finančné riadenie a podpora
+ed3d1712-9311-4ed7-bcb8-d634dd44ff6a	BR_200_21113		Key Account Manager_Región Juh (Bratislava)
+ed6e4315-bc94-4e6b-8faa-83a97de68a13	BR_admin_MDK_5		administrátor_MDK_5
+ed758409-3793-45ad-8135-5c895f0b5a21	BR_260_21134		senior akvizítor I_Región Západ (Nitra)
+ed7ab9c0-fd85-49b2-a895-ec51b5728001	1779112ex	1779112	Hubert Jakub
+eda0b553-dae6-4133-b507-77645f617ce0	GG-LEA-Ciselnik.vseobecne.ciselnik.pneu.phm.RW		Číselník všeobecné - číselník PNEU a PHM R/W
+edebecdf-c628-4348-beee-916f1bd2da20	17707226	17707226	Smoláriková Jana
+ee38701c-9685-4524-94cc-972fa4c6b279	BR_402_26100		právnik_Právne služby
+ee3bf0d4-79af-443b-b6d0-6e8b4f234987	17706909	17706909	Katona Dávid
+ee4cfad7-0fd1-489c-a389-96ac97f5a5cc	17709669	17709669	Kusenda Fedor
+ee5859d1-306d-4f2e-8f19-3abff43a7d3d	GG-LEA-LEA_.Modifikacia.ponuky.a.navrhu.predaja		LEA: Modifikácia ponuky a návrhu predaja
+ee76fe34-2b46-4d59-b620-482e8ccf3339	petreskiova	17702636	Petreskiová Iveta
+ee994bac-fcd8-42a0-a204-9b7f99af596f	BR_250_21112		junior akvizítor_Región Východ (Prešov)
+eea01361-4e33-49c2-8858-65c3d9c8de19	BR_570_24108		špecialista pre repredaj_Systémoví dodávatelia a externé distribučné siete
+ef195ab1-45d4-4272-8608-173db50c586d	1779174xi	1779174	Čík Juraj
+ef3a0a1e-b9ac-49ed-9ebc-6f636dee459d	1779091ex	1779091	Kyseľ Dominik
+ef3f0537-9ffb-4f87-aa09-047d65b09324	GG-CDBP-CDBPs#16		CDBPs-Operator – Suhlasy
+ef482e31-c00a-4a20-83b6-b03cc2240f11	17707035	17707035	Dziuban Martin
+efa45231-64ea-4115-8607-8a028be5f4be	BRC_Relationship Manager Full service_OLFS_docasne		Relationship Manager Full service_OLFS_dočasné
+efaef72c-c232-47a7-93cb-b986475a8b5d	GG-CDBP-ESSs#1		ESSs-Standardny.operator
+efbc097b-70c6-49a1-81b6-0b1a698773f6	1779107xi	1779107	Hudák Martin
+efd96dcb-c19e-4bc9-9aa4-77ea74ffb136	BR_570_21113		Key Account Manager_Systémoví dodávatelia a externé distribučné siete
+efdd964c-b5cd-40c1-9398-31362119724a	BR_313_24110		špecialista pre naceňovanie vozidi_Technická podpora a služby operatívneho leasingu
+efe12f36-7ed6-4c94-b7f1-7772fe9f3e3b	BRC_X_docasne		X_dočasné
+efe4d16d-6342-4049-bd16-4374259faa8d	moravcik_admin	1779014	Moravcik Patrik
+f00ef908-68c6-4015-b0d0-570fa4af41fc	BR_403_60200		dohoda o pracovnej činnosti_Organizačné, projektové a procesné riadenie
+f017ef1c-53c7-4aab-a419-0c083d0f3c1d	opalena	17706262	Opálená Kristína
+f01c73d9-1f9b-40a0-bab4-8911b867889d	GG-MDK-ERISK-td		Technický default
+f01d227e-98a2-42b5-ae95-97db3e86155f	1779088ex	1779088	Slíž Radovan
+f029ce57-9bc1-4d21-839e-64a35ebc60fd	GG-MDK-RISK-x		X
+f0667715-2437-4912-9eab-39022eef791a	BR_412_34108		špecialista správy produktov pre d_Finančné služby
+f0741fe7-0916-423c-b6cd-33a83a36c30d	BR_408_33105		účtovník III_Účtovníctvo a dane
+f075b60f-854f-4345-8246-c49feed0fcba	1779174ex	1779174	Čík Juraj
+f095a558-c974-40fd-97d1-cbf4bb28bfb1	cechova	17701138	Čechová Zuzana
+f0db20c4-dbd0-411f-b616-625b9e1910e9	BR_402_26105		špecialista podpory právnych služi_Právne služby
+f0ff1715-ddd9-424f-9be9-402b36df5a74	17706706	17706706	Čujková Zuzana
+f1aaa71d-03c9-4f22-b5b8-15ae9eefccd8	dm_UMModulRun		DM/UM - UMModulRun
+f1ae3973-8b87-4f38-86e7-8f5966a09cda	BR_406_39108		špecialista riadenia rizík III_Credit risk
+f1d008bc-e1be-4a45-81f0-5b681bce593d	BR_200_21121		junior akvizítor II_Región Juh (Bratislava)
+f1ee21f8-de3a-436e-b9c3-5eec373bf230	17706418	17706418	Miklová Victória
+f1fba63e-03d7-4e56-80a6-0103f7ab7291	17707225	17707225	Kollárik Martin
+f2161e3f-e9e8-4264-9e2a-ddf248604a7f	17706466	17706466	Mihalík Miroslav
+f23c509c-94a5-47dd-9946-c4f2816c159f	BR_409_35109		Architekt riešení biznis inteligen_Controlling a reporting
+f23d02cb-e2ff-4585-98e1-ddeaaacafe8c	BR_406_39100		špecialista riadenia rizík II_Credit risk
+f28e8fd0-9d02-4d0f-bbe9-dfbcdbf0be86	1779173xi	1779173	Janský Vladimír
+f29b4cd0-4ddd-408f-9e6e-0c89e3b40647	luptakova	17702499	Luptáková Ivana
+f29eb002-ec5d-4510-90ff-3e2ac3a3a805	rutova	17701272	Rutová Ľubica
+f2b23fc6-ac0a-4333-b67b-121c53b6f1d3	1779121ex	1779121	Donoval Martin
+f2cbc771-9e95-451e-bc61-2a3528da109d	bombarova	17702899	Bombarová Miroslava
+f2f0f4d9-b83f-465c-ae28-a1d62da46153	17706924	17706924	Turčáková Romana
+f3384a4c-642c-4582-b7a1-682b61c7292f	polcova_admin	1779060	Kuchárová Gabriela
+f33b6175-b574-45fd-8d7c-c6f39c1bf181	GG-SAP-Administrator		Administrátor
+f35f1f45-fa0a-4722-a42f-d4dad5ade4b6	17707183	17707183	Vaňková Alena
+f39dbcae-a179-4e28-8568-95c8beba3255	BR_200_21131		junior akvizítor I_Región Juh (Bratislava)
+f3b3db77-3e17-490e-9354-6a679f3efe3e	17709665xi	17709665	Pastucha Ján
+f3c734e8-b3c2-4167-8748-2a1ea9a0d950	GG-MDK-LCT-SCHVAL-Akcie		Výnimky - akcie
+f3c7f0a1-0d1b-409f-bfae-0c4f13e2004e	krizan	17706242	Križan Kristián
+f3cd5ffc-74ed-4e1f-8ae3-ac0a2f0e45f0	popelka_admin	1779079	Popelka Radek
+f3d3453c-f39a-481b-9990-66ee2b3b62a3	BR_230_60200		dohoda o pracovnej činnosti_Región Stred (Banská Bystr.)
+f3fd0546-99ce-42be-a421-53d8a43c59b0	1779176xi	1779176	Kozák Radim
+f41d51b5-74fc-4c24-ab24-fb15ecd0c16d	BR_315_23124		špecialista spracovania zmlúv OP P_Centrálne spracovanie a kontrola obchodných prípadov
+f4265303-982b-4aab-bcb2-46ea3ff9a977	17706400	17706400	Faklová Andrea
+f44bae7a-0b92-44af-ba7c-84d67e52c25a	GG-MDK-NIA-_Ramcove_zmluvy_Archivator		_Ramcove_zmluvy_Archivator
+f4a113f9-275b-4863-9e04-ce54366b4389	17706542	17706542	Máťaš Matej
+f4dd15df-cc8a-461e-ae19-243ac81e891c	BR_210_21113		Key Account Manager_Región Severozápad (Trenčín)
+f4e6aa9e-d0f2-4b3f-875c-a50345ef07d9	dms_akvizitor		DMS - Akvizítor
+f4eccf56-af79-4f52-8d62-aa4cc9666a6b	17706588	17706588	Mikulášová Simona
+f4f4e837-c68c-4880-a6e2-c8eb76478fd0	BR_530_13113		regionálny riaditeľ_Región Východ
+f4f7a72a-f0e5-40a6-a99b-e27e0ca755d1	raksanyova	17702976	Rakšányová Desana
+f5098906-a296-4625-a620-309567c09dcb	17709666	17709666	Dimitrovič Igor
+f5515288-1079-4181-a8c1-c5a2735c8173	1779156ex	1779156	Duľa Peter
+f5dee5b8-cfe1-40ab-b2ab-33dc24b1a88e	BR_230_21112		junior akvizítor_Región Stred (Banská Bystr.)
+f5e94bc2-a0ad-4cf0-8216-e9ab800d6b9f	1779085ex	1779085	Kajan Denis
+f5fab01f-dd9a-4cac-b035-97bf4301b5f7	abachar	17701608	Bachár Andrej
+f64566bf-94cd-4a2d-a7dd-6aee0a746932	GG-MDK-REP-obchodpod		Obchod a podpora
+f64d5c81-3b0d-423d-a710-3e8c6c8d38fb	GG-MDK-RISK-lgdroac		Správa parametrov LGD/ROAC
+f6540a08-a2b6-4d12-934b-c400b68e2a54	BR_296_21202		junior akvizítor pre vendor suppor_Externé distribučné siete
+f66d0fb8-0462-4965-b915-f7f5cf0b2d08	BRC_EDS_SAP		Key Account Manager pre Vendor Sup_Externé distribučné siete_SAP
+f6757165-ce75-4eed-b221-8e4d5a2870e3	17707268	17707268	Bombilaj Miriam
+f68d91f3-00af-47db-966b-d1cc8d60a929	17706701	17706701	Škrab Roman
+f6c1f722-70e4-4a11-8cd9-96297c9c317a	1779070xi	1779070	Boťanský Richard
+f6edaa65-708e-4a05-8e78-67f3fdbe0a50	17706707	17706707	Braniš Marcel
+f720ed39-84e9-4218-979f-f2afd1cf5403	1779072xi	1779072	Bánik Rastislav
+f733aeea-bd63-4060-a958-7a89d29f5a0f	1779000ex	1779000	Bučič Matej
+f7363990-f83e-4254-81bf-3db930861678	GG-VEMA-Dochazkovy.vedouci		Docházkový vedoucí
+f75e4bca-db5e-4bfd-a4b4-853bcc664aa0	17706554	17706554	Oriešková Nikola
+f784140b-8599-4275-bd16-879e1019cf81	GG-LEA-Nalezitosti		LEA: Nalezitosti
+f7a50ce0-8c8e-4705-a9b7-41cf55426e64	17706465	17706465	Bokorová Martina
+f7abaaea-22d3-4245-8c77-c3a4874e04d0	GG-LEA-OLFS.Reporting		OLFS - Reporting
+f7ca9632-675e-48e0-8b5e-01205f1768ab	BR_410_36106		špecialista centrálneho nákupu a s_Centrálny nákup a služby
+f7d1a21c-f8d9-46d5-a624-8785dcb26bb3	17706586	17706586	Urbánková Gréta
+f7ea9991-e901-445b-af63-9e37aebc799c	GG-VEMA-Ucet.pre.prihlasenie.do.systemu._domena_		Účet pre prihlásenie do systému (doména)
+f7f59c72-c57e-4093-a0c8-cb2e6771e649	17709692	17709692	Mésárošová Nina
+f81168be-0db0-4cd9-ad90-87736462e8b2	BR_260_21136		senior akvizítor III_Región Západ (Nitra)
+f8161203-8f7b-4445-9c68-0b97a90d8f3e	17709657xi	17709657	Kisoň Lukáš
+f81761bf-4d84-4a0d-923a-291668c6c37e	17706732	17706732	Hollý Matúš
+f83937bf-95a6-4442-8e2e-1ee61ebeb27f	GG-VEMA-Hlavni.dochazkovy.vedouci		Hlavní docházkový vedoucí
+f845ccf4-f01b-45c4-9594-877605fa9e73	17706650	17706650	Matejová Bianka
+f84b8c48-39b3-4bac-b1b0-31c77857059f	1779011ex	1779011	Holubov Andrii
+f84fe11e-27ed-4467-9d30-9dfe7a17fb51	1779137ex	1779137	Višvarda Lukáš
+f858b4c8-dccb-4718-8baa-733e666b0e8c	BR_305_600000		dohoda o brigádnickej práci štude_Centrálne značky OUA
+f8b92f28-b869-4511-81c5-0055897c0ec2	dms_centralnakontrolaop		DMS - Centrálna kontrola OP
+f8c2ea97-762c-403a-a553-10c64ee3119c	GG-CDBP-JPP#OpRa		JPP-Operator.-.Rating
+f8d265b9-f376-4375-a576-751272ed8491	GG-LEA-Fakturacia.poplatku.za.LNH		LEA: Fakturacia poplatku za LNH
+f8f9349f-a62e-414d-89b3-e2853a1c64cf	GG-SAP-Udrzba.kmenoveho.suboru.materialu		Údržba kmeňového súboru materiálu
+f931108e-4cc4-44b1-b840-8ce34ddc2625	rusnakova	17701814	Rusňáková Mária
+f988d3af-194a-4036-9319-f8cd3facd7b4	BR_412_12127		manažér tímu Finančné služby_Finančné služby
+f9b6707c-c580-4fa5-9c96-237c52aa4bc9	GG-SAP-FI_.ZSII_SCHVALOVATEL		FI: ZSII_SCHVALOVATEL
+f9cbad6f-eced-4a84-9186-029753197c5a	17709668	17709668	Pastuchová Petronela
+fa373fea-8c61-437e-9fbf-5f05d34a546a	cernakova	17702071	Černáková Edita Kmeťková
+fa4018f3-3f01-43fb-bb40-85a3428809ae	koprivova	17702241	Kopřivová Jana
+fa51bd35-7438-4d67-a58d-ce46c61fe4d0	zilizi	17706293	Zilizi Attila
+fa95dfc7-7407-4cbf-a0cb-8e26d9e75461	17709652	17709652	Sjekel Tomáš
+faa0d080-cb31-4c3b-8789-868e5af8d88e	GG-LEA-Provizie		LEA: Provizie
+fab663aa-d9be-4ee2-a309-81bdc492babb	GG-LEA-FDS.Faktoring		FDS_Faktoring
+fad5769f-09cd-49ad-b066-f98c1c4fe524	BRC_405_37125		architekt pre dátovú platformu_IT rozvoj systémov_SAP
+fad63165-0eb5-4528-83fb-1ef0eaac0183	BR_410_12138		manažér tímu Centrálny nákup a slu_Centrálny nákup a služby
+faf85c97-834e-4931-bbdd-e2ae79e3823d	osvaldova	17706341	Osvaldová Linda
+fb0e40bb-2e7a-479b-a4df-af98b087f497	17706581	17706581	Husvéti Tímea
+fb23bfc4-d2fe-4ca2-bbda-abdfc9087970	eluptak	17706291	Lupták Erik
+fb278b35-662d-4e7f-b689-05f7bbd1d3e7	Zsigmondova	17701849	Zsigmondová Lucia Fathi
+fb3c53ac-5c18-452e-a3f6-aeb2042b303c	GG-LEA-Fleet.management.aktivny		LEA: Fleet - management - aktivny
+fb590917-4680-4759-89e4-422bd5c3996d	GG-MDK-DGT-DLM-pilot-access		DGT-DLM-pilot-access
+fb78d48a-6176-43b8-8b1c-6e7085db0d6f	17707246	17707246	Ďurišová Silvia
+fbd0f4c1-5ab7-455a-9f35-0558bb372261	GG-SAP-FI_.Zakladny.uctovnik		FI: Zakladny uctovnik
+fbf906b0-61cb-4231-813d-de5796a0f594	GG-CDBP-CDBPs#5		CDBPs-Operator.-.prenajimatel
+fc1b2dd8-e88d-4a46-b7af-56bdd6b532b3	horvath_admin	1779025	Horváth Anton
+fc359c8d-a4d8-4551-8e90-80179420e036	GG-MDK-LCT-partner		Partner
+fc58c50e-0a4f-456e-88e4-29f76362ca3a	BR_313_24127		Špecialista nákupu vozidiel I_Technická podpora a služby operatívneho leasingu
+fc77fc52-2e60-4c53-a6f4-7f96daf50a1b	BRC_špecialista pre poistenie III_admin_eCARD		špecialista pre poistenie III_admin_eCARD
+fc7a3c71-a4bd-4613-b969-693662f49195	michal_admin	1779054	Míchal Luboš
+fc89ecea-5cb6-43f3-8cf5-86dfe1dc979d	BR_202_24107		špecialista fakturácie_OLFS
+fc93c17e-0afa-4547-8895-b4c618154374	GG-LEA-Poistenie.import.kmena.IPZ1		Poistenie - import kmena IPZ1
+fc97ce00-753c-4416-8f73-fb2497f79472	GG-LEA-ZI.editacia.ciselnikov		LEA: ZI - editacia ciselnikov
+fce1fd03-dda5-44fc-958e-c736820b5c2f	BR_407_41101		špecialista ohrozených aktív_Riadenie portfólia
+fd27907d-62a8-4f42-a006-21fec19669f7	szabo	17701446	Szabo Libor
+fd2d5d6e-3aad-48ca-851a-db3029da5d06	GG-LEA-Cent.sprac.akcia		Cent_sprac_akcia
+fd45d45a-5078-482b-867c-64123c6ddc39	17706461	17706461	Kapcala Jakub
+fd481298-6929-486c-86a3-4e67fdda61d4	dms_fullservice		DMS - Full Service
+fd73544a-fb9d-474b-87fe-90b5a3c22707	gottwald_admin	1779081	Gottwald Josef
+fd852af3-cb24-4115-a681-4d92e1f43d1c	BR_410_60020		 dohoda o pracovnej činnosti_Centrálny nákup a služby
+fdc4b872-7508-494d-8120-bc03552ec54b	BR_414_37138		správca počítačovej siete a HW I_IT prevádzka
+fde6262d-3f8c-496e-8e89-97b83e8e21c1	lacova	17702456	Lacová Kristína
+fdf56360-ff5f-4171-a048-2b0c4e4f41d1	BR_416_38109		projektový manažér IV_Projektový manažment
+fe02498b-5873-44ce-a977-d8586ae66754	BR_580_13111		riaditeľ pre korporátne financovan_Korporátne obchody
+fe1b23bb-8959-4c77-a777-1c837383455c	GG-LEA-OM.Test.rychlosti		LEA: OM - Test rychlosti
+fe1b61a1-4891-42e3-8c71-dc411511b0e7	17706644	17706644	Bilkovičová Katarína
+fe37aeaa-ce6f-46e0-9204-3a7c62e603d6	BR_308_24137		Špecialista pre repredaj a retailo_Správa aktív a repredaj
+fe4b81e1-3f39-42a2-ad12-5856da975c9b	BR_111_29107		konzultant pre firemnú stratégiu a_Asistentky GR a VR
+feadeef7-f62c-4486-ad2b-8e9c4dd03ed2	17701009	17701009	Sedláková Andrea
+fecd6c11-95af-4d74-96fd-b24b08de467b	BR_301_30106		marketingový špecialista II_Produktový vývoj a trhové riešenia
+feda3eb9-29dc-4fa3-889f-4aba71dc2f1a	BRC_415_32102_ex		Business analytik produktov a proc_Procesné riadenie a business architektúra_externista
+feef5e6c-43e7-426d-9cba-c9c8ad4f8d5d	17707211	17707211	Letanovský Peter
+feefe84f-bfe4-40c4-bd3a-23b0315e3c03	konakovsky	17702942	Koňakovský Martin
+fef5bc8d-adfa-4419-94c8-c5397d5b4059	GG-MDK-LCT-administra		Administrátori
+fefe8f3a-df07-4ae1-8a99-34ff0ad86a93	BR_402_26104		právnik II_Právne služby
+ff01fefd-96fd-41fd-a990-f511be026a34	GG-DMS-Vedenie		Vedenie
+ff054c37-9df7-4252-9b9e-24bb67fc7a84	17707239	17707239	Švarc Michal
+ff1e8e98-afd8-4327-95aa-2f37a1c006a7	GG-SAP-FI_.IDM_TESTIK		FI: IDM_TESTIK
+ff3eb50a-a164-4b8e-ada3-c1422c9b2f19	GG-LEA-Financne.sluzby		LEA: Financne sluzby
+ffa4a122-1770-4a9e-9072-e33f0d1860ae	GG-MDK-RISK-cc		CC
+ffe9eb84-0e86-4415-9258-d9cc4cb93e4d	17709627	17709627	Kameniar Martin

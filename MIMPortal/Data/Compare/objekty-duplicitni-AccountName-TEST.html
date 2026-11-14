@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="cs"><head><meta charset="utf-8">
+<title>Objekty v TEST se stejn&#253;m AccountName</title>
+<style>
+body{font-family:Segoe UI,sans-serif;margin:24px;color:#1a1a1a;background:#f6f7f9}
+h1{font-size:22px;margin:0 0 8px}
+p{margin:4px 0;color:#333}
+.count{font-size:18px;margin:16px 0}
+input{padding:8px 10px;width:360px;margin:8px 0 16px;border:1px solid #ccc;border-radius:4px}
+table{border-collapse:collapse;background:#fff;width:100%}
+th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px}
+th{background:#1f4e79;color:#fff;position:sticky;top:0}
+tr:nth-child(even){background:#f3f6fa}
+</style></head><body>
+<h1>Objekty v TEST se stejn&#253;m AccountName</h1>
+<p>PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)</p>
+<p>TEST: Test (., 2026-10-09T21:33:07Z)</p>
+<p>Uživatel&#233; se p&#225;ruj&#237; postupně podle EmployeeID, AccountName a DisplayName. Napojen&#253; objekt se znovu nenapojuje. Skupiny se p&#225;ruj&#237; podle AccountName.</p>
+<p>U členstv&#237; se hodnoty csoblComputedMember těchto objektů sjednocuj&#237;.</p>
+<p class="count">Počet: 8</p>
+<input id="q" type="search" placeholder="Filtr v tabulce">
+<table><thead><tr>
+<th>Typ</th><th>AccountName</th><th>DisplayName</th><th>EmployeeID</th><th>EmployeeType</th><th>csoblFinalPropetyStatus</th><th>csoblvalidStatus</th><th>csoblGroupType</th></tr></thead><tbody>
+<tr><td>Group</td><td>BR_admin_CDBP</td><td>administr&#225;tor_CDBP</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BR_admin_CDBP</td><td>administr&#225;tor_CDBP</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BR_man_ISO_IRO_manual</td><td>manažer ISO/IRO_Manu&#225;l</td><td></td><td></td><td></td><td>0</td><td>bus</td></tr>
+<tr><td>Group</td><td>BR_man_ISO_IRO_manual</td><td>manažer ISO/IRO_Manu&#225;l</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BR_vsichnizam_CSOBL</td><td>všichni zaměstnanci_CSOBL</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BR_vsichnizam_CSOBL</td><td>všichni zaměstnanci_CSOBL</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_220_21111_RPO</td><td>senior akviz&#237;tor_Regi&#243;n Sever (Žilina)_RPO</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_220_21111_RPO</td><td>senior akviz&#237;tor_Regi&#243;n Sever (Žilina)_RPO</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+</tbody></table>
+<script>document.getElementById("q").oninput=function(){var q=this.value.toLowerCase();var rows=document.querySelectorAll("tbody tr");for(var i=0;i<rows.length;i++){rows[i].style.display=rows[i].innerText.toLowerCase().indexOf(q)>=0?"":"none";}};</script>
+</body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZSDIS: synchronizace bez portálu</title>
+<style>
+
+body { font-family: Segoe UI, Calibri, sans-serif; max-width: 1280px; margin: 2rem auto; padding: 0 1.5rem 3rem; line-height: 1.45; color: #1b1b1b; }
+h1, h2, h3 { line-height: 1.25; }
+h1 { font-size: 1.7rem; }
+h2 { margin-top: 2rem; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+a { color: #0b57d0; }
+code { font-family: Consolas, monospace; background: #f3f3f3; padding: 0.05em 0.3em; border-radius: 3px; }
+pre { background: #f6f8fa; padding: 0.8rem 1rem; overflow: auto; }
+pre code { background: none; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 0.9rem; }
+th, td { border: 1px solid #d0d0d0; padding: 0.35rem 0.5rem; vertical-align: top; text-align: left; }
+th { background: #f0f0f0; }
+tr:nth-child(even) td { background: #fafafa; }
+
+</style>
+</head>
+<body>
+<h1 id="zsdis-synchronizace-bez-portalu">ZSDIS: synchronizace bez portálu</h1>
+<ul>
+<li><a href="Atributy-portalu.html">Atributy MIM portálu ZSDIS</a></li>
+<li><a href="Procesy-portalu.html">Procesy MIM portálu ZSDIS</a></li>
+<li><a href="Zivotni-cyklus.html">Životní cyklus objektů</a></li>
+<li><a href="Toky-bez-portalu.html">Toky na konektorech po zrušení portálu</a></li>
+</ul>
+<p>Knihovna nahrazuje deklarativní synchronization rules a ta portálová workflow, která dopočítávají atributy nebo zakládají objekt v cílovém systému. Seznam toků po konektorech, včetně joinu, filtru a výrazu, je v <a href="Toky-bez-portalu.html">Toky-bez-portalu.html</a>.</p>
+<h2 id="nasazeni">Nasazení</h2>
+<ol>
+<li>Sestavte <code>ZsdisRulesExtension.csproj</code>. Výstup je <code>ZsdisRulesExtension.dll</code>.</li>
+<li>Zkopírujte DLL do složky Extensions synchronizační služby.</li>
+<li>Vedle DLL položte <code>kid-seed.txt</code> s dalším volným číslem KID (dnešní seed je 201001, do souboru patří aktuální poslední použitá hodnota + 1) a <code>initial-password.txt</code> se stejným počátečním heslem, jaké dnes nastavuje pravidlo <code>Users eon-sk in-out</code>. Heslo do projektu nepatří. Alternativa hesla je proměnná <code>ZSDIS_INITIAL_PASSWORD</code>.</li>
+<li>V Metaverse Designeru zapněte rules extension, vyberte tuto DLL a třídu <code>MVExtensionObject</code>. Provisioning přepněte na scripted až ve chvíli, kdy se vypnou synchronization rules. Souběh založí objekt dvakrát.</li>
+<li>Na každém konektoru níže přepněte projection na rules extension a vyberte uvedenou třídu. Join a přímé attribute flow nastavte v designeru. Advanced flow musí mít název přesně podle tabulky, ten název je <code>FlowRuleName</code> v kódu.</li>
+<li>Konektor MIMMA odpojte z běhových profilů jako poslední, až preview synchronizace sedí. Odpojení MIMMA je dnes jediný důvod, proč se osoba v metaverse smaže. Po přepnutí se osoba při ztrátě zdroje nemaže.</li>
+</ol>
+<p>Deprovisioning na konektoru nechte tak, jak je teď. Knihovna při výpadku z filtru existující konektor neruší, protože dnešní sync rules mají odpojení objektu vypnuté.</p>
+<h2 id="trida-extension-na-konektoru">Třída extension na konektoru</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Konektor</th>
+<th>Třída</th>
+<th>Projekce</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HUMANETv2</td>
+<td><code>MaHumanet</code></td>
+<td>ano, <code>usrID</code> je <code>eon-slovakia.sk</code> nebo <code>ad.vse.sk</code></td>
+</tr>
+<tr>
+<td>Externisti</td>
+<td><code>MaExternisti</code></td>
+<td>ano, když je <code>personal_number</code></td>
+</tr>
+<tr>
+<td>eon-sk</td>
+<td><code>MaEonSk</code></td>
+<td>uživatel v <code>DC=eon-slovakia,DC=sk</code>, skupina bez <code>adminDescription</code> na <code>TYP</code></td>
+</tr>
+<tr>
+<td>ad.vse.sk</td>
+<td><code>MaAdVse</code></td>
+<td>uživatel s <code>userAccountControl</code> jiným než 514, skupina v <code>OU=Autorizacia,OU=GPOGroups</code></td>
+</tr>
+<tr>
+<td>VSE_LDAP_prod</td>
+<td><code>MaVseLdap</code></td>
+<td>ne</td>
+</tr>
+<tr>
+<td>SAPCUA</td>
+<td><code>MaSapCua</code></td>
+<td>ne</td>
+</tr>
+<tr>
+<td>ZSEEUser</td>
+<td><code>MaZsee</code></td>
+<td>ne</td>
+</tr>
+<tr>
+<td>KOC</td>
+<td><code>MaKoc</code></td>
+<td>ne</td>
+</tr>
+<tr>
+<td>HUMANET_OUT</td>
+<td>žádná, stačí přímé toky</td>
+<td>ne</td>
+</tr>
+<tr>
+<td>Externisti_SAP_OUT</td>
+<td>žádná, stačí přímé toky</td>
+<td>ne</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="advanced-flow-nazev-se-pise-do-designeru">Advanced flow, název se píše do designeru</h2>
+<p>HUMANETv2 import: <code>displayName</code>, <code>eonBusinessUnitID</code>, <code>department</code>, <code>eonStatus</code>.</p>
+<p>Externisti import: <code>externisti</code>, <code>displayName</code>, <code>begda</code>, <code>endda</code>, <code>employeeStartDate</code>, <code>employeeEndDate</code>. Export: <code>formatted_contract_to</code>, <code>extern_contract_to</code>.</p>
+<p>eon-sk import: <code>group.displayName</code>, <code>group.scope</code>, <code>group.type</code>, <code>enabled</code>, <code>email</code>.</p>
+<p>ad.vse.sk import: <code>group.displayName</code>, <code>group.scope</code>, <code>group.accountName</code>. Join: <code>employeeNumber-when-enabled</code> (na <code>employeeID</code>, jen když účet není 514).</p>
+<p>VSE_LDAP_prod export: <code>cn</code>, <code>title</code>, <code>userAccountControl</code>.</p>
+<p>SAPCUA import: <code>IsSAPCUA</code>. Export: <code>COMPANY</code>, <code>NAME1</code>, <code>STAT2</code>, <code>CLASS</code>, <code>CLASS-from-stat2</code> (jen větev VSE), <code>SMTP_ADDR</code>, <code>GLTGB</code>, <code>USRID</code>.</p>
+<p>KOC export: <code>Type</code>.</p>
+<p>ZSEEUser export: <code>Nastup</code>, <code>Vystup</code>.</p>
+<p>Ostatní páry atributů jsou přímé nebo konstanta. Berou se ze současných synchronization rules beze změny směru.</p>
+<h2 id="co-knihovna-vedome-neprebira">Co knihovna vědomě nepřebírá</h2>
+<p>Kopie identity <code>copy-</code> je druhý objekt. Jeden objekt metaverse nemůže mít v eon-sk ani ve VSE LDAP dva konektory. Sekundární účet vznikal z příznaku <code>CreateSecondaryKID</code> na portálu a dohodář (<code>persk</code> na <code>D</code>) čeká na <code>CreateADAccount</code>. Ani jeden příznak v metaverse není. Notifikace, úpravy Service Desku a schvalování členství jsou funkce portálu, synchronizace je nemá kam zapsat.</p>
+<p>U externisty po konci smlouvy se zapisuje <code>stat2 = 0</code> a <code>eonStatus = I</code>. V portálu běží dvě stejně pojmenovaná MPR a druhá ho naopak nechává aktivního. Tady zůstává neaktivní stav.</p>
+<p><code>IsSAPCUA</code> se nově nastaví členstvím skupiny <code>PassSyncCUA</code>. Ruční sada <code>_ZSE_SAPCUA_Users</code> s portálem skončí.</p>
+</body>
+</html>

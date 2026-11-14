@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html lang="cs"><head><meta charset="utf-8">
+<title>Objekty, kter&#233; přeb&#253;vaj&#237; v PROD (v TEST chyb&#237;)</title>
+<style>
+body{font-family:Segoe UI,sans-serif;margin:24px;color:#1a1a1a;background:#f6f7f9}
+h1{font-size:22px;margin:0 0 8px}
+p{margin:4px 0;color:#333}
+.count{font-size:18px;margin:16px 0}
+input{padding:8px 10px;width:360px;margin:8px 0 16px;border:1px solid #ccc;border-radius:4px}
+table{border-collapse:collapse;background:#fff;width:100%}
+th,td{border:1px solid #ddd;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px}
+th{background:#1f4e79;color:#fff;position:sticky;top:0}
+tr:nth-child(even){background:#f3f6fa}
+</style></head><body>
+<h1>Objekty, kter&#233; přeb&#253;vaj&#237; v PROD (v TEST chyb&#237;)</h1>
+<p>PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)</p>
+<p>TEST: Test (., 2026-10-09T21:33:07Z)</p>
+<p>Uživatel&#233; se p&#225;ruj&#237; postupně podle EmployeeID, AccountName a DisplayName. Napojen&#253; objekt se znovu nenapojuje. Skupiny se p&#225;ruj&#237; podle AccountName.</p>
+<p class="count">Počet: 385</p>
+<input id="q" type="search" placeholder="Filtr v tabulce">
+<table><thead><tr>
+<th>Typ</th><th>AccountName</th><th>DisplayName</th><th>EmployeeID</th><th>EmployeeType</th><th>csoblFinalPropetyStatus</th><th>csoblvalidStatus</th><th>csoblGroupType</th></tr></thead><tbody>
+<tr><td>Group</td><td>agentury_administrator</td><td>Agent&#250;ry - Administr&#225;tor</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>agentury_zamestnanecLS</td><td>Agent&#250;ry - Zamestnanec LS</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>aplikačn&#253; administr&#225;tor_IT prev&#225;dzka2</td><td>aplikačn&#253; administr&#225;tor_IT prev&#225;dzka2</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>BR_301_29108_SAP</td><td>strategic initiatives lead_Produktov&#253; v&#253;voj a trhov&#233; riešenia_SAP</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_303_42100_DUX</td><td>špecialista pre zmeny zml&#250;v II_Z&#225;kazn&#237;cky servis_DUX</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_409_35106_LEA</td><td>d&#225;tov&#253; špecialista_Controlling a reporting_LEA</td><td></td><td></td><td></td><td>0</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_EDS_RPO</td><td>EDS-RPO</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_LEA_Provizie</td><td>Dočasn&#253; pr&#237;stup do LEA_Prov&#237;zie</td><td></td><td></td><td></td><td>0</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_LEA_RM_limity_FS</td><td>Pr&#237;stupy_LEA: RM_limity_FS</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_Pr&#237;stup_LEA_FDS_Faktoring</td><td>Pr&#237;stup_LEA: FDS Faktoring</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_Relationship Manager Full service_BL</td><td>Relationship Manager Full service_BL</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_Relationship Manager Full service_OLFS_docasne</td><td>Relationship Manager Full service_OLFS_dočasn&#233;</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_SAP_drzitel_rozpoctu_UaD</td><td>Pr&#237;stup_SAP: držiteľ rozpočtu_&#218;aD</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_SAP_PVaTR</td><td>Pr&#237;stup SAP: PVaTR</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_SAP_Schvalovateľ_HANA</td><td>SAP_Schvalovateľ_HANA</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_SAQ_pr&#237;stup do SAP_Poprad</td><td>SAQ_pr&#237;stup do SAP_Poprad</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_V&#253;nimky_Compliance</td><td>V&#253;nimky Compliance - compliance</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>BRC_X_docasne</td><td>X_dočasn&#233;</td><td></td><td></td><td></td><td>0</td><td>bus</td></tr>
+<tr><td>Group</td><td>CNAV - odd. Credit Risk</td><td>CNAV - odd. Credit Risk</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>DGT</td><td>DGT - Pln&#253; R/W pr&#237;stup do PROD</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>DLM LEAS</td><td>DLM LEAS</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_admins</td><td>DM/UM - Admins</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>dm_centralnespracovanie</td><td>DM/UM - Centr&#225;lne spracovanie</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_centralneznackyOUA</td><td>DM/UM - Centr&#225;lne značky OUA</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_controllingareporting</td><td>DM/UM - Controlling a reporting</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>dm_creditrisk</td><td>DM/UM - Credit Risk</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_DMCOMAktivator</td><td>DM/UM - DMCOMAktivator</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_EDS</td><td>DM/UM - EDS</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_financnesluzby</td><td>DM/UM - Finančn&#233; služby</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_ict</td><td>DM/UM - ICT</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_impeurotax</td><td>DM/UM - ImpEurotax</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_marketing</td><td>DM/UM - Marketing</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_olfs</td><td>DM/UM - OLFS</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_oppr</td><td>DM/UM -OPPR</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_poistne</td><td>DM/UM - Poistn&#233;</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_riadenieportfolia</td><td>DM/UM - Riadenie portf&#243;lia</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_RVModulAdmin</td><td>DM/UM - RVModulAdmin</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_RVModulRun</td><td>DM/UM - RVModulRun</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_uctovnictvoadane</td><td>DM/UM - &#218;čtovn&#237;ctvo a dane</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dm_UMModulRun</td><td>DM/UM - UMModulRun</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_akvizitor</td><td>DMS - Akviz&#237;tor</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_archivarauditor</td><td>DMS - Archiv&#225;r, auditor</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_centralnakontrolaop</td><td>DMS - Centr&#225;lna kontrola OP</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_centralnynakupasluzby</td><td>DMS - Centr&#225;lny n&#225;kup a služby</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_centralnyspracovatel</td><td>DMS - Centr&#225;lny spracovateľ</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_controllingareporting</td><td>DMS - Controlling a reporting</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_creditrisk</td><td>DMS - Credit Risk</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_czoua</td><td>DMS - Centr&#225;lne značky OUA</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_financnesluzby</td><td>DMS - Finančn&#233; služby</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_fullservice</td><td>DMS - Full Service</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_itadmin</td><td>DMS - ItAdmin</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_koporatnefinancovanie</td><td>DMS - Korpor&#225;tne financovanie</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_marketing.a.podpora.obchodu</td><td>DMS - Marketing a podpora obchodu</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_operacnerizikoacompliance</td><td>DMS - Operačn&#233; riziko a Compliance</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_poistenie</td><td>DMS - Poistenie</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_pravnesluzby</td><td>DMS - Pr&#225;vne služby</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_procesadmin</td><td>DMS - Proces admin</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_riadenieportfolia</td><td>DMS - Riadenie portf&#243;lia</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_vedenie</td><td>DMS - Vedenie</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>dms_zakaznickyservis</td><td>DMS - Z&#225;kazn&#237;cky servis</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>docasna_saq_NZ</td><td>SAQ_zapad_docasna_BR</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>eClient - Administr&#225;tor</td><td>eClient - Administr&#225;tor</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>eClient - Dealer OL</td><td>eClient - Dealer OL</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>eClient - FDS a PSA Dealer</td><td>eClient - FDS a PSA Dealer</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>eClient - Obchodn&#237;k</td><td>eClient - Obchodn&#237;k</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>eClient - Spracovateľ pobočky</td><td>eClient - Spracovateľ pobočky</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>eClient - Spracovateľ zmluvy</td><td>eClient - Spracovateľ zmluvy</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>GG- MDK-NIA-Authenticated.Users</td><td>Authenticated Users</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG- MDK-NIA-Role.Administrators</td><td>Role Administrators</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-AG-Administrator</td><td>Administr&#225;tor</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-AG-Zamestananec.LS</td><td>Zamestananec LS</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-CNAV-CNAV.-.preverovanie</td><td>CNAV - preverovanie</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Admins</td><td>Admins</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Centralne.spracovanie</td><td>Centr&#225;lne spracovanie</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Centralne.znacky.OUA</td><td>Centr&#225;lne značky OUA</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Controlling.a.reporting</td><td>Controlling a reporting</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>GG-DM-Credit.Risk</td><td>Credit Risk</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-DMCOMAktivator</td><td>DMCOMAktivator</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-EDS</td><td>EDS</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Financne.sluzby</td><td>Finančn&#233; služby</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-ICT</td><td>ICT</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-ImpEurotax</td><td>ImpEurotax</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>GG-DM-Marketing</td><td>Marketing</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-OLFS</td><td>OLFS</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-OPPR</td><td>OPPR</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Poistne</td><td>Poistn&#233;</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Riadenie.portfolia</td><td>Riadenie portf&#243;lia</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-RVModulAdmin</td><td>RVModulAdmin</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-RVModulRun</td><td>RVModulRun</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Akvizitor</td><td>Akviz&#237;tor</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Archivar_.auditor</td><td>Archiv&#225;r, auditor</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Centralna.kontrola.OP</td><td>Centr&#225;lna kontrola OP</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Centralny.nakup.a.sluzby</td><td>Centr&#225;lny n&#225;kup a služby</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Centralny.spracovatel</td><td>Centr&#225;lny spracovateľ</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Controlling.a.reporting</td><td>Controlling a reporting</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Credit.Risk</td><td>Credit Risk</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-CZoua</td><td>Centr&#225;lne značky OUA</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Financne.sluzby</td><td>Finančn&#233; služby</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Full.Service</td><td>Full Service</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-ItAdmin</td><td>ItAdmin</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Korporatne.financovanie</td><td>Korpor&#225;tne financovanie</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Marketing.a.podpora.obchodu</td><td>Marketing a podpora obchodu</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Operacne.riziko.a.Compliance</td><td>Operačn&#233; riziko a Compliance</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Poistenie</td><td>Poistenie</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>GG-DMS-Pravne.sluzby</td><td>Pr&#225;vne služby</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Proces.admin</td><td>Proces admin</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Riadenie.portfolia</td><td>Riadenie portf&#243;lia</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Vedenie</td><td>Vedenie</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Web.DMS</td><td>Web DMS</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DMS-Zakaznicky.servis</td><td>Z&#225;kazn&#237;cky servis</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-Uctovnictvo.a.dane</td><td>&#218;čtovn&#237;ctvo a dane</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-DM-UMModulRun</td><td>UMModulRun</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-EC-eClient.-.Administrator</td><td>eClient - Administr&#225;tor</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-EC-eClient.-.Dealer.OL</td><td>eClient - Dealer OL</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-EC-eClient.-.FDS.a.PSA.Dealer</td><td>eClient - FDS a PSA Dealer</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-EC-eClient.-.Obchodnik</td><td>eClient - Obchodn&#237;k</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-EC-eClient.-.Spracovatel.pobocky</td><td>eClient - Spracovateľ pobočky</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-EC-eClient.-.Spracovatel.zmluvy</td><td>eClient - Spracovateľ zmluvy</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-IRIS-AdminFirma</td><td>AdminFirma</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-IRIS-Kontrolor</td><td>Kontrolor</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-IRIS-Manager</td><td>Manager</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-IRIS-Referent</td><td>Referent</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-LEA-LEA_.Modifikacia.ponuky.a.navrhu.predaja</td><td>LEA: Modifik&#225;cia ponuky a n&#225;vrhu predaja</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-MC-Multicash.pristup</td><td>Multicash pr&#237;stup</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-MDK-NIA-_Ramcove_zmluvy_Administrator</td><td>_Ramcove_zmluvy_Administrator</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-MDK-NIA-_Ramcove_zmluvy_Archivator</td><td>_Ramcove_zmluvy_Archivator</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-MDK-NIA-Obchodnik</td><td>_RamcoveZmluvy_Obchodnik</td><td></td><td></td><td></td><td></td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-MDK-NIA-Schvalovatel</td><td>_RamcoveZmluvy_Schvalovatel</td><td></td><td></td><td></td><td></td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-SAP-FI_.IDM_TESTIK</td><td>FI: IDM_TESTIK</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-SAP-FI_.ZSII_ADMIN</td><td>FI: ZSII_ADMIN</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-SAP-FI_.ZSII_KDF_ZOBRAZENIE</td><td>FI: ZSII_KDF_ZOBRAZENIE</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-SAP-FI_.ZSII_OPERATOR</td><td>FI: ZSII_OPERATOR</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-SAP-FI_.ZSII_SCHVALOVATEL</td><td>FI: ZSII_SCHVALOVATEL</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-SAP-FI_.ZSII_UCTOVNIK</td><td>FI: ZSII_UCTOVNIK</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-WP-Admin</td><td>Admin</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-WP-Obchodny.zastupca</td><td>Obchodn&#253; z&#225;stupca</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-WP-Superadmin</td><td>Superadmin</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-WP-Webportal-aktivny.pristup</td><td>Webport&#225;l - akt&#237;vny pr&#237;stup</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>GG-WP-Zmluvny.partner</td><td>Zmluvn&#253; partner</td><td></td><td></td><td></td><td>1</td><td>apl</td></tr>
+<tr><td>Group</td><td>iris_admin</td><td>IRIS - ISPEL - Admin</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>iris_kontrolor</td><td>IRIS - ISPEL - Kontrolor</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>iris_referent</td><td>IRIS - ISPEL - Referent</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>iris-ispel_manager</td><td>IRIS - ISPEL - Manager</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>LEA#DMS#Rola#10</td><td>Centr&#225;lny spracovateľ</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>Multicash</td><td>Multicash pr&#237;stup</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>ramcove_zmluvy_administrator</td><td>Ramcov&#233; zmluvy NIA - Admnistrator</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>ramcove_zmluvy_archivator</td><td>R&#225;mcov&#233; zmluvy NIA - Archiv&#225;tor</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>ramcove_zmluvy_obchodnik</td><td>R&#225;mcov&#233; zmluvy NIA - Obchodn&#237;k</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>ramcove_zmluvy_schvalovatel</td><td>R&#225;mcov&#233; zmluvy NIA - Schvaľovateľ</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>RP_docasna</td><td>RP-docasna</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>SAP z&#225;klad</td><td>SAP z&#225;klad</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Group</td><td>špecialista riadenia riz&#237;k II_Credit risk_doplnujuca</td><td>špecialista riadenia riz&#237;k II_Credit risk_PDF_aktiv_pristup</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>web_dms</td><td>Web-DMS pr&#237;stup</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>Webportal</td><td>Webport&#225;l - zam. pr&#237;stup</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>wordpress_admin</td><td>Wordpress - Admin</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>wordpress_obchdony_zastupca</td><td>Wordpress - Obchodn&#253; z&#225;stupca</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>wordpress_superadmin</td><td>Wordpress - Superadmin</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>wordpress_zmluvny_partner</td><td>Wordpress - Zmluvn&#253; partner</td><td></td><td></td><td></td><td>1</td><td>bus</td></tr>
+<tr><td>Group</td><td>ZBC_ENDUSER</td><td>ZBC_ENDUSER</td><td></td><td></td><td></td><td>1</td><td>grp</td></tr>
+<tr><td>Person</td><td>17701044</td><td>Haydenov&#225; Marcela</td><td>17701044</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17701465</td><td>Nagy Tom&#225;š</td><td>17701465</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17701865</td><td>Lukn&#225;rov&#225; Adriana</td><td>17701865</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17702204</td><td>Danterov&#225; Zuzana</td><td>17702204</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17702422</td><td>Macze&#225;kov&#225; Ivana</td><td>17702422</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17702534xi</td><td>Plškov&#225; Milada</td><td>17702534</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17702987</td><td>Mikluš Michal</td><td>17702987</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706023</td><td>Brieškov&#225; Romana</td><td>17706023</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706273</td><td>Greifov&#225; Katar&#237;na</td><td>17706273</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706410xi</td><td>Šr&#225;mek Tom&#225;š</td><td>17706410</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17706413</td><td>R&#225;chela Jana</td><td>17706413</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706418</td><td>Miklov&#225; Vict&#243;ria</td><td>17706418</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706419</td><td>Žinč&#225;kov&#225; Diana</td><td>17706419</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706422</td><td>Gembick&#225; Marcela</td><td>17706422</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706429</td><td>Grenč&#237;k Miroslav</td><td>17706429</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706463</td><td>Juričkov&#225; Michaela</td><td>17706463</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706464</td><td>Jenisov&#225; Barbora</td><td>17706464</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706466xi</td><td>Mihal&#237;k Miroslav</td><td>17706466</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17706476</td><td>Tk&#225;čov&#225; Krist&#237;na</td><td>17706476</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706481xi</td><td>Usačevov&#225; Lenka</td><td>17706481</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17706483</td><td>Marcinov Martin</td><td>17706483</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706526</td><td>Frgala Peter</td><td>17706526</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706537</td><td>Širok&#225; M&#225;ria</td><td>17706537</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706542</td><td>M&#225;ťaš Matej</td><td>17706542</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706544</td><td>Chrenko Viktor</td><td>17706544</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706550</td><td>Verešov&#225; Barbora</td><td>17706550</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706551</td><td>Ufn&#225;rov&#225; M&#225;ria</td><td>17706551</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706553</td><td>K&#233;ry Petra</td><td>17706553</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706557</td><td>Jaššov&#225; Tatiana</td><td>17706557</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706560</td><td>Brindzov&#225; Erika</td><td>17706560</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706561</td><td>Katan&#237;kov&#225; Ema</td><td>17706561</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706562</td><td>Moln&#225;rov&#225; Katar&#237;na</td><td>17706562</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706563</td><td>Andrejkovič Andrej</td><td>17706563</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706574</td><td>Dudusov&#225; Rebeka</td><td>17706574</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706586</td><td>Urb&#225;nkov&#225; Gr&#233;ta</td><td>17706586</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706588</td><td>Mikul&#225;šov&#225; Simona</td><td>17706588</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706603</td><td>Vaš&#237;ček Viktor</td><td>17706603</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706605</td><td>Honiškov&#225; Linda</td><td>17706605</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706614</td><td>Papayov&#225; Lenka</td><td>17706614</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706628</td><td>Semanov&#225; Korn&#233;lia</td><td>17706628</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706630</td><td>Piačekov&#225; Alexandra</td><td>17706630</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706650</td><td>Matejov&#225; Bianka</td><td>17706650</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706664</td><td>Škulcov&#225; Miriama</td><td>17706664</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706684</td><td>Šušoliak Luci&#225;n</td><td>17706684</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706701</td><td>Škrab Roman</td><td>17706701</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706702</td><td>Hruška Matej</td><td>17706702</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706710</td><td>Pačesov&#225; Nat&#225;lia</td><td>17706710</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706734</td><td>Sokol&#237;kov&#225; Andrea</td><td>17706734</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706738</td><td>Petrovics Martin</td><td>17706738</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706745xi</td><td>Kytošov&#225; Klaudia</td><td>17706745</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17706748</td><td>Kov&#225;č D&#225;vid</td><td>17706748</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706762</td><td>Čepčekov&#225; Alexandra</td><td>17706762</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706771</td><td>Bergl Oliver</td><td>17706771</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706819</td><td>Kocsis Marek</td><td>17706819</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706839</td><td>Navarov&#225; Marianna</td><td>17706839</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706913</td><td>Ocelkov&#225; Daniela</td><td>17706913</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706943</td><td>Rusn&#225;k Sebasti&#225;n</td><td>17706943</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706963</td><td>Luk&#225;čov&#225; Katar&#237;na</td><td>17706963</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706970</td><td>Vožň&#225;kov&#225; Bianka</td><td>17706970</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706972</td><td>Petrovsk&#225; Petra</td><td>17706972</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17706987</td><td>Rumanov&#225; Lenka</td><td>17706987</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17707033</td><td>Svitekov&#225; Sara</td><td>17707033</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17707046</td><td>Haviar Richard</td><td>17707046</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17707119</td><td>Buransk&#225; Nicole</td><td>17707119</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17707183</td><td>Vaňkov&#225; Alena</td><td>17707183</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17709601</td><td>Slov&#225;k Patrik</td><td>17709601</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17709605</td><td>Kytošov&#225; Klaudia</td><td>17709605</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17709605xi</td><td>Kytošov&#225; Klaudia</td><td>17709605</td><td>adm</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17709613xi</td><td>Shmelev Pavel</td><td>17709613</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17709615xi</td><td>Biščo Michal</td><td>17709615</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17709616xi</td><td>S&#233;leš R&#243;bert</td><td>17709616</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17709620xi</td><td>Lenart Alexander</td><td>17709620</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17709621xi</td><td>Minh Hai</td><td>17709621</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17709626</td><td>Ml&#225;til&#237;k Martin</td><td>17709626</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17709632</td><td>Balasičov&#225; Veronika</td><td>17709632</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>17709635xi</td><td>Mil&#225;ček Martin</td><td>17709635</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17709653xi</td><td>Mudroň Michal</td><td>17709653</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>17709988xi</td><td>Richtarik Oliver</td><td>17709988</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779006ex</td><td>Mikulč&#237;k R&#243;bert</td><td>1779006</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779006xi</td><td>Mikulč&#237;k R&#243;bert</td><td>1779006</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779014xi</td><td>Sl&#237;žik Miloslav</td><td>1779014</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779015ex</td><td>Poll&#225;k Roman</td><td>1779015</td><td>ext</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779015xi</td><td>Poll&#225;k Roman</td><td>1779015</td><td>adm</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779018ex</td><td>Puskas Szabolcs</td><td>1779018</td><td>ext</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779018xi</td><td>Puskas Szabolcs</td><td>1779018</td><td>adm</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779028ex</td><td>Bučkuliak Samuel</td><td>1779028</td><td>ext</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>1779028xi</td><td>Bučkuliak Samuel</td><td>1779028</td><td>adm</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>1779032xi</td><td>Šaf&#225;r Patrik</td><td>1779032</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779035ex</td><td>Mudrak Peter</td><td>1779035</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779036xi</td><td>Hud&#225;kov&#225; Lucia</td><td>1779036</td><td>adm</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779037xi</td><td>Oravec Andrej</td><td>1779037</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779040ex</td><td>Min&#225;rčin&#225; Ivana</td><td>1779040</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779040xi</td><td>Min&#225;rčin&#225; Ivana</td><td>1779040</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779045xi</td><td>Koval&#237;k Vladim&#237;r</td><td>1779045</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779053ex</td><td>Švec Peter</td><td>1779053</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779053xi</td><td>Švec Peter</td><td>1779053</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779064xi</td><td>Min&#225;rik Mat&#250;š</td><td>1779064</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779065xi</td><td>Sedl&#225;ček Peter</td><td>1779065</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779070xi</td><td>Boťansk&#253; Richard</td><td>1779070</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779072xi</td><td>B&#225;nik Rastislav</td><td>1779072</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779073xi</td><td>Hečko Dušan</td><td>1779073</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779074ex</td><td>Moždženov&#225; Krist&#237;na</td><td>1779074</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779074xi</td><td>Moždženov&#225; Krist&#237;na</td><td>1779074</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779080ex</td><td>Prčekov&#225; Silvia</td><td>1779080</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779080xi</td><td>Prčekov&#225; Silvia</td><td>1779080</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779084ex</td><td>L&#237;škov&#225; Anna</td><td>1779084</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779084xi</td><td>L&#237;škov&#225; Anna</td><td>1779084</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779085xi</td><td>Kajan Denis</td><td>1779085</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779097xi</td><td>Bajla Boris</td><td>1779097</td><td>adm</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>1779099ex</td><td>Jedin&#253; Jakub</td><td>1779099</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779099xi</td><td>Jedin&#253; Jakub</td><td>1779099</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779100ex</td><td>Pašš&#225;k Martin</td><td>1779100</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779100xi</td><td>Pašš&#225;k Martin</td><td>1779100</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779102ex</td><td>Ukrop Andrej</td><td>1779102</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779104xi</td><td>Sokol Matěj</td><td>1779104</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779106ex</td><td>B&#250;ri Luk&#225;š</td><td>1779106</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779106xi</td><td>B&#250;ri Luk&#225;š</td><td>1779106</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779108xi</td><td>Mal&#237;k Peter</td><td>1779108</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779109ex</td><td>Valock&#253; Frederik</td><td>1779109</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779109xi</td><td>Valock&#253; Frederik</td><td>1779109</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779110xi</td><td>C&#237;bov&#225; Karin</td><td>1779110</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779111xi</td><td>Pavl&#237;kov&#225; Tatiana</td><td>1779111</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779112xi</td><td>Hubert Jakub</td><td>1779112</td><td>adm</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779115xi</td><td>Kejř Jan</td><td>1779115</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779119ex</td><td>Ľoch Matej</td><td>1779119</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779119xi</td><td>Ľoch Matej</td><td>1779119</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779120xi</td><td>Ratkovsk&#253; Adam</td><td>1779120</td><td>adm</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779121ex</td><td>Donoval Martin</td><td>1779121</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779121xi</td><td>Donoval Martin</td><td>1779121</td><td>adm</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779123ex</td><td>Ksinan Jaroslav</td><td>1779123</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779123xi</td><td>Ksinan Jaroslav</td><td>1779123</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779124xi</td><td>Sigetiov&#225; Andrea</td><td>1779124</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779128xi</td><td>Bud&#237;nsk&#225; Krist&#237;na</td><td>1779128</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779130xi</td><td>Hiadlovsk&#225; Simona</td><td>1779130</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779132xi</td><td>Špička Andrej</td><td>1779132</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779133xi</td><td>Salaj Pavol</td><td>1779133</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779135xi</td><td>Prajz Jiř&#237;</td><td>1779135</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779136xi</td><td>Šoltes Miroslav</td><td>1779136</td><td>adm</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>1779141xi</td><td>Polakovič Martin</td><td>1779141</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779145ex</td><td>Zajac Jaroslav</td><td>1779145</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779145xi</td><td>Zajac Jaroslav</td><td>1779145</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779148xi</td><td>Hanes Stanislav</td><td>1779148</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779149xi</td><td>Kirchner Emma</td><td>1779149</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779151xi</td><td>Kosecek Miroslav</td><td>1779151</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779154xi</td><td>Chlapečka Mari&#225;n</td><td>1779154</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779155xi</td><td>Nagy R&#243;bert</td><td>1779155</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779156xi</td><td>Duľa Peter</td><td>1779156</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779157xi</td><td>Bujň&#225;k Milan</td><td>1779157</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779158xi</td><td>Kov&#225;čik Juraj</td><td>1779158</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779159xi</td><td>Sl&#225;dkovič Martin</td><td>1779159</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779160xi</td><td>Kyseľ Peter</td><td>1779160</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779161xi</td><td>Rozman Filip</td><td>1779161</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779162xi</td><td>Pavl&#225;k Peter</td><td>1779162</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779163xi</td><td>Gottlieber Michal</td><td>1779163</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779164ex</td><td>Kvačkaj Michal</td><td>1779164</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779164xi</td><td>Kvačkaj Michal</td><td>1779164</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779165ex</td><td>Lengyel Miroslav</td><td>1779165</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779165xi</td><td>Lengyel Miroslav</td><td>1779165</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779166ex</td><td>Mikuš Martin</td><td>1779166</td><td>ext</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779166xi</td><td>Mikuš Martin</td><td>1779166</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779167ex</td><td>Linkay Branislav</td><td>1779167</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779167xi</td><td>Linkay Branislav</td><td>1779167</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779168ex</td><td>Bočko Dominik</td><td>1779168</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779168xi</td><td>Bočko Dominik</td><td>1779168</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779169ex</td><td>Kotman Boris</td><td>1779169</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779169xi</td><td>Kotman Boris</td><td>1779169</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779170ex</td><td>Kov&#225;č Ľudov&#237;t</td><td>1779170</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779170xi</td><td>Kov&#225;č Ľudov&#237;t</td><td>1779170</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779171ex</td><td>Mih&#225;l Vladim&#237;r</td><td>1779171</td><td>ext</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779171xi</td><td>Mih&#225;l Vladim&#237;r</td><td>1779171</td><td>adm</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779172ex</td><td>Knap Miroslav</td><td>1779172</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779172xi</td><td>Knap Miroslav</td><td>1779172</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779173ex</td><td>Jansk&#253; Vladim&#237;r</td><td>1779173</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779173xi</td><td>Jansk&#253; Vladim&#237;r</td><td>1779173</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779174ex</td><td>Č&#237;k Juraj</td><td>1779174</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779174xi</td><td>Č&#237;k Juraj</td><td>1779174</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779175ex</td><td>Nagy Peter</td><td>1779175</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779175xi</td><td>Nagy Peter</td><td>1779175</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779176ex</td><td>Koz&#225;k Radim</td><td>1779176</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>1779176xi</td><td>Koz&#225;k Radim</td><td>1779176</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>agregusova</td><td>Gregušov&#225; Andrea</td><td>17701794</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>bielik_admin</td><td>Bielik Ondrej</td><td>1779018</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>bisak_admin</td><td>Bisak Branislav</td><td>1779020</td><td>ext</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>buran_admin</td><td>Buran Miroslav</td><td>1779074</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>cisar_admin</td><td>Cis&#225;r Marek</td><td>1779013</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>fricka</td><td>Frick&#225; Anna</td><td>17701169</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>galas</td><td>Galas Andrej</td><td>17706292</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>ganobcik</td><td>Ganobč&#237;k Roman</td><td>17701040</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>gejgusova</td><td>Gejgušov&#225; Simona</td><td>17706358</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>gottwald_admin</td><td>Gottwald Josef</td><td>1779081</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>hrisenko_admin</td><td>Hriseňko Viktor</td><td>1779137</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>jkovac_admin</td><td>Kov&#225;č Jozef</td><td>1779010</td><td>ext</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>jslobodova</td><td>Slobodov&#225; Jozef&#237;na</td><td>17706332</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>konakovsky</td><td>Koňakovsk&#253; Martin</td><td>17702942</td><td>zam</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>kuffer</td><td>K&#252;ffer Katar&#237;na</td><td>17702396</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>kytosova</td><td>Kytošov&#225; Klaudia</td><td>1779080</td><td>ext</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>lences</td><td>Lenč&#233;š Mari&#225;n</td><td>17702998</td><td>zam</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>lences_admin</td><td>Lenč&#233;š Mari&#225;n</td><td>17702998</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>lukacka_admin</td><td>Lukacka Branislav</td><td>1779115</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>majtas_admin</td><td>Majt&#225;s Ľubom&#237;r</td><td>17702519</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>marcek_admin</td><td>Marcek Peter</td><td>1779019</td><td>ext</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>marencik_admin</td><td>Marenč&#237;k Milan</td><td>1779015</td><td>ext</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>masaryk_admin</td><td>Masaryk Admin Rastislav</td><td>1779027</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>mbednarikova</td><td>Bedn&#225;rikov&#225; Margita</td><td>17706343</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>miklos</td><td>Mikloš J&#225;n</td><td>17706315</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>mikula_admin</td><td>Mikula Tibor</td><td>17702358</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>mudron_admin</td><td>Mudroň Michal</td><td>17706361</td><td>adm</td><td>Už&#237;vateľ je zrušen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>murgas_admin</td><td>Murgaš Miroslav</td><td>1779051</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>NCC_JIRA</td><td>JIRA NCC</td><td>1779037</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>nemec_admin</td><td>Němec Luděk</td><td>1779047</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>obrocnik</td><td>Obročn&#237;k Ľubom&#237;r</td><td>17701120</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>opalena</td><td>Op&#225;len&#225; Krist&#237;na</td><td>17706262</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>osvaldova</td><td>Osvaldov&#225; Linda</td><td>17706341</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>pastucha_admin</td><td>Pastucha. Jan.</td><td>17702491</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>pfeiler_admin</td><td>Pfeiler David</td><td>1779100</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>polcova_admin</td><td>Kuch&#225;rov&#225; Gabriela</td><td>1779060</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>popelka_admin</td><td>Popelka Radek</td><td>1779079</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>raksanyova</td><td>Rakš&#225;nyov&#225; Desana</td><td>17702976</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>sandor_admin</td><td>Š&#225;ndor J&#225;n</td><td>17701161</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>snirc_test</td><td>Šnirc Test</td><td>1779123</td><td>ext</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>tobek_admin</td><td>Tobek Ľubom&#237;r</td><td>17702624</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>torvenyi_admin</td><td>T&#246;rv&#233;nyi Rudolf</td><td>1779068</td><td>ext</td><td>Už&#237;vateľ je povolen&#253; - riadenie podľa MIM port&#225;lu</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>ukrop_admin</td><td>Ukrop Andrej</td><td>1779102</td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>vanko</td><td>Vanko Jozef</td><td>17706306</td><td>par</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+<tr><td>Person</td><td>x-MIM.Exchange</td><td>MIM Exchange</td><td></td><td>adm</td><td>Už&#237;vateľ je povolen&#253;</td><td>1</td><td></td></tr>
+<tr><td>Person</td><td>zilizi</td><td>Zilizi Attila</td><td>17706293</td><td>zam</td><td>Už&#237;vateľ je zak&#225;zan&#253; - konec PPV</td><td>0</td><td></td></tr>
+</tbody></table>
+<script>document.getElementById("q").oninput=function(){var q=this.value.toLowerCase();var rows=document.querySelectorAll("tbody tr");for(var i=0;i<rows.length;i++){rows[i].style.display=rows[i].innerText.toLowerCase().indexOf(q)>=0?"":"none";}};</script>
+</body></html>

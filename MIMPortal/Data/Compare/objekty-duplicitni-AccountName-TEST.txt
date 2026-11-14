@@ -1,0 +1,16 @@
+﻿Objekty v TEST se stejným AccountName
+PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)
+TEST: Test (., 2026-10-09T21:33:07Z)
+Uživatelé se párují postupně podle EmployeeID, AccountName a DisplayName. Napojený objekt se znovu nenapojuje. Skupiny se párují podle AccountName.
+U členství se hodnoty csoblComputedMember těchto objektů sjednocují.
+Počet: 8
+
+Typ	AccountName	DisplayName	EmployeeID	EmployeeType	csoblFinalPropetyStatus	csoblvalidStatus	csoblGroupType
+Group	BR_admin_CDBP	administrátor_CDBP				1	bus
+Group	BR_admin_CDBP	administrátor_CDBP				1	bus
+Group	BR_man_ISO_IRO_manual	manažer ISO/IRO_Manuál				0	bus
+Group	BR_man_ISO_IRO_manual	manažer ISO/IRO_Manuál				1	bus
+Group	BR_vsichnizam_CSOBL	všichni zaměstnanci_CSOBL				1	bus
+Group	BR_vsichnizam_CSOBL	všichni zaměstnanci_CSOBL				1	bus
+Group	BRC_220_21111_RPO	senior akvizítor_Región Sever (Žilina)_RPO				1	bus
+Group	BRC_220_21111_RPO	senior akvizítor_Región Sever (Žilina)_RPO				1	bus

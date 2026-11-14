@@ -1,0 +1,363 @@
+<saved-ma-configuration server='SMD1MGIDM01P' export-date='2026-11-04 09:53:23.087'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{7CFFFC80-A8FD-4E43-823D-8491575DF847}</id>
+ <name>ZSEEUser</name>
+ <category>MSSQL</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2025-03-31 23:05:28.147</creation-time>
+ <last-modification-time>2026-11-03 09:57:30.025</last-modification-time>
+ <version>120</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:dsml="http://www.dsml.org/DSML" xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="person" type="structural"><dsml:name>person</dsml:name><dsml:attribute ref="#KID" required="false" /><dsml:attribute ref="#Email" required="false" /><dsml:attribute ref="#OsobneCislo" required="false" /><dsml:attribute ref="#UPN" required="false" /><dsml:attribute ref="#Meno" required="false" /><dsml:attribute ref="#Priezvisko" required="false" /><dsml:attribute ref="#Tituly" required="false" /><dsml:attribute ref="#Firma_Id" required="false" /><dsml:attribute ref="#ExtFirma_Nazov" required="false" /><dsml:attribute ref="#Oddelenie_Kod" required="false" /><dsml:attribute ref="#Ulica" required="false" /><dsml:attribute ref="#Mesto" required="false" /><dsml:attribute ref="#Mobil" required="false" /><dsml:attribute ref="#Kancelaria" required="false" /><dsml:attribute ref="#Nadriadeny" required="false" /><dsml:attribute ref="#Nastup" required="false" /><dsml:attribute ref="#Vystup" required="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="KID" single-value="true" ms-dsml:range-upper="50"><dsml:name>KID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Email" single-value="true" ms-dsml:range-upper="255"><dsml:name>Email</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OsobneCislo" single-value="true" ms-dsml:immutable="true" ms-dsml:range-upper="50"><dsml:name>OsobneCislo</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UPN" single-value="true" ms-dsml:range-upper="50"><dsml:name>UPN</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Meno" single-value="true" ms-dsml:range-upper="255"><dsml:name>Meno</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Priezvisko" single-value="true" ms-dsml:range-upper="255"><dsml:name>Priezvisko</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Tituly" single-value="true" ms-dsml:range-upper="255"><dsml:name>Tituly</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Firma_Id" single-value="true" ms-dsml:range-upper="255"><dsml:name>Firma_Id</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ExtFirma_Nazov" single-value="true" ms-dsml:range-upper="255"><dsml:name>ExtFirma_Nazov</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Oddelenie_Kod" single-value="true" ms-dsml:range-upper="255"><dsml:name>Oddelenie_Kod</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Ulica" single-value="true" ms-dsml:range-upper="255"><dsml:name>Ulica</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Mesto" single-value="true" ms-dsml:range-upper="255"><dsml:name>Mesto</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Mobil" single-value="true" ms-dsml:range-upper="255"><dsml:name>Mobil</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Kancelaria" single-value="true" ms-dsml:range-upper="255"><dsml:name>Kancelaria</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Nadriadeny" single-value="true" ms-dsml:range-upper="255"><dsml:name>Nadriadeny</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Nastup" single-value="true" ms-dsml:range-upper="255"><dsml:name>Nastup</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Vystup" single-value="true" ms-dsml:range-upper="255"><dsml:name>Vystup</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>KID</attribute><attribute>Email</attribute><attribute>OsobneCislo</attribute><attribute>UPN</attribute><attribute>Meno</attribute><attribute>Priezvisko</attribute><attribute>Tituly</attribute><attribute>Firma_Id</attribute><attribute>ExtFirma_Nazov</attribute><attribute>Oddelenie_Kod</attribute><attribute>Ulica</attribute><attribute>Mesto</attribute><attribute>Mobil</attribute><attribute>Kancelaria</attribute><attribute>Nadriadeny</attribute><attribute>Nastup</attribute><attribute>Vystup</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector />
+ <join>
+ <join-profile cd-object-type="person">
+  <join-criterion join-cri-type="sync-rule" id="{FBA6749A-6904-46A7-B902-360A0278E96F}" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}">
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="employeeID">
+     <direct-mapping>
+      <src-attribute>OsobneCislo</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+ </join-profile>
+</join>
+
+ <projection>
+</projection>
+
+ <export-attribute-flow>
+ <export-flow-set cd-object-type="person" mv-object-type="person">
+  <export-flow cd-attribute="OsobneCislo" id="{CEBCC2D9-DF3F-47C4-AD6D-3607E3773418}" suppress-deletions="false">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{B0568282-9772-4C0C-89A8-FED8095C8B33}" initial-flow-only="true" is-existence-test="false">
+    <src-attribute>employeeID</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="UPN" id="{3E92AB29-7AF3-4FA2-B794-D87A2B9E1B09}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{9CC9B6AD-4513-4DD6-BB9F-C33C36BA3B77}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>userPrincipalName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Ulica" id="{1C966800-6DE3-4A80-831D-567EAE4D7A07}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{E23CEF9D-4B32-432D-9BB7-E41F6D4A76FF}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>street</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Kancelaria" id="{10A823A5-98C5-4C63-9581-1ABF8D206A97}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{C0A3C282-EAB1-4B52-AB27-128303F5107E}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>physicalDeliveryOfficeName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Mobil" id="{691AAD6B-F13C-4722-903D-A47178DFBBA0}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{6B605D16-EFE1-4876-8E7A-58469D438701}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>mobilePhone</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Nadriadeny" id="{5C01008D-787A-4DC6-BECE-1A2D59312B5F}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{192423EA-FE8D-4297-B730-24E1E12F8DD6}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>manager</src-attribute>
+    <scoping>
+     <scope>
+      <csAttribute>ObjectType</csAttribute>
+      <csOperator>EQUAL</csOperator>
+      <csValue>person</csValue>
+     </scope>
+    </scoping>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Priezvisko" id="{CD652AD1-B5F2-4200-A197-E2BC56D40E90}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{8067B1CF-2EA9-4E53-9AEE-80DB3C1EA187}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Meno" id="{BC0D2506-5D35-49BB-90D7-FF56E0CBC98E}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{DFBA3AC2-EDB2-412A-B825-1848D3AC3E15}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Vystup" id="{C4A5E34A-C33A-4360-A094-E5F675051C0F}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{910F6122-84F3-4FB7-AFF7-F763781A8050}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>endda</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Email" id="{8A7C0296-71A7-4917-8574-57646A2CEF9D}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{FCFECF2F-B69A-437B-A22E-75E7AA27AB48}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>email</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Tituly" id="{98FE591E-D617-4883-9487-BB0C96AB149B}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{F99CB6B3-5345-4DA1-97BD-69E2C7AC399C}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>displayNameFull</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Oddelenie_Kod" id="{EEEAE2E6-C6B2-4750-AAF2-05DD4F1A3961}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{44E62587-47A0-415E-9897-E38086807BE2}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>department</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Mesto" id="{E8A9EEA4-02BA-475B-BF6B-18BEDAAC1B15}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{8DE64047-0F40-4867-9FFB-592893AC6217}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>city</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Firma_Id" id="{F4AE61F0-ACDE-4805-B463-4C9F64A65AE8}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{FD304A95-B90B-4F20-8DCB-51B69F21DE51}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>bukrs</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Nastup" id="{EE2EAA9D-806F-4E99-9031-4BD563B4C6FC}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{D030B756-1D40-4B3B-A22F-F7F045103BB4}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>begda</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KID" id="{D18E674A-2841-4710-8923-B2E64F1C05A7}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{F4E93BA9-860E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{97863E92-7397-44D9-8E68-4010D977D6BD}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>accountName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="OsobneCislo" id="{58AEDE82-E2D5-4FBB-9896-9EBA7D12CEA1}" suppress-deletions="false">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{F6AC682E-CFA5-46F9-9CF7-B0435D60D716}" initial-flow-only="true" is-existence-test="false">
+    <src-attribute>employeeID</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="UPN" id="{C285B621-A4D3-4FC1-95F5-869D705CFE29}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{BB082759-6CE4-4532-8B31-82DA0376CFB8}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>userPrincipalName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Mobil" id="{DF337EF1-F0A9-48F7-99D7-B5FE8853FAF9}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{B6F59425-F675-4C79-ABC7-826B7E4280D2}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>mobilePhone</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="ExtFirma_Nazov" id="{A9B114FF-61E6-4B27-B872-218461D586FE}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{6AF0460B-B15D-4382-81EB-D6C092E10660}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>menoOJ</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Priezvisko" id="{CDF2C24E-208E-443E-A3FE-69992455A303}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{E60CA94A-266D-4A10-B7F8-41B513F7E4B3}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Meno" id="{8FF5BE78-59D2-4126-8494-86902A754E23}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{1D533F0B-65EE-4CB0-BD22-43E774217B4D}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Vystup" id="{FAA58371-3F74-40E4-B7D3-20A3CBBCCA7A}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{E3D08EE1-B3D6-452C-98CC-433CA2EB1F92}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>endda</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Email" id="{27B3262D-8739-41A5-B7AB-44CA5D71422D}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{19EE268D-40C2-4622-84EF-2A538951979C}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>email</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Oddelenie_Kod" id="{DD27F9AD-D681-46E9-BB24-3CEDC8A2DE81}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{AE1792C5-0784-45FB-9020-8C6EEE760E57}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>department</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Mesto" id="{28F944FF-42FF-41C6-9B4D-7AAC49DAF6B9}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{DDAE38C6-6FBE-4A22-A6B3-4349A2FBA883}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>city</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Firma_Id" id="{3B2B64DF-C6C2-4CD2-AA7E-2FCE46EA8EFE}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{04F72E4C-8D7A-4DB5-9E40-FC0628CAF58E}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>bukrs</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Nastup" id="{6DB77044-2939-4F76-BF50-C25D37EF9ABB}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{29B257A1-1C73-4378-81E8-BE8491A9849F}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>begda</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KID" id="{305773A2-6652-485A-86DD-989B648CCB1D}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A106C3F4-791A-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{19BF89F3-042D-41C9-A1BE-307BD2057F69}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>accountName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Priezvisko" id="{3538FD90-3FAB-44E8-BFBC-C27076998674}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{590B59AC-94C0-F011-A76B-0050568B6A50}" sync-rule-mapping-id="{B1E071A4-D86C-4576-9D82-B5A292FC7245}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Meno" id="{8293CE9B-9471-42A8-B0BC-7EEB10512CC6}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{590B59AC-94C0-F011-A76B-0050568B6A50}" sync-rule-mapping-id="{4F44446C-2D9A-46A4-ACB7-6354E524AEB5}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Nastup" id="{A70D9267-85AF-49E9-80F9-FBE5AB3E14E6}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{590B59AC-94C0-F011-A76B-0050568B6A50}" sync-rule-mapping-id="{88D79270-E6BD-45FF-A1C3-B106F8E9FF67}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>employeeStartDate</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>employeeStartDate</attr></src><dest>Nastup</dest><scoping></scoping><fn id="ReplaceString" isCustomExpression="true"><arg><fn id="Left" isCustomExpression="false"><arg>employeeStartDate</arg><arg>10</arg></fn></arg><arg>"-"</arg><arg>""</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Vystup" id="{51F92FC2-F6D1-40B0-B3BE-7010C9C9AA89}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{590B59AC-94C0-F011-A76B-0050568B6A50}" sync-rule-mapping-id="{64CD54BA-B6D1-4C89-891D-716E809ED8F4}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>employeeEndDate</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>employeeEndDate</attr></src><dest>Vystup</dest><scoping></scoping><fn id="ReplaceString" isCustomExpression="true"><arg><fn id="Left" isCustomExpression="false"><arg>employeeEndDate</arg><arg>10</arg></fn></arg><arg>"-"</arg><arg>""</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Email" id="{1AE23F7A-A457-4311-8821-2CA2435CA643}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{590B59AC-94C0-F011-A76B-0050568B6A50}" sync-rule-mapping-id="{8BDA6FD4-695C-44B8-B432-160FDC6E67B2}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>email</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Firma_Id" id="{64B48C02-4D64-4079-96E2-DFB95ADBF7AA}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{590B59AC-94C0-F011-A76B-0050568B6A50}" sync-rule-mapping-id="{778356C3-0EAA-45AF-B37F-8FD7AAD0AF4D}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>bukrs</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+ </export-flow-set>
+</export-attribute-flow>
+
+ <provisioning-cleanup type="declared"><action>delete-object</action></provisioning-cleanup>
+ <extension />
+ <controller-configuration>
+ <application-protection>low</application-protection>
+ <application-architecture>process</application-architecture>
+ <impersonation>
+  <domain>eon-sk</domain>
+  <user>miminstall</user>
+ </impersonation>
+</controller-configuration>
+
+ <description></description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="OsobneCislo" header="OsobneCislo" size="208" /><attribute name="KID" header="KID" size="230" /><attribute name="Email" header="Email" size="200" /><attribute name="Priezvisko" header="Priezvisko" size="100" /></cs><mv><attribute name="accountName" header="accountName" size="100" /><attribute name="displayName" header="displayName" size="223" /><attribute name="employeeID" header="employeeID" size="100" /><attribute name="loginName" header="loginName" size="100" /></mv></attributes><filters max_mv_search_results=""><filter name="id" collation="Latin1_General_CI_AS" searchscope="person"><element cdattribute="OsobneCislo" mvattribute="employeeID" mvtextflag="false" elementoperator="Equals" /></filter><filter name="priezvisko" collation="Latin1_General_CI_AS" searchscope=""><element cdattribute="KID" mvattribute="accountName" mvtextflag="false" elementoperator="Equals" /></filter><filter name="priezvisko1" collation="Latin1_General_CI_AS" searchscope=""><element cdattribute="Priezvisko" mvattribute="lastName" mvtextflag="false" elementoperator="Equals" /></filter><filter name="email" collation="Latin1_General_CI_AS" searchscope=""><element cdattribute="Email" mvattribute="email" mvtextflag="false" elementoperator="Equals" /></filter></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <oledbma-configuration><connection-info><authentication>integrated</authentication><provider>SQLOLEDB</provider><server>SMD1DBIDM01P</server><databasename>HRSAP</databasename><tablename>ZSEE_Identita</tablename><user>miminstall</user><domain>eon-sk</domain></connection-info><mms-info><column-info><column><name>KID</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Email</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>0</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>OsobneCislo</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>0</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>UPN</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>Meno</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Priezvisko</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Tituly</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Firma_Id</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>ExtFirma_Nazov</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Oddelenie_Kod</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Ulica</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Mesto</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Mobil</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>0</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>Kancelaria</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Nadriadeny</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type dn="1">String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Nastup</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><column><name>Vystup</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>1</exp-conv-flag></column><primary-key></primary-key></column-info><anchor><attribute>OsobneCislo</attribute></anchor><object-type>person</object-type></mms-info><password-extension-config><password-extension-enabled>0</password-extension-enabled><dll></dll><password-set-enabled></password-set-enabled><password-change-enabled></password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout></timeout></password-extension-config><enable-unapplied-merge>0</enable-unapplied-merge></oledbma-configuration>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</id>
+  <name>default</name>
+  <creation-time>2025-03-31 23:05:28.147</creation-time>
+  <last-modification-time>2025-11-28 12:48:53.563</last-modification-time>
+  <version>8</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>person</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion></inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <allowed-operations>25</allowed-operations>
+  <current>
+   <batch-number>29994</batch-number>
+   <sequence-number>6829654</sequence-number>
+  </current>
+  <last-successful-batch>29993</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>person</name>
+     <hierarchy>
+      <object-class>person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{75A06680-7D3A-4D77-B97F-BB1B57DE2E2D}</id>
+  <name>User Export</name>
+  <creation-time>2025-03-31 23:05:28.153</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-03-31 23:05:28.153</last-modification-time>
+  <configuration><step><step-type type="export"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{6D2D8C07-578F-4603-BFD6-B99949260245}</id>
+  <name>User Import Full</name>
+  <creation-time>2025-03-31 23:05:28.153</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-03-31 23:05:28.153</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{C4C1F93A-AD00-4142-A0EE-39E836D09530}</id>
+  <name>User Sync Full</name>
+  <creation-time>2025-03-31 23:05:28.157</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-03-31 23:05:28.157</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{24141912-A020-4D48-BD1F-7BB2AF512AE5}</id>
+  <name>E</name>
+  <creation-time>2025-05-02 15:23:19.837</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:23:19.837</last-modification-time>
+  <configuration><step><step-type type="export"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{159DAA00-40FA-4F27-8FEF-5A2E22C783B1}</id>
+  <name>FI</name>
+  <creation-time>2025-05-02 15:23:19.837</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:23:19.837</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{DF4245BF-AFE1-42CC-AAA8-594E53AB66B3}</id>
+  <name>FS</name>
+  <creation-time>2025-05-02 15:23:19.837</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:23:19.837</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{E7952B1F-318C-401E-BCC8-DAC94B1F51A2}</id>
+  <name>DS</name>
+  <creation-time>2025-05-02 15:23:19.837</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:23:19.837</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>apply-pending</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{37BE0261-A338-4138-B9C6-C5E3C7E8233B}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>8401</capabilities-mask>
+ <export-type>2</export-type>
+ <dn-construction><attribute>OsobneCislo</attribute></dn-construction>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+</saved-ma-configuration>

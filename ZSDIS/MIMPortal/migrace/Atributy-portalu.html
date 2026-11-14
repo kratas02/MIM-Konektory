@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atributy MIM portálu ZSDIS</title>
+<style>
+
+body { font-family: Segoe UI, Calibri, sans-serif; max-width: 1280px; margin: 2rem auto; padding: 0 1.5rem 3rem; line-height: 1.45; color: #1b1b1b; }
+h1, h2, h3 { line-height: 1.25; }
+h1 { font-size: 1.7rem; }
+h2 { margin-top: 2rem; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+a { color: #0b57d0; }
+code { font-family: Consolas, monospace; background: #f3f3f3; padding: 0.05em 0.3em; border-radius: 3px; }
+pre { background: #f6f8fa; padding: 0.8rem 1rem; overflow: auto; }
+pre code { background: none; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 0.9rem; }
+th, td { border: 1px solid #d0d0d0; padding: 0.35rem 0.5rem; vertical-align: top; text-align: left; }
+th { background: #f0f0f0; }
+tr:nth-child(even) td { background: #fafafa; }
+
+</style>
+</head>
+<body>
+<h1 id="atributy-mim-portalu-zsdis">Atributy MIM portálu ZSDIS</h1>
+<p>Zdroj: <code>Schema.xml</code> a <code>Policy.xml</code> ze služby <code>http://smd1mgidm02p:5725</code>. Osoba má 161 navázaných atributů, skupina 68. Popisné názvy jsou tak, jak je má portál. Standardní pole jsou anglicky, u zakázkových je popisný název často shodný se systémovým.</p>
+<h2 id="kdo-smi-atribut-zmenit">Kdo smí atribut změnit</h2>
+<p>Právo dává request MPR s <code>GrantRight = True</code>, které není vypnuté. Tabulka říká, kdo smí změnit už existující objekt. PAM Admins mají na všechny osoby a skupiny parametr <code>*</code>, tedy každý atribut. V buňkách je neopakuji.</p>
+<p>Další plošná práva, která taky nejsou v každém řádku:</p>
+<ul>
+<li>Service Desk smí osobu nebo skupinu založit a při založení poslat libovolný atribut. MPR se jmenuje <code>_ZSE_Service_Desk_User_Permission_Read</code>, operace je Create a parametr je <code>*</code>. Formulář vytvoření přesto ukazuje jen standardní pole, takže z portálu ty ostatní při zakládání stejně nevyplní.</li>
+<li>Správci skupin <code>OU=AzureESK</code> smí takovou skupinu založit s libovolnými atributy. Při úpravě už jen <code>AccountName</code>, <code>DisplayName</code>, <code>Description</code> a členy.</li>
+<li>Běžný uživatel nemá žádné MPR na změnu vlastní osoby. Smí jen číst.</li>
+<li>Synchronizace není člověk na portálu. V tabulce je uvedená tam, kde její MPR atribut skutečně obsahuje. Není to hvězdička na všechno.</li>
+</ul>
+<p>Sloupec <strong>Počítané</strong> říká, jestli hodnotu zapíše action workflow. <code>ano</code> znamená zápis na tentýž objekt (<code>[//Target/atribut]</code>). <code>při založení objektu</code> je Create Resource nové osoby nebo skupiny. <code>na navázanou kopii</code> je zápis na objekt v odkazu, typicky <code>LDAPTarget</code>. <code>na objekt z dotazu</code> je zápis na jinou osobu, skupinu nebo sadu, kterou si workflow nejdřív najde.</p>
+<p>Workflow běží jako služba s vypnutou autorizací, takže hodnotu zapíše i když ji na formuláři nikdo měnit nesmí. Formulář úpravy má tato pole stejně editovatelná. Portál zápis odmítne, dokud na něj není MPR.</p>
+<h2 id="formular-uzivatele">Formulář uživatele</h2>
+<p>RCDC uživatele jsou tři: vytvoření, úprava a zobrazení. Záložky vytvoření jsou šablona Microsoftu. Úprava má navíc schránku na první záložce, záložku ResetUser a záložku LDAPInfo. Zobrazení je ke čtení a má i seznam bezpečnostních skupin. Názvy záložek na portálu jsou anglicky, v závorce je co na nich je. U pole je typ ovládacího prvku.</p>
+<h2 id="vytvoreni-uzivatele">Vytvoření uživatele</h2>
+<h3 id="general-zakladni-udaje">General (základní údaje)</h3>
+<ul>
+<li><code>FirstName</code> (UocTextBox)</li>
+<li><code>LastName</code> (UocTextBox)</li>
+<li><code>MiddleName</code> (UocTextBox)</li>
+<li><code>DisplayName</code> (UocTextBox)</li>
+<li><code>AccountName</code> (UocTextBox)</li>
+<li><code>Domain</code> (UocDropDownList)</li>
+<li><code>MailNickname</code> (UocTextBox)</li>
+<li><code>Photo</code> (UocFileUpload)</li>
+<li><code>JobTitle</code> (UocTextBox)</li>
+<li><code>Department</code> (UocTextBox)</li>
+<li><code>IsRASEnabled</code> (UocRadioButtonList)</li>
+<li><code>TimeZone</code> (UocDropDownList)</li>
+</ul>
+<h3 id="work-info-pracovni-udaje">Work Info (pracovní údaje)</h3>
+<ul>
+<li><code>EmployeeStartDate</code> (UocDateTimeControl)</li>
+<li><code>EmployeeEndDate</code> (UocDateTimeControl)</li>
+<li><code>EmployeeType</code> (UocDropDownList)</li>
+<li><code>EmployeeID</code> (UocTextBox)</li>
+<li><code>Manager</code> (UocIdentityPicker)</li>
+<li><code>Assistant</code> (UocIdentityPicker)</li>
+<li><code>CostCenter</code> (UocTextBox)</li>
+<li><code>CostCenterName</code> (UocTextBox)</li>
+</ul>
+<h3 id="contact-info-kontakt">Contact Info (kontakt)</h3>
+<ul>
+<li><code>OfficePhone</code> (UocTextBox)</li>
+<li><code>OfficeFax</code> (UocTextBox)</li>
+<li><code>MobilePhone</code> (UocTextBox)</li>
+<li><code>OfficeLocation</code> (UocTextBox)</li>
+<li><code>Address</code> (UocTextBox)</li>
+<li><code>City</code> (UocTextBox)</li>
+<li><code>PostalCode</code> (UocTextBox)</li>
+<li><code>Country</code> (UocDropDownList)</li>
+</ul>
+<h3 id="summary-souhrn">Summary (souhrn)</h3>
+<p>Souhrn skládá náhled z ostatních polí, vlastní atribut nemá.</p>
+<h2 id="uprava-uzivatele">Úprava uživatele</h2>
+<h3 id="general-zakladni-udaje_1">General (základní údaje)</h3>
+<ul>
+<li><code>Photo</code> (UocFileUpload)</li>
+<li><code>FirstName</code> (UocTextBox)</li>
+<li><code>LastName</code> (UocTextBox)</li>
+<li><code>DisplayName</code> (UocTextBox)</li>
+<li><code>AccountName</code> (UocTextBox)</li>
+<li><code>Domain</code> (UocDropDownList)</li>
+<li><code>eonMailEnabled</code> (UocCheckBox)</li>
+<li><code>eonMailSuffix</code> (UocDropDownList)</li>
+<li><code>eonLicenseGroup</code> (UocDropDownList)</li>
+<li><code>MailNickname</code> (UocTextBox)</li>
+<li><code>Email</code> (UocTextBox)</li>
+<li><code>JobTitle</code> (UocTextBox)</li>
+<li><code>Department</code> (UocTextBox)</li>
+<li><code>IsRASEnabled</code> (UocRadioButtonList)</li>
+</ul>
+<h3 id="work-info-pracovni-udaje_1">Work Info (pracovní údaje)</h3>
+<ul>
+<li><code>EmployeeStartDate</code> (UocDateTimeControl)</li>
+<li><code>EmployeeEndDate</code> (UocDateTimeControl)</li>
+<li><code>EmployeeType</code> (UocDropDownList)</li>
+<li><code>EmployeeID</code> (UocTextBox)</li>
+<li><code>ext_applicant_kid</code> (UocTextBox)</li>
+<li><code>Manager</code> (UocIdentityPicker)</li>
+<li><code>Assistant</code> (UocIdentityPicker)</li>
+<li><code>CostCenter</code> (UocTextBox)</li>
+<li><code>CostCenterName</code> (UocTextBox)</li>
+</ul>
+<h3 id="contact-info-kontakt_1">Contact Info (kontakt)</h3>
+<ul>
+<li><code>OfficePhone</code> (UocTextBox)</li>
+<li><code>OfficeFax</code> (UocTextBox)</li>
+<li><code>MobilePhone</code> (UocTextBox)</li>
+<li><code>IPphone</code> (UocTextBox)</li>
+<li><code>OfficeLocation</code> (UocTextBox)</li>
+<li><code>Address</code> (UocTextBox)</li>
+<li><code>City</code> (UocTextBox)</li>
+<li><code>PostalCode</code> (UocTextBox)</li>
+<li><code>Country</code> (UocDropDownList)</li>
+</ul>
+<h3 id="group-membership-clenstvi-ve-skupinach">Group Membership (členství ve skupinách)</h3>
+<ul>
+<li>Seznam bezpečnostních skupin, ve kterých osoba je. Filtr je <code>/Group[(Type='Security') and ((ComputedMember='%ObjectID%') or (ExplicitMember='%ObjectID%'))]</code>.</li>
+</ul>
+<h3 id="resetuser-ucet-heslo-a-vznik-uctu">ResetUser (účet, heslo a vznik účtu)</h3>
+<ul>
+<li><code>Enabled</code> (UocCheckBox)</li>
+<li><code>Locked</code> (UocCheckBox)</li>
+<li><code>ForceChangePassword</code> (UocCheckBox)</li>
+<li><code>ResetPassword</code> (UocTextBox)</li>
+<li><code>CreateADAccount</code> (UocCheckBox)</li>
+<li><code>CreateSecondaryKID</code> (UocCheckBox)</li>
+</ul>
+<h3 id="ldapinfo-ldap-a-kopie-vsezse">LDAPInfo (LDAP a kopie VSE/ZSE)</h3>
+<ul>
+<li><code>accountNameVSE</code> (UocTextBox)</li>
+<li><code>displayNameVSE</code> (UocTextBox)</li>
+<li><code>distinguishedName</code> (UocTextBox)</li>
+<li><code>distinguishedNameLDAP</code> (UocTextBox)</li>
+<li><code>distinguishedNameVSE</code> (UocTextBox)</li>
+<li><code>LDAPSource</code> (UocIdentityPicker)</li>
+<li><code>LDAPReplace</code> (UocIdentityPicker)</li>
+<li><code>LDAPTarget</code> (UocIdentityPicker)</li>
+<li><code>LDAPTargetZSE</code> (UocIdentityPicker)</li>
+<li><code>advse</code> (UocTextBox)</li>
+<li><code>LDAPdev</code> (UocTextBox)</li>
+<li><code>LDAPprod</code> (UocTextBox)</li>
+<li><code>Externisti</code> (UocTextBox)</li>
+<li><code>humanet</code> (UocTextBox)</li>
+<li><code>upn</code> (UocTextBox)</li>
+<li><code>usrID</code> (UocTextBox)</li>
+<li><code>VSENoSync</code> (UocTextBox)</li>
+<li><code>LDAPsync</code> (UocTextBox)</li>
+</ul>
+<h3 id="summary-souhrn_1">Summary (souhrn)</h3>
+<p>Souhrn skládá náhled z ostatních polí, vlastní atribut nemá.</p>
+<h2 id="zobrazeni-uzivatele">Zobrazení uživatele</h2>
+<p>Celá stránka je ke čtení. Není na ní ResetUser, LDAPInfo ani schránka. Seznam bezpečnostních skupin na ní je. <code>IPphone</code> je na zobrazení i na úpravě, na vytvoření ne.</p>
+<h3 id="general-zakladni-udaje_2">General (základní údaje)</h3>
+<ul>
+<li><code>Photo</code> (UocPictureBox, jen čtení)</li>
+<li><code>FirstName</code> (UocLabel, jen čtení)</li>
+<li><code>LastName</code> (UocLabel, jen čtení)</li>
+<li><code>MiddleName</code> (UocLabel, jen čtení)</li>
+<li><code>DisplayName</code> (UocLabel, jen čtení)</li>
+<li><code>AccountName</code> (UocLabel, jen čtení)</li>
+<li><code>Domain</code> (UocLabel, jen čtení)</li>
+<li><code>MailNickname</code> (UocLabel, jen čtení)</li>
+<li><code>Email</code> (UocLabel, jen čtení)</li>
+<li><code>JobTitle</code> (UocLabel, jen čtení)</li>
+<li><code>Department</code> (UocLabel, jen čtení)</li>
+</ul>
+<h3 id="work-info-pracovni-udaje_2">Work Info (pracovní údaje)</h3>
+<ul>
+<li><code>EmployeeStartDate</code> (UocDateTimeControl, jen čtení)</li>
+<li><code>EmployeeEndDate</code> (UocDateTimeControl, jen čtení)</li>
+<li><code>EmployeeType</code> (UocLabel, jen čtení)</li>
+<li><code>EmployeeID</code> (UocLabel, jen čtení)</li>
+<li><code>Manager</code> (UocHyperLink)</li>
+<li><code>Assistant</code> (UocHyperLink)</li>
+<li><code>CostCenter</code> (UocLabel, jen čtení)</li>
+<li><code>CostCenterName</code> (UocLabel, jen čtení)</li>
+<li><code>IsRASEnabled</code> (UocRadioButtonList, jen čtení)</li>
+</ul>
+<h3 id="contact-info-kontakt_2">Contact Info (kontakt)</h3>
+<ul>
+<li><code>OfficePhone</code> (UocLabel, jen čtení)</li>
+<li><code>OfficeFax</code> (UocLabel, jen čtení)</li>
+<li><code>MobilePhone</code> (UocLabel, jen čtení)</li>
+<li><code>IPphone</code> (UocLabel, jen čtení)</li>
+<li><code>OfficeLocation</code> (UocLabel, jen čtení)</li>
+<li><code>Address</code> (UocLabel, jen čtení)</li>
+<li><code>City</code> (UocLabel, jen čtení)</li>
+<li><code>PostalCode</code> (UocLabel, jen čtení)</li>
+<li><code>Country</code> (UocLabel, jen čtení)</li>
+</ul>
+<h3 id="group-membership-clenstvi-ve-skupinach_1">Group Membership (členství ve skupinách)</h3>
+<ul>
+<li>Seznam bezpečnostních skupin, ve kterých osoba je. Filtr je <code>/Group[(Type='Security') and ((ComputedMember='%ObjectID%') or (ExplicitMember='%ObjectID%'))]</code>.</li>
+</ul>
+<h2 id="formular-skupiny">Formulář skupiny</h2>
+<p>RCDC skupiny je šablona Microsoftu. Zakázkové atributy (DN, VSE, LDAP, <code>adminDescription</code>) na formuláři nejsou. Na vytvoření je zaškrtávátko e-mailu a přepínač typu členství bez vlastního atributu. E-mail a doména jsou při úpravě jen ke čtení. Členové se při vytvoření vybírají do <code>ExplicitMember</code>. Při úpravě jdou přes seznamy MemberToAdd a MemberToRemove a portál z toho udělá Add nebo Remove na <code>ExplicitMember</code>. Vlastníci jdou do <code>Owner</code> a <code>DisplayedOwner</code>.</p>
+<p>Záložka Members je v RCDC dvakrát za sebou, na portálu je to jedna záložka. První blok jsou ručně vedení členové, druhý je dynamický filtr.</p>
+<h2 id="vytvoreni-skupiny">Vytvoření skupiny</h2>
+<h3 id="general-zakladni-udaje_3">General (základní údaje)</h3>
+<ul>
+<li><code>DisplayName</code> (UocTextBox)</li>
+<li><code>MailNickname</code> (UocTextBox)</li>
+<li><code>Domain</code> (UocDropDownList)</li>
+<li><code>AccountName</code> (UocTextBox)</li>
+<li><code>Scope</code> (UocDropDownList)</li>
+<li><code>Description</code> (UocTextBox)</li>
+</ul>
+<h3 id="members-clenove">Members (členové)</h3>
+<ul>
+<li><code>ExplicitMember</code> (UocIdentityPicker)</li>
+</ul>
+<h3 id="members-clenove_1">Members (členové)</h3>
+<ul>
+<li>Seznam dopočítaných členů</li>
+<li>Seznam členů, které dynamická skupina nebere</li>
+<li><code>Filter</code> (UocFilterBuilder)</li>
+</ul>
+<h3 id="owners-vlastnici">Owners (vlastníci)</h3>
+<ul>
+<li><code>Owner</code> (UocIdentityPicker)</li>
+<li><code>DisplayedOwner</code> (UocIdentityPicker)</li>
+<li><code>MembershipAddWorkflow</code> (UocRadioButtonList)</li>
+</ul>
+<h3 id="summary-souhrn_2">Summary (souhrn)</h3>
+<p>Souhrn skládá náhled z ostatních polí, vlastní atribut nemá.</p>
+<h2 id="uprava-skupiny">Úprava skupiny</h2>
+<h3 id="general-zakladni-udaje_4">General (základní údaje)</h3>
+<ul>
+<li><code>DisplayName</code> (UocTextBox)</li>
+<li><code>MailNickname</code> (UocTextBox)</li>
+<li><code>Email</code> (UocTextBox, jen čtení)</li>
+<li><code>Domain</code> (UocLabel, jen čtení)</li>
+<li><code>AccountName</code> (UocTextBox)</li>
+<li><code>Scope</code> (UocDropDownList)</li>
+<li><code>Description</code> (UocTextBox)</li>
+</ul>
+<h3 id="members-clenove_2">Members (členové)</h3>
+<ul>
+<li>Seznam ručně přidaných členů</li>
+<li>Seznam členů, které statická skupina nebere</li>
+</ul>
+<h3 id="members-clenove_3">Members (členové)</h3>
+<ul>
+<li>Seznam dopočítaných členů</li>
+<li>Seznam členů, které dynamická skupina nebere</li>
+<li><code>Filter</code> (UocFilterBuilder)</li>
+</ul>
+<h3 id="owners-vlastnici_1">Owners (vlastníci)</h3>
+<ul>
+<li><code>Owner</code> (UocIdentityPicker)</li>
+<li><code>DisplayedOwner</code> (UocIdentityPicker)</li>
+<li><code>MembershipAddWorkflow</code> (UocRadioButtonList)</li>
+</ul>
+<h3 id="summary-souhrn_3">Summary (souhrn)</h3>
+<p>Souhrn skládá náhled z ostatních polí, vlastní atribut nemá.</p>
+<h2 id="zobrazeni-skupiny">Zobrazení skupiny</h2>
+<h3 id="general-zakladni-udaje_5">General (základní údaje)</h3>
+<ul>
+<li><code>DisplayName</code> (UocLabel, jen čtení)</li>
+<li><code>MailNickname</code> (UocLabel, jen čtení)</li>
+<li><code>Email</code> (UocLabel, jen čtení)</li>
+<li><code>Domain</code> (UocLabel, jen čtení)</li>
+<li><code>AccountName</code> (UocLabel, jen čtení)</li>
+<li><code>Scope</code> (UocLabel, jen čtení)</li>
+<li><code>Description</code> (UocLabel, jen čtení)</li>
+</ul>
+<h3 id="members-clenove_4">Members (členové)</h3>
+<ul>
+<li>Seznam ručně přidaných členů</li>
+<li>Seznam členů, které statická skupina nebere</li>
+</ul>
+<h3 id="members-clenove_5">Members (členové)</h3>
+<ul>
+<li>Seznam dopočítaných členů</li>
+<li>Seznam členů, které dynamická skupina nebere</li>
+<li><code>Filter</code> (UocFilterBuilder, jen čtení)</li>
+</ul>
+<h3 id="owners-vlastnici_2">Owners (vlastníci)</h3>
+<ul>
+<li><code>Owner</code> (UocIdentityPicker, jen čtení)</li>
+<li><code>DisplayedOwner</code> (UocHyperLink)</li>
+<li><code>MembershipAddWorkflow</code> (UocLabel, jen čtení)</li>
+</ul>
+<h2 id="atributy-osoby">Atributy osoby</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Systémový název</th>
+<th>Popisný název</th>
+<th>Typ</th>
+<th>Kdo smí měnit</th>
+<th>Počítané</th>
+<th>Záložka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Photo</code></td>
+<td>Photo</td>
+<td>Binary</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>FirstName</code></td>
+<td>First Name</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _VSE_Generate_KID_AD_Account_X; při založení objektu: _VSE_Copy_users_create, _ZSE_Create_Secondary_Account; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>LastName</code></td>
+<td>Last Name</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _VSE_Generate_KID_AD_Account_X; při založení objektu: _VSE_Copy_users_create, _ZSE_Create_Secondary_Account; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>DisplayName</code></td>
+<td>Display Name</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _VSE_Generate_KID_AD_Account_X, _VSE_pridaj_atributy_pre_vse_only_ucty, _VSE_Users_Add_Display_Name; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 3; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget, _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>AccountName</code></td>
+<td>Account Name. User's log on name</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _ZSE_Generate_KID, _VSE_Generate_KID_AD_Account, _VSE_Generate_KID_AD_Account_X; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 2; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget, _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>Domain</code></td>
+<td>Domain. Choose the domain where you want to create the user account for this user</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 1; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>eonMailEnabled</code></td>
+<td>E-mail enabled</td>
+<td>Boolean</td>
+<td>správa schránek</td>
+<td>ano: _ZSE_Create_Mailbox</td>
+<td>jen úprava: General</td>
+</tr>
+<tr>
+<td><code>eonMailSuffix</code></td>
+<td>E-mail suffix</td>
+<td>String</td>
+<td>správa schránek</td>
+<td>ano: _ZSE_Create_Mailbox</td>
+<td>jen úprava: General</td>
+</tr>
+<tr>
+<td><code>eonLicenseGroup</code></td>
+<td>License group</td>
+<td>String</td>
+<td>správa schránek</td>
+<td>ano: _ZSE_Create_Mailbox</td>
+<td>jen úprava: General</td>
+</tr>
+<tr>
+<td><code>MailNickname</code></td>
+<td>E-mail Alias. E-mail alias. It is used to create the e-mail address</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>Email</code></td>
+<td>E-mail. Primary e-mail address for the user</td>
+<td>String</td>
+<td>Service Desk (osoba I nebo E), administrátoři, synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela, _ZSE_Externisti_email; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>jen úprava: General</td>
+</tr>
+<tr>
+<td><code>JobTitle</code></td>
+<td>Job Title</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>Department</code></td>
+<td>Department</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>IsRASEnabled</code></td>
+<td>RAS Access Permission</td>
+<td>Boolean</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>EmployeeStartDate</code></td>
+<td>Employee Start Date</td>
+<td>DateTime</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>EmployeeEndDate</code></td>
+<td>Employee End Date</td>
+<td>DateTime</td>
+<td>Service Desk (osoba I nebo E), administrátoři, synchronizace</td>
+<td>ano: _ZSE_SAPCUA_Unsync</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>EmployeeType</code></td>
+<td>Employee Type</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _VSE_Users_XVSB; při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>EmployeeID</code></td>
+<td>Employee ID</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _VSE_Generate_KID_AD_Account_X; při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>ext_applicant_kid</code></td>
+<td>Externisti Applicant KID</td>
+<td>String</td>
+<td>Service Desk (externista), synchronizace</td>
+<td>ano: _ZSE_Externisti_dopln_ext_applicant_kid</td>
+<td>jen úprava: Work Info</td>
+</tr>
+<tr>
+<td><code>Manager</code></td>
+<td>Manager</td>
+<td>Reference</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela, _ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>Assistant</code></td>
+<td>Assistant</td>
+<td>Reference</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>CostCenter</code></td>
+<td>Cost Center</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>CostCenterName</code></td>
+<td>Cost Center Name</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Work Info</td>
+</tr>
+<tr>
+<td><code>OfficePhone</code></td>
+<td>Office Phone</td>
+<td>String</td>
+<td>Service Desk (osoba I nebo E), Service Desk (sekundární účet), administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>OfficeFax</code></td>
+<td>Fax</td>
+<td>String</td>
+<td>Service Desk (osoba I nebo E), Service Desk (sekundární účet), administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>MobilePhone</code></td>
+<td>Mobile Phone</td>
+<td>String</td>
+<td>Service Desk (osoba I nebo E), Service Desk (sekundární účet), administrátoři, synchronizace</td>
+<td>ano: _ZSE_Externisti_phone; při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>IPphone</code></td>
+<td>IP phone. telefon pre Teams</td>
+<td>String</td>
+<td>Service Desk (osoba I nebo E), synchronizace</td>
+<td>ne</td>
+<td>jen úprava: Contact Info</td>
+</tr>
+<tr>
+<td><code>OfficeLocation</code></td>
+<td>Office Location</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>Address</code></td>
+<td>Address</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>City</code></td>
+<td>City</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>PostalCode</code></td>
+<td>Postal Code</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>Country</code></td>
+<td>Country/Region</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _ZSE_set_Country</td>
+<td>Contact Info</td>
+</tr>
+<tr>
+<td><code>Enabled</code></td>
+<td>Enabled. User is enabled in AD</td>
+<td>Boolean</td>
+<td>Service Desk (osoba I nebo E), Service Desk (sekundární účet), synchronizace</td>
+<td>ne</td>
+<td>jen úprava: ResetUser</td>
+</tr>
+<tr>
+<td><code>Locked</code></td>
+<td>Locked. user is locked in AD</td>
+<td>Boolean</td>
+<td>Service Desk (osoba I nebo E), Service Desk (sekundární účet), synchronizace</td>
+<td>ne</td>
+<td>jen úprava: ResetUser</td>
+</tr>
+<tr>
+<td><code>ForceChangePassword</code></td>
+<td>ForceChangePassword. Force change password after password reset</td>
+<td>Boolean</td>
+<td>Service Desk (osoba I nebo E), Service Desk (sekundární účet)</td>
+<td>ne</td>
+<td>jen úprava: ResetUser</td>
+</tr>
+<tr>
+<td><code>ResetPassword</code></td>
+<td>Reset Password. This attribute is used to trigger a password reset process.</td>
+<td>String</td>
+<td>Service Desk (osoba I nebo E), Service Desk (sekundární účet), administrátoři, synchronizace</td>
+<td>ne</td>
+<td>jen úprava: ResetUser</td>
+</tr>
+<tr>
+<td><code>CreateADAccount</code></td>
+<td>CreateADAccount</td>
+<td>Boolean</td>
+<td>Service Desk (osoba I nebo E), administrátoři</td>
+<td>ne</td>
+<td>jen úprava: ResetUser</td>
+</tr>
+<tr>
+<td><code>CreateSecondaryKID</code></td>
+<td>CreateSecondaryKID</td>
+<td>Boolean</td>
+<td>Service Desk (osoba I nebo E)</td>
+<td>ano: _ZSE_Create_Secondary_Account</td>
+<td>jen úprava: ResetUser</td>
+</tr>
+<tr>
+<td><code>accountNameVSE</code></td>
+<td>accountNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_copy_groups_VSEIntranet; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 2; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget, _VSE_Copy_users_update přes LDAPTarget</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>displayNameVSE</code></td>
+<td>displayNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>distinguishedName</code></td>
+<td>distinguishedName. ZSE Active directory Distinguished Name</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _ZSE_Generate_KID, _VSE_Generate_KID_AD_Account, _VSE_Generate_KID_AD_Account_X a dalších 3</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>distinguishedNameLDAP</code></td>
+<td>distinguishedNameLDAP</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_user_no_ad.vse.sk, _ZSE_users_Externisti_update_VSE_LDAP_distinguishedName, _ZSE_users_update_VSE_LDAP_distinguishedName</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>distinguishedNameVSE</code></td>
+<td>distinguishedNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 2; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>LDAPSource</code></td>
+<td>LDAPSource</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_users_create; na objekt z dotazu: _VSE_copy_fix_group_missing_LDAPTarget</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>LDAPReplace</code></td>
+<td>LDAPReplace</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_copy_fix_group_missing_LDAPTarget, _VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_ZSE_Only_stage0 a dalších 4; na navázanou kopii: _VSE_Copy_groups_create(ZSE v2 back link) přes LDAPSourceZSE, _VSE_Copy_groups_ZSE_Only_stage0 přes LDAPSource a dalších 1; na objekt z dotazu: _VSE_copy_fix_group_missing_LDAPTarget</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>LDAPTarget</code></td>
+<td>LDAPTarget</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_copy_fix_group_missing_LDAPTarget; na navázanou kopii: _VSE_Copy_groups_ZSE_Only_stage0 přes LDAPSource, _VSE_Copy_users_write_back přes LDAPSource</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>LDAPTargetZSE</code></td>
+<td>LDAPTargetZSE</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_create(ZSE v2) a dalších 3; na navázanou kopii: _VSE_Copy_groups_create(ZSE v2 back link) přes LDAPSourceZSE, _VSE_Copy_users_write_back přes LDAPSource</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>advse</code></td>
+<td>advse</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>LDAPdev</code></td>
+<td>LDAPdev</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>LDAPprod</code></td>
+<td>LDAPprod</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>Externisti</code></td>
+<td>Externisti. priznak externistu vytvoreny z externistov alebo pripojeny z externistov</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>humanet</code></td>
+<td>humanet</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>upn</code></td>
+<td>upn</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_Users_XVSB; při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>usrID</code></td>
+<td>usrID</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: VSE_CUA_usrID, Externisti_CUA_zse_usrID, ZSE_CUA_usrID</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>VSENoSync</code></td>
+<td>VSENoSync</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_user_no_ad.vse.sk, _VSE_Users_Transition(ZSEOnly - VSEZSE), _ZSE_users_Externisti_update_VSE_LDAP_distinguishedName; při založení objektu: _VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_create(ZSE v2)</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>LDAPsync</code></td>
+<td>LDAPsync</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>jen úprava: LDAPInfo</td>
+</tr>
+<tr>
+<td><code>MiddleName</code></td>
+<td>Middle Name</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>vytvoření a zobrazení, ne úprava</td>
+</tr>
+<tr>
+<td><code>TimeZone</code></td>
+<td>Time Zone. Reference to timezone configuration</td>
+<td>Reference</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>jen vytvoření: General</td>
+</tr>
+<tr>
+<td><code>AccountName1</code></td>
+<td>Account Name1</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>AD_UserCannotChangePassword</code></td>
+<td>AD User Cannot Change Password. Will sync from AD to track whether the user is locked out from changing their AD password</td>
+<td>Boolean</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>AuthNLockoutRegistrationID</code></td>
+<td>Lockout Gate Registration Data Ids. This is the list of gate registration ids used by the lockout gate</td>
+<td>Reference, více hodnot</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>AuthNWFLockedOut</code></td>
+<td>AuthN Workflow Locked Out. This is the list of AuthN Processes a user is locked out of</td>
+<td>Reference, více hodnot</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>AuthNWFRegistered</code></td>
+<td>AuthN Workflow Registered. This is the list of AuthN Processes a user is registered for</td>
+<td>Reference, více hodnot</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>bukrs</code></td>
+<td>bukrs</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>c</code></td>
+<td>c</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>cn</code></td>
+<td>cn</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>cnVSE</code></td>
+<td>cnVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE); na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Company</code></td>
+<td>Company</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>CreatedTime</code></td>
+<td>Created Time</td>
+<td>DateTime, povinný</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Creator</code></td>
+<td>Creator</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>DeletedTime</code></td>
+<td>Deleted Time</td>
+<td>DateTime</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>DepartmentNumber</code></td>
+<td>DepartmentNumber</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Description</code></td>
+<td>Description</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: __test_fix_externisti; na objekt z dotazu: _VSE_Copy_groups_create(ZSE v2)</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>DetectedRulesList</code></td>
+<td>Detected Rules List. The synchronization rules detected for resources in external systems.</td>
+<td>Reference, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>displayNameFull</code></td>
+<td>displayNameFull</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>distinguishedNameLDAPdev</code></td>
+<td>distinguishedNameLDAPdev</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>distinguishedNameLDAPprod</code></td>
+<td>distinguishedNameLDAPprod</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>DomainConfiguration</code></td>
+<td>Domain Configuration. A reference to a the parent Domain resource for this resource.</td>
+<td>Reference</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>EmailVSE</code></td>
+<td>EmailVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>EmployeeEndDateCUA</code></td>
+<td>Employee End Date (CUA)</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_SAPCUA_Unsync</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>EmployeeIDVSE</code></td>
+<td>EmployeeIDVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>employeeNumber</code></td>
+<td>employeeNumber</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonBUShort</code></td>
+<td>eonBUShort</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonBusinessUnitID</code></td>
+<td>eonBusinessUnitID</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonCID</code></td>
+<td>eonCID</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonCIDs</code></td>
+<td>eonCIDs</td>
+<td>String, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonDepartmentID</code></td>
+<td>eonDepartmentID</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonExtensionAttribute35</code></td>
+<td>eonExtensionAttribute35</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonExtensionAttribute36</code></td>
+<td>eonExtensionAttribute36</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonMUShort</code></td>
+<td>eonMUShort</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonOrganization</code></td>
+<td>eonOrganization</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonOrganizationID</code></td>
+<td>eonOrganizationID</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonStatus</code></td>
+<td>eonStatus</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_Aktivny_stat2_3_eonStatus_A, _ZSE_Externisti_Expirovany_stat2_0_eonStatus_I; při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonStatusChangeTime</code></td>
+<td>eonStatusChangeTime</td>
+<td>DateTime</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonUserPurpose</code></td>
+<td>eonUserPurpose</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>eonUserType</code></td>
+<td>eonUserType</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_Generate_KID_AD_Account_X; při založení objektu: _ZSE_Create_Secondary_Account</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ExpectedRulesList</code></td>
+<td>Expected Rules List</td>
+<td>Reference, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ExpirationTime</code></td>
+<td>Expiration Time</td>
+<td>DateTime</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ExportToSAPCUA</code></td>
+<td>SAPCUA. vytvori uzivatel v SAPCUA</td>
+<td>Boolean</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _ZSE_SAPCUA_Sync</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ext_applicant_email</code></td>
+<td>ext_applicant_email</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela, _ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ext_applicant_empliyeeid</code></td>
+<td>ext_applicant_empliyeeid</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela, _ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ext_applicant_kid1</code></td>
+<td>ext_applicant_kid1</td>
+<td>String</td>
+<td>Service Desk (externista), synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ext_applicant_name</code></td>
+<td>ext_applicant_name</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ext_applicant_platnost</code></td>
+<td>ext_applicant_platnost</td>
+<td>Boolean</td>
+<td>jen PAM Admins</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ext_extern_email</code></td>
+<td>ext_extern_email</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ext_id</code></td>
+<td>ext_id</td>
+<td>Integer</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>extensionAttribute10</code></td>
+<td>extensionAttribute10</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>extensionAttribute8</code></td>
+<td>extensionAttribute8</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_ESK_Azure</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ExternistiProcessed</code></td>
+<td>Externisti Processed</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_Update_Procesed</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>FirstNameEN</code></td>
+<td>FirstNameEN</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _ZSE_update_FirstNameEN_LastNameEN</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>FirstNameVSE</code></td>
+<td>FirstNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>FreezeCount</code></td>
+<td>Freeze Count</td>
+<td>Integer</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>FreezeLevel</code></td>
+<td>Freeze Level. Tracks the number of times the user has unsuccessfully attempted to run an AuthN WF</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>homeDirectory</code></td>
+<td>homeDirectory</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>idNS</code></td>
+<td>idNS</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>KOC</code></td>
+<td>KOC</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_externisti_set_KOC_To_1, _ZSE_externisti_set_KOC_To_0</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Kostl</code></td>
+<td>Kostl</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LastNameEN</code></td>
+<td>LastNameEN</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _ZSE_update_FirstNameEN_LastNameEN</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LastNameVSE</code></td>
+<td>LastNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LastResetAttemptTime</code></td>
+<td>Last Reset Attempt Time</td>
+<td>DateTime</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPkontrola</code></td>
+<td>LDAPkontrola</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_users_group_kontrola_Provisionovany_do_dev_aj_prod</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPnew</code></td>
+<td>LDAPnew</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPZSEOnly</code></td>
+<td>LDAPZSEOnly</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Locale</code></td>
+<td>Locale. The region and language for which the representation of a resource has been adapted.</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LoginName</code></td>
+<td>Login Name. This is a combination for domain/Alias</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>menoOJ</code></td>
+<td>menoOJ</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>mobile</code></td>
+<td>mobile</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>MobilePhone1</code></td>
+<td>MobilePhone1</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msDS-SourceAnchor</code></td>
+<td>msDS-SourceAnchor. kdi-vse</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmDomain</code></td>
+<td>Domain FQDN. The FQDN of the domain where the user is located</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmMFAPINCode</code></td>
+<td>MFA PIN Code. The PIN code that should be used during Multi-Factor Authentication process</td>
+<td>String</td>
+<td>administrátoři</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmOneTimePasswordEmailAddress</code></td>
+<td>One-Time Password Email Address. Email address used to deliver a one-time password to the user.</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmOneTimePasswordMobilePhone</code></td>
+<td>One-Time Password Mobile Phone. Mobile phone number used to deliver a one-time password to the user.</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPamLinkedUser</code></td>
+<td>PAM Linked User. The User Identity for PAM requests to use</td>
+<td>Reference</td>
+<td>administrátoři</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPhoneGatePhoneNumber</code></td>
+<td>Phone Gate Phone Number. Phone number used to Phone Gate Authentication.</td>
+<td>String</td>
+<td>administrátoři</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>MVObjectID</code></td>
+<td>MV Resource ID. The GUID of an entry in the FIM metaverse corresponding to this resource.</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ObjectID</code></td>
+<td>Resource ID</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ObjectSID</code></td>
+<td>Resource SID</td>
+<td>Binary</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ObjectSIDVSE</code></td>
+<td>ObjectSIDVSE</td>
+<td>Binary</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ObjectType</code></td>
+<td>Resource Type</td>
+<td>String, povinný</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>OrgOJParent</code></td>
+<td>OrgOJParent</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ou</code></td>
+<td>ou</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ouldap</code></td>
+<td>ouldap</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>password</code></td>
+<td>password. reset password value</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>persg</code></td>
+<td>persg</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>persk</code></td>
+<td>persk</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>personalTitle</code></td>
+<td>personalTitle</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Primary</code></td>
+<td>Primary</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_Generate_KID_AD_Account_X</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>proxy</code></td>
+<td>proxy. attribute for proxy policy</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>na objekt z dotazu: _ZSE_Update_proxy_settings_In_Out</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ProxyAddressCollection</code></td>
+<td>Proxy Address Collection</td>
+<td>String, více hodnot</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Register</code></td>
+<td>Register</td>
+<td>Boolean</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>RegistrationRequired</code></td>
+<td>Registration Required. Tracks if the user must register for SSPR</td>
+<td>Boolean</td>
+<td>administrátoři, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ResourceTime</code></td>
+<td>Resource Time</td>
+<td>DateTime</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>scriptPath</code></td>
+<td>scriptPath</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: __test_Update_scriptPath, _ZSE_Generate_KID, _VSE_Generate_KID_AD_Account a dalších 1</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>SIDHistory</code></td>
+<td>SID History. Contains previous SIDs used for the resource if the resource was moved from another domain.</td>
+<td>Binary, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>stat2</code></td>
+<td>stat2</td>
+<td>String</td>
+<td>administrátoři, synchronizace</td>
+<td>ano: _ZSE_Externisti_Aktivny_stat2_3_eonStatus_A, _ZSE_Externisti_Expirovany_stat2_0_eonStatus_I</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>userAccountControl</code></td>
+<td>userAccountControl</td>
+<td>Integer</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_ALL_Zamestnanci_stat2-0_userAccountControl-512; při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>userAccountControlVSE</code></td>
+<td>userAccountControlVSE</td>
+<td>Integer</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>userPrincipalName</code></td>
+<td>userPrincipalName</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: __test_fix_userPrincipalName, _ZSE_Generate_KID, _VSE_Generate_KID_AD_Account a dalších 2; při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>userPrincipalNameVSE</code></td>
+<td>userPrincipalNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_users_create; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Werks</code></td>
+<td>Werks</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela</td>
+<td>není na formuláři</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="atributy-skupiny">Atributy skupiny</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Systémový název</th>
+<th>Popisný název</th>
+<th>Typ</th>
+<th>Kdo smí měnit</th>
+<th>Počítané</th>
+<th>Záložka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DisplayName</code></td>
+<td>Display Name</td>
+<td>String</td>
+<td>správci skupin, správci Azure ESK, synchronizace</td>
+<td>ano: _VSE_Generate_KID_AD_Account_X, _VSE_pridaj_atributy_pre_vse_only_ucty, _VSE_Users_Add_Display_Name; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 3; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget, _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>MailNickname</code></td>
+<td>E-mail Alias. E-mail alias. It is used to create the e-mail address</td>
+<td>String</td>
+<td>správci skupin, synchronizace</td>
+<td>ne</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>Email</code></td>
+<td>E-mail. Primary email address for the group.</td>
+<td>String</td>
+<td>správci skupin, synchronizace</td>
+<td>ano: _ZSE_Externisti_doplnenie_udajov_od_ziadatela, _ZSE_Externisti_email; na navázanou kopii: _VSE_Copy_users_update přes LDAPTarget</td>
+<td>jen úprava: General, jen čtení</td>
+</tr>
+<tr>
+<td><code>Domain</code></td>
+<td>Domain. Choose the domain where you want to create the user account for this user</td>
+<td>String, povinný</td>
+<td>správci skupin, synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 1; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>General, při úpravě jen čtení</td>
+</tr>
+<tr>
+<td><code>AccountName</code></td>
+<td>Account Name. User's log on name</td>
+<td>String</td>
+<td>správci skupin, správci Azure ESK, synchronizace</td>
+<td>ano: _ZSE_Generate_KID, _VSE_Generate_KID_AD_Account, _VSE_Generate_KID_AD_Account_X; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 2; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget, _VSE_Copy_users_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>Scope</code></td>
+<td>Scope</td>
+<td>String, povinný</td>
+<td>správci skupin, synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 1; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>Description</code></td>
+<td>Description</td>
+<td>String</td>
+<td>správci skupin, správci Azure ESK, synchronizace</td>
+<td>ano: __test_fix_externisti; na objekt z dotazu: _VSE_Copy_groups_create(ZSE v2)</td>
+<td>General</td>
+</tr>
+<tr>
+<td><code>Filter</code></td>
+<td>Filter. A predicate defining a subset of the resources.</td>
+<td>Text</td>
+<td>správci skupin, synchronizace</td>
+<td>ne</td>
+<td>Members</td>
+</tr>
+<tr>
+<td><code>Owner</code></td>
+<td>Owner</td>
+<td>Reference, více hodnot</td>
+<td>správci skupin, synchronizace</td>
+<td>ano: _ZSE_DFS_Owner; při založení objektu: _VSE_Copy_groups_create(ZSE v2); na navázanou kopii: _VSE_Copy_groups_create(ZSE v2 back link) přes LDAPSourceZSE; na objekt z dotazu: _ZSE_DFS_Owner</td>
+<td>Owners</td>
+</tr>
+<tr>
+<td><code>DisplayedOwner</code></td>
+<td>Displayed Owner</td>
+<td>Reference</td>
+<td>správci skupin, synchronizace</td>
+<td>ano: _ZSE_DFS_Owner; při založení objektu: _VSE_Copy_groups_create(ZSE v2); na navázanou kopii: _VSE_Copy_groups_create(ZSE v2 back link) přes LDAPSourceZSE; na objekt z dotazu: _ZSE_DFS_Owner</td>
+<td>Owners</td>
+</tr>
+<tr>
+<td><code>MembershipAddWorkflow</code></td>
+<td>Membership Add Workflow</td>
+<td>String, povinný</td>
+<td>správci skupin, synchronizace</td>
+<td>ano: <em>ZSE_Group_Set_adminDescription_MembershipLocked</em>; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 1</td>
+<td>Owners</td>
+</tr>
+<tr>
+<td><code>ExplicitMember</code></td>
+<td>Manually-managed Membership. Members in the group that are manually managed.</td>
+<td>Reference, více hodnot</td>
+<td>správci skupin, uživatelé bezpečnostních skupin (otevřené a owner-approved), vlastník bezpečnostní skupiny, Service Desk (řídicí skupiny, DFS r a DFS rw), správci Azure ESK CS (jen členové), účet MIM Action (všechny skupiny), správci Azure ESK, synchronizace</td>
+<td>ano: _VSE_Copy_group_update_members_LDAPTarget_flag, _VSE_Copy_group_final_update, _VSE_Copy_groups_ZSE_Only_stage1 a dalších 1; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 1; na navázanou kopii: _VSE_Copy_groups_stage1_copy_members(ZSE v2 Only) přes LDAPTargetZSEOnly, _VSE_Copy_groups_stage1_copy_members(ZSE v2 Both) přes LDAPTargetZSE a dalších 2; na objekt z dotazu: Add_to_SAP, _ZSE_SAPCUA_Sync a dalších 2</td>
+<td>vytvoření: Members; úprava přes seznam členů</td>
+</tr>
+<tr>
+<td><code>accountNameVSE</code></td>
+<td>accountNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_copy_groups_VSEIntranet; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 2; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget, _VSE_Copy_users_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>adminDescription</code></td>
+<td>adminDescription. skupina rozdelenie</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_Copy_create_OU=Diamond,OU=Autorizacia,OU=GPOGroups,DC=ad,DC=vse,DC=sk, <em>ZSE_Group_Set_adminDescription_MembershipLocked</em>, _ZSE_group_Set_AdminDescription-TYPMIMManualne_from_AD</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>advse</code></td>
+<td>advse</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>cn</code></td>
+<td>cn</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>cnVSE</code></td>
+<td>cnVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE); na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ComputedMember</code></td>
+<td>Computed Member. Resources in the set that are computed from the membership filter</td>
+<td>Reference, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>CreatedTime</code></td>
+<td>Created Time</td>
+<td>DateTime, povinný</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Creator</code></td>
+<td>Creator</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>DeletedTime</code></td>
+<td>Deleted Time</td>
+<td>DateTime</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>DetectedRulesList</code></td>
+<td>Detected Rules List. The synchronization rules detected for resources in external systems.</td>
+<td>Reference, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>distinguishedName</code></td>
+<td>distinguishedName. ZSE Active directory Distinguished Name</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Generate_KID, _VSE_Generate_KID_AD_Account, _VSE_Generate_KID_AD_Account_X a dalších 3</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>distinguishedNameLDAP</code></td>
+<td>distinguishedNameLDAP</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_user_no_ad.vse.sk, _ZSE_users_Externisti_update_VSE_LDAP_distinguishedName, _ZSE_users_update_VSE_LDAP_distinguishedName</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>distinguishedNameLDAPdev</code></td>
+<td>distinguishedNameLDAPdev</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>distinguishedNameLDAPprod</code></td>
+<td>distinguishedNameLDAPprod</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>distinguishedNameVSE</code></td>
+<td>distinguishedNameVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 2; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>DomainConfiguration</code></td>
+<td>Domain Configuration. A reference to a the parent Domain resource for this resource.</td>
+<td>Reference</td>
+<td>správci skupin, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>EmailVSE</code></td>
+<td>EmailVSE</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ExpectedRulesList</code></td>
+<td>Expected Rules List</td>
+<td>Reference, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ExpirationTime</code></td>
+<td>Expiration Time</td>
+<td>DateTime</td>
+<td>správci skupin, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>groupType</code></td>
+<td>groupType</td>
+<td>Integer</td>
+<td>synchronizace</td>
+<td>ano: _ZSE_Groups_OU=AzureESK,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk, _ZSE_Groups_OU=AzureESKCS,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPdev</code></td>
+<td>LDAPdev</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPExc</code></td>
+<td>LDAPExc</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPkontrola</code></td>
+<td>LDAPkontrola</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_users_group_kontrola_Provisionovany_do_dev_aj_prod</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPnew</code></td>
+<td>LDAPnew</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPPrepared</code></td>
+<td>LDAPPrepared</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_ZSE_Only_stage0, _VSE_Copy_groups_ZSE_Only_stage1; při založení objektu: _VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_create(ZSE v2)</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPprod</code></td>
+<td>LDAPprod</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPReplace</code></td>
+<td>LDAPReplace</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_copy_fix_group_missing_LDAPTarget, _VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_ZSE_Only_stage0 a dalších 4; na navázanou kopii: _VSE_Copy_groups_create(ZSE v2 back link) přes LDAPSourceZSE, _VSE_Copy_groups_ZSE_Only_stage0 přes LDAPSource a dalších 1; na objekt z dotazu: _VSE_copy_fix_group_missing_LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPSource</code></td>
+<td>LDAPSource</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_users_create; na objekt z dotazu: _VSE_copy_fix_group_missing_LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPSourceVSE</code></td>
+<td>LDAPSourceVSE</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPSourceZSE</code></td>
+<td>LDAPSourceZSE</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>při založení objektu: _VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_create(ZSE v2); na objekt z dotazu: _VSE_Copy_groups_create(ZSE)</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPsync</code></td>
+<td>LDAPsync</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPTarget</code></td>
+<td>LDAPTarget</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_copy_fix_group_missing_LDAPTarget; na navázanou kopii: _VSE_Copy_groups_ZSE_Only_stage0 přes LDAPSource, _VSE_Copy_users_write_back přes LDAPSource</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPTargetZSE</code></td>
+<td>LDAPTargetZSE</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_create(ZSE v2) a dalších 3; na navázanou kopii: _VSE_Copy_groups_create(ZSE v2 back link) přes LDAPSourceZSE, _VSE_Copy_users_write_back přes LDAPSource</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPTargetZSEOnly</code></td>
+<td>LDAPTargetZSEOnly</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>na navázanou kopii: _VSE_Copy_groups_create(ZSE v2 back link) přes LDAPSourceZSE</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>LDAPUpdate</code></td>
+<td>LDAPUpdate</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ano: _VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_stage0_copy_members, _VSE_Copy_groups_stage1_copy_members(ZSE v2 Only) a dalších 3; na objekt z dotazu: _VSE_Copy_Update_all_User_and_User_copy_groups</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Locale</code></td>
+<td>Locale. The region and language for which the representation of a resource has been adapted.</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>MembershipLocked</code></td>
+<td>Membership Locked</td>
+<td>Boolean, povinný</td>
+<td>správci skupin, synchronizace</td>
+<td>ano: <em>ZSE_Group_Set_adminDescription_MembershipLocked</em>; při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 1</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmDeferredEvaluation</code></td>
+<td>Deferred Evaluation. Determines when evaluation of the group happens with respect to request processing - real-time or deferred.</td>
+<td>Boolean</td>
+<td>správci skupin</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmDomain</code></td>
+<td>Domain FQDN. The FQDN of the domain where the group is located</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPamEnabled</code></td>
+<td>PAM Enabled. A boolean value that specifies if a Group is enabled for PAM.</td>
+<td>Boolean</td>
+<td>správci skupin</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPamPrivOnlyGroup</code></td>
+<td>PAM Priv Only Group. A boolean value that specifies if a Group represents a PAM group in the PRIV forest.</td>
+<td>Boolean</td>
+<td>správci skupin</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPamSourceDomainName</code></td>
+<td>PAM Group Source Domain Name. The Source domain of a PAM group.</td>
+<td>String</td>
+<td>správci skupin</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPamSourceGroupName</code></td>
+<td>PAM Source Group Name. The name of the group that is shadowed by this group</td>
+<td>String</td>
+<td>správci skupin</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPamSourceSid</code></td>
+<td>PAM Group Source SID</td>
+<td>Binary</td>
+<td>správci skupin</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>msidmPamUsesSIDHistory</code></td>
+<td>Uses SID history. Indicates if the PAM Group uses SID history.</td>
+<td>Boolean</td>
+<td>správci skupin</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>MVObjectID</code></td>
+<td>MV Resource ID. The GUID of an entry in the FIM metaverse corresponding to this resource.</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ObjectID</code></td>
+<td>Resource ID</td>
+<td>Reference</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ObjectSID</code></td>
+<td>Resource SID</td>
+<td>Binary</td>
+<td>správci skupin, synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ObjectType</code></td>
+<td>Resource Type</td>
+<td>String, povinný</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>OrgOJ</code></td>
+<td>OrgOJ</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>OrgOJParent</code></td>
+<td>OrgOJParent</td>
+<td>String</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>ResourceTime</code></td>
+<td>Resource Time</td>
+<td>DateTime</td>
+<td>jen PAM Admins</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>SIDHistory</code></td>
+<td>SID History. Contains previous SIDs used for the resource if the resource was moved from another domain.</td>
+<td>Binary, více hodnot</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Temporal</code></td>
+<td>Temporal. Defined by a filter that matches resources based on date and time attributes</td>
+<td>Boolean</td>
+<td>synchronizace</td>
+<td>ne</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>Type</code></td>
+<td>Type</td>
+<td>String, povinný</td>
+<td>správci skupin, synchronizace</td>
+<td>při založení objektu: _VSE_Copy_groups_create(VSE), _VSE_Copy_groups_create(ZSE) a dalších 1; na navázanou kopii: _VSE_Copy_groups_update přes LDAPTarget</td>
+<td>není na formuláři</td>
+</tr>
+<tr>
+<td><code>VSENoSync</code></td>
+<td>VSENoSync</td>
+<td>String</td>
+<td>synchronizace</td>
+<td>ano: _VSE_user_no_ad.vse.sk, _VSE_Users_Transition(ZSEOnly - VSEZSE), _ZSE_users_Externisti_update_VSE_LDAP_distinguishedName; při založení objektu: _VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_create(ZSE v2)</td>
+<td>není na formuláři</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="jen-pocitane">Jen počítané</h2>
+<p>Atributy, které workflow zapíše na cílový objekt a které přitom nejsou v žádném lidském MPR kromě PAM Admins. Synchronizace je u nich uvedená zvlášť, pokud je v jejím seznamu. Když je ve sloupci Synchronizace „ano“, hodnotu plní import. Když je „ne“, na portálu ji nezapíše ani synchronizace, jen workflow.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Atribut</th>
+<th>Objekt</th>
+<th>Workflow</th>
+<th>Synchronizace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>accountNameVSE</code></td>
+<td>osoba, skupina</td>
+<td>_VSE_copy_groups_VSEIntranet</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>adminDescription</code></td>
+<td>skupina</td>
+<td>_VSE_Copy_create_OU=Diamond,OU=Autorizacia,OU=GPOGroups,DC=ad,DC=vse,DC=sk, <em>ZSE_Group_Set_adminDescription_MembershipLocked</em>, _ZSE_group_Set_AdminDescription-TYPMIMManualne_from_AD</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>distinguishedNameLDAP</code></td>
+<td>osoba, skupina</td>
+<td>_VSE_user_no_ad.vse.sk, _ZSE_users_Externisti_update_VSE_LDAP_distinguishedName, _ZSE_users_update_VSE_LDAP_distinguishedName</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>EmployeeEndDateCUA</code></td>
+<td>osoba</td>
+<td>_ZSE_SAPCUA_Unsync</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>eonStatus</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_Aktivny_stat2_3_eonStatus_A, _ZSE_Externisti_Expirovany_stat2_0_eonStatus_I</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>eonUserType</code></td>
+<td>osoba</td>
+<td>_VSE_Generate_KID_AD_Account_X</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>ext_applicant_email</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_doplnenie_udajov_od_ziadatela, _ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>ext_applicant_empliyeeid</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_doplnenie_udajov_od_ziadatela, _ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>ext_applicant_name</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>ext_applicant_platnost</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_doplnenie_udajov_od_zmena_manazera</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>extensionAttribute8</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_ESK_Azure</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>ExternistiProcessed</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_Update_Procesed</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>FirstNameEN</code></td>
+<td>osoba</td>
+<td>_ZSE_update_FirstNameEN_LastNameEN</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>groupType</code></td>
+<td>skupina</td>
+<td>_ZSE_Groups_OU=AzureESK,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk, _ZSE_Groups_OU=AzureESKCS,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>idNS</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_doplnenie_udajov_od_ziadatela</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>KOC</code></td>
+<td>osoba</td>
+<td>_ZSE_externisti_set_KOC_To_1, _ZSE_externisti_set_KOC_To_0</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>Kostl</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_doplnenie_udajov_od_ziadatela</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>LastNameEN</code></td>
+<td>osoba</td>
+<td>_ZSE_update_FirstNameEN_LastNameEN</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>LDAPkontrola</code></td>
+<td>osoba, skupina</td>
+<td>_VSE_users_group_kontrola_Provisionovany_do_dev_aj_prod</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>LDAPPrepared</code></td>
+<td>skupina</td>
+<td>_VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_ZSE_Only_stage0, _VSE_Copy_groups_ZSE_Only_stage1</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>LDAPReplace</code></td>
+<td>osoba, skupina</td>
+<td>_VSE_copy_fix_group_missing_LDAPTarget, _VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_ZSE_Only_stage0, _VSE_Copy_users_write_back a dalších 3</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>LDAPTarget</code></td>
+<td>osoba, skupina</td>
+<td>_VSE_copy_fix_group_missing_LDAPTarget</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>LDAPTargetZSE</code></td>
+<td>osoba, skupina</td>
+<td>_VSE_Copy_groups_create(ZSE), _VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_create(ZSE v2), _VSE_copy_users_add_LDAPTargetZSE a dalších 2</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>LDAPUpdate</code></td>
+<td>skupina</td>
+<td>_VSE_Copy_groups_create(ZSE v2 back link), _VSE_Copy_groups_stage0_copy_members, _VSE_Copy_groups_stage1_copy_members(ZSE v2 Only), _VSE_Copy_groups_stage1_copy_members(ZSE v2 Both) a dalších 2</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>Primary</code></td>
+<td>osoba</td>
+<td>_VSE_Generate_KID_AD_Account_X</td>
+<td>ne</td>
+</tr>
+<tr>
+<td><code>upn</code></td>
+<td>osoba</td>
+<td>_VSE_Users_XVSB</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>userAccountControl</code></td>
+<td>osoba</td>
+<td>_ZSE_ALL_Zamestnanci_stat2-0_userAccountControl-512</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>userPrincipalName</code></td>
+<td>osoba</td>
+<td>__test_fix_userPrincipalName, _ZSE_Generate_KID, _VSE_Generate_KID_AD_Account, _VSE_Generate_KID_AD_Account_X a dalších 1</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>usrID</code></td>
+<td>osoba</td>
+<td>VSE_CUA_usrID, Externisti_CUA_zse_usrID, ZSE_CUA_usrID</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>VSENoSync</code></td>
+<td>osoba, skupina</td>
+<td>_VSE_user_no_ad.vse.sk, _VSE_Users_Transition(ZSEOnly - VSEZSE), _ZSE_users_Externisti_update_VSE_LDAP_distinguishedName</td>
+<td>ano</td>
+</tr>
+<tr>
+<td><code>Werks</code></td>
+<td>osoba</td>
+<td>_ZSE_Externisti_doplnenie_udajov_od_ziadatela</td>
+<td>ano</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="na-co-si-dat-pozor">Na co si dát pozor</h2>
+<ul>
+<li>Workflow <code>_ZSE_Disable_account_when_burks_is_deleted</code> zapisuje <code>[//Target/eonStatis]</code>. Atribut <code>eonStatis</code> ve schématu není. Stavový atribut je <code>eonStatus</code>.</li>
+<li><code>userAccountControl</code> má v tabulce workflow <code>_ZSE_ALL_Zamestnanci_stat2-0_userAccountControl-512</code>. MPR, které ho spouští, je vypnuté, takže tímto workflow se účet dnes nezakazuje. Hodnotu dál píše synchronizace.</li>
+<li><code>AccountName</code> a <code>distinguishedName</code> workflow generuje, ale administrátoři a synchronizace je smí přepsat. <code>userPrincipalName</code> administrátoři v MPR nemají, píše ho workflow a synchronizace.</li>
+<li>LDAP, schránka a příznaky účtu jsou jen na formuláři úpravy, a uloží je jen ten, kdo má MPR. Na zobrazení tyto záložky nejsou.</li>
+<li>Ostatní RCDC (sada, MPR, workflow, synchronizační pravidlo, PAM, schéma) jsou šablona Microsoftu pro správce portálu. Vlastní záložky nemají.</li>
+</ul>
+</body>
+</html>

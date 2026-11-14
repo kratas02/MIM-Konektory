@@ -1,0 +1,232 @@
+<saved-ma-configuration server='SMD1MGIDM01P' export-date='2026-11-04 09:53:23.087'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{5FC05B91-AD78-41A2-A593-9B3335D05218}</id>
+ <name>KOC</name>
+ <category>MSSQL</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2025-03-31 22:27:35.090</creation-time>
+ <last-modification-time>2026-09-02 21:30:19.903</last-modification-time>
+ <version>65</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:dsml="http://www.dsml.org/DSML" xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="person" type="structural"><dsml:name>person</dsml:name><dsml:attribute ref="#FamilyName" required="false" /><dsml:attribute ref="#GivenName" required="false" /><dsml:attribute ref="#KID" required="false" /><dsml:attribute ref="#Type" required="false" /><dsml:attribute ref="#PERNR" required="false" /><dsml:attribute ref="#KOC" required="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="FamilyName" single-value="true" ms-dsml:range-upper="50"><dsml:name>FamilyName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="GivenName" single-value="true" ms-dsml:range-upper="50"><dsml:name>GivenName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KID" single-value="true" ms-dsml:range-upper="50"><dsml:name>KID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Type" single-value="true" ms-dsml:range-upper="50"><dsml:name>Type</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PERNR" single-value="true" ms-dsml:immutable="true" ms-dsml:range-upper="50"><dsml:name>PERNR</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KOC" single-value="true" ms-dsml:range-upper="50"><dsml:name>KOC</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>FamilyName</attribute><attribute>GivenName</attribute><attribute>KID</attribute><attribute>Type</attribute><attribute>PERNR</attribute><attribute>KOC</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector />
+ <join>
+</join>
+
+ <projection>
+</projection>
+
+ <export-attribute-flow>
+ <export-flow-set cd-object-type="person" mv-object-type="person">
+  <export-flow cd-attribute="PERNR" id="{18622DA3-A587-44DB-B7AA-C93749931642}" suppress-deletions="false">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A4793C64-800E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{7C6B3A90-45B6-4568-8BF9-A3171CA38559}" initial-flow-only="true" is-existence-test="false">
+    <src-attribute>employeeID</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="FamilyName" id="{4EA2A9E0-14CE-4890-A90A-53546A723DA7}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A4793C64-800E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{D0D63E98-7B93-44CF-9EFE-CF07898E5C2D}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="GivenName" id="{53102F89-8304-49D4-8118-6EEC63BA90E6}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A4793C64-800E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{EED8BC87-AA9F-46CB-9F75-CA91EF64A335}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Type" id="{C24109C5-F63A-467D-804C-3DEF820DCCAC}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{A4793C64-800E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{49DA4705-6DDD-451D-B571-20D113215CE4}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>employeeType</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>employeeType</attr></src><dest>Type</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg>employeeType</arg><arg>"I"</arg></fn></arg><arg>"int"</arg><arg>"ext"</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KID" id="{C3EE438C-3F09-407A-9079-0DC2C9CCED59}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A4793C64-800E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{9F2D96F2-9F23-4A9F-B0B2-77A3ED89D680}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>accountName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KOC" id="{25CE60F2-A6F2-4702-A1B3-FA95F35C1872}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{A4793C64-800E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{DEF7B8B1-DE7D-407F-9D13-91567B1440A7}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>KOC</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="PERNR" id="{FE0078B5-5B93-4487-A0CC-2F69E984D1F3}" suppress-deletions="false">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{2864399A-820E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{BFCFA9CA-3765-4776-9BC3-FD29D179D1BE}" initial-flow-only="true" is-existence-test="false">
+    <src-attribute>employeeID</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="FamilyName" id="{E7BF663E-5BA8-4AC3-81E0-8B5EB77BD337}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{2864399A-820E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{702E87BB-22B2-4148-97E5-ACD220AB5EB5}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="GivenName" id="{9420214A-1719-4794-BA05-F77C060D7F12}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{2864399A-820E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{D6221F31-E92E-41A7-B7BA-965B97B6D91D}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="Type" id="{7D8DB29E-2120-4D29-BAA2-605CA8A61E29}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{2864399A-820E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{4A38AB69-06C6-4A0F-92CE-CFACD806AA5B}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>employeeType</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>employeeType</attr></src><dest>Type</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg>employeeType</arg><arg>"I"</arg></fn></arg><arg>"int"</arg><arg>"ext"</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KID" id="{F13E236D-7B4C-42A9-96C2-4F70222BC88A}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{2864399A-820E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{FDA9738F-00A4-4BA0-97D2-7A8BA16BF7A6}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>accountName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KOC" id="{E315A7C0-FAED-413C-8174-DC157B70EE77}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{2864399A-820E-F011-A75F-0050568B6A50}" sync-rule-mapping-id="{3000DCD7-B050-4F47-90A5-B19421409953}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>KOC</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KOC" id="{2ED8C8EA-CB30-418C-9B0A-D9BC7A8EA70D}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{EDA2F683-5027-F011-A761-0050568B6A50}" sync-rule-mapping-id="{6BA9F972-25B5-4A6A-BDE7-688250CCF010}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>KOC</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+ </export-flow-set>
+</export-attribute-flow>
+
+ <provisioning-cleanup type="declared"><action>delete-object</action></provisioning-cleanup>
+ <extension />
+ <controller-configuration>
+ <application-protection>low</application-protection>
+ <application-architecture>process</application-architecture>
+ <impersonation>
+  <domain>eon-sk</domain>
+  <user>miminstall</user>
+ </impersonation>
+</controller-configuration>
+
+ <description></description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="PERNR" header="PERNR" size="100" /><attribute name="FamilyName" header="FamilyName" size="100" /><attribute name="GivenName" header="GivenName" size="100" /></cs><mv></mv></attributes><filters max_mv_search_results=""></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <oledbma-configuration><connection-info><authentication>integrated</authentication><provider>SQLOLEDB</provider><server>SMD1DBIDM01P</server><databasename>HRSAP</databasename><tablename>KOC_PERSON</tablename><user>miminstall</user><domain>eon-sk</domain></connection-info><mms-info><column-info><column><name>FamilyName</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>GivenName</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>KID</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>Type</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PERNR</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>KOC</name><data-type>DBTYPE_WSTR</data-type><length>50</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><primary-key></primary-key></column-info><anchor><attribute>PERNR</attribute></anchor><object-type>person</object-type></mms-info><password-extension-config><password-extension-enabled>0</password-extension-enabled><dll></dll><password-set-enabled></password-set-enabled><password-change-enabled></password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout></timeout></password-extension-config><enable-unapplied-merge>0</enable-unapplied-merge></oledbma-configuration>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</id>
+  <name>default</name>
+  <creation-time>2025-03-31 22:27:35.090</creation-time>
+  <last-modification-time>2025-05-02 12:08:11.090</last-modification-time>
+  <version>2</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>person</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion></inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <allowed-operations>25</allowed-operations>
+  <current>
+   <batch-number>30004</batch-number>
+   <sequence-number>76558</sequence-number>
+  </current>
+  <last-successful-batch>30003</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>person</name>
+     <hierarchy>
+      <object-class>person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{EE3F2257-2138-4005-B35C-F0A3AC4845A2}</id>
+  <name>Export</name>
+  <creation-time>2025-03-31 22:27:35.123</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-03-31 22:27:35.123</last-modification-time>
+  <configuration><step><step-type type="export"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{62351A14-D1FC-4915-956C-622AFA1E46D5}</id>
+  <name>Full Import</name>
+  <creation-time>2025-03-31 22:27:35.127</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-03-31 22:27:35.127</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{4C5CD2C2-7A59-4FBA-A423-02E92C02DB32}</id>
+  <name>Full Sync</name>
+  <creation-time>2025-03-31 22:27:35.127</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-03-31 22:27:35.127</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{E45670B4-B8EC-403D-8ECA-0DF72C2916D2}</id>
+  <name>FI</name>
+  <creation-time>2025-05-02 15:21:02.027</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:21:02.027</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{27685899-5DB6-4939-86C3-CF40E4E4CE3A}</id>
+  <name>E</name>
+  <creation-time>2025-05-02 15:21:02.027</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:21:02.027</last-modification-time>
+  <configuration><step><step-type type="export"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{99D1B9EA-64AE-4D6C-B3EF-E90F259FF465}</id>
+  <name>FS</name>
+  <creation-time>2025-05-02 15:21:02.027</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:21:02.027</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{14D16F8D-EA4B-491A-8E8F-F8AE86D5ACEC}</id>
+  <name>DS</name>
+  <creation-time>2025-05-02 15:22:16.517</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-02 15:22:16.517</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>apply-pending</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{B35E8D9D-F125-4101-BF9F-E57B93025C21}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>8401</capabilities-mask>
+ <export-type>2</export-type>
+ <dn-construction><attribute>PERNR</attribute></dn-construction>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+</saved-ma-configuration>

@@ -1,0 +1,6 @@
+
+            $NewGroup = CreateImportObject -ObjectType "Group"
+            SetSingleValue $NewGroup "AccountName" $AccountName
+            AddMultiValue $NewGroup "Owner" $managerID
+            SetSingleValue $NewGroup "DisplayedOwner" $managerID
+            $NewGroup | Import-FIMConfig  -Uri $DefaultUri

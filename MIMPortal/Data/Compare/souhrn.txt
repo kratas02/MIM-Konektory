@@ -1,0 +1,48 @@
+﻿Porovnání exportů MIM Service
+
+PROD soubor: C:\Projects\MIM\MIMPortal\Data\FimExport-PROD-20261009-172432.json
+PROD mapování: C:\Projects\MIM\MIMPortal\Data\FimExport-PROD-20261009-172432.ids.txt
+PROD export: PROD / DBSQL01 / 2026-10-09T17:24:46Z
+TEST soubor: C:\Projects\MIM\MIMPortal\Data\FimExport-Test-20261009-213254.json
+TEST mapování: C:\Projects\MIM\MIMPortal\Data\FimExport-Test-20261009-213254.ids.txt
+TEST export: Test / . / 2026-10-09T21:33:07Z
+
+Objekty s AccountName
+  Person PROD: 923
+  Person TEST: 852
+  Spárovaní uživatelé: 697
+  Spárované skupiny: 1092
+  Person spárováno podle EmployeeID: 510
+  Person spárováno podle AccountName: 168
+  Person spárováno podle DisplayName: 19
+  Person jen v PROD: 226
+  Person jen v TEST: 155
+  Nejednoznačné kroky PROD: 241
+  Nejednoznačné kroky TEST: 177
+  Group PROD: 1247
+  Group TEST: 1223
+  Group jen v PROD: 159
+  Group jen v TEST: 131
+  Duplicitní AccountName PROD: 0
+  Duplicitní AccountName TEST: 8
+
+Členství ve skupinách (csoblComputedMember)
+  Skupin v obou prostředích: 1088
+  Skupin se stejným členstvím: 670
+  Skupin s rozdílem: 418
+  Členů jen v PROD: 3641
+  Členů jen v TEST: 3243
+  Porovnávají se jen spárovaní uživatelé. Nespárovaní se ignorují.
+  Ignorované účty: usacevova_admin, 17706481, mikula, mikula_admin, jelinkova, nikmonova, 17706813, 17702053, tack, 17707004, 17707111, 17709617, 17709639, 17706466, 17709619
+
+Reporty (každý i jako .html)
+  uzivatele-sparovane.txt
+  skupiny-sparovane.txt
+  objekty-prebyvaji-v-PROD.txt
+  objekty-chybi-v-PROD.txt
+  objekty-duplicitni-AccountName-PROD.txt
+  objekty-duplicitni-AccountName-TEST.txt
+  osoby-nejednoznacne-PROD.txt
+  osoby-nejednoznacne-TEST.txt
+  clenove-prebyvaji-v-PROD.txt
+  clenove-chybi-v-PROD.txt

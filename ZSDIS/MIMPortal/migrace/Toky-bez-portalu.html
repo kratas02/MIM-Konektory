@@ -1,0 +1,3954 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toky na konektorech po zrušení portálu</title>
+<style>
+
+body { font-family: Segoe UI, Calibri, sans-serif; max-width: 1280px; margin: 2rem auto; padding: 0 1.5rem 3rem; line-height: 1.45; color: #1b1b1b; }
+h1, h2, h3 { line-height: 1.25; }
+h1 { font-size: 1.7rem; }
+h2 { margin-top: 2rem; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+a { color: #0b57d0; }
+code { font-family: Consolas, monospace; background: #f3f3f3; padding: 0.05em 0.3em; border-radius: 3px; }
+pre { background: #f6f8fa; padding: 0.8rem 1rem; overflow: auto; }
+pre code { background: none; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 0.9rem; }
+th, td { border: 1px solid #d0d0d0; padding: 0.35rem 0.5rem; vertical-align: top; text-align: left; }
+th { background: #f0f0f0; }
+tr:nth-child(even) td { background: #fafafa; }
+
+</style>
+</head>
+<body>
+<h1 id="toky-na-konektorech-po-zruseni-portalu">Toky na konektorech po zrušení portálu</h1>
+<p>Zdroj je export <code>Policy.xml</code> z http://smd1mgidm02p:5725, 46 synchronization rules. Po odpojení MIMMA se tato deklarativní pravidla přestanou počítat. Každé dnešní pravidlo je níže vlastní kapitola. V tabulce je tok, který se nastaví přímo na konektoru.</p>
+<p>U importu je Zdroj atribut konektoru a Cíl atribut metaverse. U exportu je to obráceně: Zdroj je metaverse, Cíl je konektor.</p>
+<p>Sloupec Typ:</p>
+<ul>
+<li><code>přímý</code> je Direct mapping v designeru.</li>
+<li><code>konstanta</code> je Constant.</li>
+<li><code>výraz</code> je podmínka, kterou klasický designer neumí naklikat. Patří do rules extension. Kde už ji má knihovna <code>ZsdisRulesExtension</code>, je ve sloupci název advanced flow. Ten název se do designeru píše přesně tak.</li>
+<li><code>při provisioningu</code> není attribute flow v designeru. Distinguished name a počáteční hodnoty nastavuje <code>MVExtensionObject</code> ve chvíli, kdy provisioning zakládá objekt v konektoru.</li>
+</ul>
+<p>Klasický konektor má pro jeden atribut cílového systému jen jeden export flow. Když dnes více pravidel píše stejný atribut pod jiným filtrem, v tabulce zůstávají jako samostatné řádky pod svým původním názvem. Řádek jen při provisioningu se v designeru zapíná jako Only once.</p>
+<p>Heslo <code>unicodePwd</code> je v exportu portálu jako konstanta. Tady není. Při založení účtu ho čte <code>initial-password.txt</code> vedle DLL.</p>
+<h2 id="jak-poznat-projekci-a-provisioning">Jak poznat projekci a provisioning</h2>
+<p>U každého pravidla jsou dva příznaky, ve významu synchronizační služby MIM 2016:</p>
+<ul>
+<li><strong>Projekce: ano</strong> znamená, že pravidlo smí založit objekt v metaverse (<code>CreateILMObject</code>). Název pravidla v portálu přitom někdy říká provisioning, například <code>User HUMANET v2 Provisioning</code>. U něj je provisioning ne, do Humanetu se nic nezakládá.</li>
+<li><strong>Provisioning: ano</strong> znamená, že pravidlo smí z metaverse založit nový objekt v cílovém konektoru (<code>CreateConnectedSystemObject</code>). Filtr téhož pravidla říká, kdo se založí. Toky označené jen při provisioningu se zapíšou jen v tu chvíli, typicky distinguished name.</li>
+</ul>
+<p>Pravidla s provisioningem, tedy s novým objektem v konektoru:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Konektor</th>
+<th>Pravidlo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eon-sk</td>
+<td><code>Users eon-sk in-out</code> (zároveň projekce), <code>Groups_eon-sk_Create_in_eon</code>, skupina v <code>OU=AzureESK</code></td>
+</tr>
+<tr>
+<td>VSE_LDAP_prod</td>
+<td><code>User_VSE_ADLDS_prod</code>, <code>User_VSE_ADLDS_copy_prod</code>, <code>User_VSE_ADLDS(ZSE only ucty) prod</code>, <code>User_VSE_ADLDS(ZSE_spolocnpsti)_prod</code>, <code>User_VSE_ADLDS(ZSE_Servisne_ucty)_prod</code>, <code>User_VSE_ADLDS(ZSE_org_Servisne_ucty)_prod</code>, <code>Groups_VSE_LDAP_prod</code>, <code>Groups_VSE_LDAP_(ZSE v2 Only)_prod</code></td>
+</tr>
+<tr>
+<td>SAPCUA</td>
+<td><code>User SAPCUA - outbound</code>, <code>User SAPCUA-outbound VSE</code></td>
+</tr>
+<tr>
+<td>ZSEEUser</td>
+<td><code>User ZSEE</code>, <code>User ZSEE Externisti</code></td>
+</tr>
+<tr>
+<td>KOC</td>
+<td><code>User KOC int</code>, <code>User KOC ext</code></td>
+</tr>
+<tr>
+<td>HUMANET_OUT</td>
+<td><code>User HUMANET OUt</code></td>
+</tr>
+<tr>
+<td>Externisti_SAP_OUT</td>
+<td><code>Users Externisti SAP OUT</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="humanetv2">HUMANETv2</h2>
+<p>Třída <code>MaHumanet</code>. Projekce osoby, když <code>usrID</code> je <code>eon-slovakia.sk</code> nebo <code>ad.vse.sk</code>.</p>
+<h3 id="user-humanetv2-sync-only">User HUMANETv2  sync only</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>employeeID = employeeID</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>accountName1</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>begda</code></td>
+<td><code>begda</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>begda1</code></td>
+<td><code>endda</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>bukrs</code></td>
+<td><code>bukrs</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeEndDate</code></td>
+<td><code>employeeEndDate</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeStartDate</code></td>
+<td><code>employeeStartDate</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>idNS</code></td>
+<td><code>idNS</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>krstneMeno</code></td>
+<td><code>firstName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>persg</code></td>
+<td><code>persg</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>persk</code></td>
+<td><code>persk</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>priezvisko</code></td>
+<td><code>lastName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(priezvisko), IIF(IsPresent(krstneMeno), +(priezvisko, ", ", krstneMeno), priezvisko), "")</code></td>
+<td><code>displayName</code></td>
+<td>advanced displayName</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(bukrs), bukrs, "")</code></td>
+<td><code>eonBusinessUnitID</code></td>
+<td>advanced eonBusinessUnitID</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(idOJ2), idOJ2, "NO-OM-INT")</code></td>
+<td><code>department</code></td>
+<td>advanced department</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mobilPhone</code></td>
+<td><code>mobilePhone1</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(Eq(stat2, "3"), "A", "I")</code></td>
+<td><code>eonStatus</code></td>
+<td>advanced eonStatus</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>stat2</code></td>
+<td><code>stat2</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>primary</code></td>
+<td><code>eonUserType</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>regular</code></td>
+<td><code>eonUserPurpose</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>displayNamePlne</code></td>
+<td><code>displayNameFull</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>endda</code></td>
+<td><code>employeeEndDateCUA</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>manager</code></td>
+<td><code>manager</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>werks</code></td>
+<td><code>Werks</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>menoOJ</code></td>
+<td><code>menoOJ</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>idNS</code></td>
+<td><code>Kostl</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>I</code></td>
+<td><code>employeeType</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>Slovakia</code></td>
+<td><code>country</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>SK</code></td>
+<td><code>c</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>nazovPlanovanehoMiesta</code></td>
+<td><code>jobTitle</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>idOJPerson</code></td>
+<td><code>departmentNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>humjoin</code></td>
+<td><code>humanet</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>ou</code></td>
+<td><code>ou</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>usrID</code></td>
+<td><code>usrID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>nazovOJ</code></td>
+<td><code>company</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>ouldap</code></td>
+<td><code>ouldap</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>upn</code></td>
+<td><code>upn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>personalTitle</code></td>
+<td><code>personalTitle</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-humanetv2-join-employeeid">User HUMANETv2  join EmployeeID</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>employeeID = employeeID</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>humjoin</code></td>
+<td><code>humanet</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-humanet-v2-provisioning">User HUMANET v2 Provisioning</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>3</code>.</li>
+<li>Projekce: ano. Provisioning: ne.</li>
+<li>Join: <code>employeeID = employeeID</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeID</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-humanetv2-join-kid-vse">User HUMANETv2  join kid VSE</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>4</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = accountName</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>humjoin</code></td>
+<td><code>humanet</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-humanetv2-join-msdsanchore-vse">User HUMANETv2  join msdsAnchore VSE</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>5</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>msDS-SourceAnchor = accountName</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>humjoin</code></td>
+<td><code>humanet</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-humanet-v2-provisioning-vse">User HUMANET v2 Provisioning VSE</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>6</code>.</li>
+<li>Projekce: ano. Provisioning: ne.</li>
+<li>Join: <code>employeeID = employeeID</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeID</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="externisti">Externisti</h2>
+<p>Třída <code>MaExternisti</code>. Projekce osoby, když je vyplněné <code>personal_number</code>.</p>
+<h3 id="user-externisti-provisioning">User Externisti Provisioning</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>Person</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ano. Provisioning: ne.</li>
+<li>Join: <code>employeeID = personal_number</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>+("idcreate", id)</code></td>
+<td><code>externisti</code></td>
+<td>advanced externisti</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-externisti-join-id">User Externisti Join Id</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>Person</code>. Směr <code>IN+OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = kid</code>.</li>
+<li>Filtr: žádný.</li>
+<li>Toky: žádné, pravidlo jen spojuje.</li>
+</ul>
+<h3 id="user-externisti-join-kid">User Externisti Join KID</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>Person</code>. Směr <code>IN+OUT</code>, precedence <code>3</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = kid</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>+("idjoin", id)</code></td>
+<td><code>externisti</code></td>
+<td>advanced externisti</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-externisti-sync-only">User Externisti Sync Only</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>Person</code>. Směr <code>IN+OUT</code>, precedence <code>4</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>employeeID = personal_number</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>kid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>personal_number</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>externisti_processed</code></td>
+<td><code>processed</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>company_name</code></td>
+<td><code>company</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>extern_name</code></td>
+<td><code>firstName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>extern_surname</code></td>
+<td><code>lastName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>personal_number</code></td>
+<td><code>employeeID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>processed</code></td>
+<td><code>externisti_processed</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>E</code></td>
+<td><code>employeeType</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>Slovakia</code></td>
+<td><code>country</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>+(extern_surname, ", ", extern_name)</code></td>
+<td><code>displayName</code></td>
+<td>advanced displayName</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>applicant_kid</code></td>
+<td><code>ext_applicant_kid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>applicant_name</code></td>
+<td><code>ext_applicant_name</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>company</code></td>
+<td><code>bukrs</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>company</code></td>
+<td><code>eonBusinessUnitID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>extern_email</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>ReplaceString(formatted_contract_from, "-", "")</code></td>
+<td><code>begda</code></td>
+<td>advanced begda</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>ReplaceString(formatted_contract_to, "-", "")</code></td>
+<td><code>endda</code></td>
+<td>advanced endda</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>+(formatted_contract_from, "T00:00:00.000")</code></td>
+<td><code>employeeStartDate</code></td>
+<td>advanced employeeStartDate</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>+(formatted_contract_to, "T00:00:00.000")</code></td>
+<td><code>employeeEndDate</code></td>
+<td>advanced employeeEndDate</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>SK</code></td>
+<td><code>c</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>primary</code></td>
+<td><code>eonUserType</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>regular</code></td>
+<td><code>eonUserPurpose</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>extern_email</code></td>
+<td><code>ext_extern_email</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>applicant_kid</code></td>
+<td><code>ext_applicant_kid1</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>E2</code></td>
+<td><code>persk</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>extern_phone</code></td>
+<td><code>mobilePhone1</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>id</code></td>
+<td><code>ext_id</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-externisti-predlzenie-platnosti">User Externisti predlzenie platnosti</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>Person</code>. Směr <code>IN+OUT</code>, precedence <code>5</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = kid</code>.</li>
+<li>Filtr: <code>ext_applicant_platnost EQUAL true</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>Left(employeeEndDate, 10)</code></td>
+<td><code>formatted_contract_to</code></td>
+<td>advanced formatted_contract_to</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>ext_applicant_kid</code></td>
+<td><code>applicant_kid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>ext_applicant_name</code></td>
+<td><code>applicant_name</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>+(Left(employeeEndDate, 10), " 00:00:00Z")</code></td>
+<td><code>extern_contract_to</code></td>
+<td>advanced extern_contract_to</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="eon-sk">eon-sk</h2>
+<p>Třída <code>MaEonSk</code>. Projekce uživatele v <code>DC=eon-slovakia,DC=sk</code>. Projekce skupiny, když <code>adminDescription</code> nezačíná na <code>TYP</code>. Deprovisioning je Disconnect.</p>
+<h3 id="group-eon-sk-in">Group eon-sk in</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN</code>, precedence <code>1</code>.</li>
+<li>Projekce: ano. Provisioning: ne.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>false</code></td>
+<td><code>membershipLocked</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>None</code></td>
+<td><code>membershipAddWorkflow</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="group-eon-sk-in-out-proxy">Group eon-sk in-out proxy</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>3</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>description STARTSWITH proxy-policy:</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="group-eon-sk-typmimdynamicke">Group eon-sk - TYPMIMDynamicke</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>4</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>true</code></td>
+<td><code>membershipLocked</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="group-eon-sk-in-out">Group eon-sk in-out</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>5</code>.</li>
+<li>Projekce: ano. Provisioning: ne.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>cn NOTEQUAL _ZSE_SAPCUA_Users</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>sAMAccountName</code></td>
+<td><code>accountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(displayName), displayName, cn)</code></td>
+<td><code>displayName</code></td>
+<td>advanced group.displayName</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(Eq(BitAnd(2, groupType), 2), "Global", IIF(Eq(BitAnd(4, groupType), 4), "DomainLocal", "Universal"))</code></td>
+<td><code>scope</code></td>
+<td>advanced group.scope</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>objectSid</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>EON-SK</code></td>
+<td><code>domain</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mail</code></td>
+<td><code>email</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mailNickname</code></td>
+<td><code>mailNickname</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(Eq(BitOr(14, groupType), 14), "Distribution", IIF(IsPresent(mailNickname), "MailEnabledSecurity", "Security"))</code></td>
+<td><code>type</code></td>
+<td>advanced group.type</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>dn</code></td>
+<td><code>distinguishedNameAD</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>adminDescription</code></td>
+<td><code>adminDescription</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>None</code></td>
+<td><code>membershipAddWorkflow</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>false</code></td>
+<td><code>membershipLocked</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>groupType</code></td>
+<td><code>groupType</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="group-eon-sk-in-out-dfs">Group eon-sk in-out dfs</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>6</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>displayName STARTSWITH sf-dfsroot</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="group-eon-sk-out-xecm">Group eon-sk out-xecm</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>8</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="groups_eon-sk_create_in_eon">Groups_eon-sk_Create_in_eon</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>10</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedName ENDSWITH OU=Groups,DC=eon-slovakia,DC=sk a displayName NOTCONTAINS copy- a accountName CONTAINS .sk</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedName</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>adminDescription</code></td>
+<td><code>adminDescription</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>groupType</code></td>
+<td><code>groupType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="_zse_groups_ouazureeskouauthzougroupsdceon-slovakiadcsk">_ZSE_Groups_OU=AzureESK,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>OUT</code>, precedence <code>11</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: <code>distinguishedName CONTAINS OU=AzureESK</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedName</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>adminDescription</code></td>
+<td><code>adminDescription</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>groupType</code></td>
+<td><code>groupType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="users-eon-sk-in-out">Users eon-sk in-out</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ano. Provisioning: ano.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedName STARTSWITH CN a distinguishedName ENDSWITH DC=eon-slovakia,DC=sk</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedName</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>514</code></td>
+<td><code>userAccountControl</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>heslo ze souboru initial-password.txt</code></td>
+<td><code>unicodePwd</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>sk-SK</code></td>
+<td><code>preferredLanguage</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>department</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>co</code></td>
+<td><code>country</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>c</code></td>
+<td><code>c</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>c</code></td>
+<td><code>c</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>company</code></td>
+<td><code>company</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>country</code></td>
+<td><code>co</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>company</code></td>
+<td><code>company</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>departmentNumber</code></td>
+<td><code>departmentNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>departmentNumber</code></td>
+<td><code>departmentNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>sAMAccountName</code></td>
+<td><code>accountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>givenName</code></td>
+<td><code>firstName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>sn</code></td>
+<td><code>lastName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eonMUShort</code></td>
+<td><code>eonMUShort</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eonOrganization</code></td>
+<td><code>eonOrganization</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eonOrganizationID</code></td>
+<td><code>eonOrganizationID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonMUShort</code></td>
+<td><code>eonMUShort</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonOrganization</code></td>
+<td><code>eonOrganization</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonOrganizationID</code></td>
+<td><code>eonOrganizationID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>givenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>mobile</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>telephoneNumber</code></td>
+<td><code>telephoneNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mobile</code></td>
+<td><code>mobilePhone</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>department</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>objectSid</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>EON-SK</code></td>
+<td><code>domain</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mailNickname</code></td>
+<td><code>mailNickname</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeType</code></td>
+<td><code>employeeType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>l</code></td>
+<td><code>city</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>street</code></td>
+<td><code>officeLocation</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>postalCode</code></td>
+<td><code>postalCode</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>physicalDeliveryOfficeName</code></td>
+<td><code>physicalDeliveryOfficeName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonBusinessUnitID</code></td>
+<td><code>eonBusinessUnitID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonCID</code></td>
+<td><code>eonCID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonCIDs</code></td>
+<td><code>eonCIDs</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonDepartmentID</code></td>
+<td><code>eonDepartmentID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonExtensionAttribute35</code></td>
+<td><code>eonExtensionAttribute35</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonExtensionAttribute36</code></td>
+<td><code>eonExtensionAttribute36</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonStatus</code></td>
+<td><code>eonStatus</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonStatusChangeTime</code></td>
+<td><code>eonStatusChangeTime</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonUserPurpose</code></td>
+<td><code>eonUserPurpose</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>eonUserType</code></td>
+<td><code>eonUserType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(Eq(BitOr(userAccountControl, 2), userAccountControl), "true", "false")</code></td>
+<td><code>enabled</code></td>
+<td>advanced enabled</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>false</code></td>
+<td><code>locked</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>dn</code></td>
+<td><code>distinguishedName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eonUserPurpose</code></td>
+<td><code>eonUserPurpose</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eonUserType</code></td>
+<td><code>eonUserType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>sn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>userAccountControl</code></td>
+<td><code>userAccountControl</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eonStatus</code></td>
+<td><code>eonStatus</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeType</code></td>
+<td><code>employeeType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>streetAddress</code></td>
+<td><code>street</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eonBusinessUnitID</code></td>
+<td><code>eonBusinessUnitID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>jobTitle</code></td>
+<td><code>title</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>mail</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>departmentNumber</code></td>
+<td><code>extensionAttribute7</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>scriptPath</code></td>
+<td><code>scriptPath</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>scriptPath</code></td>
+<td><code>scriptPath</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>physicalDeliveryOfficeName</code></td>
+<td><code>physicalDeliveryOfficeName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>idNS</code></td>
+<td><code>extensionAttribute6</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>manager</code></td>
+<td><code>manager</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>Trim(mail)</code></td>
+<td><code>email</code></td>
+<td>advanced email</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IPphone</code></td>
+<td><code>ipPhone</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>extensionAttribute15</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>postalCode</code></td>
+<td><code>postalCode</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>city</code></td>
+<td><code>l</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountNameVSE</code></td>
+<td><code>extensionAttribute10</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>extensionAttribute8</code></td>
+<td><code>extensionAttribute8</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>extensionAttribute8</code></td>
+<td><code>extensionAttribute8</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="users-eon-sk-out-disable-when-stat2-0">Users eon-sk out - disable when stat2-0</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>OUT</code>, precedence <code>7</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: <code>stat2 EQUAL 0</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userAccountControl</code></td>
+<td><code>userAccountControl</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="users-eon-sk-in-out-ms-ds-consistency-guid">Users eon-sk in-out Ms-ds-consistency-gUID</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>OUT</code>, precedence <code>9</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: <code>distinguishedNameVSE STARTSWITH CN</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mS-DS-ConsistencyGuid</code></td>
+<td><code>mS-DS-ConsistencyGuid</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="advsesk">ad.vse.sk</h2>
+<p>Třída <code>MaAdVse</code>. Projekce uživatele v <code>DC=ad,DC=vse,DC=sk</code>, jehož <code>userAccountControl</code> není 514. Projekce skupiny v <code>OU=Autorizacia,OU=GPOGroups,DC=ad,DC=vse,DC=sk</code>. Deprovisioning je ExplicitDisconnect. Join <code>employeeID</code> má advanced název <code>employeeNumber-when-enabled</code> a bere <code>employeeNumber</code> jen když účet není 514.</p>
+<h3 id="groups_advsesk">Groups_AD.VSE.SK</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ano. Provisioning: ne.</li>
+<li>Join: <code>objectSIDVSE = objectSid</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>cn</code></td>
+<td><code>cn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>dn</code></td>
+<td><code>distinguishedNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>objectSid</code></td>
+<td><code>objectSIDVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>groupType</code></td>
+<td><code>groupType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(displayName), displayName, cn)</code></td>
+<td><code>displayName</code></td>
+<td>advanced group.displayName</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>sAMAccountName</code></td>
+<td><code>accountNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>false</code></td>
+<td><code>membershipLocked</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>None</code></td>
+<td><code>membershipAddWorkflow</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(Eq(BitAnd(2, groupType), 2), "Global", IIF(Eq(BitAnd(4, groupType), 4), "DomainLocal", "Universal"))</code></td>
+<td><code>scope</code></td>
+<td>advanced group.scope</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>Security</code></td>
+<td><code>type</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>EON-SK</code></td>
+<td><code>domain</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>+("VSE-", sAMAccountName)</code></td>
+<td><code>accountName</code></td>
+<td>advanced group.accountName</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>No</code></td>
+<td><code>VSENoSync</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>advse</code></td>
+<td><code>advse</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>cn</code></td>
+<td><code>cnVSE</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_advsesk">user_AD.VSE.SK</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ano. Provisioning: ne.</li>
+<li>Join: <code>accountNameVSE = sAMAccountName</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>dn</code></td>
+<td><code>distinguishedNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mail</code></td>
+<td><code>emailVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>userAccountControl</code></td>
+<td><code>userAccountControlVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>objectSid</code></td>
+<td><code>objectSIDVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>ad.vse.sk</code></td>
+<td><code>usrID</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>sAMAccountName</code></td>
+<td><code>accountNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>msDS-SourceAnchor</code></td>
+<td><code>msDS-SourceAnchor</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>company</code></td>
+<td><code>company1</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>department1</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>givenName</code></td>
+<td><code>firstNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>sn</code></td>
+<td><code>lastNameVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mS-DS-ConsistencyGuid</code></td>
+<td><code>mS-DS-ConsistencyGuid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>employeeNumber</code></td>
+<td><code>employeeNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>personalTitle</code></td>
+<td><code>personalTitle</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>title</code></td>
+<td><code>title</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>mobile</code></td>
+<td><code>mobile</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>cn</code></td>
+<td><code>cnVSE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>advse</code></td>
+<td><code>advse</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_advseskjoin-employeeid">user_AD.VSE.SK(join employeeID)</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN</code>, precedence <code>3</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>employeeID = employeeNumber</code>.</li>
+<li>Filtr: žádný.</li>
+<li>Toky: žádné, pravidlo jen spojuje.</li>
+</ul>
+<h2 id="vse_ldap_prod">VSE_LDAP_prod</h2>
+<p>Třída <code>MaVseLdap</code>. Projekce není, objekty zakládá provisioning.</p>
+<h3 id="groups_vse_ldap_prod">Groups_VSE_LDAP_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>5</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountNameVSE = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedNameVSE ENDSWITH DC=ad,DC=vse,DC=sk a VSENoSync NOTEQUAL No</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedNameVSE</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>-2147483646</code></td>
+<td><code>groupType</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountNameVSE</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>prod</code></td>
+<td><code>LDAPprod</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>dn</code></td>
+<td><code>distinguishedNameLDAPprod</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="groups_vse_ldap_rename_prod">Groups_VSE_LDAP_rename_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>OUT</code>, precedence <code>6</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: <code>distinguishedNameVSE ENDSWITH DC=ad,DC=vse,DC=sk</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(cnVSE), cnVSE, accountNameVSE)</code></td>
+<td><code>cn</code></td>
+<td>advanced cn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="groups_vse_ldap_zse-v2-only_prod">Groups_VSE_LDAP_(ZSE v2 Only)_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>group</code>, konektor <code>group</code>. Směr <code>IN+OUT</code>, precedence <code>10</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountNameVSE = sAMAccountName</code>.</li>
+<li>Filtr: <code>LDAPsync EQUAL ZSEOnlyYes</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedNameVSE</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountNameVSE</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>description</code></td>
+<td><code>description</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>groupType</code></td>
+<td><code>groupType</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>member</code></td>
+<td><code>member</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adlds_prod">User_VSE_ADLDS_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountNameVSE = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedNameVSE ENDSWITH DC=ad,DC=vse,DC=sk a VSENoSync NOTEQUAL No a displayName NOTSTARTSWITH copy- a VSENoSync NOTEQUAL ZSEOnly</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedNameVSE</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>objectSIDVSE</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountNameVSE</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>department</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayNameVSE</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>emailVSE</code></td>
+<td><code>mail</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeNumber</code></td>
+<td><code>employeeNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstNameVSE</code></td>
+<td><code>givenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastNameVSE</code></td>
+<td><code>sn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobile</code></td>
+<td><code>mobile</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>personalTitle</code></td>
+<td><code>personalTitle</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>Left(title, 60)</code></td>
+<td><code>title</code></td>
+<td>advanced title</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalNameVSE</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>prod</code></td>
+<td><code>LDAPprod</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userAccountControlVSE</code></td>
+<td><code>userAccountControl</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adlds_rename_prod">User_VSE_ADLDS_rename_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountNameVSE = sAMAccountName</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(cnVSE), cnVSE, accountNameVSE)</code></td>
+<td><code>cn</code></td>
+<td>advanced cn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adlds_copy_prod">User_VSE_ADLDS_copy_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>3</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountNameVSE = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedNameVSE ENDSWITH DC=ad,DC=vse,DC=sk a displayName STARTSWITH copy- a userAccountControl GREATERTHAN_OR_EQUAL 0</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedNameVSE</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountNameVSE</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>department</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>mail</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>givenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>Left(jobTitle, 60)</code></td>
+<td><code>title</code></td>
+<td>advanced title</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>sn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobile</code></td>
+<td><code>mobile</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>objectSIDVSE</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>personalTitle</code></td>
+<td><code>personalTitle</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>prod</code></td>
+<td><code>LDAPprod</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>extensionAttribute10</code></td>
+<td><code>extensionAttribute10</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayNameVSE</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(userAccountControl), userAccountControl, 514)</code></td>
+<td><code>userAccountControl</code></td>
+<td>advanced userAccountControl</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eon-slovakia.sk</code></td>
+<td><code>extensionAttribute14</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adldszse-only-ucty-prod">User_VSE_ADLDS(ZSE only ucty) prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>4</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountNameVSE = sAMAccountName</code>.</li>
+<li>Filtr: <code>VSENoSync EQUAL ZSEOnly a extensionAttribute8 NOTEQUAL 1</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>objectSid</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedNameLDAP</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>department</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>givenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>jobTitle</code></td>
+<td><code>title</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>sn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>mobile</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>personalTitle</code></td>
+<td><code>personalTitle</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>prod</code></td>
+<td><code>LDAPprod</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userAccountControl</code></td>
+<td><code>userAccountControl</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adldszse_spolocnpsti_prod">User_VSE_ADLDS(ZSE_spolocnpsti)_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>7</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedName ENDSWITH OU=Users,OU=BU0390,OU=MU22,DC=eon-slovakia,DC=sk a usrID EQUAL eon-slovakia.sk a eonStatus EQUAL A a eonUserType EQUAL primary a VSENoSync NOTEQUAL No a distinguishedNameLDAP ENDSWITH OU=Spolocnosti,DC=ad,DC=vse,DC=sk a distinguishedName NOTENDSWITH OU=Disabled_Users,OU=Users,OU=BU0390,OU=MU22,DC=eon-slovakia,DC=sk</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedNameLDAP</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>objectSid</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>department</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>mail</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>employeeNumber</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>givenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>jobTitle</code></td>
+<td><code>title</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>sn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>mobile</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>personalTitle</code></td>
+<td><code>personalTitle</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userAccountControl</code></td>
+<td><code>userAccountControl</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adldszse_servisne_ucty_prod">User_VSE_ADLDS(ZSE_Servisne_ucty)_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>8</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedName ENDSWITH OU=ITServices,DC=eon-slovakia,DC=sk a VSENoSync NOTEQUAL No a distinguishedNameLDAP ENDSWITH OU=services.zse,OU=Spolocnosti,DC=ad,DC=vse,DC=sk</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>distinguishedNameLDAP</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>objectSid</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>givenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>sn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adlds_all_prod">User_VSE_ADLDS_All_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>9</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: <code>accountName = company</code>.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>eon-slovakia.sk</code></td>
+<td><code>extensionAttribute14</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>dn</code></td>
+<td><code>distinguishedNameLDAPprod</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>sk-SK</code></td>
+<td><code>preferredLanguage</code></td>
+<td>konstanta</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user_vse_adldszse_org_servisne_ucty_prod">User_VSE_ADLDS(ZSE_org_Servisne_ucty)_prod</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>user</code>. Směr <code>IN+OUT</code>, precedence <code>11</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountName = sAMAccountName</code>.</li>
+<li>Filtr: <code>distinguishedName ENDSWITH OU=services,OU=org,DC=eon-slovakia,DC=sk</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>objectSid</code></td>
+<td><code>objectSid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>ReplaceString(distinguishedName, "OU=services,OU=org,DC=eon-slovakia,DC=sk", "OU=services.zse,OU=Spolocnosti,DC=ad,DC=vse,DC=sk")</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>sAMAccountName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>givenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>sn</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>userPrincipalName</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="sapcua">SAPCUA</h2>
+<p>Třída <code>MaSapCua</code>. Projekce není, uživatele zakládá provisioning, když je <code>IsSAPCUA</code>. Větev VSE (firma obsahuje Vychodoslovenska) má přednost a klíč je <code>msDS-SourceAnchor</code>. Větev ZSE má klíč <code>accountName</code>.</p>
+<h3 id="user-sapcua-outbound">User SAPCUA - outbound</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>User</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>accountName = KID</code>.</li>
+<li>Filtr: <code>IsSAPCUA EQUAL true a domain EQUAL EON-SK</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>accountName</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>NAME_FIRST</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>jobTitle</code></td>
+<td><code>FUNCTION</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>NAME_LAST</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone1</code></td>
+<td><code>TELNR_CALL</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(persg), IIF(Eq(persg, "1"), bukrs, IIF(Eq(persg, "3"), departmentNumber, "0000")), "0000")</code></td>
+<td><code>COMPANY</code></td>
+<td>advanced COMPANY</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(persg), IIF(Eq(persg, "1"), IIF(IsPresent(company), company, menoOJ), IIF(Eq(persg, "3"), menoOJ, Null())), Null())</code></td>
+<td><code>NAME1</code></td>
+<td>advanced NAME1</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>telephoneNumber1</code></td>
+<td><code>TEL_NUMBER</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>SK</code></td>
+<td><code>COUNTRY</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>import</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(CLASS), IIF(Eq(CLASS, "DISABLED"), "false", "true"), "true")</code></td>
+<td><code>IsSAPCUA</code></td>
+<td>advanced IsSAPCUA</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(Eq(stat2, "1"), "3", stat2)</code></td>
+<td><code>STAT2</code></td>
+<td>advanced STAT2</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(Eq(persk, "E2"), "EXTERNAL", Null())</code></td>
+<td><code>CLASS</code></td>
+<td>advanced CLASS</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>usrID</code></td>
+<td><code>USRID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>LowerCase(email)</code></td>
+<td><code>SMTP_ADDR</code></td>
+<td>advanced SMTP_ADDR</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>begda</code></td>
+<td><code>GLTGV</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(endda), endda, employeeEndDateCUA)</code></td>
+<td><code>GLTGB</code></td>
+<td>advanced GLTGB</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-sapcua-outbound-vse">User SAPCUA-outbound VSE</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>User</code>. Směr <code>IN+OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>msDS-SourceAnchor = KID</code>.</li>
+<li>Filtr: <code>IsSAPCUA EQUAL true a company CONTAINS Vychodoslovenska</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>msDS-SourceAnchor</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>SMTP_ADDR</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>NAME_FIRST</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>jobTitle</code></td>
+<td><code>FUNCTION</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>NAME_LAST</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>TELNR_CALL</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>telephoneNumber</code></td>
+<td><code>TEL_NUMBER</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>SK</code></td>
+<td><code>COUNTRY</code></td>
+<td>konstanta</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(Eq(stat2, "1"), "3", stat2)</code></td>
+<td><code>CLASS</code></td>
+<td>advanced CLASS-from-stat2</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(IsPresent(usrID), usrID, "")</code></td>
+<td><code>USRID</code></td>
+<td>advanced USRID</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="zseeuser">ZSEEUser</h2>
+<p>Třída <code>MaZsee</code>. Projekce není. Jeden objekt metaverse založí ve ZSEE jen jeden řádek, první vyhovující větev v <code>MVExtensionObject</code>.</p>
+<h3 id="user-zsee">User ZSEE</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>employeeID = OsobneCislo</code>.</li>
+<li>Filtr: <code>eonStatus EQUAL A a eonUserPurpose EQUAL regular a eonUserType EQUAL primary a humanet STARTSWITH hum</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>employeeID</code></td>
+<td><code>OsobneCislo</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>Email</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>Meno</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>Priezvisko</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>Mobil</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>city</code></td>
+<td><code>Mesto</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>Oddelenie_Kod</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>physicalDeliveryOfficeName</code></td>
+<td><code>Kancelaria</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>street</code></td>
+<td><code>Ulica</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>manager</code></td>
+<td><code>Nadriadeny</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayNameFull</code></td>
+<td><code>Tituly</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>UPN</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>begda</code></td>
+<td><code>Nastup</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>endda</code></td>
+<td><code>Vystup</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>bukrs</code></td>
+<td><code>Firma_Id</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-zsee-externisti">User ZSEE Externisti</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>employeeID = OsobneCislo</code>.</li>
+<li>Filtr: <code>externisti STARTSWITH id a eonStatus EQUAL A a externisti_processed EQUAL 1 a extensionAttribute8 NOTEQUAL 1</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>employeeID</code></td>
+<td><code>OsobneCislo</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>menoOJ</code></td>
+<td><code>ExtFirma_Nazov</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>Meno</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>Priezvisko</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>begda</code></td>
+<td><code>Nastup</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>city</code></td>
+<td><code>Mesto</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>department</code></td>
+<td><code>Oddelenie_Kod</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>Email</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>endda</code></td>
+<td><code>Vystup</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>Mobil</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>userPrincipalName</code></td>
+<td><code>UPN</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>bukrs</code></td>
+<td><code>Firma_Id</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-zsee-sync">User ZSEE Sync</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>OUT</code>, precedence <code>3</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>Email</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>Meno</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>Priezvisko</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>bukrs</code></td>
+<td><code>Firma_Id</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>ReplaceString(Left(employeeEndDate, 10), "-", "")</code></td>
+<td><code>Vystup</code></td>
+<td>advanced Vystup</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>ReplaceString(Left(employeeStartDate, 10), "-", "")</code></td>
+<td><code>Nastup</code></td>
+<td>advanced Nastup</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="koc">KOC</h2>
+<p>Třída <code>MaKoc</code>. Projekce není. Zakládá se, když <code>KOC</code> je 1 a typ je <code>I</code>, nebo typ <code>E</code> a <code>eonStatus</code> je A.</p>
+<h3 id="user-koc-int">User KOC int</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: <code>employeeType EQUAL I a KOC EQUAL 1</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>employeeID</code></td>
+<td><code>PERNR</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(Eq(employeeType, "I"), "int", "ext")</code></td>
+<td><code>Type</code></td>
+<td>advanced Type</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>GivenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>FamilyName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>KOC</code></td>
+<td><code>KOC</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-koc-ext">User KOC ext</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>OUT</code>, precedence <code>2</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: <code>employeeType EQUAL E a eonStatus EQUAL A a KOC EQUAL 1</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>employeeID</code></td>
+<td><code>PERNR</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>IIF(Eq(employeeType, "I"), "int", "ext")</code></td>
+<td><code>Type</code></td>
+<td>advanced Type</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>GivenName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>FamilyName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>KOC</code></td>
+<td><code>KOC</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="user-koc-nastav-koc-na-0">User KOC nastav KOC na 0</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>OUT</code>, precedence <code>3</code>.</li>
+<li>Projekce: ne. Provisioning: ne.</li>
+<li>Join: žádný, objekt se páruje jen při provisioningu.</li>
+<li>Filtr: žádný.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>KOC</code></td>
+<td><code>KOC</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="humanet_out">HUMANET_OUT</h2>
+<p>Extension na konektoru není potřeba, toky jsou přímé. Zakládá se, když <code>humanet</code> začíná na <code>hum</code> a <code>stat2</code> je 3. DN je <code>CN={employeeID},OBJECT=Person</code>.</p>
+<h3 id="user-humanet-out">User HUMANET OUt</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>Person</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>employeeID = roleNum</code>.</li>
+<li>Filtr: <code>humanet STARTSWITH hum a stat2 EQUAL 3</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>+("CN=", employeeID, ",OBJECT=Person")</code></td>
+<td><code>dn</code></td>
+<td>při provisioningu</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>kid</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>begda</code></td>
+<td><code>validFrom</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>displayName</code></td>
+<td><code>displayName</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>email</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>employeeID</code></td>
+<td><code>roleNum</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>endda</code></td>
+<td><code>validTo</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>priezvisko</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>telephoneNumber</code></td>
+<td><code>phone</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>mobile</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="externisti_sap_out">Externisti_SAP_OUT</h2>
+<p>Extension na konektoru není potřeba, toky jsou přímé. Zakládá se, když <code>externisti</code> začíná na <code>id</code>, <code>externisti_processed</code> je 1 a <code>extensionAttribute8</code> není 1.</p>
+<h3 id="users-externisti-sap-out">Users Externisti SAP OUT</h3>
+<ul>
+<li>Objekt: metaverse <code>person</code>, konektor <code>person</code>. Směr <code>IN+OUT</code>, precedence <code>1</code>.</li>
+<li>Projekce: ne. Provisioning: ano.</li>
+<li>Join: <code>employeeID = PERNR</code>.</li>
+<li>Filtr: <code>externisti STARTSWITH id a externisti_processed EQUAL 1 a extensionAttribute8 NOTEQUAL 1</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Směr</th>
+<th>Kdy</th>
+<th>Zdroj</th>
+<th>Cíl</th>
+<th>Typ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>export</td>
+<td>jen při provisioningu</td>
+<td><code>employeeID</code></td>
+<td><code>PERNR</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>accountName</code></td>
+<td><code>KID</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>begda</code></td>
+<td><code>BEGDA</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>bukrs</code></td>
+<td><code>BUKRS</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>email</code></td>
+<td><code>EMAIL</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>endda</code></td>
+<td><code>ENDDA</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>firstName</code></td>
+<td><code>VORNA</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>idNS</code></td>
+<td><code>KOSTL</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>lastName</code></td>
+<td><code>NACHN</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>mobilePhone</code></td>
+<td><code>MOBILE</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>stat2</code></td>
+<td><code>STAT2</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>city</code></td>
+<td><code>ORT01</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>ext_applicant_name</code></td>
+<td><code>ZIADATEL_MENO</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>postalCode</code></td>
+<td><code>PSTLZ1</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>Werks</code></td>
+<td><code>WERKS</code></td>
+<td>přímý</td>
+</tr>
+<tr>
+<td>export</td>
+<td>trvale</td>
+<td><code>ext_applicant_kid</code></td>
+<td><code>ZIADATEL_PERNR</code></td>
+<td>přímý</td>
+</tr>
+</tbody>
+</table></div>
+</body>
+</html>

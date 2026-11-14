@@ -1,0 +1,345 @@
+<saved-ma-configuration server='SMD1MGIDM01P' export-date='2026-11-04 09:53:23.087'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{4347FAC4-A1CD-466E-A0D7-8FD92E14D9C3}</id>
+ <name>SAPCUA</name>
+ <category>Extensible2</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2023-11-21 16:53:51.433</creation-time>
+ <last-modification-time>2026-09-02 21:30:20.607</last-modification-time>
+ <version>150</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>1</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML" xmlns:dsml="http://www.dsml.org/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="User" type="structural"><dsml:name>User</dsml:name><dsml:attribute ref="#NAME_LAST" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#NAME_FIRST" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#FUNCTION" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#DEPARTMENT" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#TEL_NUMBER" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#TELNR_CALL" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#SMTP_ADDR" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#COMPANY" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#NAME1" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#COUNTRY" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#USTYP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#CLASS" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#GLTGV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PNAME" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#GLTGB" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STAT2" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#USRID" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KID" required="true" ms-dsml:isAnchor="true" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="NAME_LAST" single-value="true"><dsml:name>NAME_LAST</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="NAME_FIRST" single-value="true"><dsml:name>NAME_FIRST</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FUNCTION" single-value="true"><dsml:name>FUNCTION</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DEPARTMENT" single-value="true"><dsml:name>DEPARTMENT</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="TEL_NUMBER" single-value="true"><dsml:name>TEL_NUMBER</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="TELNR_CALL" single-value="true"><dsml:name>TELNR_CALL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SMTP_ADDR" single-value="true"><dsml:name>SMTP_ADDR</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="COMPANY" single-value="true"><dsml:name>COMPANY</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="NAME1" single-value="true"><dsml:name>NAME1</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="COUNTRY" single-value="true"><dsml:name>COUNTRY</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="USTYP" single-value="true"><dsml:name>USTYP</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="CLASS" single-value="true"><dsml:name>CLASS</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="GLTGV" single-value="true"><dsml:name>GLTGV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PNAME" single-value="true"><dsml:name>PNAME</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="GLTGB" single-value="true"><dsml:name>GLTGB</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="STAT2" single-value="true"><dsml:name>STAT2</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="USRID" single-value="true"><dsml:name>USRID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KID" single-value="true" ms-dsml:immutable="true"><dsml:name>KID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>CLASS</attribute><attribute>COMPANY</attribute><attribute>COUNTRY</attribute><attribute>DEPARTMENT</attribute><attribute>FUNCTION</attribute><attribute>GLTGB</attribute><attribute>GLTGV</attribute><attribute>KID</attribute><attribute>NAME_FIRST</attribute><attribute>NAME_LAST</attribute><attribute>NAME1</attribute><attribute>PNAME</attribute><attribute>SMTP_ADDR</attribute><attribute>STAT2</attribute><attribute>TEL_NUMBER</attribute><attribute>TELNR_CALL</attribute><attribute>USRID</attribute><attribute>USTYP</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector />
+ <join>
+ <join-profile cd-object-type="User">
+  <join-criterion join-cri-type="sync-rule" id="{C1A0AE67-77FA-4354-9B08-DEAD8DA07C1E}" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}">
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="accountName">
+     <direct-mapping>
+      <src-attribute>KID</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+  <join-criterion join-cri-type="sync-rule" id="{1BCC8C45-EC2D-46E8-8D94-BD951AD80B3C}" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}">
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="msDS-SourceAnchor">
+     <direct-mapping>
+      <src-attribute>KID</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+ </join-profile>
+</join>
+
+ <projection>
+</projection>
+
+ <export-attribute-flow>
+ <export-flow-set cd-object-type="User" mv-object-type="person">
+  <export-flow cd-attribute="KID" id="{4F1E6AF3-B297-4167-A7AD-3DD860C99982}" suppress-deletions="false">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{80D9F2DB-2622-4576-9DC9-D496F509FB0B}" initial-flow-only="true" is-existence-test="false">
+    <src-attribute>accountName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="COUNTRY" id="{AAAC3076-663F-4FF6-8B8E-3F099EE8A903}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="constant" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{E83BE3CF-67FB-4F02-A84E-B683A42B4514}" initial-flow-only="false" is-existence-test="false">
+    <sync-rule-value>SK</sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="USRID" id="{7EDA7680-7FC5-42A1-B2B9-346C7DEF68D6}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{F42AF4F4-B2C4-4828-819A-AA62FCA578FE}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>usrID</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="TEL_NUMBER" id="{628DDBDE-94F0-4C5F-A36F-C1E5A6CB7046}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{67845ADE-A4AD-4FF0-BCF8-1C18AFD68892}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>telephoneNumber1</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="STAT2" id="{4E3BD8FF-0FA8-457C-ADC1-BEE622687517}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{28ED124B-3A1E-4875-9992-B2F0E6D81788}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>stat2</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>stat2</attr></src><dest>STAT2</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg>stat2</arg><arg>"1"</arg></fn></arg><arg>"3"</arg><arg>stat2</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="CLASS" id="{B6AFA4AB-2920-485B-838C-7CC105A0F097}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{988E25B3-2A68-4E91-9EEE-C61A9A7EFF4E}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>persk</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>persk</attr></src><dest>CLASS</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg>persk</arg><arg>"E2"</arg></fn></arg><arg>"EXTERNAL"</arg><arg><fn id="Null" isCustomExpression="false" /></arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="NAME1" id="{A1B6A7D6-B711-4952-874F-A593819F3C39}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{EC9E77B5-2F2E-4DDD-9F1F-3C4F974E8CA4}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>persg</src-attribute>
+    <src-attribute>company</src-attribute>
+    <src-attribute>menoOJ</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>persg</attr><attr>company</attr><attr>menoOJ</attr></src><dest>NAME1</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="IsPresent" isCustomExpression="false"><arg>persg</arg></fn></arg><arg><fn id="IIF" isCustomExpression="false"><arg><fn id="Eq" isCustomExpression="false"><arg>persg</arg><arg>"1"</arg></fn></arg><arg><fn id="IIF" isCustomExpression="false"><arg><fn id="IsPresent" isCustomExpression="false"><arg>company</arg></fn></arg><arg>company</arg><arg>menoOJ</arg></fn></arg><arg><fn id="IIF" isCustomExpression="false"><arg><fn id="Eq" isCustomExpression="false"><arg>persg</arg><arg>"3"</arg></fn></arg><arg>menoOJ</arg><arg><fn id="Null" isCustomExpression="false" /></arg></fn></arg></fn></arg><arg><fn id="Null" isCustomExpression="false" /></arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="COMPANY" id="{9BBB202E-B1EF-44EF-A3D7-DE99A721B5F6}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{9E5259D2-A04B-428E-8BE2-EC5B9AE3C9DA}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>persg</src-attribute>
+    <src-attribute>bukrs</src-attribute>
+    <src-attribute>departmentNumber</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>persg</attr><attr>bukrs</attr><attr>departmentNumber</attr></src><dest>COMPANY</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="IsPresent" isCustomExpression="false"><arg>persg</arg></fn></arg><arg><fn id="IIF" isCustomExpression="false"><arg><fn id="Eq" isCustomExpression="false"><arg>persg</arg><arg>"1"</arg></fn></arg><arg>bukrs</arg><arg><fn id="IIF" isCustomExpression="false"><arg><fn id="Eq" isCustomExpression="false"><arg>persg</arg><arg>"3"</arg></fn></arg><arg>departmentNumber</arg><arg>"0000"</arg></fn></arg></fn></arg><arg>"0000"</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="TELNR_CALL" id="{D4CE27CD-CCAD-4928-8D2B-D35A29EB40AE}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{2C83D071-BD94-4948-AF27-717F5942FC60}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>mobilePhone1</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="NAME_LAST" id="{CB50A045-94E7-4C27-AF28-BBAC24E1E5DA}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{93959989-2824-4F38-B59E-6524DB89714B}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="FUNCTION" id="{9E8BC997-F53E-4B29-9C45-682BCCFC95F8}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{CC4A191C-9E15-403C-B8CD-66A9217D6020}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>jobTitle</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="NAME_FIRST" id="{05CD503A-09D4-4BD2-BC29-6A101F23F25D}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{9D4058CA-7433-4857-ACD3-C93CCF5A48DD}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="GLTGB" id="{3C0CF249-F555-47C3-9989-A128A8D5F671}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{C4A541BE-8134-4C43-9CDE-ECB9AE70344B}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>endda</src-attribute>
+    <src-attribute>employeeEndDateCUA</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>endda</attr><attr>employeeEndDateCUA</attr></src><dest>GLTGB</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="IsPresent" isCustomExpression="false"><arg>endda</arg></fn></arg><arg>endda</arg><arg>employeeEndDateCUA</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="SMTP_ADDR" id="{98413C6B-EC6B-49F3-B8A3-6F6FF2474E5A}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{6A2E3D61-72A9-4A1E-A2CC-F1948260CEA9}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>email</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>email</attr></src><dest>SMTP_ADDR</dest><scoping></scoping><fn id="LowerCase" isCustomExpression="false"><arg>email</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="GLTGV" id="{6599116F-B54C-4E6D-97A0-8F4A67238BE5}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{DC63384F-7494-42B8-B268-277EDCAA2545}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>begda</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KID" id="{5E9465E5-5FE1-49C4-A32C-0CDB25C991DC}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{748F009A-9A88-EE11-A74C-0050568B6A50}" sync-rule-mapping-id="{0E43ACA5-59C8-478E-A7DC-366B0054E026}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>accountName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KID" id="{4F6B16BB-C183-4F04-A9EC-E280A0300EA5}" suppress-deletions="false">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{0686627A-52E8-4826-8F63-D3F53FE37D83}" initial-flow-only="true" is-existence-test="false">
+    <src-attribute>msDS-SourceAnchor</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="COUNTRY" id="{4511C2E8-5D15-4C9D-83A6-47331C3A04F6}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="constant" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{E1902E20-816D-4894-9A28-BBCAA825FCC5}" initial-flow-only="false" is-existence-test="false">
+    <sync-rule-value>SK</sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="USRID" id="{ADCC03C4-0242-4A55-A123-49EBB1ADF106}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{9DB6AC6C-96E2-4E46-B454-C985B1298C4A}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>usrID</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>usrID</attr></src><dest>USRID</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="IsPresent" isCustomExpression="false"><arg>usrID</arg></fn></arg><arg>usrID</arg><arg>""</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="TEL_NUMBER" id="{DA9F1B90-2447-46EC-8D23-7A95E9A5A410}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{17D93460-04E1-4023-A760-5158D306D484}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>telephoneNumber</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="CLASS" id="{154887F1-B935-4902-AF99-22240D24F780}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="expression" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{B58981E2-0CD4-4397-B8A4-2D21A7A196D9}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>stat2</src-attribute>
+    <sync-rule-value>
+     <export-flow allows-null="false"><src><attr>stat2</attr></src><dest>CLASS</dest><scoping></scoping><fn id="IIF" isCustomExpression="true"><arg><fn id="Eq" isCustomExpression="false"><arg>stat2</arg><arg>"1"</arg></fn></arg><arg>"3"</arg><arg>stat2</arg></fn></export-flow>
+    </sync-rule-value>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="TELNR_CALL" id="{8DF8ADA5-208D-44B3-910D-5E0DF17B08C3}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{BC9B9C35-8E94-44F3-B43B-D6D5EE63D312}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>mobilePhone</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="NAME_LAST" id="{482689F2-5992-4AA7-80EE-66B4865C05C2}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{9807F1FC-8BC8-46DE-A18D-41319584A1B9}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="FUNCTION" id="{748BDECA-4CC1-420D-B3EC-CCF19781097F}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{3BE981FD-C5C9-4B19-B1DA-253BC527380D}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>jobTitle</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="NAME_FIRST" id="{150886D3-ADCE-4E4B-B738-5E8F3B66E48A}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{BE8E523A-7EEF-496C-8E4A-7EECD38FF78D}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="SMTP_ADDR" id="{4835E2D9-C1BE-4E4C-9A8F-13553153A9DB}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{7BA2EA11-52E5-EF11-A75B-0050568B6A50}" sync-rule-mapping-id="{1D607F60-63E1-4D36-AF34-342FFC100386}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>email</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+ </export-flow-set>
+</export-attribute-flow>
+
+ <provisioning-cleanup type="declared"><action>make-normal-disconnector</action></provisioning-cleanup>
+ <extension />
+ <controller-configuration>
+ <application-protection>low</application-protection>
+ <application-architecture>process</application-architecture>
+</controller-configuration>
+
+ <description></description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="KID" header="KID" size="148" /><attribute name="CLASS" header="CLASS" size="100" /><attribute name="COMPANY" header="COMPANY" size="100" /><attribute name="NAME_LAST" header="NAME_LAST" size="100" /><attribute name="NAME_FIRST" header="NAME_FIRST" size="100" /><attribute name="NAME1" header="NAME1" size="171" /><attribute name="PNAME" header="PNAME" size="257" /></cs><mv><attribute name="accountName" header="accountName" size="100" /><attribute name="displayName" header="displayName" size="100" /><attribute name="employeeID" header="employeeID" size="100" /></mv></attributes><filters max_mv_search_results=""><filter name="PRIEZVISKO" collation="Latin1_General_CI_AS" searchscope="person"><element cdattribute="NAME_LAST" mvattribute="lastName" mvtextflag="false" elementoperator="Equals" /></filter><filter name="PRIEZVISKO2" collation="Latin1_General_CI_AS" searchscope="person"><element cdattribute="Tomčík" mvattribute="lastName" mvtextflag="true" elementoperator="Equals" /></filter><filter name="kid" collation="Latin1_General_CI_AS" searchscope=""><element cdattribute="KID" mvattribute="accountName" mvtextflag="false" elementoperator="Equals" /></filter></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <MAConfig><ui-data><xmlwizard><properties><sample_file></sample_file><code_page_description></code_page_description></properties><partitions><partition cd_name="default" guid="{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}" selected="-1" version="0"><object_class>User</object_class></partition></partitions><primary_class_mappings><mapping object_class="User" primary_class="User" user_define="0"><attribute>NAME_LAST</attribute><attribute>NAME_FIRST</attribute><attribute>FUNCTION</attribute><attribute>DEPARTMENT</attribute><attribute>TEL_NUMBER</attribute><attribute>TELNR_CALL</attribute><attribute>SMTP_ADDR</attribute><attribute>COMPANY</attribute><attribute>NAME1</attribute><attribute>COUNTRY</attribute><attribute>USTYP</attribute><attribute>CLASS</attribute><attribute>GLTGV</attribute><attribute>PNAME</attribute><attribute>GLTGB</attribute><attribute>KID</attribute><attribute>export_password</attribute></mapping></primary_class_mappings><object_classes><object_class cd_name="User" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="0"><attribute mandatory="0">NAME_LAST</attribute><attribute mandatory="0">NAME_FIRST</attribute><attribute mandatory="0">FUNCTION</attribute><attribute mandatory="0">DEPARTMENT</attribute><attribute mandatory="0">TEL_NUMBER</attribute><attribute mandatory="0">TELNR_CALL</attribute><attribute mandatory="0">SMTP_ADDR</attribute><attribute mandatory="0">COMPANY</attribute><attribute mandatory="0">NAME1</attribute><attribute mandatory="0">COUNTRY</attribute><attribute mandatory="0">USTYP</attribute><attribute mandatory="0">CLASS</attribute><attribute mandatory="0">GLTGV</attribute><attribute mandatory="0">PNAME</attribute><attribute mandatory="0">GLTGB</attribute><attribute mandatory="-1">KID</attribute><attribute mandatory="0">export_password</attribute></object_class></object_classes><attributes><attribute cd_name="CLASS" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="COMPANY" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="COUNTRY" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="DEPARTMENT" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="FUNCTION" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="GLTGB" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="GLTGV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KID" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="NAME_FIRST" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="NAME_LAST" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="NAME1" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PNAME" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="SMTP_ADDR" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="TEL_NUMBER" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="TELNR_CALL" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="USTYP" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="export_password" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /></attributes></xmlwizard></ui-data><importing><dn><attribute object_class="User">KID</attribute></dn><anchor><attribute object_class="User">KID</attribute></anchor><per-class-settings><class><name>User</name><anchor><attribute>KID</attribute></anchor></class></per-class-settings><default_object_class>person</default_object_class></importing><exporting></exporting><ldap-dn>0</ldap-dn><change_type_attribute></change_type_attribute><add_change_type_value>Add</add_change_type_value><modify_change_type_value>Modify</modify_change_type_value><delete_change_type_value>Delete</delete_change_type_value><primary_class_mappings><mapping><primary_class>User</primary_class><oc-value>User</oc-value></mapping></primary_class_mappings><enable-unapplied-merge>0</enable-unapplied-merge><file-type>Extensible2</file-type><extension-config><filename>ExtensibleConnectivity2Extension.dll</filename><import-default-page-size>12</import-default-page-size><import-max-page-size>50</import-max-page-size><export-default-page-size>10</export-default-page-size><export-max-page-size>20</export-max-page-size><export-mode>call-based</export-mode><import-mode>call-based</import-mode><export-enabled>1</export-enabled><import-enabled>1</import-enabled><discovery-partition></discovery-partition><discovery-schema>extensibility</discovery-schema><discovery-hierarchy></discovery-hierarchy><password-management-enabled>1</password-management-enabled><assembly-version>1.0.9428.17679</assembly-version><supports-parameters-ex>0</supports-parameters-ex><export-type>3</export-type><capability-bits>2181535744</capability-bits></extension-config><parameter-definitions refreshSchema="0" refreshPartition="0" refreshConnectivityParameters="0" refreshSchemaParameters="0" refreshCapabilitiesParameters="0" refreshGlobalParameters="0" refreshOtherParameters="0"><parameter><name>Uzivatel</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Heslo</name><use>connectivity</use><type>encrypted-string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>LogFolder</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>LogFolderPassSync</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Endpoint</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Environment</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Debug_Exports</name><use>connectivity</use><type>drop-down</type><validation>True,False,</validation><text></text><default-value></default-value><dropdown-extensible>0</dropdown-extensible></parameter></parameter-definitions><parameter-values><parameter name="Heslo" type="encrypted-string" use="connectivity" encrypted="1"></parameter><parameter name="Uzivatel" type="string" use="connectivity">MIM_PROD</parameter><parameter name="LogFolder" type="string" use="connectivity">C:\MIMLogs</parameter><parameter name="LogFolderPassSync" type="string" use="connectivity">C:\MIMLogs\PassSync</parameter><parameter name="Endpoint" type="string" use="connectivity">poap01p.eon-slovakia.sk:443</parameter><parameter name="Environment" type="string" use="connectivity">P</parameter><parameter name="Debug_Exports" type="drop-down" use="connectivity">True</parameter></parameter-values><password-extension-config><password-extension-enabled>1</password-extension-enabled><dll>ExtensibleConnectivity2Extension.dll</dll><password-set-enabled>1</password-set-enabled><password-change-enabled>0</password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout>0</timeout></password-extension-config><case_normalize_dn_for_anchor>1</case_normalize_dn_for_anchor><default_visible_attributes><attribute>KID</attribute><attribute>NAME_LAST</attribute><attribute>NAME_FIRST</attribute><attribute>FUNCTION</attribute><attribute>DEPARTMENT</attribute><attribute>TEL_NUMBER</attribute><attribute>TELNR_CALL</attribute><attribute>SMTP_ADDR</attribute><attribute>COMPANY</attribute><attribute>NAME1</attribute><attribute>COUNTRY</attribute><attribute>USTYP</attribute><attribute>CLASS</attribute><attribute>GLTGV</attribute><attribute>PNAME</attribute><attribute>GLTGB</attribute><attribute>STAT2</attribute><attribute>USRID</attribute></default_visible_attributes></MAConfig>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</id>
+  <name>default</name>
+  <creation-time>2023-11-21 16:53:51.433</creation-time>
+  <last-modification-time>2025-11-04 14:57:03.083</last-modification-time>
+  <version>68</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>User</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion></inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>default</dn><name>default</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>27</allowed-operations>
+  <current>
+   <batch-number>27212</batch-number>
+   <sequence-number>19175401</sequence-number>
+  </current>
+  <last-successful-batch>27211</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>User</name>
+     <hierarchy>
+      <object-class>User</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{8DD0598A-1D79-4152-B619-1043C4064D8A}</id>
+  <name>E</name>
+  <creation-time>2023-11-22 13:44:26.457</creation-time>
+  <version>1</version>
+  <last-modification-time>2023-11-22 13:44:26.457</last-modification-time>
+  <configuration><step><step-type type="export"></step-type><threshold><batch-size>10</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>10</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{4BBC34AB-45B1-4F64-8E58-121243284057}</id>
+  <name>DI</name>
+  <creation-time>2023-11-22 13:44:26.457</creation-time>
+  <version>1</version>
+  <last-modification-time>2023-11-22 13:44:26.457</last-modification-time>
+  <configuration><step><step-type type="delta-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>12</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>12</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{B2E255EC-ADAE-4AD8-8D7E-85EE26955E2D}</id>
+  <name>DS</name>
+  <creation-time>2023-11-22 13:44:26.457</creation-time>
+  <version>1</version>
+  <last-modification-time>2023-11-22 13:44:26.457</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>apply-pending</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{468E0F95-BEAC-4B03-9747-4398425FCDD6}</id>
+  <name>FI</name>
+  <creation-time>2023-11-22 13:44:26.457</creation-time>
+  <version>1</version>
+  <last-modification-time>2023-11-22 13:44:26.457</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>12</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>12</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{7E88EC5B-E8E4-4DFC-9737-A0FEB47126F8}</id>
+  <name>FS</name>
+  <creation-time>2023-11-22 13:44:26.457</creation-time>
+  <version>1</version>
+  <last-modification-time>2023-11-22 13:44:26.457</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{78C3C296-4827-422C-B9F5-63D1D54B6D72}</id>
+  <name>fullEport</name>
+  <creation-time>2025-02-10 09:30:49.500</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-02-10 09:30:49.500</last-modification-time>
+  <configuration><step><step-type type="full-export"></step-type><threshold><batch-size>10</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>10</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{0045E7D4-28BF-46BA-A2EB-6047F916EB08}</id>
+  <name>PWEXPTEST</name>
+  <creation-time>2025-03-22 14:04:13.480</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-03-22 14:04:13.480</last-modification-time>
+  <configuration><step><step-type type="full-import-reevaluate-rules"></step-type><threshold><batch-size>12</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>12</batch-size></extensible2-step-data><parameter-values /></custom-data></step><step><step-type type="export"></step-type><threshold><batch-size>10</batch-size></threshold><partition>{8DB1C8A1-BCC7-4269-86F1-BC2EDC06F4BA}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>10</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>82079801</capabilities-mask>
+ <export-type>3</export-type>
+ <dn-construction><dn object-type="User"><attribute>KID</attribute></dn></dn-construction>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security><unlock-account>0</unlock-account></password-sync>
+ <component_mappings />
+</ma-data>
+
+</saved-ma-configuration>

@@ -1,0 +1,231 @@
+<saved-ma-configuration server='SMD1MGIDM01P' export-date='2026-11-04 09:53:23.087'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{D6B01DAC-3985-4B45-8960-5EA713A71F11}</id>
+ <name>Externisti_SAP_OUT</name>
+ <category>MSSQL</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2025-05-09 08:57:42.923</creation-time>
+ <last-modification-time>2026-11-03 09:59:42.335</last-modification-time>
+ <version>21</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:dsml="http://www.dsml.org/DSML" xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="person" type="structural"><dsml:name>person</dsml:name><dsml:attribute ref="#E1PTYP_BEGDA" required="false" /><dsml:attribute ref="#E1PTYP_ENDDA" required="false" /><dsml:attribute ref="#E1PTYP_BEGDA_DATE" required="false" /><dsml:attribute ref="#E1PTYP_ENDDA_DATE" required="false" /><dsml:attribute ref="#PERNR" required="false" /><dsml:attribute ref="#BEGDA" required="false" /><dsml:attribute ref="#ENDDA" required="false" /><dsml:attribute ref="#BEGDA_DATE" required="false" /><dsml:attribute ref="#ENDDA_DATE" required="false" /><dsml:attribute ref="#STAT2" required="false" /><dsml:attribute ref="#KOSTL" required="false" /><dsml:attribute ref="#WERKS" required="false" /><dsml:attribute ref="#BUKRS" required="false" /><dsml:attribute ref="#NACHN" required="false" /><dsml:attribute ref="#VORNA" required="false" /><dsml:attribute ref="#TITTEL" required="false" /><dsml:attribute ref="#ZIADATEL_MENO" required="false" /><dsml:attribute ref="#ORT01" required="false" /><dsml:attribute ref="#PSTLZ1" required="false" /><dsml:attribute ref="#ZIADATEL_PERNR" required="false" /><dsml:attribute ref="#KID" required="false" /><dsml:attribute ref="#EMAIL" required="false" /><dsml:attribute ref="#MOBILE" required="false" /><dsml:attribute ref="#BEGUPDATE" required="false" /><dsml:attribute ref="#ENDUPDATE" required="false" /><dsml:attribute ref="#BEGUPDATE_DATE" required="false" /><dsml:attribute ref="#ENDUPDATE_DATE" required="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="E1PTYP_BEGDA" single-value="true" ms-dsml:range-upper="255"><dsml:name>E1PTYP_BEGDA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="E1PTYP_ENDDA" single-value="true" ms-dsml:range-upper="255"><dsml:name>E1PTYP_ENDDA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="E1PTYP_BEGDA_DATE" single-value="true" ms-dsml:range-upper="16"><dsml:name>E1PTYP_BEGDA_DATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="E1PTYP_ENDDA_DATE" single-value="true" ms-dsml:range-upper="16"><dsml:name>E1PTYP_ENDDA_DATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PERNR" single-value="true" ms-dsml:immutable="true" ms-dsml:range-upper="255"><dsml:name>PERNR</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BEGDA" single-value="true" ms-dsml:range-upper="255"><dsml:name>BEGDA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ENDDA" single-value="true" ms-dsml:range-upper="255"><dsml:name>ENDDA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BEGDA_DATE" single-value="true" ms-dsml:range-upper="16"><dsml:name>BEGDA_DATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ENDDA_DATE" single-value="true" ms-dsml:range-upper="16"><dsml:name>ENDDA_DATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="STAT2" single-value="true" ms-dsml:range-upper="255"><dsml:name>STAT2</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KOSTL" single-value="true" ms-dsml:range-upper="255"><dsml:name>KOSTL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="WERKS" single-value="true" ms-dsml:range-upper="255"><dsml:name>WERKS</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BUKRS" single-value="true" ms-dsml:range-upper="255"><dsml:name>BUKRS</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="NACHN" single-value="true" ms-dsml:range-upper="255"><dsml:name>NACHN</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="VORNA" single-value="true" ms-dsml:range-upper="255"><dsml:name>VORNA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="TITTEL" single-value="true" ms-dsml:range-upper="255"><dsml:name>TITTEL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ZIADATEL_MENO" single-value="true" ms-dsml:range-upper="255"><dsml:name>ZIADATEL_MENO</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ORT01" single-value="true" ms-dsml:range-upper="255"><dsml:name>ORT01</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PSTLZ1" single-value="true" ms-dsml:range-upper="255"><dsml:name>PSTLZ1</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ZIADATEL_PERNR" single-value="true" ms-dsml:range-upper="255"><dsml:name>ZIADATEL_PERNR</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KID" single-value="true" ms-dsml:range-upper="255"><dsml:name>KID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EMAIL" single-value="true" ms-dsml:range-upper="255"><dsml:name>EMAIL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MOBILE" single-value="true" ms-dsml:range-upper="255"><dsml:name>MOBILE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BEGUPDATE" single-value="true" ms-dsml:range-upper="255"><dsml:name>BEGUPDATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ENDUPDATE" single-value="true" ms-dsml:range-upper="255"><dsml:name>ENDUPDATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BEGUPDATE_DATE" single-value="true" ms-dsml:range-upper="16"><dsml:name>BEGUPDATE_DATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ENDUPDATE_DATE" single-value="true" ms-dsml:range-upper="16"><dsml:name>ENDUPDATE_DATE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>E1PTYP_BEGDA</attribute><attribute>E1PTYP_ENDDA</attribute><attribute>E1PTYP_BEGDA_DATE</attribute><attribute>E1PTYP_ENDDA_DATE</attribute><attribute>PERNR</attribute><attribute>BEGDA</attribute><attribute>ENDDA</attribute><attribute>BEGDA_DATE</attribute><attribute>ENDDA_DATE</attribute><attribute>STAT2</attribute><attribute>KOSTL</attribute><attribute>WERKS</attribute><attribute>BUKRS</attribute><attribute>NACHN</attribute><attribute>VORNA</attribute><attribute>TITTEL</attribute><attribute>ZIADATEL_MENO</attribute><attribute>ORT01</attribute><attribute>PSTLZ1</attribute><attribute>ZIADATEL_PERNR</attribute><attribute>KID</attribute><attribute>EMAIL</attribute><attribute>MOBILE</attribute><attribute>BEGUPDATE</attribute><attribute>ENDUPDATE</attribute><attribute>BEGUPDATE_DATE</attribute><attribute>ENDUPDATE_DATE</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector />
+ <join>
+ <join-profile cd-object-type="person">
+  <join-criterion join-cri-type="sync-rule" id="{B77FEDA1-0F64-4C33-B6D4-0DD17C62A277}" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}">
+   <search mv-object-type="person">
+    <attribute-mapping mv-attribute="employeeID">
+     <direct-mapping>
+      <src-attribute>PERNR</src-attribute>
+     </direct-mapping>
+    </attribute-mapping>
+   </search>
+   <resolution type="none">
+    <script-context></script-context>
+   </resolution>
+  </join-criterion>
+ </join-profile>
+</join>
+
+ <projection>
+</projection>
+
+ <export-attribute-flow>
+ <export-flow-set cd-object-type="person" mv-object-type="person">
+  <export-flow cd-attribute="PERNR" id="{C08E5920-E410-4ADB-89F3-74F2AC0053B1}" suppress-deletions="false">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{6ADA4475-D216-4553-B793-26BF0D4FDA53}" initial-flow-only="true" is-existence-test="false">
+    <src-attribute>employeeID</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="STAT2" id="{9FC81A8C-B522-4A0B-8CF1-F426FE5FA500}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{DD4D6FD5-C970-4E24-A19E-8DA3D60EE944}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>stat2</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="PSTLZ1" id="{EB9B480A-D2D8-4E8B-BA2F-D40A4058B404}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{A64F218E-444F-4C12-90F3-923755133F8E}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>postalCode</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="MOBILE" id="{B1B70D95-23E4-4DF1-B08A-ACE0C1DF0DFB}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{1B4AE43E-7F62-4BC6-BAE7-EA10A57BBB53}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>mobilePhone</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="NACHN" id="{291A630C-8CAD-445A-8C1A-99755E21B1F2}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{71E5B27E-AABC-473E-80E6-A3FE34F3BCFF}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>lastName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KOSTL" id="{132A8102-8786-406F-87DE-2A044AB6EE9C}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{20D746AD-0673-4E76-9FB1-A04C64AE8D0C}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>idNS</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="VORNA" id="{83CDB695-F9DB-44D9-A368-ADF79466024B}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{1ECDBC4E-8755-404E-A897-D161C017656E}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>firstName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="ZIADATEL_MENO" id="{19A991D3-5576-4EC8-A9A1-5F487256A4F2}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{AFBEC8D5-A62D-4E1E-AC7B-D594B4273E36}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>ext_applicant_name</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="ZIADATEL_PERNR" id="{B3CFF43C-D6F8-4EC5-B87F-2FF4D96E07E1}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{342E620A-CB81-4572-984D-B071A5B2E82D}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>ext_applicant_kid</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="ENDDA" id="{1F2E39E6-E05F-49E1-8290-527AC30D677D}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{56F9ED65-339A-4667-B36B-336DB8AB7EB6}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>endda</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="EMAIL" id="{2FF15184-FDE6-4911-B59A-F08737D3D5E8}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{AA2B37F1-C6BD-4537-BFE2-13A8A459858F}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>email</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="ORT01" id="{54A5E959-387C-4C66-A72B-39422DEE42DB}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{232F3659-E142-44EC-A7D0-06CAF64AE17C}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>city</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="BUKRS" id="{DE3B071D-77AB-487E-A64D-A9B8B7C8EC2F}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{782F2C5B-C481-416E-BF95-528FEC7DB02E}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>bukrs</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="BEGDA" id="{04C8D3C8-017C-42BC-A6B1-EBA7C0E77786}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{7756AFB5-32DC-4C7B-8043-BDBADC1C9B97}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>begda</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="KID" id="{936C704F-2ACD-4F07-83E2-34247A42D5AF}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{AD2E0BA2-0A79-401A-B2F8-9382F63737C9}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>accountName</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+  <export-flow cd-attribute="WERKS" id="{10FC70A5-9FA4-45E8-A079-17066AB9D487}" suppress-deletions="true">
+   <sync-rule-mapping mapping-type="direct" sync-rule-id="{6C1243AF-B52C-F011-A761-0050568B6A50}" sync-rule-mapping-id="{65F1633B-9BA3-4164-B30E-76570A3E41FF}" initial-flow-only="false" is-existence-test="false">
+    <src-attribute>Werks</src-attribute>
+   </sync-rule-mapping>
+  </export-flow>
+ </export-flow-set>
+</export-attribute-flow>
+
+ <provisioning-cleanup type="declared"><action>delete-object</action></provisioning-cleanup>
+ <extension />
+ <controller-configuration>
+ <application-protection>low</application-protection>
+ <application-architecture>process</application-architecture>
+ <impersonation>
+  <domain>eon-sk</domain>
+  <user>miminstall</user>
+ </impersonation>
+</controller-configuration>
+
+ <description></description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="PERNR" header="PERNR" size="100" /><attribute name="E1PTYP_BEGDA" header="E1PTYP_BEGDA" size="100" /><attribute name="E1PTYP_ENDDA" header="E1PTYP_ENDDA" size="100" /></cs><mv></mv></attributes><filters max_mv_search_results=""></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <oledbma-configuration><connection-info><authentication>integrated</authentication><provider>SQLOLEDB</provider><server>SMD1DBIDM01P</server><databasename>HRSAP</databasename><tablename>Externisti_SAP_OUT</tablename><user>miminstall</user><domain>eon-sk</domain></connection-info><mms-info><column-info><column><name>E1PTYP_BEGDA</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>E1PTYP_ENDDA</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>E1PTYP_BEGDA_DATE</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>E1PTYP_ENDDA_DATE</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PERNR</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>BEGDA</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ENDDA</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>BEGDA_DATE</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ENDDA_DATE</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>STAT2</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>KOSTL</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>WERKS</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>BUKRS</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>NACHN</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>VORNA</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>TITTEL</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ZIADATEL_MENO</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ORT01</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>PSTLZ1</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ZIADATEL_PERNR</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>KID</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>EMAIL</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>0</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>MOBILE</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>0</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>BEGUPDATE</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ENDUPDATE</name><data-type>DBTYPE_WSTR</data-type><length>255</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>BEGUPDATE_DATE</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><column><name>ENDUPDATE_DATE</name><data-type>DBTYPE_DBTIMESTAMP</data-type><length>16</length><isnullable>1</isnullable><isreadonly>0</isreadonly><islongcolumn>0</islongcolumn><mms-type>String</mms-type><imp-conv-flag>1</imp-conv-flag><exp-conv-flag>0</exp-conv-flag></column><primary-key></primary-key></column-info><anchor><attribute>PERNR</attribute></anchor><object-type>person</object-type></mms-info><password-extension-config><password-extension-enabled>0</password-extension-enabled><dll></dll><password-set-enabled></password-set-enabled><password-change-enabled></password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout></timeout></password-extension-config><enable-unapplied-merge>0</enable-unapplied-merge></oledbma-configuration>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{6E43C442-C598-4636-B5B7-E4D49756BAD3}</id>
+  <name>default</name>
+  <creation-time>2025-05-09 08:57:42.923</creation-time>
+  <last-modification-time>2025-05-09 09:26:26.143</last-modification-time>
+  <version>3</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>person</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion></inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <allowed-operations>25</allowed-operations>
+  <current>
+   <batch-number>29506</batch-number>
+   <sequence-number>541068</sequence-number>
+  </current>
+  <last-successful-batch>29505</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>person</name>
+     <hierarchy>
+      <object-class>person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{F7CD660F-658E-4D6F-8A8D-DFC3399526CB}</id>
+  <name>FI</name>
+  <creation-time>2025-05-09 09:13:12.223</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-09 09:13:12.223</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{6E43C442-C598-4636-B5B7-E4D49756BAD3}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{45C0FAC2-AE67-40A8-8A96-5210D9F4F420}</id>
+  <name>FS</name>
+  <creation-time>2025-05-09 09:13:12.223</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-09 09:13:12.223</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{6E43C442-C598-4636-B5B7-E4D49756BAD3}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{44795DBE-3959-499D-B20B-485DAD1707C1}</id>
+  <name>E</name>
+  <creation-time>2025-05-09 09:13:12.223</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-09 09:13:12.223</last-modification-time>
+  <configuration><step><step-type type="export"></step-type><threshold><batch-size>1</batch-size></threshold><partition>{6E43C442-C598-4636-B5B7-E4D49756BAD3}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{10D72B71-2C1A-42D0-AB66-758568EE7122}</id>
+  <name>DS</name>
+  <creation-time>2025-05-11 08:47:29.730</creation-time>
+  <version>1</version>
+  <last-modification-time>2025-05-11 08:47:29.730</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>apply-pending</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{6E43C442-C598-4636-B5B7-E4D49756BAD3}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>8401</capabilities-mask>
+ <export-type>2</export-type>
+ <dn-construction><attribute>PERNR</attribute></dn-construction>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+</saved-ma-configuration>

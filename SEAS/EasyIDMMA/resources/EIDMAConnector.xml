@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Id>9a4ef9a5-afac-48bc-a7cd-77f42e8cc4bb</Id>
+    <Name>EIDMA</Name>
+    <Created>0001-01-01T00:00:00</Created>
+    <Description>Konektor pro EasyIDM portál</Description>
+    <Schema>
+        <AnchorAttribute>idmObjectId</AnchorAttribute>
+        <ObjectTypes>
+            <ObjectType name="Identity">
+                <Attributes>
+                    <Attribute dataType="string">accountStatusToAD</Attribute>
+                    <Attribute dataType="string">address</Attribute>
+                    <Attribute dataType="string">city</Attribute>
+                    <Attribute dataType="string">commonName</Attribute>
+                    <Attribute dataType="string">computedAccountStatus</Attribute>
+                    <Attribute dataType="string">created</Attribute>
+                    <Attribute dataType="bool">createMail</Attribute>
+                    <Attribute dataType="string">department</Attribute>
+                    <Attribute dataType="string">departmentCode</Attribute>
+                    <Attribute dataType="string">description</Attribute>
+                    <Attribute dataType="string">detachement</Attribute>
+                    <Attribute dataType="string">detachementCode</Attribute>
+                    <Attribute dataType="string">division</Attribute>
+                    <Attribute dataType="string">divisionCode</Attribute>
+                    <Attribute dataType="string">dn</Attribute>
+                    <Attribute dataType="string">email</Attribute>
+                    <Attribute dataType="string">emailAlias</Attribute>
+                    <Attribute dataType="string">employeeId</Attribute>
+                    <Attribute dataType="string">employeeType</Attribute>
+                    <Attribute dataType="string">fileNodeID</Attribute>
+                    <Attribute dataType="string">firstName</Attribute>
+                    <Attribute dataType="string">floor</Attribute>
+                    <Attribute dataType="bool">hasCalculateItemsIdentity</Attribute>
+                    <Attribute dataType="string">houseNumber</Attribute>
+                    <Attribute dataType="string">idmObjectId</Attribute>
+                    <Attribute dataType="string">inFrom</Attribute>
+                    <Attribute dataType="bool">isActive</Attribute>
+                    <Attribute dataType="bool">isDirector</Attribute>
+                    <Attribute dataType="bool">isManager</Attribute>
+                    <Attribute dataType="string">jobTitle</Attribute>
+                    <Attribute dataType="string">lastName</Attribute>
+                    <Attribute dataType="string">manager</Attribute>
+                    <Attribute dataType="string">managerCode</Attribute>
+                    <Attribute dataType="reference">managerObjectId</Attribute>
+                    <Attribute dataType="string">mobilePhone</Attribute>
+                    <Attribute dataType="string">name</Attribute>
+                    <Attribute dataType="string">office</Attribute>
+                    <Attribute dataType="string">officePhone</Attribute>
+                    <Attribute dataType="string">organizationCode</Attribute>
+                    <Attribute dataType="string">outFrom</Attribute>
+                    <Attribute dataType="string">pernr</Attribute>
+                    <Attribute dataType="string">pernr66</Attribute>
+                    <Attribute dataType="string">pernr97</Attribute>
+                    <Attribute dataType="bool">placedAd</Attribute>
+                    <Attribute dataType="string">postalCode</Attribute>
+                    <Attribute dataType="string">pswdNotification</Attribute>
+                    <Attribute dataType="string">room</Attribute>
+                    <Attribute dataType="string">techName</Attribute>
+                    <Attribute dataType="string">titleAfter</Attribute>
+                    <Attribute dataType="string">titleBefore</Attribute>
+                    <Attribute dataType="string">userArchiveDate</Attribute>
+                    <Attribute dataType="string">userEndDate</Attribute>
+                    <Attribute dataType="string">userPrincipalName</Attribute>
+                    <Attribute dataType="string">validFrom</Attribute>
+                    <Attribute dataType="string">validTo</Attribute>
+                    <Attribute dataType="string">password</Attribute>
+                    <Attribute dataType="int">accountStatus</Attribute>
+                    <Attribute dataType="string">domain</Attribute>
+                    <Attribute dataType="string">organization</Attribute>
+                    <Attribute dataType="int">iDMObjectTypeId</Attribute>
+                </Attributes>
+            </ObjectType>
+            <ObjectType name="ApplicationRole">
+                <Attributes>
+                    <Attribute dataType="string">application</Attribute>
+                    <Attribute dataType="string">applicationCode</Attribute>
+                    <Attribute dataType="string">created</Attribute>
+                    <Attribute dataType="string">description</Attribute>
+                    <Attribute dataType="string">dn</Attribute>
+                    <Attribute dataType="string">externalRoleCode</Attribute>
+                    <Attribute dataType="string">groupCalculatedStatus</Attribute>
+                    <Attribute dataType="bool">isActive</Attribute>
+                    <Attribute dataType="string">name</Attribute>
+                    <Attribute dataType="reference" isMultivalued="true">owners</Attribute>
+                    <Attribute dataType="string">techName</Attribute>
+                    <Attribute dataType="string">validFrom</Attribute>
+                    <Attribute dataType="string">validTo</Attribute>
+                    <Attribute dataType="string">groupDomain</Attribute>
+                    <Attribute dataType="int">groupStatus</Attribute>
+                    <Attribute dataType="string">groupType</Attribute>
+                    <Attribute dataType="int">iDMObjectTypeId</Attribute>
+                </Attributes>
+            </ObjectType>
+            <ObjectType name="BusinessRole">
+                <Attributes>
+                    <Attribute dataType="string">created</Attribute>
+                    <Attribute dataType="string">description</Attribute>
+                    <Attribute dataType="string">dn</Attribute>
+                    <Attribute dataType="string">groupCalculatedStatus</Attribute>
+                    <Attribute dataType="string">idmObjectId</Attribute>
+                    <Attribute dataType="bool">isActive</Attribute>
+                    <Attribute dataType="string">name</Attribute>
+                    <Attribute dataType="reference" isMultivalued="true">owners</Attribute>
+                    <Attribute dataType="string">techName</Attribute>
+                    <Attribute dataType="string">validFrom</Attribute>
+                    <Attribute dataType="string">validTo</Attribute>
+                    <Attribute dataType="int">castType</Attribute>
+                    <Attribute dataType="int">iDMObjectTypeId</Attribute>
+                    <Attribute dataType="int">groupStatus</Attribute>
+                </Attributes>
+            </ObjectType>
+            <ObjectType name="Resource">
+                <Attributes>
+                    <Attribute dataType="string">applicationCodeAP</Attribute>
+                    <Attribute dataType="string">created</Attribute>
+                    <Attribute dataType="string">description</Attribute>
+                    <Attribute dataType="string">dn</Attribute>
+                    <Attribute dataType="string">idmObjectId</Attribute>
+                    <Attribute dataType="bool">isActive</Attribute>
+                    <Attribute dataType="string">name</Attribute>
+                    <Attribute dataType="reference" isMultivalued="true">owners</Attribute>
+                    <Attribute dataType="string">resourceCalculatedStatus</Attribute>
+                    <Attribute dataType="string">techName</Attribute>
+                    <Attribute dataType="string">validFrom</Attribute>
+                    <Attribute dataType="string">validTo</Attribute>
+                    <Attribute dataType="int">iDMObjectTypeId</Attribute>
+                    <Attribute dataType="int">resourceStatus</Attribute>
+                </Attributes>
+            </ObjectType>
+            <ObjectType name="Cast">
+                <Attributes>
+                    <Attribute dataType="string">idmObjectId</Attribute>
+                    <Attribute dataType="string">created</Attribute>
+                    <Attribute dataType="string">modified</Attribute>
+                    <Attribute dataType="reference">roleId</Attribute>
+                    <Attribute dataType="reference">identityId</Attribute>
+                    <Attribute dataType="string">validFrom</Attribute>
+                    <Attribute dataType="string">validTo</Attribute>
+                    <Attribute dataType="string">castType</Attribute>
+                </Attributes>
+            </ObjectType>
+        </ObjectTypes>
+    </Schema>
+    <Settings>
+        <Settings>
+            <AsyncExport>false</AsyncExport>
+            <TypeMappings>
+                <TypeMapping idmObjectType="3">Identity</TypeMapping>
+                <TypeMapping idmObjectType="6">ApplicationRole</TypeMapping>
+                <TypeMapping idmObjectType="5">BusinessRole</TypeMapping>
+                <TypeMapping idmObjectType="7">Resource</TypeMapping>
+                <TypeMapping idmObjectType="14">Cast</TypeMapping>
+            </TypeMappings>
+        </Settings>
+    </Settings>
+</Connector>

@@ -13,17 +13,19 @@ namespace OracleECMA2MA
         public string[] AnchorColumns   { get; }   // vsechny sloupce tvorici anchor/DN (obvykle jen 1, viz Komise)
         public bool     SupportDelta    { get; }   // true = delta import pres IDM_CHANGES
         public string   DeltaObjectType { get; }   // hodnota IDM_CHANGES.OBJECT_TYPE ("User"/"Group")
-        public string[] DistinctColumns { get; }   // pokud vyplneno: import cte "SELECT DISTINCT <cols>"
-                                                    // misto "SELECT *" (deduplikace radku view na tyto sloupce)
+        public string[] DistinctColumns         { get; }   // pokud vyplneno: import cte "SELECT DISTINCT <cols>"
+                                                            // misto "SELECT *" (deduplikace radku view na tyto sloupce)
+        public bool     IncludeAnchorAsAttribute { get; }   // true = anchor sloupec se prida i jako bezny atribut
 
         public ObjectTypeConfig(
             string   name,
             string   view,
             string   anchorColumn,
-            bool     supportDelta    = false,
-            string   deltaObjectType = null,
-            string[] distinctColumns = null,
-            string[] anchorColumns   = null)
+            bool     supportDelta             = false,
+            string   deltaObjectType          = null,
+            string[] distinctColumns          = null,
+            string[] anchorColumns            = null,
+            bool     includeAnchorAsAttribute = false)
         {
             Name            = name;
             View            = view;
@@ -42,6 +44,7 @@ namespace OracleECMA2MA
             {
                 AnchorColumns = new[] { AnchorColumn };
             }
+            IncludeAnchorAsAttribute = includeAnchorAsAttribute;
         }
 
         /// <summary>Rozlozi View na owner a table (pr. "IDM.V_IDM_ZAM" → owner="IDM", table="V_IDM_ZAM").</summary>
@@ -89,9 +92,10 @@ namespace OracleECMA2MA
 
             // IN-Magion-BaseUnit: organizacni jednotky
             new ObjectTypeConfig(
-                name:         "BaseUnit",
-                view:         "IDM.V_IDM_UNIT",
-                anchorColumn: "PK_UTVAR"),
+                name:                    "BaseUnit",
+                view:                    "IDM.V_IDM_UNIT",
+                anchorColumn:            "PK_UTVAR",
+                includeAnchorAsAttribute: true),
 
             // IN-Magion-PPVRelation: PPV pro Origin
             new ObjectTypeConfig(

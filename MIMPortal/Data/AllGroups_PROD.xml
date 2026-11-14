@@ -1,0 +1,146 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="ObjectID">urn:uuid:2f68d247-bd00-4c8e-80ab-d97373f3283e</S>
+      <S N="AccountName">BR_313_60000</S>
+      <S N="CreatedTime">18.5.2021 21:53:12</S>
+      <S N="Creator">urn:uuid:7fb2b853-24f0-4498-9534-4e10589723c4</S>
+      <S N="DisplayedOwner">urn:uuid:b92380b4-e5b8-4d32-84ea-43eb01c9ce33</S>
+      <S N="DisplayName"> dohoda o brigádnickej práci štude_Technická podpora a služby operatívneho leasingu</S>
+      <S N="Domain">CSOBL</S>
+      <S N="DomainConfiguration">urn:uuid:1aff46f4-5511-452d-bcbd-7f7b34b0fe14</S>
+      <S N="Filter">&lt;Filter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Dialect="http://schemas.microsoft.com/2006/11/XPathFilterDialect" xmlns="http://schemas.xmlsoap.org/ws/2004/09/enumeration"&gt;/Person[(ObjectID = /Set[ObjectID = '88e2f372-8790-41c0-94a2-07474f6abfac']/ComputedMember) and (csoblJobTitleCode = '60000') and (csoblDepartmentCode = '313')]&lt;/Filter&gt;</S>
+      <S N="MembershipAddWorkflow">None</S>
+      <S N="MembershipLocked">True</S>
+      <S N="MVObjectID">{2D6BC993-24B8-EB11-B824-005056AF41F6}</S>
+      <S N="ObjectType">Group</S>
+      <Obj N="Owner" RefId="1">
+        <TN RefId="1">
+          <T>System.String[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>urn:uuid:b92380b4-e5b8-4d32-84ea-43eb01c9ce33</S>
+        </LST>
+      </Obj>
+      <S N="Scope">Universal</S>
+      <S N="Temporal">False</S>
+      <S N="Type">Security</S>
+      <S N="msidmDeferredEvaluation">False</S>
+      <S N="msidmPamEnabled">False</S>
+      <S N="msidmPamUsesSIDHistory">False</S>
+      <S N="msidmPamPrivOnlyGroup">False</S>
+      <Obj N="csoblAppRoles" RefId="2">
+        <TNRef RefId="1" />
+        <LST>
+          <S>urn:uuid:2475fdda-5433-4cd8-85ab-74fd553c6d68</S>
+          <S>urn:uuid:7a44825b-ab20-4dc2-b2c7-36ddc33cca3d</S>
+          <S>urn:uuid:1daafe2b-c2d7-446f-944e-d4e62ad9e6fd</S>
+          <S>urn:uuid:9d31935f-f094-472b-9bcd-a763a96531a3</S>
+          <S>urn:uuid:f784140b-8599-4275-bd16-879e1019cf81</S>
+          <S>urn:uuid:40321928-a6e4-4b31-a671-12e36222330d</S>
+          <S>urn:uuid:41d15303-e8fb-47dd-bed9-5d902248230d</S>
+          <S>urn:uuid:fb3c53ac-5c18-452e-a3f6-aeb2042b303c</S>
+          <S>urn:uuid:5ae42f73-afe3-4144-8bc6-0f7fe2921a54</S>
+          <S>urn:uuid:437b9a29-39be-485f-bd56-f889d8e2b88f</S>
+          <S>urn:uuid:ccdb64f8-7bdf-4d6c-9041-30afc8154d2e</S>
+          <S>urn:uuid:280de9db-1dbe-4ea0-98bb-c0eb2fcb43ce</S>
+        </LST>
+      </Obj>
+      <S N="csoblIsAppRole">False</S>
+      <S N="csoblIsBusRole">True</S>
+      <S N="csoblIsValid">False</S>
+      <S N="csoblValidFrom">16.2.2021 0:00:00</S>
+      <S N="csoblPlacedAD">False</S>
+      <Obj N="csoblComputedMember" RefId="3">
+        <TNRef RefId="1" />
+        <LST>
+          <S>urn:uuid:37a477ad-ed7c-4dba-bf4d-bf0285a8247b</S>
+          <S>urn:uuid:e70d0573-0e41-4375-8de9-6492b289e9ef</S>
+        </LST>
+      </Obj>
+      <S N="csoblRoleApprover1">False</S>
+      <S N="csoblGroupType">bus</S>
+      <S N="csoblIsGroup">False</S>
+      <S N="csoblvalidStatus">1</S>
+      <S N="csoblRoleApprover2">False</S>
+    </MS>
+  </Obj>
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="ObjectID">urn:uuid:2f68d247-bd00-4c8e-80ab-d97373f3283e</S>
+      <S N="AccountName">BR_313_60000</S>
+      <S N="CreatedTime">18.5.2021 21:53:12</S>
+      <S N="Creator">urn:uuid:7fb2b853-24f0-4498-9534-4e10589723c4</S>
+      <S N="DisplayedOwner">urn:uuid:b92380b4-e5b8-4d32-84ea-43eb01c9ce33</S>
+      <S N="DisplayName"> dohoda o brigádnickej práci štude_Technická podpora a služby operatívneho leasingu</S>
+      <S N="Domain">CSOBL</S>
+      <S N="DomainConfiguration">urn:uuid:1aff46f4-5511-452d-bcbd-7f7b34b0fe14</S>
+      <S N="Filter">&lt;Filter xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Dialect="http://schemas.microsoft.com/2006/11/XPathFilterDialect" xmlns="http://schemas.xmlsoap.org/ws/2004/09/enumeration"&gt;/Person[(ObjectID = /Set[ObjectID = '88e2f372-8790-41c0-94a2-07474f6abfac']/ComputedMember) and (csoblJobTitleCode = '60000') and (csoblDepartmentCode = '313')]&lt;/Filter&gt;</S>
+      <S N="MembershipAddWorkflow">None</S>
+      <S N="MembershipLocked">True</S>
+      <S N="MVObjectID">{2D6BC993-24B8-EB11-B824-005056AF41F6}</S>
+      <S N="ObjectType">Group</S>
+      <Obj N="Owner" RefId="1">
+        <TN RefId="1">
+          <T>System.String[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>urn:uuid:b92380b4-e5b8-4d32-84ea-43eb01c9ce33</S>
+        </LST>
+      </Obj>
+      <S N="Scope">Universal</S>
+      <S N="Temporal">False</S>
+      <S N="Type">Security</S>
+      <S N="msidmDeferredEvaluation">False</S>
+      <S N="msidmPamEnabled">False</S>
+      <S N="msidmPamUsesSIDHistory">False</S>
+      <S N="msidmPamPrivOnlyGroup">False</S>
+      <Obj N="csoblAppRoles" RefId="2">
+        <TNRef RefId="1" />
+        <LST>
+          <S>urn:uuid:2475fdda-5433-4cd8-85ab-74fd553c6d68</S>
+          <S>urn:uuid:7a44825b-ab20-4dc2-b2c7-36ddc33cca3d</S>
+          <S>urn:uuid:1daafe2b-c2d7-446f-944e-d4e62ad9e6fd</S>
+          <S>urn:uuid:9d31935f-f094-472b-9bcd-a763a96531a3</S>
+          <S>urn:uuid:f784140b-8599-4275-bd16-879e1019cf81</S>
+          <S>urn:uuid:40321928-a6e4-4b31-a671-12e36222330d</S>
+          <S>urn:uuid:41d15303-e8fb-47dd-bed9-5d902248230d</S>
+          <S>urn:uuid:fb3c53ac-5c18-452e-a3f6-aeb2042b303c</S>
+          <S>urn:uuid:5ae42f73-afe3-4144-8bc6-0f7fe2921a54</S>
+          <S>urn:uuid:437b9a29-39be-485f-bd56-f889d8e2b88f</S>
+          <S>urn:uuid:ccdb64f8-7bdf-4d6c-9041-30afc8154d2e</S>
+          <S>urn:uuid:280de9db-1dbe-4ea0-98bb-c0eb2fcb43ce</S>
+        </LST>
+      </Obj>
+      <S N="csoblIsAppRole">False</S>
+      <S N="csoblIsBusRole">True</S>
+      <S N="csoblIsValid">False</S>
+      <S N="csoblValidFrom">16.2.2021 0:00:00</S>
+      <S N="csoblPlacedAD">False</S>
+      <Obj N="csoblComputedMember" RefId="3">
+        <TNRef RefId="1" />
+        <LST>
+          <S>urn:uuid:37a477ad-ed7c-4dba-bf4d-bf0285a8247b</S>
+          <S>urn:uuid:e70d0573-0e41-4375-8de9-6492b289e9ef</S>
+        </LST>
+      </Obj>
+      <S N="csoblRoleApprover1">False</S>
+      <S N="csoblGroupType">bus</S>
+      <S N="csoblIsGroup">False</S>
+      <S N="csoblvalidStatus">1</S>
+      <S N="csoblRoleApprover2">False</S>
+    </MS>
+  </Obj>

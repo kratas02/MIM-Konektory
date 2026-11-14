@@ -1,0 +1,8 @@
+﻿Objekty v PROD se stejným AccountName
+PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)
+TEST: Test (., 2026-10-09T21:33:07Z)
+Uživatelé se párují postupně podle EmployeeID, AccountName a DisplayName. Napojený objekt se znovu nenapojuje. Skupiny se párují podle AccountName.
+U členství se hodnoty csoblComputedMember těchto objektů sjednocují.
+Počet: 0
+
+Typ	AccountName	DisplayName	EmployeeID	EmployeeType	csoblFinalPropetyStatus	csoblvalidStatus	csoblGroupType

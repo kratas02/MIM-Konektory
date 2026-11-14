@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Zsdis.Sync</RootNamespace>
+    <AssemblyName>ZsdisRulesExtension</AssemblyName>
+    <LangVersion>7.3</LangVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.MetadirectoryServicesEx">
+      <HintPath>..\..\..\MIMPortal\FimServiceDbMA\FimServiceDbMA\lib\Microsoft.MetadirectoryServicesEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+  </ItemGroup>
+</Project>

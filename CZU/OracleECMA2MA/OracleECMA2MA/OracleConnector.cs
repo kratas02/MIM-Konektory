@@ -18,10 +18,16 @@ namespace OracleECMA2MA
         IMAExtensible2CallImport
     {
         // ── Nazvy konfiguracnich parametru ────────────────────────────────────────
-        private const string CP_DATASOURCE  = "DataSource";
-        private const string CP_USER        = "Username";
-        private const string CP_PASSWORD    = "Password";
-        private const string CP_DELTA_TABLE = "DeltaTable";
+        private const string CP_DATASOURCE      = "DataSource";
+        private const string CP_USER            = "Username";
+        private const string CP_PASSWORD        = "Password";
+        private const string CP_DELTA_TABLE     = "DeltaTable";
+        private const string CP_VALIDITY_MONTHS = "ValidityMonths";
+
+        // Kolik mesicu zpet se jeste nacita uzivatel s vyplnenym VYSTUP (konec platnosti).
+        // 0 = jen bez VYSTUP, nebo s VYSTUP dnes a pozdeji. Vychozi 18.
+        private const int DefaultValidityMonths = 18;
+        private const int MaxValidityMonths     = 1200;
 
         // Konfigurace PPV – pouziva se pro krizove reference z Person (PRIMARNI_PPV, AKTIVNI_PPV)
         private static readonly ObjectTypeConfig PpvConfig = MagionConfig.FindByName("PPV");
@@ -30,6 +36,7 @@ namespace OracleECMA2MA
         private static readonly ObjectTypeConfig BaseUnitConfig = MagionConfig.FindByName("BaseUnit");
 
         // Konfigurace Person – pouziva se pro referenci "member" z Komise/PracMista
+        // a pro DN atributu MANAGER (sloupec UIC managera z IDM.V_IDM_ZAM)
         private static readonly ObjectTypeConfig PersonConfig = MagionConfig.FindByName("Person");
 
         // Magion Oracle - TNS descriptor testovaci prostredi
@@ -116,6 +123,12 @@ namespace OracleECMA2MA
             {
                 list.Add(ConfigParameterDefinition.CreateStringParameter(
                     CP_DELTA_TABLE, "", MagionConfig.DefaultDeltaTable));
+                list.Add(ConfigParameterDefinition.CreateDividerParameter());
+                list.Add(ConfigParameterDefinition.CreateLabelParameter(
+                    "ValidityMonths: uzivatele podle VYSTUP primarniho PPV, PPV podle vlastniho VYSTUP. " +
+                    "Bez VYSTUP, nebo s VYSTUP nejdrive dnes minus tato hodnota."));
+                list.Add(ConfigParameterDefinition.CreateStringParameter(
+                    CP_VALIDITY_MONTHS, "^[0-9]{1,4}$", DefaultValidityMonths.ToString()));
             }
 
             return list;
@@ -123,7 +136,25 @@ namespace OracleECMA2MA
 
         public ParameterValidationResult ValidateConfigParameters(
             KeyedCollection<string, ConfigParameter> configParameters,
-            ConfigParameterPage page) => new ParameterValidationResult();
+            ConfigParameterPage page)
+        {
+            if (page == ConfigParameterPage.Global
+                && configParameters != null
+                && configParameters.Contains(CP_VALIDITY_MONTHS))
+            {
+                string raw = configParameters[CP_VALIDITY_MONTHS].Value;
+                int months;
+                if (!int.TryParse(raw, out months) || months < 0 || months > MaxValidityMonths)
+                {
+                    return new ParameterValidationResult(
+                        ParameterValidationResultCode.Failure,
+                        "ValidityMonths musi byt cele cislo od 0 do " + MaxValidityMonths + ".",
+                        null);
+                }
+            }
+
+            return new ParameterValidationResult();
+        }
 
         // ── Schema ────────────────────────────────────────────────────────────────
 
@@ -181,6 +212,14 @@ namespace OracleECMA2MA
                                                      && dataScale == 0;
                                 var attrType = isWholeNumber ? AttributeType.Integer : AttributeType.String;
 
+                                // Person.MANAGER je ve view IDM.V_IDM_ZAM UIC nadrizeneho – v MIM
+                                // ho vedeme jako Reference na Person, ne jako String/Integer.
+                                if (cfg.Name == "Person" &&
+                                    col.Equals("MANAGER", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    attrType = AttributeType.Reference;
+                                }
+
                                 schemaType.Attributes.Add(
                                     SchemaAttribute.CreateSingleValuedAttribute(col, attrType));
                                 rawColumns.Add(col);
@@ -220,8 +259,15 @@ namespace OracleECMA2MA
                             AddComputedAttribute("AKTIVNI", AttributeType.String);
                         }
 
-                        // Pridej vypocitane referencni atributy pro Person – vazba na PPV a BaseUnit
-                        // (PRIMARNI_PPV, AKTIVNI_PPV, AKTIVNI, UTVAR) – viz AddPpvCrossReferences()
+                        // Pridej referencni atribut UTVAR pro PPV – vazba na BaseUnit pres STRED_KMEN_KOD
+                        if (cfg.Name == "PPV")
+                        {
+                            AddComputedAttribute("UTVAR", AttributeType.Reference);
+                        }
+
+                        // Pridej vypocitane atributy pro Person – vazba na PPV a BaseUnit
+                        // (PRIMARNI_PPV, AKTIVNI_PPV, AKTIVNI, UTVAR, VYNETI_*, ZAC, KON, NASTUP, VYSTUP).
+                        // MANAGER se bere primo ze sloupce IDM.V_IDM_ZAM (viz vyse, typ Reference).
                         // Pozn.: AKTIVNI je String ("0"/"1"), ne Boolean – nekterym verzim/implementacim
                         // ECMA2 (vc. FIM/MIM) dela Boolean atribut ve schematu problemy pri Refresh
                         // Interfaces (0x80231343/0x80231344), i kdyz neni anchor ani multivalued.
@@ -231,6 +277,13 @@ namespace OracleECMA2MA
                             AddComputedAttribute("AKTIVNI_PPV", AttributeType.Reference, multiValued: true);
                             AddComputedAttribute("AKTIVNI", AttributeType.String);
                             AddComputedAttribute("UTVAR", AttributeType.Reference);
+                            // Hodnoty z primarniho PPV (IDM.V_IDM_PPV, CISLO_PP = ZAKL_PP)
+                            AddComputedAttribute("VYNETI_OD", AttributeType.String);
+                            AddComputedAttribute("VYNETI_DO", AttributeType.String);
+                            AddComputedAttribute("ZAC", AttributeType.String);
+                            AddComputedAttribute("KON", AttributeType.String);
+                            AddComputedAttribute("NASTUP", AttributeType.String);
+                            AddComputedAttribute("VYSTUP", AttributeType.String);
                         }
 
                         // Pridej multivalued referencni atribut "member" pro distinct object types
@@ -301,13 +354,96 @@ namespace OracleECMA2MA
 
         private void OpenFullImport()
         {
-            string sql = _currentConfig.DistinctColumns != null
-                ? $"SELECT DISTINCT {string.Join(", ", _currentConfig.DistinctColumns)} FROM {_currentConfig.View}"
-                : $"SELECT * FROM {_currentConfig.View}";
+            bool bindMonths;
+            string sql = BuildFullImportSql(out bindMonths);
 
             var cmd = new OracleCommand(sql, _conn);
+            cmd.BindByName = true;
+            if (bindMonths)
+            {
+                int months = GetValidityMonths();
+                // Zaporna hodnota: ADD_MONTHS(TRUNC(SYSDATE), :months) = dnes minus N mesicu.
+                cmd.Parameters.Add("months", OracleDbType.Int32).Value = -months;
+                Log("INFO", $"OpenFullImport: ValidityMonths={months} sql={sql}");
+            }
+            else
+            {
+                Log("INFO", $"OpenFullImport: {sql}");
+            }
+
             _reader = cmd.ExecuteReader(System.Data.CommandBehavior.Default);
-            Log("INFO", $"OpenFullImport: {sql}");
+        }
+
+        /// <summary>
+        /// Person se filtruje podle VYSTUP primarniho PPV.
+        /// PPV a PPVRelation se filtruji primo podle vlastniho VYSTUP.
+        /// Ostatni object types (BaseUnit, Komise, PracMista) se nactou cele.
+        /// </summary>
+        private static bool UsesValidityFilter(string objectType)
+        {
+            return objectType.Equals("Person", StringComparison.OrdinalIgnoreCase)
+                || objectType.Equals("PPV", StringComparison.OrdinalIgnoreCase)
+                || objectType.Equals("PPVRelation", StringComparison.OrdinalIgnoreCase);
+        }
+
+        /// <summary>
+        /// VYSTUP neni vyplneny, nebo neni starsi nez :months.
+        /// V Oracle je VYSTUP datum; do connector space se uklada jako string (napr. 1/31/2013 12:00:00 AM).
+        /// Parametr :months je zaporny pocet mesicu.
+        /// </summary>
+        private static string VystupStillValid(string alias)
+        {
+            return "(" + alias + ".VYSTUP IS NULL OR " + alias +
+                   ".VYSTUP >= ADD_MONTHS(TRUNC(SYSDATE), :months))";
+        }
+
+        /// <summary>
+        /// Primarni PPV (CISLO_PP = ZAKL_PP) splnuje <see cref="VystupStillValid"/>.
+        /// </summary>
+        private static string PrimaryPpvStillValid(string personAlias)
+        {
+            return
+                "EXISTS (SELECT 1 FROM " + PpvConfig.View + " prim " +
+                "WHERE prim.UIC = " + personAlias + ".UIC " +
+                "AND prim.CISLO_PP = " + personAlias + ".ZAKL_PP " +
+                "AND " + VystupStillValid("prim") + ")";
+        }
+
+        private string BuildFullImportSql(out bool bindMonths)
+        {
+            bindMonths = false;
+
+            if (_currentConfig.DistinctColumns != null)
+            {
+                return "SELECT DISTINCT " + string.Join(", ", _currentConfig.DistinctColumns) +
+                       " FROM " + _currentConfig.View;
+            }
+
+            if (!UsesValidityFilter(_currentConfig.Name))
+                return "SELECT * FROM " + _currentConfig.View;
+
+            if (_currentConfig.Name.Equals("Person", StringComparison.OrdinalIgnoreCase))
+            {
+                if (PpvConfig == null)
+                    return "SELECT * FROM " + _currentConfig.View;
+
+                bindMonths = true;
+                return "SELECT z.* FROM " + _currentConfig.View + " z WHERE " + PrimaryPpvStillValid("z");
+            }
+
+            // PPV a PPVRelation: filtr primo na VYSTUP radku. Bez joinu zpet na stejne view,
+            // ktere by se jinak muselo cist cele a u kazdeho radku znovu.
+            bindMonths = true;
+            return "SELECT p.* FROM " + _currentConfig.View + " p WHERE " + VystupStillValid("p");
+        }
+
+        private int GetValidityMonths()
+        {
+            string raw = GetParam(_config, CP_VALIDITY_MONTHS, DefaultValidityMonths.ToString());
+            int months;
+            if (!int.TryParse(raw, out months) || months < 0 || months > MaxValidityMonths)
+                months = DefaultValidityMonths;
+            return months;
         }
 
         private void OpenDeltaImport(KeyedCollection<string, ConfigParameter> cfg)
@@ -333,9 +469,9 @@ namespace OracleECMA2MA
                     {
                         _deltaItems.Add(new DeltaItem
                         {
-                            Uic        = rdr.IsDBNull(0) ? null : rdr.GetString(0),
-                            ActionType = rdr.IsDBNull(1) ? "modify" : rdr.GetString(1).ToLower(),
-                            ObjectDn   = rdr.IsDBNull(2) ? null : rdr.GetString(2),
+                            Uic        = rdr.IsDBNull(0) ? null : TrimLoaded(rdr.GetString(0)),
+                            ActionType = rdr.IsDBNull(1) ? "modify" : (TrimLoaded(rdr.GetString(1)) ?? "modify").ToLower(),
+                            ObjectDn   = rdr.IsDBNull(2) ? null : TrimLoaded(rdr.GetString(2)),
                         });
                     }
                 }
@@ -376,17 +512,19 @@ namespace OracleECMA2MA
 
                 // Anchor muze byt slozeny z vice sloupcu (napr. Komise: RK_ID + RK_KOD) – hodnoty
                 // jednotlivych anchor sloupcu se sbiraji zvlast a DN se sklada az po nacteni radku.
-                var    anchorValues = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-                string vystupValue  = null;
-                string zaklPpValue  = null;
-                bool   aktivniAdded = false;
+                var    anchorValues  = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+                string vystupValue   = null;
+                string zaklPpValue   = null;
+                string stredKmenKod  = null;
+                string managerValue  = null;
+                bool   aktivniAdded  = false;
 
                 for (int i = 0; i < _reader.FieldCount; i++)
                 {
                     if (_reader.IsDBNull(i)) continue;
                     string col   = _reader.GetName(i).ToUpper();
-                    string value = _reader.GetValue(i).ToString();
-                    if (string.IsNullOrWhiteSpace(value)) continue;
+                    string value = TrimLoaded(_reader.GetValue(i));
+                    if (value == null) continue;
 
                     bool isAnchorCol = false;
                     foreach (string ac in anchorColumns)
@@ -403,19 +541,26 @@ namespace OracleECMA2MA
                         anchorValues[col] = value;
 
                         // U slozeneho anchoru (napr. Komise: RK_ID + RK_KOD) se jednotlive
-                        // slozky ponechaji i jako bezne atributy – u jednoduseho anchoru (1 sloupec,
-                        // typicky primo UIC/PK_UTVAR/OSPOM apod.) se chovani nemeni.
-                        if (anchorColumns.Length > 1)
+                        // slozky ponechaji i jako bezne atributy.
+                        // U jednoduseho anchoru se atribut prida jen pokud je IncludeAnchorAsAttribute=true
+                        // (napr. BaseUnit: PK_UTVAR pouzit jako DN i jako regularni atribut).
+                        if (anchorColumns.Length > 1 || _currentConfig.IncludeAnchorAsAttribute)
                             entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd(col, value));
+                    }
+                    else if (objType == "Person" && col.Equals("MANAGER", StringComparison.OrdinalIgnoreCase))
+                    {
+                        // UIC nadrizeneho z IDM.V_IDM_ZAM – DN se prida az po nacteni radku
+                        managerValue = value;
                     }
                     else
                     {
                         entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd(col, value));
                     }
 
-                    if (col.Equals("VYSTUP",  StringComparison.OrdinalIgnoreCase)) vystupValue  = value;
-                    if (col.Equals("ZAKL_PP", StringComparison.OrdinalIgnoreCase)) zaklPpValue  = value;
-                    if (col.Equals("AKTIVNI", StringComparison.OrdinalIgnoreCase)) aktivniAdded = true;
+                    if (col.Equals("VYSTUP",        StringComparison.OrdinalIgnoreCase)) vystupValue  = value;
+                    if (col.Equals("ZAKL_PP",       StringComparison.OrdinalIgnoreCase)) zaklPpValue  = value;
+                    if (col.Equals("AKTIVNI",       StringComparison.OrdinalIgnoreCase)) aktivniAdded = true;
+                    if (col.Equals("STRED_KMEN_KOD", StringComparison.OrdinalIgnoreCase)) stredKmenKod = value;
                 }
 
                 // anchorSet jen pokud maji hodnotu VSECHNY sloupce anchoru
@@ -442,10 +587,18 @@ namespace OracleECMA2MA
                         "AKTIVNI", ColumnTransform.ComputeAktivni(vystupValue)));
                 }
 
-                // Person: dohledej PRIMARNI_PPV / AKTIVNI_PPV / AKTIVNI (boolean) z V_IDM_PPV
+                // Person: dohledej PRIMARNI_PPV / AKTIVNI_PPV / AKTIVNI; MANAGER ze sloupce V_IDM_ZAM
                 if (anchorSet && objType == "Person")
                 {
                     AddPpvCrossReferences(entry, anchorValue, zaklPpValue);
+                    AddManagerFromView(entry, managerValue);
+                }
+
+                // PPV: vypocitany referencni atribut UTVAR -> BaseUnit (DN: CN=<STRED_KMEN_KOD>,CN=BaseUnit)
+                if (anchorSet && objType == "PPV" && !string.IsNullOrWhiteSpace(stredKmenKod))
+                {
+                    entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd(
+                        "UTVAR", $"CN={stredKmenKod},CN=BaseUnit"));
                 }
 
                 // Distinct object types (Komise, PracMista): dohledej clenstvi
@@ -528,19 +681,38 @@ namespace OracleECMA2MA
 
         /// <summary>
         /// Dotaz na view pro dany UIC a vrati seznam Replace CSEntryChange.
-        /// Pro Person: WHERE UIC = :uic
-        /// Pro PPV:    WHERE UIC = :uic  (vsechna PPV daneho cloveka)
+        /// Pro Person: WHERE UIC = :uic a primarni PPV splnuje podminku platnosti.
+        /// Pro PPV:    jen radky daneho cloveka, jejichz vlastni VYSTUP splnuje podminku.
+        /// Zaznam mimo okno se v delta importu preskoci; z connector space zmizi pri Full Import.
         /// </summary>
         private List<CSEntryChange> FetchDeltaRecords(string uic, string anchor, string objType)
         {
             var result   = new List<CSEntryChange>();
             string view  = _currentConfig.View;
+            bool isPerson = objType.Equals("Person", StringComparison.OrdinalIgnoreCase);
+            bool filter   = UsesValidityFilter(objType) && (!isPerson || PpvConfig != null);
 
             try
             {
-                var cmd = new OracleCommand(
-                    $"SELECT * FROM {view} WHERE UIC = :uic", _conn);
+                string sql;
+                if (!filter)
+                {
+                    sql = $"SELECT * FROM {view} WHERE UIC = :uic";
+                }
+                else if (isPerson)
+                {
+                    sql = $"SELECT * FROM {view} z WHERE z.UIC = :uic AND {PrimaryPpvStillValid("z")}";
+                }
+                else
+                {
+                    sql = $"SELECT * FROM {view} p WHERE p.UIC = :uic AND {VystupStillValid("p")}";
+                }
+
+                var cmd = new OracleCommand(sql, _conn);
+                cmd.BindByName = true;
                 cmd.Parameters.Add("uic", OracleDbType.Varchar2).Value = uic;
+                if (filter)
+                    cmd.Parameters.Add("months", OracleDbType.Int32).Value = -GetValidityMonths();
 
                 using (var rdr = cmd.ExecuteReader())
                 {
@@ -553,19 +725,28 @@ namespace OracleECMA2MA
                         bool   anchorSet    = false;
                         string vystupValue  = null;
                         string zaklPpValue  = null;
+                        string stredKmenKod = null;
+                        string managerValue = null;
                         bool   aktivniAdded = false;
 
                         for (int i = 0; i < rdr.FieldCount; i++)
                         {
                             if (rdr.IsDBNull(i)) continue;
                             string col   = rdr.GetName(i).ToUpper();
-                            string value = rdr.GetValue(i).ToString();
-                            if (string.IsNullOrWhiteSpace(value)) continue;
+                            string value = TrimLoaded(rdr.GetValue(i));
+                            if (value == null) continue;
 
                             if (col.Equals(anchor, StringComparison.OrdinalIgnoreCase))
                             {
                                 entry.DN  = ToDN(value);
                                 anchorSet = true;
+                                // Prida anchor i jako bezny atribut pokud je IncludeAnchorAsAttribute=true
+                                if (_currentConfig.IncludeAnchorAsAttribute)
+                                    entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd(col, value));
+                            }
+                            else if (objType == "Person" && col.Equals("MANAGER", StringComparison.OrdinalIgnoreCase))
+                            {
+                                managerValue = value;
                             }
                             else
                             {
@@ -573,9 +754,10 @@ namespace OracleECMA2MA
                                     AttributeChange.CreateAttributeAdd(col, value));
                             }
 
-                            if (col.Equals("VYSTUP",  StringComparison.OrdinalIgnoreCase)) vystupValue  = value;
-                            if (col.Equals("ZAKL_PP", StringComparison.OrdinalIgnoreCase)) zaklPpValue  = value;
-                            if (col.Equals("AKTIVNI", StringComparison.OrdinalIgnoreCase)) aktivniAdded = true;
+                            if (col.Equals("VYSTUP",         StringComparison.OrdinalIgnoreCase)) vystupValue  = value;
+                            if (col.Equals("ZAKL_PP",        StringComparison.OrdinalIgnoreCase)) zaklPpValue  = value;
+                            if (col.Equals("AKTIVNI",        StringComparison.OrdinalIgnoreCase)) aktivniAdded = true;
+                            if (col.Equals("STRED_KMEN_KOD", StringComparison.OrdinalIgnoreCase)) stredKmenKod = value;
                         }
 
                         // Pridej vypocitany AKTIVNI – jen pokud neni primo ve view
@@ -585,10 +767,18 @@ namespace OracleECMA2MA
                                 "AKTIVNI", ColumnTransform.ComputeAktivni(vystupValue)));
                         }
 
-                        // Person: dohledej PRIMARNI_PPV / AKTIVNI_PPV / AKTIVNI (boolean) z V_IDM_PPV
+                        // Person: dohledej PRIMARNI_PPV / AKTIVNI_PPV / AKTIVNI; MANAGER ze sloupce V_IDM_ZAM
                         if (anchorSet && objType == "Person")
                         {
                             AddPpvCrossReferences(entry, uic, zaklPpValue);
+                            AddManagerFromView(entry, managerValue);
+                        }
+
+                        // PPV: vypocitany referencni atribut UTVAR -> BaseUnit
+                        if (anchorSet && objType == "PPV" && !string.IsNullOrWhiteSpace(stredKmenKod))
+                        {
+                            entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd(
+                                "UTVAR", $"CN={stredKmenKod},CN=BaseUnit"));
                         }
 
                         if (anchorSet) result.Add(entry);
@@ -609,6 +799,7 @@ namespace OracleECMA2MA
         ///   AKTIVNI_PPV  – reference na vsechna PPV kde UIC = UIC a AKTIVNI = 1
         ///   AKTIVNI      – boolean, prevzato z AKTIVNI primarniho PPV
         ///   UTVAR        – reference na BaseUnit, kde UTVAR_ZKRATKA = STRED_KMEN_ZKRATKA primarniho PPV
+        ///   VYNETI_OD, VYNETI_DO, ZAC, KON, NASTUP, VYSTUP – sloupce primarniho PPV z IDM.V_IDM_PPV
         /// Pozn.: V_IDM_PPV ma sloupec UIC (FK na zamestnance) stejne jako V_IDM_ZAM - viz FetchDeltaRecords.
         /// Pokud sloupec v danem prostredi neexistuje, dotaz selze a chyba se pouze zaloguje – import
         /// Person zaznamu tim neni ovlivnen.
@@ -618,8 +809,8 @@ namespace OracleECMA2MA
             if (string.IsNullOrWhiteSpace(uic) || PpvConfig == null) return;
 
             string sql = string.IsNullOrWhiteSpace(zaklPp)
-                ? $"SELECT OSPOM, AKTIVNI, CISLO_PP, STRED_KMEN_ZKRATKA FROM {PpvConfig.View} WHERE UIC = :uic AND AKTIVNI = 1"
-                : $"SELECT OSPOM, AKTIVNI, CISLO_PP, STRED_KMEN_ZKRATKA FROM {PpvConfig.View} WHERE UIC = :uic AND (AKTIVNI = 1 OR CISLO_PP = :zaklpp)";
+                ? $"SELECT OSPOM, AKTIVNI, CISLO_PP, STRED_KMEN_ZKRATKA, VYNETI_OD, VYNETI_DO, VYSTUP, ZAC, KON, NASTUP FROM {PpvConfig.View} WHERE UIC = :uic AND AKTIVNI = 1"
+                : $"SELECT OSPOM, AKTIVNI, CISLO_PP, STRED_KMEN_ZKRATKA, VYNETI_OD, VYNETI_DO, VYSTUP, ZAC, KON, NASTUP FROM {PpvConfig.View} WHERE UIC = :uic AND (AKTIVNI = 1 OR CISLO_PP = :zaklpp)";
 
             try
             {
@@ -632,16 +823,22 @@ namespace OracleECMA2MA
                 bool   primarniAkt       = false;
                 bool   primarniFound     = false;
                 string primarniStredZkr  = null;
+                string primarniVynetiOd  = null;
+                string primarniVynetiDo  = null;
+                string primarniVystup    = null;
+                string primarniZac       = null;
+                string primarniKon       = null;
+                string primarniNastup    = null;
                 var    aktivniDns        = new List<object>();
 
                 using (var rdr = cmd.ExecuteReader())
                 {
                     while (rdr.Read())
                     {
-                        string ospom      = rdr.IsDBNull(0) ? null : rdr.GetValue(0).ToString();
-                        bool   aktivni    = !rdr.IsDBNull(1) && rdr.GetValue(1).ToString() == "1";
-                        string cisloPp    = rdr.IsDBNull(2) ? null : rdr.GetValue(2).ToString();
-                        string stredZkr   = rdr.IsDBNull(3) ? null : rdr.GetValue(3).ToString();
+                        string ospom      = rdr.IsDBNull(0) ? null : TrimLoaded(rdr.GetValue(0));
+                        bool   aktivni    = !rdr.IsDBNull(1) && TrimLoaded(rdr.GetValue(1)) == "1";
+                        string cisloPp    = rdr.IsDBNull(2) ? null : TrimLoaded(rdr.GetValue(2));
+                        string stredZkr   = rdr.IsDBNull(3) ? null : TrimLoaded(rdr.GetValue(3));
 
                         if (string.IsNullOrWhiteSpace(ospom)) continue;
                         string dn = $"CN={ospom},CN={PpvConfig.Name}";
@@ -655,6 +852,12 @@ namespace OracleECMA2MA
                             primarniDn       = dn;
                             primarniAkt      = aktivni;
                             primarniStredZkr = stredZkr;
+                            primarniVynetiOd = ReadReaderString(rdr, 4);
+                            primarniVynetiDo = ReadReaderString(rdr, 5);
+                            primarniVystup   = ReadReaderString(rdr, 6);
+                            primarniZac      = ReadReaderString(rdr, 7);
+                            primarniKon      = ReadReaderString(rdr, 8);
+                            primarniNastup   = ReadReaderString(rdr, 9);
                             primarniFound    = true;
                         }
                     }
@@ -668,6 +871,13 @@ namespace OracleECMA2MA
                     string utvarDn = FindBaseUnitDn(primarniStredZkr);
                     if (utvarDn != null)
                         entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd("UTVAR", utvarDn));
+
+                    AddOrReplaceAttribute(entry, "VYNETI_OD", primarniVynetiOd);
+                    AddOrReplaceAttribute(entry, "VYNETI_DO", primarniVynetiDo);
+                    AddOrReplaceAttribute(entry, "VYSTUP", primarniVystup);
+                    AddOrReplaceAttribute(entry, "ZAC", primarniZac);
+                    AddOrReplaceAttribute(entry, "KON", primarniKon);
+                    AddOrReplaceAttribute(entry, "NASTUP", primarniNastup);
                 }
 
                 if (aktivniDns.Count > 0)
@@ -677,6 +887,51 @@ namespace OracleECMA2MA
             {
                 Log("WARN", $"AddPpvCrossReferences UIC={uic} ZAKL_PP={zaklPp}: {ex.Message}");
             }
+        }
+
+        /// <summary>
+        /// Prida referencni atribut MANAGER ze sloupce IDM.V_IDM_ZAM.
+        /// Ocekavana hodnota je UIC nadrizeneho; do CS se ulozi DN "CN=&lt;UIC&gt;,CN=Person".
+        /// Pokud sloupec uz obsahuje LDAP DN (zacina "CN="), pouzije se beze zmeny.
+        /// </summary>
+        /// <summary>
+        /// Oracle CHAR sloupce doplnuji mezery. Vsechny nactene textove hodnoty se orežou;
+        /// vysledek ze samych mezer se povazuje za null.
+        /// </summary>
+        private static string TrimLoaded(object value)
+        {
+            if (value == null || value == DBNull.Value) return null;
+            string text = value.ToString();
+            if (string.IsNullOrWhiteSpace(text)) return null;
+            return text.Trim();
+        }
+
+        private static string ReadReaderString(OracleDataReader rdr, int index)
+        {
+            if (rdr.IsDBNull(index)) return null;
+            return TrimLoaded(rdr.GetValue(index));
+        }
+
+        private static void AddOrReplaceAttribute(CSEntryChange entry, string name, string value)
+        {
+            if (string.IsNullOrWhiteSpace(value)) return;
+            if (entry.AttributeChanges.Contains(name))
+                entry.AttributeChanges.Remove(name);
+            entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd(name, value));
+        }
+
+        private void AddManagerFromView(CSEntryChange entry, string managerValue)
+        {
+            if (string.IsNullOrWhiteSpace(managerValue)) return;
+            if (entry.AttributeChanges.Contains("MANAGER")) return;
+
+            string dn;
+            if (managerValue.StartsWith("CN=", StringComparison.OrdinalIgnoreCase))
+                dn = managerValue;
+            else
+                dn = $"CN={managerValue.Trim()},CN={(PersonConfig != null ? PersonConfig.Name : "Person")}";
+
+            entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd("MANAGER", dn));
         }
 
         /// <summary>
@@ -695,8 +950,9 @@ namespace OracleECMA2MA
                 cmd.Parameters.Add("zkr", OracleDbType.Varchar2).Value = utvarZkratka;
 
                 object result = cmd.ExecuteScalar();
-                if (result != null && result != DBNull.Value)
-                    return $"CN={result},CN={BaseUnitConfig.Name}";
+                string anchor = TrimLoaded(result);
+                if (anchor != null)
+                    return $"CN={anchor},CN={BaseUnitConfig.Name}";
             }
             catch (Exception ex)
             {
@@ -741,8 +997,8 @@ namespace OracleECMA2MA
                     while (rdr.Read())
                     {
                         if (rdr.IsDBNull(0)) continue;
-                        string uic = rdr.GetValue(0).ToString();
-                        if (string.IsNullOrWhiteSpace(uic)) continue;
+                        string uic = TrimLoaded(rdr.GetValue(0));
+                        if (uic == null) continue;
                         members.Add($"CN={uic},CN={PersonConfig.Name}");
                     }
                 }

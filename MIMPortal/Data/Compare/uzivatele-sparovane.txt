@@ -1,0 +1,705 @@
+﻿Spárovaní uživatelé
+PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)
+TEST: Test (., 2026-10-09T21:33:07Z)
+Uživatelé se párují postupně podle EmployeeID, AccountName a DisplayName. Napojený objekt se znovu nenapojuje. Skupiny se párují podle AccountName.
+Sloupec Podle je klíč, kterým se uživatel napojil. Každý jen jednou, v pořadí EmployeeID, AccountName, DisplayName.
+Počet: 697
+
+Podle	Typ	PROD AccountName	PROD DisplayName	PROD EmployeeID	PROD EmployeeType	PROD csoblFinalPropetyStatus	PROD csoblvalidStatus	PROD csoblGroupType	TEST AccountName	TEST DisplayName	TEST EmployeeID	TEST EmployeeType	TEST csoblFinalPropetyStatus	TEST csoblvalidStatus	TEST csoblGroupType
+EmployeeID	Person	17701009	Sedláková Andrea	17701009	zam	Užívateľ je povolený	1		birosova	Sedláková Andrea	17701009	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701010	Birošová Renáta Kurincová	17701010	zam	Užívateľ je povolený	1		17701010	Birošová Renáta Kurincová	17701010	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701063	Janičina Andrej	17701063	zam	Užívateľ je povolený	1		17701063	Janičina Andrej	17701063	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701194	Spirin Pavlo	17701194	par	Užívateľ je povolený	1		17701194	Spirin Pavlo	17701194	par	Užívateľ je povolený	1	
+EmployeeID	Person	17701287	Frický Alexander	17701287	zam	Užívateľ je povolený	1		17701287	Frický Alexander	17701287	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701297	Mikudíková Andrea	17701297	zam	Užívateľ je povolený	1		17701297	Mikudíková Andrea	17701297	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701411	Slánska Monika	17701411	zam	Užívateľ je povolený	1		17701411	Slánska Monika	17701411	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701576	Stasinková Andrea	17701576	zam	Užívateľ je povolený	1		klempova	Stasinková Andrea	17701576	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701653	Štefanigová Katarína	17701653	zam	Užívateľ je povolený	1		17701653	Štefanigová Katarína	17701653	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701705	Stoláriková Daniela	17701705	zam	Užívateľ je povolený	1		17701705	Stoláriková Daniela	17701705	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701765	Bakošová Martina	17701765	zam	Užívateľ je povolený	1		bakosova	Bakošová Martina	17701765	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17701831	Zríniová Lucia	17701831	zam	Užívateľ je zakázaný - konec PPV	0		17701831	Zríniová Lucia	17701831	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17701922	Prokop Lucia	17701922	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17701922	Prokop Lucia	17701922	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17702031	Kopáčová Dominika	17702031	par	Užívateľ je povolený	1		17702031	Kopáčová Dominika	17702031	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17702053	Češeková Lenka	17702053	zam	Užívateľ je povolený	1		17702053	Češeková Lenka	17702053	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702103	Kuchárová Mária	17702103	zam	Užívateľ je povolený	1		17702103	Kuchárová Mária	17702103	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702107	Desaková Martina	17702107	zam	Užívateľ je povolený	1		17702107	Desaková Martina	17702107	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702118	Kasanová Lucia Blaško	17702118	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702118	Kasanová Lucia Blaško	17702118	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17702164	Sádecká Jana	17702164	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702164	Sádecká Jana	17702164	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17702180	Opatová Silvia	17702180	zam	Užívateľ je povolený	1		17702180	Opatová Silvia	17702180	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702190	Sekerešová Veronika Golian	17702190	zam	Užívateľ je zakázaný - konec PPV	0		17702190	Sekerešová Veronika Golian	17702190	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17702193	Kohout Dušan	17702193	par	Užívateľ je povolený	1		17702193	Kohout Dušan	17702193	par	Užívateľ je povolený	1	
+EmployeeID	Person	17702223	Hrebiková Svetlana	17702223	zam	Užívateľ je povolený	1		17702223	Hrebiková Svetlana	17702223	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702235	Fekiačová Diana	17702235	zam	Užívateľ je povolený	1		17702235	Fekiačová Diana	17702235	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702390	Zeleňák Jozef	17702390	zam	Užívateľ je zakázaný - konec PPV	0		17702390	Zeleňák Jozef	17702390	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17702497	Kurčová Ivana	17702497	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702497	Kurčová Ivana	17702497	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17702595	Boguská Tatiana	17702595	zam	Užívateľ je zakázaný - konec PPV	0		17702595	Boguská Tatiana	17702595	zam	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17702597	Pethö Dominika	17702597	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702597	Pethö Dominika	17702597	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17702612	Kupcová Zuzana	17702612	zam	Užívateľ je povolený	1		17702612	Kupcová Zuzana	17702612	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702635	Lorencovič Renáta	17702635	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702635	Lorencovič Renáta	17702635	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17702672	Hrádek Simona	17702672	zam	Užívateľ je povolený	1		17702672	Hrádek Simona	17702672	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702725	Jánošová Nikoleta	17702725	par	Užívateľ je povolený	1		17702725	Jánošová Nikoleta	17702725	par	Užívateľ je povolený	1	
+EmployeeID	Person	17702867	Bucková Monika	17702867	zam	Užívateľ je zakázaný - konec PPV	0		17702867	Bucková Monika	17702867	zam	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17702961	Sváteková Dominika	17702961	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702961	Sváteková Dominika	17702961	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17702963	Balgová Lucia	17702963	zam	Užívateľ je povolený	1		17702963	Balgová Lucia	17702963	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17702977	Maceková Tereza	17702977	par	Užívateľ je povolený	1		17702977	Maceková Tereza	17702977	par	Užívateľ je povolený	1	
+EmployeeID	Person	17702992	Rajnícová Sandra	17702992	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702992	Rajnícová Sandra	17702992	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706000	Fáziková Dominika	17706000	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706000	Fáziková Dominika	17706000	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706018	Kloss Zuzana	17706018	zam	Užívateľ je zakázaný - konec PPV	0		17706018	Kloss Zuzana	17706018	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706218	Kučerová Mária	17706218	zam	Užívateľ je zakázaný - konec PPV	0		17706218	Kučerová Mária	17706218	zam	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706225	Majerčáková Mária	17706225	par	Užívateľ je povolený	1		17706225	Majerčáková Mária	17706225	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706258	Lavrinčíková Zuzana	17706258	par	Užívateľ je povolený	1		17706258	Lavrinčíková Zuzana	17706258	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706259	Garajová Ľubica	17706259	par	Užívateľ je povolený	1		17706259	Garajová Ľubica	17706259	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706260	Dobiaš Martin	17706260	par	Užívateľ je povolený	1		17706260	Dobiaš Martin	17706260	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706320	Sasaráková Lenka	17706320	zam	Užívateľ je povolený	1		17706320	Sasaráková Lenka	17706320	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706387	Koperdák Martin	17706387	zam	Užívateľ je zakázaný - konec PPV	0		17706387	Koperdák Martin	17706387	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706389	Gürtlerová Zuzana	17706389	par	Užívateľ je povolený	1		17706389	Gürtlerová Zuzana	17706389	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706400	Faklová Andrea	17706400	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706400	Faklová Andrea	17706400	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706403	Gregušová Daniela	17706403	zam	Užívateľ je povolený	1		17706403	Gregušová Daniela	17706403	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706405	Iglarčíková Laura	17706405	par	Užívateľ je zakázaný - konec PPV	0		17706405	Iglarčíková Laura	17706405	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706409	Mikulová Katarína	17706409	par	Užívateľ je povolený	1		17706409	Mikulová Katarína	17706409	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706411	Ščevík Marian	17706411	zam	Užívateľ je povolený	1		17706411	Ščevík Marian	17706411	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706412	Harmaňošová Mária	17706412	par	Užívateľ je povolený	1		17706412	Harmaňošová Mária	17706412	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706421	Neyová Ivana	17706421	zam	Užívateľ je zakázaný - konec PPV	0		17706421	Neyová Ivana	17706421	zam	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706431	Hancko Kristína	17706431	par	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706431	Hancko Kristína	17706431	par	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706434	Doša David	17706434	zam	Užívateľ je povolený	1		17706434	Doša David	17706434	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706436	Tkáčiková Daniela	17706436	par	Užívateľ je povolený	1		17706436	Tkáčiková Daniela	17706436	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706445	Žabková Tatiana	17706445	zam	Užívateľ je povolený	1		17706445	Žabková Tatiana	17706445	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706447	Ďurinová Silvia	17706447	zam	Užívateľ je povolený	1		17706447	Ďurinová Silvia	17706447	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706448	Pašková Simona	17706448	zam	Užívateľ je povolený	1		17706448	Pašková Simona	17706448	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706456	Šuplatová Gabriela	17706456	zam	Užívateľ je povolený	1		17706456	Šuplatová Gabriela	17706456	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706457	Fuksiová Nina	17706457	zam	Užívateľ je povolený	1		17706457	Fuksiová Nina	17706457	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706458	Matejbus Peter	17706458	zam	Užívateľ je povolený	1		17706458	Matejbus Peter	17706458	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706465	Bokorová Martina	17706465	zam	Užívateľ je povolený	1		17706465	Bokorová Martina	17706465	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706474	Czetö Tomáš	17706474	zam	Užívateľ je povolený	1		17706474	Czetö Tomáš	17706474	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706475	Huttová Michaela	17706475	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1		17706475	Huttová Michaela	17706475	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1	
+EmployeeID	Person	17706501	Jacko Tatiana	17706501	zam	Užívateľ je povolený	1		17706501	Jacko Tatiana	17706501	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706502	Ebský Ladislav	17706502	zam	Užívateľ je povolený	1		17706502	Ebský Ladislav	17706502	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706507	Svetíková Žaneta	17706507	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706507	Svetíková Žaneta	17706507	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706508	Ivančíková Lenka	17706508	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706508	Ivančíková Lenka	17706508	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706509	Daňová Veronika	17706509	zam	Užívateľ je povolený	1		17706509	Daňová Veronika	17706509	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706515	Maliňáková Sláva	17706515	par	Užívateľ je povolený	1		17706515	Maliňáková Sláva	17706515	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706518	Čukášová Veronika	17706518	zam	Užívateľ je povolený	1		17706518	Čukášová Veronika	17706518	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706519	Brnová Daniela	17706699	zam	Užívateľ je povolený	1		17706699	Brnová Daniela	17706699	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706520	Nosálová Michaela	17706743	zam	Užívateľ je povolený	1		17706520	Nosálová Michaela	17706743	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706527	Hudák Martin	17706527	par	Užívateľ je povolený	1		17706527	Hudák Martin	17706527	zam	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+EmployeeID	Person	17706534	Snopková Jana	17706534	zam	Užívateľ je povolený	0		17706534	Snopková Jana	17706534	par	Užívateľ je povolený	0	
+EmployeeID	Person	17706545	Mikulajová Zuzana	17706545	zam	Užívateľ je povolený	1		17706545	Mikulajová Zuzana	17706545	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706548	Maxianová Lucia	17706548	par	Užívateľ je povolený	1		17706548	Maxianová Lucia	17706548	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706554	Oriešková Nikola	17706554	par	Užívateľ je povolený	1		17706554	Oriešková Nikola	17706554	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706568	Pacák Radomír	17706568	zam	Užívateľ je povolený	1		17706568	Pacák Radomír	17706568	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706570	Šabíková Klára	17706570	par	Užívateľ je povolený	1		17706570	Šabíková Klára	17706570	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706573	Remencová Vladimíra	17706573	par	Užívateľ je povolený	1		17706573	Remencová Vladimíra	17706573	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706581	Husvéti Tímea	17706581	zam	Užívateľ je povolený	1		17706581	Husvéti Tímea	17706581	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706590	Brezovický Martin	17706590	zam	Užívateľ je povolený	1		17706590	Brezovický Martin	17706590	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706593	Hudák Palgutová Lucia	17706593	zam	Užívateľ je povolený	1		17706593	Hudák Palgutová Lucia	17706593	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706594	Fendeková Natália	17706594	par	Užívateľ je povolený	1		17706594	Fendeková Natália	17706594	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706595	Táborský Marek	17706595	zam	Užívateľ je zakázaný - konec PPV	0		17706595	Táborský Marek	17706595	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706596	Jusnová Viera	17706596	par	Užívateľ je povolený	1		17706596	Jusnová Viera	17706596	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706599	Brunovská Lucia	17706599	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706599	Brunovská Lucia	17706599	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706600	Kováčik Juraj	17706600	zam	Užívateľ je povolený	1		17706600	Kováčik Juraj	17706600	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706608	Olejárová Zuzana	17706608	par	Užívateľ je povolený	1		17706608	Olejárová Zuzana	17706608	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706612	Lojan Štefan	17706612	par	Užívateľ je zakázaný - konec PPV	0		17706612	Lojan Štefan	17706612	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706625	Hlucháň David	17706625	zam	Užívateľ je povolený	1		17706625	Hlucháň David	17706625	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706632	Sadloň Tomáš	17706632	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1		17706632	Sadloň Tomáš	17706632	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1	
+EmployeeID	Person	17706633	Kardelis Milan	17706633	zam	Užívateľ je povolený	1		17706633	Kardelis Milan	17706633	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706634	Niňaj Martin	17706634	zam	Užívateľ je zakázaný - konec PPV	0		17706634	Niňaj Martin	17706634	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706635	Keményová Monika	17706635	zam	Užívateľ je povolený	1		17706635	Keményová Monika	17706635	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706643	Kršková Daniela	17706643	zam	Užívateľ je povolený	1		17706643	Kršková Daniela	17706643	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706644	Bilkovičová Katarína	17706644	par	Užívateľ je povolený	1		17706644	Bilkovičová Katarína	17706644	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706648	Raksányi Lucia	17706648	zam	Užívateľ je povolený	1		17706648	Raksányi Lucia	17706648	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706654	Majerská Patrícia	17706654	par	Užívateľ je povolený	1		17706654	Majerská Patrícia	17706654	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706665	Vollek Martin	17706665	zam	Užívateľ je povolený	1		17706665	Vollek Martin	17706665	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706686	Cupperová Sarah	17706686	zam	Užívateľ je povolený	1		17706686	Cupperová Sarah	17706686	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706703	Vetráková Tamara	17706703	zam	Užívateľ je povolený	1		17706703	Vetráková Tamara	17706703	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706704	Vageľová Terézia	17706704	par	Užívateľ je povolený	1		17706704	Vageľová Terézia	17706704	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706706	Čujková Zuzana	17706706	par	Užívateľ je povolený	1		17706706	Čujková Zuzana	17706706	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706707	Braniš Marcel	17706707	zam	Užívateľ je povolený	1		17706707	Braniš Marcel	17706707	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706709	Blašková Paulína	17706709	zam	Užívateľ je povolený	1		17706709	Blašková Paulína	17706709	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706717	Mäsiar Miloš	17706717	zam	Užívateľ je povolený	1		17706717	Mäsiar Miloš	17706717	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706719	Hamranová Katarína	17706719	zam	Užívateľ je povolený	1		17706719	Hamranová Katarína	17706719	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706732	Hollý Matúš	17706732	par	Užívateľ je povolený	1		17706732	Hollý Matúš	17706732	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706735	Mačička Slavomír	17706735	zam	Užívateľ je povolený	1		17706735	Mačička Slavomír	17706735	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706737	Pirohaničová Veronika	17706737	zam	Užívateľ je povolený	1		17706737	Pirohaničová Veronika	17706737	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706741	Rybár Matej	17706741	zam	Užívateľ je povolený	1		17706741	Rybár Matej	17706741	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706746	Surovčíková Renáta	17706746	zam	Užívateľ je povolený	1		17706746	Surovčíková Renáta	17706746	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706750	Ďurčeková Zuzana	17706750	zam	Užívateľ je zakázaný - konec PPV	0		17706750	Ďurčeková Zuzana	17706750	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706755	Cupper Denis	17706755	zam	Užívateľ je zakázaný - konec PPV	0		17706755	Cupper Denis	17706755	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706756	Falťanová Michaela	17706756	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706756	Falťanová Michaela	17706756	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	17706757	Vrábelová Katarína	17706757	zam	Užívateľ je povolený	1		17706757	Vrábelová Katarína	17706757	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706764	Bziňáková Miriama	17706764	zam	Užívateľ je povolený	1		17706764	Bziňáková Miriama	17706764	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706769	Mészárosová Anna	17706769	zam	Užívateľ je povolený	1		17706769	Mészárosová Anna	17706769	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706783	Zárecká Barbora	17706783	zam	Užívateľ je povolený	1		17706783	Zárecká Barbora	17706783	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706801	Kaňová Magdaléna	17706801	par	Užívateľ je povolený	1		17706801	Kaňová Magdaléna	17706801	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706813	Majkovičová Andrea	17706813	zam	Užívateľ je povolený	1		17706813	Majkovičová Andrea	17706813	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706818	Tkáč Paulenová Petra	17706818	zam	Užívateľ je povolený	1		17706818	Tkáč Paulenová Petra	17706818	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706845	Bereš Marek	17706845	zam	Užívateľ je povolený	1		17706845	Bereš Marek	17706845	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706849	Švecová Andrea	17706849	zam	Užívateľ je povolený	1		17706849	Švecová Andrea	17706849	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706865	Lošonská Kristína Alexandra	17706865	par	Užívateľ je zakázaný - konec PPV	0		17706865	Lošonská Kristína Alexandra	17706865	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706868	Hricová Nikola	17706868	par	Užívateľ je zakázaný - konec PPV	0		17706868	Hricová Nikola	17706868	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706869	Kianička Martin	17706869	zam	Užívateľ je povolený	1		17706869	Kianička Martin	17706869	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706871	Kusá Laura	17706871	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1		17706871	Kusá Laura	17706871	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1	
+EmployeeID	Person	17706877	Becková Daniela	17706877	zam	Užívateľ je povolený	1		17706877	Becková Daniela	17706877	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706878	Hajdučková Martina	17706878	par	Užívateľ je povolený	1		17706878	Hajdučková Martina	17706878	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706880	Džuganová Lea	17706880	par	Užívateľ je povolený	1		17706880	Džuganová Lea	17706880	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706883	Gregušová Mária	17706883	par	Užívateľ je povolený	1		17706883	Gregušová Mária	17706883	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706884	Klepanec Vladimír	17706884	zam	Užívateľ je povolený	1		17706884	Klepanec Vladimír	17706884	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706885	Holečka Samuel	17706885	zam	Užívateľ je povolený	1		17706885	Holečka Samuel	17706885	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706888	Vargová Kristína	17706888	par	Užívateľ je povolený	1		17706888	Vargová Kristína	17706888	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706890	Fekiač Martin	17706890	zam	Užívateľ je povolený	1		17706890	Fekiač Martin	17706890	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706894	Revajová Martina	17706894	par	Užívateľ je zakázaný - konec PPV	0		17706894	Revajová Martina	17706894	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706895	Coganová Gabriela	17706895	zam	Užívateľ je povolený	1		17706895	Coganová Gabriela	17706895	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706896	Schweigert Marek	17706896	zam	Užívateľ je povolený	1		17706896	Schweigert Marek	17706896	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706899	Čechová Martina	17706899	zam	Užívateľ je zakázaný - konec PPV	0		17706899	Čechová Martina	17706899	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706900	Krššák Peter	17706900	zam	Užívateľ je zakázaný - konec PPV	0		17706900	Krššák Peter	17706900	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706901	Šustrová Jana Behul	17706901	zam	Užívateľ je zakázaný - konec PPV	0		17706901	Šustrová Jana Behul	17706901	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706903	Dubíková Erika	17706903	zam	Užívateľ je povolený	1		17706903	Dubíková Erika	17706903	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706909	Katona Dávid	17706909	zam	Užívateľ je povolený	1		17706909	Katona Dávid	17706909	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706915	Tomašovič Martin	17706915	par	Užívateľ je zakázaný - konec PPV	0		17706915	Tomašovič Martin	17706915	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706923	Varečková Ľuboslava	17706923	zam	Užívateľ je povolený	1		17706923	Varečková Ľuboslava	17706923	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706924	Turčáková Romana	17706924	zam	Užívateľ je povolený	1		17706924	Turčáková Romana	17706924	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706932	Janečková Zuzana	17706932	zam	Užívateľ je zakázaný - konec PPV	0		17706932	Janečková Zuzana	17706932	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706933	Nálepová Iveta	17706933	zam	Užívateľ je zakázaný - konec PPV	0		17706933	Nálepová Iveta	17706933	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706935	Nálepová Iveta	17706935	zam	Užívateľ je povolený	1		17706935	Nálepová Iveta	17706935	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706936	Derlich Richard	17706936	par	Užívateľ je povolený	1		17706936	Derlich Richard	17706936	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706942	Kučerová Zuzana	17706942	zam	Užívateľ je povolený	1		17706942	Kučerová Zuzana	17706942	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706946	Medgyesi Michal	17706946	zam	Užívateľ je zakázaný - konec PPV	0		17706946	Medgyesi Michal	17706946	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706948	Martinkovič Marek	17706948	par	Užívateľ je povolený	1		17706948	Martinkovič Marek	17706948	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706952	Őszi Katarína	17706952	zam	Užívateľ je povolený	1		17706952	Őszi Katarína	17706952	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706953	Danišová Juliana	17706953	zam	Užívateľ je povolený	1		17706953	Danišová Juliana	17706953	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706955	Štrbíková Dana	17706955	zam	Užívateľ je povolený	1		17706955	Štrbíková Dana	17706955	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706958	Čápka Lukáš	17706958	zam	Užívateľ je povolený	1		17706958	Čápka Lukáš	17706958	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706968	Žilinská Erika	17706968	zam	Užívateľ je povolený	1		17706968	Žilinská Erika	17706968	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706971	Brímus Adam	17706971	par	Užívateľ je zakázaný - konec PPV	0		17706971	Brímus Adam	17706971	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706973	Kolpák Eduard	17706973	par	Užívateľ je povolený	1		17706973	Kolpák Eduard	17706973	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706974	Sviteková Dominika	17706974	par	Užívateľ je povolený	1		17706974	Sviteková Dominika	17706974	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706975	Zuštiaková Tamara	17706975	zam	Užívateľ je zakázaný - konec PPV	0		17706975	Zuštiaková Tamara	17706975	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706986	Jakalová Alžbeta	17706986	par	Užívateľ je povolený	1		17706986	Jakalová Alžbeta	17706986	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706989	Kampová Jana	17706989	par	Užívateľ je povolený	1		17706989	Kampová Jana	17706989	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706993	Brutenič Ján	17706993	par	Užívateľ je povolený	1		17706993	Brutenič Ján	17706993	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706994	Fabian Jakub	17706994	zam	Užívateľ je povolený	1		17706994	Fabian Jakub	17706994	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17706995	Bubica Samuel	17706995	par	Užívateľ je povolený	1		17706995	Bubica Samuel	17706995	par	Užívateľ je povolený	1	
+EmployeeID	Person	17706996	Botka Adam	17706996	par	Užívateľ je zakázaný - konec PPV	0		17706996	Botka Adam	17706996	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17706997	Šamaj Marcel	17706997	zam	Užívateľ je povolený	1		17706997	Šamaj Marcel	17706997	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707001	Drabišin Michal	17707001	par	Užívateľ je povolený	1		17707001	Drabišin Michal	17707001	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707004	Jakubíková Lucia	17707004	zam	Užívateľ je povolený	1		17707004	Jakubíková Lucia	17707004	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707005	Leskovská Veronika	17707005	zam	Užívateľ je povolený	1		17707005	Leskovská Veronika	17707005	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707006	Diabelková Žaneta	17707006	zam	Užívateľ je povolený	1		17707006	Diabelková Žaneta	17707006	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707017	Čakanová Martina	17707017	zam	Užívateľ je povolený	1		17707017	Čakanová Martina	17707017	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707021	Lacko Juraj	17707021	zam	Užívateľ je povolený	1		17707021	Lacko Juraj	17707021	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707022	Gašparová Paula	17707022	par	Užívateľ je povolený	1		17707022	Gašparová Paula	17707022	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707024	Klepancová Alexandra	17707024	par	Užívateľ je povolený	1		17707024	Klepancová Alexandra	17707024	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707027	Schwarzkopfová Simona	17707027	par	Užívateľ je povolený	1		17707027	Schwarzkopfová Simona	17707027	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707038	Lenhartová Michaela	17707038	par	Užívateľ je povolený	1		17707038	Lenhartová Michaela	17707038	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707042	Melencová Eunika	17707042	zam	Užívateľ je povolený	1		17707042	Melencová Eunika	17707042	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707044	Bencúr Miloš	17707044	zam	Užívateľ je povolený	1		17707044	Bencúr Miloš	17707044	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707052	Víg Martina	17707052	zam	Užívateľ je povolený	1		17707052	Víg Martina	17707052	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707059	Kolembus Ľubomír	17707059	par	Užívateľ je zakázaný - konec PPV	0		17707059	Kolembus Ľubomír	17707059	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17707060	Koršepa Filip	17707060	par	Užívateľ je povolený	1		17707060	Koršepa Filip	17707060	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707067	Kéder Anton	17707067	zam	Užívateľ je povolený	1		17707067	Kéder Anton	17707067	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707069	Adamcová Natália	17707069	par	Užívateľ je povolený	1		17707069	Adamcová Natália	17707069	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707070	Weiszová Katarína	17707070	par	Užívateľ je povolený	1		17707070	Weiszová Katarína	17707070	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707078	Novotná Sára	17707078	par	Užívateľ je povolený	1		17707078	Novotná Sára	17707078	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707090	Molnárová Diana	17707090	par	Užívateľ je povolený	1		17707090	Molnárová Diana	17707090	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707092	Kunšteková Anita	17707092	zam	Užívateľ je povolený	1		17707092	Kunšteková Anita	17707092	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707093	Lehutová Simona	17707093	par	Užívateľ je povolený	1		17707093	Lehutová Simona	17707093	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707094	Benkeöová Lucia	17707094	zam	Užívateľ je povolený	1		17707094	Benkeöová Lucia	17707094	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707099	Káčerová Andrea	17707099	par	Užívateľ je povolený	1		17707099	Káčerová Andrea	17707099	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707111	Serinová Ličková Mária	17707111	zam	Užívateľ je povolený	1		17707111	Serinová Ličková Mária	17707111	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707112	Prokopová Diana	17707112	zam	Užívateľ je zakázaný - konec PPV	0		17707112	Prokopová Diana	17707112	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17707114	Kapusta Michal	17707114	zam	Užívateľ je povolený	1		17707114	Kapusta Michal	17707114	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707121	Čupanová Tamara	17707121	par	Užívateľ je povolený	1		17707121	Čupanová Tamara	17707121	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707130	Hrnčiar Miroslav	17707130	par	Užívateľ je povolený	1		17707130	Hrnčiar Miroslav	17707130	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707131	Begániová Lucia	17707131	par	Užívateľ je povolený	1		17707131	Begániová Lucia	17707131	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707134	Ebský Šimon	17707134	par	Užívateľ je povolený	1		17707134	Ebský Šimon	17707134	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707136	Novák Kristián	17707136	zam	Užívateľ je povolený	1		17707136	Novák Kristián	17707136	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707137	Nagyová Ivana	17707137	zam	Užívateľ je povolený	1		17707137	Nagyová Ivana	17707137	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707138	Gašparíková Katarína	17707138	par	Užívateľ je povolený	1		17707138	Gašparíková Katarína	17707138	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707143	Žiaková Zoja	17707143	par	Užívateľ je povolený	1		17707143	Žiaková Zoja	17707143	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707145	Bachledová Natália	17707145	par	Užívateľ je povolený	1		17707145	Bachledová Natália	17707145	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707146	Lengel Daniel	17707146	par	Užívateľ je povolený	1		17707146	Lengel Daniel	17707146	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707170	Čuříková Alexandra	17707170	zam	Užívateľ je povolený	1		17707170	Čuříková Alexandra	17707170	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707177	Volentič Ľuboš	17707177	par	Užívateľ je povolený	1		17707177	Volentič Ľuboš	17707177	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707178	Hulák Peter	17707178	par	Užívateľ je povolený	1		17707178	Hulák Peter	17707178	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707181	Barátová Andrea	17707181	zam	Užívateľ je povolený	1		17707181	Barátová Andrea	17707181	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707182	Beták Adam	17707182	par	Užívateľ je povolený	1		17707182	Beták Adam	17707182	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707184	Macejáková Helena	17707184	par	Užívateľ je povolený	1		17707184	Macejáková Helena	17707184	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707185	Janyík Zoltán	17707185	zam	Užívateľ je zakázaný - konec PPV	0		17707185	Janyík Zoltán	17707185	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17707196	Martiš Otrísalová Gabriela	17707196	zam	Užívateľ je povolený	1		17707196	Martiš Otrísalová Gabriela	17707196	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707197	Glvačová Mária	17707197	zam	Užívateľ je povolený	1		17707197	Glvačová Mária	17707197	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707198	Piecková Andrea	17707198	par	Užívateľ je povolený	1		17707198	Piecková Andrea	17707198	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707199	Bírešová Alexandra Valéria	17707199	par	Užívateľ je povolený	1		17707199	Bírešová Alexandra Valéria	17707199	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707200	Hahn Patrik	17707200	par	Užívateľ je povolený	1		17707200	Hahn Patrik	17707200	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707208	Rehaneková Lucia	17707208	par	Užívateľ je povolený	1		17707208	Rehaneková Lucia	17707208	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707209	Mihályiová Daniella	17707209	par	Užívateľ je povolený	1		17707209	Mihályiová Daniella	17707209	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707210	Jánošová Nela	17707210	par	Užívateľ je povolený	1		17707210	Jánošová Nela	17707210	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707211	Letanovský Peter	17707211	par	Užívateľ je povolený	1		17707211	Letanovský Peter	17707211	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707216	Rovderová Mária	17707216	par	Užívateľ je povolený	1		17707216	Rovderová Mária	17707216	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707217	Štutika Michal	17707217	par	Užívateľ je povolený	1		17707217	Štutika Michal	17707217	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707218	Beňová Veronika	17707218	par	Užívateľ je povolený	1		17707218	Beňová Veronika	17707218	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707220	Lazurová Karin	17707220	par	Užívateľ je povolený	1		17707220	Lazurová Karin	17707220	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707223	Lašák Mário	17707223	zam	Užívateľ je povolený	1		17707223	Lašák Mário	17707223	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707224	Guštafik Vladimír	17707224	par	Užívateľ je povolený	1		17707224	Guštafik Vladimír	17707224	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707225	Kollárik Martin	17707225	par	Užívateľ je povolený	1		17707225	Kollárik Martin	17707225	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707226	Smoláriková Jana	17707226	par	Užívateľ je povolený	1		17707226	Smoláriková Jana	17707226	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707227	Hrvol Juraj	17707227	par	Užívateľ je povolený	1		17707227	Hrvol Juraj	17707227	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707228	Sojková Nina	17707228	par	Užívateľ je povolený	1		17707228	Sojková Nina	17707228	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707229	Bartók Juraj	17707229	par	Užívateľ je povolený	1		17707229	Bartók Juraj	17707229	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707230	Čech Michal	17707230	par	Užívateľ je povolený	1		17707230	Čech Michal	17707230	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707231	Uhlár Milan	17707231	par	Užívateľ je povolený	1		17707231	Uhlár Milan	17707231	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707232	Hlaváčik Anton	17707232	par	Užívateľ je povolený	1		17707232	Hlaváčik Anton	17707232	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707233	Litavcová Lucia	17707233	par	Užívateľ je povolený	1		17707233	Litavcová Lucia	17707233	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707234	Rompfová Vivien	17707234	par	Užívateľ je povolený	1		17707234	Rompfová Vivien	17707234	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707235	Bošková Natália	17707235	par	Užívateľ je povolený	1		17707235	Bošková Natália	17707235	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707236	Michaliková Ruth	17707236	par	Užívateľ je povolený	1		17707236	Michaliková Ruth	17707236	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707239	Švarc Michal	17707239	par	Užívateľ je povolený	1		17707239	Švarc Michal	17707239	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707245	Ďurišová Michaela	17707245	par	Užívateľ je povolený	1		17707245	Ďurišová Michaela	17707245	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707246	Ďurišová Silvia	17707246	par	Užívateľ je povolený	1		17707246	Ďurišová Silvia	17707246	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707250	Šimanská Dominika	17707250	par	Užívateľ je povolený	1		17707250	Šimanská Dominika	17707250	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707257	Marcinková Eva	17707257	zam	Užívateľ je povolený	1		17707257	Marcinková Eva	17707257	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707258	Brandobur Eduard Viliam	17707258	zam	Užívateľ je povolený	1		17707258	Brandobur Eduard Viliam	17707258	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707260	Ťukot Jozef	17707260	zam	Užívateľ je povolený	1		17707260	Ťukot Jozef	17707260	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707264	Boďa Tomáš	17707264	par	Užívateľ je povolený	1		17707264	Boďa Tomáš	17707264	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707265	Tapferová Karolína	17707265	par	Užívateľ je povolený	1		17707265	Tapferová Karolína	17707265	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707266	Gallo Pavol	17707266	par	Užívateľ je zakázaný - konec PPV	0		17707266	Gallo Pavol	17707266	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17707267	Kitta Rastislav	17707267	par	Užívateľ je povolený	1		17707267	Kitta Rastislav	17707267	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707268	Bombilaj Miriam	17707268	par	Užívateľ je povolený	1		17707268	Bombilaj Miriam	17707268	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707269	Filipová Veronika	17707269	par	Užívateľ je povolený	1		17707269	Filipová Veronika	17707269	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707270	Gécová Diana	17707270	par	Užívateľ je povolený	1		17707270	Gécová Diana	17707270	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707271	Marková Simona	17707271	par	Užívateľ je povolený	1		17707271	Marková Simona	17707271	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707272	Šticza Róbert	17707272	par	Užívateľ je povolený	1		17707272	Šticza Róbert	17707272	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707274	Tóthová Tímea	17707274	zam	Užívateľ je povolený	1		17707274	Tóthová Tímea	17707274	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707275	Lauková Veronika	17707275	par	Užívateľ je povolený	1		17707275	Lauková Veronika	17707275	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707276	Giertliová Samanta	17707276	par	Užívateľ je povolený	1		17707276	Giertliová Samanta	17707276	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707279	Podmanický Tomáš	17707279	zam	Užívateľ je povolený	1		17707279	Podmanický Tomáš	17707279	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707280	Kolláriková Alessia	17707280	zam	Užívateľ je povolený	1		17707280	Kolláriková Alessia	17707280	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707285	Belanová Patrícia	17707285	par	Užívateľ je povolený	1		17707285	Belanová Patrícia	17707285	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707287	Schikuta Viktor	17707287	zam	Užívateľ je povolený	1		17707287	Schikuta Viktor	17707287	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707290	Džuppa Ján	17707290	par	Užívateľ je povolený	1		17707290	Džuppa Ján	17707290	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707298	Novák Dávid	17707298	zam	Užívateľ je povolený	1		17707298	Novák Dávid	17707298	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707299	Hučko Marián	17707299	zam	Užívateľ je povolený	1		17707299	Hučko Marián	17707299	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17707300	Gubík Dominik Erik	17707300	par	Užívateľ je povolený	1		17707300	Gubík Dominik Erik	17707300	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707301	Volentierová Sophie	17707301	par	Užívateľ je povolený	1		17707301	Volentierová Sophie	17707301	par	Užívateľ je povolený	1	
+EmployeeID	Person	17707302	Sekotová Jana	17707302	zam	Užívateľ je zakázaný - konec PPV	0		17707302	Sekotová Jana	17707302	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17707304	Koleničová Ivana	17707304	zam	Užívateľ je povolený	1		17707304	Koleničová Ivana	17707304	zam	Užívateľ je povolený	1	
+EmployeeID	Person	17709606	Bujňáková Terézia	17709606	par	Užívateľ je povolený	1		17709606	Bujňáková Terézia	17709606	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709607	Danová Miriama	17709607	par	Užívateľ je zakázaný - konec PPV	0		17709607	Danová Miriama	17709607	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17709609	Ostertag Dušan Jerome	17709609	par	Užívateľ je povolený	1		17709609	Ostertag Dušan Jerome	17709609	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709611	Holanová Soňa	17709611	par	Užívateľ je povolený	1		17709611	Holanová Soňa	17709611	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709612	Szabó Tomáš	17709612	par	Užívateľ je povolený	1		17709612	Szabó Tomáš	17709612	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709618	Balohová Vladimíra	17709618	par	Užívateľ je zakázaný - konec PPV	0		17709618	Balohová Vladimíra	17709618	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17709624	Podroužek Michal	17709624	par	Užívateľ je povolený	1		17709624	Podroužek Michal	17709624	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709627	Kameniar Martin	17709627	par	Užívateľ je povolený	1		17709627	Kameniar Martin	17709627	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709636	Kurka Lukáš	17709636	par	Užívateľ je povolený	1		17709636	Kurka Lukáš	17709636	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709637	Miškovič Dávid	17709637	par	Užívateľ je povolený	1		17709637	Miškovič Dávid	17709637	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709640	Murgaš Miroslav	17709640	par	Užívateľ je povolený	1		17709640	Murgaš Miroslav	17709640	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709641	Trocha Martin	17709641	par	Užívateľ je povolený	1		17709641	Trocha Martin	17709641	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709642	Hajro Lukáš	17709642	par	Užívateľ je povolený	1		17709642	Hajro Lukáš	17709642	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709645	Zajac Jaroslav	17709645	par	Užívateľ je povolený	1		17709645	Zajac Jaroslav	17709645	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709646	Pavlák Peter	17709646	par	Užívateľ je zakázaný - konec PPV	0		17709646	Pavlák Peter	17709646	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17709647	Gottlieber Michal	17709647	par	Užívateľ je povolený	1		17709647	Gottlieber Michal	17709647	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709650	Košík Tomáš	17709650	par	Užívateľ je povolený	1		17709650	Košík Tomáš	17709650	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709652	Sjekel Tomáš	17709652	par	Užívateľ je povolený	1		17709652	Sjekel Tomáš	17709652	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709654	Buhaj David	17709654	par	Užívateľ je povolený	1		17709654	Buhaj David	17709654	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709655	Zelezník Martin	17709655	par	Užívateľ je povolený	1		17709655	Zelezník Martin	17709655	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709658	Gono Andrej	17709658	par	Užívateľ je povolený	1		17709658	Gono Andrej	17709658	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709659	Kráľ Dárius	17709659	par	Užívateľ je povolený	1		17709659	Kráľ Dárius	17709659	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709660	Seewald Ondrej	17709660	par	Užívateľ je povolený	1		17709660	Seewald Ondrej	17709660	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709662	Mesarčíková Ivana	17709662	par	Užívateľ je povolený	1		17709662	Mesarčíková Ivana	17709662	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709663	Cigániková Monika	17709663	par	Užívateľ je povolený	1		17709663	Cigániková Monika	17709663	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709664	Mihál Vladimír	17709664	par	Užívateľ je zakázaný - konec PPV	0		17709664	Mihál Vladimír	17709664	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17709666	Dimitrovič Igor	17709666	par	Užívateľ je povolený	1		17709666	Dimitrovič Igor	17709666	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709668	Pastuchová Petronela	17709668	par	Užívateľ je povolený	1		17709668	Pastuchová Petronela	17709668	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709671	Proc Dominik	17709671	par	Užívateľ je povolený	0		17709671	Proc Dominik	17709671	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17709675	Valachovič Marek	17709675	par	Užívateľ je povolený	1		17709675	Valachovič Marek	17709675	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709676	Šrámek Filip	17709676	par	Užívateľ je povolený	1		17709676	Šrámek Filip	17709676	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709677	Šperňák Kristián	17709677	par	Užívateľ je povolený	1		17709677	Šperňák Kristián	17709677	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709678	Ponec Peter	17709678	par	Užívateľ je povolený	1		17709678	Ponec Peter	17709678	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709679	Brezinová Lucia	17709679	par	Užívateľ je povolený	1		17709679	Brezinová Lucia	17709679	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709680	Gális Alexander	17709680	par	Užívateľ je povolený	1		17709680	Gális Alexander	17709680	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709681	Kvasnicová Júlia	17709681	par	Užívateľ je povolený	1		17709681	Kvasnicová Júlia	17709681	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709682	Ondrašeková Mária	17709682	par	Užívateľ je povolený	1		17709682	Ondrašeková Mária	17709682	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709683	Piterková Klára	17709683	par	Užívateľ je povolený	1		17709683	Piterková Klára	17709683	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709684	Medová Lenka	17709684	par	Užívateľ je povolený	1		17709684	Medová Lenka	17709684	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709685	Škulec Dziváková Anna	17709685	par	Užívateľ je povolený	1		17709685	Škulec Dziváková Anna	17709685	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709686	Szomszéd Simon	17709686	par	Užívateľ je povolený	1		17709686	Szomszéd Simon	17709686	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709687	Matejov Peter	17709687	par	Užívateľ je povolený	1		17709687	Matejov Peter	17709687	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709688	Ivan Mikuláš	17709688	par	Užívateľ je povolený	1		17709688	Ivan Mikuláš	17709688	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709689	Gallík Lukáš	17709689	par	Užívateľ je povolený	1		17709689	Gallík Lukáš	17709689	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709690	Bednárčik Pawel	17709690	par	Užívateľ je povolený	1		17709690	Bednárčik Pawel	17709690	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709691	Dancs Dominik	17709691	par	Užívateľ je povolený	1		17709691	Dancs Dominik	17709691	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709692	Mésárošová Nina	17709692	par	Užívateľ je povolený	1		17709692	Mésárošová Nina	17709692	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709693	Jurkovič Daniel	17709693	par	Užívateľ je povolený	1		17709693	Jurkovič Daniel	17709693	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709694	Dzubay Zuzana	17709694	par	Užívateľ je povolený	1		17709694	Dzubay Zuzana	17709694	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709695	Kadlečíková Júlia	17709695	par	Užívateľ je povolený	1		17709695	Kadlečíková Júlia	17709695	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709696	Krnáč Branko	17709696	par	Užívateľ je zakázaný - konec PPV	0		17709696	Krnáč Branko	17709696	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	17709989	Priškin Jaroslav	17709989	par	Užívateľ je povolený	1		17709989	Priškin Jaroslav	17709989	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709990	Pešková Barbora	17709990	par	Užívateľ je povolený	1		17709990	Pešková Barbora	17709990	par	Užívateľ je povolený	1	
+EmployeeID	Person	17709994	Bielik Ondrej	17709994	par	Užívateľ je povolený	1		17709994	Bielik Ondrej	17709994	par	Užívateľ je povolený	1	
+EmployeeID	Person	1779147ex	Sochor František	1779147	ext	Užívateľ je zakázaný - konec PPV	0		1779147ex	Rozman Filip	1779147	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+EmployeeID	Person	abachar	Bachár Andrej	17701608	zam	Užívateľ je povolený	1		abachar	Bachár Andrej	17701608	zam	Užívateľ je povolený	1	
+EmployeeID	Person	adamiova	Adámiová Miroslava	17701001	zam	Užívateľ je povolený	1		adamiova	Adámiová Miroslava	17701001	zam	Užívateľ je povolený	1	
+EmployeeID	Person	adzima	Adzima Marián	17701688	zam	Užívateľ je povolený	1		adzima	Adzima Marián	17701688	zam	Užívateľ je povolený	1	
+EmployeeID	Person	aklacanova	Klačanová Andrea	17702082	zam	Užívateľ je povolený	1		aklacanova	Klačanová Andrea	17702082	zam	Užívateľ je povolený	1	
+EmployeeID	Person	arbetova	Arbetová Marianna	17702407	zam	Užívateľ je povolený	1		arbetova	Arbetová Marianna	17702407	zam	Užívateľ je povolený	1	
+EmployeeID	Person	aremenarova	Remenárová Andrea	17701453	zam	Užívateľ je povolený	1		aremenarova	Remenárová Andrea	17701453	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bagiova	Bagiová Zuzana	17701791	zam	Užívateľ je povolený	1		bagiova	Bagiová Zuzana	17701791	zam	Užívateľ je povolený	1	
+EmployeeID	Person	balek	Balek Marián	17702454	zam	Užívateľ je povolený	1		balek	Balek Marián	17702454	zam	Užívateľ je povolený	1	
+EmployeeID	Person	balusikova	Balušíková Veronika	17701304	zam	Užívateľ je povolený	1		balusikova	Balušíková Veronika	17701304	zam	Užívateľ je povolený	1	
+EmployeeID	Person	banosova	Bánošová Eva	17702398	zam	Užívateľ je povolený	1		banosova	Bánošová Eva	17702398	zam	Užívateľ je povolený	1	
+EmployeeID	Person	barnokiova	Barnokiová Eva	17702418	zam	Užívateľ je povolený	1		barnokiova	Barnokiová Eva	17702418	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bartel	Bartel Tomáš	17701832	zam	Užívateľ je povolený	1		bartel	Bartel Tomáš	17701832	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bartosi_admin	Bartoši Michal	1779029	ext	Užívateľ je povolený	1		1779029ex	Mikulčík Róbert	1779029	ext	Užívateľ je povolený	1	
+EmployeeID	Person	barusova	Barusová Zuzana	17706170	zam	Užívateľ je povolený	1		barusova	Barusová Zuzana	17706170	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bberesova	Bérešová Beáta	17702196	zam	Užívateľ je povolený	1		bberesova	Bérešová Beáta	17702196	zam	Užívateľ je povolený	1	
+EmployeeID	Person	belosicova	Belošicová Silvia	17702591	zam	Užívateľ je povolený	1		belosicova	Belošicová Silvia	17702591	zam	Užívateľ je povolený	1	
+EmployeeID	Person	benkeova	Benkeová Zlata	17702492	zam	Užívateľ je povolený	1		benkeova	Benkeová Zlata	17702492	zam	Užívateľ je povolený	1	
+EmployeeID	Person	beresova	Bérešová Silvia	17701365	zam	Užívateľ je povolený	1		beresova	Bérešová Silvia	17701365	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bilcikova	Bilčíková Mária	17702705	zam	Užívateľ je povolený	1		bilcikova	Bilčíková Mária	17702705	zam	Užívateľ je povolený	1	
+EmployeeID	Person	blazejova	Blažejová Lucia	17706220	zam	Užívateľ je povolený	1		blazejova	Blažejová Lucia	17706220	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bombarova	Bombarová Miroslava	17702899	zam	Užívateľ je povolený	1		bombarova	Bombarová Miroslava	17702899	zam	Užívateľ je povolený	1	
+EmployeeID	Person	borutova	Bořutová Eva	17702886	par	Užívateľ je povolený	1		17702886	Bořutová Eva	17702886	par	Užívateľ je povolený	1	
+EmployeeID	Person	brestovsky	Brestovský Pavol	17706337	zam	Užívateľ je povolený	1		brestovsky	Brestovský Pavol	17706337	zam	Užívateľ je povolený	1	
+EmployeeID	Person	brichtova	Brichtová Ľudmila	17701015	zam	Užívateľ je povolený	1		brichtova	Brichtová Ľudmila	17701015	zam	Užívateľ je povolený	1	
+EmployeeID	Person	brodniansky	Brodniansky Alexander	17702498	zam	Užívateľ je povolený	1		brodniansky	Brodniansky Alexander	17702498	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bstrbova	Štrbová Beáta	17706222	zam	Užívateľ je povolený	1		bstrbova	Štrbová Beáta	17706222	zam	Užívateľ je povolený	1	
+EmployeeID	Person	bucicova	Bučičová Bianca	17702229	zam	Užívateľ je povolený	1		bucicova	Bučičová Bianca	17702229	zam	Užívateľ je povolený	1	
+EmployeeID	Person	cechova	Čechová Zuzana	17701138	zam	Užívateľ je povolený	1		cechova	Čechová Zuzana	17701138	zam	Užívateľ je povolený	1	
+EmployeeID	Person	cechovicova	Čechovičová Viera	17702582	zam	Užívateľ je povolený	1		cechovicova	Čechovičová Viera	17702582	zam	Užívateľ je povolený	1	
+EmployeeID	Person	cernakova	Černáková Edita Kmeťková	17702071	zam	Užívateľ je povolený	1		cernakova	Černáková Edita Kmeťková	17702071	zam	Užívateľ je povolený	1	
+EmployeeID	Person	cikova	Číková Dáša	17702213	zam	Užívateľ je povolený	1		cikova	Číková Dáša	17702213	zam	Užívateľ je povolený	1	
+EmployeeID	Person	ciprusova	Ciprušová Zuzana	17701020	zam	Užívateľ je povolený	1		ciprusova	Ciprušová Zuzana	17701020	zam	Užívateľ je povolený	1	
+EmployeeID	Person	cizmarikova	Čižmáriková Iveta	17702550	zam	Užívateľ je povolený	1		cizmarikova	Čižmáriková Iveta	17702550	zam	Užívateľ je povolený	1	
+EmployeeID	Person	derlichova	Derlichová Andrea	17701626	zam	Užívateľ je povolený	1		derlichova	Derlichová Andrea	17701626	zam	Užívateľ je povolený	1	
+EmployeeID	Person	desak	Desák Vladimír	17702533	zam	Užívateľ je zakázaný - konec PPV	0		17702533	Desák Vladimír	17702533	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	dobias	Dobiaš Juraj	17702093	zam	Užívateľ je povolený	1		dobias	Dobiaš Juraj	17702093	zam	Užívateľ je povolený	1	
+EmployeeID	Person	duris	Ďuris Dušan	17701875	zam	Užívateľ je povolený	1		duris	Ďuris Dušan	17701875	zam	Užívateľ je povolený	1	
+EmployeeID	Person	dzubina	Dzubina Róbert	17702446	zam	Užívateľ je povolený	1		dzubina	Dzubina Róbert	17702446	zam	Užívateľ je povolený	1	
+EmployeeID	Person	eluptak	Lupták Erik	17706291	zam	Užívateľ je zakázaný - konec PPV	0		eluptak	Lupták Erik	17706291	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	farkas	Farkaš Branislav	17702656	zam	Užívateľ je povolený	1		farkas	Farkaš Branislav	17702656	zam	Užívateľ je povolený	1	
+EmployeeID	Person	fedorcakova	Fedorčáková Daniela	17702615	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702615	Fedorčáková Daniela	17702615	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	fenclova	Fenclová Petra	17701402	zam	Užívateľ je povolený	1		fenclova	Fenclová Petra	17701402	zam	Užívateľ je povolený	1	
+EmployeeID	Person	gajdos	Gajdoš Ladislav	17701039	zam	Užívateľ je povolený	1		gajdos	Gajdoš Ladislav	17701039	zam	Užívateľ je povolený	1	
+EmployeeID	Person	gasparovic	Gašparovič Dušan	17702522	zam	Užívateľ je povolený	1		gasparovic	Gašparovič Dušan	17702522	zam	Užívateľ je povolený	1	
+EmployeeID	Person	gromannova	Grómannová Veronika	17701025	zam	Užívateľ je zakázaný - konec PPV	0		gromannova	Grómannová Veronika	17701025	zam	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	gyorgy	György Juraj	17706254	zam	Užívateľ je povolený	1		gyorgy	György Juraj	17706254	zam	Užívateľ je povolený	1	
+EmployeeID	Person	hajak_admin	Haják Karol	1779087	ext	Užívateľ je povolený	1		1779087ex	Buhaj Dávid	1779087	ext	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	halimovicova	Halimovičová Vladimíra	17702657	zam	Užívateľ je povolený	1		halimovicova	Halimovičová Vladimíra	17702657	zam	Užívateľ je povolený	1	
+EmployeeID	Person	hanesova	Hanesová Ivana	17701616	zam	Užívateľ je povolený	1		hanesova	Hanesová Ivana	17701616	zam	Užívateľ je povolený	1	
+EmployeeID	Person	hocman	Hocman Martin	17701053	zam	Užívateľ je povolený	1		hocman	Hocman Martin	17701053	zam	Užívateľ je povolený	1	
+EmployeeID	Person	horna	Horná Ivana	17706178	zam	Užívateľ je povolený	1		horna	Horná Ivana	17706178	zam	Užívateľ je povolený	1	
+EmployeeID	Person	hrivnakova	Hrivnáková Ľubomíra	17701417	zam	Užívateľ je povolený	1		hrivnakova	Hrivnáková Ľubomíra	17701417	zam	Užívateľ je povolený	1	
+EmployeeID	Person	hudacka	Hudacká Jana	17702943	zam	Užívateľ je zakázaný - konec PPV	0		hudacka	Hudacká Jana	17702943	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	hulikova	Hulíková Stella	17702117	zam	Užívateľ je povolený	1		hulikova	Hulíková Stella	17702117	zam	Užívateľ je povolený	1	
+EmployeeID	Person	ivancikova	Ivančíková Zuzana	17701757	zam	Užívateľ je povolený	1		ivancikova	Ivančíková Zuzana	17701757	zam	Užívateľ je povolený	1	
+EmployeeID	Person	jakubocyova	Jakubócyová Andrea	17701062	zam	Užívateľ je povolený	1		jakubocyova	Jakubócyová Andrea	17701062	zam	Užívateľ je povolený	1	
+EmployeeID	Person	jassak	Jaššák Stanislav	17701067	zam	Užívateľ je povolený	1		jassak	Jaššák Stanislav	17701067	zam	Užívateľ je povolený	1	
+EmployeeID	Person	jelinkova	Jelínková Jana	17701201	zam	Užívateľ je povolený	1		jelinkova	Jelínková Jana	17701201	zam	Užívateľ je povolený	1	
+EmployeeID	Person	jjurikova	Juríková Jana	17706272	par	Užívateľ je povolený	1		jjurikova	Juríková Jana	17706272	zam	Užívateľ je povolený	1	
+EmployeeID	Person	jucha	Jucha Jozef	17702388	zam	Užívateľ je povolený	1		jucha	Jucha Jozef	17702388	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kahat	Kahát Jozef	17702614	zam	Užívateľ je povolený	1		kahat	Kahát Jozef	17702614	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kajanova	Kajanová Alena	17702602	zam	Užívateľ je povolený	1		kajanova	Kajanová Alena	17702602	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kalamar	Kalamár Ondrej	17702302	zam	Užívateľ je povolený	1		kalamar	Kalamár Ondrej	17702302	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kalicky	Kalický Peter	17701075	zam	Užívateľ je povolený	1		kalicky	Kalický Peter	17701075	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kanosova	Kanošová Erika	17701364	zam	Užívateľ je povolený	1		kanosova	Kanošová Erika	17701364	zam	Užívateľ je povolený	1	
+EmployeeID	Person	klonga	Klonga Vladimir	17709996	par	Užívateľ je povolený	1		klonga	Klonga Vladimir	17709996	par	Užívateľ je povolený	1	
+EmployeeID	Person	kocourek	Kocourek Juraj	17706296	zam	Užívateľ je povolený	1		kocourek	Kocourek Juraj	17706296	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kopaj_admin	Kopaj Štefan	1779066	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779066ex	Test Štefan	1779066	ext	Užívateľ je povolený	1	
+EmployeeID	Person	koprivova	Kopřivová Jana	17702241	zam	Užívateľ je povolený	1		koprivova	Kopřivová Jana	17702241	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kostalova	Košťálová Lenka	17702301	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17702301	Košťálová Lenka	17702301	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	kostolna	Kostolná Monika	17702633	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		kostolna	Kostolná Monika	17702633	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	kovacikova	Kováčiková Lucia	17702417	zam	Užívateľ je povolený	1		kovacikova	Kováčiková Lucia	17702417	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kramarova	Kramárová Silvia	17701449	zam	Užívateľ je povolený	1		kramarova	Kramárová Silvia	17701449	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kristova	Kristová Martina	17702988	zam	Užívateľ je povolený	1		kristova	Kristová Martina	17702988	zam	Užívateľ je povolený	1	
+EmployeeID	Person	krizan	Križan Kristián	17706242	zam	Užívateľ je povolený	1		krizan	Križan Kristián	17706242	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kroslak	Krošlák Milan	17706362	zam	Užívateľ je povolený	1		17706362	Krošlák Milan	17706362	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kuruczova	Kuruczová Judita	17702896	zam	Užívateľ je povolený	1		kuruczova	Kuruczová Judita	17702896	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kuseva	Kuševa Marinka	17701710	zam	Užívateľ je povolený	1		kuseva	Kuševa Marinka	17701710	zam	Užívateľ je povolený	1	
+EmployeeID	Person	kutka	Kuťka Juraj	17701313	zam	Užívateľ je povolený	1		kutka	Kuťka Juraj	17701313	zam	Užívateľ je povolený	1	
+EmployeeID	Person	labajova	Labajová Jana	17702403	zam	Užívateľ je povolený	1		labajova	Labajová Jana	17702403	zam	Užívateľ je povolený	1	
+EmployeeID	Person	lacova	Lacová Kristína	17702456	zam	Užívateľ je povolený	1		lacova	Lacová Kristína	17702456	zam	Užívateľ je povolený	1	
+EmployeeID	Person	lbalazova	Balážová Lucia	17702421	zam	Užívateľ je povolený	1		lbalazova	Balážová Lucia	17702421	zam	Užívateľ je povolený	1	
+EmployeeID	Person	leczo	Leczo Viktor	17701775	zam	Užívateľ je povolený	1		leczo	Leczo Viktor	17701775	zam	Užívateľ je povolený	1	
+EmployeeID	Person	lopatkova	Lopatková Katarína	17702034	zam	Užívateľ je povolený	1		lopatkova	Lopatková Katarína	17702034	zam	Užívateľ je povolený	1	
+EmployeeID	Person	lukacovicova	Lukačovičová Katarína	17702070	zam	Užívateľ je povolený	1		lukacovicova	Lukačovičová Katarína	17702070	zam	Užívateľ je povolený	1	
+EmployeeID	Person	luknar	Luknár Ján	17701100	zam	Užívateľ je povolený	1		luknar	Luknár Ján	17701100	zam	Užívateľ je povolený	1	
+EmployeeID	Person	luptakova	Luptáková Ivana	17702499	zam	Užívateľ je povolený	1		luptakova	Luptáková Ivana	17702499	zam	Užívateľ je povolený	1	
+EmployeeID	Person	lvallus	Valluš Lukáš	17702952	zam	Užívateľ je povolený	1		lvallus	Valluš Lukáš	17702952	zam	Užívateľ je povolený	1	
+EmployeeID	Person	madarova	Madárová Lucia	17701841	zam	Užívateľ je povolený	1		madarova	Madárová Lucia	17701841	zam	Užívateľ je povolený	1	
+EmployeeID	Person	magdin	Magdin Peter	17706378	zam	Užívateľ je povolený	1		17706378	Magdin Peter	17706378	zam	Užívateľ je povolený	1	
+EmployeeID	Person	majerova_admin	Majerova Mira	1779098	ext	Užívateľ je povolený	1		1779098ex	Novakovský Jakub	1779098	ext	Užívateľ je povolený	1	
+EmployeeID	Person	majtanova	Majtánová Andrea	17702274	zam	Užívateľ je povolený	1		majtanova	Majtánová Andrea	17702274	zam	Užívateľ je povolený	1	
+EmployeeID	Person	malec	Malec Adam	17701107	zam	Užívateľ je povolený	1		malec	Malec Adam	17701107	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mankova	Manková Veronika	17702613	zam	Užívateľ je povolený	1		mankova	Manková Veronika	17702613	zam	Užívateľ je povolený	1	
+EmployeeID	Person	marioth	Marioth Martina	17702514	zam	Užívateľ je povolený	1		marioth	Marioth Martina	17702514	zam	Užívateľ je povolený	1	
+EmployeeID	Person	martinkovic	Martinkovič Adrian	17702143	zam	Užívateľ je zakázaný - konec PPV	0		martinkovic	Martinkovič Adrian	17702143	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	masarykova	Masaryková Jaroslava	17701112	zam	Užívateľ je povolený	1		masarykova	Masaryková Jaroslava	17701112	zam	Užívateľ je povolený	1	
+EmployeeID	Person	matichova	Matichová Jarmila	17701382	zam	Užívateľ je povolený	1		matichova	Matichová Jarmila	17701382	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mattertajova	Mattertajová Vladimíra	17702286	zam	Užívateľ je povolený	1		mattertajova	Mattertajová Vladimíra	17702286	zam	Užívateľ je povolený	1	
+EmployeeID	Person	melnikova	Meľniková Oľga	17702423	zam	Užívateľ je povolený	1		melnikova	Meľniková Oľga	17702423	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mholly	Hollý Michal	17702181	zam	Užívateľ je povolený	1		mholly	Hollý Michal	17702181	zam	Užívateľ je povolený	1	
+EmployeeID	Person	michalovicova	Michalovičová Silvia	17702484	zam	Užívateľ je zakázaný - konec PPV	0		michalovicova	Michalovičová Silvia	17702484	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	mihalikova	Miháliková Eva	17702929	zam	Užívateľ je povolený	1		mihalikova	Miháliková Eva	17702929	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mika	Mika Maroš	17702392	zam	Užívateľ je povolený	1		mika	Mika Maroš	17702392	zam	Užívateľ je povolený	1	
+EmployeeID	Person	miksik	Mikšík Ján	17702027	zam	Užívateľ je povolený	1		miksik	Mikšík Ján	17702027	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mikus	Mikuš Peter	17706380	zam	Užívateľ je povolený	1		mikus	Mikuš Peter	17706380	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mokus_admin	Mókus Štefan	1779031	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779031ex	Slížik Miloslav	1779031	ext	Užívateľ je povolený	1	
+EmployeeID	Person	mpavlikova	Pavlíková Martina	17706221	zam	Užívateľ je povolený	1		mpavlikova	Pavlíková Martina	17706221	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mrazikova	Mráziková Lucia	17701655	zam	Užívateľ je povolený	1		mrazikova	Mráziková Lucia	17701655	zam	Užívateľ je povolený	1	
+EmployeeID	Person	mtkac	Tkáč Miloš	17701174	zam	Užívateľ je povolený	1		mtkac	Tkáč Miloš	17701174	zam	Užívateľ je povolený	1	
+EmployeeID	Person	murinova	Murínová Ivana	17706057	zam	Užívateľ je povolený	1		murinova	Murínová Ivana	17706057	zam	Užívateľ je povolený	1	
+EmployeeID	Person	nagy_admin	Nagy Balázs	1779094	ext	Užívateľ je povolený	1		1779094ex	Vrana Zdenek	1779094	ext	Užívateľ je povolený	1	
+EmployeeID	Person	nikmonova	Nikmonová Miriam	17701119	zam	Užívateľ je povolený	1		nikmonova	Nikmonová Miriam	17701119	zam	Užívateľ je povolený	1	
+EmployeeID	Person	nikmonoval	Nikmonová Ľubomíra	17701216	zam	Užívateľ je povolený	1		nikmonoval	Nikmonová Ľubomíra	17701216	zam	Užívateľ je povolený	1	
+EmployeeID	Person	obenau	Obenau Juraj	17702299	zam	Užívateľ je povolený	1		obenau	Obenau Juraj	17702299	zam	Užívateľ je povolený	1	
+EmployeeID	Person	ondrikova	Ondríková Gabriela	17701121	zam	Užívateľ je povolený	1		ondrikova	Ondríková Gabriela	17701121	zam	Užívateľ je povolený	1	
+EmployeeID	Person	ostruziarova	Ostružiarová Darina	17702337	zam	Užívateľ je povolený	1		ostruziarova	Ostružiarová Darina	17702337	zam	Užívateľ je povolený	1	
+EmployeeID	Person	otocka	Otočka Jozef	17706379	zam	Užívateľ je povolený	1		17706379	Otočka Jozef	17706379	zam	Užívateľ je povolený	1	
+EmployeeID	Person	pakanova	Pakánová Tatiana	17701209	zam	Užívateľ je povolený	1		pakanova	Pakánová Tatiana	17701209	zam	Užívateľ je povolený	1	
+EmployeeID	Person	palatinus	Palatinus Jaroslav	17701125	zam	Užívateľ je povolený	1		palatinus	Palatinus Jaroslav	17701125	zam	Užívateľ je povolený	1	
+EmployeeID	Person	palenik	Páleník Vratislav	17702394	zam	Užívateľ je povolený	1		palenik	Páleník Vratislav	17702394	zam	Užívateľ je povolený	1	
+EmployeeID	Person	palugova	Palugová Marta	17702199	zam	Užívateľ je povolený	1		palugova	Palugová Marta	17702199	zam	Užívateľ je povolený	1	
+EmployeeID	Person	papiernikova	Papierniková Natália	17702573	zam	Užívateľ je povolený	1		papiernikova	Papierniková Natália	17702573	zam	Užívateľ je povolený	1	
+EmployeeID	Person	parakova	Paráková Kristína	17701129	zam	Užívateľ je povolený	1		parakova	Paráková Kristína	17701129	zam	Užívateľ je povolený	1	
+EmployeeID	Person	pastekova	Paštéková Katarína	17701130	zam	Užívateľ je povolený	1		pastekova	Paštéková Katarína	17701130	zam	Užívateľ je povolený	1	
+EmployeeID	Person	pavelka	Pavelka Peter	17701131	zam	Užívateľ je povolený	1		pavelka	Pavelka Peter	17701131	zam	Užívateľ je povolený	1	
+EmployeeID	Person	pecovsky	Pečovský Ivan	17702658	zam	Užívateľ je zakázaný - konec PPV	0		pecovsky	Pečovský Ivan	17702658	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	petreskiova	Petreskiová Iveta	17702636	zam	Užívateľ je povolený	1		petreskiova	Petreskiová Iveta	17702636	zam	Užívateľ je povolený	1	
+EmployeeID	Person	podlucka	Podlucká Janette	17701627	zam	Užívateľ je povolený	1		podlucka	Podlucká Janette	17701627	zam	Užívateľ je povolený	1	
+EmployeeID	Person	psenak	Pšenák Ladislav	17701332	zam	Užívateľ je povolený	1		psenak	Pšenák Ladislav	17701332	zam	Užívateľ je povolený	1	
+EmployeeID	Person	pucatova	Púčaťová Darina	17701139	zam	Užívateľ je povolený	1		pucatova	Púčaťová Darina	17701139	zam	Užívateľ je povolený	1	
+EmployeeID	Person	rajcova	Rajcová Jana	17702973	zam	Užívateľ je povolený	1		rajcova	Rajcová Jana	17702973	zam	Užívateľ je povolený	1	
+EmployeeID	Person	repkova	Repková Iveta	17701632	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1		repkova	Repková Iveta	17701632	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1	
+EmployeeID	Person	richter	Richter Lucius	17706253	zam	Užívateľ je zakázaný - konec PPV	0		richter	Richter Lucius	17706253	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	rosova	Rosová Lucia	17701143	par	Užívateľ je povolený	1		rosova	Rosová Lucia	17701143	par	Užívateľ je povolený	1	
+EmployeeID	Person	rusnakova	Rusňáková Mária	17701814	zam	Užívateľ je povolený	1		rusnakova	Rusňáková Mária	17701814	zam	Užívateľ je povolený	1	
+EmployeeID	Person	rutova	Rutová Ľubica	17701272	zam	Užívateľ je povolený	1		rutova	Rutová Ľubica	17701272	zam	Užívateľ je povolený	1	
+EmployeeID	Person	rzatrochova	Zatrochová Renáta	17706345	par	Užívateľ je povolený	1		rzatrochova	Zatrochová Renáta	17706345	zam	Užívateľ je povolený	1	
+EmployeeID	Person	sabikova	Šabíková Ingrid	17701212	zam	Užívateľ je povolený	1		sabikova	Šabíková Ingrid	17701212	zam	Užívateľ je povolený	1	
+EmployeeID	Person	simkova	Šimková Júlia	17702406	zam	Užívateľ je povolený	1		simkova	Šimková Júlia	17702406	zam	Užívateľ je povolený	1	
+EmployeeID	Person	simkovic	Šimkovic Peter	17702424	par	Užívateľ je povolený	1		simkovic	Šimkovic Peter	17702424	par	Užívateľ je povolený	1	
+EmployeeID	Person	simovicova	Šimovičová Dana	17701071	zam	Užívateľ je povolený	1		simovicova	Šimovičová Dana	17701071	zam	Užívateľ je povolený	1	
+EmployeeID	Person	siskova	Šišková Katarína	17702687	zam	Užívateľ je povolený	1		siskova	Šišková Katarína	17702687	zam	Užívateľ je povolený	1	
+EmployeeID	Person	skablova	Škablová Erika	17701008	zam	Užívateľ je zakázaný - konec PPV	0		skablova	Škablová Erika	17701008	par	Užívateľ je zakázaný - konec PPV	0	
+EmployeeID	Person	skladana	Skladaná Slavomíra	17706017	zam	Užívateľ je povolený	1		skladana	Skladaná Slavomíra	17706017	zam	Užívateľ je povolený	1	
+EmployeeID	Person	skovranek	Škovránek Peter	17701447	zam	Užívateľ je povolený	1		skovranek	Škovránek Peter	17701447	zam	Užívateľ je povolený	1	
+EmployeeID	Person	skripska	Skřipská Silvia	17702308	zam	Užívateľ je povolený	1		skripska	Skřipská Silvia	17702308	zam	Užívateľ je povolený	1	
+EmployeeID	Person	slobodova	Slobodová Petra	17702681	zam	Užívateľ je povolený	1		slobodova	Slobodová Petra	17702681	zam	Užívateľ je povolený	1	
+EmployeeID	Person	solnokyova	Solnokyová Denisa	17702391	zam	Užívateľ je povolený	1		solnokyova	Solnokyová Denisa	17702391	zam	Užívateľ je povolený	1	
+EmployeeID	Person	spanik	Špánik Peter	17706307	zam	Užívateľ je povolený	1		spanik	Špánik Peter	17706307	zam	Užívateľ je povolený	1	
+EmployeeID	Person	spolakova	Poláková Slávka	17701614	zam	Užívateľ je povolený	1		spolakova	Poláková Slávka	17701614	zam	Užívateľ je povolený	1	
+EmployeeID	Person	stasakova	Stašáková Henrieta	17706025	zam	Užívateľ je povolený	1		stasakova	Stašáková Henrieta	17706025	zam	Užívateľ je povolený	1	
+EmployeeID	Person	stefankova	Štefanková Dana	17701744	zam	Užívateľ je povolený	1		stefankova	Štefanková Dana	17701744	zam	Užívateľ je povolený	1	
+EmployeeID	Person	strbova	Štrbová Mária	17701413	zam	Užívateľ je povolený	1		strbova	Štrbová Mária	17701413	zam	Užívateľ je povolený	1	
+EmployeeID	Person	struharova	Struhárová Lenka	17701920	zam	Užívateľ je povolený	1		struharova	Struhárová Lenka	17701920	zam	Užívateľ je povolený	1	
+EmployeeID	Person	stryckova	Strýčková Petronela	17701689	zam	Užívateľ je povolený	1		stryckova	Strýčková Petronela	17701689	zam	Užívateľ je povolený	1	
+EmployeeID	Person	subakova	Šubáková Lenka	17701766	zam	Užívateľ je povolený	1		17701766	Šubáková Lenka	17701766	zam	Užívateľ je povolený	1	
+EmployeeID	Person	suchanicova	Suchaničová Lucia	17702686	zam	Užívateľ je povolený	1		suchanicova	Suchaničová Lucia	17702686	zam	Užívateľ je povolený	1	
+EmployeeID	Person	szabo	Szabo Libor	17701446	zam	Užívateľ je povolený	1		szabo	Szabo Libor	17701446	zam	Užívateľ je povolený	1	
+EmployeeID	Person	szalaiova	Szalaiová Eva	17701211	zam	Užívateľ je povolený	1		szalaiova	Szalaiová Eva	17701211	zam	Užívateľ je povolený	1	
+EmployeeID	Person	szilinszky	Szilinszky Anita	17706344	par	Užívateľ je povolený	1		17706344	Szilinszky Anita	17706344	zam	Užívateľ je povolený	1	
+EmployeeID	Person	tack	Tack Hilde Paola	17702224	zam	Užívateľ je povolený	1		tack	Tack Hilde Paola	17702224	zam	Užívateľ je povolený	1	
+EmployeeID	Person	tiklova	Tiklová Zuzana	17702880	zam	Užívateľ je povolený	1		tiklova	Tiklová Zuzana	17702880	zam	Užívateľ je povolený	1	
+EmployeeID	Person	toma	Toma Radovan	17701176	zam	Užívateľ je povolený	1		toma	Toma Radovan	17701176	zam	Užívateľ je povolený	1	
+EmployeeID	Person	tomaskova	Tomašková Karolína	17702113	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		tomaskova	Tomašková Karolína	17702113	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+EmployeeID	Person	torvenyi	Törvenyi Rudolf	17709995	par	Užívateľ je povolený	1		17709995	Törvenyi Rudolf	17709995	par	Užívateľ dočasně zakázaný - dočasně mimo evidenci	1	
+EmployeeID	Person	trnavsky	Trnavský Tomáš	17702898	zam	Užívateľ je povolený	1		trnavsky	Trnavský Tomáš	17702898	zam	Užívateľ je povolený	1	
+EmployeeID	Person	trubanova	Trubanová Katarína	17702585	zam	Užívateľ je povolený	1		trubanova	Trubanová Katarína	17702585	zam	Užívateľ je povolený	1	
+EmployeeID	Person	turek	Turek Slavomír	17701181	zam	Užívateľ je povolený	1		turek	Turek Slavomír	17701181	zam	Užívateľ je povolený	1	
+EmployeeID	Person	urbanicova	Urbaničová Dominika	17706180	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1		urbanicova	Urbaničová Dominika	17706180	zam	Užívateľ je dočasně zakázaný - 14ti denná dovolenka	1	
+EmployeeID	Person	vajgel	Vajgel Vladimír	17701795	zam	Užívateľ je povolený	1		vajgel	Vajgel Vladimír	17701795	zam	Užívateľ je povolený	1	
+EmployeeID	Person	valachovicova	Valachovičová Monika	17706002	zam	Užívateľ je povolený	1		valachovicova	Valachovičová Monika	17706002	zam	Užívateľ je povolený	1	
+EmployeeID	Person	vani	Váni Jarolím	17701185	zam	Užívateľ je povolený	1		vani	Váni Jarolím	17701185	zam	Užívateľ je povolený	1	
+EmployeeID	Person	vozdecka	Vozdecká Ingrid	17701193	zam	Užívateľ je povolený	1		vozdecka	Vozdecká Ingrid	17701193	zam	Užívateľ je povolený	1	
+EmployeeID	Person	zabka	Žabka Juraj	17702515	zam	Užívateľ je povolený	1		zabka	Žabka Juraj	17702515	zam	Užívateľ je povolený	1	
+EmployeeID	Person	zavodnikova	Závodníková Dana	17702531	zam	Užívateľ je povolený	1		zavodnikova	Závodníková Dana	17702531	zam	Užívateľ je povolený	1	
+EmployeeID	Person	zelenak	Zeleňák Pavol	17701196	zam	Užívateľ je povolený - riadenie podľa MIM portálu	1		zelenak	Zeleňák Pavol	17701196	zam	Užívateľ je povolený	1	
+EmployeeID	Person	ziakova	Žiaková Adriana	17702592	zam	Užívateľ je povolený	1		ziakova	Žiaková Adriana	17702592	zam	Užívateľ je povolený	1	
+EmployeeID	Person	zilinska	Žilinská Klaudia	17701344	zam	Užívateľ je povolený	1		zilinska	Žilinská Klaudia	17701344	zam	Užívateľ je povolený	1	
+EmployeeID	Person	Zsigmondova	Zsigmondová Lucia Fathi	17701849	zam	Užívateľ je zakázaný - konec PPV	0		Zsigmondova	Zsigmondová Lucia Fathi	17701849	par	Užívateľ je zakázaný - konec PPV	0	
+AccountName	Person	17706009	Novosedlík Matúš	17706009	par	Užívateľ je povolený	1		17706009	Novosedlík Matúš	17706009	zam	Užívateľ je povolený	1	
+AccountName	Person	17706009xi	Novosedlík Matúš	17706009	adm	Užívateľ je povolený	1		17706009xi	Novosedlík Matúš	17706009	adm	Užívateľ je povolený	1	
+AccountName	Person	17706410	Šrámek Tomáš	17706410	zam	Užívateľ je zakázaný - konec PPV	0		17706410	Šrámek Tomáš	17706410	par	Užívateľ je zakázaný - konec PPV	0	
+AccountName	Person	17706461	Kapcala Jakub	17706461	zam	Užívateľ je povolený	1		17706461	Kapcala Jakub	17706461	zam	Užívateľ je povolený	1	
+AccountName	Person	17706461xi	Kapcala Jakub	17706461	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1		17706461xi	Kapcala Jakub	17706461	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	17706466	Mihalík Miroslav	17706466	par	Užívateľ je povolený	1		17706466	Mihalík Miroslav	17706466	par	Užívateľ je povolený	1	
+AccountName	Person	17706481	Usačevová Lenka	17706481	zam	Užívateľ je povolený	1		17706481	Usačevová Lenka	17706481	zam	Užívateľ je povolený	1	
+AccountName	Person	17706669	Dudáš Michal	17706669	zam	Užívateľ je povolený	1		17706669	Dudáš Michal	17706669	zam	Užívateľ je povolený	1	
+AccountName	Person	17706669xi	Dudáš Michal ADM	17706669	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1		17706669xi	Dudáš Michal	17706669	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1	
+AccountName	Person	17706745	Kytošová Klaudia	17706745	zam	Užívateľ je zakázaný - konec PPV	0		17706745	Kytošová Klaudia	17706745	par	Užívateľ je zakázaný - konec PPV	0	
+AccountName	Person	17706917	Schwendtnerová Kitti	17706917	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1		17706917	Schwendtnerová Kitti	17706917	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka	1	
+AccountName	Person	17706917xi	Schwendtnerová Kitti	17706917	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1		17706917xi	Schwendtnerová Kitti	17706917	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	17706927	Muzsík Zoltán	17706927	zam	Užívateľ je povolený	1		17706927	Muzsík Zoltán	17706927	zam	Užívateľ je povolený	1	
+AccountName	Person	17706927xi	Muzsík Zoltán	17706927	adm	Užívateľ je povolený	1		17706927xi	Muzsík Zoltán	17706927	adm	Užívateľ je povolený	1	
+AccountName	Person	17707035	Dziuban Martin	17707035	zam	Užívateľ je povolený	1		17707035	Dziuban Martin	17707035	zam	Užívateľ je povolený	1	
+AccountName	Person	17707035xi	Dziuban Martin	17707035	adm	Užívateľ je povolený	1		17707035xi	Dziuban Martin	17707035	adm	Užívateľ je povolený	1	
+AccountName	Person	17707110	Nguyen Tien Phong	17707110	zam	Užívateľ je povolený	1		17707110	Nguyen Tien Phong	17707110	zam	Užívateľ je povolený	1	
+AccountName	Person	17707110xi	Tien Phong Nguyen	17707110	adm	Užívateľ je povolený	1		17707110xi	Tien Phong Nguyen	17707110	adm	Užívateľ je povolený	1	
+AccountName	Person	17707173	Pramuka Tomáš	17707173	zam	Užívateľ je povolený	1		17707173	Pramuka Tomáš	17707173	zam	Užívateľ je povolený	1	
+AccountName	Person	17707173xi	Pramuka Tomáš	17707173	adm	Užívateľ je povolený	1		17707173xi	Pramuka Tomáš	17707173	adm	Užívateľ je povolený	1	
+AccountName	Person	17709616	Séleš Róbert	17709616	par	Užívateľ je povolený	1		17709616	Séleš Róbert	17709616	par	Užívateľ je povolený	1	
+AccountName	Person	17709617	Skopár Lukáš	17709617	par	Užívateľ je povolený	1		17709617	Skopár Lukáš	17709617	par	Užívateľ je povolený	1	
+AccountName	Person	17709617xi	Skopár Lukáš	17709617	adm	Užívateľ je povolený	1		17709617xi	Skopár Lukáš	17709617	adm	Užívateľ je povolený	1	
+AccountName	Person	17709619	Vanya Adam	17709619	par	Užívateľ je povolený	1		17709619	Vanya Adam	17709619	par	Užívateľ je povolený	1	
+AccountName	Person	17709619xi	Vanya Adam	17709619	adm	Užívateľ je povolený	1		17709619xi	Vanya Adam	17709619	adm	Užívateľ je povolený	1	
+AccountName	Person	17709620	Lenart Alexander	17709620	par	Užívateľ je povolený	1		17709620	Lenart Alexander	17709620	par	Užívateľ je povolený	1	
+AccountName	Person	17709621	Minh Hai Tran	17709621	par	Užívateľ je povolený	1		17709621	Minh Hai Tran	17709621	par	Užívateľ je povolený	1	
+AccountName	Person	17709630	Kulifaj Tomáš	17709630	par	Užívateľ je povolený	1		17709630	Kulifaj Tomáš	17709630	par	Užívateľ je povolený	1	
+AccountName	Person	17709634	Adámka Roman	17709634	par	Užívateľ je povolený	1		17709634	Adámka Roman	17709634	par	Užívateľ je povolený	1	
+AccountName	Person	17709635	Miláček Martin	17709635	par	Užívateľ je povolený	1		17709635	Miláček Martin	17709635	par	Užívateľ je povolený	1	
+AccountName	Person	17709638	Dudáš Róbert	17709638	par	Užívateľ je povolený	1		17709638	Dudáš Róbert	17709638	par	Užívateľ je povolený	1	
+AccountName	Person	17709638xi	Dudáš Róbert	17709638	adm	Užívateľ je povolený	1		17709638xi	Dudáš Róbert	17709638	adm	Užívateľ je povolený	1	
+AccountName	Person	17709639	Klein Richard	17709639	par	Užívateľ je povolený	1		17709639	Klein Richard	17709639	par	Užívateľ je povolený	1	
+AccountName	Person	17709639xi	Klein Richard	17709639	adm	Užívateľ je povolený	1		17709639xi	Klein Richard	17709639	adm	Užívateľ je povolený	1	
+AccountName	Person	17709653	Mudroň Michal	17709653	par	Užívateľ je zakázaný - konec PPV	0		17709653	Mudroň Michal	17709653	par	Užívateľ je zakázaný - konec PPV	0	
+AccountName	Person	17709656	Kruk Miloš	17709656	par	Užívateľ je povolený	1		17709656	Kruk Miloš	17709656	par	Užívateľ je povolený	1	
+AccountName	Person	17709656xi	Kruk Miloš	17709656	adm	Užívateľ je povolený	1		17709656xi	Kruk Miloš	17709656	adm	Užívateľ je povolený	1	
+AccountName	Person	17709657	Kišon Lukáš	17709657	par	Užívateľ je povolený	1		17709657	Kišon Lukáš	17709657	par	Užívateľ je povolený	1	
+AccountName	Person	17709657xi	Kisoň Lukáš	17709657	adm	Užívateľ je povolený	1		17709657xi	Kisoň Lukáš	17709657	adm	Užívateľ je povolený	1	
+AccountName	Person	17709665	Pastucha Ján	17709665	par	Užívateľ je povolený	1		17709665	Pastucha Ján	17709665	par	Užívateľ je povolený	1	
+AccountName	Person	17709665xi	Pastucha Ján	17709665	adm	Užívateľ je povolený	1		17709665xi	Pastucha Ján	17709665	adm	Užívateľ je povolený	1	
+AccountName	Person	17709667	Duda Pavol	17709667	par	Užívateľ je zrušený - riadenie podľa MIM portálu	1		17709667	Duda Pavol	17709667	par	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	17709667xi	Duda Pavol	17709667	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1		17709667xi	Duda Pavol	17709667	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	17709669	Kusenda Fedor	17709669	par	Užívateľ je povolený	1		17709669	Kusenda Fedor	17709669	par	Užívateľ je povolený	1	
+AccountName	Person	17709670	Chreno Dárius	17709670	par	Užívateľ je povolený	1		17709670	Chreno Dárius	17709670	par	Užívateľ je povolený	1	
+AccountName	Person	17709670xi	Chreno Dárius	17709670	adm	Užívateľ je povolený	1		17709670xi	Chreno Dárius	17709670	adm	Užívateľ je povolený	1	
+AccountName	Person	17709672	Juhás Martin	17709672	par	Užívateľ je povolený	1		17709672	Juhás Martin	17709672	par	Užívateľ je povolený	1	
+AccountName	Person	17709673	Uram Karol	17709673	par	Užívateľ je povolený	1		17709673	Uram Karol	17709673	par	Užívateľ je povolený	1	
+AccountName	Person	17709674	Hrašna Juraj	17709674	par	Užívateľ je povolený	1		17709674	Hrašna Juraj	17709674	par	Užívateľ je povolený	1	
+AccountName	Person	17709674xi	Hrašna Juraj	17709674	adm	Užívateľ je povolený	1		17709674xi	Hrašna Juraj	17709674	adm	Užívateľ je povolený	1	
+AccountName	Person	1779000ex	Bučič Matej	1779000	ext	Užívateľ je zakázaný - konec PPV	0		1779000ex	Kratochvíl Josef	1779000	ext	Užívateľ je povolený	1	
+AccountName	Person	1779011ex	Holubov Andrii	1779011	ext	Užívateľ je povolený	1		1779011ex	Holubov Andrii	1779011	ext	Užívateľ je povolený	1	
+AccountName	Person	1779011xi	Holubov Andrii	1779011	adm	Užívateľ je povolený	1		1779011xi	Holubov Andrii	1779011	adm	Užívateľ je povolený	1	
+AccountName	Person	1779013ex	Kuchárová Gabriela	1779060	ext	Užívateľ je povolený	1		1779013ex	Kuchárová Gabriela	1779013	ext	Užívateľ je povolený	1	
+AccountName	Person	1779013xi	Kuchárová Gabriela	1779013	adm	Užívateľ je povolený	1		1779013xi	Kuchárová Gabriela (admin)	1779013	adm	Užívateľ je povolený	1	
+AccountName	Person	1779014ex	Slížik Miloslav	1779014	ext	Užívateľ je povolený	1		1779014ex	Gabaj Lubo	1779014	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779032ex	Šafár Patrik	1779032	ext	Užívateľ je povolený	1		1779032ex	Puskás Szabolcs	1779032	ext	Užívateľ je povolený	1	
+AccountName	Person	1779036ex	Hudáková Lucia	1779036	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779036ex	Hudáková Lucia	1779036	ext	Užívateľ je povolený	1	
+AccountName	Person	1779037ex	Oravec Andrej	1779037	ext	Užívateľ je povolený	1		1779037ex	Klika Luboš	1779037	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779045ex	Kovalík Vladimír	1779045	ext	Užívateľ je povolený	1		1779045ex	Kovalík Vladimír	1779045	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779048ex	Štadler Samuel	1779048	ext	Užívateľ je povolený	1		1779048ex	Ľoch Matej	1779048	ext	Užívateľ je povolený	1	
+AccountName	Person	1779048xi	Štadler Samuel	1779048	adm	Užívateľ je povolený	1		1779048xi	Štadler Samuel	1779048xi	ext	Užívateľ je povolený	1	
+AccountName	Person	1779064ex	Minárik Matúš	1779064	ext	Užívateľ je povolený	1		1779064ex	Test Břetislav	1779064	ext	Užívateľ je povolený	1	
+AccountName	Person	1779065ex	Sedláček Peter	1779065	ext	Užívateľ je povolený	1		1779065ex	Test Bohuslav	1779065	ext	Užívateľ je povolený	1	
+AccountName	Person	1779067ex	Buhaj Dávid	1779067	ext	Užívateľ je zakázaný - konec PPV	0		1779067ex	Test Josef	1779067	ext	Užívateľ je povolený	1	
+AccountName	Person	1779067xi	Buhaj Dávid	1779067	adm	Užívateľ je zakázaný - konec PPV	0		1779067xi	Test Josef	1779067	adm	Užívateľ je povolený	1	
+AccountName	Person	1779070ex	Boťanský Richard	1779070	ext	Užívateľ je povolený	1		1779070ex	Murgaš Miroslav	1779070	ext	Užívateľ je povolený	1	
+AccountName	Person	1779071ex	Matajz Eduard	1779071	ext	Užívateľ je povolený	1		1779071ex	Špička Andrej	1779071	ext	Užívateľ je povolený	1	
+AccountName	Person	1779073ex	Hečko Dušan	1779073	ext	Užívateľ je povolený	1		1779073ex	Hečko Dušan	1779073ex	ext	Užívateľ je povolený	1	
+AccountName	Person	1779081ex	Gottwald Josef	1779081	ext	Užívateľ je povolený	1		1779081ex	Gottwald Josef	1779081ex	ext	Užívateľ je povolený	1	
+AccountName	Person	1779085ex	Kajan Denis	1779085	ext	Užívateľ je povolený	1		1779085ex	Jediný Jakub	1779085	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779088ex	Slíž Radovan	1779088	ext	Užívateľ je povolený	1		1779088ex	Bánik Rastislav	1779088	ext	Užívateľ je povolený	1	
+AccountName	Person	1779088xi	Slíž Radovan	1779088	adm	Užívateľ je povolený	1		1779088xi	Bánik Rastislav	1779088	adm	Užívateľ je povolený	1	
+AccountName	Person	1779089ex	Blažo Martin	1779089	ext	Užívateľ je zakázaný - konec PPV	0		1779089ex	Boťanský Richard	1779089	ext	Užívateľ je povolený	1	
+AccountName	Person	1779089xi	Blažo Martin	1779089	adm	Užívateľ je zakázaný - konec PPV	0		1779089xi	Boťanský Richard	1779089	adm	Užívateľ je povolený	1	
+AccountName	Person	1779090ex	Osuský Boris	1779090	ext	Užívateľ je zakázaný - konec PPV	0		1779090ex	Osuský Boris	1779090	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779090xi	Osuský Boris	1779090	adm	Užívateľ je zakázaný - konec PPV	0		1779090xi	Matajz Eduard	1779090	adm	Užívateľ je povolený	1	
+AccountName	Person	1779091ex	Kyseľ Dominik	1779091	ext	Užívateľ je povolený	1		1779091ex	Kyseľ Dominik	1779091	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779091xi	Kyseľ Dominik	1779091	adm	Užívateľ je povolený	1		1779091xi	Moždženová Kristína	1779091	adm	Užívateľ je povolený	1	
+AccountName	Person	1779093ex	Reisz Marcela	1779093	ext	Užívateľ je povolený	1		1779093ex	Test Jan	1779093	ext	Užívateľ je povolený	1	
+AccountName	Person	1779097ex	Bajla Boris	1779097	ext	Užívateľ je zakázaný - konec PPV	0		1779097ex	Paššák Martin	1779097	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779101ex	Novakovský Jakub	1779101	ext	Užívateľ je povolený	1		1779101ex	Sokol Matěj	1779101	ext	Užívateľ je povolený	1	
+AccountName	Person	1779101xi	Novakovský Jakub	1779101	adm	Užívateľ je povolený	1		1779101xi	Sokol Matěj	1779101	adm	Užívateľ je povolený	1	
+AccountName	Person	1779104ex	Sokol Matěj	1779104	ext	Užívateľ je povolený	1		1779104ex	Malík Peter	1779104	ext	Užívateľ je povolený	1	
+AccountName	Person	1779107ex	Hudák Martin	1779107	ext	Užívateľ je povolený	1		1779107ex	Pavlíková Tatiana	1779107	ext	Užívateľ je povolený	1	
+AccountName	Person	1779108ex	Malík Peter	1779108	ext	Užívateľ je povolený	1		1779108ex	Hubert Jakub	1779108	ext	Užívateľ je povolený	1	
+AccountName	Person	1779110ex	Cíbová Karin	1779110	ext	Užívateľ je povolený	1		1779110ex	Kejř Jan	1779110	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779111ex	Pavlíková Tatiana	1779111	ext	Užívateľ je povolený	1		1779111ex	Šaulíková Dominika	1779111	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779112ex	Hubert Jakub	1779112	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779112ex	Donoval Martin	1779112	ext	Užívateľ je povolený	1	
+AccountName	Person	1779114ex	Teplicky Peter	1779114	ext	Užívateľ je zakázaný - konec PPV	0		1779114ex	Budínská Kristína	1779114	ext	Užívateľ je povolený	1	
+AccountName	Person	1779114xi	Teplicky Peter	1779114	adm	Užívateľ je zakázaný - konec PPV	0		1779114xi	Budínská Kristína	1779114	adm	Užívateľ je povolený	1	
+AccountName	Person	1779115ex	Kejř Jan	1779115	ext	Užívateľ je povolený	1		1779115ex	Sigetiová Andrea	1779115	ext	Užívateľ je povolený	1	
+AccountName	Person	1779118ex	Zmajkovič Matej	1779118	ext	Užívateľ je zakázaný - konec PPV	0		1779118ex	Hiadlovská Simona	1779118	ext	Užívateľ je povolený	1	
+AccountName	Person	1779120ex	Ratkovský Adam	1779120	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779120ex	Salaj Pavol	1779120	ext	Užívateľ je povolený	1	
+AccountName	Person	1779122ex	Virag Ladislav	1779122	ext	Užívateľ je povolený	1		1779122ex	Prajz Jiří	1779122	ext	Užívateľ je povolený	1	
+AccountName	Person	1779122xi	Virag Ladislav	1779122	adm	Užívateľ je povolený	1		1779122xi	Prajz Jiří	1779122	adm	Užívateľ je povolený	1	
+AccountName	Person	1779124ex	Sigetiová Andrea	1779124	ext	Užívateľ je povolený	1		1779124ex	Višvarda Lukáš	1779124	ext	Užívateľ je povolený	1	
+AccountName	Person	1779125xi	Klika Luboš	1779125	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779125xi	Muller Adam	1779125	adm	Užívateľ je povolený	1	
+AccountName	Person	1779128ex	Budínská Kristína	1779128	ext	Užívateľ je povolený	1		1779128ex	Polakovič Martin	1779128	ext	Užívateľ je povolený	1	
+AccountName	Person	1779130ex	Hiadlovská Simona	1779130	ext	Užívateľ je povolený	1		1779130ex	Hanes Stanislav	1779130	ext	Užívateľ je povolený	1	
+AccountName	Person	1779132ex	Špička Andrej	1779132	ext	Užívateľ je povolený	1		1779132ex	Zajac Jaroslav	1779132	ext	Užívateľ je povolený	1	
+AccountName	Person	1779133ex	Salaj Pavol	1779133	ext	Užívateľ je povolený	1		1779133ex	Dekan Martin	1779133	ext	Užívateľ je povolený	1	
+AccountName	Person	1779135ex	Prajz Jiří	1779135	ext	Užívateľ je povolený	1		1779135ex	Kirchner Emma	1779135	ext	Užívateľ je povolený	1	
+AccountName	Person	1779137ex	Višvarda Lukáš	1779137	ext	Užívateľ je povolený	1		1779137ex	Kosecek Miroslav	1779137	ext	Užívateľ je povolený	1	
+AccountName	Person	1779137xi	Višvarda Lukáš	1779137	adm	Užívateľ je povolený	1		1779137xi	Kosecek Miroslav	1779137	adm	Užívateľ je povolený	1	
+AccountName	Person	1779138ex	Muller Adam	1779138	ext	Užívateľ je povolený	1		1779138ex	Chlapečka Marián	1779138	ext	Užívateľ je povolený	1	
+AccountName	Person	1779139ex	Németh Zoltán	1779139	ext	Užívateľ je povolený	1		1779139ex	Nagy Róbert	1779139	ext	Užívateľ je povolený	1	
+AccountName	Person	1779140ex	Stromko Tomáš	1779140	ext	Užívateľ je povolený	1		1779140ex	Duľa Peter	1779140	ext	Užívateľ je povolený	1	
+AccountName	Person	1779141ex	Polakovič Martin	1779141	ext	Užívateľ je povolený	1		1779141ex	Kováčik Juraj	1779141	ext	Užívateľ dočasně zakázaný - dočasně mimo evidenci	1	
+AccountName	Person	1779142ex	Kázmér Anikó	1779142	ext	Užívateľ je povolený	1		1779142ex	Bujňák Milan	1779142	ext	Užívateľ je povolený	1	
+AccountName	Person	1779143ex	Dekan Martin	1779143	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779143ex	Švec Peter	1779143	ext	Užívateľ je povolený	1	
+AccountName	Person	1779144ex	Rybánska Diana	1779144	ext	Užívateľ je povolený	1		1779144ex	Sládkovič Martin	1779144	ext	Užívateľ je povolený	1	
+AccountName	Person	1779146ex	Štellár Kamil	1779146	ext	Užívateľ je povolený	1		1779146ex	Kyseľ Peter	1779146	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779148ex	Hanes Stanislav	1779148	ext	Užívateľ je povolený	1		1779148ex	Pavlák Peter	1779148	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779149ex	Kirchner Emma	1779149	ext	Užívateľ je povolený	1		1779149ex	Gottlieber Michal	1779149	ext	Užívateľ je povolený	1	
+AccountName	Person	1779150ex	Šípoš Jozef	1779150	ext	Užívateľ je povolený	1		1779150ex	Kvačkaj Michal	1779150	ext	Užívateľ je povolený	1	
+AccountName	Person	1779151ex	Kosecek Miroslav	1779151	ext	Užívateľ je povolený	1		1779151ex	Lengyel Miroslav	1779151	ext	Užívateľ je povolený	1	
+AccountName	Person	1779154ex	Chlapečka Marián	1779154	ext	Užívateľ je povolený	1		1779154ex	dlm_admin test	1779154	ext	Užívateľ je povolený	1	
+AccountName	Person	1779155ex	Nagy Róbert	1779155	ext	Užívateľ je povolený	1		1779155ex	Bočko Dominik	1779155	ext	Užívateľ je povolený	1	
+AccountName	Person	1779156ex	Duľa Peter	1779156	ext	Užívateľ je povolený	1		1779156ex	Kotman Boris	1779156	ext	Užívateľ je povolený	1	
+AccountName	Person	1779157ex	Bujňák Milan	1779157	ext	Užívateľ je povolený	1		1779157ex	Kováč Ľudovít	1779157	ext	Užívateľ je povolený	1	
+AccountName	Person	1779158ex	Kováčik Juraj	1779158	ext	Užívateľ je povolený	1		1779158ex	Mihál Vladimír	1779158	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	1779159ex	Sládkovič Martin	1779159	ext	Užívateľ je povolený	1		1779159ex	Knap Miroslav	1779159	ext	Užívateľ je povolený	1	
+AccountName	Person	1779160ex	Kyseľ Peter	1779160	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1		1779160ex	Janský Vladimír	1779160	ext	Užívateľ je povolený	1	
+AccountName	Person	1779161ex	Rozman Filip	1779161	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1		1779161ex	Čík Juraj	1779161	ext	Užívateľ je povolený	1	
+AccountName	Person	1779162ex	Pavlák Peter	1779162	ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1		1779162ex	Nagy Peter	1779162	ext	Užívateľ je povolený	1	
+AccountName	Person	1779163ex	Gottlieber Michal	1779163	ext	Užívateľ je povolený	1		1779163ex	Kozák Radim	1779163	ext	Užívateľ je povolený	1	
+AccountName	Person	anovcin_admin	Anovčín René	1779113	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		anovcin_admin	Anovčín René	1779027	adm	Užívateľ je povolený	1	
+AccountName	Person	balaz	Baláž Benjamín	17702197	zam	Užívateľ je povolený	1		balaz	Baláž Benjamín	17702197	zam	Užívateľ je povolený	1	
+AccountName	Person	barc_admin	Barč Michal	1779101	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		barc_admin	Barč Michal	barc_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	ciesar_admin	Ciesar Marek	1779111	ext	Užívateľ je povolený	1		ciesar_admin	Ciesar Marek	ciesar_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	durica_admin	Ďurica Adrián	1779006	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		durica_admin	Ďurica Adrián	durica_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	farkas_admin	Farkaš Štefan	1779081	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		farkas_admin	Farkaš Štefan	1779025	adm	Užívateľ je povolený	1	
+AccountName	Person	gajdosik_admin	Gajdosik Anton	1779108	ext	Užívateľ je povolený	1		gajdosik_admin	Gajdosik Anton	gajdosik_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	herceg_admin	Herceg Jozef	1779093	ext	Užívateľ je povolený	1		herceg_admin	Herceg Jozef	herceg_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	horvath_admin	Horváth Anton	1779025	ext	Užívateľ je povolený	1		horvath_admin	Horváth Anton	horvath_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	hrdlicka	Hrdlička Tomáš	17702165	zam	Užívateľ je zakázaný - konec PPV	0		hrdlicka	Hrdlička Tomáš	17702165	par	Užívateľ je zakázaný - konec PPV	0	
+AccountName	Person	hrdlicka_admin	Hrdlička Tomáš	17702165	adm	Užívateľ je povolený	1		hrdlicka_admin	Hrdlička Tomáš	17702165	adm	Užívateľ je povolený	1	
+AccountName	Person	jankovic_admin	Jankovič Radko	1779012	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		jankovic_admin	Jankovič Radko	jankovic_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	janos_admin	Jánoš Roman	1779039	ext	Užívateľ je povolený	1		janos_admin	Jánoš Roman	janos_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	kajan_admin	Kajan Miroslav	1779099	ext	Užívateľ je povolený	1		kajan_admin	Kajan Miroslav	kajan_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	kamiacova_admin	Kamiačová Jana	1779118	ext	Užívateľ je povolený	1		kamiacova_admin	Kamiačová Jana	1779024	adm	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+AccountName	Person	kansky_admin	Kansky Jozef	1779050	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		kansky_admin	Kansky Jozef	1779023	adm	Užívateľ je povolený	1	
+AccountName	Person	klasovity_admin	Klasovitý Martin	1779008	ext	Užívateľ je povolený	1		klasovity_admin	Klasovitý Martin	klasovity_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	konakovsky_admin	Koňakovský Martin	17702942	adm	Užívateľ je povolený	1		konakovsky_admin	Koňakovský Martin	17702942	zam	Užívateľ je povolený	1	
+AccountName	Person	ledecky_admin	Ledecký Boris	1779136	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		ledecky_admin	Ledecký Boris	ledecky_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	loderer_admin	Loderer Marek	1779116	ext	Užívateľ je povolený	1		loderer_admin	Loderer Marek	1779022	adm	Užívateľ je povolený	1	
+AccountName	Person	michal_admin	Míchal Luboš	1779054	ext	Užívateľ je povolený	1		michal_admin	Míchal Luboš	michal_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	mikula	Mikula Tibor	17702358	zam	Užívateľ je povolený	1		mikula	Mikula Tibor	17702358	zam	Užívateľ je povolený	1	
+AccountName	Person	moravcik_admin	Moravcik Patrik	1779014	ext	Užívateľ je povolený	1		moravcik_admin	Moravcik Patrik	moravcik_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	msandor_admin	Šandor Marián	1779035	ext	Užívateľ je povolený	1		msandor_admin	Šandor Marián	msandor_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	pavlo_admin	Pavlo Jakub	1779109	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		pavlo_admin	Pavlo Jakub	pavlo_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	rysian_admin	Ryšian Marián	1779033	ext	Užívateľ je povolený	1		rysian_admin	Ryšian Marián	rysian_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	sandtner_admin	Sandtner Michal	1779043	ext	Užívateľ je povolený	1		sandtner_admin	Sandtner Michal	1779021	adm	Užívateľ je povolený	1	
+AccountName	Person	sedlak	Sedlák Mário	17706285	zam	Užívateľ je povolený	1		sedlak	Sedlák Mário	17706285	zam	Užívateľ je povolený	1	
+AccountName	Person	sedlak_admin	Sedlák Mário	17706285	adm	Užívateľ je povolený	1		sedlak_admin	Sedlák Mário	17706285	adm	Užívateľ je povolený	1	
+AccountName	Person	skyba_admin	Skyba Peter	1779110	ext	Užívateľ je povolený	1		skyba_admin	Skyba Peter	1779017	adm	Užívateľ je povolený	1	
+AccountName	Person	slabej_admin	Slabej Filip	1779001	ext	Užívateľ je povolený	1		slabej_admin	Slabej Filip	slabej_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	snirc	Šnirc David	17702970	zam	Užívateľ je povolený	1		snirc	Šnirc David	17702970	zam	Užívateľ je povolený	1	
+AccountName	Person	snirc_admin	Šnirc David	17702970	adm	Užívateľ je povolený	1		snirc_admin	Šnirc David (admin)		adm	Užívateľ je povolený	1	
+AccountName	Person	stugel_admin	Štugel Peter	1779072	ext	Užívateľ je povolený	1		stugel_admin	Štugel Peter	stugel_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	toth	Tóth Tibor	17702941	zam	Užívateľ je povolený	1		toth	Tóth Tibor	17702941	zam	Užívateľ je povolený	1	
+AccountName	Person	toth_admin	Tóth Tibor	17702941	adm	Užívateľ je povolený	1		toth_admin	Tóth Tibor	17702941	adm	Užívateľ je povolený	1	
+AccountName	Person	trebula_admin	Trebula Miro	1779021	ext	Užívateľ je povolený	1		trebula_admin	Trebuľa Miroslav	1779016	adm	Užívateľ je povolený	1	
+AccountName	Person	vavrek_admin	Vavrek Michal	1779065	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		vavrek_admin	Vavrek Michal	vavrek_admin	ext	Užívateľ je povolený	1	
+AccountName	Person	verebes	Verebeš Patrik	17701328	zam	Užívateľ je povolený	1		verebes	Verebeš Patrik	17701328	zam	Užívateľ je povolený	1	
+AccountName	Person	verebes_admin	Verebeš Patrik	17701328	adm	Užívateľ je povolený	1		verebes_admin	Verebeš Patrik		adm	Užívateľ je povolený	1	
+AccountName	Person	zilizi_admin	Zilizi Attila	17706293	adm	Užívateľ je povolený	1		zilizi_admin	Zilizi Attila	17706293	adm	Užívateľ je povolený	1	
+DisplayName	Person	17709630xi	Kulifaj Tomáš	17709630	adm	Užívateľ je povolený	1		17706751	Kulifaj Tomáš	17706751	par	Užívateľ je zakázaný - konec PPV	0	
+DisplayName	Person	1779071xi	Matajz Eduard	1779071	adm	Užívateľ je povolený	1		1779095ex	Matajz Eduard	1779095	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779107xi	Hudák Martin	1779107	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779103ex	Hudák Martin	1779103	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779138xi	Muller Adam	1779138	adm	Užívateľ je povolený	1		1779125ex	Muller Adam	1779125	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779139xi	Németh Zoltán	1779139	adm	Užívateľ je povolený	1		1779126ex	Németh Zoltán	1779126	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779140xi	Stromko Tomáš	1779140	adm	Užívateľ je povolený	1		1779127ex	Stromko Tomáš	1779127	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779142xi	Kázmér Anikó	1779142	adm	Užívateľ je povolený	1		1779129ex	Kázmér Anikó	1779129	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779143xi	Dekan Martin	1779143	adm	Užívateľ je povolený - riadenie podľa MIM portálu	1		17709648	Dekan Martin	17709648	par	Užívateľ je zakázaný - konec PPV	0	
+DisplayName	Person	1779144xi	Rybánska Diana	1779144	adm	Užívateľ je povolený	1		1779134ex	Rybánska Diana	1779134	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779146xi	Štellár Kamil	1779146	adm	Užívateľ je povolený	1		1779131ex	Štellár Kamil	1779131	ext	Užívateľ je povolený	1	
+DisplayName	Person	1779150xi	Šípoš Jozef	1779150	adm	Užívateľ je povolený	1		1779136ex	Šípoš Jozef	1779136	ext	Užívateľ je povolený	1	
+DisplayName	Person	balaz_admin	Baláž Benjamín	17702197	adm	Užívateľ je povolený	1		17702197xi	Baláž Benjamín	17702197	adm	Užívateľ je povolený	1	
+DisplayName	Person	daubner	Daubner Richard	17701456	zam	Užívateľ je zakázaný - konec PPV	0		17709623	Daubner Richard	17709623	par	Užívateľ je zakázaný - konec PPV	0	
+DisplayName	Person	hajro_admin	Hajro Lukáš	1779075	ext	Užívateľ je povolený	1		1779069ex	Hajro Lukáš	1779069	ext	Užívateľ je povolený	1	
+DisplayName	Person	kratochvil_admin	Kratochvíl Josef	1779049	ext	Užívateľ je povolený	1		1779000xi	Kratochvíl Josef	1779000	adm	Užívateľ je povolený	1	
+DisplayName	Person	riha_admin	Říha Michael	1779073	ext	Užívateľ je povolený	1		1779001ex	Říha Michael		ext	Užívateľ je zrušený - riadenie podľa MIM portálu	1	
+DisplayName	Person	trocha_admin	Trocha Martin	1779077	ext	Užívateľ je povolený	1		1779072ex	Trocha Martin		ext	Užívateľ je povolený	1	
+DisplayName	Person	x-MIM.Install	MIM Install		adm	Užívateľ je povolený	1		x-MIM.Install.T	MIM Install			Uživatel je povolený - riadenie podľa MIM portálu		
+DisplayName	Person	zemanovic_admin	Zemanovič Andrej	1779102	ext	Užívateľ je povolený - riadenie podľa MIM portálu	1		1779054ex	Zemanovič Andrej		ext	Užívateľ je povolený	1	

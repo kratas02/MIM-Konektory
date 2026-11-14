@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>FimServiceDbMA</AssemblyName>
+    <RootNamespace>FimServiceDbMA</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>7.3</LangVersion>
+    <Platforms>AnyCPU</Platforms>
+    <Description>Read-only ECMA2 konektor pro cteni objektu a atributu z MIM Service databaze (FIMService).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- MIM assemblies ze serveru MIM (lib\ slozka) -->
+    <Reference Include="Microsoft.MetadirectoryServices">
+      <HintPath>lib\Microsoft.MetadirectoryServices.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.MetadirectoryServicesEx">
+      <HintPath>lib\Microsoft.MetadirectoryServicesEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

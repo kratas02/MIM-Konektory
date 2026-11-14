@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SAPTools.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LogFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\temp\SAP_BAPI.txt</Value>
+    </Setting>
+    <Setting Name="DependantRoles" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ZRFCCALL</Value>
+    </Setting>
+    <Setting Name="XMLFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Batch\Logs\SAP\BAPI_NEW\SAP_BAPI.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

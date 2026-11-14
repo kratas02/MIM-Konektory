@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SAPBAPI_Direct</AssemblyName>
+    <RootNamespace>SAPBAPI_Direct</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>7.3</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <Description>MIM ECMA2 SAP BAPI konektor – primy RFC, bez sapTools.exe.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.MetadirectoryServices">
+      <HintPath>lib\Microsoft.MetadirectoryServices.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.MetadirectoryServicesEx">
+      <HintPath>lib\Microsoft.MetadirectoryServicesEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="sapnco">
+      <HintPath>lib\sapnco.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Reference Include="sapnco_utils">
+      <HintPath>lib\sapnco_utils.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

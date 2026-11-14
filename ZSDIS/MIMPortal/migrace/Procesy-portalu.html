@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Procesy MIM portálu ZSDIS</title>
+<style>
+
+body { font-family: Segoe UI, Calibri, sans-serif; max-width: 1280px; margin: 2rem auto; padding: 0 1.5rem 3rem; line-height: 1.45; color: #1b1b1b; }
+h1, h2, h3 { line-height: 1.25; }
+h1 { font-size: 1.7rem; }
+h2 { margin-top: 2rem; font-size: 1.3rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+a { color: #0b57d0; }
+code { font-family: Consolas, monospace; background: #f3f3f3; padding: 0.05em 0.3em; border-radius: 3px; }
+pre { background: #f6f8fa; padding: 0.8rem 1rem; overflow: auto; }
+pre code { background: none; padding: 0; }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+table { border-collapse: collapse; width: max-content; min-width: 100%; font-size: 0.9rem; }
+th, td { border: 1px solid #d0d0d0; padding: 0.35rem 0.5rem; vertical-align: top; text-align: left; }
+th { background: #f0f0f0; }
+tr:nth-child(even) td { background: #fafafa; }
+
+</style>
+</head>
+<body>
+<h1 id="procesy-mim-portalu-zsdis">Procesy MIM portálu ZSDIS</h1>
+<p>Zdroj: <code>MIMPortal\Policy.xml</code> ze služby <code>http://smd1mgidm02p:5725</code> a export synchronizace ze serveru <code>SMD1MGIDM01P</code> (4. 11. 2026). V politice je 196 MPR, 91 workflow a 240 sad.</p>
+<p>Portál řídí identity pro AD <code>eon-slovakia.sk</code> (ZSE), AD <code>ad.vse.sk</code> (VSE), LDAP <code>VSE_LDAP_prod</code>, SAP CUA, Humanet a externisty. Synchronizační konektory: <code>eon-sk</code>, <code>ad.vse.sk</code>, <code>VSE_LDAP_prod</code>, <code>SAPCUA</code>, <code>HUMANETv2</code>, <code>HUMANET_OUT</code>, <code>ZSEEUser</code>, <code>Externisti</code>, <code>Externisti_SAP_OUT</code>, <code>KOC</code>, <code>MIMMA</code>.</p>
+<h2 id="kdy-se-mpr-spusti">Kdy se MPR spustí</h2>
+<p>Jsou dva typy.</p>
+<p><strong>Request</strong> běží při požadavku na operaci: Create, Read, Modify, Delete, Add, Remove. Add a Remove se týkají vícehodnotového atributu, u skupin skoro vždy <code>ExplicitMember</code>.</p>
+<p><strong>Set Transition</strong> nemá žadatele. <strong>TransitionIn</strong> se spustí v okamžiku, kdy objekt začne splňovat filtr cílové sady. <strong>TransitionOut</strong> se spustí, když z aktuální sady vypadne. Tak je postavená většina zakázkových procesů: „když osoba začne splňovat podmínku, spusť action workflow“.</p>
+<p><code>GrantRight = True</code> je oprávnění. <code>GrantRight = False</code> právo nedává, jen připojí workflow. Operace stejně musí projít nějakým jiným MPR s právem. Vypnuté MPR (<code>Disabled = True</code>) se nespouští.</p>
+<p>Sada bez XPath filtru je sada s ručním členstvím.</p>
+<p>Sloupec <strong>Atributy a skript</strong> je z action workflow, ne ze seznamu oprávnění. Je to zápis, který workflow na objekt opravdu pošle.</p>
+<h2 id="1-zamestnanec-zse-ucet-schranka-stav">1. Zaměstnanec ZSE: účet, schránka, stav</h2>
+<p>Zdroj osoby je Humanet / SAP (<code>stat2</code>, <code>persk</code>, <code>bukrs</code>, <code>EmployeeID</code>). Portál z toho skládá účet v <code>eon-slovakia.sk</code>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Kdy</th>
+<th>Co udělá</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_ZSE_Generate_KID</code></td>
+<td>TransitionIn do <code>_ZSE_ALL_Zamestnanci_bez_KID</code>: má <code>EmployeeID</code>, nemá <code>AccountName</code>, <code>persk</code> nezačíná na <code>D</code>, <code>stat2 = 3</code>, <code>usrID</code> začíná na <code>eon-slovakia</code></td>
+<td>Workflow <code>_ZSE_Generate_KID</code></td>
+<td><code>AccountName</code> = <code>AccountName1</code>, pokud existuje. Jinak GenerateUniqueValue, seed <code>201001</code>, kolize proti <code>AccountName</code> a <code>msDS-SourceAnchor</code> v portálu i v LDAP. Pak složí <code>distinguishedName</code> a <code>userPrincipalName</code> a nastaví <code>scriptPath</code> = <code>\ZSE\LogOnZSE.cmd</code>. Před generováním je náhodná prodleva</td>
+</tr>
+<tr>
+<td><code>_ZSE_Generate_KID_Dohodari</code></td>
+<td>TransitionIn: dohodář (<code>persk</code> začíná na <code>D</code>), <code>stat2 = 3</code>, <code>CreateADAccount = True</code> a chybí účet, DN nebo UPN</td>
+<td>Stejné workflow <code>_ZSE_Generate_KID</code></td>
+<td>Stejný zápis: <code>AccountName</code>, <code>distinguishedName</code>, <code>userPrincipalName</code>, <code>scriptPath</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Create_Mailbox</code></td>
+<td>TransitionIn: <code>eonUserType = primary</code>, <code>usrID = eon-slovakia.sk</code>, není externista, <code>bukrs</code> je 4255, 4217, 4216, 4214, 4213, 4212 nebo 4218</td>
+<td>Workflow <code>_ZSE_Create_Mailbox</code> zapne vznik schránky</td>
+<td><code>eonMailEnabled</code> = True, <code>eonLicenseGroup</code> = <code>M365-LIC-E5</code>. <code>eonMailSuffix</code> podle <code>bukrs</code>: 4212 <code>ppc-malzenice.sk</code>, 4213 <code>zsdis.sk</code>, 4214 <code>zse.sk</code>, 4216 <code>zse-es.sk</code>, 4217 <code>zse-bs.sk</code>, 4218 <code>zsees.sk</code>. Hodnota 4255 v těchto větvích není</td>
+</tr>
+<tr>
+<td><code>_ZSE_set_Country</code></td>
+<td>TransitionIn: má <code>EmployeeID</code> a nemá <code>Country</code></td>
+<td>Doplní zemi</td>
+<td><code>Country</code> = <code>Slovakia</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_update_FirstNameEN_LastNameEN</code></td>
+<td>Request Modify <code>FirstName</code> nebo <code>LastName</code> na libovolné osobě, žadatel je kdokoli z osob</td>
+<td>Přepočítá anglické jméno a příjmení</td>
+<td><code>FirstNameEN</code> = NormalizeString(<code>FirstName</code>), <code>LastNameEN</code> = NormalizeString(<code>LastName</code>)</td>
+</tr>
+<tr>
+<td><code>_ZSE_pridaj_proxy_vynimku</code></td>
+<td>Request Modify <code>DepartmentNumber</code> na osobě typu I nebo E</td>
+<td>Workflow <code>_ZSE_Update_proxy_settings_In_Out</code> nastaví výjimku proxy</td>
+<td>Atribut <code>proxy</code>. Podle <code>DepartmentNumber</code> vybere větev <code>bez_vynimky</code>, <code>emobilita</code>, <code>komunikacia</code>, <code>marketing</code>, <code>sales</code>, <code>security</code>, <code>trading</code> nebo <code>win10-support</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_ALL_Zamestnanci_stat2-0_userAccountControl-512</code></td>
+<td><strong>vypnuté.</strong> TransitionIn: <code>stat2 = 0</code>, <code>eonStatus = I</code>, účet je aktivní (<code>userAccountControl = 512</code>)</td>
+<td>Mělo by účet zakázat</td>
+<td><code>userAccountControl</code> = 514</td>
+</tr>
+<tr>
+<td><code>__vymazat_ZSE_Zamestnanci_bez_SAP_eonStatus_to_I</code></td>
+<td><strong>vypnuté</strong></td>
+<td>Mělo by zakázat účet, když zmizí společnost (<code>bukrs</code>)</td>
+<td>Zapíše <code>eonStatis</code> = <code>I</code>. Atribut ve schématu není, stavový atribut je <code>eonStatus</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-externiste">2. Externisté</h2>
+<p>Externista je <code>Person</code> s <code>Externisti</code> začínajícím na <code>id</code>, typ osoby <code>E</code>. Data přicházejí z konektoru <code>Externisti</code>, část se vrací do <code>Externisti_SAP_OUT</code>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Kdy</th>
+<th>Co udělá</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_ZSE_Externisti_Generate_EmployeeID</code></td>
+<td>TransitionIn: externista ještě nemá <code>EmployeeID</code></td>
+<td>Po krátké prodlevě vygeneruje <code>EmployeeID</code></td>
+<td>GenerateUniqueValue do <code>EmployeeID</code>, předtím AddDelay</td>
+</tr>
+<tr>
+<td><code>_ZSE_externisti_Generate_KID</code></td>
+<td>TransitionIn: má <code>EmployeeID</code>, nemá <code>AccountName</code></td>
+<td>Vygeneruje KID a AD atributy</td>
+<td>Stejné workflow <code>_ZSE_Generate_KID</code>: <code>AccountName</code>, <code>distinguishedName</code>, <code>userPrincipalName</code>, <code>scriptPath</code> = <code>\ZSE\LogOnZSE.cmd</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_dopln_ext_applicant_kid</code></td>
+<td>TransitionIn: je vyplněné <code>ext_applicant_kid1</code> a chybí <code>ext_applicant_kid</code></td>
+<td>Doplní KID žadatele</td>
+<td><code>ext_applicant_kid</code> = <code>ext_applicant_kid1</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_doplnenie_udajov_od_ziadatela</code></td>
+<td>TransitionIn: žadatel už má KID</td>
+<td>Doplní údaje od žadatele</td>
+<td>Najde osobu <code>AccountName</code> = <code>ext_applicant_kid</code> a z ní vezme <code>Manager</code>, <code>Kostl</code>, <code>Werks</code>, <code>ext_applicant_empliyeeid</code>, <code>idNS</code>, <code>ext_applicant_email</code>. <code>Email</code> doplní jen když chybí</td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_doplnenie_udajov_od_ziadatela_zmena_manazera</code></td>
+<td>Request Modify <code>ext_applicant_kid</code> nebo <code>Description</code> na externistovi, který už KID žadatele má</td>
+<td>Znovu přepočítá údaje při změně manažera</td>
+<td>Ze stejného žadatele: <code>ext_applicant_empliyeeid</code>, <code>ext_applicant_email</code>, <code>ext_applicant_name</code> = <code>DisplayName</code> žadatele, <code>ext_applicant_platnost</code> = true</td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_email</code></td>
+<td>TransitionIn: má UPN a nemá e-mail</td>
+<td>Doplní e-mail</td>
+<td><code>Email</code> = <code>ext_extern_email</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_phone</code></td>
+<td>TransitionIn: má účet, UPN a <code>MobilePhone1</code>, nemá <code>MobilePhone</code></td>
+<td>Překlopí telefon</td>
+<td><code>MobilePhone</code> = <code>MobilePhone1</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_Procesed</code></td>
+<td>TransitionIn: má <code>EmployeeID</code> i <code>AccountName</code> a <code>ExternistiProcessed</code> není <code>1</code></td>
+<td>Označí záznam jako zpracovaný</td>
+<td><code>ExternistiProcessed</code> = <code>1</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_aktivny</code></td>
+<td>TransitionIn do aktivního okna: nástup je včera nebo dřív a konec je zítra nebo později</td>
+<td>Nastaví <code>stat2 = 3</code> a <code>eonStatus = A</code></td>
+<td><code>stat2</code> = 3, <code>eonStatus</code> = <code>A</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_expirovany</code></td>
+<td>TransitionIn: konec smlouvy je včera nebo dřív</td>
+<td>Dvě stejnojmenná MPR na stejné sadě. Obě se při vstupu do sady spustí</td>
+<td>Jedno workflow: <code>stat2</code> = 0, <code>eonStatus</code> = <code>I</code>. Druhé: <code>stat2</code> = 3, <code>eonStatus</code> = <code>A</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_notifikacia_o_vytvoreni_ex</code></td>
+<td>TransitionIn: účet vznikl, je doména a e-mail žadatele</td>
+<td>E-mail o založení externisty</td>
+<td>Atribut nemění. EmailNotification na šablonu oznámení o vytvoření</td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_notifikacia_o_bliziacej_expiracii</code></td>
+<td>TransitionIn: konec smlouvy je do 15 dní</td>
+<td>E-mail o blížící se expiraci</td>
+<td>Atribut nemění, jen e-mail</td>
+</tr>
+<tr>
+<td><code>_ZSE_externisti_set_KOC</code></td>
+<td>TransitionIn podle <code>idNS</code> a typu osoby (střediska 1300050401, 0000132602, 1300070100, 1300070102, 0000132200, 0000132203)</td>
+<td>Nastaví <code>KOC = 1</code>. Navazuje konektor <code>KOC</code></td>
+<td><code>KOC</code> = <code>1</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_externisti_set_KOC_To_0</code></td>
+<td>TransitionOut ze stejné sady</td>
+<td>Vrátí <code>KOC</code> na 0</td>
+<td><code>KOC</code> = <code>0</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Externisti_ESK_Azure</code></td>
+<td>TransitionIn: <code>ext_applicant_kid</code> začíná na <code>K27788</code></td>
+<td>Vypne synchronizaci tohoto externisty do Azure ESK</td>
+<td><code>extensionAttribute8</code> = <code>1</code></td>
+</tr>
+<tr>
+<td><code>_zse_externisti_usrID</code></td>
+<td>TransitionIn do <code>externisti_zse_cua</code>: <code>persk</code> začíná na <code>E2</code>, typ <code>E</code>, e-mail není <code>@vs…</code></td>
+<td>Doplní <code>usrID</code> pro SAP CUA</td>
+<td><code>usrID</code> = <code>eon-slovakia.sk</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_users_Externisti_update_VSE_LDAP_distinguishedName</code></td>
+<td>TransitionIn: aktivní externista s účtem a DN</td>
+<td>Doplní VSE LDAP DN</td>
+<td><code>distinguishedNameLDAP</code> = <code>CN=</code> + <code>AccountName</code> + <code>,OU=ext.zse.sk,OU=Spolocnosti,DC=ad,DC=vse,DC=sk</code>. <code>VSENoSync</code> = <code>ZSEOnly</code>. <code>LDAPReplace</code> = odkaz na sebe</td>
+</tr>
+</tbody>
+</table></div>
+<p>Service Desk smí externistovi měnit <code>Email</code>, <code>ext_applicant_kid</code> a <code>ext_applicant_kid1</code> (viz oprávnění).</p>
+<h2 id="3-sekundarni-ucet">3. Sekundární účet</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Kdy</th>
+<th>Co udělá</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_ZSE_Request_Secondary_Account</code></td>
+<td>TransitionIn: <code>CreateSecondaryKID = True</code></td>
+<td>Založí sekundární osobu a příznak zase shodí</td>
+<td>CreateResource: <code>FirstName</code>, <code>LastName</code>, <code>DisplayName</code> z původní osoby, <code>eonUserType</code> = <code>secondary</code>. Pak na původní osobě <code>CreateSecondaryKID</code> = false</td>
+</tr>
+<tr>
+<td><code>_ZSE_Generate_KID_Secondary</code></td>
+<td>TransitionIn: <code>eonUserType = secondary</code> a chybí <code>AccountName</code></td>
+<td>Vygeneruje KID, DN a UPN</td>
+<td><code>AccountName</code> přes GenerateUniqueValue, seed <code>201001</code>. Pak <code>distinguishedName</code> a <code>userPrincipalName</code> = <code>AccountName</code> + <code>@e-ssi05.net</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Service Desk účet zakládá tím, že na zaměstnanci nastaví <code>CreateSecondaryKID</code>. Čtení a správa hesla sekundárního účtu jsou samostatná oprávnění níže.</p>
+<h2 id="4-sap-cua">4. SAP CUA</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Kdy</th>
+<th>Co udělá</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_ZSE_SAPCUA_Create</code></td>
+<td>TransitionIn do sady <code>_ZSE_SAPCUA_Users</code> (ruční členství)</td>
+<td>Workflow <code>_ZSE_SAPCUA_Sync</code> označí uživatele k exportu do CUA</td>
+<td><code>ExportToSAPCUA</code> a přidá osobu do skupiny <code>PassSyncCUA</code> (<code>ExplicitMember</code>)</td>
+</tr>
+<tr>
+<td><code>_ZSE_SAPCUA_Filtered</code></td>
+<td>TransitionOut ze stejné sady</td>
+<td><code>_ZSE_SAPCUA_Unsync</code> ho z CUA stáhne</td>
+<td><code>EmployeeEndDate</code> = teď minus 1 den, <code>EmployeeEndDateCUA</code>, a odebere osobu ze skupiny <code>PassSyncCUA</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Send_SAPCUA_Disablement_Notification</code></td>
+<td>TransitionIn: <code>ExportToSAPCUA = True</code> a <code>EmployeeEndDate</code> je do 7 dní</td>
+<td>E-mail <code>_ZSE _Send_SAPCUA_email_notification</code></td>
+<td>Atribut nemění. Šablona <code>_ZSE_SAPCUA_User_Future_Disable_Notification</code>, příjemce <code>itpodpora@zsegroup.sk</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_usrID</code></td>
+<td>TransitionIn do <code>uzivatelia_zse_cua</code>: <code>persk</code> nezačíná na <code>E2</code> a e-mail je <code>@zse.sk</code>, <code>@zse-energia.sk</code>, <code>@zse-bs.sk</code>, <code>@zse-es.sk</code>, <code>@ppc-malzenice.sk</code> nebo <code>@zsdis.sk</code></td>
+<td>Doplní <code>usrID</code> pro CUA</td>
+<td><code>usrID</code> = <code>eon-slovakia.sk</code></td>
+</tr>
+<tr>
+<td><code>_VSE_usrID</code></td>
+<td>TransitionIn: <code>persk</code> není <code>E2</code>, <code>usrID</code> je prázdné, e-mail je <code>@vseholding.sk</code>, <code>@vseas.sk</code>, <code>@vsdas.sk</code> nebo <code>@vsesol.sk</code></td>
+<td>Doplní VSE <code>usrID</code></td>
+<td><code>usrID</code> = <code>ad.vse.sk</code></td>
+</tr>
+<tr>
+<td><code>_update_SSAP_SET</code></td>
+<td><strong>vypnuté.</strong> TransitionIn do <code>add_to_sap</code> (<code>ExportToSAPCUA = True</code> a osoba ještě v cílové sadě není)</td>
+<td>Mělo volat <code>Add_to_SAP</code></td>
+<td>Vloží osobu do sady <code>_ZSE_SAPCUA_Users</code> (<code>ExplicitMember</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-kopie-identit-a-skupin-mezi-vse-a-zse">5. Kopie identit a skupin mezi VSE a ZSE</h2>
+<p>To je největší zakázkový proces. Uživatel nebo skupina v <code>ad.vse.sk</code> (<code>distinguishedNameVSE</code>, OU <code>Spolocnosti</code> nebo <code>Autorizacia\GPOGroups</code>) dostane protějšek v <code>eon-slovakia.sk</code>, a naopak. Příznaky <code>LDAPTarget</code>, <code>LDAPTargetZSE</code>, <code>LDAPTargetZSEOnly</code>, <code>LDAPUpdate</code>, <code>LDAPPrepared</code> a <code>LDAPReplace</code> drží fázi kopírování. Účty kopií mají <code>DisplayName</code> / <code>AccountName</code> s prefixem <code>copy-</code>.</p>
+<p><strong>Uživatelé</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Kdy</th>
+<th>Co udělá</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_VSE_Copy_users_create</code></td>
+<td>TransitionIn: DN VSE končí v <code>OU=Spolocnosti,DC=ad,DC=vse,DC=sk</code> a DN ZSE v <code>OU=org,DC=eon-slovakia,DC=sk</code> (nebo účet <code>Z200089</code>)</td>
+<td>Založí kopii osoby</td>
+<td>CreateResource. <code>AccountName</code> a <code>DisplayName</code> s prefixem <code>copy-</code>. Z originálu bere <code>FirstName</code>, <code>LastName</code>, <code>EmployeeID</code>, <code>EmployeeType</code>, <code>persk</code>, <code>MobilePhone</code>, <code>mobile</code>, <code>personalTitle</code>, <code>upn</code>, <code>eonStatus</code>, <code>userAccountControl</code>, <code>userPrincipalName</code> a VSE dvojčata (<code>accountNameVSE</code>, <code>distinguishedNameVSE</code>, <code>EmployeeIDVSE</code>, <code>ObjectSIDVSE</code>, <code>FirstNameVSE</code>, <code>LastNameVSE</code>, <code>userAccountControlVSE</code>, <code>userPrincipalNameVSE</code>, <code>displayNameVSE</code>). <code>LDAPSource</code> = originál, <code>extensionAttribute10</code> = <code>accountNameVSE</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_users_update</code></td>
+<td>Request Modify vybraných atributů (oddělení, e-mail, funkce, telefon, <code>accountNameVSE</code> a dalších) na této dvojici</td>
+<td>Přepíše atributy na kopii. Žadatel je kdokoli z osob a skupin, prakticky změna ze synchronizace</td>
+<td>Na objekt <code>LDAPTarget</code>: <code>DisplayName</code> a <code>AccountName</code> znovu s <code>copy-</code>, plus <code>Department</code>, <code>Email</code>, <code>JobTitle</code>, <code>FirstName</code>, <code>LastName</code>, <code>FirstNameVSE</code>, <code>LastNameVSE</code>, <code>EmployeeID</code>, <code>EmployeeType</code>, <code>persk</code>, <code>MobilePhone</code>, <code>mobile</code>, <code>personalTitle</code>, <code>upn</code>, <code>eonStatus</code>, <code>userAccountControl</code>, <code>userAccountControlVSE</code>, <code>userPrincipalName</code>, <code>userPrincipalNameVSE</code>, <code>ObjectSIDVSE</code>, <code>accountNameVSE</code>, <code>extensionAttribute10</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_users_update_manual</code></td>
+<td>TransitionIn do stejného průniku DN</td>
+<td>Stejná aktualizace, spuštěná vstupem do sady</td>
+<td>Stejný zápis na <code>LDAPTarget</code> jako řádek výš</td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_users_write_back</code></td>
+<td>TransitionIn: <code>DisplayName</code> začíná na <code>copy-</code></td>
+<td>Zapíše odkaz z kopie zpět na originál</td>
+<td>Na originál (<code>LDAPSource</code>) zapíše <code>LDAPTarget</code>, <code>LDAPReplace</code> a <code>LDAPTargetZSE</code>. Na kopii <code>LDAPReplace</code> a <code>LDAPTargetZSE</code> = odkaz na sebe</td>
+</tr>
+<tr>
+<td><code>_VSE_copy_users_add_LDAPTargetZSE</code></td>
+<td>TransitionIn: účet začíná na <code>svc_hackathon_</code>, nemá VSE účet ani <code>usrID</code> a není v <code>LDAPTargetZSE</code></td>
+<td>Označí účet jako cíl kopírování do ZSE</td>
+<td><code>LDAPTargetZSE</code> = odkaz na sebe</td>
+</tr>
+<tr>
+<td><code>_VSE_Users_Add_Display_Name</code></td>
+<td>TransitionIn: chybí <code>DisplayName</code>, <code>displayNameVSE</code> je vyplněné</td>
+<td>Složí zobrazované jméno</td>
+<td><code>DisplayName</code> = <code>VSE-</code> + <code>displayNameVSE</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Generate_KID_AD_Account</code></td>
+<td>TransitionIn: <code>usrID</code> začíná na <code>ad.vse.sk</code>, <code>humanet</code> začíná na <code>hum</code>, DN ještě není <code>CN=…</code></td>
+<td>Vygeneruje VSE účet, DN, UPN a <code>scriptPath</code></td>
+<td>Stejný postup jako ZSE KID: <code>AccountName</code> ze seedu <code>201001</code> nebo z <code>AccountName1</code>, pak <code>distinguishedName</code>, <code>userPrincipalName</code>, <code>scriptPath</code> = <code>\ZSE\LogOnZSE.cmd</code></td>
+</tr>
+<tr>
+<td><code>_VSE_user_create_zse_users_for_x_accounts</code></td>
+<td>TransitionIn: <code>LDAPnew = VSEtoZSE</code> a účet už existuje</td>
+<td>Založí ZSE účet pro existující VSE identitu (<code>_VSE_Generate_KID_AD_Account_X</code>)</td>
+<td>Z primární osoby (<code>Primary</code>) bere <code>FirstName</code>, <code>LastName</code>, <code>DisplayName</code>. <code>EmployeeID</code> = <code>employeeNumber</code>. Pak GenerateUniqueValue do <code>AccountName</code>, <code>distinguishedName</code>, <code>userPrincipalName</code>, <code>scriptPath</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Users_XVSB</code></td>
+<td>TransitionIn: <code>employeeNumber</code> začíná na <code>xvsb</code></td>
+<td>Doplní údaje účtů XVSB</td>
+<td><code>EmployeeType</code> = <code>I</code>, <code>upn</code> = <code>eskcs.sk</code></td>
+</tr>
+<tr>
+<td><code>_VSE_user_no_ad.vse.sk</code></td>
+<td>TransitionIn: ZSE účet v <code>OU=org</code>, <code>ouldap</code> končí v <code>DC=ad,DC=vse,DC=sk</code>, nemá <code>accountNameVSE</code></td>
+<td>Nastaví <code>VSENoSync</code> na režim jen ZSE</td>
+<td><code>VSENoSync</code> = <code>ZSEOnly</code>, <code>LDAPReplace</code> = sebe, <code>distinguishedNameLDAP</code> = <code>CN=</code> + <code>AccountName</code> + <code>,OU=Default Users,OU=</code> + <code>upn</code> + <code>,OU=Spolocnosti,...</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Users_Transition(ZSEOnly - VSEZSE)</code></td>
+<td>TransitionIn: <code>advse = advse</code> a <code>VSENoSync = ZSEOnly</code></td>
+<td>Potvrdí <code>VSENoSync = yes</code></td>
+<td><code>VSENoSync</code> = <code>Yes</code></td>
+</tr>
+<tr>
+<td><code>_VSE_User_Only_ucty_update</code></td>
+<td>TransitionIn do sady, která dnes obsahuje jen účty s <code>accountNameVSE</code> začínajícím na <code>kovacs</code></td>
+<td>Doplní atributy účtů, které žijí jen ve VSE</td>
+<td><code>DisplayName</code> = <code>displayNameVSE</code></td>
+</tr>
+<tr>
+<td><code>_VSE_User_Only_delete_when_deleted</code></td>
+<td>TransitionIn: není <code>employeeNumber</code>, není <code>advse</code>, není DN, není kopie, a je <code>LDAPdev</code> nebo <code>LDAPprod</code></td>
+<td>Smaže osamocený VSE účet</td>
+<td>DeleteResources na cílovou osobu. Atribut nezapisuje</td>
+</tr>
+<tr>
+<td><code>_VSE_users_LDAPReplace</code></td>
+<td>TransitionIn: DN VSE končí v <code>DC=vse,DC=sk</code></td>
+<td>Nastaví <code>LDAPReplace</code> pro přepis v LDAP</td>
+<td><code>LDAPReplace</code> = odkaz na sebe</td>
+</tr>
+<tr>
+<td><code>_ZSE_users_set_LDAPReplace</code></td>
+<td>TransitionIn: má <code>accountNameVSE</code> a <code>distinguishedNameLDAP</code> a ještě není v sadě <code>LDAPReplace</code></td>
+<td>Stejný přepis, spuštěný ze strany ZSE</td>
+<td>Stejné workflow: <code>LDAPReplace</code> = odkaz na sebe</td>
+</tr>
+<tr>
+<td><code>_VSE_users_kontrola_Provisionovany_do_dev_aj_prod</code> a <code>_VSE_groups_kontrola_Provisionovany_do_dev_aj_prod</code></td>
+<td>TransitionIn: <code>LDAPdev = dev</code> a zároveň <code>LDAPprod = prod</code></td>
+<td>Kontrola, že objekt nemá být současně v dev i prod</td>
+<td><code>LDAPkontrola</code> = spojení obou DN (<code>distinguishedNameVSE</code> a ZSE DN)</td>
+</tr>
+<tr>
+<td><code>_VSE_Users_Update_LDAPTargetZSE</code></td>
+<td>TransitionIn: stejná kombinace dev + prod</td>
+<td>Nastaví <code>LDAPTargetZSE</code></td>
+<td><code>LDAPTargetZSE</code> = <code>LDAPTarget</code>, a když ten chybí, tak <code>LDAPReplace</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_users_update_VSE_LDAP_distinguishedName</code></td>
+<td>TransitionIn: Humanet, aktivní, účet i <code>ouldap</code>, DN v <code>OU=MU22</code></td>
+<td>Dopočítá VSE LDAP DN</td>
+<td><code>distinguishedNameLDAP</code> = <code>CN=</code> + <code>AccountName</code> + <code>,</code> + <code>ouldap</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Skupiny</strong></p>
+<p>Kopírování jde po fázích <code>stage0</code> / <code>stage1</code> a podle toho, jestli cíl je jen ZSE, jen VSE, nebo obě strany.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Kdy</th>
+<th>Co udělá</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_VSE_Copy_groups_create(VSE only)</code></td>
+<td>TransitionIn: skupina má <code>accountNameVSE</code>, DN VSE v <code>OU=Autorizacia\GPOGroups</code>, ještě nemá ZSE DN a není to kopie</td>
+<td>Založí kopii skupiny ve VSE</td>
+<td>CreateResource. <code>AccountName</code> = Left(<code>copy-</code> + <code>AccountName</code>, 62), <code>DisplayName</code> = <code>copy-</code> + <code>DisplayName</code>. Kopíruje <code>accountNameVSE</code>, <code>distinguishedNameVSE</code>, <code>Domain</code>, <code>Scope</code>, <code>Type</code>, <code>ExplicitMember</code>, <code>cnVSE</code>. <code>MembershipLocked</code> = false, <code>MembershipAddWorkflow</code> = <code>None</code>, <code>LDAPSource</code> = originál</td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update-auto</code></td>
+<td>Sync engine mění jméno, <code>accountNameVSE</code>, CN nebo DN VSE na této sadě</td>
+<td>Přepíše atributy kopie</td>
+<td>Na <code>LDAPTarget</code>: <code>accountNameVSE</code>, <code>AccountName</code> (zkrácené <code>copy-</code>), <code>distinguishedNameVSE</code>, <code>Domain</code>, <code>Scope</code>, <code>Type</code>, <code>DisplayName</code> = <code>copy-</code> + jméno, <code>cnVSE</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update-manual</code></td>
+<td>TransitionIn do sady se stejným významem, navíc musí být členem <code>LDAPTarget</code></td>
+<td>Stejný přepis mimo synchronizaci</td>
+<td>Stejný zápis na <code>LDAPTarget</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_create(ZSE v2)</code></td>
+<td>TransitionIn: skupina v <code>OU=hrgroups</code> nebo <code>OU=authz\Groups</code> v <code>eon-slovakia.sk</code>, mimo <code>AzureESK</code> a <code>AzureESKCS</code></td>
+<td>Když kopie neexistuje, založí ji a naváže <code>distinguishedNameVSE</code></td>
+<td>CreateResource s <code>Scope</code>, <code>Type</code>, <code>ExplicitMember</code> z <code>LDAPTargetZSE</code>, <code>MembershipLocked</code>, <code>MembershipAddWorkflow</code>, <code>DisplayName</code> = <code>copy-</code> + jméno, <code>LDAPSourceZSE</code> = originál, <code>VSENoSync</code> = <code>Yes</code>, <code>LDAPPrepared</code> = <code>stageZSE0</code>, <code>Owner</code> a <code>DisplayedOwner</code> = účet <code>miminstall</code>. Na originál zapíše <code>LDAPTargetZSE</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_create(ZSE v2 back link)</code></td>
+<td>TransitionIn: kopie ve fázi <code>LDAPPrepared = stageZSE0</code></td>
+<td>Doplní zpětný odkaz</td>
+<td>Na kopii <code>LDAPReplace</code> a <code>LDAPTargetZSE</code> = sebe. Na originál (<code>LDAPSourceZSE</code>) zapíše <code>Owner</code>, <code>DisplayedOwner</code> = <code>miminstall</code>, <code>LDAPTargetZSE</code>, <code>LDAPTargetZSEOnly</code> a <code>LDAPReplace</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_create(ZSE v OU=authz…)</code> a <code>_VSE_Copy_groups_create(ZSE_vytvorene manualne)</code></td>
+<td><strong>vypnuté</strong></td>
+<td>Starší varianta zakládání kopií</td>
+<td>Workflow <code>_VSE_Copy_groups_create(ZSE)</code>: kopie s <code>copy-</code>, <code>VSENoSync</code> = <code>Yes</code>, <code>LDAPPrepared</code> = <code>stage0</code>, <code>LDAPSourceZSE</code> = originál. Na originál <code>LDAPTargetZSE</code> a <code>LDAPPrepared</code> = <code>stage1</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_create_OU=Diamond,…</code></td>
+<td>TransitionIn: skupina v <code>OU=Diamond,OU=Autorizacia,…,DC=vse,DC=sk</code>, není kopie</td>
+<td>Nastaví <code>adminDescription</code> na <code>TYPMIMVSE</code></td>
+<td><code>adminDescription</code> = <code>TYPMIMVSE</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_stage0_copy_members_bulk</code></td>
+<td>TransitionIn: originál (ne kopie) v ZSE <code>hrgroups</code> nebo VSE <code>GPOGroups</code></td>
+<td>Posune fázi na stage1</td>
+<td><code>LDAPUpdate</code> = <code>stage1</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_stage0_update_members</code></td>
+<td>Sync engine přidá nebo odebere <code>ExplicitMember</code> na stejné sadě</td>
+<td>Zkopíruje členy (stage0)</td>
+<td>Stejné workflow: <code>LDAPUpdate</code> = <code>stage1</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update_members(ZSE v2 Only)</code> a ruční dvojče</td>
+<td>Členství skupiny, která je <code>LDAPTargetZSEOnly</code>. Request varianta reaguje na Add/Remove, TransitionIn varianta na <code>LDAPUpdate = stage1</code></td>
+<td>Přepíše členy přímo</td>
+<td><code>LDAPTargetZSEOnly</code> / <code>ExplicitMember</code> = členové originálu přemapovaní přes <code>LDAPTargetZSE</code>. <code>LDAPUpdate</code> = <code>stage2</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update_members(ZSE v2 Both)</code> a ruční dvojče</td>
+<td>Skupina v <code>OU=authz\Groups</code>, je v <code>LDAPTargetZSE</code> a není <code>LDAPTargetZSEOnly</code></td>
+<td>Zkopíruje členy z VSE, doplní ZSE kopie uživatelů, odstraní kolize a posune fázi</td>
+<td><code>ExplicitMember</code> na kopii, pak <code>LDAPUpdate</code> = <code>stage2</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update_members(ZSE only, LDAPUpdate=stage1)</code></td>
+<td>TransitionIn: DN v <code>OU=authz</code> a <code>LDAPUpdate = stage1</code></td>
+<td>Stejné kopírování členů jen pro ZSE</td>
+<td>Stejné jako Only: <code>ExplicitMember</code> přes <code>LDAPTargetZSEOnly</code>, <code>LDAPUpdate</code> = <code>stage2</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update_members(ZSE v2 VSE update, LDAPUpdate=stage1)</code></td>
+<td>TransitionIn: VSE GPO skupina, <code>LDAPUpdate = stage1</code>, není kopie</td>
+<td>Kopírování členů na VSE skupinách</td>
+<td><code>ExplicitMember</code> z VSE členů a jejich ZSE kopií, <code>LDAPUpdate</code> = <code>stage2</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update_members_(ZSE on change in AD)</code></td>
+<td>Add/Remove člena, skupina je v <code>LDAPTarget</code> a leží ve VSE GPO nebo ZSE authz</td>
+<td>Stage0 kopie členů po změně v AD</td>
+<td><code>LDAPUpdate</code> = <code>stage1</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update_add_target_users</code></td>
+<td>TransitionIn: <code>AccountName</code> začíná na <code>copy-VSE</code></td>
+<td>Označí uživatele jako <code>LDAPTarget</code></td>
+<td><code>ExplicitMember</code> = InsertValues členů, kteří mají <code>LDAPTarget</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_ZSE_Only_stage0</code> / <code>stage1</code></td>
+<td>TransitionIn: kopie <code>copy-ZSE</code> ve fázi <code>stage0</code>, pak <code>stage1</code></td>
+<td>Nejdřív reference, potom vložení členů</td>
+<td>Stage0: <code>LDAPPrepared</code> = <code>stage1</code>, na originál <code>LDAPTarget</code> a <code>LDAPReplace</code>. Stage1: <code>ExplicitMember</code> = InsertValues z <code>LDAPSourceZSE</code>, <code>LDAPPrepared</code> = <code>stage2</code></td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_groups_update_membership_with_LDAPReplace</code></td>
+<td>TransitionIn: kopie s <code>LDAPPrepared = ready</code></td>
+<td>Finální přepis členství</td>
+<td><code>ExplicitMember</code> = členové přemapovaní přes <code>LDAPReplace</code></td>
+</tr>
+<tr>
+<td><code>_VSE_copy_fix_group_missing_LDAPTarget</code></td>
+<td>TransitionIn: VSE autorizační skupina, která ještě není v <code>LDAPTarget</code></td>
+<td>Doplní <code>LDAPTarget</code>, <code>LDAPSource</code> a <code>LDAPReplace</code></td>
+<td>Najde kopii <code>AccountName</code> = <code>copy-</code> + účet. Na ni <code>LDAPSource</code> = originál a <code>LDAPReplace</code> = kopie. Na originál <code>LDAPReplace</code> = kopie</td>
+</tr>
+<tr>
+<td><code>_VSE_Groups_Original_advse_VSE-Out-delete</code></td>
+<td>TransitionOut ze sady originálů <code>VSE-…</code> s příznakem <code>advse</code>. Filtr sady je dnes zúžený na <code>DisplayName</code> začínající na <code>xxx</code>, takže prakticky nespouští</td>
+<td>Když originál ze sady vypadne, smaže i kopii</td>
+<td>DeleteResources nejdřív na kopii (<code>remove_copy</code>), potom na cíl (<code>delete target</code>). Atribut nezapisuje</td>
+</tr>
+<tr>
+<td><code>_VSE_Copy_Update_all_User_and_User_copy_groups</code></td>
+<td>TransitionIn: sada je dnes filtr na jediný účet <code>A201006</code></td>
+<td>Hromadná oprava členství kopií</td>
+<td>Skupinám, které mají ve členech osobu se stejným <code>displayNameVSE</code>, nastaví <code>LDAPUpdate</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="6-skupiny-na-portalu-azure-esk-dfs-rucni-skupiny">6. Skupiny na portálu: Azure ESK, DFS, ruční skupiny</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Kdy</th>
+<th>Co udělá</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>_ZSE_Groups_OU=AzureESK,…</code></td>
+<td>TransitionIn: DN končí v <code>OU=AzureESK,OU=authz,…</code> nebo <code>Description</code> začíná na <code>AzureESK</code> a není <code>AzureESKCS</code></td>
+<td>Doplní atributy skupiny</td>
+<td><code>distinguishedName</code> = <code>CN=</code> + <code>AccountName</code> + <code>,OU=AzureESK,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</code>. <code>groupType</code> = <code>-2147483646</code> (globální bezpečnostní skupina)</td>
+</tr>
+<tr>
+<td><code>_ZSE_Groups_OU=AzureESKCS,…</code></td>
+<td>TransitionIn: DN v <code>OU=AzureESKCS</code> nebo <code>Description</code> začíná na <code>AzureESKCS</code></td>
+<td>Totéž pro CS skupiny</td>
+<td>Stejný <code>groupType</code>. <code>distinguishedName</code> končí v <code>OU=AzureESKCS,OU=authz,OU=Groups,DC=eon-slovakia,DC=sk</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Group_Set_adminDescription</code></td>
+<td>TransitionIn: <code>Description</code> začíná na <code>\\eon-slovakia.sk\</code></td>
+<td>Nastaví popis a otevře členství</td>
+<td><code>adminDescription</code> = <code>TYPMIMManualne</code>, <code>MembershipLocked</code> = false, <code>MembershipAddWorkflow</code> = <code>None</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_group_Set_AdminDescription-TYPMIMManualne_from_AD</code></td>
+<td>Sync engine vytvoří skupinu v sadě Group Administrators</td>
+<td>Označí ji jako ručně založenou z AD</td>
+<td><code>adminDescription</code> = <code>TYPMIMManualne</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_DFS_Update_Owners</code></td>
+<td>Kdokoli přidá nebo odebere člena skupiny <code>…\OU=DFS rights\…</code> s názvem končícím na <code>mg</code></td>
+<td>Vlastníky skupiny nastaví podle členů <code>mg</code> skupiny</td>
+<td><code>Owner</code> = <code>ExplicitMember</code>. <code>DisplayedOwner</code> = první seřazený člen. Totéž <code>DisplayedOwner</code> a <code>Owner</code> na skupině <code>r</code> a <code>rw</code> se stejným kmenem názvu</td>
+</tr>
+<tr>
+<td><code>_ZSE_DFS_Update_Service_Desk_Owner_when_Empty_or_Service_Desk_Change</code></td>
+<td>TransitionIn: stejné <code>mg</code> skupiny, vlastník je Service Desk nebo vlastník chybí</td>
+<td>Doplní vlastníka</td>
+<td><code>ExplicitMember</code> skupiny naplní ze sady <code>_ZSE_Service_Desk</code></td>
+</tr>
+<tr>
+<td><code>_ZSE_Update_Group_Member_To_Set</code></td>
+<td>Service Desk přidá nebo odebere člena v <code>_ZSE_ServiceDesk_Control_Groups</code></td>
+<td>Promítne členství skupiny do odpovídající sady</td>
+<td><code>ExplicitMember</code> sady, jejíž <code>DisplayName</code> se rovná <code>DisplayName</code> skupiny</td>
+</tr>
+</tbody>
+</table></div>
+<p>Tři MPR na Azure ESK a Azure ESK CS jsou čistě oprávnění správců těchto OU. Jsou v části o právech.</p>
+<h2 id="notifikace">Notifikace</h2>
+<p>V procesech jsou čtyři e-maily, které se opravdu odesílají. Šablony schválení vlastníka skupiny a testovací mail na <code>stefandr@microsoft.com</code> v politice jsou, ale žádné zapnuté MPR je nespouští. Šablona <code>_ZSE_New_User</code> (účet zaměstnance) taky není navázaná na workflow.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Kdy</th>
+<th>Komu</th>
+<th>Předmět a text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Externista dostane účet, doménu a e-mail žadatele. MPR <code>_ZSE_Externisti_notifikacia_o_vytvoreni_ex</code></td>
+<td><code>personalne@zse.sk</code> a <code>ext_applicant_email</code></td>
+<td>Předmět <code>MIM: Informácia o vytvorení nového používateľa</code>. Text říká, že účet externisty vznikl a je deaktivovaný. Aktivaci, heslo a oprávnění má žadatel řešit Jira formulářem <code>https://jira-sm.zsdis.sk/servicedesk/customer/portal/1/create/72</code>. V mailu je jméno, KID a osobní číslo</td>
+</tr>
+<tr>
+<td>Konec smlouvy externisty je do 15 dní. MPR <code>_ZSE_Externisti_notifikacia_o_bliziacej_expiracii</code></td>
+<td><code>personalne@zse.sk</code>, <code>ext_extern_email</code> a e-mail manažera</td>
+<td>Předmět <code>Upozornenie na blížiaci sa koniec platnosti zmluvy</code>. Platnost bere z <code>EmployeeEndDate</code>. Prodloužení se má nahlásit na <code>jira@zsegroup.sk</code> nejpozději 15 pracovních dní před koncem. Věta o dni deaktivace má v šabloně text <code>[dátum deaktivácie]</code>, to není výraz portálu, takže se datum samo nedoplní</td>
+</tr>
+<tr>
+<td>Osoba má <code>ExportToSAPCUA</code> a <code>EmployeeEndDate</code> je do 7 dní. MPR <code>_ZSE_Send_SAPCUA_Disablement_Notification</code></td>
+<td>jen <code>itpodpora@zsegroup.sk</code></td>
+<td>Předmět <code>Odobratie prístupov do SAP</code>. V textu je účet a <code>EmployeeEndDateCUA</code></td>
+</tr>
+<tr>
+<td>Skupina má <code>ExpirationTime</code> do 14 dní. MPR <code>Temporal policy workflow: Impending group resource expiry notification</code></td>
+<td>vlastník skupiny</td>
+<td>Standardní šablona: objekt daného jména vyprší v <code>ExpirationTime</code>, a když se expirace neprodlouží, smaže se</td>
+</tr>
+</tbody>
+</table></div>
+<p>PAM požadavek má vlastní sadu šablon (žádost o schválení, schváleno, zamítnuto, timeout, eskalace, dokončeno). Posílá je aktivita <code>PAMRequestApprovalSequenceActivity</code> ve workflow <code>PAM: Request Authorization</code>, které je zapnuté. Schválení vlastníkem skupiny používá standardní approval šablony, ale jeho MPR je vypnuté, takže ty maily nechodí.</p>
+<h2 id="7-schvalovaci-workflow">7. Schvalovací workflow</h2>
+<p>V portálu jsou dvě workflow, která opravdu obsahují aktivitu Approval.</p>
+<p><strong>Owner Approval Workflow</strong> (autorizační fáze). Schvalovatel je <code>[//Target/Owner]</code>, tedy vlastník skupiny, na kterou se sahá. Čas na schválení je 3 dny. Před schválením běží ještě validace skupiny. Workflow je navázané jen na MPR <code>Group management workflow: Owner approval on add member</code>. To MPR je <strong>vypnuté</strong>. Spouštělo by se při Add člena do skupiny, která má <code>MembershipAddWorkflow = "Owner Approval"</code>. Dnes se tedy schválení vlastníkem nespouští.</p>
+<p>Aktivní MPR <code>Security group management: Users can add or remove any member of groups subject to owner approval</code> právo na Add/Remove dává, ale autorizační workflow k němu připojené není. Členy „owner approved“ bezpečnostní skupiny tedy může měnit sada <code>Security Group Users</code> bez schvalovacího kroku. Ta sada jsou administrátoři portálu plus členové sady <code>10000005-1111-45b5-ad13-2764d866c000</code>.</p>
+<p><strong>PAM: Request Authorization</strong> (autorizační fáze) a <strong>PAM: Handle PAM Request</strong> (akce). MPR <code>PAM: Users can create a PAM Request</code> je zapnuté: kdokoli z <code>All People</code> smí založit PAM požadavek, autorizace ho schvaluje a akční workflow ho provede. Čtení vlastních požadavků a rolí mají samostatná MPR (<code>rel:Creator</code>, <code>rel:Owner</code>, <code>rel:msidmPamCandidates</code>). Správu rolí, konfigurace a požadavků mají <code>PAM Admins</code>.</p>
+<p>Další autorizační workflow schválení nejsou:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Workflow</th>
+<th>MPR</th>
+<th>Stav</th>
+<th>Význam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group Validation Workflow</td>
+<td>validace dynamické i statické skupiny při Create, Add, Modify, Remove</td>
+<td>zapnuté</td>
+<td>Kontroluje definici skupiny, neschvaluje</td>
+</tr>
+<tr>
+<td>Requestor Validation Without Owner Authorization</td>
+<td>Add člena do otevřené skupiny (<code>MembershipAddWorkflow = None</code>, <code>MembershipLocked = false</code>), žadatel není administrátor</td>
+<td>zapnuté</td>
+<td>Ověří žadatele bez schválení vlastníkem</td>
+</tr>
+<tr>
+<td>Requestor Validation With Owner Authorization</td>
+<td>Remove člena ze statické skupiny, žadatel není administrátor</td>
+<td>zapnuté</td>
+<td>Ověří, že žadatel smí člena odebrat (vlastník nebo sebeodebrání). Aktivitu Approval neobsahuje</td>
+</tr>
+<tr>
+<td>Filter Validation Workflow for Administrators / Non-Administrators</td>
+<td>Create nebo Modify skupiny či sady</td>
+<td>zapnuté</td>
+<td>Kontroluje XPath filtr</td>
+</tr>
+<tr>
+<td>Password Reset AuthN Workflow + Password Reset Action Workflow</td>
+<td>reset hesla anonymním uživatelem</td>
+<td><strong>vypnuté</strong></td>
+<td>Registrace a reset hesla přes portál neběží</td>
+</tr>
+<tr>
+<td>Group Expiration Notification Workflow</td>
+<td>TransitionIn do <code>Expiring Group Resources</code></td>
+<td>zapnuté</td>
+<td>E-mail před expirací skupiny, není to schválení</td>
+</tr>
+<tr>
+<td>Expiration Workflow</td>
+<td>navázané na standardní temporal MPR expirace</td>
+<td>zapnuté</td>
+<td>Smaže expirovaný objekt</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="8-co-kdo-smi-na-portalu">8. Co kdo smí na portálu</h2>
+<p>Právo vzniká jen MPR s <code>GrantRight = True</code>, které není vypnuté. Níže jsou aktivní role. Standardní administrační MPR Microsoftu jsou seskupená, zakázková jsou vypsaná.</p>
+<h3 id="kazdy-aktivni-uzivatel">Každý aktivní uživatel</h3>
+<p>Sada <code>All Active People</code> je <code>/Person</code>.</p>
+<ul>
+<li>Čte vybrané atributy ostatních osob (jméno, účet, oddělení, e-mail, telefon a podobně).</li>
+<li>Čte všechny atributy sám u sebe.</li>
+<li>Čte schéma a neadministrativní konfiguraci portálu.</li>
+<li>Smí založit PAM požadavek.</li>
+<li>Vidí vlastní žádosti, schválení a odpovědi, pokud je žadatel, schvalovatel nebo účastník (<code>rel:Creator</code>, <code>rel:Requestor</code>, <code>rel:Approver</code>, <code>rel:ComputedActor</code>). Svoji žádost smí zrušit.</li>
+</ul>
+<h3 id="vlastnik-skupiny">Vlastník skupiny</h3>
+<ul>
+<li>Čte atributy bezpečnostních skupin, které vlastní.</li>
+<li>Smí přidávat a odebírat členy (<code>ExplicitMember</code>) bezpečnostních skupin, MPR <code>_ZSE_Owner_can_change_other_Owners</code>. Atribut <code>Owner</code> tímto pravidlem nemění. Vlastníky mění správci skupin.</li>
+<li>MPR, které vlastníkovi dovoluje skupinu upravovat a mazat, je <strong>vypnuté</strong>.</li>
+<li>Distribuční listy (čtení, úprava, zakládání, členství) jsou <strong>vypnuté</strong>.</li>
+</ul>
+<h3 id="uzivatele-bezpecnostnich-skupin">Uživatelé bezpečnostních skupin</h3>
+<p>Sada <code>Security Group Users</code> má stejné členy jako <code>Group Administrators</code>: administrátoři portálu a sada <code>10000005-1111-45b5-ad13-2764d866c000</code>.</p>
+<ul>
+<li>Zakládají statické bezpečnostní skupiny.</li>
+<li>Čtou bezpečnostní skupiny.</li>
+<li>Přidávají a odebírají členy otevřených bezpečnostních skupin (<code>MembershipLocked = false</code> a <code>MembershipAddWorkflow = None</code>).</li>
+<li>Přidávají a odebírají členy skupin se schvalováním vlastníka, ale schvalovací workflow k tomu připojené není (viz část 7).</li>
+</ul>
+<p><code>Group Administrators</code> navíc skupiny vytváří, maže, čte a upravuje bez omezení na vlastníka.</p>
+<h3 id="service-desk-_zse_service_desk-rucni-sada">Service Desk (<code>_ZSE_Service_Desk</code>, ruční sada)</h3>
+<ul>
+<li>Create a Read na všechny osoby a skupiny.</li>
+<li>Na zaměstnancích (<code>EmployeeType</code> I nebo E) smí měnit: <code>MobilePhone</code>, <code>OfficeFax</code>, <code>OfficePhone</code>, <code>IPphone</code>, <code>Email</code>, <code>EmployeeEndDate</code>, <code>Enabled</code>, <code>Locked</code>, <code>ForceChangePassword</code>, <code>ResetPassword</code>, <code>CreateADAccount</code>, <code>CreateSecondaryKID</code>.</li>
+<li>Na externistech smí měnit <code>Email</code>, <code>ext_applicant_kid</code>, <code>ext_applicant_kid1</code>.</li>
+<li>Sekundární účty (<code>eonUserType = secondary</code>) smí číst a zakládat a měnit u nich heslo, zámek, telefon a fax.</li>
+<li>Smí přidávat a odebírat členy sad <code>_ZSE_ServiceDesk_Control_Groups</code>, <code>_ZSE_DFS_r</code> a <code>_ZSE_DFS_rw</code>. Zápis do řídicích skupin zároveň spouští promítnutí členství do sady.</li>
+</ul>
+<h3 id="spravci-schranek">Správci schránek</h3>
+<p><code>_Role001 Sprava mailboxov</code> (ruční sada) smí na osobách a skupinách měnit jen <code>eonLicenseGroup</code>, <code>eonMailEnabled</code> a <code>eonMailSuffix</code>. MPR <code>_SPR01 Sprava mailboxov</code>.</p>
+<h3 id="rozsirene-cteni-portalu">Rozšířené čtení portálu</h3>
+<p><code>_Role_Portal_Extended_View</code> (ruční sada) smí číst všechny atributy všech osob a skupin.</p>
+<h3 id="spravci-skupin-azure-esk">Správci skupin Azure ESK</h3>
+<p>Ruční sady správců:</p>
+<ul>
+<li>Správce <code>OU=AzureESK</code> čte všechny skupiny, smí takovou skupinu založit a u skupin v té OU měnit <code>AccountName</code>, <code>DisplayName</code>, <code>Description</code> a členy.</li>
+<li>Správce <code>OU=AzureESKCS</code> čte všechny skupiny a u svých skupin smí jen přidávat a odebírat členy.</li>
+</ul>
+<h3 id="ostatni-technicke-ucty">Ostatní technické účty</h3>
+<ul>
+<li><code>Auditors</code> čte všechny objekty (<code>_ZSE_Auditors_can_read_All_resource</code>).</li>
+<li><code>_ZSE_MIM Action Account</code> (osoba <code>MIM Action Account</code>) smí měnit členství všech skupin.</li>
+<li><code>Synchronization Engine</code> (účet synchronizace) vytváří, mění a maže osoby a skupiny a spravuje detected/expected rule a synchronizační konfiguraci. To není právo člověka na portálu.</li>
+<li><code>Administrators</code> mají plnou správu schématu, MPR, sad, workflow, synchronizačních pravidel, konfigurace, reportů, uživatelů a žádostí. Mohou mazat uživatele, kteří sami nejsou administrátoři.</li>
+<li><code>PAM Admins</code> spravují PAM role, požadavky, konfiguraci, uživatele, skupiny a čtou všechny sady.</li>
+</ul>
+<h3 id="vypnuta-uzivatelska-opravneni">Vypnutá uživatelská oprávnění</h3>
+<p>Reset hesla anonymním uživatelem, samoobslužná registrace autentizační brány, správa distribučních listů vlastníkem i uživatelem a úprava bezpečnostní skupiny jejím vlastníkem. Tyto MPR v exportu jsou, ale nespouštějí se.</p>
+<h2 id="9-testovaci-a-jednorazova-mpr">9. Testovací a jednorázová MPR</h2>
+<p>Tato pravidla jsou opravy dat, ne trvalý proces. Část je vypnutá.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>MPR</th>
+<th>Stav</th>
+<th>Účel</th>
+<th>Atributy a skript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>__test_fix_externisti</code></td>
+<td>vypnuté</td>
+<td>Jednorázová oprava externistů</td>
+<td><code>Description</code> = <code>fix</code></td>
+</tr>
+<tr>
+<td><code>__test_fix_userPrincipalName</code></td>
+<td>vypnuté</td>
+<td>Oprava UPN</td>
+<td><code>userPrincipalName</code> = <code>AccountName</code> + <code>@e-ssi05.net</code></td>
+</tr>
+<tr>
+<td><code>__test_Update_scriptPath</code></td>
+<td>zapnuté</td>
+<td>Přepis <code>scriptPath</code> podle vlastní sady</td>
+<td><code>scriptPath</code> = <code>\ZSE\LogOnZSE.cmd</code></td>
+</tr>
+<tr>
+<td><code>__Test_fix_ZSE_update_FirstNameEN_LastNameEN</code></td>
+<td>zapnuté</td>
+<td>Jednorázové přepočítání anglického jména</td>
+<td>Stejné jako provozní přepočet: <code>FirstNameEN</code> a <code>LastNameEN</code> přes NormalizeString</td>
+</tr>
+<tr>
+<td><code>__Test_generate_VSE_Kid</code></td>
+<td>zapnuté</td>
+<td>Jednorázové generování VSE KID</td>
+<td>Workflow <code>_VSE_Generate_KID</code>, stejný postup jako ZSE KID</td>
+</tr>
+<tr>
+<td><code>__Test_ZSE_New_User</code></td>
+<td>zapnuté</td>
+<td>TransitionIn do testovací sady, generuje ZSE KID a posílá e-mail</td>
+<td>Workflow <code>_ZSE_Generate_KID</code>: <code>AccountName</code>, <code>distinguishedName</code>, <code>userPrincipalName</code>, <code>scriptPath</code></td>
+</tr>
+<tr>
+<td><code>__Test_ZSE_Update_Mobile_to_SAP</code></td>
+<td>vypnuté</td>
+<td>Bez workflow</td>
+<td>Žádný zápis</td>
+</tr>
+<tr>
+<td><code>__test_napln_proxy</code></td>
+<td>zapnuté</td>
+<td>Naplní proxy výjimku přes <code>_ZSE_Update_proxy_settings_In_Out</code></td>
+<td>Stejný zápis <code>proxy</code> podle <code>DepartmentNumber</code> jako provozní MPR</td>
+</tr>
+<tr>
+<td><code>__test_update_group_owners</code></td>
+<td>zapnuté</td>
+<td>Přepočet vlastníků DFS</td>
+<td>Workflow <code>_ZSE_DFS_Owner</code>: <code>Owner</code> a <code>DisplayedOwner</code> z členů <code>mg</code> skupiny</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="na-co-si-dat-pozor">Na co si dát pozor</h2>
+<ul>
+<li>Expirace externisty spouští dvě MPR se stejným jménem <code>_ZSE_Externisti_expirovany</code>. Jedna ho označí jako neaktivního, druhá jako aktivního.</li>
+<li>Schválení vlastníkem skupiny je ve workflow připravené, MPR které ho volá je vypnuté a oprávnění na stejné skupiny schvalování nevyžaduje.</li>
+<li>Několik „provozních“ sad je ve skutečnosti zúžených na konkrétní účet nebo prefix (<code>A201006</code>, <code>kovacs</code>, <code>xxx</code>, <code>svc_hackathon_</code>). TransitionIn pak běží jen pro ně.</li>
+<li><code>_VSE_Groups_Original_advse_VSE-Out-delete</code> má filtr sady na <code>DisplayName</code> začínající <code>xxx</code>, takže mazání kopií po smazání originálu dnes prakticky neběží.</li>
+</ul>
+</body>
+</html>

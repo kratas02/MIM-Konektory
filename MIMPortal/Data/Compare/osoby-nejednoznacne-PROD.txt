@@ -1,0 +1,249 @@
+﻿Uživatelé v PROD, které v daném kroku nešlo napojit jednoznačně
+PROD: PROD (DBSQL01, 2026-10-09T17:24:46Z)
+TEST: Test (., 2026-10-09T21:33:07Z)
+Uživatelé se párují postupně podle EmployeeID, AccountName a DisplayName. Napojený objekt se znovu nenapojuje. Skupiny se párují podle AccountName.
+Klíč byl na obou stranách, ale ne právě jednou, takže se v tomto kroku nenapojil. Objekty pokračují do další úrovně.
+Počet: 241
+
+Úroveň	Klíč	Výsledek	AccountName	EmployeeID	DisplayName	EmployeeType	csoblFinalPropetyStatus
+DisplayName	lenčéš marián	nespárováno	lences	17702998	Lenčéš Marián	zam	Užívateľ je povolený
+DisplayName	lenčéš marián	nespárováno	lences_admin	17702998	Lenčéš Marián	adm	Užívateľ je povolený
+DisplayName	linkay branislav	nespárováno	1779167ex	1779167	Linkay Branislav	ext	Užívateľ je povolený
+DisplayName	linkay branislav	nespárováno	1779167xi	1779167	Linkay Branislav	adm	Užívateľ je povolený
+DisplayName	mikuš martin	nespárováno	1779166ex	1779166	Mikuš Martin	ext	Užívateľ je zrušený - riadenie podľa MIM portálu
+DisplayName	mikuš martin	nespárováno	1779166xi	1779166	Mikuš Martin	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+DisplayName	moždženová kristína	nespárováno	1779074ex	1779074	Moždženová Kristína	ext	Užívateľ je povolený
+DisplayName	moždženová kristína	nespárováno	1779074xi	1779074	Moždženová Kristína	adm	Užívateľ je povolený
+DisplayName	němec luděk	nespárováno	nemec_admin	1779047	Němec Luděk	ext	Užívateľ je povolený
+DisplayName	pollák roman	nespárováno	1779015ex	1779015	Pollák Roman	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+DisplayName	pollák roman	nespárováno	1779015xi	1779015	Pollák Roman	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+DisplayName	prčeková silvia	nespárováno	1779080ex	1779080	Prčeková Silvia	ext	Užívateľ je povolený
+DisplayName	prčeková silvia	nespárováno	1779080xi	1779080	Prčeková Silvia	adm	Užívateľ je povolený
+DisplayName	ratkovský adam	nespárováno	1779120xi	1779120	Ratkovský Adam	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+DisplayName	valocký frederik	nespárováno	1779109ex	1779109	Valocký Frederik	ext	Užívateľ je povolený
+DisplayName	valocký frederik	nespárováno	1779109xi	1779109	Valocký Frederik	adm	Užívateľ je povolený
+EmployeeID	17701328	spárováno později podle AccountName	verebes	17701328	Verebeš Patrik	zam	Užívateľ je povolený
+EmployeeID	17701328	spárováno později podle AccountName	verebes_admin	17701328	Verebeš Patrik	adm	Užívateľ je povolený
+EmployeeID	17702165	spárováno později podle AccountName	hrdlicka	17702165	Hrdlička Tomáš	zam	Užívateľ je zakázaný - konec PPV
+EmployeeID	17702165	spárováno později podle AccountName	hrdlicka_admin	17702165	Hrdlička Tomáš	adm	Užívateľ je povolený
+EmployeeID	17702197	spárováno později podle AccountName	balaz	17702197	Baláž Benjamín	zam	Užívateľ je povolený
+EmployeeID	17702197	spárováno později podle DisplayName	balaz_admin	17702197	Baláž Benjamín	adm	Užívateľ je povolený
+EmployeeID	17702358	spárováno později podle AccountName	mikula	17702358	Mikula Tibor	zam	Užívateľ je povolený
+EmployeeID	17702358	nespárováno	mikula_admin	17702358	Mikula Tibor	adm	Užívateľ je povolený
+EmployeeID	17702941	spárováno později podle AccountName	toth	17702941	Tóth Tibor	zam	Užívateľ je povolený
+EmployeeID	17702941	spárováno později podle AccountName	toth_admin	17702941	Tóth Tibor	adm	Užívateľ je povolený
+EmployeeID	17702942	nespárováno	konakovsky	17702942	Koňakovský Martin	zam	Užívateľ je povolený
+EmployeeID	17702942	spárováno později podle AccountName	konakovsky_admin	17702942	Koňakovský Martin	adm	Užívateľ je povolený
+EmployeeID	17702970	spárováno později podle AccountName	snirc	17702970	Šnirc David	zam	Užívateľ je povolený
+EmployeeID	17702970	spárováno později podle AccountName	snirc_admin	17702970	Šnirc David	adm	Užívateľ je povolený
+EmployeeID	17702998	nespárováno	lences	17702998	Lenčéš Marián	zam	Užívateľ je povolený
+EmployeeID	17702998	nespárováno	lences_admin	17702998	Lenčéš Marián	adm	Užívateľ je povolený
+EmployeeID	17706009	spárováno později podle AccountName	17706009	17706009	Novosedlík Matúš	par	Užívateľ je povolený
+EmployeeID	17706009	spárováno později podle AccountName	17706009xi	17706009	Novosedlík Matúš	adm	Užívateľ je povolený
+EmployeeID	17706285	spárováno později podle AccountName	sedlak	17706285	Sedlák Mário	zam	Užívateľ je povolený
+EmployeeID	17706285	spárováno později podle AccountName	sedlak_admin	17706285	Sedlák Mário	adm	Užívateľ je povolený
+EmployeeID	17706293	nespárováno	zilizi	17706293	Zilizi Attila	zam	Užívateľ je zakázaný - konec PPV
+EmployeeID	17706293	spárováno později podle AccountName	zilizi_admin	17706293	Zilizi Attila	adm	Užívateľ je povolený
+EmployeeID	17706410	spárováno později podle AccountName	17706410	17706410	Šrámek Tomáš	zam	Užívateľ je zakázaný - konec PPV
+EmployeeID	17706410	nespárováno	17706410xi	17706410	Šrámek Tomáš	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	17706461	spárováno později podle AccountName	17706461	17706461	Kapcala Jakub	zam	Užívateľ je povolený
+EmployeeID	17706461	spárováno později podle AccountName	17706461xi	17706461	Kapcala Jakub	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	17706466	spárováno později podle AccountName	17706466	17706466	Mihalík Miroslav	par	Užívateľ je povolený
+EmployeeID	17706466	nespárováno	17706466xi	17706466	Mihalík Miroslav	adm	Užívateľ je povolený
+EmployeeID	17706481	spárováno později podle AccountName	17706481	17706481	Usačevová Lenka	zam	Užívateľ je povolený
+EmployeeID	17706481	nespárováno	17706481xi	17706481	Usačevová Lenka	adm	Užívateľ je povolený
+EmployeeID	17706669	spárováno později podle AccountName	17706669	17706669	Dudáš Michal	zam	Užívateľ je povolený
+EmployeeID	17706669	spárováno později podle AccountName	17706669xi	17706669	Dudáš Michal ADM	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	17706745	spárováno později podle AccountName	17706745	17706745	Kytošová Klaudia	zam	Užívateľ je zakázaný - konec PPV
+EmployeeID	17706745	nespárováno	17706745xi	17706745	Kytošová Klaudia	adm	Užívateľ je povolený
+EmployeeID	17706917	spárováno později podle AccountName	17706917	17706917	Schwendtnerová Kitti	zam	Užívateľ je zakázaný - Materská / rodičovska dovolenka
+EmployeeID	17706917	spárováno později podle AccountName	17706917xi	17706917	Schwendtnerová Kitti	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	17706927	spárováno později podle AccountName	17706927	17706927	Muzsík Zoltán	zam	Užívateľ je povolený
+EmployeeID	17706927	spárováno později podle AccountName	17706927xi	17706927	Muzsík Zoltán	adm	Užívateľ je povolený
+EmployeeID	17707035	spárováno později podle AccountName	17707035	17707035	Dziuban Martin	zam	Užívateľ je povolený
+EmployeeID	17707035	spárováno později podle AccountName	17707035xi	17707035	Dziuban Martin	adm	Užívateľ je povolený
+EmployeeID	17707110	spárováno později podle AccountName	17707110	17707110	Nguyen Tien Phong	zam	Užívateľ je povolený
+EmployeeID	17707110	spárováno později podle AccountName	17707110xi	17707110	Tien Phong Nguyen	adm	Užívateľ je povolený
+EmployeeID	17707173	spárováno později podle AccountName	17707173	17707173	Pramuka Tomáš	zam	Užívateľ je povolený
+EmployeeID	17707173	spárováno později podle AccountName	17707173xi	17707173	Pramuka Tomáš	adm	Užívateľ je povolený
+EmployeeID	17709616	spárováno později podle AccountName	17709616	17709616	Séleš Róbert	par	Užívateľ je povolený
+EmployeeID	17709616	nespárováno	17709616xi	17709616	Séleš Róbert	adm	Užívateľ je povolený
+EmployeeID	17709617	spárováno později podle AccountName	17709617	17709617	Skopár Lukáš	par	Užívateľ je povolený
+EmployeeID	17709617	spárováno později podle AccountName	17709617xi	17709617	Skopár Lukáš	adm	Užívateľ je povolený
+EmployeeID	17709619	spárováno později podle AccountName	17709619	17709619	Vanya Adam	par	Užívateľ je povolený
+EmployeeID	17709619	spárováno později podle AccountName	17709619xi	17709619	Vanya Adam	adm	Užívateľ je povolený
+EmployeeID	17709620	spárováno později podle AccountName	17709620	17709620	Lenart Alexander	par	Užívateľ je povolený
+EmployeeID	17709620	nespárováno	17709620xi	17709620	Lenart Alexander	adm	Užívateľ je povolený
+EmployeeID	17709621	spárováno později podle AccountName	17709621	17709621	Minh Hai Tran	par	Užívateľ je povolený
+EmployeeID	17709621	nespárováno	17709621xi	17709621	Minh Hai	adm	Užívateľ je povolený
+EmployeeID	17709630	spárováno později podle AccountName	17709630	17709630	Kulifaj Tomáš	par	Užívateľ je povolený
+EmployeeID	17709630	spárováno později podle DisplayName	17709630xi	17709630	Kulifaj Tomáš	adm	Užívateľ je povolený
+EmployeeID	17709634	spárováno později podle AccountName	17709634	17709634	Adámka Roman	par	Užívateľ je povolený
+EmployeeID	17709635	spárováno později podle AccountName	17709635	17709635	Miláček Martin	par	Užívateľ je povolený
+EmployeeID	17709635	nespárováno	17709635xi	17709635	Miláček Martin	adm	Užívateľ je povolený
+EmployeeID	17709638	spárováno později podle AccountName	17709638	17709638	Dudáš Róbert	par	Užívateľ je povolený
+EmployeeID	17709638	spárováno později podle AccountName	17709638xi	17709638	Dudáš Róbert	adm	Užívateľ je povolený
+EmployeeID	17709639	spárováno později podle AccountName	17709639	17709639	Klein Richard	par	Užívateľ je povolený
+EmployeeID	17709639	spárováno později podle AccountName	17709639xi	17709639	Klein Richard	adm	Užívateľ je povolený
+EmployeeID	17709653	spárováno později podle AccountName	17709653	17709653	Mudroň Michal	par	Užívateľ je zakázaný - konec PPV
+EmployeeID	17709653	nespárováno	17709653xi	17709653	Mudroň Michal	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	17709656	spárováno později podle AccountName	17709656	17709656	Kruk Miloš	par	Užívateľ je povolený
+EmployeeID	17709656	spárováno později podle AccountName	17709656xi	17709656	Kruk Miloš	adm	Užívateľ je povolený
+EmployeeID	17709657	spárováno později podle AccountName	17709657	17709657	Kišon Lukáš	par	Užívateľ je povolený
+EmployeeID	17709657	spárováno později podle AccountName	17709657xi	17709657	Kisoň Lukáš	adm	Užívateľ je povolený
+EmployeeID	17709665	spárováno později podle AccountName	17709665	17709665	Pastucha Ján	par	Užívateľ je povolený
+EmployeeID	17709665	spárováno později podle AccountName	17709665xi	17709665	Pastucha Ján	adm	Užívateľ je povolený
+EmployeeID	17709667	spárováno později podle AccountName	17709667	17709667	Duda Pavol	par	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	17709667	spárováno později podle AccountName	17709667xi	17709667	Duda Pavol	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	17709669	spárováno později podle AccountName	17709669	17709669	Kusenda Fedor	par	Užívateľ je povolený
+EmployeeID	17709670	spárováno později podle AccountName	17709670	17709670	Chreno Dárius	par	Užívateľ je povolený
+EmployeeID	17709670	spárováno později podle AccountName	17709670xi	17709670	Chreno Dárius	adm	Užívateľ je povolený
+EmployeeID	17709672	spárováno později podle AccountName	17709672	17709672	Juhás Martin	par	Užívateľ je povolený
+EmployeeID	17709673	spárováno později podle AccountName	17709673	17709673	Uram Karol	par	Užívateľ je povolený
+EmployeeID	17709674	spárováno později podle AccountName	17709674	17709674	Hrašna Juraj	par	Užívateľ je povolený
+EmployeeID	17709674	spárováno později podle AccountName	17709674xi	17709674	Hrašna Juraj	adm	Užívateľ je povolený
+EmployeeID	1779000	spárováno později podle AccountName	1779000ex	1779000	Bučič Matej	ext	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779011	spárováno později podle AccountName	1779011ex	1779011	Holubov Andrii	ext	Užívateľ je povolený
+EmployeeID	1779011	spárováno později podle AccountName	1779011xi	1779011	Holubov Andrii	adm	Užívateľ je povolený
+EmployeeID	1779013	spárováno později podle AccountName	1779013xi	1779013	Kuchárová Gabriela	adm	Užívateľ je povolený
+EmployeeID	1779013	nespárováno	cisar_admin	1779013	Cisár Marek	ext	Užívateľ je povolený
+EmployeeID	1779014	spárováno později podle AccountName	1779014ex	1779014	Slížik Miloslav	ext	Užívateľ je povolený
+EmployeeID	1779014	nespárováno	1779014xi	1779014	Slížik Miloslav	adm	Užívateľ je povolený
+EmployeeID	1779014	spárováno později podle AccountName	moravcik_admin	1779014	Moravcik Patrik	ext	Užívateľ je povolený
+EmployeeID	1779019	nespárováno	marcek_admin	1779019	Marcek Peter	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779020	nespárováno	bisak_admin	1779020	Bisak Branislav	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779021	spárováno později podle AccountName	trebula_admin	1779021	Trebula Miro	ext	Užívateľ je povolený
+EmployeeID	1779025	spárováno později podle AccountName	horvath_admin	1779025	Horváth Anton	ext	Užívateľ je povolený
+EmployeeID	1779027	nespárováno	masaryk_admin	1779027	Masaryk Admin Rastislav	ext	Užívateľ je povolený
+EmployeeID	1779032	spárováno později podle AccountName	1779032ex	1779032	Šafár Patrik	ext	Užívateľ je povolený
+EmployeeID	1779032	nespárováno	1779032xi	1779032	Šafár Patrik	adm	Užívateľ je povolený
+EmployeeID	1779036	spárováno později podle AccountName	1779036ex	1779036	Hudáková Lucia	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779036	nespárováno	1779036xi	1779036	Hudáková Lucia	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779037	spárováno později podle AccountName	1779037ex	1779037	Oravec Andrej	ext	Užívateľ je povolený
+EmployeeID	1779037	nespárováno	1779037xi	1779037	Oravec Andrej	adm	Užívateľ je povolený
+EmployeeID	1779037	nespárováno	NCC_JIRA	1779037	JIRA NCC	ext	Užívateľ je povolený
+EmployeeID	1779045	spárováno později podle AccountName	1779045ex	1779045	Kovalík Vladimír	ext	Užívateľ je povolený
+EmployeeID	1779045	nespárováno	1779045xi	1779045	Kovalík Vladimír	adm	Užívateľ je povolený
+EmployeeID	1779047	nespárováno	nemec_admin	1779047	Němec Luděk	ext	Užívateľ je povolený
+EmployeeID	1779048	spárováno později podle AccountName	1779048ex	1779048	Štadler Samuel	ext	Užívateľ je povolený
+EmployeeID	1779048	spárováno později podle AccountName	1779048xi	1779048	Štadler Samuel	adm	Užívateľ je povolený
+EmployeeID	1779060	spárováno později podle AccountName	1779013ex	1779060	Kuchárová Gabriela	ext	Užívateľ je povolený
+EmployeeID	1779060	nespárováno	polcova_admin	1779060	Kuchárová Gabriela	adm	Užívateľ je povolený
+EmployeeID	1779064	spárováno později podle AccountName	1779064ex	1779064	Minárik Matúš	ext	Užívateľ je povolený
+EmployeeID	1779064	nespárováno	1779064xi	1779064	Minárik Matúš	adm	Užívateľ je povolený
+EmployeeID	1779065	spárováno později podle AccountName	1779065ex	1779065	Sedláček Peter	ext	Užívateľ je povolený
+EmployeeID	1779065	nespárováno	1779065xi	1779065	Sedláček Peter	adm	Užívateľ je povolený
+EmployeeID	1779065	spárováno později podle AccountName	vavrek_admin	1779065	Vavrek Michal	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779067	spárováno později podle AccountName	1779067ex	1779067	Buhaj Dávid	ext	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779067	spárováno později podle AccountName	1779067xi	1779067	Buhaj Dávid	adm	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779068	nespárováno	torvenyi_admin	1779068	Törvényi Rudolf	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779070	spárováno později podle AccountName	1779070ex	1779070	Boťanský Richard	ext	Užívateľ je povolený
+EmployeeID	1779070	nespárováno	1779070xi	1779070	Boťanský Richard	adm	Užívateľ je povolený
+EmployeeID	1779071	spárováno později podle AccountName	1779071ex	1779071	Matajz Eduard	ext	Užívateľ je povolený
+EmployeeID	1779071	spárováno později podle DisplayName	1779071xi	1779071	Matajz Eduard	adm	Užívateľ je povolený
+EmployeeID	1779085	spárováno později podle AccountName	1779085ex	1779085	Kajan Denis	ext	Užívateľ je povolený
+EmployeeID	1779085	nespárováno	1779085xi	1779085	Kajan Denis	adm	Užívateľ je povolený
+EmployeeID	1779088	spárováno později podle AccountName	1779088ex	1779088	Slíž Radovan	ext	Užívateľ je povolený
+EmployeeID	1779088	spárováno později podle AccountName	1779088xi	1779088	Slíž Radovan	adm	Užívateľ je povolený
+EmployeeID	1779089	spárováno později podle AccountName	1779089ex	1779089	Blažo Martin	ext	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779089	spárováno později podle AccountName	1779089xi	1779089	Blažo Martin	adm	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779090	spárováno později podle AccountName	1779090ex	1779090	Osuský Boris	ext	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779090	spárováno později podle AccountName	1779090xi	1779090	Osuský Boris	adm	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779091	spárováno později podle AccountName	1779091ex	1779091	Kyseľ Dominik	ext	Užívateľ je povolený
+EmployeeID	1779091	spárováno později podle AccountName	1779091xi	1779091	Kyseľ Dominik	adm	Užívateľ je povolený
+EmployeeID	1779093	spárováno později podle AccountName	1779093ex	1779093	Reisz Marcela	ext	Užívateľ je povolený
+EmployeeID	1779093	spárováno později podle AccountName	herceg_admin	1779093	Herceg Jozef	ext	Užívateľ je povolený
+EmployeeID	1779097	spárováno později podle AccountName	1779097ex	1779097	Bajla Boris	ext	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779097	nespárováno	1779097xi	1779097	Bajla Boris	adm	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779101	spárováno později podle AccountName	1779101ex	1779101	Novakovský Jakub	ext	Užívateľ je povolený
+EmployeeID	1779101	spárováno později podle AccountName	1779101xi	1779101	Novakovský Jakub	adm	Užívateľ je povolený
+EmployeeID	1779101	spárováno později podle AccountName	barc_admin	1779101	Barč Michal	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779104	spárováno později podle AccountName	1779104ex	1779104	Sokol Matěj	ext	Užívateľ je povolený
+EmployeeID	1779104	nespárováno	1779104xi	1779104	Sokol Matěj	adm	Užívateľ je povolený
+EmployeeID	1779107	spárováno později podle AccountName	1779107ex	1779107	Hudák Martin	ext	Užívateľ je povolený
+EmployeeID	1779107	spárováno později podle DisplayName	1779107xi	1779107	Hudák Martin	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779108	spárováno později podle AccountName	1779108ex	1779108	Malík Peter	ext	Užívateľ je povolený
+EmployeeID	1779108	nespárováno	1779108xi	1779108	Malík Peter	adm	Užívateľ je povolený
+EmployeeID	1779108	spárováno později podle AccountName	gajdosik_admin	1779108	Gajdosik Anton	ext	Užívateľ je povolený
+EmployeeID	1779110	spárováno později podle AccountName	1779110ex	1779110	Cíbová Karin	ext	Užívateľ je povolený
+EmployeeID	1779110	nespárováno	1779110xi	1779110	Cíbová Karin	adm	Užívateľ je povolený
+EmployeeID	1779110	spárováno později podle AccountName	skyba_admin	1779110	Skyba Peter	ext	Užívateľ je povolený
+EmployeeID	1779111	spárováno později podle AccountName	1779111ex	1779111	Pavlíková Tatiana	ext	Užívateľ je povolený
+EmployeeID	1779111	nespárováno	1779111xi	1779111	Pavlíková Tatiana	adm	Užívateľ je povolený
+EmployeeID	1779111	spárováno později podle AccountName	ciesar_admin	1779111	Ciesar Marek	ext	Užívateľ je povolený
+EmployeeID	1779112	spárováno později podle AccountName	1779112ex	1779112	Hubert Jakub	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779112	nespárováno	1779112xi	1779112	Hubert Jakub	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779113	spárováno později podle AccountName	anovcin_admin	1779113	Anovčín René	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779114	spárováno později podle AccountName	1779114ex	1779114	Teplicky Peter	ext	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779114	spárováno později podle AccountName	1779114xi	1779114	Teplicky Peter	adm	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779115	spárováno později podle AccountName	1779115ex	1779115	Kejř Jan	ext	Užívateľ je povolený
+EmployeeID	1779115	nespárováno	1779115xi	1779115	Kejř Jan	adm	Užívateľ je povolený
+EmployeeID	1779115	nespárováno	lukacka_admin	1779115	Lukacka Branislav	ext	Užívateľ je povolený
+EmployeeID	1779118	spárováno později podle AccountName	1779118ex	1779118	Zmajkovič Matej	ext	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779118	spárováno později podle AccountName	kamiacova_admin	1779118	Kamiačová Jana	ext	Užívateľ je povolený
+EmployeeID	1779120	spárováno později podle AccountName	1779120ex	1779120	Ratkovský Adam	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779120	nespárováno	1779120xi	1779120	Ratkovský Adam	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779122	spárováno později podle AccountName	1779122ex	1779122	Virag Ladislav	ext	Užívateľ je povolený
+EmployeeID	1779122	spárováno později podle AccountName	1779122xi	1779122	Virag Ladislav	adm	Užívateľ je povolený
+EmployeeID	1779124	spárováno později podle AccountName	1779124ex	1779124	Sigetiová Andrea	ext	Užívateľ je povolený
+EmployeeID	1779124	nespárováno	1779124xi	1779124	Sigetiová Andrea	adm	Užívateľ je povolený
+EmployeeID	1779125	spárováno později podle AccountName	1779125xi	1779125	Klika Luboš	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779128	spárováno později podle AccountName	1779128ex	1779128	Budínská Kristína	ext	Užívateľ je povolený
+EmployeeID	1779128	nespárováno	1779128xi	1779128	Budínská Kristína	adm	Užívateľ je povolený
+EmployeeID	1779130	spárováno později podle AccountName	1779130ex	1779130	Hiadlovská Simona	ext	Užívateľ je povolený
+EmployeeID	1779130	nespárováno	1779130xi	1779130	Hiadlovská Simona	adm	Užívateľ je povolený
+EmployeeID	1779132	spárováno později podle AccountName	1779132ex	1779132	Špička Andrej	ext	Užívateľ je povolený
+EmployeeID	1779132	nespárováno	1779132xi	1779132	Špička Andrej	adm	Užívateľ je povolený
+EmployeeID	1779133	spárováno později podle AccountName	1779133ex	1779133	Salaj Pavol	ext	Užívateľ je povolený
+EmployeeID	1779133	nespárováno	1779133xi	1779133	Salaj Pavol	adm	Užívateľ je povolený
+EmployeeID	1779135	spárováno později podle AccountName	1779135ex	1779135	Prajz Jiří	ext	Užívateľ je povolený
+EmployeeID	1779135	nespárováno	1779135xi	1779135	Prajz Jiří	adm	Užívateľ je povolený
+EmployeeID	1779136	nespárováno	1779136xi	1779136	Šoltes Miroslav	adm	Užívateľ je zakázaný - konec PPV
+EmployeeID	1779136	spárováno později podle AccountName	ledecky_admin	1779136	Ledecký Boris	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779137	spárováno později podle AccountName	1779137ex	1779137	Višvarda Lukáš	ext	Užívateľ je povolený
+EmployeeID	1779137	spárováno později podle AccountName	1779137xi	1779137	Višvarda Lukáš	adm	Užívateľ je povolený
+EmployeeID	1779137	nespárováno	hrisenko_admin	1779137	Hriseňko Viktor	ext	Užívateľ je povolený
+EmployeeID	1779138	spárováno později podle AccountName	1779138ex	1779138	Muller Adam	ext	Užívateľ je povolený
+EmployeeID	1779138	spárováno později podle DisplayName	1779138xi	1779138	Muller Adam	adm	Užívateľ je povolený
+EmployeeID	1779139	spárováno později podle AccountName	1779139ex	1779139	Németh Zoltán	ext	Užívateľ je povolený
+EmployeeID	1779139	spárováno později podle DisplayName	1779139xi	1779139	Németh Zoltán	adm	Užívateľ je povolený
+EmployeeID	1779140	spárováno později podle AccountName	1779140ex	1779140	Stromko Tomáš	ext	Užívateľ je povolený
+EmployeeID	1779140	spárováno později podle DisplayName	1779140xi	1779140	Stromko Tomáš	adm	Užívateľ je povolený
+EmployeeID	1779141	spárováno později podle AccountName	1779141ex	1779141	Polakovič Martin	ext	Užívateľ je povolený
+EmployeeID	1779141	nespárováno	1779141xi	1779141	Polakovič Martin	adm	Užívateľ je povolený
+EmployeeID	1779142	spárováno později podle AccountName	1779142ex	1779142	Kázmér Anikó	ext	Užívateľ je povolený
+EmployeeID	1779142	spárováno později podle DisplayName	1779142xi	1779142	Kázmér Anikó	adm	Užívateľ je povolený
+EmployeeID	1779143	spárováno později podle AccountName	1779143ex	1779143	Dekan Martin	ext	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779143	spárováno později podle DisplayName	1779143xi	1779143	Dekan Martin	adm	Užívateľ je povolený - riadenie podľa MIM portálu
+EmployeeID	1779144	spárováno později podle AccountName	1779144ex	1779144	Rybánska Diana	ext	Užívateľ je povolený
+EmployeeID	1779144	spárováno později podle DisplayName	1779144xi	1779144	Rybánska Diana	adm	Užívateľ je povolený
+EmployeeID	1779146	spárováno později podle AccountName	1779146ex	1779146	Štellár Kamil	ext	Užívateľ je povolený
+EmployeeID	1779146	spárováno později podle DisplayName	1779146xi	1779146	Štellár Kamil	adm	Užívateľ je povolený
+EmployeeID	1779148	spárováno později podle AccountName	1779148ex	1779148	Hanes Stanislav	ext	Užívateľ je povolený
+EmployeeID	1779148	nespárováno	1779148xi	1779148	Hanes Stanislav	adm	Užívateľ je povolený
+EmployeeID	1779149	spárováno později podle AccountName	1779149ex	1779149	Kirchner Emma	ext	Užívateľ je povolený
+EmployeeID	1779149	nespárováno	1779149xi	1779149	Kirchner Emma	adm	Užívateľ je povolený
+EmployeeID	1779150	spárováno později podle AccountName	1779150ex	1779150	Šípoš Jozef	ext	Užívateľ je povolený
+EmployeeID	1779150	spárováno později podle DisplayName	1779150xi	1779150	Šípoš Jozef	adm	Užívateľ je povolený
+EmployeeID	1779151	spárováno později podle AccountName	1779151ex	1779151	Kosecek Miroslav	ext	Užívateľ je povolený
+EmployeeID	1779151	nespárováno	1779151xi	1779151	Kosecek Miroslav	adm	Užívateľ je povolený
+EmployeeID	1779154	spárováno později podle AccountName	1779154ex	1779154	Chlapečka Marián	ext	Užívateľ je povolený
+EmployeeID	1779154	nespárováno	1779154xi	1779154	Chlapečka Marián	adm	Užívateľ je povolený
+EmployeeID	1779155	spárováno později podle AccountName	1779155ex	1779155	Nagy Róbert	ext	Užívateľ je povolený
+EmployeeID	1779155	nespárováno	1779155xi	1779155	Nagy Róbert	adm	Užívateľ je povolený
+EmployeeID	1779156	spárováno později podle AccountName	1779156ex	1779156	Duľa Peter	ext	Užívateľ je povolený
+EmployeeID	1779156	nespárováno	1779156xi	1779156	Duľa Peter	adm	Užívateľ je povolený
+EmployeeID	1779157	spárováno později podle AccountName	1779157ex	1779157	Bujňák Milan	ext	Užívateľ je povolený
+EmployeeID	1779157	nespárováno	1779157xi	1779157	Bujňák Milan	adm	Užívateľ je povolený
+EmployeeID	1779158	spárováno později podle AccountName	1779158ex	1779158	Kováčik Juraj	ext	Užívateľ je povolený
+EmployeeID	1779158	nespárováno	1779158xi	1779158	Kováčik Juraj	adm	Užívateľ je povolený
+EmployeeID	1779159	spárováno později podle AccountName	1779159ex	1779159	Sládkovič Martin	ext	Užívateľ je povolený
+EmployeeID	1779159	nespárováno	1779159xi	1779159	Sládkovič Martin	adm	Užívateľ je povolený
+EmployeeID	1779160	spárováno později podle AccountName	1779160ex	1779160	Kyseľ Peter	ext	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	1779160	nespárováno	1779160xi	1779160	Kyseľ Peter	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	1779161	spárováno později podle AccountName	1779161ex	1779161	Rozman Filip	ext	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	1779161	nespárováno	1779161xi	1779161	Rozman Filip	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	1779162	spárováno později podle AccountName	1779162ex	1779162	Pavlák Peter	ext	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	1779162	nespárováno	1779162xi	1779162	Pavlák Peter	adm	Užívateľ je zrušený - riadenie podľa MIM portálu
+EmployeeID	1779163	spárováno později podle AccountName	1779163ex	1779163	Gottlieber Michal	ext	Užívateľ je povolený
+EmployeeID	1779163	nespárováno	1779163xi	1779163	Gottlieber Michal	adm	Užívateľ je povolený
