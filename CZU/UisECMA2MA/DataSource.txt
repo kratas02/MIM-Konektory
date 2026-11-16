@@ -1,0 +1,7 @@
+# Oracle Data Source pro UisECMA2MA. Prazdne radky a radky zacinajici # se ignoruji.
+# Volitelne jine view, kdyz na teto DB neni ve schematu UIS:
+# Student=SCHEMA.VIEW
+# Studium=SCHEMA.VIEW
+# Doktorand=SCHEMA.VIEW
+# DoktStudium=SCHEMA.VIEW
+(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=magi.oradb-t.czu.cz)(Port=1523)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=UISTEST.oradb.czu.cz)))

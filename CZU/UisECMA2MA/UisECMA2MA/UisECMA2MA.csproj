@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>UisECMA2MA</AssemblyName>
+    <RootNamespace>UisECMA2MA</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>7.3</LangVersion>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess" Version="21.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.MetadirectoryServices">
+      <HintPath>..\..\OracleECMA2MA\OracleECMA2MA\lib\Microsoft.MetadirectoryServices.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.MetadirectoryServicesEx">
+      <HintPath>..\..\OracleECMA2MA\OracleECMA2MA\lib\Microsoft.MetadirectoryServicesEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

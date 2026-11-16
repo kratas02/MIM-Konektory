@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>SqlECMA2MA</AssemblyName>
+    <RootNamespace>SqlECMA2MA</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>7.3</LangVersion>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.MetadirectoryServices">
+      <HintPath>..\..\..\MIMPortal\FimServiceDbMA\FimServiceDbMA\lib\Microsoft.MetadirectoryServices.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Microsoft.MetadirectoryServicesEx">
+      <HintPath>..\..\..\MIMPortal\FimServiceDbMA\FimServiceDbMA\lib\Microsoft.MetadirectoryServicesEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

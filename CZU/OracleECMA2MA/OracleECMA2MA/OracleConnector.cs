@@ -61,6 +61,11 @@ namespace OracleECMA2MA
         private List<DeltaItem>  _deltaItems;
         private int              _deltaIndex;
 
+        // Vypoctene role (ApplicationRole / BusinessRole) — cely seznam se slozi v OpenImport,
+        // GetImportEntries ho jen strankuje.
+        private List<DerivedRole> _derivedRoles;
+        private int               _derivedIndex;
+
         private class DeltaItem
         {
             public string Uic;
@@ -175,6 +180,13 @@ namespace OracleECMA2MA
                     // nesmi shodit GetSchema pro VSECHNY ostatni typy – proto try/catch per-iteraci.
                     try
                     {
+                        if (cfg.IsDerived)
+                        {
+                            schema.Types.Add(BuildDerivedSchema(cfg.Name));
+                            Log("INFO", $"GetSchema OK: {cfg.Name} (vypocteno z PPV) - 6 atributu, anchor=AccountName");
+                            continue;
+                        }
+
                         cfg.SplitView(dbUser, out string owner, out string table);
 
                         // Pokud je definovano DistinctColumns, omez schema jen na tyto sloupce
@@ -334,22 +346,77 @@ namespace OracleECMA2MA
             _conn.Open();
 
             // Urcit aktualni partition
-            string partitionName = runStep.StepPartition?.Name;
-            _currentConfig = string.IsNullOrEmpty(partitionName)
-                ? MagionConfig.All[0]
-                : MagionConfig.FindByName(partitionName) ?? MagionConfig.All[0];
+            var    stepPartition = runStep.StepPartition;
+            string partitionName = stepPartition?.Name;
+            string partitionDn   = stepPartition?.DN;
+            Guid   partitionId   = stepPartition == null ? Guid.Empty : stepPartition.Identifier;
+            Log("INFO", $"OpenImportConnection: StepPartition Name='{partitionName}' DN='{partitionDn}' " +
+                $"Id={partitionId} typesInSchema={(types?.Types == null ? 0 : types.Types.Count)}");
+
+            _currentConfig = ResolvePartitionConfig(partitionName, partitionDn, partitionId);
 
             _isDelta = runStep.ImportType == OperationType.Delta && _currentConfig.SupportDelta;
 
             Log("INFO", $"OpenImportConnection: partition={_currentConfig.Name} view={_currentConfig.View} " +
                 $"anchor={string.Join("+", _currentConfig.AnchorColumns)} importType={runStep.ImportType} delta={_isDelta}");
 
-            if (_isDelta)
+            if (_currentConfig.IsDerived)
+                OpenDerivedImport();
+            else if (_isDelta)
                 OpenDeltaImport(configParameters);
             else
                 OpenFullImport();
 
             return new OpenImportConnectionResults();
+        }
+
+        /// <summary>
+        /// Najde konfiguraci podle partition. Bez partition (prazdny nazev) zustava puvodni
+        /// chovani = prvni object type. Nezname jmeno partition se NIKDY tise nenahrazuje
+        /// Person: jinak by se do ApplicationRole/BusinessRole nacetli zamestnanci (CN=...,CN=Person).
+        /// Akceptuje i tvar "CN=ApplicationRole".
+        /// </summary>
+        private static ObjectTypeConfig ResolvePartitionConfig(string partitionName, string partitionDn, Guid partitionId)
+        {
+            // 1) GUID partition (stabilni, vzdy vyplneny i kdyz je Name prazdne)
+            if (partitionId != Guid.Empty)
+            {
+                foreach (var c in MagionConfig.All)
+                    if (MagionConfig.NameToGuid(c.Name) == partitionId)
+                        return c;
+            }
+
+            // 2) Name, pak DN ("CN=ApplicationRole")
+            foreach (string candidate in new[] { partitionName, partitionDn })
+            {
+                if (string.IsNullOrWhiteSpace(candidate)) continue;
+
+                string name = candidate.Trim();
+                ObjectTypeConfig cfg = MagionConfig.FindByName(name);
+                if (cfg != null) return cfg;
+
+                if (name.StartsWith("CN=", StringComparison.OrdinalIgnoreCase))
+                {
+                    string rest = name.Substring(3);
+                    int comma = rest.IndexOf(',');
+                    if (comma >= 0) rest = rest.Substring(0, comma);
+                    cfg = MagionConfig.FindByName(rest.Trim());
+                    if (cfg != null) return cfg;
+                }
+            }
+
+            // Nic nelze urcit. Zadne partition (Guid.Empty + prazdne jmeno) = puvodni chovani (prvni typ),
+            // ale hlasime to; nezname partition je chyba (jinak by se tise nacetli zamestnanci).
+            if (partitionId == Guid.Empty && string.IsNullOrWhiteSpace(partitionName) && string.IsNullOrWhiteSpace(partitionDn))
+            {
+                Log("WARN", "ResolvePartitionConfig: krok run profilu nema partition, pouzivam '" + MagionConfig.All[0].Name + "'");
+                return MagionConfig.All[0];
+            }
+
+            Log("ERROR", $"ResolvePartitionConfig: partition Name='{partitionName}' DN='{partitionDn}' Id={partitionId} " +
+                "neodpovida zadnemu object type. V MA proved Refresh Partitions.");
+            throw new InvalidOperationException(
+                "Nezname partition '" + partitionName + "' / '" + partitionDn + "' / " + partitionId + ".");
         }
 
         private void OpenFullImport()
@@ -488,9 +555,107 @@ namespace OracleECMA2MA
 
         public GetImportEntriesResults GetImportEntries(GetImportEntriesRunStep runStep)
         {
+            if (_currentConfig != null && _currentConfig.IsDerived)
+                return GetDerivedEntries();
+
             return _isDelta
                 ? GetDeltaEntries()
                 : GetFullEntries();
+        }
+
+        /// <summary>
+        /// ApplicationRole / BusinessRole se neimportuji z view, ale spocitaji
+        /// z unikatnich kombinaci platnych PPV (AKTIVNI = 1).
+        /// Okno ValidityMonths sem nepatri: skoncene PPV skupinu nevytvori.
+        /// </summary>
+        private void OpenDerivedImport()
+        {
+            _derivedRoles = new List<DerivedRole>();
+            _derivedIndex = 0;
+
+            if (PpvConfig == null)
+            {
+                Log("ERROR", $"OpenDerivedImport [{_currentConfig.Name}]: chybi konfigurace PPV");
+                return;
+            }
+
+            var rows = new List<PpvOrgRow>();
+            string sql =
+                "SELECT DISTINCT p.FAKULTA, p.STRED_KMEN_ZKRATKA, p.STRED_KMEN_KOD " +
+                "FROM " + PpvConfig.View + " p WHERE p.AKTIVNI = 1";
+
+            var cmd = new OracleCommand(sql, _conn);
+            cmd.BindByName = true;
+
+            using (var rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    rows.Add(new PpvOrgRow
+                    {
+                        Faculty           = ReadReaderString(rdr, 0),
+                        StrediskoZkratka  = ReadReaderString(rdr, 1),
+                        StrediskoKod      = ReadReaderString(rdr, 2),
+                    });
+                }
+            }
+
+            _derivedRoles = RoleBuilder.Build(rows, _currentConfig.DerivedBusinessOnly);
+            Log("INFO", $"OpenDerivedImport [{_currentConfig.Name}]: {rows.Count} kombinaci PPV → {_derivedRoles.Count} roli");
+        }
+
+        private GetImportEntriesResults GetDerivedEntries()
+        {
+            var entries = new List<CSEntryChange>();
+            int count = 0;
+
+            if (_derivedRoles == null)
+                _derivedRoles = new List<DerivedRole>();
+
+            while (count < ImportDefaultPageSize && _derivedIndex < _derivedRoles.Count)
+            {
+                DerivedRole role = _derivedRoles[_derivedIndex++];
+                var entry = CSEntryChange.Create();
+                entry.ObjectModificationType = ObjectModificationType.Add;
+                entry.ObjectType             = _currentConfig.Name;
+                entry.DN                     = ToDN(role.AccountName);
+
+                AddOrReplaceAttribute(entry, "AccountName", role.AccountName);
+                AddOrReplaceAttribute(entry, "claFaculty", role.Faculty);
+                AddOrReplaceAttribute(entry, "claStrediskoZkratkaPPV", role.StrediskoZkratka);
+                AddOrReplaceAttribute(entry, "DistinguishedNamePart", role.DistinguishedNamePart);
+                AddOrReplaceAttribute(entry, "isParentGroup", role.IsParent ? "true" : "false");
+                AddOrReplaceAttribute(entry, "Vyjimka", role.Vyjimka ? "ano" : "ne");
+
+                entries.Add(entry);
+                count++;
+            }
+
+            return new GetImportEntriesResults
+            {
+                CSEntries    = entries,
+                MoreToImport = _derivedIndex < _derivedRoles.Count
+            };
+        }
+
+        private static MmsSchemaType BuildDerivedSchema(string name)
+        {
+            var schemaType = MmsSchemaType.Create(name, false);
+            string[] attrs =
+            {
+                "AccountName",
+                "claFaculty",
+                "claStrediskoZkratkaPPV",
+                "DistinguishedNamePart",
+                "isParentGroup",
+                "Vyjimka",
+            };
+            foreach (string attr in attrs)
+            {
+                schemaType.Attributes.Add(
+                    SchemaAttribute.CreateSingleValuedAttribute(attr, AttributeType.String));
+            }
+            return schemaType;
         }
 
         // ── Full Import ───────────────────────────────────────────────────────────
@@ -1028,6 +1193,8 @@ namespace OracleECMA2MA
             _reader?.Dispose();
             _conn?.Dispose();
             _deltaItems = null;
+            _derivedRoles = null;
+            _derivedIndex = 0;
 
             return new CloseImportConnectionResults(string.Empty);
         }

@@ -16,6 +16,8 @@ namespace OracleECMA2MA
         public string[] DistinctColumns         { get; }   // pokud vyplneno: import cte "SELECT DISTINCT <cols>"
                                                             // misto "SELECT *" (deduplikace radku view na tyto sloupce)
         public bool     IncludeAnchorAsAttribute { get; }   // true = anchor sloupec se prida i jako bezny atribut
+        public bool     IsDerived               { get; }   // true = objekty se pocitaji (RoleBuilder), nectou se z View
+        public bool     DerivedBusinessOnly     { get; }   // true = jen ne-nadrazene role zamestnanec/technik/pedagog
 
         public ObjectTypeConfig(
             string   name,
@@ -25,7 +27,9 @@ namespace OracleECMA2MA
             string   deltaObjectType          = null,
             string[] distinctColumns          = null,
             string[] anchorColumns            = null,
-            bool     includeAnchorAsAttribute = false)
+            bool     includeAnchorAsAttribute = false,
+            bool     isDerived                = false,
+            bool     derivedBusinessOnly      = false)
         {
             Name            = name;
             View            = view;
@@ -33,6 +37,8 @@ namespace OracleECMA2MA
             SupportDelta    = supportDelta;
             DeltaObjectType = deltaObjectType;
             DistinctColumns = distinctColumns;
+            IsDerived       = isDerived;
+            DerivedBusinessOnly = derivedBusinessOnly;
 
             if (anchorColumns != null && anchorColumns.Length > 0)
             {
@@ -121,6 +127,24 @@ namespace OracleECMA2MA
                 anchorColumn:    "PMIS_CISLO",
                 distinctColumns: new[] { "PMIS_NAZEV", "PMIS_ALTERNATIV", "PMIS_CISLO", "PMIS_NADRIZ",
                                           "PMIS_TYP_VED", "PMIS_UNAZEV", "SOJ_CISLO" }),
+
+            // Vypocitane role z unikatnich kombinaci platnych PPV (AKTIVNI = 1,
+            // FAKULTA + STRED_KMEN_ZKRATKA).
+            // Anchor je AccountName; DN = CN=<AccountName>,CN=ApplicationRole (IsDNAsAnchor).
+            new ObjectTypeConfig(
+                name:         "ApplicationRole",
+                view:         "IDM.V_IDM_PPV",
+                anchorColumn: "AccountName",
+                isDerived:    true),
+
+            // Stejne jako ApplicationRole, ale jen isParentGroup=false a suffixy
+            // zamestnanec / technik / pedagog (vcetne vyjimky KTV/LIB/KAM/STATKY/VIN).
+            new ObjectTypeConfig(
+                name:                "BusinessRole",
+                view:                "IDM.V_IDM_PPV",
+                anchorColumn:        "AccountName",
+                isDerived:           true,
+                derivedBusinessOnly: true),
         };
 
         /// <summary>Najde konfiguraci podle nazvu (case-insensitive).</summary>
