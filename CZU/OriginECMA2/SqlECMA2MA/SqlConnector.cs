@@ -15,9 +15,10 @@ using MmsSchemaType = Microsoft.MetadirectoryServices.SchemaType;
 namespace SqlECMA2MA
 {
     /// <summary>
-    /// Read-only ECMA2 konektor nad SQL Server pohledem idm.vwIDM_Cards.
-    /// Person: jeden objekt na UIC, multivalued reference card na Card.
-    /// Card: jeden objekt na pk_id, vsechny sloupce pohledu.
+    /// Read-only ECMA2 konektor.
+    /// Card: jeden objekt na pk_id z idm.vwIDM_Cards, jen deleted = 0.
+    /// Person: jeden objekt na UIC. UIC je soucet karet a idm.vwIDM_Contacts.
+    /// Kontaktni atributy jsou jedna hodnota, unikatni polozky oddelene strednikem.
     /// </summary>
     public class SqlConnector :
         IMAExtensible2GetCapabilities,
@@ -32,6 +33,7 @@ namespace SqlECMA2MA
         private const string CP_USER       = "SQL login";
         private const string CP_PASSWORD   = "SQL password";
         private const string CP_VIEW       = "Cards view";
+        private const string CP_CONTACTS   = "Contacts view";
 
         private const string CP_MV_FILTER       = "Only metaverse UIC";
         private const string CP_SYNC_SERVER     = "Sync SQL Server";
@@ -61,15 +63,16 @@ namespace SqlECMA2MA
         private SqlConnection _conn;
         private string _objectType;
         private string _viewSql;
+        private string _contactsSql;
         private bool _filterToMetaverse;
         private int _viewRows;
 
         // Card: stream radku
         private SqlDataReader _reader;
 
-        // Person: UIC -> pk_id karet, strankovane z pameti
+        // Person: UIC ze souctu karet a kontaktu, strankovane z pameti
         private List<string> _personUics;
-        private Dictionary<string, List<string>> _cardsByUic;
+        private Dictionary<string, PersonData> _persons;
         private int _personIndex;
 
         public int ImportDefaultPageSize => 500;
@@ -124,10 +127,14 @@ namespace SqlECMA2MA
             {
                 list.Add(ConfigParameterDefinition.CreateStringParameter(
                     CP_VIEW, "", SqlConfig.DefaultView));
+                list.Add(ConfigParameterDefinition.CreateStringParameter(
+                    CP_CONTACTS, "", SqlConfig.DefaultContactsView));
                 list.Add(ConfigParameterDefinition.CreateDividerParameter());
                 list.Add(ConfigParameterDefinition.CreateLabelParameter(
-                    "Person: anchor UIC, atribut uic, ciselne PK_ZAM a multivalued reference card. " +
-                    "Card: anchor pk_id (GUID) a sloupce pohledu. " +
+                    "Person: anchor UIC, atribut uic, ciselne PK_ZAM, multivalued reference card " +
+                    "a kontaktni atributy (unikatni hodnoty spojene ';'). " +
+                    "UIC je soucet karet a kontaktu. " +
+                    "Card: anchor pk_id (GUID) a sloupce pohledu, jen deleted = 0. " +
                     "validFrom a validTo jsou ve schema string (ECMA2 nema DateTime), format " +
                     DateTimeFormat + "."));
                 list.Add(ConfigParameterDefinition.CreateDividerParameter());
@@ -181,6 +188,10 @@ namespace SqlECMA2MA
                 if (!ViewNameRegex.IsMatch(view))
                     return Failure(CP_VIEW, "Cards view musi byt ve tvaru view, schema.view nebo db.schema.view.");
 
+                string contacts = GetParam(configParameters, CP_CONTACTS, SqlConfig.DefaultContactsView).Trim();
+                if (!ViewNameRegex.IsMatch(contacts))
+                    return Failure(CP_CONTACTS, "Contacts view musi byt ve tvaru view, schema.view nebo db.schema.view.");
+
                 if (GetBool(configParameters, CP_MV_FILTER, true))
                 {
                     string syncServer = GetParam(configParameters, CP_SYNC_SERVER, "").Trim();
@@ -223,6 +234,11 @@ namespace SqlECMA2MA
             person.Attributes.Add(SchemaAttribute.CreateSingleValuedAttribute("PK_ZAM", AttributeType.Integer));
             person.Attributes.Add(SchemaAttribute.CreateMultiValuedAttribute(
                 SqlConfig.CardReference, AttributeType.Reference));
+            foreach (string attribute in SqlConfig.ContactAttributes)
+            {
+                person.Attributes.Add(SchemaAttribute.CreateSingleValuedAttribute(
+                    attribute, AttributeType.String));
+            }
             schema.Types.Add(person);
 
             var card = MmsSchemaType.Create(SqlConfig.CardType, false);
@@ -236,7 +252,7 @@ namespace SqlECMA2MA
             card.Attributes.Add(SchemaAttribute.CreateSingleValuedAttribute("deleted", AttributeType.Boolean));
             schema.Types.Add(card);
 
-            Log("INFO", "GetSchema: Person (uic, PK_ZAM, card), Card (pk_id, cardType, uic, passnumber, pass, validFrom, validTo, deleted)");
+            Log("INFO", "GetSchema: Person (uic, PK_ZAM, card, kontakty), Card (pk_id, cardType, uic, passnumber, pass, validFrom, validTo, deleted)");
             return schema;
         }
 
@@ -266,6 +282,7 @@ namespace SqlECMA2MA
                 throw new InvalidOperationException("Neznama partition '" + _objectType + "'.");
 
             _viewSql = QuoteView(GetParam(configParameters, CP_VIEW, SqlConfig.DefaultView));
+            _contactsSql = QuoteView(GetParam(configParameters, CP_CONTACTS, SqlConfig.DefaultContactsView));
             _filterToMetaverse = GetBool(configParameters, CP_MV_FILTER, true);
             _viewRows = 0;
             _conn     = BuildConnection(configParameters);
@@ -274,7 +291,7 @@ namespace SqlECMA2MA
             {
                 _conn.Open();
                 Log("INFO", "OpenImportConnection: partition=" + _objectType + " view=" + _viewSql +
-                    " metaverseFilter=" + _filterToMetaverse);
+                    " contacts=" + _contactsSql + " metaverseFilter=" + _filterToMetaverse);
 
                 if (_filterToMetaverse)
                     LoadConnectedUics();
@@ -313,9 +330,10 @@ namespace SqlECMA2MA
                 ? "SELECT v.[pk_id], v.[type] AS [cardType], v.[uic], v.[passnumber], v.[pass], " +
                   "v.[validFrom], v.[validTo], v.[deleted] FROM " + _viewSql + " v " +
                   "INNER JOIN #ConnectedUic u ON u.uic = CONVERT(nvarchar(128), v.[uic]) " +
-                  "ORDER BY v.[pk_id]"
+                  "WHERE v.[deleted] = 0 ORDER BY v.[pk_id]"
                 : "SELECT [pk_id], [type] AS [cardType], [uic], [passnumber], [pass], " +
-                  "[validFrom], [validTo], [deleted] FROM " + _viewSql + " ORDER BY [pk_id]";
+                  "[validFrom], [validTo], [deleted] FROM " + _viewSql +
+                  " WHERE [deleted] = 0 ORDER BY [pk_id]";
 
             Log("INFO", "OpenCardImport: " + sql);
             var cmd = new SqlCommand(sql, _conn) { CommandTimeout = CommandTimeoutSeconds };
@@ -324,17 +342,37 @@ namespace SqlECMA2MA
 
         private void OpenPersonImport()
         {
-            // Jeden pruchod pohledem. Person bez pk_id se take zalozi, jen nema reference.
+            _persons = new Dictionary<string, PersonData>(StringComparer.OrdinalIgnoreCase);
+            int cardRows = LoadPersonCards();
+            int contactRows = LoadPersonContacts();
+
+            foreach (PersonData person in _persons.Values)
+                person.Cards.Sort(StringComparer.Ordinal);
+
+            _personUics  = new List<string>(_persons.Keys);
+            _personUics.Sort(StringComparer.OrdinalIgnoreCase);
+            _personIndex = 0;
+            _viewRows    = cardRows + contactRows;
+
+            Log("INFO", "OpenPersonImport: " + _personUics.Count + " UIC, karet " +
+                cardRows + " radku, kontaktu " + contactRows + " radku");
+        }
+
+        /// <summary>
+        /// UIC ze vsech radku karet. Reference jen na karty s deleted = 0.
+        /// </summary>
+        private int LoadPersonCards()
+        {
             string sql = _filterToMetaverse
-                ? "SELECT v.[uic], v.[pk_id] FROM " + _viewSql + " v " +
+                ? "SELECT v.[uic], CASE WHEN v.[deleted] = 0 THEN v.[pk_id] END AS [pk_id] " +
+                  "FROM " + _viewSql + " v " +
                   "INNER JOIN #ConnectedUic u ON u.uic = CONVERT(nvarchar(128), v.[uic]) " +
-                  "WHERE v.[uic] IS NOT NULL ORDER BY v.[uic], v.[pk_id]"
-                : "SELECT [uic], [pk_id] FROM " + _viewSql +
-                  " WHERE [uic] IS NOT NULL ORDER BY [uic], [pk_id]";
+                  "WHERE v.[uic] IS NOT NULL"
+                : "SELECT [uic], CASE WHEN [deleted] = 0 THEN [pk_id] END AS [pk_id] " +
+                  "FROM " + _viewSql +
+                  " WHERE [uic] IS NOT NULL";
 
-            Log("INFO", "OpenPersonImport: " + sql);
-            _cardsByUic = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase);
-
+            Log("INFO", "LoadPersonCards: " + sql);
             int rows = 0;
             using (var cmd = new SqlCommand(sql, _conn) { CommandTimeout = CommandTimeoutSeconds })
             using (var rdr = cmd.ExecuteReader())
@@ -345,28 +383,68 @@ namespace SqlECMA2MA
                     string uic = ReadString(rdr, 0);
                     if (uic == null) continue;
 
-                    List<string> cards;
-                    if (!_cardsByUic.TryGetValue(uic, out cards))
-                    {
-                        cards = new List<string>();
-                        _cardsByUic[uic] = cards;
-                    }
-
+                    PersonData person = GetPerson(uic);
                     string pk = ReadGuid(rdr, 1);
-                    if (pk != null && !cards.Contains(pk))
-                        cards.Add(pk);
+                    if (pk != null && !person.Cards.Contains(pk))
+                        person.Cards.Add(pk);
                 }
             }
 
-            foreach (var cards in _cardsByUic.Values)
-                cards.Sort(StringComparer.Ordinal);
+            return rows;
+        }
 
-            _personUics  = new List<string>(_cardsByUic.Keys);
-            _personUics.Sort(StringComparer.OrdinalIgnoreCase);
-            _personIndex = 0;
-            _viewRows    = rows;
+        /// <summary>
+        /// Kontakty se nectou z noveho pohledu. Vice radku stejneho UIC
+        /// se v pameti slozi do unikatnich hodnot oddelenych strednikem.
+        /// </summary>
+        private int LoadPersonContacts()
+        {
+            var columns = new StringBuilder();
+            for (int i = 0; i < SqlConfig.ContactAttributes.Length; i++)
+            {
+                if (i > 0) columns.Append(", ");
+                string column = QuoteIdentifier(SqlConfig.ContactAttributes[i]);
+                columns.Append(_filterToMetaverse ? "v." + column : column);
+            }
 
-            Log("INFO", "OpenPersonImport: " + _personUics.Count + " UIC, " + rows + " radku z pohledu");
+            string sql = _filterToMetaverse
+                ? "SELECT CONVERT(nvarchar(128), v.[UIC]) AS [UIC], " + columns +
+                  " FROM " + _contactsSql + " v " +
+                  "INNER JOIN #ConnectedUic u ON u.uic = CONVERT(nvarchar(128), v.[UIC]) " +
+                  "WHERE v.[UIC] IS NOT NULL"
+                : "SELECT CONVERT(nvarchar(128), [UIC]) AS [UIC], " + columns +
+                  " FROM " + _contactsSql +
+                  " WHERE [UIC] IS NOT NULL";
+
+            Log("INFO", "LoadPersonContacts: " + sql);
+            int rows = 0;
+            using (var cmd = new SqlCommand(sql, _conn) { CommandTimeout = CommandTimeoutSeconds })
+            using (var rdr = cmd.ExecuteReader())
+            {
+                while (rdr.Read())
+                {
+                    rows++;
+                    string uic = ReadString(rdr, 0);
+                    if (uic == null) continue;
+
+                    PersonData person = GetPerson(uic);
+                    for (int i = 0; i < SqlConfig.ContactAttributes.Length; i++)
+                        person.AddContact(i, ReadString(rdr, i + 1));
+                }
+            }
+
+            return rows;
+        }
+
+        private PersonData GetPerson(string uic)
+        {
+            PersonData person;
+            if (!_persons.TryGetValue(uic, out person))
+            {
+                person = new PersonData();
+                _persons[uic] = person;
+            }
+            return person;
         }
 
         /// <summary>
@@ -528,20 +606,23 @@ namespace SqlECMA2MA
                 if (long.TryParse(uic, NumberStyles.Integer, CultureInfo.InvariantCulture, out pkZam))
                     entry.AttributeChanges.Add(AttributeChange.CreateAttributeAdd("PK_ZAM", pkZam));
 
-                List<string> cards = _cardsByUic[uic];
-                if (cards.Count > 0)
+                PersonData person = _persons[uic];
+                if (person.Cards.Count > 0)
                 {
-                    var refs = new List<object>(cards.Count);
-                    foreach (string pk in cards)
+                    var refs = new List<object>(person.Cards.Count);
+                    foreach (string pk in person.Cards)
                         refs.Add(ToDn(pk, SqlConfig.CardType));
                     entry.AttributeChanges.Add(
                         AttributeChange.CreateAttributeAdd(SqlConfig.CardReference, refs));
                 }
 
+                for (int i = 0; i < SqlConfig.ContactAttributes.Length; i++)
+                    AddString(entry, SqlConfig.ContactAttributes[i], person.JoinContact(i));
+
                 if (first)
                 {
                     first = false;
-                    Log("INFO", "GetPersonEntries: prvni UIC=" + uic + " cards=" + cards.Count);
+                    Log("INFO", "GetPersonEntries: prvni UIC=" + uic + " cards=" + person.Cards.Count);
                 }
 
                 entries.Add(entry);
@@ -746,8 +827,36 @@ namespace SqlECMA2MA
                 _conn.Dispose();
                 _conn = null;
             }
-            _cardsByUic = null;
+            _persons = null;
             _personUics = null;
+        }
+
+        /// <summary>Jeden UIC. Karty a unikatni kontaktni hodnoty.</summary>
+        private sealed class PersonData
+        {
+            public readonly List<string> Cards = new List<string>();
+            private readonly SortedSet<string>[] _contacts =
+                new SortedSet<string>[SqlConfig.ContactAttributes.Length];
+
+            public void AddContact(int index, string value)
+            {
+                if (string.IsNullOrEmpty(value)) return;
+
+                SortedSet<string> values = _contacts[index];
+                if (values == null)
+                {
+                    values = new SortedSet<string>(StringComparer.OrdinalIgnoreCase);
+                    _contacts[index] = values;
+                }
+                values.Add(value);
+            }
+
+            public string JoinContact(int index)
+            {
+                SortedSet<string> values = _contacts[index];
+                if (values == null || values.Count == 0) return null;
+                return string.Join(";", values);
+            }
         }
 
         private static ParameterValidationResult Failure(string parameter, string message)

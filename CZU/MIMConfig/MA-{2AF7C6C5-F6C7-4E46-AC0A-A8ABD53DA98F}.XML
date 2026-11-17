@@ -1,0 +1,193 @@
+<saved-ma-configuration server='WOSIS-EIDM-MIMS' export-date='2026-11-17 13:32:11.938'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{2AF7C6C5-F6C7-4E46-AC0A-A8ABD53DA98F}</id>
+ <name>ORIGIN</name>
+ <category>Extensible2</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2026-11-15 12:11:32.637</creation-time>
+ <last-modification-time>2026-11-16 22:39:55.001</last-modification-time>
+ <version>18</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML" xmlns:dsml="http://www.dsml.org/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="Person" type="structural"><dsml:name>Person</dsml:name><dsml:attribute ref="#uic" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PK_ZAM" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#card" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PK_ID" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_HOME_PHONE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_MOBILE_PHONE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_HOME_EMAIL" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_WORK_PHONE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_FAX" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_OFFICE_GTF" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_ICQ" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_SKYPE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_PERSONAL_WEB" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_FB" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_TWITTER" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_BUDOVA" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_KANCELAR" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_OFFICE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MV_VPN_PHONE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="Card" type="structural"><dsml:name>Card</dsml:name><dsml:attribute ref="#pk_id" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#cardType" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#uic" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#passnumber" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#pass" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#validFrom" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#validTo" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#deleted" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="uic" single-value="true"><dsml:name>uic</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PK_ZAM" single-value="true"><dsml:name>PK_ZAM</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="card" single-value="false"><dsml:name>card</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PK_ID" single-value="true"><dsml:name>PK_ID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_HOME_PHONE" single-value="true"><dsml:name>MV_HOME_PHONE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_MOBILE_PHONE" single-value="true"><dsml:name>MV_MOBILE_PHONE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_HOME_EMAIL" single-value="true"><dsml:name>MV_HOME_EMAIL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_WORK_PHONE" single-value="true"><dsml:name>MV_WORK_PHONE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_FAX" single-value="true"><dsml:name>MV_FAX</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_OFFICE_GTF" single-value="true"><dsml:name>MV_OFFICE_GTF</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_ICQ" single-value="true"><dsml:name>MV_ICQ</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_SKYPE" single-value="true"><dsml:name>MV_SKYPE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_PERSONAL_WEB" single-value="true"><dsml:name>MV_PERSONAL_WEB</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_FB" single-value="true"><dsml:name>MV_FB</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_TWITTER" single-value="true"><dsml:name>MV_TWITTER</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_BUDOVA" single-value="true"><dsml:name>MV_BUDOVA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_KANCELAR" single-value="true"><dsml:name>MV_KANCELAR</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_OFFICE" single-value="true"><dsml:name>MV_OFFICE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MV_VPN_PHONE" single-value="true"><dsml:name>MV_VPN_PHONE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="pk_id" single-value="true"><dsml:name>pk_id</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="cardType" single-value="true"><dsml:name>cardType</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="passnumber" single-value="true"><dsml:name>passnumber</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="pass" single-value="true"><dsml:name>pass</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="validFrom" single-value="true"><dsml:name>validFrom</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="validTo" single-value="true"><dsml:name>validTo</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="deleted" single-value="true"><dsml:name>deleted</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.7</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>card</attribute><attribute>cardType</attribute><attribute>deleted</attribute><attribute>MV_BUDOVA</attribute><attribute>MV_FAX</attribute><attribute>MV_FB</attribute><attribute>MV_HOME_EMAIL</attribute><attribute>MV_HOME_PHONE</attribute><attribute>MV_ICQ</attribute><attribute>MV_KANCELAR</attribute><attribute>MV_MOBILE_PHONE</attribute><attribute>MV_OFFICE</attribute><attribute>MV_OFFICE_GTF</attribute><attribute>MV_PERSONAL_WEB</attribute><attribute>MV_SKYPE</attribute><attribute>MV_TWITTER</attribute><attribute>MV_VPN_PHONE</attribute><attribute>MV_WORK_PHONE</attribute><attribute>pass</attribute><attribute>passnumber</attribute><attribute>pk_id</attribute><attribute>PK_ID</attribute><attribute>PK_ZAM</attribute><attribute>uic</attribute><attribute>validFrom</attribute><attribute>validTo</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector><filter-set import-filter="0" cd-object-type="Card" type="declared"><filter-alternative id="{4214C7B9-931B-4583-800A-5AA54960A6CE}"><condition cd-attribute="deleted" operator="equality"><value>true</value></condition></filter-alternative></filter-set></stay-disconnector>
+ <join><join-profile cd-object-type="Card"><join-criterion id="{EE79172F-4007-4CC9-9B83-44F4D9374069}"><search mv-object-type="card"><attribute-mapping mv-attribute="pk_id"><direct-mapping><src-attribute>pk_id</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile><join-profile cd-object-type="Person"><join-criterion id="{4AC8A251-EBBA-48D1-85E6-DC45089377F0}"><search mv-object-type="person"><attribute-mapping mv-attribute="PK_ZAM"><direct-mapping><src-attribute>PK_ZAM</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile></join>
+ <projection><class-mapping type="declared" id="{6B4FBBDA-2F51-443E-8687-3046B310EF50}" cd-object-type="Card"><mv-object-type>card</mv-object-type></class-mapping></projection>
+ <export-attribute-flow />
+ <provisioning-cleanup type="declared"><action>make-normal-disconnector</action></provisioning-cleanup>
+ <extension><assembly-name>CZUExtension.dll</assembly-name><application-protection>low</application-protection></extension>
+ <controller-configuration>
+ <application-protection>high</application-protection>
+ <application-architecture>process</application-architecture>
+</controller-configuration>
+
+ <description></description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="card" header="card" size="100" /><attribute name="cardType" header="cardType" size="100" /><attribute name="deleted" header="deleted" size="100" /></cs><mv></mv></attributes><filters max_mv_search_results=""></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <MAConfig><ui-data><xmlwizard><properties><sample_file></sample_file><code_page_description></code_page_description></properties><partitions><partition cd_name="CN=Person" guid="{0264436A-9F27-2C49-C874-59B53FBC9FD5}" version="0"><object_class>Card</object_class><object_class>Person</object_class></partition><partition cd_name="CN=Card" guid="{AAD6AAE7-DA62-40C7-E71A-63CFB22DF95D}" version="0"><object_class>Card</object_class><object_class>Person</object_class></partition></partitions><primary_class_mappings><mapping object_class="Card" primary_class="Card" user_define="0"><attribute>pk_id</attribute><attribute>cardType</attribute><attribute>uic</attribute><attribute>passnumber</attribute><attribute>pass</attribute><attribute>validFrom</attribute><attribute>validTo</attribute><attribute>deleted</attribute><attribute>export_password</attribute></mapping><mapping object_class="Person" primary_class="Person" user_define="0"><attribute>uic</attribute><attribute>card</attribute><attribute>export_password</attribute></mapping></primary_class_mappings><object_classes><object_class cd_name="Card" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">pk_id</attribute><attribute mandatory="0">cardType</attribute><attribute mandatory="0">uic</attribute><attribute mandatory="0">passnumber</attribute><attribute mandatory="0">pass</attribute><attribute mandatory="0">validFrom</attribute><attribute mandatory="0">validTo</attribute><attribute mandatory="0">deleted</attribute><attribute mandatory="0">export_password</attribute></object_class><object_class cd_name="Person" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">uic</attribute><attribute mandatory="0">card</attribute><attribute mandatory="0">export_password</attribute></object_class></object_classes><attributes><attribute cd_name="card" sample_data="" binary="0" multi_valued="-1" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="DN" user_define="0" /><attribute cd_name="cardType" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="deleted" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Bool" user_define="0" /><attribute cd_name="pass" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="passnumber" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="pk_id" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="uic" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="validFrom" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="validTo" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="export_password" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /></attributes></xmlwizard></ui-data><importing><dn><dn /></dn><anchor><dn /></anchor><per-class-settings><class><name>Card</name><anchor><dn /></anchor></class><class><name>Person</name><anchor><dn /></anchor></class></per-class-settings><default_object_class>person</default_object_class></importing><exporting></exporting><ldap-dn>0</ldap-dn><change_type_attribute></change_type_attribute><add_change_type_value>Add</add_change_type_value><modify_change_type_value>Modify</modify_change_type_value><delete_change_type_value>Delete</delete_change_type_value><primary_class_mappings><mapping><primary_class>Card</primary_class><oc-value>Card</oc-value></mapping><mapping><primary_class>Person</primary_class><oc-value>Person</oc-value></mapping></primary_class_mappings><enable-unapplied-merge>0</enable-unapplied-merge><file-type>Extensible2</file-type><extension-config><filename>SqlECMA2MA.dll</filename><import-default-page-size>500</import-default-page-size><import-max-page-size>1000</import-max-page-size><export-default-page-size>1</export-default-page-size><export-max-page-size>1</export-max-page-size><export-mode></export-mode><import-mode>call-based</import-mode><export-enabled>0</export-enabled><import-enabled>1</import-enabled><discovery-partition>extensibility</discovery-partition><discovery-schema>extensibility</discovery-schema><discovery-hierarchy></discovery-hierarchy><password-management-enabled></password-management-enabled><assembly-version>1.0.0.0</assembly-version><supports-parameters-ex>0</supports-parameters-ex><export-type>3</export-type><capability-bits>3221686896</capability-bits></extension-config><parameter-definitions refreshSchema="0" refreshPartition="0" refreshConnectivityParameters="0" refreshSchemaParameters="0" refreshCapabilitiesParameters="0" refreshGlobalParameters="0" refreshOtherParameters="0"><parameter><name>SQL Server</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Database</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value>CZU_IDM_TEST</default-value></parameter><parameter><name>Windows authentication</name><use>connectivity</use><type>checkbox</type><validation></validation><text></text><default-value>0</default-value></parameter><parameter><name>SQL login</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>SQL password</name><use>connectivity</use><type>encrypted-string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Cards view</name><use>global</use><type>string</type><validation></validation><text></text><default-value>idm.vwIDM_Cards</default-value></parameter><parameter><name>Contacts view</name><use>global</use><type>string</type><validation></validation><text></text><default-value>idm.vwIDM_Contacts</default-value></parameter><parameter><name></name><use>global</use><type>divider</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name></name><use>global</use><type>label</type><validation></validation><text>Person: anchor UIC, atribut uic, ciselne PK_ZAM, multivalued reference card a kontaktni atributy (unikatni hodnoty spojene ';'). UIC je soucet karet a kontaktu. Card: anchor pk_id (GUID) a sloupce pohledu, jen deleted = 0. validFrom a validTo jsou ve schema string (ECMA2 nema DateTime), format yyyy-MM-dd HH:mm:ss.</text><default-value></default-value></parameter><parameter><name></name><use>global</use><type>divider</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Only metaverse UIC</name><use>global</use><type>checkbox</type><validation></validation><text></text><default-value>1</default-value></parameter><parameter><name></name><use>global</use><type>label</type><validation></validation><text>Pri zapnutem filtru se z metaverse nacte sloupec UIC (PK_ZAM) a pohled vrati jen Person a karty s timto UIC.</text><default-value></default-value></parameter><parameter><name>Sync SQL Server</name><use>global</use><type>string</type><validation></validation><text></text><default-value>(local)</default-value></parameter><parameter><name>Sync database</name><use>global</use><type>string</type><validation></validation><text></text><default-value>FIMSynchronizationService</default-value></parameter><parameter><name>Sync Windows authentication</name><use>global</use><type>checkbox</type><validation></validation><text></text><default-value>1</default-value></parameter><parameter><name>Sync SQL login</name><use>global</use><type>string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Sync SQL password</name><use>global</use><type>encrypted-string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>Metaverse UIC column</name><use>global</use><type>string</type><validation></validation><text></text><default-value>PK_ZAM</default-value></parameter><parameter><name>Metaverse object type</name><use>global</use><type>string</type><validation></validation><text></text><default-value>person</default-value></parameter></parameter-definitions><parameter-values><parameter name="SQL password" type="encrypted-string" use="connectivity" encrypted="1"></parameter><parameter name="SQL Server" type="string" use="connectivity">wsqlag1-t.czu.cz </parameter><parameter name="Database" type="string" use="connectivity">CZU_IDM_TEST</parameter><parameter name="Windows authentication" type="checkbox" use="connectivity">0</parameter><parameter name="SQL login" type="string" use="connectivity">svc.db.idm_test_alloy</parameter><parameter name="Cards view" type="string" use="global">idm.vwIDM_Cards</parameter><parameter name="Contacts view" type="string" use="global">idm.vwIDM_Contacts</parameter><parameter name="Only metaverse UIC" type="checkbox" use="global">1</parameter><parameter name="Sync SQL Server" type="string" use="global">WOSIS-EIDM-SQLS.czu.dev</parameter><parameter name="Sync database" type="string" use="global">FIMSynchronizationService</parameter><parameter name="Sync Windows authentication" type="checkbox" use="global">1</parameter><parameter name="Sync SQL login" type="string" use="global"></parameter><parameter name="Metaverse UIC column" type="string" use="global">PK_ZAM</parameter><parameter name="Metaverse object type" type="string" use="global">person</parameter></parameter-values><password-extension-config><password-extension-enabled>0</password-extension-enabled><dll></dll><password-set-enabled></password-set-enabled><password-change-enabled></password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout></timeout></password-extension-config><case_normalize_dn_for_anchor>1</case_normalize_dn_for_anchor><default_visible_attributes><attribute>uic</attribute><attribute>PK_ZAM</attribute><attribute>card</attribute><attribute>PK_ID</attribute><attribute>MV_HOME_PHONE</attribute><attribute>MV_MOBILE_PHONE</attribute><attribute>MV_HOME_EMAIL</attribute><attribute>MV_WORK_PHONE</attribute><attribute>MV_FAX</attribute><attribute>MV_OFFICE_GTF</attribute><attribute>MV_ICQ</attribute><attribute>MV_SKYPE</attribute><attribute>MV_PERSONAL_WEB</attribute><attribute>MV_FB</attribute><attribute>MV_TWITTER</attribute><attribute>MV_BUDOVA</attribute><attribute>MV_KANCELAR</attribute><attribute>MV_OFFICE</attribute><attribute>MV_VPN_PHONE</attribute><attribute>pk_id</attribute><attribute>cardType</attribute><attribute>passnumber</attribute><attribute>pass</attribute><attribute>validFrom</attribute><attribute>validTo</attribute><attribute>deleted</attribute></default_visible_attributes></MAConfig>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{AAD6AAE7-DA62-40C7-E71A-63CFB22DF95D}</id>
+  <name>CN=Card</name>
+  <creation-time>2026-11-15 12:11:32.637</creation-time>
+  <last-modification-time>2026-11-16 22:39:55.000</last-modification-time>
+  <version>27</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>Card</object-class>
+    <object-class>Person</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=Card</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=Card</dn><name>Card</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>2</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>Card</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>Card</name>
+     <hierarchy>
+      <object-class>Card</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{0264436A-9F27-2C49-C874-59B53FBC9FD5}</id>
+  <name>CN=Person</name>
+  <creation-time>2026-11-15 12:11:32.780</creation-time>
+  <last-modification-time>2026-11-16 22:39:54.997</last-modification-time>
+  <version>27</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>Card</object-class>
+    <object-class>Person</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=Person</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=Person</dn><name>Person</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>0</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>Person</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>Card</name>
+     <hierarchy>
+      <object-class>Card</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{56E95856-C856-4FCE-9A4E-43D86D79AA06}</id>
+  <name>Full Import Card</name>
+  <creation-time>2026-11-15 12:12:08.890</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 12:12:08.890</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{AAD6AAE7-DA62-40C7-E71A-63CFB22DF95D}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{B009EB7A-F74C-476F-89E7-64633E37C63B}</id>
+  <name>Full Import User</name>
+  <creation-time>2026-11-15 12:12:08.890</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 12:12:08.890</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{0264436A-9F27-2C49-C874-59B53FBC9FD5}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{FB2C2515-4AC2-4BCE-979D-61D32DC6BD56}</id>
+  <name>Full Synchronization User</name>
+  <creation-time>2026-11-15 12:47:36.510</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 12:47:36.510</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{0264436A-9F27-2C49-C874-59B53FBC9FD5}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{84068FB6-62F4-45CE-87EF-DC01C94FBD19}</id>
+  <name>Full Synchronization Card</name>
+  <creation-time>2026-11-15 12:47:36.513</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 12:47:36.513</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{AAD6AAE7-DA62-40C7-E71A-63CFB22DF95D}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{39A1A92D-658F-40DA-A441-56912AFF293E}</id>
+  <name>Full Synchronization</name>
+  <creation-time>2026-11-15 13:32:36.017</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 13:32:36.017</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{AAD6AAE7-DA62-40C7-E71A-63CFB22DF95D}</partition><custom-data></custom-data></step><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{0264436A-9F27-2C49-C874-59B53FBC9FD5}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>c0070af0</capabilities-mask>
+ <export-type>3</export-type>
+ <dn-construction/>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+</saved-ma-configuration>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>9a4ef9a5-afac-48bc-a7cd-77f42e8cc4bb</Id>
+  <IsEnabled>true</IsEnabled>
+  <Name>EIDMA</Name>
+  <Created>2026-08-07T16:22:23.8366667</Created>
+  <Description>Konektor pro EasyIDM portál</Description>
+  <Schema>
+    <AnchorAttribute>idmObjectId</AnchorAttribute>
+    <ObjectTypes>
+      <ObjectType name="Identity">
+        <Attributes>
+          <Attribute dataType="string">firstName</Attribute>
+          <Attribute dataType="string">iDMObjectTypeId</Attribute>
+          <Attribute dataType="string">lastName</Attribute>
+          <Attribute dataType="string">titleAfter</Attribute>
+          <Attribute dataType="string">titleBefore</Attribute>
+          <Attribute dataType="reference">managerObjectId</Attribute>
+          <Attribute dataType="string">city</Attribute>
+          <Attribute dataType="bool">createMail</Attribute>
+          <Attribute dataType="string">email</Attribute>
+          <Attribute dataType="string">postalCode</Attribute>
+          <Attribute dataType="string">accountStatus</Attribute>
+          <Attribute dataType="int">accountStatusToAD</Attribute>
+          <Attribute dataType="string">computedAccountStatus</Attribute>
+          <Attribute dataType="string">inFrom</Attribute>
+          <Attribute dataType="bool">isActive</Attribute>
+          <Attribute dataType="string">managedBy</Attribute>
+          <Attribute dataType="string">outFrom</Attribute>
+          <Attribute dataType="string">userArchiveDate</Attribute>
+          <Attribute dataType="string">userEndDate</Attribute>
+          <Attribute dataType="string">validFrom</Attribute>
+          <Attribute dataType="string">validTo</Attribute>
+          <Attribute dataType="string">commonName</Attribute>
+          <Attribute dataType="string">created</Attribute>
+          <Attribute dataType="string">description</Attribute>
+          <Attribute dataType="string">dn</Attribute>
+          <Attribute dataType="string">domain</Attribute>
+          <Attribute dataType="bool">hasCalculateItemsIdentity</Attribute>
+          <Attribute dataType="string" isIdentifier="true">idmObjectId</Attribute>
+          <Attribute dataType="string">name</Attribute>
+          <Attribute dataType="string">password</Attribute>
+          <Attribute dataType="bool">placedAd</Attribute>
+          <Attribute dataType="int">pswdNotification</Attribute>
+          <Attribute dataType="string">techName</Attribute>
+          <Attribute dataType="string">userPrincipalName</Attribute>
+          <Attribute dataType="string">windowsUserName</Attribute>
+          <Attribute dataType="string">claBirthDay</Attribute>
+          <Attribute dataType="string">claCitizenShipCode</Attribute>
+          <Attribute dataType="string">claMaidenName</Attribute>
+          <Attribute dataType="string">claSex</Attribute>
+          <Attribute dataType="string">CO</Attribute>
+          <Attribute dataType="string">workforceID</Attribute>
+          <Attribute dataType="reference" isMultivalued="true">allActivePPV</Attribute>
+          <Attribute dataType="int">claZaklPPV</Attribute>
+          <Attribute dataType="reference">mainPPV</Attribute>
+          <Attribute dataType="string">claPersonalMobilePhone</Attribute>
+          <Attribute dataType="string">cloPostalState</Attribute>
+          <Attribute dataType="string">S</Attribute>
+          <Attribute dataType="reference" isMultivalued="true">userCard</Attribute>
+          <Attribute dataType="string">mvHomePhone</Attribute>
+          <Attribute dataType="string">mvMobilePhone</Attribute>
+          <Attribute dataType="string">mvHomeEmail</Attribute>
+          <Attribute dataType="string">mvWorkPhone</Attribute>
+          <Attribute dataType="string">mvFax</Attribute>
+          <Attribute dataType="string">mvOfficeGTF</Attribute>
+          <Attribute dataType="string">mvICQ</Attribute>
+          <Attribute dataType="string">mvSKYPE</Attribute>
+          <Attribute dataType="string">mvPresonalWeb</Attribute>
+          <Attribute dataType="string">mvFB</Attribute>
+          <Attribute dataType="string">mvTwitter</Attribute>
+          <Attribute dataType="string">mvBudova</Attribute>
+          <Attribute dataType="string">mvKancelar</Attribute>
+          <Attribute dataType="string">mvOffice</Attribute>
+          <Attribute dataType="string">mvVPNPhone</Attribute>
+          <Attribute dataType="reference">mainPPV_claPozicePPV</Attribute>
+        </Attributes>
+      </ObjectType>
+      <ObjectType name="ApplicationRole">
+        <Attributes>
+          <Attribute dataType="string">name</Attribute>
+          <Attribute dataType="reference" isMultivalued="true">owners</Attribute>
+          <Attribute dataType="reference">application</Attribute>
+          <Attribute dataType="string">applicationCode</Attribute>
+          <Attribute dataType="reference">application_applicationModuleCode</Attribute>
+          <Attribute dataType="string">externalRoleCode</Attribute>
+          <Attribute dataType="string">groupDomain</Attribute>
+          <Attribute dataType="string">groupType</Attribute>
+          <Attribute dataType="string">created</Attribute>
+          <Attribute dataType="string">description</Attribute>
+          <Attribute dataType="string">dn</Attribute>
+          <Attribute dataType="string" isIdentifier="true">idmObjectId</Attribute>
+          <Attribute dataType="string">techName</Attribute>
+          <Attribute dataType="bool">isActive</Attribute>
+          <Attribute dataType="string">validFrom</Attribute>
+          <Attribute dataType="string">validTo</Attribute>
+          <Attribute dataType="string">groupCalculatedStatus</Attribute>
+          <Attribute dataType="string">groupStatus</Attribute>
+          <Attribute dataType="string">nestingDirection</Attribute>
+          <Attribute dataType="string">nestingRule</Attribute>
+        </Attributes>
+      </ObjectType>
+      <ObjectType name="Resource">
+        <Attributes>
+          <Attribute dataType="string">created</Attribute>
+          <Attribute dataType="string">description</Attribute>
+          <Attribute dataType="string" isIdentifier="true">idmObjectId</Attribute>
+          <Attribute dataType="bool">isActive</Attribute>
+          <Attribute dataType="string">name</Attribute>
+          <Attribute dataType="string">techName</Attribute>
+          <Attribute dataType="string">validFrom</Attribute>
+          <Attribute dataType="string">validTo</Attribute>
+          <Attribute dataType="string">applicationCodeAP</Attribute>
+          <Attribute dataType="string">applicationModuleCode</Attribute>
+          <Attribute dataType="reference" isMultivalued="true">owners</Attribute>
+          <Attribute dataType="string">resourceCalculatedStatus</Attribute>
+          <Attribute dataType="string">resourceOU</Attribute>
+          <Attribute dataType="string">resourceStatus</Attribute>
+        </Attributes>
+      </ObjectType>
+      <ObjectType name="BaseUnit">
+        <Attributes>
+          <Attribute dataType="string">description</Attribute>
+          <Attribute dataType="string">name</Attribute>
+          <Attribute dataType="string">claBaseUnitAbbr</Attribute>
+          <Attribute dataType="string">claBaseUnitAbbrEn</Attribute>
+          <Attribute dataType="string">claBaseUnitCode</Attribute>
+          <Attribute dataType="string">claBaseUnitName</Attribute>
+          <Attribute dataType="string">claBaseUnitNameEn</Attribute>
+          <Attribute dataType="string">claParentBaseUnitCode</Attribute>
+          <Attribute dataType="bool">isActive</Attribute>
+          <Attribute dataType="string">validFrom</Attribute>
+          <Attribute dataType="string">validTo</Attribute>
+          <Attribute dataType="string">created</Attribute>
+          <Attribute dataType="string" isIdentifier="true">idmObjectId</Attribute>
+          <Attribute dataType="string">techName</Attribute>
+        </Attributes>
+      </ObjectType>
+      <ObjectType name="PPV">
+        <Attributes>
+          <Attribute dataType="string">created</Attribute>
+          <Attribute dataType="string">description</Attribute>
+          <Attribute dataType="string" isIdentifier="true">idmObjectId</Attribute>
+          <Attribute dataType="bool">isActive</Attribute>
+          <Attribute dataType="string">name</Attribute>
+          <Attribute dataType="string">techName</Attribute>
+          <Attribute dataType="string">validFrom</Attribute>
+          <Attribute dataType="string">validTo</Attribute>
+          <Attribute dataType="string">inFrom</Attribute>
+          <Attribute dataType="string">outFrom</Attribute>
+          <Attribute dataType="string">claAktivniPPV</Attribute>
+          <Attribute dataType="string">claDruhKodPPV</Attribute>
+          <Attribute dataType="int">claDruhPPV</Attribute>
+          <Attribute dataType="string">claFaculty</Attribute>
+          <Attribute dataType="string">claFunkceKodPPV</Attribute>
+          <Attribute dataType="string">claFunkcePPV</Attribute>
+          <Attribute dataType="string">claKategorie1KodPPV</Attribute>
+          <Attribute dataType="string">claKategorie1PPV</Attribute>
+          <Attribute dataType="string">claKategorie2KodPPV</Attribute>
+          <Attribute dataType="string">claKategorie2PPV</Attribute>
+          <Attribute dataType="string">claKzamKodPPV</Attribute>
+          <Attribute dataType="string">claKzamPPV</Attribute>
+          <Attribute dataType="string">claLastChangePPV</Attribute>
+          <Attribute dataType="int">claOrderPPV</Attribute>
+          <Attribute dataType="string">claOsCisPPV</Attribute>
+          <Attribute dataType="int">claOsCisZAM</Attribute>
+          <Attribute dataType="int">claPracovisteKodPPV</Attribute>
+          <Attribute dataType="string">claPracovistePPV</Attribute>
+          <Attribute dataType="string">claStrediskoKodPPV</Attribute>
+          <Attribute dataType="string">claStrediskoPPV</Attribute>
+          <Attribute dataType="string">claStrediskoZkratkaPPV</Attribute>
+          <Attribute dataType="int">claUICPPV</Attribute>
+          <Attribute dataType="string">claVyseUvazku</Attribute>
+          <Attribute dataType="int">claZarazeniKodPPV</Attribute>
+          <Attribute dataType="string">claZarazeniPPV</Attribute>
+          <Attribute dataType="reference">utvar</Attribute>
+          <Attribute dataType="string">claPozicePPV</Attribute>
+		  
+       </Attributes>
+      </ObjectType>
+      <ObjectType name="Card">
+        <Attributes>
+          <Attribute dataType="string">created</Attribute>
+          <Attribute dataType="string">description</Attribute>
+          <Attribute dataType="string" isIdentifier="true">idmObjectId</Attribute>
+          <Attribute dataType="bool">isActive</Attribute>
+          <Attribute dataType="string">name</Attribute>
+          <Attribute dataType="string">techName</Attribute>
+          <Attribute dataType="string">validFrom</Attribute>
+          <Attribute dataType="string">validTo</Attribute>
+          <Attribute dataType="string">cardpass</Attribute>
+          <Attribute dataType="string">cardpassnumber</Attribute>
+          <Attribute dataType="string">cardId</Attribute>
+          <Attribute dataType="string">cardowner</Attribute>
+        </Attributes>
+      </ObjectType>    </ObjectTypes>
+  </Schema>
+  <Join>
+    <Rules />
+  </Join>
+  <ArchiveDeltas>true</ArchiveDeltas>
+  <TrackChanges>true</TrackChanges>
+  <Settings>
+    <Settings>
+      <Authorization>
+          <ClientSecret>easyIDMClientSecret!123</ClientSecret>
+      </Authorization>
+      <URLs>
+        <Base>https://idm-test.czu.cz</Base>
+        <Import>
+          <URL operationType="Full">/api/mimsync/getSyncFullData</URL>
+          <URL operationType="Delta">/api/mimSync/getSyncDeltaData</URL>
+        </Import>
+        <Export>
+          <URL operationType="Full">/api/synchronization/synchronize</URL>
+          <URL operationType="Delta">/api/mimsync/deltaSynchronize</URL>
+          <URL operationType="CheckProgress">/api/synchronization/status</URL>
+        </Export>
+      </URLs>
+      <Child2>2</Child2>
+      <TypeMappings>
+        <TypeMapping idmObjectType="3">Identity</TypeMapping>
+        <TypeMapping idmObjectType="5">BusinessRole</TypeMapping>
+        <TypeMapping idmObjectType="6">ApplicationRole</TypeMapping>
+        <TypeMapping idmObjectType="7">Resource</TypeMapping>
+        <TypeMapping idmObjectType="30">BaseUnit</TypeMapping>
+        <TypeMapping idmObjectType="31">PPV</TypeMapping>
+        <TypeMapping idmObjectType="32">Card</TypeMapping>
+      </TypeMappings>
+      <Child3>
+        <Value>10</Value>
+      </Child3>
+    </Settings>
+  </Settings>
+  <PageSize>20</PageSize>
+</Connector>

@@ -5,13 +5,39 @@ using System.Text;
 namespace SqlECMA2MA
 {
     /// <summary>
-    /// Object types SQL konektoru. Oba se ctou z idm.vwIDM_Cards.
-    /// Treti object type prijde jako dalsi konstanta, blok ve schematu a vetev v importu.
+    /// Object types SQL konektoru.
+    /// Card se cte z idm.vwIDM_Cards.
+    /// Person je soucet UIC z karet a z idm.vwIDM_Contacts.
     /// </summary>
     public static class SqlConfig
     {
-        public const string DefaultDatabase = "CZU_IDM_TEST";
-        public const string DefaultView     = "idm.vwIDM_Cards";
+        public const string DefaultDatabase    = "CZU_IDM_TEST";
+        public const string DefaultView        = "idm.vwIDM_Cards";
+        public const string DefaultContactsView = "idm.vwIDM_Contacts";
+
+        /// <summary>
+        /// Sloupce kontaktu. Vice radku stejneho UIC se slozi do jedne hodnoty,
+        /// unikatni hodnoty oddelene strednikem.
+        /// </summary>
+        public static readonly string[] ContactAttributes =
+        {
+            "PK_ID",
+            "MV_HOME_PHONE",
+            "MV_MOBILE_PHONE",
+            "MV_HOME_EMAIL",
+            "MV_WORK_PHONE",
+            "MV_FAX",
+            "MV_OFFICE_GTF",
+            "MV_ICQ",
+            "MV_SKYPE",
+            "MV_PERSONAL_WEB",
+            "MV_FB",
+            "MV_TWITTER",
+            "MV_BUDOVA",
+            "MV_KANCELAR",
+            "MV_OFFICE",
+            "MV_VPN_PHONE"
+        };
 
         public const string DefaultSyncServer     = "(local)";
         public const string DefaultSyncDatabase   = "FIMSynchronizationService";

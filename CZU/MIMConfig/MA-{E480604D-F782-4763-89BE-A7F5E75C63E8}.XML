@@ -1,0 +1,871 @@
+<saved-ma-configuration server='WOSIS-EIDM-MIMS' export-date='2026-11-17 13:32:11.938'>
+<!--WARNING>
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!! The contents of this file should not be edited.
+!! Any such modifications to this file may result in errors during import.
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+</WARNING-->
+<ma-data>
+ <format-version>1</format-version>
+ <id>{E480604D-F782-4763-89BE-A7F5E75C63E8}</id>
+ <name>MAGION</name>
+ <category>Extensible2</category>
+ <subtype/>
+ <ma-listname/>
+ <ma-companyname/>
+ <creation-time>2026-06-08 20:11:34.030</creation-time>
+ <last-modification-time>2026-11-17 09:07:13.603</last-modification-time>
+ <version>107</version>
+ <internal-version>0</internal-version>
+ <password-sync-allowed>0</password-sync-allowed>
+ <schema>
+  <dsml:dsml xmlns:ms-dsml="http://www.microsoft.com/MMS/DSML" xmlns:dsml="http://www.dsml.org/DSML"><dsml:directory-schema ms-dsml:no-objectclass-validation="true"><dsml:class id="Person" type="structural"><dsml:name>Person</dsml:name><dsml:attribute ref="#UIC" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PK_ZAM" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#OS_CIS" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#JMENO" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PRIJMENI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#RODNE_PRIJMENI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#TITUL_PRED" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#TITUL_ZA" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#POHLAVI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#NAROZ_DATUM" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#OBCANSTVI_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PRISLUSNOST" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MOBIL" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#E_MAIL" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZAC" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KON" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#BYDL_TRV_ULICE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#BYDL_TRV_CP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#BYDL_TRV_OBEC_NAZEV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#BYDL_TRV_PSC" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#BYDL_TRV_2" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZAKL_PP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MANAGER" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PRIMARNI_PPV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#AKTIVNI_PPV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#AKTIVNI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYNETI_OD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYNETI_DO" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#NASTUP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYSTUP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="PPV" type="structural"><dsml:name>PPV</dsml:name><dsml:attribute ref="#OSPOM" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PK_PPV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#OS_CIS" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#CISLO_PP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#DRUH_PP_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#DRUH_PP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#FAKULTA" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STRED_KMEN_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STRED_KMEN" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STRED_KMEN_ZKRATKA" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VEDOUCI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#FUNKCE_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#FUNKCE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZARAZENI_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZARAZENI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE1_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE1" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE2_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE2" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PRACOVISTE_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PRACOVISTE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KZAM_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KZAM" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZAC" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KON" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#NASTUP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYSTUP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STAV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STAV_CELK" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#AKTIVNI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UIC" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#TELEFON" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#EMAIL" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYSE_UVAZKU" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYNETI_OD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYNETI_DO" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MISTO_HLAVNI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#POZICE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="BaseUnit" type="structural"><dsml:name>BaseUnit</dsml:name><dsml:attribute ref="#PK_UTVAR" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR_NAZEV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR_NAZEV_EN" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR_ZKRATKA" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR_ZKRATKA_EN" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR_NADRIZ_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UTVAR_VZNIK" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PLATNOST_OD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="PPVRelation" type="structural"><dsml:name>PPVRelation</dsml:name><dsml:attribute ref="#OSPOM" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PK_PPV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#OS_CIS" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#CISLO_PP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#DRUH_PP_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#DRUH_PP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#FAKULTA" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STRED_KMEN_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STRED_KMEN" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STRED_KMEN_ZKRATKA" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VEDOUCI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#FUNKCE_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#FUNKCE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZARAZENI_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZARAZENI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE1_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE1" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE2_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KATEGORIE2" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PRACOVISTE_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PRACOVISTE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KZAM_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KZAM" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#ZAC" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#KON" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#NASTUP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYSTUP" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STAV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#STAV_CELK" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#AKTIVNI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#UIC" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#TELEFON" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#EMAIL" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYSE_UVAZKU" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYNETI_OD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#VYNETI_DO" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#MISTO_HLAVNI" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#POZICE" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="Komise" type="structural"><dsml:name>Komise</dsml:name><dsml:attribute ref="#RK_ID" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#RK_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#RK_SOUCAST_KOD" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#RK_NAZEV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#member" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="PracMista" type="structural"><dsml:name>PracMista</dsml:name><dsml:attribute ref="#PMIS_CISLO" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PMIS_NADRIZ" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PMIS_TYP_VED" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#SOJ_CISLO" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PMIS_ALTERNATIV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PMIS_NAZEV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#PMIS_UNAZEV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#member" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="ApplicationRole" type="structural"><dsml:name>ApplicationRole</dsml:name><dsml:attribute ref="#AccountName" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#claFaculty" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#claStrediskoZkratkaPPV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#DistinguishedNamePart" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#isParentGroup" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#Vyjimka" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:class id="BusinessRole" type="structural"><dsml:name>BusinessRole</dsml:name><dsml:attribute ref="#AccountName" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#claFaculty" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#claStrediskoZkratkaPPV" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#DistinguishedNamePart" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#isParentGroup" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#Vyjimka" required="false" ms-dsml:isAnchor="false" /><dsml:attribute ref="#export_password" required="false" /></dsml:class><dsml:attribute-type id="UIC" single-value="true"><dsml:name>UIC</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PK_ZAM" single-value="true"><dsml:name>PK_ZAM</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OS_CIS" single-value="true"><dsml:name>OS_CIS</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="JMENO" single-value="true"><dsml:name>JMENO</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PRIJMENI" single-value="true"><dsml:name>PRIJMENI</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="RODNE_PRIJMENI" single-value="true"><dsml:name>RODNE_PRIJMENI</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="TITUL_PRED" single-value="true"><dsml:name>TITUL_PRED</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="TITUL_ZA" single-value="true"><dsml:name>TITUL_ZA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="POHLAVI" single-value="true"><dsml:name>POHLAVI</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="NAROZ_DATUM" single-value="true"><dsml:name>NAROZ_DATUM</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OBCANSTVI_KOD" single-value="true"><dsml:name>OBCANSTVI_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PRISLUSNOST" single-value="true"><dsml:name>PRISLUSNOST</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MOBIL" single-value="true"><dsml:name>MOBIL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="E_MAIL" single-value="true"><dsml:name>E_MAIL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ZAC" single-value="true"><dsml:name>ZAC</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KON" single-value="true"><dsml:name>KON</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BYDL_TRV_ULICE" single-value="true"><dsml:name>BYDL_TRV_ULICE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BYDL_TRV_CP" single-value="true"><dsml:name>BYDL_TRV_CP</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BYDL_TRV_OBEC_NAZEV" single-value="true"><dsml:name>BYDL_TRV_OBEC_NAZEV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BYDL_TRV_PSC" single-value="true"><dsml:name>BYDL_TRV_PSC</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="BYDL_TRV_2" single-value="true"><dsml:name>BYDL_TRV_2</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ZAKL_PP" single-value="true"><dsml:name>ZAKL_PP</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MANAGER" single-value="true"><dsml:name>MANAGER</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PRIMARNI_PPV" single-value="true"><dsml:name>PRIMARNI_PPV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AKTIVNI_PPV" single-value="false"><dsml:name>AKTIVNI_PPV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AKTIVNI" single-value="true"><dsml:name>AKTIVNI</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UTVAR" single-value="true"><dsml:name>UTVAR</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="VYNETI_OD" single-value="true"><dsml:name>VYNETI_OD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="VYNETI_DO" single-value="true"><dsml:name>VYNETI_DO</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="NASTUP" single-value="true"><dsml:name>NASTUP</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="VYSTUP" single-value="true"><dsml:name>VYSTUP</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="OSPOM" single-value="true"><dsml:name>OSPOM</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PK_PPV" single-value="true"><dsml:name>PK_PPV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="CISLO_PP" single-value="true"><dsml:name>CISLO_PP</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DRUH_PP_KOD" single-value="true"><dsml:name>DRUH_PP_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DRUH_PP" single-value="true"><dsml:name>DRUH_PP</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FAKULTA" single-value="true"><dsml:name>FAKULTA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="STRED_KMEN_KOD" single-value="true"><dsml:name>STRED_KMEN_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="STRED_KMEN" single-value="true"><dsml:name>STRED_KMEN</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="STRED_KMEN_ZKRATKA" single-value="true"><dsml:name>STRED_KMEN_ZKRATKA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="VEDOUCI" single-value="true"><dsml:name>VEDOUCI</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FUNKCE_KOD" single-value="true"><dsml:name>FUNKCE_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="FUNKCE" single-value="true"><dsml:name>FUNKCE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ZARAZENI_KOD" single-value="true"><dsml:name>ZARAZENI_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="ZARAZENI" single-value="true"><dsml:name>ZARAZENI</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KATEGORIE1_KOD" single-value="true"><dsml:name>KATEGORIE1_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KATEGORIE1" single-value="true"><dsml:name>KATEGORIE1</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KATEGORIE2_KOD" single-value="true"><dsml:name>KATEGORIE2_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KATEGORIE2" single-value="true"><dsml:name>KATEGORIE2</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PRACOVISTE_KOD" single-value="true"><dsml:name>PRACOVISTE_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PRACOVISTE" single-value="true"><dsml:name>PRACOVISTE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KZAM_KOD" single-value="true"><dsml:name>KZAM_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="KZAM" single-value="true"><dsml:name>KZAM</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="STAV" single-value="true"><dsml:name>STAV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="STAV_CELK" single-value="true"><dsml:name>STAV_CELK</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="TELEFON" single-value="true"><dsml:name>TELEFON</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="EMAIL" single-value="true"><dsml:name>EMAIL</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="VYSE_UVAZKU" single-value="true"><dsml:name>VYSE_UVAZKU</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="MISTO_HLAVNI" single-value="true"><dsml:name>MISTO_HLAVNI</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="POZICE" single-value="true"><dsml:name>POZICE</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PK_UTVAR" single-value="true"><dsml:name>PK_UTVAR</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UTVAR_NAZEV" single-value="true"><dsml:name>UTVAR_NAZEV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UTVAR_NAZEV_EN" single-value="true"><dsml:name>UTVAR_NAZEV_EN</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UTVAR_ZKRATKA" single-value="true"><dsml:name>UTVAR_ZKRATKA</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UTVAR_ZKRATKA_EN" single-value="true"><dsml:name>UTVAR_ZKRATKA_EN</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UTVAR_NADRIZ_KOD" single-value="true"><dsml:name>UTVAR_NADRIZ_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="UTVAR_VZNIK" single-value="true"><dsml:name>UTVAR_VZNIK</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PLATNOST_OD" single-value="true"><dsml:name>PLATNOST_OD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="RK_ID" single-value="true"><dsml:name>RK_ID</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.27</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="RK_KOD" single-value="true"><dsml:name>RK_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="RK_SOUCAST_KOD" single-value="true"><dsml:name>RK_SOUCAST_KOD</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="RK_NAZEV" single-value="true"><dsml:name>RK_NAZEV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="member" single-value="false"><dsml:name>member</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.12</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PMIS_CISLO" single-value="true"><dsml:name>PMIS_CISLO</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PMIS_NADRIZ" single-value="true"><dsml:name>PMIS_NADRIZ</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PMIS_TYP_VED" single-value="true"><dsml:name>PMIS_TYP_VED</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="SOJ_CISLO" single-value="true"><dsml:name>SOJ_CISLO</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PMIS_ALTERNATIV" single-value="true"><dsml:name>PMIS_ALTERNATIV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PMIS_NAZEV" single-value="true"><dsml:name>PMIS_NAZEV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="PMIS_UNAZEV" single-value="true"><dsml:name>PMIS_UNAZEV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="AccountName" single-value="true"><dsml:name>AccountName</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="claFaculty" single-value="true"><dsml:name>claFaculty</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="claStrediskoZkratkaPPV" single-value="true"><dsml:name>claStrediskoZkratkaPPV</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="DistinguishedNamePart" single-value="true"><dsml:name>DistinguishedNamePart</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="isParentGroup" single-value="true"><dsml:name>isParentGroup</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="Vyjimka" single-value="true"><dsml:name>Vyjimka</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type><dsml:attribute-type id="export_password" single-value="true" ms-dsml:encrypted="true" ms-dsml:export-only="true"><dsml:name>export_password</dsml:name><dsml:syntax>1.3.6.1.4.1.1466.115.121.1.15</dsml:syntax></dsml:attribute-type></dsml:directory-schema></dsml:dsml>
+ </schema>
+ <attribute-inclusion><attribute>AccountName</attribute><attribute>AKTIVNI</attribute><attribute>AKTIVNI_PPV</attribute><attribute>BYDL_TRV_2</attribute><attribute>BYDL_TRV_CP</attribute><attribute>BYDL_TRV_OBEC_NAZEV</attribute><attribute>BYDL_TRV_PSC</attribute><attribute>BYDL_TRV_ULICE</attribute><attribute>CISLO_PP</attribute><attribute>claFaculty</attribute><attribute>claStrediskoZkratkaPPV</attribute><attribute>DistinguishedNamePart</attribute><attribute>DRUH_PP</attribute><attribute>DRUH_PP_KOD</attribute><attribute>E_MAIL</attribute><attribute>EMAIL</attribute><attribute>FAKULTA</attribute><attribute>FUNKCE</attribute><attribute>FUNKCE_KOD</attribute><attribute>isParentGroup</attribute><attribute>JMENO</attribute><attribute>KATEGORIE1</attribute><attribute>KATEGORIE1_KOD</attribute><attribute>KATEGORIE2</attribute><attribute>KATEGORIE2_KOD</attribute><attribute>KON</attribute><attribute>KZAM</attribute><attribute>KZAM_KOD</attribute><attribute>MANAGER</attribute><attribute>member</attribute><attribute>MISTO_HLAVNI</attribute><attribute>MOBIL</attribute><attribute>NAROZ_DATUM</attribute><attribute>NASTUP</attribute><attribute>OBCANSTVI_KOD</attribute><attribute>OS_CIS</attribute><attribute>OSPOM</attribute><attribute>PK_PPV</attribute><attribute>PK_UTVAR</attribute><attribute>PK_ZAM</attribute><attribute>PLATNOST_OD</attribute><attribute>PMIS_ALTERNATIV</attribute><attribute>PMIS_CISLO</attribute><attribute>PMIS_NADRIZ</attribute><attribute>PMIS_NAZEV</attribute><attribute>PMIS_TYP_VED</attribute><attribute>PMIS_UNAZEV</attribute><attribute>POHLAVI</attribute><attribute>POZICE</attribute><attribute>PRACOVISTE</attribute><attribute>PRACOVISTE_KOD</attribute><attribute>PRIJMENI</attribute><attribute>PRIMARNI_PPV</attribute><attribute>PRISLUSNOST</attribute><attribute>RK_ID</attribute><attribute>RK_KOD</attribute><attribute>RK_NAZEV</attribute><attribute>RK_SOUCAST_KOD</attribute><attribute>RODNE_PRIJMENI</attribute><attribute>SOJ_CISLO</attribute><attribute>STAV</attribute><attribute>STAV_CELK</attribute><attribute>STRED_KMEN</attribute><attribute>STRED_KMEN_KOD</attribute><attribute>STRED_KMEN_ZKRATKA</attribute><attribute>TELEFON</attribute><attribute>TITUL_PRED</attribute><attribute>TITUL_ZA</attribute><attribute>UIC</attribute><attribute>UTVAR</attribute><attribute>UTVAR_NADRIZ_KOD</attribute><attribute>UTVAR_NAZEV</attribute><attribute>UTVAR_NAZEV_EN</attribute><attribute>UTVAR_VZNIK</attribute><attribute>UTVAR_ZKRATKA</attribute><attribute>UTVAR_ZKRATKA_EN</attribute><attribute>VEDOUCI</attribute><attribute>Vyjimka</attribute><attribute>VYNETI_DO</attribute><attribute>VYNETI_OD</attribute><attribute>VYSE_UVAZKU</attribute><attribute>VYSTUP</attribute><attribute>ZAC</attribute><attribute>ZAKL_PP</attribute><attribute>ZARAZENI</attribute><attribute>ZARAZENI_KOD</attribute><attribute>export_password</attribute></attribute-inclusion>
+ <stay-disconnector />
+ <join><join-profile cd-object-type="BaseUnit"><join-criterion id="{974E8D73-162E-487A-BE0A-44282A941BBC}"><search mv-object-type="baseUnit"><attribute-mapping mv-attribute="claBaseUnitCode"><direct-mapping><src-attribute>PK_UTVAR</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile><join-profile cd-object-type="Person"><join-criterion id="{0F2DAFA9-CDFC-4F1B-BA5D-FBAF3558F789}"><search mv-object-type="person"><attribute-mapping mv-attribute="PK_ZAM"><direct-mapping><src-attribute>PK_ZAM</src-attribute></direct-mapping></attribute-mapping></search><resolution type="none"><script-context></script-context></resolution></join-criterion></join-profile></join>
+ <projection><class-mapping type="declared" id="{6F03770D-5A2A-4DF5-AC19-AF06CCC92D18}" cd-object-type="ApplicationRole"><mv-object-type>ARMagion</mv-object-type></class-mapping><class-mapping type="declared" id="{E7862DCD-9006-4AC3-A668-5466289248A3}" cd-object-type="BaseUnit"><mv-object-type>baseUnit</mv-object-type></class-mapping><class-mapping type="declared" id="{5F36D18B-C224-45C5-95CD-0E11AA6BCCED}" cd-object-type="BusinessRole"><mv-object-type>BRMagion</mv-object-type></class-mapping><class-mapping type="declared" id="{C11A4FE1-0B59-4205-8391-3F60E6789D93}" cd-object-type="Person"><mv-object-type>person</mv-object-type></class-mapping><class-mapping type="declared" id="{D1F58848-2B2B-4DD2-AD0D-EBDD0A9FB276}" cd-object-type="PPV"><mv-object-type>PPV</mv-object-type></class-mapping></projection>
+ <export-attribute-flow />
+ <provisioning-cleanup type="declared"><action>make-normal-disconnector</action></provisioning-cleanup>
+ <extension><assembly-name>CZUExtension.dll</assembly-name><application-protection>low</application-protection></extension>
+ <controller-configuration>
+ <application-protection>high</application-protection>
+ <application-architecture>process</application-architecture>
+</controller-configuration>
+
+ <description></description>
+ <ma-ui-settings><account-joiner-queries><attributes><cs><attribute name="AKTIVNI" header="AKTIVNI" size="100" /><attribute name="BYDL_TRV_2" header="BYDL_TRV_2" size="100" /><attribute name="BYDL_TRV_CP" header="BYDL_TRV_CP" size="100" /></cs><mv></mv></attributes><filters max_mv_search_results=""></filters></account-joiner-queries></ma-ui-settings>
+ <private-configuration>
+  <MAConfig><ui-data><xmlwizard><properties><sample_file></sample_file><code_page_description></code_page_description></properties><partitions><partition cd_name="CN=Person" guid="{C4A899D3-7162-3C5E-0334-B0466CDCBFF0}" version="0"><object_class>BaseUnit</object_class><object_class>Komise</object_class><object_class>Person</object_class><object_class>PPV</object_class><object_class>PracMista</object_class></partition><partition cd_name="CN=PPV" guid="{3EC834FD-13E2-4EA7-6986-3455DDC4F6D6}" version="0"><object_class>BaseUnit</object_class><object_class>Komise</object_class><object_class>Person</object_class><object_class>PPV</object_class><object_class>PracMista</object_class></partition><partition cd_name="CN=BaseUnit" guid="{6C827963-7DA3-8B3E-7930-BD3A7FD74C41}" version="0"><object_class>BaseUnit</object_class><object_class>Komise</object_class><object_class>Person</object_class><object_class>PPV</object_class><object_class>PracMista</object_class></partition><partition cd_name="CN=PPVRelation" guid="{40BC4C68-DC55-E1D9-0857-E12A7EB36BB8}" version="0"><object_class>BaseUnit</object_class><object_class>Komise</object_class><object_class>Person</object_class><object_class>PPV</object_class><object_class>PracMista</object_class></partition><partition cd_name="CN=Komise" guid="{31F42D35-CDD7-4364-4570-C38FBAC0A261}" version="0"><object_class>BaseUnit</object_class><object_class>Komise</object_class><object_class>Person</object_class><object_class>PPV</object_class><object_class>PracMista</object_class></partition><partition cd_name="CN=PracMista" guid="{F2577C53-1CF3-C55A-E4E1-61CC8F220424}" version="0"><object_class>BaseUnit</object_class><object_class>Komise</object_class><object_class>Person</object_class><object_class>PPV</object_class><object_class>PracMista</object_class></partition></partitions><primary_class_mappings><mapping object_class="BaseUnit" primary_class="BaseUnit" user_define="0"><attribute>PK_UTVAR</attribute><attribute>UTVAR_NAZEV</attribute><attribute>UTVAR_NAZEV_EN</attribute><attribute>UTVAR_ZKRATKA</attribute><attribute>UTVAR_ZKRATKA_EN</attribute><attribute>UTVAR_NADRIZ_KOD</attribute><attribute>UTVAR_VZNIK</attribute><attribute>PLATNOST_OD</attribute><attribute>export_password</attribute></mapping><mapping object_class="Komise" primary_class="Komise" user_define="0"><attribute>RK_ID</attribute><attribute>RK_KOD</attribute><attribute>RK_SOUCAST_KOD</attribute><attribute>RK_NAZEV</attribute><attribute>member</attribute><attribute>export_password</attribute></mapping><mapping object_class="Person" primary_class="Person" user_define="0"><attribute>UIC</attribute><attribute>PK_ZAM</attribute><attribute>OS_CIS</attribute><attribute>JMENO</attribute><attribute>PRIJMENI</attribute><attribute>RODNE_PRIJMENI</attribute><attribute>TITUL_PRED</attribute><attribute>TITUL_ZA</attribute><attribute>POHLAVI</attribute><attribute>NAROZ_DATUM</attribute><attribute>OBCANSTVI_KOD</attribute><attribute>PRISLUSNOST</attribute><attribute>MOBIL</attribute><attribute>E_MAIL</attribute><attribute>ZAC</attribute><attribute>KON</attribute><attribute>BYDL_TRV_ULICE</attribute><attribute>BYDL_TRV_CP</attribute><attribute>BYDL_TRV_OBEC_NAZEV</attribute><attribute>BYDL_TRV_PSC</attribute><attribute>BYDL_TRV_2</attribute><attribute>ZAKL_PP</attribute><attribute>MANAGER</attribute><attribute>PRIMARNI_PPV</attribute><attribute>AKTIVNI_PPV</attribute><attribute>AKTIVNI</attribute><attribute>UTVAR</attribute><attribute>VYNETI_OD</attribute><attribute>VYNETI_DO</attribute><attribute>NASTUP</attribute><attribute>VYSTUP</attribute><attribute>export_password</attribute></mapping><mapping object_class="PPV" primary_class="PPV" user_define="0"><attribute>OSPOM</attribute><attribute>PK_PPV</attribute><attribute>OS_CIS</attribute><attribute>CISLO_PP</attribute><attribute>DRUH_PP_KOD</attribute><attribute>DRUH_PP</attribute><attribute>FAKULTA</attribute><attribute>STRED_KMEN_KOD</attribute><attribute>STRED_KMEN</attribute><attribute>STRED_KMEN_ZKRATKA</attribute><attribute>VEDOUCI</attribute><attribute>FUNKCE_KOD</attribute><attribute>FUNKCE</attribute><attribute>ZARAZENI_KOD</attribute><attribute>ZARAZENI</attribute><attribute>KATEGORIE1_KOD</attribute><attribute>KATEGORIE1</attribute><attribute>KATEGORIE2_KOD</attribute><attribute>KATEGORIE2</attribute><attribute>PRACOVISTE_KOD</attribute><attribute>PRACOVISTE</attribute><attribute>KZAM_KOD</attribute><attribute>KZAM</attribute><attribute>ZAC</attribute><attribute>KON</attribute><attribute>NASTUP</attribute><attribute>VYSTUP</attribute><attribute>STAV</attribute><attribute>STAV_CELK</attribute><attribute>AKTIVNI</attribute><attribute>UIC</attribute><attribute>TELEFON</attribute><attribute>EMAIL</attribute><attribute>VYSE_UVAZKU</attribute><attribute>VYNETI_OD</attribute><attribute>VYNETI_DO</attribute><attribute>MISTO_HLAVNI</attribute><attribute>POZICE</attribute><attribute>UTVAR</attribute><attribute>export_password</attribute></mapping><mapping object_class="PracMista" primary_class="PracMista" user_define="0"><attribute>PMIS_CISLO</attribute><attribute>PMIS_NADRIZ</attribute><attribute>PMIS_TYP_VED</attribute><attribute>SOJ_CISLO</attribute><attribute>PMIS_ALTERNATIV</attribute><attribute>PMIS_NAZEV</attribute><attribute>PMIS_UNAZEV</attribute><attribute>member</attribute><attribute>export_password</attribute></mapping></primary_class_mappings><object_classes><object_class cd_name="BaseUnit" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">PK_UTVAR</attribute><attribute mandatory="0">UTVAR_NAZEV</attribute><attribute mandatory="0">UTVAR_NAZEV_EN</attribute><attribute mandatory="0">UTVAR_ZKRATKA</attribute><attribute mandatory="0">UTVAR_ZKRATKA_EN</attribute><attribute mandatory="0">UTVAR_NADRIZ_KOD</attribute><attribute mandatory="0">UTVAR_VZNIK</attribute><attribute mandatory="0">PLATNOST_OD</attribute></object_class><object_class cd_name="Komise" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">PK_ID</attribute><attribute mandatory="0">OS_CIS</attribute><attribute mandatory="0">OSOBA</attribute><attribute mandatory="0">JMENO</attribute><attribute mandatory="0">UIC</attribute><attribute mandatory="0">RK_ID</attribute><attribute mandatory="0">RK_KOD</attribute><attribute mandatory="0">RK_SOUCAST_KOD</attribute><attribute mandatory="0">RK_NAZEV</attribute><attribute mandatory="0">SOJ_CISLO</attribute><attribute mandatory="0">CLEN_OD</attribute><attribute mandatory="0">CLEN_DO</attribute><attribute mandatory="0">FUNKCE_KOD</attribute><attribute mandatory="0">FUNKCE_NAZEV</attribute><attribute mandatory="0">FUNKCE_ZNAZEV</attribute><attribute mandatory="0">FUNKCE_MNNAZEV</attribute></object_class><object_class cd_name="Person" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">UIC</attribute><attribute mandatory="0">PK_ZAM</attribute><attribute mandatory="0">OS_CIS</attribute><attribute mandatory="0">JMENO</attribute><attribute mandatory="0">PRIJMENI</attribute><attribute mandatory="0">RODNE_PRIJMENI</attribute><attribute mandatory="0">TITUL_PRED</attribute><attribute mandatory="0">TITUL_ZA</attribute><attribute mandatory="0">POHLAVI</attribute><attribute mandatory="0">NAROZ_DATUM</attribute><attribute mandatory="0">OBCANSTVI_KOD</attribute><attribute mandatory="0">PRISLUSNOST</attribute><attribute mandatory="0">MOBIL</attribute><attribute mandatory="0">E_MAIL</attribute><attribute mandatory="0">ZAC</attribute><attribute mandatory="0">KON</attribute><attribute mandatory="0">BYDL_TRV_ULICE</attribute><attribute mandatory="0">BYDL_TRV_CP</attribute><attribute mandatory="0">BYDL_TRV_OBEC_NAZEV</attribute><attribute mandatory="0">BYDL_TRV_PSC</attribute><attribute mandatory="0">BYDL_TRV_2</attribute><attribute mandatory="0">ZAKL_PP</attribute></object_class><object_class cd_name="PPV" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">OSPOM</attribute><attribute mandatory="0">PK_PPV</attribute><attribute mandatory="0">OS_CIS</attribute><attribute mandatory="0">CISLO_PP</attribute><attribute mandatory="0">DRUH_PP_KOD</attribute><attribute mandatory="0">DRUH_PP</attribute><attribute mandatory="0">FAKULTA</attribute><attribute mandatory="0">STRED_KMEN_KOD</attribute><attribute mandatory="0">STRED_KMEN</attribute><attribute mandatory="0">STRED_KMEN_ZKRATKA</attribute><attribute mandatory="0">VEDOUCI</attribute><attribute mandatory="0">FUNKCE_KOD</attribute><attribute mandatory="0">FUNKCE</attribute><attribute mandatory="0">ZARAZENI_KOD</attribute><attribute mandatory="0">ZARAZENI</attribute><attribute mandatory="0">KATEGORIE1_KOD</attribute><attribute mandatory="0">KATEGORIE1</attribute><attribute mandatory="0">KATEGORIE2_KOD</attribute><attribute mandatory="0">KATEGORIE2</attribute><attribute mandatory="0">PRACOVISTE_KOD</attribute><attribute mandatory="0">PRACOVISTE</attribute><attribute mandatory="0">KZAM_KOD</attribute><attribute mandatory="0">KZAM</attribute><attribute mandatory="0">ZAC</attribute><attribute mandatory="0">KON</attribute><attribute mandatory="0">NASTUP</attribute><attribute mandatory="0">VYSTUP</attribute><attribute mandatory="0">STAV</attribute><attribute mandatory="0">STAV_CELK</attribute><attribute mandatory="0">AKTIVNI</attribute><attribute mandatory="0">UIC</attribute><attribute mandatory="0">TELEFON</attribute><attribute mandatory="0">EMAIL</attribute><attribute mandatory="0">VYSE_UVAZKU</attribute><attribute mandatory="0">VYNETI_OD</attribute><attribute mandatory="0">VYNETI_DO</attribute><attribute mandatory="0">MISTO_HLAVNI</attribute><attribute mandatory="0">POZICE</attribute></object_class><object_class cd_name="PPVRelation" selected="0" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">OSPOM</attribute><attribute mandatory="0">PK_PPV</attribute><attribute mandatory="0">OS_CIS</attribute><attribute mandatory="0">CISLO_PP</attribute><attribute mandatory="0">DRUH_PP_KOD</attribute><attribute mandatory="0">DRUH_PP</attribute><attribute mandatory="0">FAKULTA</attribute><attribute mandatory="0">STRED_KMEN_KOD</attribute><attribute mandatory="0">STRED_KMEN</attribute><attribute mandatory="0">STRED_KMEN_ZKRATKA</attribute><attribute mandatory="0">VEDOUCI</attribute><attribute mandatory="0">FUNKCE_KOD</attribute><attribute mandatory="0">FUNKCE</attribute><attribute mandatory="0">ZARAZENI_KOD</attribute><attribute mandatory="0">ZARAZENI</attribute><attribute mandatory="0">KATEGORIE1_KOD</attribute><attribute mandatory="0">KATEGORIE1</attribute><attribute mandatory="0">KATEGORIE2_KOD</attribute><attribute mandatory="0">KATEGORIE2</attribute><attribute mandatory="0">PRACOVISTE_KOD</attribute><attribute mandatory="0">PRACOVISTE</attribute><attribute mandatory="0">KZAM_KOD</attribute><attribute mandatory="0">KZAM</attribute><attribute mandatory="0">ZAC</attribute><attribute mandatory="0">KON</attribute><attribute mandatory="0">NASTUP</attribute><attribute mandatory="0">VYSTUP</attribute><attribute mandatory="0">STAV</attribute><attribute mandatory="0">STAV_CELK</attribute><attribute mandatory="0">AKTIVNI</attribute><attribute mandatory="0">UIC</attribute><attribute mandatory="0">TELEFON</attribute><attribute mandatory="0">EMAIL</attribute><attribute mandatory="0">VYSE_UVAZKU</attribute><attribute mandatory="0">VYNETI_OD</attribute><attribute mandatory="0">VYNETI_DO</attribute><attribute mandatory="0">MISTO_HLAVNI</attribute><attribute mandatory="0">POZICE</attribute></object_class><object_class cd_name="PracMista" selected="-1" user_define="0" configured="-1" anchor="" dn_as_anchor="-1"><attribute mandatory="0">PK_ID</attribute><attribute mandatory="0">OS_CIS</attribute><attribute mandatory="0">CISLO_PP</attribute><attribute mandatory="0">UIC</attribute><attribute mandatory="0">PMIS_CISLO</attribute><attribute mandatory="0">PMIS_ZODP</attribute><attribute mandatory="0">PLATNOST_OD</attribute><attribute mandatory="0">PLATNOST_DO</attribute><attribute mandatory="0">ZVEREJNIT</attribute><attribute mandatory="0">PMIS_NADRIZ</attribute><attribute mandatory="0">PMIS_TYP_VED</attribute><attribute mandatory="0">PMIS_VZNIK</attribute><attribute mandatory="0">PMIS_ZANIK</attribute><attribute mandatory="0">SOJ_CISLO</attribute><attribute mandatory="0">PMIS_ALTERNATIV</attribute><attribute mandatory="0">PMIS_NAZEV</attribute><attribute mandatory="0">PMIS_UNAZEV</attribute><attribute mandatory="0">PMIS_UNAZEVZ</attribute></object_class></object_classes><attributes><attribute cd_name="AKTIVNI" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="AKTIVNI_PPV" sample_data="" binary="0" multi_valued="-1" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="DN" user_define="0" /><attribute cd_name="BYDL_TRV_2" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="BYDL_TRV_CP" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="BYDL_TRV_OBEC_NAZEV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="BYDL_TRV_PSC" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="BYDL_TRV_ULICE" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="CISLO_PP" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="DRUH_PP" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="DRUH_PP_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="E_MAIL" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="EMAIL" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="FAKULTA" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="FUNKCE" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="FUNKCE_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="JMENO" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KATEGORIE1" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KATEGORIE1_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KATEGORIE2" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KATEGORIE2_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KON" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KZAM" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="KZAM_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="MANAGER" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="DN" user_define="0" /><attribute cd_name="member" sample_data="" binary="0" multi_valued="-1" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="DN" user_define="0" /><attribute cd_name="MISTO_HLAVNI" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="MOBIL" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="NAROZ_DATUM" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="NASTUP" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="OBCANSTVI_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="OS_CIS" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="OSPOM" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PK_PPV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PK_UTVAR" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PK_ZAM" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="PLATNOST_OD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PMIS_ALTERNATIV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PMIS_CISLO" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PMIS_NADRIZ" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PMIS_NAZEV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PMIS_TYP_VED" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PMIS_UNAZEV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="POHLAVI" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="POZICE" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PRACOVISTE" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PRACOVISTE_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="PRIJMENI" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="PRIMARNI_PPV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="DN" user_define="0" /><attribute cd_name="PRISLUSNOST" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="RK_ID" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="RK_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="RK_NAZEV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="RK_SOUCAST_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="RODNE_PRIJMENI" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="SOJ_CISLO" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="STAV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="STAV_CELK" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="STRED_KMEN" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="STRED_KMEN_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="STRED_KMEN_ZKRATKA" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="TELEFON" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="TITUL_PRED" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="TITUL_ZA" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="UIC" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="UTVAR" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="DN" user_define="0" /><attribute cd_name="UTVAR_NADRIZ_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="UTVAR_NAZEV" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="UTVAR_NAZEV_EN" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="UTVAR_VZNIK" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="UTVAR_ZKRATKA" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="UTVAR_ZKRATKA_EN" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="VEDOUCI" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="VYNETI_DO" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="VYNETI_OD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="VYSE_UVAZKU" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="VYSTUP" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="ZAC" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="ZAKL_PP" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="ZARAZENI" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /><attribute cd_name="ZARAZENI_KOD" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="Number" user_define="0" /><attribute cd_name="export_password" sample_data="" binary="0" multi_valued="0" file_reference="0" selected="-1" lower_bound="" upper_bound="" type="String" user_define="0" /></attributes><anchor><dn /></anchor></xmlwizard></ui-data><importing><dn><dn /></dn><anchor><dn /></anchor><per-class-settings><class><name>BaseUnit</name><anchor><dn /></anchor></class><class><name>Komise</name><anchor><dn /></anchor></class><class><name>Person</name><anchor><dn /></anchor></class><class><name>PPV</name><anchor><dn /></anchor></class><class><name>PracMista</name><anchor><dn /></anchor></class></per-class-settings></importing><exporting></exporting><ldap-dn>0</ldap-dn><change_type_attribute></change_type_attribute><add_change_type_value>Add</add_change_type_value><modify_change_type_value>Modify</modify_change_type_value><delete_change_type_value>Delete</delete_change_type_value><primary_class_mappings><mapping><primary_class>BaseUnit</primary_class><oc-value>BaseUnit</oc-value></mapping><mapping><primary_class>Komise</primary_class><oc-value>Komise</oc-value></mapping><mapping><primary_class>Person</primary_class><oc-value>Person</oc-value></mapping><mapping><primary_class>PPV</primary_class><oc-value>PPV</oc-value></mapping><mapping><primary_class>PracMista</primary_class><oc-value>PracMista</oc-value></mapping></primary_class_mappings><enable-unapplied-merge>0</enable-unapplied-merge><password-extension-config><password-extension-enabled>0</password-extension-enabled><dll></dll><password-set-enabled></password-set-enabled><password-change-enabled></password-change-enabled><connection-info><connect-to></connect-to><user></user></connection-info><timeout></timeout></password-extension-config><file-type>Extensible2</file-type><extension-config><filename>OracleECMA2MA.dll</filename><import-default-page-size>500</import-default-page-size><import-max-page-size>1000</import-max-page-size><export-default-page-size>1</export-default-page-size><export-max-page-size>1</export-max-page-size><export-mode></export-mode><import-mode>call-based</import-mode><export-enabled>0</export-enabled><import-enabled>1</import-enabled><discovery-partition>extensibility</discovery-partition><discovery-schema>extensibility</discovery-schema><discovery-hierarchy></discovery-hierarchy><password-management-enabled></password-management-enabled><assembly-version>1.0.0.0</assembly-version><supports-parameters-ex>0</supports-parameters-ex><export-type>3</export-type><capability-bits>3221690992</capability-bits></extension-config><parameter-definitions refreshSchema="0" refreshPartition="0" refreshConnectivityParameters="0" refreshSchemaParameters="0" refreshCapabilitiesParameters="0" refreshGlobalParameters="0" refreshOtherParameters="0"><parameter><name>DataSource</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value>(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=magi.oradb-t.czu.cz)(Port=1523)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=MACV.oradb.czu.cz)))</default-value></parameter><parameter><name>Username</name><use>connectivity</use><type>string</type><validation></validation><text></text><default-value>IDM</default-value></parameter><parameter><name>Password</name><use>connectivity</use><type>encrypted-string</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name>DeltaTable</name><use>global</use><type>string</type><validation></validation><text></text><default-value>MAGION_CZU.IDM_CHANGES</default-value></parameter><parameter><name></name><use>global</use><type>divider</type><validation></validation><text></text><default-value></default-value></parameter><parameter><name></name><use>global</use><type>label</type><validation></validation><text>ValidityMonths: uzivatele podle VYSTUP primarniho PPV, PPV podle vlastniho VYSTUP. Bez VYSTUP, nebo s VYSTUP nejdrive dnes minus tato hodnota.</text><default-value></default-value></parameter><parameter><name>ValidityMonths</name><use>global</use><type>string</type><validation>^[0-9]{1,4}$</validation><text></text><default-value>18</default-value></parameter></parameter-definitions><parameter-values><parameter name="Password" type="encrypted-string" use="connectivity" encrypted="1"></parameter><parameter name="DataSource" type="string" use="connectivity">(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(COMMUNITY=tcp.world)(PROTOCOL=TCP)(Host=magi.oradb-t.czu.cz)(Port=1523)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=MACV.oradb.czu.cz)))</parameter><parameter name="Username" type="string" use="connectivity">sql_alloy</parameter><parameter name="DeltaTable" type="string" use="global">MAGION_CZU.IDM_CHANGES</parameter><parameter name="ValidityMonths" type="string" use="global">18</parameter></parameter-values><default_visible_attributes><attribute>UIC</attribute><attribute>PK_ZAM</attribute><attribute>OS_CIS</attribute><attribute>JMENO</attribute><attribute>PRIJMENI</attribute><attribute>RODNE_PRIJMENI</attribute><attribute>TITUL_PRED</attribute><attribute>TITUL_ZA</attribute><attribute>POHLAVI</attribute><attribute>NAROZ_DATUM</attribute><attribute>OBCANSTVI_KOD</attribute><attribute>PRISLUSNOST</attribute><attribute>MOBIL</attribute><attribute>E_MAIL</attribute><attribute>ZAC</attribute><attribute>KON</attribute><attribute>BYDL_TRV_ULICE</attribute><attribute>BYDL_TRV_CP</attribute><attribute>BYDL_TRV_OBEC_NAZEV</attribute><attribute>BYDL_TRV_PSC</attribute><attribute>BYDL_TRV_2</attribute><attribute>ZAKL_PP</attribute><attribute>MANAGER</attribute><attribute>PRIMARNI_PPV</attribute><attribute>AKTIVNI_PPV</attribute><attribute>AKTIVNI</attribute><attribute>UTVAR</attribute><attribute>VYNETI_OD</attribute><attribute>VYNETI_DO</attribute><attribute>NASTUP</attribute><attribute>VYSTUP</attribute><attribute>OSPOM</attribute><attribute>PK_PPV</attribute><attribute>CISLO_PP</attribute><attribute>DRUH_PP_KOD</attribute><attribute>DRUH_PP</attribute><attribute>FAKULTA</attribute><attribute>STRED_KMEN_KOD</attribute><attribute>STRED_KMEN</attribute><attribute>STRED_KMEN_ZKRATKA</attribute><attribute>VEDOUCI</attribute><attribute>FUNKCE_KOD</attribute><attribute>FUNKCE</attribute><attribute>ZARAZENI_KOD</attribute><attribute>ZARAZENI</attribute><attribute>KATEGORIE1_KOD</attribute><attribute>KATEGORIE1</attribute><attribute>KATEGORIE2_KOD</attribute><attribute>KATEGORIE2</attribute><attribute>PRACOVISTE_KOD</attribute><attribute>PRACOVISTE</attribute><attribute>KZAM_KOD</attribute><attribute>KZAM</attribute><attribute>STAV</attribute><attribute>STAV_CELK</attribute><attribute>TELEFON</attribute><attribute>EMAIL</attribute><attribute>VYSE_UVAZKU</attribute><attribute>MISTO_HLAVNI</attribute><attribute>POZICE</attribute><attribute>PK_UTVAR</attribute><attribute>UTVAR_NAZEV</attribute><attribute>UTVAR_NAZEV_EN</attribute><attribute>UTVAR_ZKRATKA</attribute><attribute>UTVAR_ZKRATKA_EN</attribute><attribute>UTVAR_NADRIZ_KOD</attribute><attribute>UTVAR_VZNIK</attribute><attribute>PLATNOST_OD</attribute><attribute>RK_ID</attribute><attribute>RK_KOD</attribute><attribute>RK_SOUCAST_KOD</attribute><attribute>RK_NAZEV</attribute><attribute>member</attribute><attribute>PMIS_CISLO</attribute><attribute>PMIS_NADRIZ</attribute><attribute>PMIS_TYP_VED</attribute><attribute>SOJ_CISLO</attribute><attribute>PMIS_ALTERNATIV</attribute><attribute>PMIS_NAZEV</attribute><attribute>PMIS_UNAZEV</attribute><attribute>AccountName</attribute><attribute>claFaculty</attribute><attribute>claStrediskoZkratkaPPV</attribute><attribute>DistinguishedNamePart</attribute><attribute>isParentGroup</attribute><attribute>Vyjimka</attribute></default_visible_attributes></MAConfig>
+ </private-configuration>
+ <SyncConfig-refresh-schema>0</SyncConfig-refresh-schema>
+ <ma-partition-data>
+ <partition>
+  <id>{F2577C53-1CF3-C55A-E4E1-61CC8F220424}</id>
+  <name>CN=PracMista</name>
+  <creation-time>2026-06-08 20:11:34.030</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.537</last-modification-time>
+  <version>178</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=PracMista</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=PracMista</dn><name>PracMista</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>0</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>PracMista</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{31F42D35-CDD7-4364-4570-C38FBAC0A261}</id>
+  <name>CN=Komise</name>
+  <creation-time>2026-06-08 20:11:34.030</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.533</last-modification-time>
+  <version>178</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=Komise</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=Komise</dn><name>Komise</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>0</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>Komise</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{40BC4C68-DC55-E1D9-0857-E12A7EB36BB8}</id>
+  <name>CN=PPVRelation</name>
+  <creation-time>2026-06-08 20:11:34.030</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.533</last-modification-time>
+  <version>178</version>
+  <selected>0</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=PPVRelation</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=PPVRelation</dn><name>PPVRelation</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>1073741854</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>PPVRelation</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{6C827963-7DA3-8B3E-7930-BD3A7FD74C41}</id>
+  <name>CN=BaseUnit</name>
+  <creation-time>2026-06-08 20:11:34.030</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.530</last-modification-time>
+  <version>178</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=BaseUnit</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=BaseUnit</dn><name>BaseUnit</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>0</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>BaseUnit</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{3EC834FD-13E2-4EA7-6986-3455DDC4F6D6}</id>
+  <name>CN=PPV</name>
+  <creation-time>2026-06-08 20:11:34.030</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.530</last-modification-time>
+  <version>178</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=PPV</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=PPV</dn><name>PPV</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>0</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>PPV</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{C4A899D3-7162-3C5E-0334-B0466CDCBFF0}</id>
+  <name>CN=Person</name>
+  <creation-time>2026-06-08 20:11:34.030</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.530</last-modification-time>
+  <version>178</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=Person</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=Person</dn><name>Person</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>0</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <display-name>Person</display-name>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{BF9DE8AF-137B-A9D6-EA93-F83362486D96}</id>
+  <name>CN=ApplicationRole</name>
+  <creation-time>2026-11-15 15:14:49.563</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.527</last-modification-time>
+  <version>45</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=ApplicationRole</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=ApplicationRole</dn><name>ApplicationRole</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>0</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+ <partition>
+  <id>{D547DE08-DF60-A472-E4FE-37A76307B0B4}</id>
+  <name>CN=BusinessRole</name>
+  <creation-time>2026-11-15 15:14:49.567</creation-time>
+  <last-modification-time>2026-11-17 09:06:48.527</last-modification-time>
+  <version>45</version>
+  <selected>1</selected>
+  <filter>
+   <object-classes>
+    <object-class>ApplicationRole</object-class>
+    <object-class>BaseUnit</object-class>
+    <object-class>BusinessRole</object-class>
+    <object-class>Komise</object-class>
+    <object-class>Person</object-class>
+    <object-class>PPV</object-class>
+    <object-class>PracMista</object-class>
+   </object-classes>
+   <containers>
+    <exclusions/>
+    <inclusions>
+     <inclusion>CN=BusinessRole</inclusion>
+    </inclusions>
+   </containers>
+  </filter>
+  <custom-data>
+   <ecma-partition-data><dn>CN=BusinessRole</dn><name>BusinessRole</name><is-domain>1</is-domain></ecma-partition-data>
+  </custom-data>
+  <allowed-operations>26</allowed-operations>
+  <current>
+   <batch-number>1</batch-number>
+   <sequence-number>0</sequence-number>
+  </current>
+  <last-successful-batch>0</last-successful-batch>
+  <filter-hints>
+   <object-classes>
+    <object-class>
+     <name>ApplicationRole</name>
+     <hierarchy>
+      <object-class>ApplicationRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BaseUnit</name>
+     <hierarchy>
+      <object-class>BaseUnit</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>BusinessRole</name>
+     <hierarchy>
+      <object-class>BusinessRole</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Komise</name>
+     <hierarchy>
+      <object-class>Komise</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>Person</name>
+     <hierarchy>
+      <object-class>Person</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PPV</name>
+     <hierarchy>
+      <object-class>PPV</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+    <object-class>
+     <name>PracMista</name>
+     <hierarchy>
+      <object-class>PracMista</object-class>
+     </hierarchy>
+     <included>1</included>
+    </object-class>
+   </object-classes>
+  </filter-hints>
+ </partition>
+</ma-partition-data>
+
+ <ma-run-data>
+ <run-configuration>
+  <id>{D2321D14-2970-4F90-B234-7FCC1407E0B9}</id>
+  <name>Full Import Person</name>
+  <creation-time>2026-06-08 20:12:19.593</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-06-08 20:12:19.593</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{C4A899D3-7162-3C5E-0334-B0466CDCBFF0}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{4EE23550-85C6-4282-8009-DAC29BFFA03E}</id>
+  <name>Full Synchronization Person</name>
+  <creation-time>2026-07-20 14:27:25.193</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-07-20 14:27:25.193</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{C4A899D3-7162-3C5E-0334-B0466CDCBFF0}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{F82E13A8-32D2-4BE5-8EC5-EF81C68D96B2}</id>
+  <name>Full Synchronization PPV</name>
+  <creation-time>2026-07-20 15:54:39.957</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-07-20 15:54:39.957</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{3EC834FD-13E2-4EA7-6986-3455DDC4F6D6}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{66B6B4A3-9A5E-477E-A806-37E38D587DC5}</id>
+  <name>Full Synchronization Komise</name>
+  <creation-time>2026-07-20 16:51:35.790</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-07-20 16:51:35.790</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{31F42D35-CDD7-4364-4570-C38FBAC0A261}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{4829B21B-710D-4797-8C0A-A2F6A18FD514}</id>
+  <name>Full Synchronization BaseUnit</name>
+  <creation-time>2026-08-05 16:57:16.810</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-08-05 16:57:16.810</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{6C827963-7DA3-8B3E-7930-BD3A7FD74C41}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{BDEF469C-A13C-45D1-9C6C-7B95E9F9FB03}</id>
+  <name>Full Import BaseUnit</name>
+  <creation-time>2026-06-08 20:16:22.190</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-06-08 20:16:22.190</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{6C827963-7DA3-8B3E-7930-BD3A7FD74C41}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{981C6E46-B9ED-4DEC-9C98-A1B35F524C3F}</id>
+  <name>Full Import PPV</name>
+  <creation-time>2026-06-08 20:18:11.077</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-06-08 20:18:11.077</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{3EC834FD-13E2-4EA7-6986-3455DDC4F6D6}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{EDD6D634-7362-4EB6-BC04-C6A605EE66BA}</id>
+  <name>Full Import Komise</name>
+  <creation-time>2026-06-08 20:18:11.077</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-06-08 20:18:11.077</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{31F42D35-CDD7-4364-4570-C38FBAC0A261}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{AF7B234F-46F3-4D2D-923A-8300F6872B36}</id>
+  <name>Full Import PracMista</name>
+  <creation-time>2026-06-08 20:18:11.077</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-06-08 20:18:11.077</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{F2577C53-1CF3-C55A-E4E1-61CC8F220424}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{93ED6821-0657-44F3-B281-88DB8668158A}</id>
+  <name>Full Synchronization</name>
+  <creation-time>2026-10-23 18:40:27.933</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-10-23 18:40:27.933</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{F2577C53-1CF3-C55A-E4E1-61CC8F220424}</partition><custom-data></custom-data></step><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{31F42D35-CDD7-4364-4570-C38FBAC0A261}</partition><custom-data></custom-data></step><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{6C827963-7DA3-8B3E-7930-BD3A7FD74C41}</partition><custom-data></custom-data></step><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{3EC834FD-13E2-4EA7-6986-3455DDC4F6D6}</partition><custom-data></custom-data></step><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{C4A899D3-7162-3C5E-0334-B0466CDCBFF0}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{19DBD1D1-31E3-4BB9-865B-C95327F99E23}</id>
+  <name>Full Import AR</name>
+  <creation-time>2026-11-15 15:33:56.793</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 15:33:56.793</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{BF9DE8AF-137B-A9D6-EA93-F83362486D96}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{811D63B0-1095-4DB3-8679-ACBA30CA515B}</id>
+  <name>Full Import BR</name>
+  <creation-time>2026-11-15 15:46:15.233</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 15:46:15.233</last-modification-time>
+  <configuration><step><step-type type="full-import"><import-subtype>to-cs</import-subtype></step-type><threshold><batch-size>500</batch-size></threshold><partition>{D547DE08-DF60-A472-E4FE-37A76307B0B4}</partition><custom-data><extensible2-step-data><timeout>0</timeout><batch-size>500</batch-size></extensible2-step-data><parameter-values /></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{31D737D6-AFDC-4CF1-9AC4-02C4C373562D}</id>
+  <name>Full Synchronization AR</name>
+  <creation-time>2026-11-15 17:52:13.547</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-15 17:52:13.547</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{BF9DE8AF-137B-A9D6-EA93-F83362486D96}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+ <run-configuration>
+  <id>{657B49CA-8A0D-4974-BA96-4BE9309B7CFF}</id>
+  <name>Full Synchronization BR</name>
+  <creation-time>2026-11-17 09:07:13.637</creation-time>
+  <version>1</version>
+  <last-modification-time>2026-11-17 09:07:13.637</last-modification-time>
+  <configuration><step><step-type type="apply-rules"><apply-rules-subtype>reevaluate-flow-connectors</apply-rules-subtype></step-type><threshold><batch-size>1</batch-size></threshold><partition>{D547DE08-DF60-A472-E4FE-37A76307B0B4}</partition><custom-data></custom-data></step></configuration>
+ </run-configuration>
+</ma-run-data>
+
+ <capabilities-mask>c0071af0</capabilities-mask>
+ <export-type>3</export-type>
+ <dn-construction/>
+ <password-sync><maximum-retry-count>10</maximum-retry-count><retry-interval>60</retry-interval><allow-low-security>0</allow-low-security></password-sync>
+ <component_mappings />
+</ma-data>
+
+</saved-ma-configuration>
